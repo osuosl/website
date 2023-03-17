@@ -1,0 +1,15 @@
+baseURL = "http://osuosl.org/"
+languageCode = "en-us"
+title = "OSU Open Source Lab"
+enableInlineShortcodes = true
+theme = 'mainroad'
+
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 10
+    [[menu.main]]
+        name = "About"
+        url = "/about/about"
+        weight = 20
