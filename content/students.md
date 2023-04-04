@@ -1,5 +1,5 @@
 ---
-title: "Students"
+title: "Student Experience"
 slug: students
 draft: true
 ---

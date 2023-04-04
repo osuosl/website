@@ -8,7 +8,7 @@ draft: true
 The Open Source Lab offers a number of events and educational opportunities to
 improve student experience.
 
-[Beaver Barcamp](/about/beaverbarcamp.rst)
+[Beaver Barcamp](/about/beaverbarcamp)
 
 [DevOps BootCamp](/devops-bootcamp/)
 

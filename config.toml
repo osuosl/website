@@ -1,0 +1,37 @@
+baseURL = "http://osuosl.org/"
+languageCode = "en-us"
+title = "OSU Open Source Lab"
+enableInlineShortcodes = true
+theme = 'mainroad'
+
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 10
+    [[menu.main]]
+        name = "About"
+        url = "/about"
+        weight = 20
+    [[menu.main]]
+        name = "Contact Us"
+        url = "/contact"
+        weight = 30
+    [[menu.main]]
+        name = "Staff"
+        url = "/about/people"
+        weight = 30
+    [[menu.main]]
+        name = "Logos"
+        url = "/about/logos"
+        weight = 30
+    [[menu.main]]
+        name = "Donate"
+        url = "/donate"
+        weight = 30
+    [[menu.main]]
+        name = "Student Experience"
+        weight = 20
+    [[menu.main]]
+        name = "Services"
+        weight = 20
