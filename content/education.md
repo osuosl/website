@@ -2,7 +2,6 @@
 title: "Education"
 slug: /education
 author: Amanda Kelner
-draft: true
 ---
 
 The Open Source Lab offers a number of events and educational opportunities to

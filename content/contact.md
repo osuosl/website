@@ -1,7 +1,6 @@
 ---
 title: Contact Us
 slug: contact
-draft: true
 ---
 
 Email

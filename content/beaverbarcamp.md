@@ -1,7 +1,6 @@
 ---
 title: "Beaver BarCamp"
 slug: /beaverbarcamp
-draft: true
 ---
 
 ![Beaver Bar Camp](/images/barcamp.png#right-barcamp)

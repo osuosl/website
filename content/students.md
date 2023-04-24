@@ -1,7 +1,6 @@
 ---
 title: "Student Experience"
 slug: students
-draft: true
 ---
 ![CASS](/images/CASS_group_photo_17.jpg)
 

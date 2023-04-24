@@ -1,7 +1,6 @@
 ---
 title: Student Stories
 slug: student-stories
-draft: true
 ---
 
 ![Students](/images/2017_BootCamp_smaller.jpg#right)

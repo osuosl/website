@@ -1,7 +1,6 @@
 ---
 title: "Advisory Board"
 slug: /advisors
-draft: true
 ---
 
 Featuring industry leaders from global open source projects and commercial

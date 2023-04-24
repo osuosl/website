@@ -1,7 +1,6 @@
 ---
 title: "Student Stories"
 slug: stories
-draft: true
 ---
 
 [Building a Bright Future With DevOps](/blog/devops)

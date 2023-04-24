@@ -34,4 +34,5 @@ theme = 'mainroad'
         weight = 20
     [[menu.main]]
         name = "Services"
+        url = "/services"
         weight = 20

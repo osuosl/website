@@ -1,7 +1,6 @@
 ---
 title: "Frequently Asked Questions"
 slug: /faq
-draft: true
 ---
 
 #. `How are you associated with Oregon State University?`_

@@ -1,0 +1,8 @@
+<table>
+  {{ range .Site.Data.aarch64_open_source_projects.csv }}
+    <tr>
+      {{ range . }} <td>{{ . }}</td> {{ end }}
+    </tr>
+  {{ end }}
+</table>
+  

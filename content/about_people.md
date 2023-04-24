@@ -1,7 +1,6 @@
 ---
 title: "Staff"
 slug: /people
-draft: true
 ---
 
 Lance Albertson

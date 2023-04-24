@@ -1,7 +1,6 @@
 ---
 title: DevOps BootCamp
 slug: devops-bootcamp
-draft: true
 ---
 
 The OSL and the Oregon State University

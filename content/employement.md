@@ -1,7 +1,6 @@
 ---
 title: Employement
 slug: about/employement
-draft: true
 ---
 
 ![CASS Signs Installed](/images/CASSSignsInstalled.JPG)

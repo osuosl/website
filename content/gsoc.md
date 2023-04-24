@@ -1,7 +1,6 @@
 ---
 title: Google Summer of Code
 slug: about/gsoc
-draft: true
 ---
 
 ![Google Summer of Code](/images/gsoc.jpg#right)
