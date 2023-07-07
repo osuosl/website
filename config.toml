@@ -3,36 +3,47 @@ languageCode = "en-us"
 title = "OSU Open Source Lab"
 enableInlineShortcodes = true
 theme = 'mainroad'
+ignoreErrors = ["error-remote-getcsv"]
+
+[Params.logo]
+    image = "images/OSU_newlogo.png"
+    subtitle = "OSU Open Source Lab"
 
 [menu]
     [[menu.main]]
         name = "Home"
         url = "/"
-        weight = 10
+        weight = 1
+        identifier = "home"
+
     [[menu.main]]
         name = "About"
         url = "/about"
-        weight = 20
-    [[menu.main]]
-        name = "Contact Us"
-        url = "/contact"
-        weight = 30
-    [[menu.main]]
-        name = "Staff"
-        url = "/about/people"
-        weight = 30
-    [[menu.main]]
-        name = "Logos"
-        url = "/about/logos"
-        weight = 30
-    [[menu.main]]
-        name = "Donate"
-        url = "/donate"
-        weight = 30
+        weight = 2
+        identifier = "about"
+
+        [[menu.main]]
+            parent = "about"
+            name = "Contact Us"
+            url = "/contact"
+        [[menu.main]]
+            parent = "about"
+            name = "Staff"
+            url = "/about/people"
+        [[menu.main]]
+            parent = "about"
+            name = "Logos"
+            url = "/about/logos"
+        [[menu.main]]
+            parent = "about"
+            name = "Donate"
+            url = "/donate"
+            
     [[menu.main]]
         name = "Student Experience"
-        weight = 20
+        weight = 2
+        
     [[menu.main]]
         name = "Services"
         url = "/services"
-        weight = 20
+        weight = 2

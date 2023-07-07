@@ -1,27 +1,3 @@
-<!-- {{- if .Site.Menus.main }}
-<nav class="menu">
-	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
-		<span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>
-	</button>
-	<ul class="menu__list">
-		{{- $currentNode := . }}
-		{{- range .Site.Menus.main }}
-		{{- if .Name }}
-		<li class="menu__item{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
-			<a class="menu__link" href="{{ .URL }}">
-				{{ .Pre }}
-				<span class="menu__text">{{ .Name }}</span>
-				{{ .Post }}
-			</a>
-		</li>
-		{{- end }}
-		{{- end }}
-	</ul>
-</nav>
-{{ else -}}
-<div class="divider"></div>
-{{- end }} -->
-
 {{- if .Site.Menus.main }}
 <nav class="menu">
 	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
@@ -30,22 +6,18 @@
 	<ul class="menu__list">
 		{{- $currentNode := . }}
 		{{- range .Site.Menus.main }}
-		{{- if .Name }}
 		{{- if .HasChildren }}
-		<li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
+		<li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
 			<a class="menu__link" href="{{ .URL }}">
 				{{ .Pre }}
 				<span class="menu__text">{{ .Name }}</span>
-				<label class="drop-icon" for="{{ .Name }}">▾</label>
-				{{ .Post }}
 			</a>
-			<input type="checkbox" id="{{ .Name }}">
-			<ul class="submenu__list">
-				{{ range .Children }}
-				<li class="menu__item{{ if or ($currentNode.IsMenuCurrent " main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
-					<a class="menu__link" href="{{ .URL }}">
+			<ul class="submenu__list dropdown__content">
+				{{- range .Children }}
+				<li class="submenu__item menu__item{{ if or ($currentNode.IsMenuCurrent " main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
+					<a class="menu__link submenu__link" href="{{ .URL }}">
 						{{ .Pre }}
-						<span class="menu__text">{{ .Name }}</span>
+						<span class="menu__text submenu__text">{{ .Name }}</span>
 						{{ .Post }}
 					</a>
 				</li>
@@ -53,19 +25,14 @@
 			</ul>
 		</li>
 		{{- else }}
-		<li class="menu__item{{ if or ($currentNode.IsMenuCurrent " main" .) ($currentNode.HasMenuCurrent "main" .) }}
-			menu__item--active{{ end }}">
+		<li class="menu__item{{ if or ($currentNode.IsMenuCurrent " main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
 			<a class="menu__link" href="{{ .URL }}">
 				{{ .Pre }}
 				<span class="menu__text">{{ .Name }}</span>
-				{{ .Post }}
 			</a>
 		</li>
 		{{- end }}
 		{{- end }}
-		{{- end }}
 	</ul>
 </nav>
-{{ else -}}
-<div class="divider"></div>
 {{- end }}
