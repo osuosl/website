@@ -1,0 +1,816 @@
+-  
+  name: Abyss OS
+  description: aarch64, powerpc
+-  
+  name: AlmaLinux
+  description: aarch64, powerpc
+-  
+  name: Alpine Linux
+  description: powerpc
+-  
+  name: Amahi
+  description: vm
+-  
+  name: Anaconda
+  description: powerpc
+-  
+  name: Antrea
+  description: aarch64
+-  
+  name: Apache Software Foundation
+  description: co-location, mirroring, powerpc
+-  
+  name: Apereo
+  description: vm
+-  
+  name: Arch Linux
+  description: mirroring
+-
+  name: Armbian
+  description: aarch64
+-  
+  name: Bazel
+  description: powerpc
+-  
+  name: BearSSL
+  description: powerpc
+-  
+  name: BioJS
+  description: vm, webapp
+-  
+  name: Blockchain
+  description: powerpc
+-  
+  name: BlueMika
+  description: powerpc
+-  
+  name: Briar
+  description: ci-cd
+-  
+  name: Bro
+  description: vm
+-  
+  name: Buildbot
+  description: co-location
+-  
+  name: Buildroot
+  description: vm, mailing-list, ci-cd
+-  
+  name: BusyBox
+  description: vm, mailing-list
+-  
+  name: Cacti
+  description: co-location
+-  
+  name: Census Reporter
+  description: vm
+-  
+  name: CentOS Linux
+  description: mirroring
+-  
+  name: Checkpoint-restore
+  description: powerpc
+-  
+  name: Chimera Linux
+  description: aarch64,powerpc
+-  
+  name: Cinc Project
+  description: vm,aarch64,powerpc,mirroring
+-  
+  name: CiviCRM
+  description: co-location, vm
+-  
+  name: ClickHouse
+  description: powerpc
+-  
+  name: Cloud Foundry
+  description: powerpc
+-  
+  name: CPAN
+  description: mirroring
+-  
+  name: Cppcheck
+  description: vm
+-  
+  name: CRAN
+  description: mirroring
+-  
+  name: CRIU
+  description: powerpc
+-  
+  name: crosstool-NG
+  description: vm
+-  
+  name: CVPM
+  description: vm
+-  
+  name: Cyber-Complex Foundation
+  description: mirroring
+-  
+  name: Cygwin
+  description: mirroring
+-  
+  name: Darcs
+  description: vm, mailing-list
+-  
+  name: Debian Linux
+  description: co-location, mirroring
+-  
+  name: Debian OpenQA
+  description: vm, ci-cd
+-  
+  name: Debian Ports
+  description: vm
+-  
+  name: Debian RISCV
+  description: ci-cd
+-  
+  name: Deeplearning4j
+  description: powerpc
+-  
+  name: Deluge
+  description: vm, mirroring
+-  
+  name: Delve
+  description: powerpc
+-  
+  name: Django
+  description: vm
+-  
+  name: Docker Matrix
+  description: powerpc
+-  
+  name: Docker
+  description: powerpc
+-  
+  name: DotFile-HPC
+  description: powerpc
+-  
+  name: Drupal
+  description: co-location, vm, mirroring
+-  
+  name: EasyBuild
+  description: powerpc
+-  
+  name: Eclipse Communication Framework 
+  description: co-location, vm
+-  
+  name: Eclipse
+  description: mirroring
+-  
+  name: Eclipse OMR
+  description: powerpc
+-  
+  name: Eclipse OpenJ9
+  description: powerpc
+-  
+  name: Eclipse Adoptium
+  description: aarch64
+-  
+  name: Eclipse Platform
+  description: powerpc, aarch64
+-  
+  name: Eigen
+  description: powerpc
+-  
+  name: Elastic Beats
+  description: powerpc
+-  
+  name: ELENA LANG
+  description: powerpc
+-  
+  name: Elgg
+  description: vm
+-  
+  name: eLinux
+  description: webapp, mailing-list
+-  
+  name: ELRepo
+  description: mirroring, aarch64
+-  
+  name: Enlightenment
+  description: co-location
+-  
+  name: Evolution Groupware Suite
+  description: mailing-list
+-  
+  name: F-Droid
+  description: ci-cd
+-  
+  name: Fedora Copr
+  description: powerpc, vm
+-  
+  name: Fedora Linux
+  description: co-location, mirroring
+-  
+  name: Fedora RISCV
+  description: ci-cd
+-  
+  name: FFmpeg
+  description: powerpc
+-  
+  name: Finnix
+  description: mirroring
+-  
+  name: Firefox
+  description: powerpc
+-  
+  name: FOSDEM
+  description: mirroring
+-  
+  name: Fosshost
+  description: co-location
+-  
+  name: FOSS Translation
+  description: vm
+-  
+  name: Freedesktop.org
+  description: co-location, ci-cd
+-  
+  name: Freedroid
+  description: vm, mirroring
+-  
+  name: Funtoo Linux
+  description: mirroring
+-  
+  name: GCC/Clang
+  description: powerpc
+-  
+  name: GCC Compile Farm Project
+  description: co-location, ci-cd, powerpc, aarch64
+-  
+  name: GCC Fortran
+  description: powerpc
+-  
+  name: GenPi64
+  description: aarch64
+-  
+  name: Gentoo Linux
+  description: co-location, vm, mirroring, powerpc, aarch64
+-  
+  name: Ginga Middleware
+  description: powerpc
+-  
+  name: Glassbeats
+  description: webapp
+-  
+  name: GNOME
+  description: co-location, vm, mirroring, ci-cd, aarch64
+-  
+  name: GNU Assembly
+  description: vm
+-  
+  name: GNU Radio
+  description: vm
+-  
+  name: godon
+  description: vm
+-  
+  name: Go Language
+  description: powerpc
+-  
+  name: Grml
+  description: mirroring
+-  
+  name: grommunio
+  description: powerpc
+-  
+  name: GSB (Gnome.SlackBuild)
+  description: mirroring
+-  
+  name: Hackage
+  description: mirroring
+-  
+  name: Hadoop Spark
+  description: powerpc
+-  
+  name: Haiku
+  description: mirroring
+-  
+  name: Harmony Agreements
+  description: mailing-list
+-  
+  name: HELICS
+  description: ci-cd, aarch64
+-  
+  name: Heptapod
+  description: ci-cd, aarch64
+-  
+  name: heyoka
+  description: powerpc
+-  
+  name: HHVM
+  description: mirroring, powerpc
+-  
+  name: Hortonworks Data Platform
+  description: powerpc
+-  
+  name: Hush
+  description: vm
+-  
+  name: Inkscape
+  description: vm, mailing-list
+-
+  name: INRIA
+  description: powerpc
+-  
+  name: Istio
+  description: powerpc
+-  
+  name: Jaws
+  description: vm, mailing-list
+-  
+  name: Jenkins
+  description: co-location, vm, mailing-list, mirroring
+-  
+  name: Jitesoft
+  description: aarch64
+-  
+  name: Jupyter / Base-notebook
+  description: powerpc
+-  
+  name: K-3D
+  description: vm
+-  
+  name: Kali Linux
+  description: aarch64
+-  
+  name: KDE
+  description: vm, mirroring
+-  
+  name: Kodi
+  description: vm
+-  
+  name: Kubeflow
+  description: ci-cd, powerpc
+-  
+  name: LDC
+  description: powerpc
+-  
+  name: LFS (Linux From Scratch)
+  description: mirroring
+-
+  name: libGD
+  description: powerpc
+-  
+  name: libjpeg-turbo
+  description: powerpc
+-  
+  name: libpng
+  description: mirroring
+-  
+  name: LibreHealth
+  description: vm
+-  
+  name: libvirt
+  description: vm
+-  
+  name: libvpx
+  description: powerpc
+-  
+  name: LIBXSMM
+  description: powerpc
+-  
+  name: LineageOS
+  description: ci-cd
+-  
+  name: linhes
+  description: vm
+-  
+  name: LinuxChix
+  description: co-location, vm
+-  
+  name: Linux Driver Project
+  description: webapp, mailing-list
+-  
+  name: Linux Foundation
+  description: co-location
+-  
+  name: Linux Fund
+  description: vm
+-  
+  name: Linux Kernel (powerpc arch development)
+  description: powerpc
+-  
+  name: Linux Kernel (Various Kernel Developers)
+  description: powerpc
+-  
+  name: Linux NFSD Testing and Development
+  description: powerpc
+-  
+  name: Linux Plumbers Conference
+  description: vm, mailing-list
+-  
+  name: Linux Standard Base
+  description: powerpc
+-  
+  name: LLVM
+  description: powerpc
+-  
+  name: LTTng
+  description: powerpc
+-  
+  name: LuneOS
+  description: mailing-list
+-  
+  name: LyX
+  description: vm
+-  
+  name: MacPorts
+  description: vm
+-  
+  name: Mageia
+  description: vm
+-  
+  name: Mandriva Users
+  description: vm
+-  
+  name: Manjaro Linux
+  description: mirroring
+-  
+  name: Manulix
+  description: mirroring
+-  
+  name: MariaDB
+  description: mirroring
+-  
+  name: Mesos
+  description: powerpc
+-  
+  name: Midnight Commander
+  description: vm, mirroring
+-
+  name: Minio
+  description: aarch64
+-  
+  name: Monitoring-plugins
+  description: mirroring
+-  
+  name: Monkey Server
+  description: vm
+-
+  name: Moonjit
+  description: powerpc
+-  
+  name: Mozdev
+  description: co-location, vm, mirroring
+-  
+  name: Mozilla
+  description: powerpc
+-  
+  name: Mozillazine
+  description: Co-location, vm
+-  
+  name: Mulgara
+  description: vm, mailing-list
+-  
+  name: MULTOVL
+  description: powerpc
+-  
+  name: Musescore
+  description: mirroring
+-  
+  name: Musicbrainz
+  description: vm, mirroring
+-  
+  name: Mutt
+  description: mirroring, mailing-list, webapp
+-  
+  name: MX Linux
+  description: mirroring
+-  
+  name: Mycroft Project
+  description: webapp
+-  
+  name: MythTV
+  description: co-location, vm, mirroring
+-  
+  name: Mythubuntu
+  description: mirroring
+-  
+  name: NAS-Admin
+  description: co-location, mirroring
+-  
+  name: .Net
+  description: powerpc
+-  
+  name: Nettle
+  description: powerpc
+-  
+  name: Node.js
+  description: powerpc,aarch64
+-  
+  name: NTPSEC
+  description: vm
+-  
+  name: NumPy
+  description: powerpc
+-  
+  name: Nvidia-docker
+  description: powerpc
+-  
+  name: Ocaml
+  description: powerpc
+-  
+  name: OCM
+  description: powerpc
+-  
+  name: OFTC
+  description: vm
+-  
+  name: Open Advice
+  description: webapp
+-  
+  name: OpenBLAS
+  description: powerpc
+-
+  name: OpenBMC
+  description: powerpc
+-  
+  name: OpenBSD
+  description: ci-cd
+-  
+  name: OpenCV
+  description: powerpc
+-  
+  name: OpenDev
+  description: aarch64
+-  
+  name: OpenFAAS
+  description: aarch64
+-  
+  name: open-fcoe
+  description: vm, mailing-list, mirroring
+-  
+  name: Open Hatch
+  description: vm
+-  
+  name: OpenID
+  description: co-location, webapp, mailing-list
+-  
+  name: OpenJDK
+  description: powerpc
+-  
+  name: open-lldp
+  description: vm, mailing-list
+-  
+  name: OpenMandriva
+  description: aarch64, powerpc
+-  
+  name: OpenMRS
+  description: vm, webapp, mirroring
+-  
+  name: OpenQuake
+  description: powerpc
+-  
+  name: OpenShift
+  description: powerpc
+-  
+  name: OpenStreetMap
+  description: co-location, vm, mirroring
+-  
+  name: OpenWhisk
+  description: powerpc
+-  
+  name: OpenWRT
+  description: ci-cd
+-  
+  name: OpenZFS
+  description: webapp, powerpc, aarch64, vm
+-  
+  name: OrientDB
+  description: powerpc
+-  
+  name: OSDV
+  description: vm
+-  
+  name: OSGeo
+  description: co-location, vm
+-  
+  name: OSMC
+  description: aarch64
+-  
+  name: PA-RISC
+  description: co-location, vm
+-  
+  name: Parrot
+  description: vm, mailing-list, mirroring
+-
+  name: Peeragogy
+  description: vm, mailing-list
+-  
+  name: Pentoo Linux
+  description: mirroring
+-  
+  name: Peregrine
+  description: vm
+-  
+  name: perfbook
+  description: powerpc
+-  
+  name: Persistent SI-HTM
+  description: powerpc
+-  
+  name: PersonalTelco
+  description: co-location
+-  
+  name: phpBB
+  description: co-location, vm, mirroring
+-  
+  name: PicaLibre
+  description: vm
+-  
+  name: Pipcook
+  description: ci-cd
+-  
+  name: Plan 9 Foundation
+  description: vm, mirroring
+-  
+  name: postgreSQL
+  description: powerpc
+-  
+  name: PowerPC Notebook
+  description: powerpc
+-  
+  name: Presto
+  description: powerpc
+-  
+  name: Privly
+  description: webapp
+-  
+  name: Python Software Foundation
+  description: co-location, vm, webapp
+-  
+  name: PyTorch
+  description: powerpc
+-  
+  name: QEMU
+  description: vm
+-  
+  name: Rainmeter
+  description: vm
+-  
+  name: RDKit
+  description: powerpc
+-  
+  name: RebornOS
+  description: aarch64, mirroring
+-  
+  name: Replicant
+  description: webapp, mailing-list, mirroring
+-  
+  name: Replica.one
+  description: ci-cd, vm
+-  
+  name: Reproducible builds
+  description: ci-cd
+-  
+  name: Robot Operating System
+  description: vm, mailing-list, mirroring
+-  
+  name: Rocky Linux
+  description: powerpc,aarch64
+-  
+  name: RPM Fusion
+  description: powerpc
+-  
+  name: RPM
+  description: mailing-list, mirroring
+-  
+  name: RTEMS
+  description: co-location
+-  
+  name: Ruby
+  description: powerpc
+-  
+  name: Rust
+  description: powerpc
+-  
+  name: Rust Exploit Mitigations
+  description: powerpc
+-  
+  name: Sahana Foundation
+  description: vm, webapp, mirroring
+-  
+  name: Salix Linux
+  description: mirroring
+-  
+  name: SFTPGo
+  description: powerpc
+-  
+  name: SHA-3
+  description: powerpc
+-
+  name: SharkLinux
+  description: vm
+-
+  name: Skytable
+  description: aarch64
+-  
+  name: Slackware
+  description: vm, mirroring
+-  
+  name: Snappy
+  description: powerpc
+-  
+  name: Snowpatch
+  description: powerpc
+-  
+  name: Software Freedom Conservatory
+  description: vm
+-
+  name: Spack
+  description: aarch64, powerpc
+-  
+  name: Strimzi
+  description: powerpc
+-  
+  name: Sourceware
+  description: aarch64, vm, co-location
+-  
+  name: sqlite
+  description: powerpc
+-  
+  name: Swift
+  description: powerpc
+-  
+  name: SWI-Prolog
+  description: vm
+-
+  name: Tahoe LAFS
+  description: mailing-list
+-
+  name: tcpdump/libpcap
+  description: vm, ci-cd, powerpc, aarch64
+-  
+  name: Teaching Open Source
+  description: vm, webapp, mirroring
+-  
+  name: Tesseract-OCR
+  description: powerpc
+-  
+  name: The Documentation Foundation
+  description: mirroring
+-  
+  name: The Julia Language
+  description: powerpc
+-  
+  name: The NetBSD Foundation
+  description: aarch64
+-  
+  name: The Tor Project
+  description: aarch64
+-  
+  name: Tobin's Linux kernel
+  description: powerpc
+-  
+  name: Travis-CI
+  description: powerpc
+-  
+  name: Trinity Rescue Kit
+  description: mirroring
+-  
+  name: Trisquel Linux
+  description: mirroring
+-  
+  name: trivy
+  description: powerpc
+-  
+  name: Ubuntu
+  description: mirroring
+-  
+  name: uClibc
+  description: mailing-list
+-  
+  name: UEK Maple Tree
+  description: powerpc
+-  
+  name: Vector Linux
+  description: mirroring
+-  
+  name: VideoLAN
+  description: mirroring, powerpc, ci-cd
+-  
+  name: WebDAV
+  description: vm
+-
+  name: x265
+  description: powerpc
+-  
+  name: X2go
+  description: powerpc
+-  
+  name: Xenia
+  description: powerpc
+-  
+  name: XBMC
+  description: mirroring
+-  
+  name: Xiph
+  description: co-location, mirroring
+-  
+  name: Yocto
+  description: co-location
+-  
+  name: Yum
+  description: vm, mirroring

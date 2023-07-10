@@ -10,7 +10,6 @@ Lance Albertson
 
 ![Lance Albertson](/images/lalbertson.jpg#right-people)
 
-
 [Lance](http://lancealbertson.com) became OSL director in early 2013. He has managed all of the hosting activities that the OSL provides for more
 than 160 high-profile open source projects since joining the lab as lead systems administrator and architect in 2007.
 Lance’s involvement in the open source community began in 2003, when he became a developer and package maintainer with

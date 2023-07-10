@@ -24,16 +24,28 @@ ignoreErrors = ["error-remote-getcsv"]
 
         [[menu.main]]
             parent = "about"
+            name = "About OSL"
+            url = "/about"
+            weight = 1
+        [[menu.main]]
+            parent = "about"
+            name = "FAQ"
+            url = "/faq"
+            weight = 2
+        [[menu.main]]
+            parent = "about"
             name = "Contact Us"
             url = "/contact"
+            weight = 3
         [[menu.main]]
             parent = "about"
             name = "Staff"
-            url = "/about/people"
+            url = "/people"
+            weight = 4
         [[menu.main]]
             parent = "about"
             name = "Logos"
-            url = "/about/logos"
+            url = "/logos"
         [[menu.main]]
             parent = "about"
             name = "Donate"
@@ -47,3 +59,69 @@ ignoreErrors = ["error-remote-getcsv"]
         name = "Services"
         url = "/services"
         weight = 2
+        identifier = "services"
+
+        [[menu.main]]
+            parent = "services"
+            name = "Hosting"
+            url = "/services/hosting"
+            identifier = "hosting"
+            weight = 1
+
+            [[menu.main]]
+                parent = "hosting"
+                name = "Hosted Projects"
+                url = "/communities"
+                weight = 1
+
+            [[menu.main]]
+                parent = "hosting"
+                name = "Hosting Details"
+                url = "/services/hosting/details"
+                weight = 2
+
+            [[menu.main]]
+                parent = "hosting"
+                name = "Hosting Policy"
+                url = "/services/hosting/policy"
+                weight = 3
+
+            [[menu.main]]
+                parent = "hosting"
+                name = "Request Hosting"
+                url = "/services/request-hosting"
+                weight = 4
+
+        [[menu.main]]
+            parent = "services"
+            name = "AARCH64 Development Hosting"
+            url = "/services/aarch64"
+            identifier = "aarch64"
+
+            [[menu.main]]
+                parent = "aarch64"
+                name = "Current AARCH64 Projects"
+                url = "/services/aarch64/current-projects"
+                weight = 1
+
+            [[menu.main]]
+                parent = "aarch64"
+                name = "Former AARCH64 Projects"
+                url = "/services/aarch64/former-projects"
+                weight = 2
+
+            [[menu.main]]
+                parent = "aarch64"
+                name = "AARCH64 OpenStack Request Form"
+                url = "/services/aarch64/request-hosting"
+                weight = 3
+
+        [[menu.main]]
+            parent = "services"
+            name = "POWERLinx/OpenPOWER Development Hosting"
+            identifier = "powerdev"
+
+            [[menu.main]]
+                parent = "powerdev"
+                name = "Current POWERdev Projects"
+                url = "/services/powerdev/current-projects"
