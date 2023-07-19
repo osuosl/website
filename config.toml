@@ -50,15 +50,11 @@ ignoreErrors = ["error-remote-getcsv"]
             parent = "about"
             name = "Donate"
             url = "/donate"
-            
-    [[menu.main]]
-        name = "Student Experience"
-        weight = 2
         
     [[menu.main]]
         name = "Services"
         url = "/services"
-        weight = 2
+        weight = 3
         identifier = "services"
 
         [[menu.main]]
@@ -97,6 +93,7 @@ ignoreErrors = ["error-remote-getcsv"]
             name = "AARCH64 Development Hosting"
             url = "/services/aarch64"
             identifier = "aarch64"
+            weight = 2
 
             [[menu.main]]
                 parent = "aarch64"
@@ -120,8 +117,103 @@ ignoreErrors = ["error-remote-getcsv"]
             parent = "services"
             name = "POWERLinx/OpenPOWER Development Hosting"
             identifier = "powerdev"
+            url = "/services/powerdev"
+            weight = 3
 
             [[menu.main]]
                 parent = "powerdev"
                 name = "Current POWERdev Projects"
                 url = "/services/powerdev/current-projects"
+                weight = 1
+
+            [[menu.main]]
+                parent = "powerdev"
+                name = "Former POWERdev Projects"
+                url = "/services/powerdev/former-projects"
+                weight = 2
+
+            [[menu.main]]
+                parent = "powerdev"
+                name = "OpenPOWER GPU Request Form"
+                url = "/services/powerdev/request_gpu"
+                weight = 3
+
+            [[menu.main]]
+                parent = "powerdev"
+                name = "OpenPOWER OpenStack Request Form"
+                url = "/services/powerdev/request_hosting"
+                weight = 4
+
+            [[menu.main]]
+                parent = "powerdev"
+                name = "POWER CI Request Form"
+                url = "/services/powerdev/request_powerci"
+                weight = 5
+
+            [[menu.main]]
+                parent = "powerdev"
+                name = "Open-CE"
+                url = "/services/powerdev/opence"
+                weight = 6
+
+            [[menu.main]]
+                parent = "powerdev"
+                name = "Cryo-EM"
+                url = "/services/powerdev/cryo-em"
+                weight = 7
+
+        [[menu.main]]
+            parent = "services"
+            name = "IBM Z Development Hosting"
+            identifier = "ibm-z"
+            url = "/services/ibm-z"
+            weight = 4
+
+    [[menu.main]]
+        name = "Student Experience"
+        url = "/students"
+        identifier = "students"
+        weight = 4
+
+            [[menu.main]]
+                parent = "students"
+                name = "Employement"
+                url = "/about/employement"
+                weight = 1
+
+            [[menu.main]]
+                parent = "students"
+                name = "Education"
+                identifier = "education"
+                url = "/about/education"
+                weight = 2
+
+                    [[menu.main]]
+                        parent = "education"
+                        name = "Beaver Barcamp"
+                        url = "/about/beaverbarcamp"
+                        weight = 1
+
+                    [[menu.main]]
+                        parent = "education"
+                        name = "DevOps BootCamp"
+                        url = "/devops-bootcamp"
+                        weight = 2
+
+                    [[menu.main]]
+                        parent = "education"
+                        name = "GSOC"
+                        url = "/about/gsoc"
+                        weight = 3
+
+                    [[menu.main]]
+                        parent = "education"
+                        name = "CS312"
+                        url = "/students/cs312"
+                        weight = 4
+
+            [[menu.main]]
+                parent = "students"
+                name = "Student Stories"
+                url = "/student-stories"
+                weight = 3

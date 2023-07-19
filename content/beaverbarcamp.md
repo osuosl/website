@@ -1,6 +1,6 @@
 ---
 title: "Beaver BarCamp"
-slug: /beaverbarcamp
+slug: /about/beaverbarcamp
 ---
 
 ![Beaver Bar Camp](/images/barcamp.png#right-barcamp)

@@ -1,6 +1,6 @@
 ---
 title: "Education"
-slug: /education
+slug: /about/education
 author: Amanda Kelner
 ---
 

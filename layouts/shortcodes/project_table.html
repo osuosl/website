@@ -1,7 +1,7 @@
 {{ if .IsNamedParams }}
 <table class="projects_table">
     <thead>
-        <th colspan="2">FOSS Projects ({{ .Params.project_count }} projects)</th>
+        <th colspan="2">{{ .Params.table_title }} ({{ .Params.project_count }} projects)</th>
     </thead>
     <tbody>
         {{ $data := index $.Site.Data $.Params.file }}
