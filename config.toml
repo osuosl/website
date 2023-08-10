@@ -1,9 +1,8 @@
-baseURL = "http://osuosl.org/"
+baseURL = "/"
 languageCode = "en-us"
 title = "OSU Open Source Lab"
 enableInlineShortcodes = true
 theme = 'mainroad'
-ignoreErrors = ["error-remote-getcsv"]
 
 [Params.logo]
     image = "images/OSU_newlogo.png"
@@ -217,3 +216,7 @@ ignoreErrors = ["error-remote-getcsv"]
                 name = "Student Stories"
                 url = "/student-stories"
                 weight = 3
+
+    [[menu.main]]
+        name = "Blog"
+        weight = 5
