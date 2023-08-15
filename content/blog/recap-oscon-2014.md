@@ -1,9 +1,12 @@
-A Recap of OSCON 2014
-=====================
-:date: 2014-07-31
-:author: Rachel Turner
-:slug: recap-oscon-2014
-:img: OSCON blog post_0.jpg
+---
+title: A Recap of OSCON 2014
+date: 2014-07-31
+author: Rachel Turner
+slug: recap-oscon-2014
+---
+by Rachel Turner on Thu, Jul 31 2014
+
+![A Recap of OSCON 2014](/images/OSCON_blog_post_0.jpg#blog)
 
 The OSL made a strong showing at the [O’Reilly Open Source Conference](http://www.oscon.com/oscon2014) (OSCON)
 this year with the majority of the student employees attending along with all of
@@ -54,6 +57,3 @@ Whether it was gathering information at the booths, attending an informational
 session or simply networking with open source professionals, OSCON proved to be
 a valuable educational experience for the Open Source Lab. We look forward to
 next year!
-
-
-

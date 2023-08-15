@@ -1,14 +1,14 @@
-OSU Open Source Lab announces OSL Alliance Corporate Sponsorship Program
-========================================================================
-:date: 2009-03-03
-:author: OSUOSL Admin
-:slug: osl-announces-osl-alliance-corp-spons-prog
+---
+title: OSU Open Source Lab announces OSL Alliance Corporate Sponsorship Program
+date: 2009-03-03
+author: OSUOSL Admin
+slug: osl-announces-osl-alliance-corp-spons-prog
+---
+by OSUOSL Admin on Tue, Mar 03 2009
 
 IBM, Google and Real Networks among lab's industry donors
 
-.. class:: no-breaks
-
-  Source: Jeff Sheltren, 541-713-3206
+Source: Jeff Sheltren, 541-713-3206
 
 Media contact: Todd Simmons, 541-737-4611
 

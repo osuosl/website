@@ -1,8 +1,10 @@
-OSL Newsletter: A Look Back at 2010
-===================================
-:date: 2011-01-03
-:author: Lance Albertson
-:slug: osl-newsletter-look-back-2010
+---
+title: "OSL Newsletter: A Look Back at 2010"
+date: 2011-01-03
+author: Lance Albertson
+slug: osl-newsletter-look-back-2010
+---
+by Lance Albertson on Mon, Jan 03 2011
 
 We’ve had plenty of good things happening at the OSL since we brought your our
 last newsletter, and as we’re busy gearing up for 2011 we wanted to take a few
@@ -13,14 +15,10 @@ First, the best news: We’re Hiring!
 
 The OSL is hiring for a full-time software developer who will analyze, design,
 and test software code for [Ganeti Web Manager](http://code.osuosl.org/projects/ganeti-webmgr), the
-[Protein Geometry Database](http://pgd.science.oregonstate.edu/)_ and several other
+[Protein Geometry Database](http://pgd.science.oregonstate.edu/) and several other
 [homegrown Open Source Lab projects](http://code.osuosl.org/projects). For more details on the position and
 instructions on how to apply, check out the [Analyst Programmer](http://jobs.oregonstate.edu/applicants/Central?quickFind=57774) role on the
 Oregon State University Jobs page.
-
-__ http://code.osuosl.org/projects/pgd
-
-
 
 Wrapping our Sixth GOSCON
 -------------------------
@@ -48,19 +46,6 @@ and [Code for America Fellow](http://siliconflorist.com/2010/11/01/max-ogden-civ
 
 https://youtu.be/LzlxJ9LgXIc
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 Developer News
 --------------
 
@@ -84,12 +69,6 @@ backbone conformation and geometry, as well as the relationships between them.
 You can learn more about the academic uses and the development process for the
 PGD in one of our recent news articles, or check out the technical documentation
 and source code at http://code.osuosl.org/projects/pgd.
-
-
-
-
-
-
 
 Google's Open Source Programs for Students
 ------------------------------------------
@@ -120,15 +99,6 @@ contest.
 Many thanks to Google and their [Open Source Team](http://code.google.com/opensource/) for sponsoring these great
 programs!
 
-
-
-
-
-
-
-
-
-
 Welcome to Our New Hosted Communities
 -------------------------------------
 
@@ -157,16 +127,6 @@ including:
   institutions, communities, and companies to come together and make the
   teaching of open source a global success
 
-
-
-
-
-
-
-
-
-
-
 The OSL and Humanitarian Free and Open Source Software
 ------------------------------------------------------
 
@@ -189,15 +149,6 @@ communities, [OpenMRS](http://openmrs.org/) and [TriSano](http://www.trisano.org
 Business Resource magazine on [Humanitarian Open Source](http://osbr.ca/ojs/index.php/osbr/issue/view/114). [Leslie Hawthorn](http://hawthornlandings.org/),
 our Open Source Outreach Manager, guest edited the issue.
 
-
-
-
-
-
-
-
-
-
 Sharing Stories
 ---------------
 
@@ -206,9 +157,6 @@ hear from you. What stories from the OSL would you like to hear? What's going on
 in our hosted communities that we ought to be communicating to the wider OSL
 community? Send your thoughts to us on [Twitter](http://twitter.com/osuosl), [Facebook](http://www.facebook.com/pages/Open-Source-Lab/9136692949) or by email to
 Leslie Hawthorn at leslie at osuosl dot org
-
-
-
 
 About this Newsletter
 ---------------------
@@ -219,6 +167,3 @@ newsletters every 3-6 months in the future. Newsletters will be posted to our
 website as well as sent out to an email list. If you'd like to receive
 newsletters via email, please sign up at
 http://lists.osuosl.org/mailman/listinfo/osl-newsletter.
-
-
-

@@ -1,9 +1,12 @@
-OSL to Participate in Google Summer of Code 2013
-================================================
-:date: 2013-04-11
-:author: Kayla Harr
-:slug: osl-participate-google-summer-code-2013
-:img: gsoc-feature.png
+---
+title: OSL to Participate in Google Summer of Code 2013
+date: 2013-04-11
+author: Kayla Harr
+slug: osl-participate-google-summer-code-2013
+---
+by Kayla Harr on Thu, Apr 11 2013
+
+![OSL to Participate in Google Summer of Code 2013](/images/gsoc-feature.png#blog)
 
 This year will be the lab's seventh straight as a GSOC mentor.
 

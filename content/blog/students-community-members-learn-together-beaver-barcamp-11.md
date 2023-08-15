@@ -1,9 +1,12 @@
-Students & Community Members Learn Together at Beaver BarCamp 11
-================================================================
-:date: 2013-05-01
-:author: Melissa Morse
-:slug: students-community-members-learn-together-beaver-barcamp-11
-:img: BeaverBarcamp11-2(1).JPG
+---
+title: Students & Community Members Learn Together at Beaver BarCamp 11
+date: 2013-05-01
+author: Melissa Morse
+slug: students-community-members-learn-together-beaver-barcamp-11
+---
+by Melissa Morse on Wed, May 01 2013
+
+![Students & Community Members Learn Together at Beaver BarCamp 11](/images/BeaverBarcamp11-2(1).JPG#blog)
 
 **More than 150 Oregon State students, community members and students from other
 Oregon universities gathered in the Kelley Engineering building April 20 to
@@ -25,16 +28,11 @@ presented by Ken Olsen, a software technician at Hewlett-Packard, outgrew the
 room it was assigned to, the group moved to a larger room and a second Raspberry
 Pi session was added to the schedule.
 
-.. image:: /images/BeaverBarcamp11-3(1).JPG
-   :scale: 100%
-   :alt: Hewlett-Packard software technician Ken Olsen discusses Raspberry Pi
-         and Arduino.
+![Hewlett-Packard software technician Ken Olsen discusses Raspberry Pi and Arduino.](/images/BeaverBarcamp11-3(1).JPG)
 
-|
-
-  “I like the informal quality of it because it’s open, it’s casual, it’s
-  inviting,” says Nate Robison, a senior studying computer science at Western
-  Oregon University.
+  > “I like the informal quality of it because it’s open, it’s casual, it’s
+  > inviting,” says Nate Robison, a senior studying computer science at Western
+  > Oregon University.
 
 Several sessions at Beaver BarCamp 11 were designed for beginners or to help
 experienced coders expand their skills. Oregon State Ecampus student Bryon
@@ -43,8 +41,8 @@ improve his coding skills. Burleigh is pursuing a post-baccalaureate degree in
 computer science and appreciated the opportunity to learn about open source and
 connect with fellow students.
 
-  “I want to learn about version control in person, and Beaver BarCamp gives me
-  a way to do that,” Burleigh says.
+  > “I want to learn about version control in person, and Beaver BarCamp gives me
+  > a way to do that,” Burleigh says.
 
 Beaver BarCamp encourages attendees not only to learn, but also to share their
 knowledge. Because the unconference is open to everyone and doesn’t require
@@ -58,13 +56,10 @@ presentation, Emacs for Beginners, Fontenot spontaneously pulled up some of his
 homework online in response to a question and showed attendees some step-by-step
 techniques.
 
-  “I like teaching,” Fontenot says. “I recently started focusing on Emacs, and I
-  felt like I had something to contribute.”
+  > “I like teaching,” Fontenot says. “I recently started focusing on Emacs, and I
+  > felt like I had something to contribute.”
 
-.. image:: /images/BeaverBarcamp11-1(1).JPG
-   :scale: 100%
-   :alt: The Beaver BarCamp 11 schedule diplays the nearly 50 sessions held
-         throughout the day.
+![The Beaver BarCamp 11 schedule diplays the nearly 50 sessions held throughout the day.](/images/BeaverBarcamp11-1(1).JPG)
 
 Sponsors [Dice.com](http://dice.com/), [Jive](http://www.jivesoftware.com/), [GitHub](http://github.com/) and [Silicon Mechanics](http://www.siliconmechanics.com/) funded the
 conference and made it possible for everyone to enjoy a full schedule of
@@ -73,9 +68,9 @@ from gold sponsor Dice.com attended Beaver BarCamp 11, allowing attendees
 interested in pursuing work as technology professionals to network with the
 premiere career hub for jobs in the tech industry.
 
-  “Our website is catered to IT professionals in the workforce now and also
-  future IT professionals specifically,” says Vince Maccario, a brand ambassador
-  representing Dice. “We specifically want to support these students.”
+  > “Our website is catered to IT professionals in the workforce now and also
+  > future IT professionals specifically,” says Vince Maccario, a brand ambassador
+  > representing Dice. “We specifically want to support these students.”
 
 Looking for pictures from Beaver BarCamp 11? **View the
 [Google Plus Photo Album](https://plus.google.com/photos/107361178205293595706/albums/5873077749428585489) for user-contributed images of the event.**
@@ -85,10 +80,3 @@ Looking for pictures from Beaver BarCamp 11? **View the
 Beaver BarCamp 12 has been scheduled for Oct. 12, 2013. Visit the
 [Beaver BarCamp](http://beaverbarcamp.org/) website to learn more and sign up to receive updates about the
 next unconference.
-
-
-
-
-
-
-

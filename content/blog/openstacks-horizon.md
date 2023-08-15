@@ -1,9 +1,12 @@
-Openstack's Horizon
-===================
+---
+title: Openstack's Horizon
 :date: 2014-02-20 22:32
 :author: Melissa
 :slug: openstacks-horizon
-:img: tech-blog.png
+---
+by Melissa on Thu, Feb 20 2014
+
+![Openstack's Horizon](/images/tech-blog.png#blog)
 
 *The first tech post is by Chance Zibolski, a community system administrator and
 project lead of Ganeti Web Manager, a Web administration panel that allows
@@ -15,14 +18,12 @@ technologies, in particular Openstack. We already use Ganeti as our production
 virtual machine and cluster management system and have written a web front end
 called Ganeti Web Manager. The whole purpose of the web manager is to allow us
 to easily create new virtual machines for internal purposes and to provide our
-customers with cheap, redundant VMs. Recently, the OSL released `Ganeti Web
-Manager 0.10.2`_ and we’re getting close to finishing version 0.11. With this
+customers with cheap, redundant VMs. Recently, the OSL released [Ganeti Web Manager 0.10.2](https://github.com/osuosl/ganeti_webmgr/tree/0.10.2) 
+and we’re getting close to finishing version 0.11. With this
 release, we’ve begun to discuss the future of Ganeti Web Manager and where we
 should be taking it. We’ve decided to eventually rewrite it. As the project lead
 of Ganeti Web Manager, it’s been my job to explore what tools and libraries we
 may want to use for new versions of the project.
-
-
 
 This is what led me to Openstack. Recently, we deployed an Openstack test
 cluster in our infrastructure, and I found that its web UI (known as Horizon)
@@ -36,12 +37,7 @@ general purpose dashboard library for Django. Horizon provides utilities from
 mapping Django models to interactive/editable tables to creating tabbed page
 layouts and multiple step modal windows for performing actions.
 
-
-
-.. image:: /images/openstack-screenshot.png
-   :scale: 100%
-   :align: center
-   :alt: Openstack Screenshot
+![Openstack Screenshot](/images/openstack-screenshot.png#center)
 
 Openstack Horizon screenshot.
 

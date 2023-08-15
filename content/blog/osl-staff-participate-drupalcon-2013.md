@@ -1,9 +1,12 @@
-OSL Staff Participate at DrupalCon 2013
-=======================================
-:date: 2013-06-04
-:author: Melissa Morse
-:slug: osl-staff-participate-drupalcon-2013
-:img: DrupalCon-FeaturedImage.jpg
+---
+title: OSL Staff Participate at DrupalCon 2013
+date: 2013-06-04
+author: Melissa Morse
+slug: osl-staff-participate-drupalcon-2013
+---
+by Melissa Morse on Tue, Jun 04 2013
+
+![OSL Staff Participate at DrupalCon 2013](/images/DrupalCon-FeaturedImage.jpg#blog)
 
 Open Source Lab staff members attended [DrupalCon](https://portland2013.drupal.org/) May 20-24 at the Oregon
 Convention Center in Portland. OSL attendees welcomed the opportunity to
@@ -14,7 +17,7 @@ and reconnect with people I only see once a year,” says Rudy Grigar, senior
 systems architect.
 
 The OSL presented
-`Put the Ops in Dev: What Developers Need to Know about Devops`_, a session to
+[Put the Ops in Dev: What Developers Need to Know about Devops](https://portland2013.drupal.org/session/put-ops-dev-what-developers-need-know-about-devops), a session to
 teach developers what they need to know about operations to improve the
 maintainability of their code in production. Grigar said that the session was
 fun to present, because they had good participation.
@@ -48,9 +51,3 @@ diversity of companies using Drupal demonstrates the popularity of the content
 management system and its continued growth.
 
 The OSL would like to thank the many Drupalcon event sponsors.
-
-
-
-
-
-

@@ -1,9 +1,12 @@
-Vim Trick FTW!
-==============
-:date: 2014-06-11
-:author: Emily Dunham
-:slug: vim-trick-ftw
-:img: emilyvim.png
+---
+title: Vim Trick FTW!
+date: 2014-06-11
+author: Emily Dunham
+slug: vim-trick-ftw
+---
+by Emily Dunham on Wed, Jun 11 2014
+
+![Vim Trick FTW!](/images/emilyvim.png#blog)
 
 Recently, I learned a useful Vim trick. One of our hosted clients has a Dokuwiki
 instance that we help manage, and they were having problems with a lot of spam

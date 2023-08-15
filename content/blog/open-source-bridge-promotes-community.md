@@ -4,16 +4,15 @@ date: 2013-06-24 21:54
 author: Melissa Morse
 slug: open-source-bridge-promotes-community
 ---
-:img: osbridgecommunity.jpg
+by Melissa Morse on Mon, Jun 24 2013
+
+![Open Source Bridge Promotes Community](/images/osbridgecommunity.jpg#blog)
 
 **With the open source conference season well underway, OSL students and staff
 were excited to attend [Open Source Bridge](http://opensourcebridge.org/) at the Eliot Center in downtown
 Portland from June 18-21. Now in its fifth year, the conference provided a
 unique opportunity for the open source community to connect and share with each
 other.**
-
-
-
 
 Besides great vegetarian food, one of the ways conference organizers promoted a
 feeling of community was with the hacker lounge, sponsored by Intel. Comfortable
@@ -37,23 +36,14 @@ In addition to promoting community, Open Source Bridge offers valuable content
 during sessions. Conference organizers created [five tracks](http://opensourcebridge.org/events/2013/tracks) for presentations:
 Culture, Business, Hacks, Cooking, and Chemistry. Albertson was impressed with
 the variety of content offered this year. Session topics he attended ranged from
-`Leveling up in DevOps: the Art of Bad Shell Scripts`_ to `Hacking the Academic
-Experience`_.
-
-
-
-   http://opensourcebridge.org/sessions/1139
-
-
+[Leveling up in DevOps: the Art of Bad Shell Scripts](http://opensourcebridge.org/sessions/1139) to 
+[Hacking the Academic Experience](http://opensourcebridge.org/sessions/1083).
 
 “I really enjoyed the diversity of not only the people attending but also the
 session topics,” Albertson says. “I noticed a wider variety of topics this year
 than in the past--from advanced technical to sociological topics.”
 
-.. image:: /images/lancepresentation.jpg
-   :scale: 100%
-   :align: center
-   :alt: Lance Albertson Presentation
+![Lance Albertson Presentation](/images/lancepresentation.jpg#center)
 
 Lance Albertson giving a presentation on how the OSU Open Source Lab mentors
 "rockstar" students.
@@ -62,10 +52,6 @@ In the culture track, the OSL presented [How We Mentor “Rock Star” Students]
 in conjunction with [Portland State University’s CAT](http://cat.pdx.edu/) presentation Zero to Root
 in 12 Months. Albertson and Senior Software Engineer Ken Lett emphasized that
 mentoring college students involves much more than teaching code.
-
-
-
-
 
 “We teach students to collaborate with each other and with the open source
 community,” Albertson says. “All of our developers are on IRC, and our students

@@ -1,9 +1,12 @@
-Students, Community and Professionals Collaborate at Beaver BarCamp 10
-======================================================================
-:date: 2012-11-03
-:author: Kayla Harr
-:slug: students-comm-professionals-collab-bbc-10
-:img: MikeMorganBBC10.jpg
+---
+title: Students, Community and Professionals Collaborate at Beaver BarCamp 10
+date: 2012-11-03
+author: Kayla Harr
+slug: students-comm-professionals-collab-bbc-10
+---
+by Kayla Harr on Sat, Nov 03 2012
+
+![Students, Community and Professionals Collaborate at Beaver BarCamp 10](/images/MikeMorganBBC10.jpg#blog)
 
 On Oct. 13, more than 150 people gathered in Kelley Engineering Center to attend
 the Oregon State University Open Source Lab’s Beaver BarCamp 10. Beaver BarCamp
@@ -77,6 +80,3 @@ April at Beaver BarCamp 11.
 To learn more about Beaver BarCamp and get updates about Beaver BarCamp 11,
 connect with the Open Source Lab on [Facebook](http://www.facebook.com/OSUOSL) or visit the [Beaver BarCamp](http://beaverbarcamp.org/)
 website.
-
-
-

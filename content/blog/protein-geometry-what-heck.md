@@ -1,9 +1,12 @@
-Protein Geometry - What the Heck is That?
-=========================================
-:date: 2014-03-29
-:author: Jack Twilley
-:slug: protein-geometry-what-heck
-:img: jack-twilley-post.png
+---
+title: Protein Geometry - What the Heck is That?
+date: 2014-03-29
+author: Jack Twilley
+slug: protein-geometry-what-heck
+---
+by Jack Twilley on Sat, Mar 29 2014
+
+![Protein Geometry - What the Heck is That?](/images/jack-twilley-post.png#blog)
 
 When I bumped into my biochemistry professor, Dr. Kevin Ahern, on campus a few
 months ago, I had the pleasure of explaining how I actually get to use what I

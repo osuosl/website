@@ -1,15 +1,15 @@
-OSL's April 2013 Newsletter
-===========================
-:date: 2013-05-01
-:author: Mitchell Garcia
-:slug: osls-april-2013-newsletter
+---
+title: OSL's April 2013 Newsletter
+date: 2013-05-01
+author: Mitchell Garcia
+slug: osls-april-2013-newsletter
+---
+by Mitchell Garcia on Wed, May 01 2013
 
-.. image:: /images/lalbertson.jpg
-   :scale: 100%
-   :alt: Lance Albertson
+![Lance Albertson](/images/lalbertson.jpg)
 
 Below is a summary of the Open Source Lab's tri-annual newsletter. To receive
-this newsletter in your inbox, visit our [sign up form](.. _Gentoo Linux distribution: https://osuosl.org/communities/gentoo-foundation).
+this newsletter in your inbox, visit our [sign up form](https://osuosl.org/communities/gentoo-foundation).
 
 **Letter from the Director**
 
@@ -18,7 +18,7 @@ this newsletter in your inbox, visit our [sign up form](.. _Gentoo Linux distrib
 After working for nearly six years as the Oregon State University Open Source
 Lab’s lead systems engineer and the associate director, I became the lab’s new
 director in January. My involvement in the open source community began in 2003
-with the `Gentoo Linux distribution`_, and I am excited for the opportunity I
+with the [Gentoo Linux distribution](https://osuosl.org/communities/gentoo-foundation), and I am excited for the opportunity I
 will have to continue promoting and supporting FOSS in my new role. The OSL is
 unique for its heavy reliance on a student workforce to power the lab, and I
 plan to find new ways to further develop and expand our students’ abilities.
@@ -42,8 +42,6 @@ BarCamp **October 12, 2013**.
 In closing, I would like to thank all of the lab staff and students who work
 hard on a daily basis to improve the FOSS ecosystem. They do amazing work!
 
-.. class:: no-breaks
-
   Best wishes,
 
 *Lance Albertson*
@@ -66,9 +64,7 @@ patches that will eventually become part of Mailman 3.0.
 
 **Python Software Foundation**
 
-.. image:: /images/python.jpg
-   :scale: 100%
-   :alt: Python Software Foundation
+![Python Software Foundation](/images/python.jpg)
 
 As a large foundation, the Python Software Foundation has been previously
 scattered about various data centers around the world. PSF was looking for a
@@ -79,9 +75,7 @@ continued moving various services to the OSL-managed cloud.
 Featured Student - Eric Zounes
 ------------------------------
 
-.. image:: /images/ericzounes.jpg
-   :scale: 100%
-   :alt: Featured Student - Eric Zounes
+![Featured Student - Eric Zounes](/images/ericzounes.jpg)
 
 *Eric Zounes has been a student system administrator at the Open Source Lab
 since June 2012. He works primarily on the Oregon Virtual School District
@@ -108,7 +102,3 @@ learn in classes.
 
 I plan on working for Mozilla on their Web Operations team. I also plan on
 contributing to several open source projects and taking some time off to travel.
-
-
-
-

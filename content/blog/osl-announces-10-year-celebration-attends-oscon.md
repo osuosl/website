@@ -1,9 +1,12 @@
-OSL Announces 10 year Celebration; Attends OSCON
-================================================
-:date: 2013-07-30 21:03
-:author: Melissa
-:slug: osl-announces-10-year-celebration-attends-oscon
-:img: osl-announces-10.jpg
+---
+title: "OSL Announces 10 year Celebration; Attends OSCON"
+date: 2013-07-30 21:03
+author: Melissa
+slug: osl-announces-10-year-celebration-attends-oscon
+---
+by Melissa on Tue, Jul 30 2013
+
+![OSL Announces 10 year Celebration; Attends OSCON](/images/osl-announces-10.jpg#blog)
 
 **The Open Source Lab (OSL) recently kicked off its 10 year celebration at the
 O’Reilly Open Source Conference in Portland July 23 - 26.**
@@ -18,10 +21,7 @@ infrastructure, the lab will strengthen its position as an open source leader.
 just a small group of people anymore but a maturing organization with a smart
 staff of both students and non-students."
 
-.. image:: /images/buildthefuture-icons_0.gif
-   :scale: 100%
-   :align: center
-   :alt: Build the Future icons
+![Build the Future icons](/images/buildthefuture-icons_0.gif#center)
 
 Icons used to represent the three key areas of the Build The Future initiative:
 education, outreach and research & infrastructure.
@@ -49,10 +49,7 @@ and staff enjoyed interacting with members of the open source community.
 the booth and telling people from different backgrounds what exactly we do at
 the OSL”.
 
-.. image:: /images/oscontable2.jpg
-   :scale: 100%
-   :align: center
-   :alt: OSCON table
+![OSCON table](/images/oscontable2.jpg#center)
 
 "Hosted by the OSL" signs for the OSL's hosted communities.
 
@@ -74,17 +71,11 @@ and Squishymedia generously donated the use of their office space in downtown
 Portland to help in the party efforts. The atmosphere felt like a family
 reunion, as old friends reconnected and new employees were welcomed.
 
-.. image:: /images/historyspeach.jpg
-   :scale: 100%
-   :align: center
-   :alt: Lance Albertson Speech
+![Lance Albertson Speech](/images/historyspeach.jpg#center)
 
 OSL Director, Lance Albertson, and past OSL Project Manager, Greg Lund-Chaix,
 speak about the history of the OSL at the alumni party hosted at
 [Squishymedia](http://squishymedia.com/).
-
-
-
 
 “Once you are a part of the OSL, you are always a part of it,” says Greg
 Lund-Chaix, Squishymedia tech lead and former OSL project manager. “I still use

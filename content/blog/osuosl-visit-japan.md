@@ -1,9 +1,12 @@
-OSUOSL Visit to Japan
-=====================
-:date: 2009-04-16
-:author: OSUOSL Admin
-:slug: osuosl-visit-japan
-:img: deb_matz_0.jpg
+---
+title: OSUOSL Visit to Japan
+date: 2009-04-16
+author: OSUOSL Admin
+slug: osuosl-visit-japan
+---
+by OSUOSL Admin on Thu, Apr 16 2009
+
+![OSUOSL Visit to Japan](/images/deb_matz_0.jpg#blog)
 
 Deb Bryant, the OSU Open Source Lab's Public Sector Communities Manager, was
 recently invited to participate in a number of events in and around Matsue City,
@@ -29,5 +32,3 @@ of course to Shimane University which sponsored the visit.
 Above you can find a picture of Deb Bryant with Yukihiro Matsumoto ("Matz"), the
 chief designer of the Ruby programming language. Nice OSL shirt, Matz! More
 pictures are available on [Flickr](http://www.flickr.com/photos/58459279@N00/sets/72157615202768027/).
-
-

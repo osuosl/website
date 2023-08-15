@@ -1,9 +1,12 @@
-Write the Docs '15
-==================
-:date: 2015-06-17
-:author: Elijah Voigt
-:slug: write-the-docs-15
-:img: document-all-the-things.jpg
+---
+title: Write the Docs '15
+date: 2015-06-17
+author: Elijah Voigt
+slug: write-the-docs-15
+---
+by Elijah Voigt on Wed, Jun 17 2015
+
+![Write the Docs '15](/images/document-all-the-things.jpg#blog)
 
 The day is May 18. The location is the Portland's Crystal Ballroom. The
 conference is Write the Docs (WtD). Excitement and anticipation fill the air as

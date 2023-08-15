@@ -1,11 +1,14 @@
-On Leaving the Open Source Lab, Jonathan Frederick
---------------------------------------------------
-:author: Jonathan Frederick
-:date: 2019-09-25
-:img: doublej472-story.jpg
-:slug: student-story-doublej472
-:tag: featured-stories
-:tags: student-stories
+---
+title: On Leaving the Open Source Lab, Jonathan Frederick
+author: Jonathan Frederick
+date: 2019-09-25
+slug: student-story-doublej472
+# :tag: featured-stories
+# :tags: student-stories
+---
+by Jonathan Frederick on Wed, Sep 25 2019
+
+![On Leaving the Open Source Lab, Jonathan Frederick](/images/doublej472-story.jpg#blog)
 
 My first Linux operating system was Ubuntu 10.04, when I was still young. It was my first experience with open-source
 software, which I didn't fully appreciate at the time. I just wanted an operating system to work on my Dell hand-me-down
@@ -38,5 +41,3 @@ After much consideration, I have decided to not continue in my education at Oreg
 My time at the Open Source Lab has been fun, exciting, fulfilling, and engaging. I wouldn't trade it for anything, and I
 will cherish it for many years to come. I hope that the Open Source Lab continues to grow and flourish, and to keep
 giving people the experience I had.
-
-

@@ -1,8 +1,10 @@
-OSUOSL One of Nation's "Really Cool" Networking Labs
-====================================================
-:date: 2009-01-10
-:author: OSUOSL Admin
-:slug: osl-cool-networking-lab
+---
+title: OSUOSL One of Nation's "Really Cool" Networking Labs
+date: 2009-01-10
+author: OSUOSL Admin
+slug: osl-cool-networking-lab
+---
+by OSUOSL Admin on Sat, Jan 10 2009
 
 The Oregon State University Open Source Lab was recently featured in a Network
 World online story about really cool university computer network labs. This is a
@@ -17,9 +19,3 @@ http://www.networkworld.com/news/2008/121508-university-networking-labs.html?pag
 
 For a full press release, please see
 http://oregonstate.edu/dept/ncs/newsarch/2009/Jan09/opensourcelab.html
-
-
-
-
-
-

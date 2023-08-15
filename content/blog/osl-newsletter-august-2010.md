@@ -1,8 +1,10 @@
-OSL Newsletter - August 2010
-============================
-:date: 2010-08-11
-:author: Lance Albertson
-:slug: osl-newsletter-august-2010
+---
+title: OSL Newsletter - August 2010
+date: 2010-08-11
+author: Lance Albertson
+slug: osl-newsletter-august-2010
+---
+by Lance Albertson on Wed, Aug 11 2010
 
 OSL Newsletter
 --------------
@@ -29,9 +31,7 @@ Foundation / kernel.org) for a talk on scaling open source project
 infrastructure on a shoestring budget. Deb Bryant opened up the Health IT Track
 and led a panel on open source voting solutions as well.
 
-.. image:: /images/winetour2010.jpg
-   :scale: 100%
-   :alt: Wine Tour 2010
+![Wine Tour 2010](/images/winetour2010.jpg)
 
 Deb didn't stop at simply participating in sessions. She also received one of
 five [O'Reilly Open Source Awards](http://www.oscon.com/oscon2010/public/content/2010/07/20-os-awards) in recognition of her work in getting open
@@ -79,13 +79,3 @@ been announced! More info on GOSCON, including a sign-up for the conference
 newsletter, can be found at http://goscon.org.
 
 Picture by [Deborah Bryant](http://www.flickr.com/photos/opengov/4857912579/in/set-72157624523418713/)
-
-
-
-
-
-
-
-
-
-

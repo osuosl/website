@@ -1,9 +1,12 @@
-Using Variables in a Custom Drupal Theme
-========================================
-:date: 2014-10-01
-:author: lucyw
-:slug: using-variables-custom-drupal-theme
-:img: variables-drupal-theme.jpg
+---
+title: Using Variables in a Custom Drupal Theme
+date: 2014-10-01
+author: lucyw
+slug: using-variables-custom-drupal-theme
+---
+by lucyw on Wed, Oct 01 2014
+
+![Using Variables in a Custom Drupal Theme](/images/variables-drupal-theme.jpg#blog)
 
 At the Open Source Lab we host many of our sites as a Drupal multisite. This
 means that we have several instances of Drupal using the same theme, and then we
@@ -36,49 +39,49 @@ variables within it). This is how we get to
 ``osuosl_form_system_theme_settings_alter``. It’s not intuitive, but Drupal has
 excellent documentation to help you along. Now, on to some code!
 
-.. code-block:: php
-
-  <?php
-  function osuosl_form_system_theme_settings_alter(&$form, $form_state){
-  }
-  ?>
+```
+<?php
+function osuosl_form_system_theme_settings_alter(&$form, $form_state){
+}
+?>
+```
 
 Next, there are two variables that need to be added to the form. For each of
 these, we need to add them to the ``theme_settings`` array, and then make them
 into their own arrays to store all the necessary information about them.
 
-.. code-block:: php
-
-  <?php
-      function osuosl_form_system_theme_settings_alter(&$form, $form_state){
-          $form['theme_settings']['logo'] = array();
-          $form['theme_settings']['site_name'] = array();
-    }
-  ?>
+```
+<?php
+    function osuosl_form_system_theme_settings_alter(&$form, $form_state){
+        $form['theme_settings']['logo'] = array();
+        $form['theme_settings']['site_name'] = array();
+  }
+?>
+```
 
 Now we’ll fill in some variables about the logo and name
 
-.. code-block:: php
-
-  <?php
-  function osuosl_form_system_theme_settings_alter(&$form, $form_state){
-      $form['theme_settings']['logo'] = array(
-            '#type' => 'managed_file',
-            '#title' => t('logo'),
-            '#required' => TRUE,
-            '#default_value' => theme_get_setting('logo'),
-            '#upload_validators' => array(
-                'file_validate_extensions' => array('git png jpg jpeg')
-                )
-            );
-      $form['theme_settings']['site_name'] = array(
-            '#type' => 'textfield',
-            '#title' => t('site_name'),
-            '#default_value' => theme_get_setting('site_name')
-            'required' => TRUE,
-            );
-  }
-  ?>
+```
+<?php
+function osuosl_form_system_theme_settings_alter(&$form, $form_state){
+    $form['theme_settings']['logo'] = array(
+          '#type' => 'managed_file',
+          '#title' => t('logo'),
+          '#required' => TRUE,
+          '#default_value' => theme_get_setting('logo'),
+          '#upload_validators' => array(
+              'file_validate_extensions' => array('git png jpg jpeg')
+              )
+          );
+    $form['theme_settings']['site_name'] = array(
+          '#type' => 'textfield',
+          '#title' => t('site_name'),
+          '#default_value' => theme_get_setting('site_name')
+          'required' => TRUE,
+          );
+}
+?>
+```
 
 Now that osuosl-settings.php was done and my variables were ready to be put into
 the theme, I needed to add some defaults for them so that if the user didn’t
@@ -86,17 +89,17 @@ upload a logo or org name, there would still be something there. I decided to
 use the OSL logo and organization name under the assumption that the theme will
 be used primarily by us. So in ``osuosl.info``, I added the lines:
 
-.. code-block:: php
-
+```
   settings[logo] = images/logo-full.png
   settings[site_name] = OSU Open Source Lab
+```
 
 Finally, I had to call my variables in the Drupal templates so that they would
 be rendered when the site was built!
 
-.. code-block:: html
-
+```
   <a href="/"><img src="<?php print theme_get_setting('logo'); ?>" alt="<?php print (theme_get_setting('site_name'));?>" /></a>
+```
 
 Ta-da! Now, all the user has to do is go to Appearances->Theme->Settings to
 upload a new logo and fill in their organization name!

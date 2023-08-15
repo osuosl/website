@@ -1,9 +1,12 @@
-OSL Talks OSWALD and Ganeti at Open Source Bridge
-=================================================
-:date: 2011-07-22
-:author: OSUOSL Admin
-:slug: osl-talks-oswald-and-ganeti-open-source-bridge
-:img: osbridge_2011_lobby.jpg
+---
+title: OSL Talks OSWALD and Ganeti at Open Source Bridge
+date: 2011-07-22
+author: OSUOSL Admin
+slug: osl-talks-oswald-and-ganeti-open-source-bridge
+---
+by OSUOSL Admin on Fri, Jul 22 2011
+
+![OSL Talks OSWALD and Ganeti at Open Source Bridge](/images/osbridge_2011_lobby.jpg#blog)
 
 Three representatives of the Open Source Lab gave presentations at last week's
 [Open Source Bridge conference](http://opensourcebridge.org/) in Portland.
@@ -51,10 +54,7 @@ virtualization management tool developed by Google, is the launching point for
 Ganeti Web Manager (GWM), a web application that allows administrators and
 clients to access their Ganeti clusters.
 
-.. image:: /images/osbridge_2011_hacker_lounge.jpg
-   :scale: 100%
-   :align: center
-   :alt: OSBRIDGE 2011 Hacker Lounge
+![OSBRIDGE 2011 Hacker Lounge](/images/osbridge_2011_hacker_lounge.jpg#center)
 
 Many OSL members are part of GWM's development - both students and full-time
 staff. The tool is still in its early stages, but it's growing. Wednesday marked
@@ -79,9 +79,3 @@ before they even open a source file, and you don't want that."
 you."
 
 Photos by [Reid Beels](http://www.flickr.com/photos/reidab/) - Used under [Creative Commons License](http://creativecommons.org/licenses/by-nc-sa/2.0/)
-
-
-
-
-
-

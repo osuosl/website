@@ -1,8 +1,10 @@
-TeachEngineering Project Receives Award from NSF's National Science Digital Library
-===================================================================================
-:date: 2010-11-10
-:author: OSUOSL Admin
-:slug: teachengineering-award
+---
+title: TeachEngineering Project Receives Award from NSF's National Science Digital Library
+date: 2010-11-10
+author: OSUOSL Admin
+slug: teachengineering-award
+---
+by OSUOSL Admin on Wed, Nov 10 2010
 
 At the annual meeting of the [National Science Digital Library](http://nsdl.org/) in Washington,
 D.C. earlier this week, the [TeachEngineering digital library](http://www.teachengineering.org/) received a
@@ -27,11 +29,3 @@ Oregon State University. The project is hosted at [OSU’s Open Source Lab](/).
 For more information about TeachEngineering, visit http://teachengineering.org.
 For more information about the TeachEngineering project and the Open Source Lab,
 see our [TeachEngineering Featured Project Story](/blog/teachengineering)
-
-
-
-
-
-
-
-

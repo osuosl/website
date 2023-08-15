@@ -1,10 +1,11 @@
-Network Outage 2016-12-17 Post-mortem
-#####################################
-
-:date: 2016-12-19
-:author: Lance Albertson
-:slug: network-outage-2016-12-17
-:tags: outages, no-blog
+---
+title: Network Outage 2016-12-17 Post-mortem
+date: 2016-12-19
+author: Lance Albertson
+slug: network-outage-2016-12-17
+# :tags: outages, no-blog
+---
+by Lance Albertson on Mon, Dec 19 2016
 
 Issue Summary
 -------------
@@ -17,18 +18,16 @@ problem with the generator.
 Timeline
 --------
 
-.. csv-table::
-  :header: Time, Description
-  :widths: 4, 20
-
-  8:20AM PST (approx), OSU electricians start a planned power outage affecting the building our systems are housed in.
-  8:28AM PST, OSL received a page regarding several networks being off-line.
-  9:12AM PST, "OSL arrives on-site and confirms our primary data center is powered on and that none of the systems
+| Time | Description|
+|------|------------|
+  8:20AM PST (approx)| OSU electricians start a planned power outage affecting the building our systems are housed in.
+  8:28AM PST| OSL received a page regarding several networks being off-line.
+  9:12AM PST| "OSL arrives on-site and confirms our primary data center is powered on and that none of the systems
   had been rebooted."
-  9:30AM PST, "OSL confirms the root cause is a UPS problem in the basement data center which houses our ISP network
+  9:30AM PST| "OSL confirms the root cause is a UPS problem in the basement data center which houses our ISP network
   equipment."
-  11:07AM PST, Power restored in basement data center.
-  11:15AM PST, OSL Network was restored.
+  11:07AM PST| Power restored in basement data center.
+  11:15AM PST| OSL Network was restored.
 
 **Total Outage: 2 hours 49 minutes**
 
@@ -60,8 +59,7 @@ second fiber plant on the other side of campus as a backup. Once that is complet
 this should remove the single point of failure we have currently with our upstream Internet connection. As of right
 now, all external connectivity goes through this single data center.
 
-Problems during Recovery
-^^^^^^^^^^^^^^^^^^^^^^^^
+#### Problems during Recovery
 
 Even though this outage was not directly caused by OSL equipment, we did discover a few problems during the outage:
 
@@ -72,8 +70,7 @@ Even though this outage was not directly caused by OSL equipment, we did discove
 - No off-site status page was published nor in an updated state.
 - Lack of network access to our jumphost made it very difficult to log into off-site hosts.
 
-Changes that need to be made
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#### Changes that need to be made
 
 - Ensure the OSL gets planned outages related to the building the data center is located in a timely manner and to more
   than one person. And also ensure we notify our customers in a timely fashion for such planned outages.
@@ -82,8 +79,6 @@ Changes that need to be made
   This status page can be found at http://status.osuosl.org (Thank you [Status.io](http://status.io) for donating the service!).
 - We are investigating ways to allow our admins access to the systems in a secure manner while also not having to rely
   on the jumphost in case of emergencies.
-
-
 
 If there are any further questions, please contact us via our IRC channel (#osuosl) on Freenode or via our support
 ticket system.

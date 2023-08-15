@@ -1,18 +1,17 @@
-The OSL at PyCon
-----------------
-:date: 2016-06-30
-:auther: Amanda Kelner
-:slug: pycon-2016
-:img: PyCon16-logo.png
+---
+title: The OSL at PyCon
+date: 2016-06-30
+author: Amanda Kelner
+slug: pycon-2016
+---
+by OSU OSL on Thu, Jun 30 2016
+
+![The OSL at PyCon](/images/PyCon16-logo.png#blog)
 
 The month of June opened with the annual [PyCon](https://us.pycon.org/2016/) event at the Oregon Convention
 Center in Portland, the largest annual gathering for the [Python](https://www.python.org) community.
 This year, the OSL had the opportunity to send one of its own. `Matthew
 Johnson`_ presented a poster on Pymesync, a tool of Python.
-
-
-
-
 
 But first, what exactly do all these Py- words mean?
 

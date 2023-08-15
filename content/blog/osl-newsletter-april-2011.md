@@ -1,13 +1,12 @@
-OSL Newsletter - April 2011
-===========================
-:date: 2011-04-29
-:author: Lance Albertson
-:slug: osl-newsletter-april-2011
+---
+title: OSL Newsletter - April 2011
+date: 2011-04-29
+author: Lance Albertson
+slug: osl-newsletter-april-2011
+---
+by Lance Albertson on Fri, Apr 29 2011
 
-.. figure:: /images/OSL_Prineville.jpg
-   :scale: 100%
-   :align: center
-   :alt: OSL in Prineville
+![OSL in Prineville](/images/OSL_Prineville.jpg#center)
 
    **The OSL Team and Our Host, David Recordon, at Facebook's Prineville Data
    Center**
@@ -20,10 +19,6 @@ source. While we're busy looking forward and reviewing our progress thus far for
 on what we've been up to for the past few months since our [last newsletter](/blog/osl-newsletter-look-back-2010).
 If you'd like to receive more frequent news updates from the OSL,
 [follow us on Twitter](http://twitter.com/osuosl) or [find us on Facebook](http://www.facebook.com/OSUOSL).
-
-
-
-
 
 Thanks to Our Sponsors
 ----------------------
@@ -59,14 +54,6 @@ OSL and we are grateful for their generous support and the opportunity to
 participate in its open source programs for students, [Google Summer of Code](http://code.google.com/soc/)
 and [Google Code-In](http://code.google.com/gci).
 
-
-
-
-
-
-
-
-
 Facebook, the OSL and Supercell
 -------------------------------
 
@@ -82,14 +69,7 @@ running on Supercell and our first report from the field has come in from the
 Drupal project. You can learn more about Drupal's use of Supercell
 [on the blog](http://randyfay.com/node/99) of their stalwart Infrastructure Team member, [Randy Fay](http://twitter.com/randyfay).
 
-
-
-
-
-.. figure:: /images/dev_paradise.jpg
-   :scale: 100%
-   :align: center
-   :alt: Welcome to Developer's Paradise
+![Welcome to Developer's Paradise](/images/dev_paradise.jpg#center)
 
    Photo Credit: Nik Cubrilovic
 
@@ -100,9 +80,6 @@ We released the 0.6 version of [Ganeti Web Manager](http://code.osuosl.org/proje
 release included several new features to support users of Supercell. You can
 read all about the latest release of GWM on the blog of our Lead Developer,
 [Peter Krenesky](http://twitter.com/kreneskyp).
-
-
-
 
 Events and Conferences
 ----------------------
@@ -130,12 +107,12 @@ employees will be speaking at the two preeminent events in Portland this year.
 We hope to see you there!
 
 [Open Source Bridge](http://opensourcebridge.org/): Tim Harder, Analyst Programmer at the OSL, will be
-speaking on `OSWALD: Lessons from and for the Open Hardware Movement`_
+speaking on [OSWALD: Lessons from and for the Open Hardware Movement](http://opensourcebridge.org/proposals/629)
 
 [OSCON](http://oscon.com/): [Lance Albertson](http://twitter.com/ramereth), Lead Architect/Systems Administrator and Peter
 Krenesky, Lead Developer, will be presenting their tutorial
 [Hands-on Virtualization with Ganeti](http://www.oscon.com/oscon2011/public/schedule/detail/18544). They will also be giving a talk on
-`Ganeti Web Manager: Cluster Management Made Simple`_.
+[Ganeti Web Manager: Cluster Management Made Simple](http://www.oscon.com/oscon2011/public/schedule/detail/18464).
 
 **Southeast LinuxFest**
 
@@ -160,22 +137,6 @@ You may also be interested in hearing more about our talks at the
 [Linux Foundation Collaboration Summit](http://hawthornlandings.org/2011/04/19/notes-and-more-press-training-for-community-projects/). And don't forget to check out the
 highlights from our bi-annual Beaver BarCamp!
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Welcome to Our New Hosted Communities
 -------------------------------------
 
@@ -188,12 +149,6 @@ We've had five new projects join the OSL since our last newsletter:
   agreements for free and open source software,
 * [Python Mentors](http://pythonmentors.com/), the community portal for the Python-Core mentorship project
 * [QEMU](http://wiki.qemu.org/Main_Page), a generic and open source machine emulator and virtualizer.
-
-
-
-
-
-
 
 Please join us in welcoming our latest hosted communities!
 
@@ -216,8 +171,6 @@ pleasure, we present these interviews, penned by the lab's Student Writer,
 We've recently hired a new crop of students at the OSL, and we look forward to
 bringing you their stories in the coming months.
 
-
-
 Sharing Stories
 ---------------
 
@@ -226,9 +179,6 @@ hear from you. What stories from the OSL would you like to hear? What's going on
 in our hosted communities that we ought to be communicating to the wider OSL
 community? Send your thoughts to us on [Twitter](http://twitter.com/osuosl), [Facebook](http://www.facebook.com/OSUOSL) or by email to
 Leslie Hawthorn at leslie at osuosl dot org
-
-
-
 
 OSL Newsletter
 --------------

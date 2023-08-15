@@ -1,9 +1,12 @@
-A Successful DevOps DayCamp
-===========================
-:date: 2014-11-06
-:author: Rachel Turner
-:slug: successful-devops-daycamp
-:img: successfuldevopsdaycamp.jpg
+---
+title: A Successful DevOps DayCamp
+date: 2014-11-06
+author: Rachel Turner
+slug: successful-devops-daycamp
+---
+by Rachel Turner on Thu, Nov 06 2014
+
+![A Successful DevOps DayCamp](/images/successfuldevopsdaycamp.jpg#blog)
 
 Over 100 students and community members attended the Open Source Lab’s DevOps
 DayCamp in the Kelley Engineering Center at Oregon State University on Saturday,
@@ -48,5 +51,3 @@ access them,” Murphy says.
 
 DevOps BootCamp takes place on Mondays from 7-9pm in the Kelley Engineering
 Center. Check out the [website](http://devopsbootcamp.osuosl.org/) for more information!
-
-

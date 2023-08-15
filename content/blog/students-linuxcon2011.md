@@ -1,8 +1,10 @@
-Special Student Attendee Packages for LinuxCon North America 2011
-=================================================================
-:date: 2011-05-16
-:author: OSUOSL Admin
-:slug: students-linuxcon2011
+---
+title: Special Student Attendee Packages for LinuxCon North America 2011
+date: 2011-05-16
+author: OSUOSL Admin
+slug: students-linuxcon2011
+---
+by OSUOSL Admin on Mon, May 16 2011
 
 You may recall from our recent newsletter that the OSL team is organizing a
 student focused track at the [Linux Foundation's](http://www.linuxfoundation.org/) upcoming conference,
@@ -14,10 +16,7 @@ take place the week of August 15th in Vancouver, B.C., Canada.
 Conference registration is now open, and the folks at the Linux Foundation were
 kind enough to put together several discounted packages for student attendees.
 
-.. figure:: /images/tux_bus.jpg
-   :scale: 100%
-   :align: center
-   :alt: Tux Bus
+![Tux Bus](/images/tux_bus.jpg#center)
 
    All Aboard the Tux Bus for Vancouver!
 
@@ -48,10 +47,3 @@ We'll see you on the bus to Vancouver!
 
 *Ed. Note:* The [Tux Bus image](http://www.flickr.com/photos/frenchy/272476420/) is courtesy of Flickr user notfrancois and is
 used under a Creative Commons license.
-
-
-
-
-
-
-

@@ -1,12 +1,15 @@
-Reflections on My Time at the Open Source Lab, Travis Whitehead
----------------------------------------------------------------
-:author: Travis Whitehead
-:date: 2019-04-24
-:img: twhitehead_wide.jpg
-:slug: student-story-whitehet
-:tag: featured-stories
-:tags: student-stories
- 
+---
+title: Reflections on My Time at the Open Source Lab, Travis Whitehead
+author: Travis Whitehead
+date: 2019-04-24
+slug: student-story-whitehet
+# :tag: featured-stories
+# :tags: student-stories
+---
+by Travis Whitehead on Wed, Apr 24 2019
+
+![Reflections on My Time at the Open Source Lab, Travis Whitehead](/images/twhitehead_wide.jpg#center)
+
 Reflections on My Time at the Open Source Lab
 by Travis Whitehead
 
@@ -41,5 +44,3 @@ past several years.
 
 Excitingly, this is my last term at Oregon State. I'll be going on to work with [Tag1 Consulting](https://tag1consulting.com/), where I will continue
 to tackle exciting infrastructure challenges and contribute back to the open-source community whenever I can.
-
-

@@ -1,9 +1,12 @@
-OSL in the Spotlight at Summer Conferences
-==========================================
-:date: 2012-08-13
-:author: Kayla Harr
-:slug: osl-spotlight-summer-conferences
-:img: CorbinTalkWebsite_0.jpg
+---
+title: OSL in the Spotlight at Summer Conferences
+date: 2012-08-13
+author: Kayla Harr
+slug: osl-spotlight-summer-conferences
+---
+by Kayla Harr on Mon, Aug 13 2012
+
+![OSL in the Spotlight at Summer Conferences](/images/CorbinTalkWebsite_0.jpg#blog)
 
 The open source community is driven by the people who use, change and support
 open source software. This summer, members of the Open Source Lab staff enjoyed
@@ -57,11 +60,7 @@ significant contributions to communal and individual knowledge.
 “You can learn about things you weren’t aware of,” Wilson says. “It helps
 everybody here in a very tangible way.”
 
-.. image:: /images/KenRudyGregTalkWebsite.jpg
-   :scale: 100%
-   :align: center
-   :alt: Lund-Chaix, Lett and Grigar field questions after presenting on the
-         benefits of collaboration between developers and system administrators.
+![Lund-Chaix, Lett and Grigar field questions after presenting on the benefits of collaboration between developers and system administrators.](/images/KenRudyGregTalkWebsite.jpg#center)
 
 That commitment to supporting the open source community won Albertson the
 conference’s highest honor at its official party June 27. Albertson was
@@ -102,10 +101,7 @@ booth throughout the conference, sharing information about the lab’s current
 projects, explaining the OSL’s innovative integration of student employees and
 enjoying the opportunity to connect with other open source enthusiasts.
 
-.. image:: /images/OSCONWelcomeWebsite.jpg
-   :scale: 100%
-   :align: center
-   :alt: OSCON attendees at the Oregon Convention Center
+![OSCON attendees at the Oregon Convention Center](/images/OSCONWelcomeWebsite.jpg#center)
 
 “It was good to interact with the corporate world and meet people
 professionally,” says Dean Johnson, a sophomore who began working at the lab in
@@ -124,11 +120,7 @@ service, not just for other universities and governments, but for everyone.
 Having a regional site like that where we can grab security updates and things
 like that is fantastic.”
 
-.. image:: /images/OSCONBoothWebsite.jpg
-   :scale: 100%
-   :align: center
-   :alt: OSL staff and students greet OSL supporters, users and alumni at the
-         lab's OSCON booth.
+![OSL staff and students greet OSL supporters, users and alumni at the lab's OSCON booth.](/images/OSCONBoothWebsite.jpg#center)
 
 While at OSCON, Albertson delivered a talk on private cloud computing, and all
 of the OSL members in attendance hosted a Birds of a Feather session to
@@ -159,6 +151,3 @@ for the community is mentor the next generation of open source leaders.”
 
 To learn more about the OSL mission and find out how to support the lab's
 efforts, visit our [About](/about) and [Donate](/donate) pages.
-
-
-

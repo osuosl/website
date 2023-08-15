@@ -1,9 +1,12 @@
-SCALE x13
-=========
-:date: 2015-03-24
-:author: Elijah Voigt
-:slug: scale-x13
-:img: scale-x13.jpg
+---
+title: SCALE x13
+date: 2015-03-24
+author: Elijah Voigt
+slug: scale-x13
+---
+by Elijah Voigt on Tue, Mar 24 2015
+
+![SCALE x13](/images/scale-x13.jpg#blog)
 
 A few months ago, Emily Dunham and I were chatting about the talks we had
 recently presented at the Seattle GNU/Linux conference, and the topic of other

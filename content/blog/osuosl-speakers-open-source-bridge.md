@@ -1,8 +1,10 @@
-OSUOSL Speakers at Open Source Bridge
-=====================================
-:date: 2010-05-10
-:author: OSUOSL Admin
-:slug: osuosl-speakers-open-source-bridge
+---
+title: OSUOSL Speakers at Open Source Bridge
+date: 2010-05-10
+author: OSUOSL Admin
+slug: osuosl-speakers-open-source-bridge
+---
+by OSUOSL Admin on Mon, May 10 2010
 
 We're always excited to see open source events happening, especially when they
 are in our home state of Oregon! [Open Source Bridge](http://opensourcebridge.org/) will have its second
@@ -42,7 +44,7 @@ They will get into details about Varnish and Pressflow and give some real-world
 examples of similar setups at the OSUOSL.
 
 We're also very happy to see Alex Polvi, a former student employee at OSUOSL,
-come to give his talk: "`libcloud: a unified interface into the cloud`_". Alex
+come to give his talk: "[libcloud: a unified interface into the cloud](http://opensourcebridge.org/sessions/419)". Alex
 is the CEO at [Cloudkick](http://www.cloudkick.com/) where they use [libcloud](http://incubator.apache.org/libcloud/) to build their cloud
 management and monitoring services. libcloud is an Apache Incubator project
 which provides a unified interface into many cloud providers such as Amazon EC2,
@@ -50,13 +52,3 @@ Slicehost, and Rackspace.
 
 Hopefully you're as excited as we are to head to Open Source Bridge and check
 out these and many other great talks. See you there!
-
-
-
-
-
-
-
-
-
-

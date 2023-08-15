@@ -1,8 +1,10 @@
-Selected for Google Code-in 2010
-================================
-:date: 2010-11-04
-:author: Lance Albertson
-:slug: selected-google-code-2010
+---
+title: Selected for Google Code-in 2010
+date: 2010-11-04
+author: Lance Albertson
+slug: selected-google-code-2010
+---
+by Lance Albertson on Thu, Nov 04 2010
 
 We are thrilled to have been selected as mentoring organization for the
 [Google Code-in contest](http://code.google.com/gci).
@@ -41,12 +43,3 @@ email at **gci at osuosl dot org**
 
 If you're a Facebook fan, you can find updates on our [Facebook page](http://www.facebook.com/pages/Corvallis-OR/Open-Source-Lab/9136692949). You can
 also follow [@osuosl on Twitter](http://twitter.com/osuosl).
-
-
-
-
-
-
-
-
-

@@ -1,8 +1,10 @@
-OSL to Mentor Four in Google Summer of Code
-===========================================
+---
+title: OSL to Mentor Four in Google Summer of Code
 :date: 2013-06-05 20:11
 :author: Kayla Harr
 :slug: osl-to-mentor-four-in-google-summer-of-code
+---
+by Kayla Harr on Wed, Jun 05 2013
 
 Students from India, Poland and the United Kingdom will work on projects for the
 OSL this summer. The Oregon State University Open Source Lab has accepted four
@@ -10,9 +12,6 @@ college students from around the world as [Google Summer of Code 2013](http://ww
 participants. The four students will work on projects for the OSL over the
 summer with Google’s sponsorship and OSL staff members’ mentoring and
 supervision.
-
-
-
 
 The OSL has not had four GSOC students since 2010. OSL Director Lance Albertson
 attributes this year’s increased number of students, compared to only one in
@@ -34,11 +33,6 @@ clusters, nodes and virtual machines in GWM. A fourth student, Mark Antony
 Holland, who is from the United Kingdom and currently studying computer science
 in Spain, will work on incorporating functionality and user-interface
 improvements to the OSL-developed [Android OpenConferenceWare app](https://github.com/osuosl/ocw-android).
-
-
-
-
-
 
 The students will be mentored by OSL full-time developer Ken Lett, student
 developer Justin Noah and Albertson. Aside from having an array of time zones to

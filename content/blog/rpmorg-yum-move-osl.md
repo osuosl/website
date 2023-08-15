@@ -1,8 +1,10 @@
-rpm.org and yum move to OSUOSL
-==============================
-:date: 2008-09-29
-:author: OSUOSL Admin
-:slug: rpmorg-yum-move-osl
+---
+title: rpm.org and yum move to OSUOSL
+date: 2008-09-29
+author: OSUOSL Admin
+slug: rpmorg-yum-move-osl
+---
+by OSUOSL Admin on Mon, Sep 29 2008
 
 The Oregon State University Open Source Lab is proud to be the new home for two
 very important OSS projects. We are now hosting the main web sites, ticket
@@ -22,7 +24,3 @@ createrepo, the program which creates metadata used in package repositories
 
 The sites for RPM and yum can be found at http://rpm.org and
 http://yum.baseurl.org, respectively.
-
-
-
-
