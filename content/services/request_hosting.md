@@ -6,8 +6,9 @@ Please give us a few days or a week to discuss and respond to your request. This
 will send an email to our support ticket system.
 
 {{< raw >}}
+<script src="../theme/js/formsender-error.js"></script>
 <form class="webform-client-form" enctype="multipart/form-data"
-    action="https://osuosl.org" method=post id="webform-client-form-535"
+    action="https://formsender.osuosl.org:443" method=post id="webform-client-form-535"
     accept-charset="UTF-8">
     <div class="form-item webform-component webform-component-textfield" id="webform-component-name">
         <label for="edit-submitted-name">Name <span class="form-required" title="This field is required.">*</span></label>
@@ -61,7 +62,7 @@ will send an email to our support ticket system.
         <input type="text" id="edit-submitted-contributions" name="possible_contributions_to_cover_costs" value="" size="60" maxlength="128" class="form-text" required />
         <div class="description">We realize that most projects are not in a position to help cover the costs, but any contribution certainly helps!</div>
     </div>
-    <div class="g-recaptcha" data-sitekey="6LeOugIAAAAAALZJU8MBrWbtN6NC9sMGCu8Xgb41"></div>
+    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
     <!-- Formsender Settings -->
     <input type="hidden" name="last_name" value="" />
     <input type="hidden" name="token"

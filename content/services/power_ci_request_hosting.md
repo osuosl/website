@@ -154,7 +154,7 @@ to deploy Jenkins workers (ppc64le only).
       provided within 5-10 minutes.  If you don't receive this email please reach out to us at <a
       href="mailto:powerci-request@osuosl.org">powerci-request@osuosl.org</a> or via IRC in <b>#osuosl</b> on
       <a href="https://libera.chat/">Libera Chat</a>.</i></p>
-      <div class="g-recaptcha" data-sitekey="6LeOugIAAAAAALZJU8MBrWbtN6NC9sMGCu8Xgb41"></div>
+      <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
       <!-- Formsender Settings -->
       <input type="hidden" name="last_name" value="" />
       <input type="hidden" name="token" value="15674hsda//*q23%^13jnxccv3ds54sa4g4sa532323!OoRdsfISDIdks38*(dsfjk)aS" />
