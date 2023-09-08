@@ -62,19 +62,8 @@ body {
 .container {
 	position: relative;
 	width: 100%;
-	/* max-width: 1080px; */
 	margin: 0 auto;
 }
-
-/* .container--outer {
-	margin: 25px auto;
-	box-shadow: 0 0 10px rgba(50, 50, 50, .17);
-} */
-
-/* .wrapper {
-	padding: 25px;
-	background: #fff;
-} */
 
 .flex {
 	display: -webkit-flex;
@@ -1312,6 +1301,40 @@ textarea {
 
 .footer a:hover {
 	text-decoration: underline;
+}
+
+.footer_headers {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.footer_links {
+	margin: 20px;
+	margin-left: 0px;
+	text-decoration: none;
+}
+
+.footer_contact_header p {
+	margin: 20px;
+}
+
+.footer_link_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 170px;
+}
+
+.footer_link_container a {
+	text-decoration: none;
+}
+
+.footer_menu_link_container {
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 /* Media Queries */

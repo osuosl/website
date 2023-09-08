@@ -220,3 +220,4 @@ theme = 'mainroad'
     [[menu.main]]
         name = "Blog"
         weight = 5
+        url = "/blog"
