@@ -16,4 +16,4 @@ jobs:
           hugo-version: 'latest'
       
       - name: Build
-        run: hugo server
+        run: hugo
