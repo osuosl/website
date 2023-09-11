@@ -1,0 +1,16 @@
+{{ if .IsNamedParams }}
+<table class="projects_table">
+    <thead>
+        <th colspan="2">{{ .Params.table_title }} ({{ .Params.project_count }} projects)</th>
+    </thead>
+    <tbody>
+        {{ $data := index $.Site.Data $.Params.file }}
+        {{ range $data }}
+        <tr>
+            <td>{{ .name }}</td>
+            <td>{{ .description }}</td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>
+{{- end -}}
