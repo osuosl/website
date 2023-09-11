@@ -1,10 +1,9 @@
 ---
 title: A Recap of OSCON 2014
 date: 2014-07-31
-author: Rachel Turner
+authors: ["Rachel Turner"]
 slug: recap-oscon-2014
 ---
-by Rachel Turner on Thu, Jul 31 2014
 
 ![A Recap of OSCON 2014](/images/OSCON_blog_post_0.jpg#blog)
 

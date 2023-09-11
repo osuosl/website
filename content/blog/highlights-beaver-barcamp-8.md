@@ -1,10 +1,9 @@
 ---
 title: Highlights From Beaver Barcamp 8
 date: 2011-10-31
-author: OSUOSL Admin
+authors: ["OSUOSL Admin"]
 slug: highlights-beaver-barcamp-8
 ---
-by OSUOSL Admin on Mon, Oct 31 2011
 
 **Beaver BarCamp 8 Quick Facts:**
 

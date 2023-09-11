@@ -1,10 +1,9 @@
 ---
 title: Setting the Bar High
 date: 2012-05-10
-author: Kayla Harr
+authors: ["Kayla Harr"]
 slug: setting-bar-high
 ---
-by Kayla Harr on Thu, May 10 2012
 
 ![Setting the Bar High](/images/bbc9-clover.jpg#blog)
 

@@ -1,10 +1,9 @@
 ---
 title: OSL's April 2013 Newsletter
 date: 2013-05-01
-author: Mitchell Garcia
+authors: ["Mitchell Garcia"]
 slug: osls-april-2013-newsletter
 ---
-by Mitchell Garcia on Wed, May 01 2013
 
 ![Lance Albertson](/images/lalbertson.jpg)
 

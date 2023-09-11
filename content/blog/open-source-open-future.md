@@ -1,11 +1,9 @@
 ---
 title: Open Source, Open Future
 date: 2012-05-10
-author: Kayla Harr
+authors: ["Kayla Harr"]
 slug: open-source-open-future
 ---
-
-Submitted by Kayla Harr on May 10, 2012
 
 Students reap the benefits of professional programming experience at the OSU
 Open Source Lab

@@ -1,10 +1,9 @@
 ---
 title: My Experiences with Openstack
 date: 2014-09-15
-author: Geoff Corey
+authors: ["Geoff Corey"]
 slug: my-experiences-openstack
 ---
-by Geoff Corey on Mon, Sep 15 2014
 
 ![My Experiences with Openstack](/images/Geoffbloggraphic2_0.jpg#blog)
 

@@ -1,11 +1,9 @@
 ---
 title: "New Study to Investigate Use of Open Source Software for Securing the Energy Industry"
 date: 2011-08-07
-author: OSUOSL Admin
+authors: ["OSUOSL Admin"]
 slug: energysec
 ---
-
-by OSUOSL Admin on Sun, Aug 07 2011
 
 Energy Sector Security Consortium and the Oregon State University Open Source
 Lab Partner to Establish Effective and Inclusive Collaboration and Governance

@@ -1,7 +1,7 @@
 ---
 title: "Drupal Association supports OSUOSL with $15,000"
 date: 2009-12-28
-author: OSUOSL Admin
+authors: ["OSUOSL Admin"]
 slug: drupal-association-supports-osuosl-15000
 ---
 

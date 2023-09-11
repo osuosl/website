@@ -1,11 +1,10 @@
 ---
 title: OSL GSOC 2015 - Oregon's Catch
-slug: gsoc15-oregons-catch/
+slug: gsoc15-oregons-catch
 date: 2015-09-14
-author: Evan Tschuy
+authors: ["Evan Tschuy"]
 # :img: oregonscatch-gsoc.jpg
 ---
-by Evan Tschuy on Mon, Sep 14 2015
 
 ![GSOC 2015 Oregon's Catch](/images/oregonscatch-gsoc.jpg#blog)
 

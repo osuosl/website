@@ -1,10 +1,9 @@
 ---
 title: Using Variables in a Custom Drupal Theme
 date: 2014-10-01
-author: lucyw
+authors: ["lucyw"]
 slug: using-variables-custom-drupal-theme
 ---
-by lucyw on Wed, Oct 01 2014
 
 ![Using Variables in a Custom Drupal Theme](/images/variables-drupal-theme.jpg#blog)
 

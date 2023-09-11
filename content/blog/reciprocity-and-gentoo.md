@@ -1,10 +1,9 @@
 ---
 title: Reciprocity and Gentoo
 date: 2009-02-05
-author: OSUOSL Admin
+authors: ["OSUOSL Admin"]
 slug: reciprocity-and-gentoo
 ---
-by OSUOSL Admin on Thu, Feb 05 2009
 
 ![Reciprocity and Gentoo](/images/donnie_lance_gentoo_0.jpg#blog)
 

@@ -2,9 +2,8 @@
 title: Changing the World, One Line of Code at a Time
 date: 2018-02-15
 slug: osl-in-the-news
-author: Jonathan Frederick
+authors: ["Jonathan Frederick"]
 ---
-by Jonathan Frederick on Thu, Feb 15 2018
 
 ![Changing the World, One Line of Code at a Time](/images/OSLWorkers2Adjusted.jpg#blog)
 

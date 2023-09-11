@@ -2,7 +2,7 @@
 title: OSL's Cody Holliday Wins Regional DOE Cyber Defense Competition
 date: 2018-04-18
 slug: cody-holliday-ctf-2018
-author: Travis Whitehead
+authors: ["Travis Whitehead"]
 ---
 
 ![Cody Holliday CTF 2018](/images/cody-holliday-ctf-2018.jpg#blog)

@@ -2,9 +2,8 @@
 title: RTEMS
 slug: rtems
 date: 2016-02-24
-author: Amanda Kelner
+authors: ["Amanda Kelner"]
 ---
-by Amanda Kelner on Wed, Feb 24 2016
 
 ![RTEMS](/images/windows-on-building.jpg#blog)
 

@@ -2,9 +2,8 @@
 title: OSL Summer 2016 Internship
 date: 2016-10-31
 slug: summer-2016-internship
-author: Amanda Kelner
+authors: ["Amanda Kelner"]
 ---
-by Amanda Kelner on Mon, Oct 31 2016
 
 ![OSL Interns](/images/Interns2016-1.jpg#blog)
 

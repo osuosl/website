@@ -1,11 +1,10 @@
 ---
 title: Network Outage 2016-12-17 Post-mortem
 date: 2016-12-19
-author: Lance Albertson
+authors: ["Lance Albertson"]
 slug: network-outage-2016-12-17
 # :tags: outages, no-blog
 ---
-by Lance Albertson on Mon, Dec 19 2016
 
 Issue Summary
 -------------

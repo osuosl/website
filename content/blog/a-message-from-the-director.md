@@ -1,9 +1,8 @@
 ---
 title: A Message from the Director
 date: 2017-08-15
-author: Lance Albertson
+authors: ["Lance Albertson"]
 ---
-by Lance Albertson on Tue, Aug 15 2017
 
 ![OSL Sign](/images/OSLSignPicture.jpg#blog)
 

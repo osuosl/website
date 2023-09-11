@@ -1,10 +1,9 @@
 ---
 title: Top 10 Milestones
 date: 2013-08-22
-author: Melissa Morse
+authors: ["Melissa Morse"]
 slug: top-10-milestones
 ---
-by Melissa Morse on Thu, Aug 22 2013
 
 ![Top 10 Milestones](/images/top-10-milestones.jpg#blog)
 

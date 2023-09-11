@@ -1,10 +1,9 @@
 ---
 title: OSL Newsletter - April 2011
 date: 2011-04-29
-author: Lance Albertson
+authors: ["Lance Albertson"]
 slug: osl-newsletter-april-2011
 ---
-by Lance Albertson on Fri, Apr 29 2011
 
 ![OSL in Prineville](/images/OSL_Prineville.jpg#center)
 

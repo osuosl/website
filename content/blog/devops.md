@@ -1,11 +1,9 @@
 ---
 title: Building a Bright Future With DevOps
 date: 2012-08-02
-author: Kayla Harr
+authors: ["Kayla Harr"]
 slug: devops
 ---
-
-Submitted by Kayla Harr on August 2, 2012
 
 ![Student Experience at OSUOSL](/images/MikeRacksPicweb.jpg#blog)
 

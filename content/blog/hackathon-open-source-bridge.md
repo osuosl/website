@@ -1,10 +1,9 @@
 ---
 title: Hackathon at Open Source Bridge
 date: 2009-06-15
-author: OSUOSL Admin
+authors: ["OSUOSL Admin"]
 slug: hackathon-open-source-bridge
 ---
-by OSUOSL Admin on Mon, Jun 15 2009
 
 The Open Source Lab is organizing a Hackathon (code sprint) at the
 [Open Source Bridge conference](http://opensourcebridge.org/), 

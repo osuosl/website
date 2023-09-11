@@ -1,12 +1,11 @@
 ---
 title: Reflections on My Time at the Open Source Lab, Travis Whitehead
-author: Travis Whitehead
+authors: ["Travis Whitehead"]
 date: 2019-04-24
 slug: student-story-whitehet
 # :tag: featured-stories
 # :tags: student-stories
 ---
-by Travis Whitehead on Wed, Apr 24 2019
 
 ![Reflections on My Time at the Open Source Lab, Travis Whitehead](/images/twhitehead_wide.jpg#center)
 

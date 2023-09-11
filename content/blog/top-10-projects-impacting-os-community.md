@@ -1,10 +1,9 @@
 ---
 title: Top 10 Projects Impacting the Open Source Community
 date: 2013-09-13
-author: Melissa Morse
+authors: ["Melissa Morse"]
 slug: top-10-projects-impacting-open-source-community
 ---
-by Melissa Morse on Fri, Sep 13 2013
 
 ![Top 10 Projects Impacting the Open Source Community](/images/osl10-projects-impacting-the-os-community.png#blog)
 

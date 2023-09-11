@@ -1,7 +1,7 @@
 ---
 title: Hardware Donation Expands OSUOSL Infrastructure
 date: 2009-05-22
-author: OSUOSL Admin
+authors: ["OSUOSL Admin"]
 slug: hardware-donation-expands-osuosl-infrastructure
 ---
 

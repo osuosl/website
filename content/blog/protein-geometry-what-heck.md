@@ -1,10 +1,9 @@
 ---
 title: Protein Geometry - What the Heck is That?
 date: 2014-03-29
-author: Jack Twilley
+authors: ["Jack Twilley"]
 slug: protein-geometry-what-heck
 ---
-by Jack Twilley on Sat, Mar 29 2014
 
 ![Protein Geometry - What the Heck is That?](/images/jack-twilley-post.png#blog)
 

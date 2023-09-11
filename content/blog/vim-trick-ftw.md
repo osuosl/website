@@ -1,10 +1,9 @@
 ---
 title: Vim Trick FTW!
 date: 2014-06-11
-author: Emily Dunham
+authors: ["Emily Dunham"]
 slug: vim-trick-ftw
 ---
-by Emily Dunham on Wed, Jun 11 2014
 
 ![Vim Trick FTW!](/images/emilyvim.png#blog)
 

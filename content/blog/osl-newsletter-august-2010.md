@@ -1,10 +1,9 @@
 ---
 title: OSL Newsletter - August 2010
 date: 2010-08-11
-author: Lance Albertson
+authors: ["Lance Albertson"]
 slug: osl-newsletter-august-2010
 ---
-by Lance Albertson on Wed, Aug 11 2010
 
 OSL Newsletter
 --------------

@@ -2,9 +2,8 @@
 title: TDS Telecom Support of OSU Open Source Lab Tops $5 Million
 date: 2018-06-20
 slug: tds-telecom-support
-author: Mohamed Eldebri
+authors: ["Mohamed Eldebri"]
 ---
-by Mohamed Eldebri on Wed, Jun 20 2018
 
 ![TDS Telecom Support of OSU Open Source Lab Tops $5 Million](/images/tds_osl_logos.png#blog)
 

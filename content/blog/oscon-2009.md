@@ -1,10 +1,9 @@
 ---
 title: OSCON 2009
 date: 2009-07-17
-author: OSUOSL Admin
+authors: ["OSUOSL Admin"]
 slug: oscon-2009
 ---
-by OSUOSL Admin on Fri, Jul 17 2009
 
 Being located so close to Portland, of course we at the OSU Open Source Lab were
 sad to see OSCON move down to the Bay Area this year. However, it remains a

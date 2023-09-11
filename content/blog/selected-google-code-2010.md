@@ -1,10 +1,9 @@
 ---
 title: Selected for Google Code-in 2010
 date: 2010-11-04
-author: Lance Albertson
+authors: ["Lance Albertson"]
 slug: selected-google-code-2010
 ---
-by Lance Albertson on Thu, Nov 04 2010
 
 We are thrilled to have been selected as mentoring organization for the
 [Google Code-in contest](http://code.google.com/gci).

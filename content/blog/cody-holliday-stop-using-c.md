@@ -1,10 +1,9 @@
 ---
 title: Cody Holliday on Why we should stop using C
 date: 2017-07-31
-author: Cody Holliday
+authors: ["Cody Holliday"]
 slug: cody-holliday-stop-using-c
 ---
-by Cody Holliday on Mon, Jul 31 2017
 
 Programming languages are a touchy topic in Computer Science. In certain crowds even mentioning a language will elicit
 groans and eye-rolling. Conversely, there are crowds that will only use certain languages for all projects.

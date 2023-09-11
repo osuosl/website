@@ -1,10 +1,9 @@
 ---
 title: The OSL at PyCon
 date: 2016-06-30
-author: Amanda Kelner
+authors: ["Amanda Kelner"]
 slug: pycon-2016
 ---
-by OSU OSL on Thu, Jun 30 2016
 
 ![The OSL at PyCon](/images/PyCon16-logo.png#blog)
 

@@ -2,9 +2,8 @@
 title: Donate to Our Crowdfunding Campaign!
 date: 2017-08-03
 slug: crowdfunding-campaign-2017
-author: Amanda Kelner
+authors: ["Amanda Kelner"]
 ---
-by Amanda Kelner on Thu, Aug 03 2017
 
 ![OSL Students](/images/OSLWorkers2Adjusted.jpg#blog)
 

@@ -1,10 +1,9 @@
 ---
 title: OSL Talks OSWALD and Ganeti at Open Source Bridge
 date: 2011-07-22
-author: OSUOSL Admin
+authors: ["OSUOSL Admin"]
 slug: osl-talks-oswald-and-ganeti-open-source-bridge
 ---
-by OSUOSL Admin on Fri, Jul 22 2011
 
 ![OSL Talks OSWALD and Ganeti at Open Source Bridge](/images/osbridge_2011_lobby.jpg#blog)
 

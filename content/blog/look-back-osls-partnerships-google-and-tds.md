@@ -1,10 +1,9 @@
 ---
 title: A Look Back at the OSL's Partnerships with Google and TDS
 date: 2006-03-06
-author: Anonymous
+authors: ["Anonymous"]
 slug: look-back-osls-partnerships-google-and-tds
 ---
-by Anonymous on Mon, Mar 06 2006
 
 *As the Open Source Lab celebrates a decade of open source hosting, development
 and education, the lab is reflecting on its past accomplishments. Below is a

@@ -1,10 +1,9 @@
 ---
 title: SCALE x13
 date: 2015-03-24
-author: Elijah Voigt
+authors: ["Elijah Voigt"]
 slug: scale-x13
 ---
-by Elijah Voigt on Tue, Mar 24 2015
 
 ![SCALE x13](/images/scale-x13.jpg#blog)
 

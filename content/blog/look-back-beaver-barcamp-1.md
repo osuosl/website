@@ -1,10 +1,9 @@
 ---
 title: A Look Back at Beaver BarCamp 1
 date: 2013-08-19
-author: Melissa Morse
+authors: ["Melissa Morse"]
 slug: look-back-beaver-barcamp-1
 ---
-by Melissa Morse on Mon, Aug 19 2013
 
 ![First Beaver BarCamp](/images/FirstBeaverBarCamp.png#blog)
 

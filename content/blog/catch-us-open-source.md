@@ -1,10 +1,9 @@
 ---
 title: Catch us at Open Source Bridge
 date: 2009-06-17
-author: OSUOSL Admin
+authors: ["OSUOSL Admin"]
 slug: catch-us-open-source-bridge
 ---
-by OSUOSL Admin on Wed, Jun 17 2009
 
 Open Source Bridge starts today and runs through Friday at the
 [Oregon Convention Center](http://oregoncc.org/) in Portland, Oregon. 

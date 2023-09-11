@@ -1,10 +1,9 @@
 ---
 title: Mohamed Eldebri on OSL's participation in the Corvallis Maker Fair
 date: 2018-05-07
-author: Mohamed Eldebri
+authors: ["Mohamed Eldebri"]
 slug: mohamed-eldebri-maker-fair
 ---
-by Mohamed Eldebri on Mon, May 07 2018
 
 On April 28th, 2018, the OSL participated in the Corvallis Maker Fair for the second year in a row. We hosted 2 booths,
 the first had demos of programs in Python and Scratch, and the second had a HAProxy cluster with diskless nodes, which

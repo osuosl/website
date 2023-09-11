@@ -1,10 +1,9 @@
 ---
 title: CASS and the AllSeen Alliance
 date: 2016-02-11
-author: Amanda Kelner
+authors: ["Amanda Kelner"]
 slug: cass-allseen-alliance
 ---
-by Amanda Kelner on Thu, Feb 11 2016
 
 ![AllSeen Alliance](/images/AllSeen-Alliance-Picture.png#blog)
 

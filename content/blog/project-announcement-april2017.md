@@ -2,9 +2,8 @@
 title: "New Project: polr"
 date: 2017-08-09
 slug: project-announcement-polr
-author: Amanda Kelner
+authors: ["Amanda Kelner"]
 ---
-by Amanda Kelner on Wed, Aug 09 2017
 
 ![OSL Sign New Project](/images/NewProjectAdjustedImage.png#blog)
 

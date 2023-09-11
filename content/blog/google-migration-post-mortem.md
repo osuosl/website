@@ -1,10 +1,9 @@
 ---
 title: Google Migration Post-mortem
 date: 2014-07-03
-author: Justin Dugger
+authors: ["Justin Dugger"]
 slug: google-migration-post-mortem
 ---
-by Justin Dugger on Thu, Jul 03 2014
 
 ![Google Migration Post Mortem](/images/Justinblog1_0.gif#blog)
 

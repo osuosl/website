@@ -1,10 +1,9 @@
 ---
 title: OpenConferenceWare-Android Launched for OSCON
 date: 2010-07-12
-author: OSUOSL Admin
+authors: ["OSUOSL Admin"]
 slug: openconferenceware-android-launched-oscon
 ---
-by OSUOSL Admin on Mon, Jul 12 2010
 
 We are happy to announce that we've completed work on our
 OpenConferenceware-Android application to make it available for OSCON 2010. You

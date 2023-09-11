@@ -1,10 +1,9 @@
 ---
 title: OSUOSL Hosts OpenMRS Development
 date: 2009-01-12
-author: OSUOSL Admin
+authors: ["OSUOSL Admin"]
 slug: osuosl-hosts-openmrs-development
 ---
-by OSUOSL Admin on Mon, Jan 12 2009
 
 OpenMRS is an open source electronic medical record system framework. Led by the
 [Regenstrief Institute](http://regenstrief.org/) and [Partners In Health](http://pih.org/), OpenMRS has been implemented

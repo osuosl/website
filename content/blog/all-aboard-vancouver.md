@@ -1,7 +1,7 @@
 ---
 title: All Aboard for Vancouver!
 date: 2011-08-10
-author: OSUOSL Admin
+authors: ["OSUOSL Admin"]
 slug: all-aboard-vancouver
 ---
 

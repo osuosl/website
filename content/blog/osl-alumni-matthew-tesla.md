@@ -2,9 +2,8 @@
 title: OSL Alumnus Matthew Johnson on working at Tesla
 date: 2019-03-07
 slug: osl-alumni-matthew-johnson
-author: Jerry Peng
+authors: ["Jerry Peng"]
 ---
-by Jerry Peng on Thu, Mar 07 2019
 
 ![OSL Alumnus Matthew Johnson on working at Tesla](/images/matthew.jpg#blog)
 

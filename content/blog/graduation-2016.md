@@ -1,10 +1,9 @@
 ---
 title: Congratulations 2016 Graduates!
 date: 2016-06-01
-author: Amanda Kelner
+authors: ["Amanda Kelner"]
 slug: graduation-2016
 ---
-by Amanda Kelner on Wed, Jun 01 2016
 
 ![OSL 2016 graduates](/images/Graduation2016PostPicture.png#blog)
 

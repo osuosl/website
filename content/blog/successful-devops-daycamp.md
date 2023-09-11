@@ -1,10 +1,9 @@
 ---
 title: A Successful DevOps DayCamp
 date: 2014-11-06
-author: Rachel Turner
+authors: ["Rachel Turner"]
 slug: successful-devops-daycamp
 ---
-by Rachel Turner on Thu, Nov 06 2014
 
 ![A Successful DevOps DayCamp](/images/successfuldevopsdaycamp.jpg#blog)
 

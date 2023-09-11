@@ -1,10 +1,9 @@
 ---
 title: "OSL Announces 10 year Celebration; Attends OSCON"
 date: 2013-07-30 21:03
-author: Melissa
+authors: ["Melissa"]
 slug: osl-announces-10-year-celebration-attends-oscon
 ---
-by Melissa on Tue, Jul 30 2013
 
 ![OSL Announces 10 year Celebration; Attends OSCON](/images/osl-announces-10.jpg#blog)
 

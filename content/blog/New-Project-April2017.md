@@ -2,9 +2,8 @@
 title: "New Project: libpng Now Mirrored on ftp.osuosl.org"
 date: 2017-04-28
 slug: new-project-libpng
-author: Amanda Kelner
+authors: ["Amanda Kelner"]
 ---
-by Amanda Kelner on Fri, Apr 28 2017
 
 ![New Project: libpng Now Mirrored on ftp.osuosl.org](/images/NewProjectAdjustedImage.png#blog)
 
