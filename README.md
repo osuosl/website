@@ -3,6 +3,8 @@ OSUOSL Hugo Static Site
 
 Migrated from our static [Pelican site](https://github.com/osuosl/osuosl-pelican)
 
+Based off of the Mainroad theme on https://github.com/Vimux/Mainroad
+
 Changes From Pelican
 --------------------
 
