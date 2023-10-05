@@ -1,99 +1,102 @@
--  
+-
   name: Abyss OS
-  description: "Abyss is a modern take on the 'just enough OS' paradigm, with a focus on modern components (LLVM, musl) and flexibility."
--  
+  description: Abyss is a modern take on the “just enough OS” paradigm, with a focus on modern components (LLVM, musl) and flexibility.
+-
   name: AlmaLinux
-  description: "AlmaLinux is an Open Source and forever-free enterprise Linux distribution, governed and driven by the community, focused on long-term stability and providing a robust production-grade platform that is 1:1 binary compatible with RHEL® and pre-CentOS-Stream CentOS™ (e.g. CentOS 8.3). Founded by the team behind the well-established CloudLinux OS."
--  
+  description: AlmaLinux is an Open Source and forever-free enterprise Linux distribution, governed and driven by the community, focused on long-term stability and providing a robust production-grade platform that is 1:1 binary compatible with RHEL® and pre-CentOS-Stream CentOS™ (e.g. CentOS 8.3). Founded by the team behind the well-established CloudLinux OS.
+-
   name: Antrea
-  description: "A Kubernetes-native project that implements the Container Network Interface (CNI) and Kubernetes NetworkPolicy thereby providing network connectivity and security for pod workloads."
--  
+  description: A Kubernetes-native project that implements the Container Network Interface (CNI) and Kubernetes NetworkPolicy thereby providing network connectivity and security for pod workloads.
+-
+  name: Armbian
+  description: The Armbian mission is to develop, maintain and provide a solid Linux operating system alongside with a SDK for wide range of special purpose hardware, commonly refered to as single board computers.
+-
   name: Chimera Linux
-  description: "Chimera is a general-purpose Linux system based on FreeBSD core userland utilities, the LLVM toolchain, musl libc and the apk package manager. The goal is to provide a system that is simple and clean yet fully-featured, and to improve the portability and quality of software across the Linux stack."
--  
+  description: Chimera is a general-purpose Linux system based on FreeBSD core userland utilities, the LLVM toolchain, musl libc and the apk package manager. The goal is to provide a system that is simple and clean yet fully-featured, and to improve the portability and quality of software across the Linux stack.
+-
   name: Cinc Project
-  description: "aarch64 builds for various Cinc Project packages (Cinc Client primarily)."
--  
+  description: aarch64 builds for various Cinc Project packages (Cinc Client primarily).
+-
   name: Eclipse Adoptium
-  description: "Provide a freely redistributable, open-source distribution of OpenJDK."
--  
+  description: Provide a freely redistributable, open-source distribution of OpenJDK.
+-
   name: Eclipse OpenJ9 & Eclipse OMR
-  description: "Eclipse OpenJ9 is a high performance, scalable, Java virtual machine (JVM) implementation that represents hundreds of person-years of effort. Contributed to the Eclipse project by IBM, the OpenJ9 JVM underpins the IBM SDK, Java Technology Edition product that is a core component of many IBM Enterprise software products. Continued development of OpenJ9 at the Eclipse foundation ensures wider collaboration, fresh innovation, and the opportunity to influence the development of OpenJ9 for the next generation of Java applications."
--  
+  description: Eclipse OpenJ9 is a high performance, scalable, Java virtual machine (JVM) implementation that represents hundreds of person-years of effort. Contributed to the Eclipse project by IBM, the OpenJ9 JVM underpins the IBM SDK, Java Technology Edition product that is a core component of many IBM Enterprise software products. Continued development of OpenJ9 at the Eclipse foundation ensures wider collaboration, fresh innovation, and the opportunity to influence the development of OpenJ9 for the next generation of Java applications.
+-
   name: Eclipse Platform
-  description: "Eclipse platform project builds a very popular Eclipse IDE. This project is completely open source and recently Eclipse community started supporting AARC64 architecture."
--  
+  description: Eclipse platform project builds a very popular Eclipse IDE. This project is completely open source and recently Eclipse community started supporting AARC64 architecture.
+-
   name: ELRepo
-  description: "The ELRepo Project focuses on hardware related packages to enhance your experience with Enterprise Linux. This includes filesystem drivers, graphics drivers, network drivers, sound drivers, webcam and video drivers."
--  
+  description: The ELRepo Project focuses on hardware related packages to enhance your experience with Enterprise Linux. This includes filesystem drivers, graphics drivers, network drivers, sound drivers, webcam and video drivers.
+-
   name: GCC GNU Compiler Farm
-  description: "The GCC Compile farm project maintains a set of machines of various architectures and provides ssh access to Free Software developers, GCC and others (GPL, BSD, MIT, ...) to build, test and debug Free, Libre and Open Source Software. It is not a free cluster for computationally intensive computing using Free Software."
--  
+  description: The GCC Compile farm project maintains a set of machines of various architectures and provides ssh access to Free Software developers, GCC and others (GPL, BSD, MIT, ...) to build, test and debug Free, Libre and Open Source Software. It is not a free cluster for computationally intensive computing using Free Software.
+-
   name: GenPi64
-  description: "We are enabling people an easier way to utilize Raspberry Pi's running Gentoo by providing an binary host (hosting binary files of the build packages), and images that can be flashed directly onto the SD card of an RPi and have an working install of Gentoo already."
--  
+  description: We are enabling people an easier way to utilize Raspberry Pi's running Gentoo by providing an binary host (hosting binary files of the build packages), and images that can be flashed directly onto the SD card of an RPi and have an working install of Gentoo already.
+-
   name: Gentoo Linux
   description: "Gentoo Foundation Mission Statement: To promote the advancement of free knowledge and Free and Open Source Software (FOSS) through the primary vehicle of the meta-distribution known as Gentoo. These goals are accomplished through relationships with free software authors, technical contributions to external projects, and a thriving community of volunteers that make Gentoo possible."
--  
+-
   name: GNOME Foundation
-  description: "The GNOME Foundation is a non-profit organization that believes in a world where everyone is empowered by technology they can trust. We do this by building a diverse and sustainable free software personal computing ecosystem."
--  
+  description: The GNOME Foundation is a non-profit organization that believes in a world where everyone is empowered by technology they can trust. We do this by building a diverse and sustainable free software personal computing ecosystem.
+-
   name: HELICS
-  description: "HELICS is a framework that enables simulators to synchronize time and exchange data, that is primarily used in electric grid research. It is used by at multiple national labs and universities, and has gotten some use by the research division of some commercial companies."
--  
+  description: HELICS is a framework that enables simulators to synchronize time and exchange data, that is primarily used in electric grid research. It is used by at multiple national labs and universities, and has gotten some use by the research division of some commercial companies.
+-
   name: Heptapod
-  description: " A community driven effort to bring Mercurial SCM support to GitLab."
--  
+  description: A community driven effort to bring Mercurial SCM support to GitLab.
+-
   name: Jitesoft
-  description: " Jitesoft strive to provide up-to-date, optimized and secure docker/oci images for multiple architectures, free of charge. All images and build-scripts are released under the MIT license and can be found on GitLab and GitHub. https://gitlab.com/jitesoft/dockerfiles"
--  
+  description: Jitesoft strive to provide up-to-date, optimized and secure docker/oci images for multiple architectures, free of charge. All images and build-scripts are released under the MIT license and can be found on GitLab and GitHub. https://gitlab.com/jitesoft/dockerfiles
+-
   name: Kali Linux
-  description: " Kali Linux is an open-source, multi-platform distribution, aimed at advanced Penetration Testing and Security Auditing. Kali Linux provides several hundred common tools and industry specific modifications, targeted towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics, Reverse Engineering, Vulnerability Management and Red Team Testing."
--  
+  description: Kali Linux is an open-source, multi-platform distribution, aimed at advanced Penetration Testing and Security Auditing. Kali Linux provides several hundred common tools and industry specific modifications, targeted towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics, Reverse Engineering, Vulnerability Management and Red Team Testing.
+-
   name: Minio
-  description: "Testing minio object storage server on ARM architecture."
--  
+  description: Testing minio object storage server on ARM architecture.
+-
   name: MSYS2
-  description: "MSYS2 is a collection of tools and libraries providing you with an easy-to-use environment for building, installing and running native Windows software."
--  
+  description: MSYS2 is a collection of tools and libraries providing you with an easy-to-use environment for building, installing and running native Windows software.
+-
   name: Node.js
-  description: " Node.js is a JavaScript runtime for servers. It runs on a variety of OS and architecture platforms (https://github.com/nodejs/node/blob/main/BUILDING.md#platform-list for the current list), including Linux on AARCH64 (arm64)."
--  
+  description: Node.js is a JavaScript runtime for servers. It runs on a variety of OS and architecture platforms (https://github.com/nodejs/node/blob/main/BUILDING.md#platform-list for the current list), including Linux on AARCH64 (arm64).
+-
   name: OpenDev
-  description: "OpenDev is a collaboratory for open source software development at scale. CI nodes supporting projects such as Openstack, Airship, Kata, pypa/pip, pyca/cryptography etc."
--  
+  description: OpenDev is a collaboratory for open source software development at scale. CI nodes supporting projects such as Openstack, Airship, Kata, pypa/pip, pyca/cryptography etc.
+-
   name: OpenFaaS
-  description: "Making Serverless Functions Simple. Troubleshooting and development of ARM64 support for builds (to create artifacts) and function templates."
--  
+  description: Making Serverless Functions Simple. Troubleshooting and development of ARM64 support for builds (to create artifacts) and function templates.
+-
   name: Open Mandriva
-  description: " Powerful and state of art, Linux distribution focused on desktop use"
--  
+  description: Powerful and state of art, Linux distribution focused on desktop use
+-
   name: OpenZFS
-  description: "OpenZFS is an advanced file system and volume manager which was originally developed for Solaris and is now maintained by the OpenZFS community."
--  
+  description: OpenZFS is an advanced file system and volume manager which was originally developed for Solaris and is now maintained by the OpenZFS community.
+-
   name: OSMC
-  description: " A media centre for people. Play everything without collecting any data."
--  
+  description: A media centre for people. Play everything without collecting any data.
+-
   name: RebornOS
-  description: " A user-friendly Arch Linux distribution which provides interface solutions to things you normally have to do in a terminal"
--  
+  description: A user-friendly Arch Linux distribution which provides interface solutions to things you normally have to do in a terminal
+-
   name: Rocky Linux
-  description: " Rocky Linux is an open-source enterprise operating system designed to be 100% bug-for-bug compatible with Red Hat Enterprise Linux. It is under intensive development by the community."
--  
+  description: Rocky Linux is an open-source enterprise operating system designed to be 100% bug-for-bug compatible with Red Hat Enterprise Linux. It is under intensive development by the community.
+-
   name: sourceware
-  description: " sourceware provides hosting for the GNU Toolchain, gcc, binutils, gdb, glibc, but also various other related projects like valgrind, elfutils, bzip2, libabigail, dwz, debugedit."
--  
+  description: sourceware provides hosting for the GNU Toolchain, gcc, binutils, gdb, glibc, but also various other related projects like valgrind, elfutils, bzip2, libabigail, dwz, debugedit.
+-
   name: Spack
-  description: " Spack is the “App store” for running scientific software on supercomputers by drastically reducing deployment time and delivering the best possible performance of the software"
--  
+  description: Spack is the “App store” for running scientific software on supercomputers by drastically reducing deployment time and delivering the best possible performance of the software
+-
   name: Termux
-  description: "Termux is a terminal running on Android. It does not need root and runs on internal storage (not on SD card). You can run Linux through proot or chroot. Most termux users run termux on the aarch64 architecture machine, which can be used to compile software suitable for termux and conduct performance testing."
--  
+  description: Termux is a terminal running on Android. It does not need root and runs on internal storage (not on SD card). You can run Linux through proot or chroot. Most termux users run termux on the aarch64 architecture machine, which can be used to compile software suitable for termux and conduct performance testing.
+-
   name: tcpdump/libpcap
-  description: "A packet analyzer for UNIX-like OSes"
--  
+  description: A packet analyzer for UNIX-like OSes
+-
   name: The NetBSD Foundation
-  description: "Improving building and optimizing AARCH64 support on NetBSD with Ampere hardware"
--  
+  description: Improving building and optimizing AARCH64 support on NetBSD with Ampere hardware
+-
   name: The Tor Project
-  description: "To advance human rights and freedoms by creating and deploying free and open source anonymity and privacy technologies, supporting their unrestricted availability and use, and furthering their scientific and popular understanding."
+  description: To advance human rights and freedoms by creating and deploying free and open source anonymity and privacy technologies, supporting their unrestricted availability and use, and furthering their scientific and popular understanding.

@@ -68,7 +68,7 @@ will send an email to our support ticket system.
     <input type="hidden" name="token"
         value="15674hsda//*q23%^13jnxccv3ds54sa4g4sa532323!OoRdsfISDIdks38*(dsfjk)aS" />
     <!-- The following must be set to http://www.osuosl.org/request-hosting in production -->
-    <input type="hidden" name="redirect" value="https://www.osuosl.org/form-submitted" />
+    <input type="hidden" name="redirect" value="/form-submitted" />
     <input type="hidden" name="mail_subject_prefix" value="New Hosting Request" />
     <input type="hidden" name="mail_subject_key" value="project_name" />
     <input type="hidden" name="send_to" value="HostingRequests" />

@@ -177,7 +177,7 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
       <input type="hidden" name="last_name" value="" />
       <input type="hidden" name="token" value="15674hsda//*q23%^13jnxccv3ds54sa4g4sa532323!OoRdsfISDIdks38*(dsfjk)aS" />
       <!-- The following must be set to http://www.osuosl.org/services/powerdev/request_hosting in production -->
-      <input type="hidden" name="redirect" value="https://www.osuosl.org/form-submitted" />
+      <input type="hidden" name="redirect" value="/form-submitted" />
       <input type="hidden" name="mail_subject_prefix" value="New PowerLinux/OpenPOWER Hosting Request" />
       <input type="hidden" name="mail_subject_key" value="project_name" />
       <input type="hidden" name="send_to" value="PowerDev" />

@@ -3,7 +3,7 @@ title: "Staff"
 slug: /people
 ---
 
-Lance Albertson
+[Lance Albertson](#lance-albertson){#lance-albertson}
 ------------------
 
   **Director**
@@ -29,7 +29,7 @@ Ramereth
 
 {{< line_break >}}
 
-Max Schmidt
+[Max Schmidt](#max-schmidt){#max-schmidt}
 ------------------
 
   **Faculty Research Assistant - Computational Scientist**
@@ -55,55 +55,31 @@ madmax-cw
 
 {{< line_break >}}
 
-Ethan Hampton
-----------------
+[Sharon Bousso](#sharon-bousso){#sharon-bousso}
+------------------
+
+![Sharon Bousso](/images/sharon_bousso.png#right-people)
 
   **Student Systems Engineer**
 
-![Ethan Hampton](/images/hamptone.jpg#right-people)
-
-Ethan joined the OSL in June of 2020 studying Computer Science. He is enthusiastic about all the opportunities
-available to him here and is grateful for this chance to learn more about the OSS ecosystem. Ethan's first introduction
-to OSS was when he installed Ubuntu on his desktop in middle school and has loved it ever since. His first programming
-experience was in FIRST LEGO League robotics and continues to love elegant solutions to complex problems. If he isn't
-working with technology, Ethan enjoys playing piano, reading, hiking and tinkering.
-
-   **GitHub Account**
-
-https://github.com/EMH333
-
-   **Nick on irc.libera.chat**
-
-EMH333
-
-{{< line_break >}}
-
-Violet Kurtz
----------------
-
-  **Student Systems Engineer**
-
-![Violet Kurtz](/images/vikurtz.jpg#right-people)
-
-Violet joined the OSL in August 2021. She first heard of the OSL while doing routine maintenance on her Arch Linux
-system by noticing it provides mirroring services for Arch,  and later discovered it again while looking for software
-and computing groups on campus. She hopes that working at the OSL will help her to develop professional skills working
-in the industry, in teams, and with clients, as well as help her round out her capabilities. In her free time, Violet
-enjoys playing video games and analyzing the themes that can be expressed only through interactive media, producing
-simple videos for YouTube, using mathematics for optimization and data analysis, and learning every little thing she
-can.
+Sharon joined OSL in June of 2023 and is studying Computer Science. She had her first Linux machine in fourth grade, it
+was an ancient Thinkpad running Lubuntu, and that was just the beginning of her Linux journey. Sharon got interested in
+Computer Science and Computer Security from a young age, and went on to work as a Security Engineer at a small company
+based in San Francisco. She is very passionate about Linux and the open source movement and is thrilled to partake in
+the community. In her free time, Sharon likes to rock climb and read, and has many software development side projects
+she works on.
 
   **GitHub Account**
 
-https://github.com/OniLink
+https://github.com/sharoninator
 
   **Nick on irc.libera.chat**
 
-vikurtz
+sharon123
 
 {{< line_break >}}
 
-Antonia Gaete
+[Antonia Gaete](#antonia-gaete){#antonia-gaete}
 --------------------
 
   **Student Systems Engineer**
@@ -122,26 +98,55 @@ antoniagaete
 
 {{< line_break >}}
 
-Zachary Wallace
-------------------
+[Ayden Murphy-Kirsch](#ayden-murphy-kirsch){#ayden-murphy-kirsch}
+----------------------
+
+![Ayden Murphy-Kirsch](/images/ayden_murphy-kirsch.webp#right-people)
 
   **Student Systems Engineer**
 
-![Zach Wallace](/images/zwall.png#right-people)
-
-Starting in November of 2022, Zach was brought aboard during his Junior year of his college career as a Computer Science major. Zach's first introduction to programming dated back to the fifth grade, in 2013, where he did a presentation on "How to Create an Adder in Lua". His first experience with the Linux environment started in late-2019, when he used a Raspberry-Pi to set up a local file sharing server; and ever since then he's used some flavor of Linux as a daily driver for both personal and server use. Outside of the office and classroom, Zach enjoys modding games, with an added interest in level design. With now being employed at the Open Source Lab, he hopes to further understand the duties of a systems administrator while also providing assistance in service hosting for the FOSS community.
+Ayden joined the OSL in July of 2023 as a computer and electrical engineering 
+student. For multiple years, Ayden has been immersed in the open source ecosystem, 
+starting with the introduction to Linux in High school and a recent growing 
+familiarity with Open Source and the Foss Ecosystem--including many projects 
+spanning a variety of fields. Open Source hardware, such as RISK V, open personal 
+computing devices and numerous Virtual Reality projects are a current fascination. 
+Ayden enjoys Virtual Reality, tinkering on computers, 3D Design, server/network
+design, and DIY projects that never seem to go as planned.
 
   **GitHub Account**
 
-https://github.com/sectopodwreck
+https://github.com/starboundstitch
 
   **Nick on irc.libera.chat**
 
-zwall
+starboundstitch
 
 {{< line_break >}}
 
-Paul Simko
+[Grant O'Connor](#grant-oconnor){#grant-oconnor}
+-----------------
+
+![Grant O'Connor](/images/grant.jpg#right-people)
+
+  **Student Systems Engineer**
+
+Grant joined the OSL in July 2023 as a Sophomore Computer Science major in order to grow his technical knowledge and 
+gain experience. Grant was first introduced to programming in his Freshman year of high school where he learned the 
+basics of game development in Unity. In his free time, Grant enjoys playing board games and video games as well as 
+designing and developing video games.
+
+  **GitHub Account**
+
+https://github.com/GrantAOConnor
+
+  **Nick on irc.libera.chat**
+
+GrantOC
+
+{{< line_break >}}
+
+[Paul Simko](#paul-simko){#paul-simko}
 ---------------
 
   **Student Systems Engineer**
@@ -167,7 +172,26 @@ paul-osl
 
 {{< line_break >}}
 
-Abigail Whittle
+[Zachary Wallace](#zachary-wallace){#zachary-wallace}
+------------------
+
+  **Student Systems Engineer**
+
+![Zach Wallace](/images/zwall.png#right-people)
+
+Starting in November of 2022, Zach was brought aboard during his Junior year of his college career as a Computer Science major. Zach's first introduction to programming dated back to the fifth grade, in 2013, where he did a presentation on "How to Create an Adder in Lua". His first experience with the Linux environment started in late-2019, when he used a Raspberry-Pi to set up a local file sharing server; and ever since then he's used some flavor of Linux as a daily driver for both personal and server use. Outside of the office and classroom, Zach enjoys modding games, with an added interest in level design. With now being employed at the Open Source Lab, he hopes to further understand the duties of a systems administrator while also providing assistance in service hosting for the FOSS community.
+
+  **GitHub Account**
+
+https://github.com/sectopodwreck
+
+  **Nick on irc.libera.chat**
+
+zwall
+
+{{< line_break >}}
+
+[Abigail Whittle](#abigail-whittle){#abigail-whittle}
 ------------------
 
   **Student Systems Engineer**
@@ -190,7 +214,7 @@ awhittle2
 
 {{< line_break >}}
 
-Oria Weng
+[Oria Weng](#oria-weng){#oria-weng}
 ------------------
 
   **Student Systems Engineer**

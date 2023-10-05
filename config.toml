@@ -48,10 +48,25 @@ theme = 'mainroad'
             parent = "about"
             name = "Logos"
             url = "/logos"
+            weight = 5
         [[menu.main]]
             parent = "about"
             name = "Donate"
             url = "/donate"
+            identifier = "donate"
+            weight = 6
+
+            [[menu.main]]
+                parent = "donate"
+                name = "Hardware"
+                url = "/donate/hardware"
+                weight = 1
+
+            [[menu.main]]
+                parent = "donate"
+                name = "Sponsors"
+                url = "/sponsors"
+                weight = 2
         
     [[menu.main]]
         name = "Services"

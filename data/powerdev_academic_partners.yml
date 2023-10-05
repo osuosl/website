@@ -1,0 +1,33 @@
+-
+  name: BLCR
+  description: Berkeley Lab Checkpoint/Restart for LINUX is a kernel-level checkpointer implemented via a loadable kernel module and a userspace library. They use the system to compile, test and debug kernel modules against a range of linux kernels.
+-
+  name: Harvard
+  description: Provide a set of tools that help Linux kernel developers understand Linux-kernel memory-ordering restrictions.
+-
+  name: Harvey Mudd College
+  description: Observationally Cooperative Multithreading (OCM) provides a 
+-
+  name: NYU Langonne Health P10
+  description: Hybrid Classical Quantum AI Model Training and Inferencing
+-
+  name: Oswego State University of NY
+  description: Uses POWER infrastructure to develop concurrency support components for OpenJDK
+-
+  name: Portland State University
+  description: Test out different configurations of tickless kernel on PPC64
+-
+  name: Scuola Superiore Sant'Anna (SSSUP)
+  description: The Linux kernel exposes subtle and informally specified relaxed-memory semantics to programmers. To understand them and to develop formal models to use in verification, we adopt an empirical approach by testing what results parallel kernel code can actually produce when executed on the hardware. The purpose of this project is to develop and execute a key ingredient of our approach, a tool which takes small 'litmus tests' and generates Linux kernel modules to run them for many iterations, collecting statistics of their behavior.
+-
+  name: Technische Hochschule Nürnberg
+  description: Implements native code generation on PowerPC 64-bit little endian for 'The Glorious Glasgow Haskell Compilation System' and as a pre-release for openSUSE and SUSE Linux Enterprise on POWER8 servers
+-
+  name: University of Alberta
+  description: Our goal is to evaluate the support for and experiment with accessing application profiling information during runtime. In particular we are looking to evaluate the performance overhead of accessing the perf APIs during runtime.
+-
+  name: University of Campinas
+  description: Conduct research with IBM partners for the MMA Power10 architecture.
+-
+  name: University of Colorado Denver
+  description: Provide support for the Numerical Linear Algebra package in LINPACK on POWER architectures
