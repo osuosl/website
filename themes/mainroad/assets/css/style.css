@@ -1337,6 +1337,10 @@ textarea {
 	margin-right: 15px;
 }
 
+.footer_map_container {
+	margin-bottom: 10px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1475px) {
 	.container--outer {
