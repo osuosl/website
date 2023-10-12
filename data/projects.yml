@@ -1,816 +1,544 @@
--  
-  name: Abyss OS
+- name: Abyss OS
   description: aarch64, powerpc
--  
-  name: AlmaLinux
+- name: AlmaLinux
   description: aarch64, powerpc
--  
-  name: Alpine Linux
+- name: Alpine Linux
   description: powerpc
--  
-  name: Amahi
+- name: Amahi
   description: vm
--  
-  name: Anaconda
+- name: Anaconda
   description: powerpc
--  
-  name: Antrea
+- name: Antrea
   description: aarch64
--  
-  name: Apache Software Foundation
+- name: Apache Software Foundation
   description: co-location, mirroring, powerpc
--  
-  name: Apereo
+- name: Apereo
   description: vm
--  
-  name: Arch Linux
-  description: mirroring
--
-  name: Armbian
+- name: Arch Linux
+  description: mirroring 
+- name: Armbian
   description: aarch64
--  
-  name: Bazel
+- name: Bazel
   description: powerpc
--  
-  name: BearSSL
+- name: BearSSL
   description: powerpc
--  
-  name: BioJS
+- name: BioJS
   description: vm, webapp
--  
-  name: Blockchain
+- name: Blockchain
   description: powerpc
--  
-  name: BlueMika
+- name: BlueMika
   description: powerpc
--  
-  name: Briar
+- name: Briar
   description: ci-cd
--  
-  name: Bro
+- name: Bro
   description: vm
--  
-  name: Buildbot
+- name: Buildbot
   description: co-location
--  
-  name: Buildroot
+- name: Buildroot
   description: vm, mailing-list, ci-cd
--  
-  name: BusyBox
+- name: BusyBox
   description: vm, mailing-list
--  
-  name: Cacti
+- name: Cacti
   description: co-location
--  
-  name: Census Reporter
+- name: Census Reporter
   description: vm
--  
-  name: CentOS Linux
+- name: CentOS Linux
   description: mirroring
--  
-  name: Checkpoint-restore
+- name: Checkpoint-restore
   description: powerpc
--  
-  name: Chimera Linux
+- name: Chimera Linux
   description: aarch64,powerpc
--  
-  name: Cinc Project
+- name: Cinc Project
   description: vm,aarch64,powerpc,mirroring
--  
-  name: CiviCRM
+- name: CiviCRM
   description: co-location, vm
--  
-  name: ClickHouse
+- name: ClickHouse
   description: powerpc
--  
-  name: Cloud Foundry
+- name: Cloud Foundry
   description: powerpc
--  
-  name: CPAN
+- name: CPAN
   description: mirroring
--  
-  name: Cppcheck
+- name: Cppcheck
   description: vm
--  
-  name: CRAN
+- name: CRAN
   description: mirroring
--  
-  name: CRIU
+- name: CRIU
   description: powerpc
--  
-  name: crosstool-NG
+- name: crosstool-NG
   description: vm
--  
-  name: CVPM
+- name: CVPM
   description: vm
--  
-  name: Cyber-Complex Foundation
+- name: Cyber-Complex Foundation
   description: mirroring
--  
-  name: Cygwin
+- name: Cygwin
   description: mirroring
--  
-  name: Darcs
+- name: Darcs
   description: vm, mailing-list
--  
-  name: Debian Linux
+- name: Debian Linux
   description: co-location, mirroring
--  
-  name: Debian OpenQA
+- name: Debian OpenQA
   description: vm, ci-cd
--  
-  name: Debian Ports
+- name: Debian Ports
   description: vm
--  
-  name: Debian RISCV
+- name: Debian RISCV
   description: ci-cd
--  
-  name: Deeplearning4j
+- name: Deeplearning4j
   description: powerpc
--  
-  name: Deluge
+- name: Deluge
   description: vm, mirroring
--  
-  name: Delve
+- name: Delve
   description: powerpc
--  
-  name: Django
+- name: Django
   description: vm
--  
-  name: Docker Matrix
+- name: Docker Matrix
   description: powerpc
--  
-  name: Docker
+- name: Docker
   description: powerpc
--  
-  name: DotFile-HPC
+- name: DotFile-HPC
   description: powerpc
--  
-  name: Drupal
+- name: Drupal
   description: co-location, vm, mirroring
--  
-  name: EasyBuild
+- name: EasyBuild
   description: powerpc
--  
-  name: Eclipse Communication Framework 
+- name: Eclipse Communication Framework 
   description: co-location, vm
--  
-  name: Eclipse
+- name: Eclipse
   description: mirroring
--  
-  name: Eclipse OMR
+- name: Eclipse OMR
   description: powerpc
--  
-  name: Eclipse OpenJ9
+- name: Eclipse OpenJ9
   description: powerpc
--  
-  name: Eclipse Adoptium
+- name: Eclipse Adoptium
   description: aarch64
--  
-  name: Eclipse Platform
+- name: Eclipse Platform
   description: powerpc, aarch64
--  
-  name: Eigen
+- name: Eigen
   description: powerpc
--  
-  name: Elastic Beats
+- name: Elastic Beats
   description: powerpc
--  
-  name: ELENA LANG
+- name: ELENA LANG
   description: powerpc
--  
-  name: Elgg
+- name: Elgg
   description: vm
--  
-  name: eLinux
+- name: eLinux
   description: webapp, mailing-list
--  
-  name: ELRepo
+- name: ELRepo
   description: mirroring, aarch64
--  
-  name: Enlightenment
+- name: Enlightenment
   description: co-location
--  
-  name: Evolution Groupware Suite
+- name: Evolution Groupware Suite
   description: mailing-list
--  
-  name: F-Droid
+- name: F-Droid
   description: ci-cd
--  
-  name: Fedora Copr
+- name: Fedora Copr
   description: powerpc, vm
--  
-  name: Fedora Linux
+- name: Fedora Linux
   description: co-location, mirroring
--  
-  name: Fedora RISCV
+- name: Fedora RISCV
   description: ci-cd
--  
-  name: FFmpeg
+- name: FFmpeg
   description: powerpc
--  
-  name: Finnix
+- name: Finnix
   description: mirroring
--  
-  name: Firefox
+- name: Firefox
   description: powerpc
--  
-  name: FOSDEM
+- name: FOSDEM
   description: mirroring
--  
-  name: Fosshost
+- name: Fosshost
   description: co-location
--  
-  name: FOSS Translation
+- name: FOSS Translation
   description: vm
--  
-  name: Freedesktop.org
+- name: Freedesktop.org
   description: co-location, ci-cd
--  
-  name: Freedroid
+- name: Freedroid
   description: vm, mirroring
--  
-  name: Funtoo Linux
+- name: Funtoo Linux
   description: mirroring
--  
-  name: GCC/Clang
+- name: GCC/Clang
   description: powerpc
--  
-  name: GCC Compile Farm Project
+- name: GCC Compile Farm Project
   description: co-location, ci-cd, powerpc, aarch64
--  
-  name: GCC Fortran
+- name: GCC Fortran
   description: powerpc
--  
-  name: GenPi64
+- name: GenPi64
   description: aarch64
--  
-  name: Gentoo Linux
+- name: Gentoo Linux
   description: co-location, vm, mirroring, powerpc, aarch64
--  
-  name: Ginga Middleware
+- name: Ginga Middleware
   description: powerpc
--  
-  name: Glassbeats
+- name: Glassbeats
   description: webapp
--  
-  name: GNOME
+- name: GNOME
   description: co-location, vm, mirroring, ci-cd, aarch64
--  
-  name: GNU Assembly
+- name: GNU Assembly
   description: vm
--  
-  name: GNU Radio
+- name: GNU Radio
   description: vm
--  
-  name: godon
+- name: godon
   description: vm
--  
-  name: Go Language
+- name: Go Language
   description: powerpc
--  
-  name: Grml
+- name: Grml
   description: mirroring
--  
-  name: grommunio
+- name: grommunio
   description: powerpc
--  
-  name: GSB (Gnome.SlackBuild)
+- name: GSB (Gnome.SlackBuild)
   description: mirroring
--  
-  name: Hackage
+- name: Hackage
   description: mirroring
--  
-  name: Hadoop Spark
+- name: Hadoop Spark
   description: powerpc
--  
-  name: Haiku
+- name: Haiku
   description: mirroring
--  
-  name: Harmony Agreements
+- name: Harmony Agreements
   description: mailing-list
--  
-  name: HELICS
+- name: HELICS
   description: ci-cd, aarch64
--  
-  name: Heptapod
+- name: Heptapod
   description: ci-cd, aarch64
--  
-  name: heyoka
+- name: heyoka
   description: powerpc
--  
-  name: HHVM
+- name: HHVM
   description: mirroring, powerpc
--  
-  name: Hortonworks Data Platform
+- name: Hortonworks Data Platform
   description: powerpc
--  
-  name: Hush
+- name: Hush
   description: vm
--  
-  name: Inkscape
-  description: vm, mailing-list
--
-  name: INRIA
+- name: Inkscape
+  description: vm, mailing-list 
+- name: INRIA
   description: powerpc
--  
-  name: Istio
+- name: Istio
   description: powerpc
--  
-  name: Jaws
+- name: Jaws
   description: vm, mailing-list
--  
-  name: Jenkins
+- name: Jenkins
   description: co-location, vm, mailing-list, mirroring
--  
-  name: Jitesoft
+- name: Jitesoft
   description: aarch64
--  
-  name: Jupyter / Base-notebook
+- name: Jupyter / Base-notebook
   description: powerpc
--  
-  name: K-3D
+- name: K-3D
   description: vm
--  
-  name: Kali Linux
+- name: Kali Linux
   description: aarch64
--  
-  name: KDE
+- name: KDE
   description: vm, mirroring
--  
-  name: Kodi
+- name: Kodi
   description: vm
--  
-  name: Kubeflow
+- name: Kubeflow
   description: ci-cd, powerpc
--  
-  name: LDC
+- name: LDC
   description: powerpc
--  
-  name: LFS (Linux From Scratch)
+- name: LFS (Linux From Scratch)
+  description: mirroring 
+- name: libGD
+  description: powerpc
+- name: libjpeg-turbo
+  description: powerpc
+- name: libpng
   description: mirroring
--
-  name: libGD
-  description: powerpc
--  
-  name: libjpeg-turbo
-  description: powerpc
--  
-  name: libpng
-  description: mirroring
--  
-  name: LibreHealth
+- name: LibreHealth
   description: vm
--  
-  name: libvirt
+- name: libvirt
   description: vm
--  
-  name: libvpx
+- name: libvpx
   description: powerpc
--  
-  name: LIBXSMM
+- name: LIBXSMM
   description: powerpc
--  
-  name: LineageOS
+- name: LineageOS
   description: ci-cd
--  
-  name: linhes
+- name: linhes
   description: vm
--  
-  name: LinuxChix
+- name: LinuxChix
   description: co-location, vm
--  
-  name: Linux Driver Project
+- name: Linux Driver Project
   description: webapp, mailing-list
--  
-  name: Linux Foundation
+- name: Linux Foundation
   description: co-location
--  
-  name: Linux Fund
+- name: Linux Fund
   description: vm
--  
-  name: Linux Kernel (powerpc arch development)
+- name: Linux Kernel (powerpc arch development)
   description: powerpc
--  
-  name: Linux Kernel (Various Kernel Developers)
+- name: Linux Kernel (Various Kernel Developers)
   description: powerpc
--  
-  name: Linux NFSD Testing and Development
+- name: Linux NFSD Testing and Development
   description: powerpc
--  
-  name: Linux Plumbers Conference
+- name: Linux Plumbers Conference
   description: vm, mailing-list
--  
-  name: Linux Standard Base
+- name: Linux Standard Base
   description: powerpc
--  
-  name: LLVM
+- name: LLVM
   description: powerpc
--  
-  name: LTTng
+- name: LTTng
   description: powerpc
--  
-  name: LuneOS
+- name: LuneOS
   description: mailing-list
--  
-  name: LyX
+- name: LyX
   description: vm
--  
-  name: MacPorts
+- name: MacPorts
   description: vm
--  
-  name: Mageia
+- name: Mageia
   description: vm
--  
-  name: Mandriva Users
+- name: Mandriva Users
   description: vm
--  
-  name: Manjaro Linux
+- name: Manjaro Linux
   description: mirroring
--  
-  name: Manulix
+- name: Manulix
   description: mirroring
--  
-  name: MariaDB
+- name: MariaDB
   description: mirroring
--  
-  name: Mesos
+- name: Mesos
   description: powerpc
--  
-  name: Midnight Commander
-  description: vm, mirroring
--
-  name: Minio
+- name: Midnight Commander
+  description: vm, mirroring 
+- name: Minio
   description: aarch64
--  
-  name: Monitoring-plugins
+- name: Monitoring-plugins
   description: mirroring
--  
-  name: Monkey Server
-  description: vm
--
-  name: Moonjit
+- name: Monkey Server
+  description: vm 
+- name: Moonjit
   description: powerpc
--  
-  name: Mozdev
+- name: Mozdev
   description: co-location, vm, mirroring
--  
-  name: Mozilla
+- name: Mozilla
   description: powerpc
--  
-  name: Mozillazine
+- name: Mozillazine
   description: Co-location, vm
--  
-  name: Mulgara
+- name: Mulgara
   description: vm, mailing-list
--  
-  name: MULTOVL
+- name: MULTOVL
   description: powerpc
--  
-  name: Musescore
+- name: Musescore
   description: mirroring
--  
-  name: Musicbrainz
+- name: Musicbrainz
   description: vm, mirroring
--  
-  name: Mutt
+- name: Mutt
   description: mirroring, mailing-list, webapp
--  
-  name: MX Linux
+- name: MX Linux
   description: mirroring
--  
-  name: Mycroft Project
+- name: Mycroft Project
   description: webapp
--  
-  name: MythTV
+- name: MythTV
   description: co-location, vm, mirroring
--  
-  name: Mythubuntu
+- name: Mythubuntu
   description: mirroring
--  
-  name: NAS-Admin
+- name: NAS-Admin
   description: co-location, mirroring
--  
-  name: .Net
+- name: .Net
   description: powerpc
--  
-  name: Nettle
+- name: Nettle
   description: powerpc
--  
-  name: Node.js
+- name: Node.js
   description: powerpc,aarch64
--  
-  name: NTPSEC
+- name: NTPSEC
   description: vm
--  
-  name: NumPy
+- name: NumPy
   description: powerpc
--  
-  name: Nvidia-docker
+- name: Nvidia-docker
   description: powerpc
--  
-  name: Ocaml
+- name: Ocaml
   description: powerpc
--  
-  name: OCM
+- name: OCM
   description: powerpc
--  
-  name: OFTC
+- name: OFTC
   description: vm
--  
-  name: Open Advice
+- name: Open Advice
   description: webapp
--  
-  name: OpenBLAS
+- name: OpenBLAS
+  description: powerpc 
+- name: OpenBMC
   description: powerpc
--
-  name: OpenBMC
-  description: powerpc
--  
-  name: OpenBSD
+- name: OpenBSD
   description: ci-cd
--  
-  name: OpenCV
+- name: OpenCV
   description: powerpc
--  
-  name: OpenDev
+- name: OpenDev
   description: aarch64
--  
-  name: OpenFAAS
+- name: OpenFAAS
   description: aarch64
--  
-  name: open-fcoe
+- name: open-fcoe
   description: vm, mailing-list, mirroring
--  
-  name: Open Hatch
+- name: Open Hatch
   description: vm
--  
-  name: OpenID
+- name: OpenID
   description: co-location, webapp, mailing-list
--  
-  name: OpenJDK
+- name: OpenJDK
   description: powerpc
--  
-  name: open-lldp
+- name: open-lldp
   description: vm, mailing-list
--  
-  name: OpenMandriva
+- name: OpenMandriva
   description: aarch64, powerpc
--  
-  name: OpenMRS
+- name: OpenMRS
   description: vm, webapp, mirroring
--  
-  name: OpenQuake
+- name: OpenQuake
   description: powerpc
--  
-  name: OpenShift
+- name: OpenShift
   description: powerpc
--  
-  name: OpenStreetMap
+- name: OpenStreetMap
   description: co-location, vm, mirroring
--  
-  name: OpenWhisk
+- name: OpenWhisk
   description: powerpc
--  
-  name: OpenWRT
+- name: OpenWRT
   description: ci-cd
--  
-  name: OpenZFS
+- name: OpenZFS
   description: webapp, powerpc, aarch64, vm
--  
-  name: OrientDB
+- name: OrientDB
   description: powerpc
--  
-  name: OSDV
+- name: OSDV
   description: vm
--  
-  name: OSGeo
+- name: OSGeo
   description: co-location, vm
--  
-  name: OSMC
+- name: OSMC
   description: aarch64
--  
-  name: PA-RISC
+- name: PA-RISC
   description: co-location, vm
--  
-  name: Parrot
-  description: vm, mailing-list, mirroring
--
-  name: Peeragogy
+- name: Parrot
+  description: vm, mailing-list, mirroring 
+- name: Peeragogy
   description: vm, mailing-list
--  
-  name: Pentoo Linux
+- name: Pentoo Linux
   description: mirroring
--  
-  name: Peregrine
+- name: Peregrine
   description: vm
--  
-  name: perfbook
+- name: perfbook
   description: powerpc
--  
-  name: Persistent SI-HTM
+- name: Persistent SI-HTM
   description: powerpc
--  
-  name: PersonalTelco
+- name: PersonalTelco
   description: co-location
--  
-  name: phpBB
+- name: phpBB
   description: co-location, vm, mirroring
--  
-  name: PicaLibre
+- name: PicaLibre
   description: vm
--  
-  name: Pipcook
+- name: Pipcook
   description: ci-cd
--  
-  name: Plan 9 Foundation
+- name: Plan 9 Foundation
   description: vm, mirroring
--  
-  name: postgreSQL
+- name: postgreSQL
   description: powerpc
--  
-  name: PowerPC Notebook
+- name: PowerPC Notebook
   description: powerpc
--  
-  name: Presto
+- name: Presto
   description: powerpc
--  
-  name: Privly
+- name: Privly
   description: webapp
--  
-  name: Python Software Foundation
+- name: Python Software Foundation
   description: co-location, vm, webapp
--  
-  name: PyTorch
+- name: PyTorch
   description: powerpc
--  
-  name: QEMU
+- name: QEMU
   description: vm
--  
-  name: Rainmeter
+- name: Rainmeter
   description: vm
--  
-  name: RDKit
+- name: RDKit
   description: powerpc
--  
-  name: RebornOS
+- name: RebornOS
   description: aarch64, mirroring
--  
-  name: Replicant
+- name: Replicant
   description: webapp, mailing-list, mirroring
--  
-  name: Replica.one
+- name: Replica.one
   description: ci-cd, vm
--  
-  name: Reproducible builds
+- name: Reproducible builds
   description: ci-cd
--  
-  name: Robot Operating System
+- name: Robot Operating System
   description: vm, mailing-list, mirroring
--  
-  name: Rocky Linux
+- name: Rocky Linux
   description: powerpc,aarch64
--  
-  name: RPM Fusion
+- name: RPM Fusion
   description: powerpc
--  
-  name: RPM
+- name: RPM
   description: mailing-list, mirroring
--  
-  name: RTEMS
+- name: RTEMS
   description: co-location
--  
-  name: Ruby
+- name: Ruby
   description: powerpc
--  
-  name: Rust
+- name: Rust
   description: powerpc
--  
-  name: Rust Exploit Mitigations
+- name: Rust Exploit Mitigations
   description: powerpc
--  
-  name: Sahana Foundation
+- name: Sahana Foundation
   description: vm, webapp, mirroring
--  
-  name: Salix Linux
+- name: Salix Linux
   description: mirroring
--  
-  name: SFTPGo
+- name: SFTPGo
   description: powerpc
--  
-  name: SHA-3
-  description: powerpc
--
-  name: SharkLinux
-  description: vm
--
-  name: Skytable
+- name: SHA-3
+  description: powerpc 
+- name: SharkLinux
+  description: vm 
+- name: Skytable
   description: aarch64
--  
-  name: Slackware
+- name: Slackware
   description: vm, mirroring
--  
-  name: Snappy
+- name: Snappy
   description: powerpc
--  
-  name: Snowpatch
+- name: Snowpatch
   description: powerpc
--  
-  name: Software Freedom Conservatory
-  description: vm
--
-  name: Spack
+- name: Software Freedom Conservatory
+  description: vm 
+- name: Spack
   description: aarch64, powerpc
--  
-  name: Strimzi
+- name: Strimzi
   description: powerpc
--  
-  name: Sourceware
+- name: Sourceware
   description: aarch64, vm, co-location
--  
-  name: sqlite
+- name: sqlite
   description: powerpc
--  
-  name: Swift
+- name: Swift
   description: powerpc
--  
-  name: SWI-Prolog
-  description: vm
--
-  name: Tahoe LAFS
-  description: mailing-list
--
-  name: tcpdump/libpcap
+- name: SWI-Prolog
+  description: vm 
+- name: Tahoe LAFS
+  description: mailing-list 
+- name: tcpdump/libpcap
   description: vm, ci-cd, powerpc, aarch64
--  
-  name: Teaching Open Source
+- name: Teaching Open Source
   description: vm, webapp, mirroring
--  
-  name: Tesseract-OCR
+- name: Tesseract-OCR
   description: powerpc
--  
-  name: The Documentation Foundation
+- name: The Documentation Foundation
   description: mirroring
--  
-  name: The Julia Language
+- name: The Julia Language
   description: powerpc
--  
-  name: The NetBSD Foundation
+- name: The NetBSD Foundation
   description: aarch64
--  
-  name: The Tor Project
+- name: The Tor Project
   description: aarch64
--  
-  name: Tobin's Linux kernel
+- name: Tobin's Linux kernel
   description: powerpc
--  
-  name: Travis-CI
+- name: Travis-CI
   description: powerpc
--  
-  name: Trinity Rescue Kit
+- name: Trinity Rescue Kit
   description: mirroring
--  
-  name: Trisquel Linux
+- name: Trisquel Linux
   description: mirroring
--  
-  name: trivy
+- name: trivy
   description: powerpc
--  
-  name: Ubuntu
+- name: Ubuntu
   description: mirroring
--  
-  name: uClibc
+- name: uClibc
   description: mailing-list
--  
-  name: UEK Maple Tree
+- name: UEK Maple Tree
   description: powerpc
--  
-  name: Vector Linux
+- name: Vector Linux
   description: mirroring
--  
-  name: VideoLAN
+- name: VideoLAN
   description: mirroring, powerpc, ci-cd
--  
-  name: WebDAV
-  description: vm
--
-  name: x265
+- name: WebDAV
+  description: vm 
+- name: x265
   description: powerpc
--  
-  name: X2go
+- name: X2go
   description: powerpc
--  
-  name: Xenia
+- name: Xenia
   description: powerpc
--  
-  name: XBMC
+- name: XBMC
   description: mirroring
--  
-  name: Xiph
+- name: Xiph
   description: co-location, mirroring
--  
-  name: Yocto
+- name: Yocto
   description: co-location
--  
-  name: Yum
+- name: Yum
   description: vm, mirroring

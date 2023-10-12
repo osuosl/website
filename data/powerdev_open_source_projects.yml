@@ -1,396 +1,264 @@
--
-  name: Abyss OS
+- name: Abyss OS
   description: An experimental distribution that aims to provide a flexible ecosystem based on pure-llvm and musl userland
--
-  name: AlmaLinux
+- name: AlmaLinux
   description: An Open Source, community-governed and forever-free enterprise Linux distribution, focused on long-term stability, providing a robust production-grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL and pre-Stream CentOS.
--
-  name: Alpine Linux
+- name: Alpine Linux
   description: For the past year, I've been working on porting the .NET framework to musl based platforms like Alpine Linux. While aarch64, armv7 and x86_64 and s390x are now well supported, ppc64le is still needing some work and optimizations. As I don't have access to a ppc64le machine, it is very hard for me to diagnose issues.
--
-  name: Anaconda
+- name: Anaconda
   description: Installation program used by Fedora, RHEL, and others; uses POWER support for Continuous Integration and development
--
-  name: Ansible Molecule
+- name: Ansible Molecule
   description: Framework for testing Ansible roles and playbooks
--
-  name: Apache Bigtop
+- name: Apache Bigtop
   description: An Apache Foundation project for Infrastructure Engineers and Data Scientists looking for comprehensive packaging, testing, and configuration of the leading open source big data components; supports a wide range of components/projects, including, but not limited to, Hadoop, HBase and Spark
--
-  name: Apache CouchDB
+- name: Apache CouchDB
   description: Seamless multi-master sync, that scales from Big Data to Mobile, with an Intuitive HTTP/JSON API and designed for Reliability.
--
-  name: Apache Software Foundation
+- name: Apache Software Foundation
   description: Supports POWER builds for CouchDB and possible other ASF projects in the future; currently working to support Cloudant on POWER
--
-  name: Apache Spark / Arrow
+- name: Apache Spark / Arrow
   description: Apache Arrow is an in-memory columnar to exchange data among AI frameworks such as Apache Spark
--
-  name: Bazel
+- name: Bazel
   description: Build and test software of any size, quickly and reliably.
--
-  name: Blockchain
+- name: Blockchain
   description: Continuous intergration for IBM Blockchain hyperledger fabric code for POWER
--
-  name: BlueMika
+- name: BlueMika
   description: An open source library that searches in files/web pages/documents/etc and give you the results
--
-  name: cdxgen
+- name: cdxgen
   description: An open source cli tool for calculating a software Bill-of-Materials built with plugins for extensibility on the POWER architecture.
--
-  name: checkpoint-restore
+- name: checkpoint-restore
   description: Implements checkpoint-restore functionality for Linux on POWER architecture; functionality can be used for wide range of use-cases, including live migration, ‘suspend’ and ‘resume’ operations on containers, reboot-less kernel upgrades
--
-  name: Chimera Linux
+- name: Chimera Linux
   description: Chimera is a general-purpose Linux system based on FreeBSD core userland utilities, the LLVM toolchain, musl libc and the apk package manager. The goal is to provide a system that is simple and clean yet fully-featured, and to improve the portability and quality of software across the Linux stack. It is currently available on aarch64, ppc64le, riscv64 and x86_64 architectures, with a big emphasis on portability.
--
-  name: Cinc Project
+- name: Cinc Project
   description: ppc64le builds for various Cinc Project packages (Cinc Client primarily)
--
-  name: ClickHouse
+- name: ClickHouse
   description: Make the best open-source analytics DBMS
--
-  name: Cloud Foundry
+- name: Cloud Foundry
   description: Supports porting on POWER, continuous integration and builds integration
--
-  name: conda-forge
+- name: conda-forge
   description: community-led collection of recipes, build infrastructure and distributions for the conda package manager
--
-  name: CRIU
+- name: CRIU
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
--
-  name: Debian
+- name: Debian
   description: A universal operating system composed entirely of free software, and packaged by the Debian Project
--
-  name: Debian-CI
+- name: Debian-CI
   description: Provide a system available to Debian community to enable debuging of problems
--
-  name: Deeplearning4j
+- name: Deeplearning4j
   description: Makes deep learning simple and accessible to enterprises. The project uses POWER VMs at OSL for compile builds, performance testing, architecture troubleshooting, including CUDA
--
-  name: Delve
+- name: Delve
   description: Delve is a debugger for the Go programming language. The goal of the project is to provide a simple, full featured debugging tool for Go.
--
-  name: Docker 4 Power
+- name: Docker 4 Power
   description: Enrich the PowerPC container ecosystem by providing both a platform for developers to create docker containers, and for the PowerPC community to find docker images.
--
-  name: Docker Matrix
+- name: Docker Matrix
   description: A Docker image for Matrix, an open federated Instant Messaging and VoIP communication server
--
-  name: Docker Open Source
+- name: Docker Open Source
   description: An open platform for developers and sysadmins to build, ship, and run distributed applications on laptops, data center VMs, or the cloud; provides build system to the Docker community to share Docker images built on this system; system is used on demand builds
--
-  name: DotFile-HPC
+- name: DotFile-HPC
   description: Our goal is to help PhD students, researchers, open-source contributors and enterprise employees overcome the challenges of working with unfamiliar high-performance computing (HPC) architectures. Setting up a development environment on an unknown architecture can take months and be a frustrating experience. Our mission is to save time and make the process more enjoyable - just like Python does. By providing a user-friendly development environment, we aim to help our users focus on their work and enjoy a better life.
--
-  name: EasyBuild
+- name: EasyBuild
   description: EasyBuild is a software build and installation framework that allows you to manage (scientific) software on High Performance Computing (HPC) systems in an efficient way.
--
-  name: Eclipse OMR
+- name: Eclipse OMR
   description: Build an enterprise caliber technology foundation for language runtimes within cloud platforms.
--
-  name: Eclipse OpenJ9
+- name: Eclipse OpenJ9
   description: Provides high performance Java Virtual Machine capabilities for the POWER platform
--
-  name: Eclipse Platform
+- name: Eclipse Platform
   description: Provides a foundation for building arbitrary tools and applications, especially IDEs
--
-  name: EESSI
+- name: EESSI
   description: The European Environment for Scientific Software Installations (EESSI, pronounced as “easy“) is a brand new collaboration between different European HPC sites & industry partners, with the common goal to set up a shared repository of scientific software installations that can be used on a variety of systems
--
-  name: Eigen
+- name: Eigen
   description: "A C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms."
--
-  name: Elastic Beats
+- name: Elastic Beats
   description: Part of the Elastic stack (Elasticsearch, Kibana, Logstash, Beats). Manual testing and checking that the Beats are working on POWER platform
--
-  name: ELENA LANG
+- name: ELENA LANG
   description: "ELENA is a general-purpose language with late binding. It is multi-paradigm, combining features of functional and object-oriented programming. Rich set of tools are provided to deal with message dispatching : multi-methods, message qualifying, generic message handlers, run-time interfaces"
--
-  name: Envoy
+- name: Envoy
   description: sidecar binary used by the most popular service mesh in the microservice space (istio)
--
-  name: Fedora Copr
+- name: Fedora Copr
   description: An easy-to-use automatic build system providing a package repository as its output
--
-  name: Fedora
+- name: Fedora
   description: Provide a location for developers to port their Fedora projects to the POWER architecture
--
-  name: FFmpeg
+- name: FFmpeg
   description: Supports optimization of software scaling in FFmpeg running on POWER systems
--
-  name: Firefox
+- name: Firefox
   description: Ports Mozilla Firefox to POWER8
--
-  name: Flathub
+- name: Flathub
   description: Provide support for ppc64le on all Flatpaks currently available on Flathub
--
-  name: FRRouting
+- name: FRRouting
   description: Free routing stack (BGP, OSPF, ISIS, RIP, EIGRP, PIM, etc)
--
-  name: GCC Fortran
+- name: GCC Fortran
   description: Compiler optimizations and bug fixing for POWER port of GCC fortran compiler
--
-  name: Gentoo PowerPC Project
+- name: Gentoo PowerPC Project
   description: Part of Gentoo Linux and is responsible for porting Gentoo to PowerPC architecture of all flavors
--
-  name: Glasgow Haskell Compiler (GHC)
+- name: Glasgow Haskell Compiler (GHC)
   description: state-of-the-art open source compiler and interactive environment for the functional language Haskell
--
-  name: glibc
+- name: glibc
   description: The GNU C Library project provides the core libraries for the GNU system and GNU/Linux systems
--
-  name: Go Language
+- name: Go Language
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
--
-  name: grommunio
+- name: grommunio
   description: Delivering 100% open source Microsoft Exchange alternative with native protocol support (MAPI/HTTP, EWS, ...)
--
-  name: Hadoop_Spark
+- name: Hadoop_Spark
   description: CI environment powered by a Jenkins server running Hadoop and Spark builds for including POWER into the Hyperledger fabric community to perform Continuous Integration for IBM Hyperledger fabric codebase.
--
-  name: heyoka
+- name: heyoka
   description: heyoka is a C++ library for the integration of ordinary differential equations (ODEs) via Taylor's method and LLVM.
--
-  name: Hortonworks Data Platform
+- name: Hortonworks Data Platform
   description: A secure, enterprise-ready open source Apache Hadoop distribution based on a centralized architecture (YARN) now on POWER
--
-  name: INRIA
+- name: INRIA
   description: Updating the HACL* Cryptographic Library to build on POWER
--
-  name: Istio
+- name: Istio
   description: Supports compiling and testing Istio, a platform for microservice management, on POWER
--
-  name: Julia/LLVM
+- name: Julia/LLVM
   description: ppc64el port of the Julia language to LLVM-6.0
--
-  name: jupyter/base-notebook
+- name: jupyter/base-notebook
   description: Provides docker image of jupyter/base-notebook on POWER
--
-  name: Kubeflow
+- name: Kubeflow
   description: A project dedicated to making deployments of machine learning (ML) workflows on Kubernetes simple, portable and scalable
--
-  name: LDC
+- name: LDC
   description: Supports project specific porting efforts for the the LLVM-based D compiler
--
-  name: libGD
+- name: libGD
   description: GD is an open source code library for the dynamic creation of images by programmers.
--
-  name: libjpeg-turbo
+- name: libjpeg-turbo
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
--
-  name: libvpx
+- name: libvpx
   description: Adds VSX optimizations for libvpx on POWER architecture
--
-  name: LIBXSMM
+- name: LIBXSMM
   description: LIBXSMM is a library for specialized dense and sparse matrix operations as well as for deep learning primitives such as small convolutions. Enabling POWER JIT-code generation and optimization.
--
-  name: Linux Kernel (bugfixing on linux-next)
+- name: Linux Kernel (bugfixing on linux-next)
   description: Fixing a bug on powerpc in linux-next
--
-  name: Linux Kernel (powerpc arch development)
+- name: Linux Kernel (powerpc arch development)
   description: PowerPC Linux Kernel testing
--
-  name: Linux Kernel (Various Kernel Developers)
+- name: Linux Kernel (Various Kernel Developers)
   description: Testing issues with RCU_SCALE_TEST parameter
--
-  name: Linux NFSD testing and development
+- name: Linux NFSD testing and development
   description: Cross platform development and testing of Linux in-kernel NFS server (knfsd)
--
-  name: Linux Standard Base
+- name: Linux Standard Base
   description: Tests for and maintains compatibility between Linux distributions
--
-  name: LLVM Memory Order Loads Handling
+- name: LLVM Memory Order Loads Handling
   description: The C standard currently specifies that that memory_order_consume loads feed into carries a dependency, however, no known implementation does anything other than promote memory_order_consume to memory_order_acquire. C users therefore avoid memory_order_consume loads in favour of volatile loads, inline assembly, and other subterfuge. There has been considerable work within the C++ standards committee to address similar issues in C++, however, the current proposals involve C++ templates, which have no reasonable C equivalent. We proposes a new _Dependent_ptr type qualifier to provide this functionality in the C language. We are implementing the same in LLVM.
--
-  name: LLVM
+- name: LLVM
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le to run buildbot instances; these instances build LLVM and run the test suites when patches are checked in to ensure they run properly on the POWER architecture
--
-  name: LTTng
+- name: LTTng
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
--
-  name: Machine Learning/Deep Learning
+- name: Machine Learning/Deep Learning
   description: Enable and optimize frameworks of OpenBLAS, NVIDIA/Caffe, BVLC/Caffe, Torch, TensorFlow, Theano, DIGITS for IBM POWER Platform
--
-  name: Maple Tree
+- name: Maple Tree
   description: "Oracle Linux kernel POWER architecture troubleshooting: remove mmap_sem"
--
-  name: Mesos
+- name: Mesos
   description: API’s for resource management and scheduling across entire datacenter and cloud environments. OSL hosts the CI infrastructure on POWER platform for this project
--
-  name: microbench
+- name: microbench
   description: Carefully measure the performance of the bandwidth between different system compenents on POWER systems to understand their influence on application development
--
-  name: Moonjit
+- name: Moonjit
   description: Builds and functionality testing
--
-  name: Mozilla
+- name: Mozilla
   description: Supports Mozilla projects in testing builds, running automated functionality tests, and debugging architecture-specific bugs.
--
-  name: Multiple LLVM/HHVM/*
+- name: Multiple LLVM/HHVM/*
   description: Contributes towards FOSS software, optimizations for POWER arch; specifically contributes towards HHVM JIT, LLVM and other FOSS projects on POWER8
--
-  name: .Net
+- name: .Net
   description: Support IBM efforts to port to PPC64le
--
-  name: MULTOVL
+- name: MULTOVL
   description: Multiple Overlap of Genomic Regions
--
-  name: Netty
+- name: Netty
   description: Non-blocking network framework for the JVM
--
-  name: Node.js
+- name: Node.js
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le; provides stable POWER releases for community builds of Node.js
--
-  name: NumPy
+- name: NumPy
   description: Numerical computing in Python, now on POWER
--
-  name: Nvidia-docker
+- name: Nvidia-docker
   description: Uses images agnostics of the NVIDIA driver to make Docker images portable while still leveraging NVIDIA GPUs
--
-  name: OCaml
+- name: OCaml
   description: A modern, functional programming language with support for fast native code compilation on POWER
--
-  name: OCM
+- name: OCM
   description: "Observationally Cooperative Multithreading: provides a 'kinder gentler' form of concurrency, allowing programmers to imagine that a single thread runs on the machine at any one time; uses POWER8 hardware transactional memory to run multiple threads at the same time while appearing to be running only one at a time"
--
-  name: OpenBLAS
+- name: OpenBLAS
   description: Optimizes BLAS 1/2 double precision for POWER8 VSX
--
-  name: OpenBMC
+- name: OpenBMC
   description: Open source BMC firmware, which supports PowerPC hosts
--
-  name: OpenCV
+- name: OpenCV
   description: Implements POWER8 and POWER9 VSX SIMD optimizations for OpenCV
--
-  name: OpenJDK and OpenJFX Snaps
+- name: OpenJDK and OpenJFX Snaps
   description: To create verifiable JDK and JavaFX builds for Linux from source in the form of Snap packages. The packages are built for the 'ppc64el' Debian architecture in addition to five other architectures.
--
-  name: OpenJDK
+- name: OpenJDK
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le; provides support for Java 7 and 8 which is being consumed by most major distributions
--
-  name: OpenMandriva
+- name: OpenMandriva
   description: Building an easy to use, yet powerful and state of art, Linux distribution aimed primarily at desktop use
--
-  name: OpenQuake
+- name: OpenQuake
   description: An Open Source Engine for seismic hazard and risk assessment uses the infrastructure to try porting to POWER architecture and see how a different architecture affects the numerical tests (the code is covered by numerical, functional and qa tests)
--
-  name: OpenShift
+- name: OpenShift
   description: Test builds of OpenShift for Continuous Integration
--
-  name: OpenWhisk
+- name: OpenWhisk
   description: Supports building ppc64le Docker images for OpenWhisk, a programming service that provides event based execution of functions
--
-  name: OpenZFS
+- name: OpenZFS
   description: OpenZFS is an advanced file system and volume manager which was originally developed for Solaris and is now maintained by the OpenZFS community.
--
-  name: OrientDB
+- name: OrientDB
   description: Multi-Model NoSQL database management system that supports graph, document, key/value and object models. Uses PowerCI infrastructure for regression tests
--
-  name: ORNL Research Cloud
+- name: ORNL Research Cloud
   description: Container and software development and testing for Oak Ridge National Laboratory Summit Supercomputer. Compile testing, container builds, and general compatibility testing for several open source software stacks.
--
-  name: Perfbook
+- name: Perfbook
   description: Provides education on parallel programming, and availability of a ppc64le system will help ensure that this education is not x86-centric.
--
-  name: Persistent SI-HTM
+- name: Persistent SI-HTM
   description: Enable the use of hardware transactions, on Power machines, with snapshot isolation consistency.
--
-  name: postgreSQL
+- name: postgreSQL
   description: Allows the postgres database system to build and troubleshoot on pp64le architecture on various distributions.
--
-  name: PowerPC Notebook
+- name: PowerPC Notebook
   description: Supports development and compiling efforts for Debian on PowerPC. The goal is to design an Open Hardware notebook motherboard based on the Power Architecture NXP T2080 CPU
--
-  name: Presto
+- name: Presto
   description: Supports efforts of a POWER8 ppc64le port of Presto, a distributed SQL query engine for running interactive analytic queries against big data sources
--
-  name: Primerclip
+- name: Primerclip
   description: Supports efficient trimming of primer sequences from next-generation sequencing reads sequenced from libraries which use PCR to amplify the target DNA
--
-  name: Project Quay
+- name: Project Quay
   description: Builds, stores, and distributes Docker containers
--
-  name: PVECLIB
+- name: PVECLIB
   description: A library of useful vector functions for POWER
--
-  name: PyTorch
+- name: PyTorch
   description: Python framework for tensors and deep neural networks. Uses POWER8 for continuous integration and functional testing
--
-  name: RDKit
+- name: RDKit
   description: Open source toolkit for cheminformatics
--
-  name: RocksDB
+- name: RocksDB
   description: Building the fastest key/value database, PPC port for CI and testing
--
-  name: Rocky Linux
+- name: Rocky Linux
   description: A community-driven effort to bring you enterprise-grade, production-ready Linux.
--
-  name: RPM Fusion
+- name: RPM Fusion
   description: A community driven third party repository for Fedora and Enterprise Linux. They use a dedicated VM as a builder connected to their main infrastructure for building packages for ppc64le platform
--
-  name: Ruby
+- name: Ruby
   description: A dynamic, open source programming language with a focus on simplicity and productivity
--
-  name: Rust Exploit Mitigations
+- name: Rust Exploit Mitigations
   description: The Rust Exploit Mitigations PG maintains and improves the existing, implements, and research new exploit mitigations for the Rust compiler
--
-  name: SFTPGo
+- name: SFTPGo
   description: SFTPGo is a fully featured and highly configurable SFTP server with optional FTP/S and WebDAV support, written in Go. It can serve local filesystem, S3 or Google Cloud Storage. POWER Docker image testing.
--
-  name: Snappy
+- name: Snappy
   description: A fast compressor/decompressor
--
-  name: Snowpatch
+- name: Snowpatch
   description: An open source tool which provides CI testing for open-source projects which use a traditional patches + email system for accepting contributions; improves the state of continuous integration for a number of open source projects which are critical to the OpenPOWER community, providing automated test capabilities, similar to work already being done on the x86 architecture
--
-  name: Spack
+- name: Spack
   description: Spack is the “App store” for running scientific software on supercomputers by drastically reducing deployment time and delivering the best possible performance of the software
--
-  name: sqlite
+- name: sqlite
   description: modernc.org/sqlite is a Go port of the SQLite C project.
--
-  name: Strimzi
+- name: Strimzi
   description: Strimzi provides a way to run an Apache Kafka cluster on Kubernetes in various deployment configurations. The goal is to enable IBM Power arch (ppc64le) arch in upstream Jenkins CI setup for strimzi-kafka-operator.
--
-  name: Swift
+- name: Swift
   description: Fast and highly comprehensible programming language for Unix-based operating systems. Supports objects-oriented, protocol-oriented, and functional programming paradigms.
--
-  name: tcpdump/libpcap
+- name: tcpdump/libpcap
   description: A packet analyzer for UNIX-like OSes
--
-  name: Tesseract-OCR
+- name: Tesseract-OCR
   description: Offers a POWER8 testing platform for Google's optical character recognition library, Tesseract OCR
--
-  name: Travis CI
+- name: Travis CI
   description: Continuous Integration using Travis and Power
--
-  name: Travis/Rust/Swift
+- name: Travis/Rust/Swift
   description: Provides access to the POWER8 architeture for Travis, Rust, or Swift project developers
--
-  name: TripleO CI
+- name: TripleO CI
   description: Continuous Integration and Delivery for RedHat OpenStack Platform
--
-  name: trivy
+- name: trivy
   description: Scanner for vulnerabilities in container images, file systems, and Git repositories, as well as for configuration issues and hard-coded secrets
--
-  name: VideoLan
+- name: VideoLan
   description: Updates the Altivec code in x264 and x265 to VSX and makes sure it works correctly on POWER8le
--
-  name: Wazuh
+- name: Wazuh
   description: Wazuh is a free, open source and enterprise-ready security monitoring solution for threat detection, integrity monitoring, incident response and compliance.
--
-  name: WebM
+- name: WebM
   description: Dedicated to developing a high-quality, open video format for the web that's freely available to everyone
--
-  name: Whonix
+- name: Whonix
   description: Anonymity, privacy, security online
--
-  name: x265
+- name: x265
   description: x265 is an open source HEVC encoder
--
-  name: X2Go
+- name: X2Go
   description: A Remote Desktop and Remote Application Solution. Originally developed on x86/x64 hardware platforms, the server and client components are also available for ARM (Raspbian) and POWER (big and little endian). In short, it's for Linux what Citrix is for Windows.
--
-  name: Xenia
+- name: Xenia
   description: Xenia is an experimental emulator for the Xbox 360. The goal of the project is to experiment, research, and educate on the topic of emulation of modern devices and operating systems.
