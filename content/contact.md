@@ -33,21 +33,21 @@ Mailing Addresses
 
 **Shipping Address (for small parts and snail mail)**
 
-ATTN: Lance Albertson 
-OSU Open Source Lab
-224 Milne Computer Center
-1800 SW Campus Way
-Corvallis, OR 97331
+ATTN: Lance Albertson  
+OSU Open Source Lab  
+224 Milne Computer Center  
+1800 SW Campus Way  
+Corvallis, OR 97331  
 
 
 **Shipping Address (for large servers)**
 
 *Please consult with us prior to sending anything to this address*
 
-ATTN: Lance Albertson
-OSU Open Source Lab
-191 S.W. 35th St.
-Corvallis, OR 97331
+ATTN: Lance Albertson  
+OSU Open Source Lab  
+191 S.W. 35th St.  
+Corvallis, OR 97331  
 
 Phone
 -----

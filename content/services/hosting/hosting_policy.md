@@ -1,6 +1,6 @@
 ---
 title: "Hosting Policy"
-slug: /hosting/policy
+slug: policy
 ---
 
 Services

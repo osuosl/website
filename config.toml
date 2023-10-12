@@ -32,7 +32,7 @@ theme = 'mainroad'
         [[menu.main]]
             parent = "about"
             name = "FAQ"
-            url = "/faq"
+            url = "/donate/faq"
             weight = 2
         [[menu.main]]
             parent = "about"
@@ -42,12 +42,12 @@ theme = 'mainroad'
         [[menu.main]]
             parent = "about"
             name = "Staff"
-            url = "/people"
+            url = "/about/people"
             weight = 4
         [[menu.main]]
             parent = "about"
             name = "Logos"
-            url = "/logos"
+            url = "/about/logos"
             weight = 5
         [[menu.main]]
             parent = "about"
@@ -58,7 +58,7 @@ theme = 'mainroad'
 
             [[menu.main]]
                 parent = "donate"
-                name = "Hardware"
+                name = "Hardware Donations"
                 url = "/donate/hardware"
                 weight = 1
 
@@ -102,7 +102,7 @@ theme = 'mainroad'
             [[menu.main]]
                 parent = "hosting"
                 name = "Request Hosting"
-                url = "/services/request-hosting"
+                url = "/request-hosting"
                 weight = 4
 
         [[menu.main]]
@@ -185,6 +185,11 @@ theme = 'mainroad'
             identifier = "ibm-z"
             url = "/services/ibm-z"
             weight = 4
+
+            [[menu.main]]
+                parent = "ibm-z"
+                name = "IBM Z CI Request Form"
+                url = "/services/ibm-z/request_ci"
 
     [[menu.main]]
         name = "Student Experience"

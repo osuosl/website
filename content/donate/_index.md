@@ -1,6 +1,6 @@
 ---
 title: Donate
-slug: donate
+slug: /donate
 ---
 
 The OSL offers support services to the world's leading open source projects as part of its mission to contribute to the
