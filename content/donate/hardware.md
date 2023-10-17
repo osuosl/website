@@ -1,6 +1,6 @@
 ---
 title: Hardware Donations
-slug: donate/hardware
+slug: hardware
 ---
 
 The OSL has a very limited budget to purchase additional hardware which supports the projects we host. We rely heavily

@@ -1,6 +1,6 @@
 ---
 title: "Hosting"
-slug: /hosting
+slug: /
 ---
 
 ![Hosting](/images/Hosting.jpg#right-hosting)

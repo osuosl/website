@@ -1,6 +1,6 @@
 ---
 title: "Hosting Details"
-slug: /hosting/details
+slug: details
 ---
 
 We offer a wide variety of services to our hosted clients so the OSL can help

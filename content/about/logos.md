@@ -1,6 +1,6 @@
 ---
 title: "Open Source Lab Logos"
-slug: /logos
+slug: logos
 ---
 
 Below are the four versions of our logo.

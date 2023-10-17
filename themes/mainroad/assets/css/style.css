@@ -1499,6 +1499,15 @@ label {
 	width: 200px;
 }
 
+.form-inline {
+	display: flex;
+	margin: 5px;
+}
+
+.form-inline label {
+	margin: 5px;
+}
+
 textarea {
 	width: 200px;
 	height: 32px;

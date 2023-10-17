@@ -1,31 +1,26 @@
 ---
-title: POWER CI Request Form
-slug: /powerdev/request_powerci
+title: IBM Z CI Request Form
+slug: ibm-z/request_ci
 ---
 
-The Open Source Lab partners with IBM to host POWER based servers in order to provide an open platform for
-innovation to the open source community. For more information about this partnership, please visit our
-[POWER Development Hosting page](/services/powerdev).
+Please use the form below to request **new** access to the [IBM Z CI service](/services/ibm-z) provided by the OSUOSL.
 
-Please use the form below to request new access to the POWER CI service provided by the OSUOSL.
+For any **changes, updates, or issues with an existing project** please send the specific request as an
+email to "mailto:ibm-z-ci-request@osuosl.org">[ibm-z-ci-request@osuosl.org](mailto:ibm-z-ci-request@osuosl.org) and include the original project name in the subject line and the names of the Jenkins jobs that have the issue in the message body.
 
-For any changes, updates, or issues with an existing project please send the specific request as an
-email to [powerci-request@osuosl.org](mailto:powerci-request@osuosl.org) and include the original
-project name in the subject line and the names of the Jenkins jobs that have the issue in the message body.
-
-This access is intended only for *free and open source* projects who qualify and are approved by
+This access is intended only for ***free and open source*** projects who qualify and are approved by
 both the OSUOSL and IBM. For proprietary sourced projects or products please use other POWER resources which
-can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/).
-        
-The POWER CI service uses Docker to deploy Jenkins workers. In the future we will add access to use OpenStack
-to deploy Jenkins workers (ppc64le only).
+can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/). The IBM Z CI service
+uses Docker to deploy Jenkins workers.
+
+For more resources regarding Linux on IBM Z, take a look at IBM's [Linux on IBM Z community](https://www.ibm.com/developerworks/community/groups/community/lozopensource).
 
 {{< raw >}}
 <div id="content">
 <!-- Formsender error script -->
 <script src="../../../theme/js/formsender-error.js"></script>
-  <form class="webform-client-form" enctype="multipart/form-data" action="https://formsender.osuosl.org:443"
-  method="post" id="webform-client-form-1086" accept-charset="UTF-8">
+  <form class="webform-client-form" enctype="multipart/form-data"
+    action="https://formsender.osuosl.org:443" method="post" id="webform-client-form-1086" accept-charset="UTF-8">
     <div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-name">
         <label for="edit-submitted-name">Name <span class="form-required" title="This field is required.">*</span>
@@ -63,7 +58,7 @@ to deploy Jenkins workers (ppc64le only).
       </div>
       <div class="form-item webform-component webform-component-textarea" id="webform-component-mission">
         <div class="description">Please describe in detail the mission and purpose of this request in regards to how
-        the POWER architecture will support your project. Also describe the general mission of your project.</div>
+        the IBM Z architecture will support your project. Also describe the general mission of your project.</div>
         <label for="edit-submitted-mission">Description of Project Mission <span class="form-required"
             title="This field is required.">*</span></label>
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-mission"
@@ -101,20 +96,10 @@ to deploy Jenkins workers (ppc64le only).
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-other-information"
         name="other_information" cols="60" rows="5" class="form-textarea"></textarea></div>
       </div>
-      <h4>POWER CI Access Question(s)</h4>
-      <div class="form-item webform-component" id="webform-component-platforms">
-        <div class="description">Some platforms may not be supported on a specific architecture, so please check with
-            us first.</div>
+      <h4>IBM Z CI Access Question(s)</h4>
+      <div class="webform-component" id="webform-component-platforms">
         <label for="webform-component-platforms">OS Platform(s) <span class="form-required"
             title="This field is required.">*</span></label>
-        <div class="form-inline">
-          <input type="checkbox" id="edit-submitted-centos" class="form-checkbox" name="platform_centos" value="requested" />
-          <label for="edit-submitted-centos">CentOS</label>
-        </div>
-        <div class="form-inline">
-          <input type="checkbox" id="edit-submitted-fedora" class="form-checkbox" name="platform_fedora" value="requested" />
-          <label for="edit-submitted-fedora">Fedora</label>
-        </div>
         <div class="form-inline">
           <input type="checkbox" id="edit-submitted-debian" class="form-checkbox" name="platform_debian" value="requested" />
           <label for="edit-submitted-debian">Debian</label>
@@ -124,44 +109,36 @@ to deploy Jenkins workers (ppc64le only).
           <label for="edit-submitted-ubuntu">Ubuntu</label>
         </div>
         <div class="form-inline">
-          <input type="checkbox" id="edit-submitted-gentoo" class="form-checkbox" name="platform_gentoo" value="requested" />
-          <label for="edit-submitted-gentoo">Gentoo</label>
+          <input type="checkbox" id="edit-submitted-fedora" class="form-checkbox" name="platform_fedora" value="requested" />
+          <label for="edit-submitted-fedora">Fedora</label>
         </div>
         <div class="form-inline">
           <input type="checkbox" id="edit-submitted-other" class="form-checkbox" name="platform_other" value="requested" />
           <label for="edit-submitted-other">Other (please specify in the "Other Information" field above)</label>
         </div>
-      </div>
-      <div class="form-item webform-component webform-component-select" id="webform-component-gpu">
-        <div class="description">Thanks to a collaboration with the <a href="https://cgrb.oregonstate.edu/">Center for
-        Genome Research and Biocomputing (CGRB)</a>, our POWER CI system does have access to GPU's via Jenkins. If you
-        require GPU access, please answer "Yes".</div>
-        <label for="edit-submitted-gpu">GPU Access</label>
-        <select id="edit-submitted-gpu" name="gpu_access" class="form-select">
-          <option value="No" selected="selected">No</option>
-          <option value="Yes">Yes</option>
-        </select>
+        <div class="description">Some platforms may not be supported on a specific architecture, so please check with
+            us first.</div>
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-ci-github">
-        <div class="description">We use GitHub OAuth to authenticate into the POWER CI system. Please provide a comma
+        <div class="description">We use GitHub OAuth to authenticate into the CI system. Please provide a comma
         separated list of GitHub username(s) to gain access.</div>
-        <label for="edit-submitted-ci-github">GitHub Username(s) for POWER CI <span class="form-required"
+        <label for="edit-submitted-ci-github">GitHub Username(s) for IBM Z CI <span class="form-required"
             title="This field is required.">*</span></label>
         <input type="text" id="edit-submitted-ci-github" name="ci-github" value="" size="60" maxlength="128"
             class="form-text required" />
       </div>
       <p><i>You should receive an automated email from our request ticketing system to the email address you have
-      provided within 5-10 minutes.  If you don't receive this email please reach out to us at <a
-      href="mailto:powerci-request@osuosl.org">powerci-request@osuosl.org</a> or via IRC in <b>#osuosl</b> on
+      provided within 5-10 minutes.  If you don't receive this email please reach out to us at 
+      <a href="mailto:ibm-z-ci-request@osuosl.org">ibm-z-ci-request@osuosl.org</a> or via IRC in <b>#osuosl</b> on
       <a href="https://libera.chat/">Libera Chat</a>.</i></p>
-      <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+      <div class="g-recaptcha" data-sitekey="6LeOugIAAAAAALZJU8MBrWbtN6NC9sMGCu8Xgb41"></div>
       <!-- Formsender Settings -->
       <input type="hidden" name="last_name" value="" />
       <input type="hidden" name="token" value="15674hsda//*q23%^13jnxccv3ds54sa4g4sa532323!OoRdsfISDIdks38*(dsfjk)aS" />
-      <input type="hidden" name="redirect" value="/form-submitted" />
-      <input type="hidden" name="mail_subject_prefix" value="New POWER CI Request" />
+      <input type="hidden" name="redirect" value="https://www.osuosl.org/form-submitted" />
+      <input type="hidden" name="mail_subject_prefix" value="New IBM Z CI Request" />
       <input type="hidden" name="mail_subject_key" value="project_name" />
-      <input type="hidden" name="send_to" value="PowerCI" />
+      <input type="hidden" name="send_to" value="IBM-Z-CI" />
       <!-- /Formsender Settings -->
       <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op"
       value="Submit" class="form-submit" /></div>
