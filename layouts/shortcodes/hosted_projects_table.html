@@ -1,17 +1,17 @@
 {{ if .IsNamedParams }}
 <table class="hosted_projects_table">
-    <thead>
-        <th>Project</th>
-        <th>Services</th>
-    </thead>
-    <tbody>
-        {{ $data := index $.Site.Data $.Params.file }}
-        {{ range $data }}
-        <tr>
-            <td class="hosted_projects_table_name">{{ .name }}</td>
-            <td>{{ .description }}</td>
-        </tr>
-        {{ end }}
-    </tbody>
+  <thead>
+    <th>Project</th>
+    <th>Services</th>
+  </thead>
+  <tbody>
+    {{ $data := index $.Site.Data $.Params.file }}
+    {{ range $data }}
+    <tr>
+      <td class="hosted_projects_table_name">{{ .name }}</td>
+      <td>{{ .description }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
 </table>
 {{- end -}}
