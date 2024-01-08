@@ -528,8 +528,6 @@
   description: mirroring, powerpc, ci-cd
 - name: WebDAV
   description: vm 
-- name: x265
-  description: powerpc
 - name: X2go
   description: powerpc
 - name: Xenia

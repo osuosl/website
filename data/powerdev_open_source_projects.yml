@@ -10,6 +10,8 @@
   description: Framework for testing Ansible roles and playbooks
 - name: Apache Bigtop
   description: An Apache Foundation project for Infrastructure Engineers and Data Scientists looking for comprehensive packaging, testing, and configuration of the leading open source big data components; supports a wide range of components/projects, including, but not limited to, Hadoop, HBase and Spark
+- name: apache-camel
+  description: Camel is an Open Source integration framework that empowers you to quickly and easily integrate various systems consuming or producing data.
 - name: Apache CouchDB
   description: Seamless multi-master sync, that scales from Big Data to Mobile, with an Intuitive HTTP/JSON API and designed for Reliability.
 - name: Apache Software Foundation
@@ -256,8 +258,6 @@
   description: Dedicated to developing a high-quality, open video format for the web that's freely available to everyone
 - name: Whonix
   description: Anonymity, privacy, security online
-- name: x265
-  description: x265 is an open source HEVC encoder
 - name: X2Go
   description: A Remote Desktop and Remote Application Solution. Originally developed on x86/x64 hardware platforms, the server and client components are also available for ARM (Raspbian) and POWER (big and little endian). In short, it's for Linux what Citrix is for Windows.
 - name: Xenia
