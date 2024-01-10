@@ -30,6 +30,8 @@
   description: HELICS is a framework that enables simulators to synchronize time and exchange data, that is primarily used in electric grid research. It is used by at multiple national labs and universities, and has gotten some use by the research division of some commercial companies.
 - name: Heptapod
   description: A community driven effort to bring Mercurial SCM support to GitLab.
+- name: Heyoka
+  description: C++ library for ODE integration via Taylor's method and LLVM.
 - name: Jitesoft
   description: Jitesoft strive to provide up-to-date, optimized and secure docker/oci images for multiple architectures, free of charge. All images and build-scripts are released under the MIT license and can be found on GitLab and GitHub. https://gitlab.com/jitesoft/dockerfiles
 - name: Kali Linux
