@@ -1,15 +1,9 @@
-baseURL = "/"
-languageCode = "en-us"
-title = "OSU Open Source Lab"
+baseURL = '/'
+languageCode = 'en-us'
+title = 'OSU Open Source Lab'
+theme = 'osuosl'
+relativeURLs = true
 enableInlineShortcodes = true
-theme = 'mainroad'
-
-[Params]
-    post_meta = ["blog_header"]
-
-[Params.logo]
-    image = "images/OSU_newlogo.png"
-    subtitle = "OSU Open Source Lab"
 
 [menu]
     [[menu.main]]

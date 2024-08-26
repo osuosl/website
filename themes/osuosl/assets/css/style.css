@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap');
+@font-face {
+    font-family: 'EksjaExtremesRegular';
+    src: url(https://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-regular-webfont.eot);
+    src: local(':'), url(https://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-regular-webfont.woff) format('woff'), url(https://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-regular-webfont.ttf) format('truetype'), url(https://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-regular-webfont.svg#webfont) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    font-family: 'Gudea', sans-serif;
+    margin: 0;
+}
+
+main {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #D73F09;
+    font-weight: normal;
+    margin: 0 0 1.25rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+a {
+    color: #D73F09;
+}
+
+ul li {
+    /* list-style-image: url(/theme/img/bullet.png); */
+    line-height: 20px;
+    margin-bottom: 6px;
+    /* list-style-type: none; */
+}
+
+button {
+    font-size: 100%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    height: auto;
+}
+
+.header {
+    display: block;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #D73F09;
+}
+
+.logo-container {
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.logo {
+    max-height: 100px;
+}
+
+.subheader-container {
+    padding: 10px;
+}
+
+.subheader-container,
+.subheader-container a {
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo-divider {
+    font-size: 15px;
+}
+
+.osl-logo-link {
+    font-weight: bold;
+}
+
+.search-container {
+    margin: 1.4em;
+}
+
+.search-form {
+    display: flex;
+    margin: 0;
+}
+
+.search {
+    border-radius: 12px 0 0 12px;
+    border: medium none;
+    padding: 8px;
+    margin: 0;
+    width: 200px;
+}
+
+.submit-search {
+   border-radius: 0 12px 12px 0;
+   border-style: none;
+   padding: 5px;
+   margin: 0;
+   height: 33px;
+   width: 40px;
+   cursor: pointer;
+   background: black;
+}
+
+.fa-search {
+    color: white;
+}
+
+/* 
+    Main menu
+    source: Hugo mainroad theme
+*/
+.no-js .menu__btn {
+    display: none;
+}
+
+.menu {
+    display: inline-block;
+    margin-left: 210px;
+}
+
+.menu__container {
+    max-width: 1080px;
+}
+
+.menu__btn {
+    display: block;
+    width: 100%;
+    padding: 0;
+    font: inherit;
+    background: #fff;
+    color: #2a2a2a;
+    border: 0;
+    outline: 0;
+}
+
+.menu__btn-title {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    padding: .625rem .9375rem;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+:focus>.menu__btn-title {
+    box-shadow: inset 0 0 1px 3px {
+            {
+            $highlightColor
+        }
+    }
+
+    ;
+}
+
+button:not(:-moz-focusring):focus>.menu__btn-title {
+    box-shadow: none;
+}
+
+.menu__btn:focus,
+.menu__btn-title:focus {
+    outline: 0;
+}
+
+.js .menu__btn--active {
+    color: {
+            {
+            $highlightColor
+        }
+    }
+
+    ;
+}
+
+.menu__list {
+    list-style: none;
+    background: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.menu__item:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+.menu__item:first-child {
+    border: 0;
+}
+
+.menu__link {
+    display: block;
+    padding: 5px 10px;
+    padding: .4rem .9375rem;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu__container {
+    display: flex;
+}
+
+.dropdown__content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    min-width: 250px;
+    max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.third__dropdown {
+    display: none;
+    position: absolute;
+    left: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.submenu__text {
+    color: #fff;
+    text-transform: none;
+    padding: 0;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+.thirdmenu__text {
+    color: #fff;
+    text-transform: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.submenu__link {
+    margin: 1px;
+}
+
+.thirdmenu__link {
+    margin: 0px;
+}
+
+.submenu__list {
+    list-style: none;
+}
+
+.thirdmenu__list {
+    list-style: none;
+}
+
+.menu__item:hover .dropdown__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__dropdown:hover .menu__link {
+    color: #fff;
+}
+
+.submenu__item:hover .third__dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__link:hover {
+    color: #fff;
+}
+
+.menu__item:hover .menu__link {
+    color: #fff;
+}
+
+.js .menu__list {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    visibility: hidden;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+
+.js .menu__list--active {
+    visibility: visible;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.menu__list--transition {
+    transition: visibility .15s ease, transform .15s ease, -webkit-transform .15s ease;
+}
+
+/* 
+    Carousel
+    Source: https://hugocodex.org/add-ons/slider-carousel/
+*/
+.carousel {
+    position: relative;
+    border-bottom: none;
+}
+
+.carousel ul {
+    overflow: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-snap-points-y: repeat(100%);
+    scroll-behavior: smooth;
+    background: gray;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel ul::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.carousel ul li {
+    position: relative;
+    min-width: 100%;
+    list-style: none;
+    background: url() center center / cover no-repeat;
+    scroll-snap-align: start;
+}
+
+.carousel ul li>* {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel ul li>img {
+    object-fit: cover;
+}
+
+.carousel ul li>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.carousel ol {
+    visibility: hidden;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+
+.carousel ol li {
+    list-style: none;
+    padding: 0 5px;
+}
+
+.carousel ol li a {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 100%;
+}
+
+.carousel ol li.selected a {
+    background: white;
+}
+
+.carousel .prev,
+.carousel .next {
+    display: none;
+    user-select: none;
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    padding: 30px 15px 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    line-height: 0;
+}
+
+.carousel .next {
+    left: auto;
+    right: 0;
+}
+
+.carousel-title-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px 2px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-title {
+    margin: 0;
+    padding: 10px;
+    font-family: "Impact", sans-serif;
+}
+
+.carousel-title a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.carousel-title a:hover {
+    text-decoration: underline;
+}
+
+.more-link {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    border: none;
+    box-shadow: none;
+    background: #f4f2ec;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+    width: fit-content;
+    height: auto;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid #eee;
+}
+
+/* 
+    Images 
+*/
+img[src$='#center'] {
+    display: block;
+    margin: auto;
+}
+
+img[src$='#center-white'] {
+    display: block;
+    margin: auto;
+    background: grey;
+}
+
+img[src$='#right'] {
+    float: right;
+}
+
+img[src$='#right-people'] {
+    float: right;
+    width: 110px;
+}
+
+img[src$='#right-barcamp'] {
+    float: right;
+    width: 200px;
+}
+
+img[src$='#right-bootcamp'] {
+    float: right;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img[src$='#right-hosting'] {
+    float: right;
+    height: 221px;
+    width: 358.5px;
+    margin: 5px;
+}
+
+img[src$='#sponsors'] {
+    width: 200px;
+}
+
+img[src$='#right-faq'] {
+    float: right;
+    height: 250px;
+}
+
+img[src$='#blog'] {
+    width: 400px;
+}
+
+img[src$='#blog-center'] {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 
+    Table 
+*/
+table {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 2px solid #fff;
+}
+
+td,
+th {
+    padding: 5px 10px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+th {
+    background-color: #F5F2ED;
+    font-weight: 400;
+    padding: 5px;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: #F5F2ED;
+}
+
+.hosted_projects_table_name {
+    width: 300px;
+}
+
+/* 
+    Forms 
+*/
+input {
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 30%;
+    height: 20px;
+}
+
+textarea {
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 30%;
+    height: 20px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-required {
+    color: #D73F09;
+}
+
+.form-item label {
+    margin-bottom: 5px;
+}
+
+.form-submit {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: fit-content;
+    height: auto;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+    box-shadow: none;
+    border: medium none;
+    border-radius: 4px;
+}
+
+.form-submit:hover {
+    background-color: #D73F09;
+}
+
+/* 
+    Blog
+*/
+
+.post__content {
+    margin-bottom: 20px;
+}
+
+/* 
+    Footer
+*/
+.footer {
+    padding: 10px 25px;
+    font-size: 0.85rem;
+    color: white;
+    background: #2a2a2a;
+    border-top: 5px solid #D73F09;
+}
+
+.footer__container {
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer__links {
+    -webkit-order: 1;
+    order: 1;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer_headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.footer_links {
+    margin: 20px;
+    margin-left: 0px;
+    text-decoration: none;
+}
+
+.footer_contact_header {
+    margin: 0px;
+    font-size: 16px;
+}
+
+.footer_link_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 170px;
+    margin-top: 10px;
+}
+
+.footer_link_container a {
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer_menu_link_container {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer_map_container {
+    margin-bottom: 10px;
+}

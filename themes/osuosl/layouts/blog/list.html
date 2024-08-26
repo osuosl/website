@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main class="main_content">
+    <h1>OSU Open Source Lab</h1>
+    <div>
+        {{ .Content }}
+    </div>
+    {{- range .Paginator.Pages }}
+    {{- .Render "summary" }}
+    {{- end }}
+</main>
+{{ end }}

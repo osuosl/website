@@ -1,8 +1,8 @@
 ---
 title: Openstack's Horizon
-:date: 2014-02-20 22:32
-:authors: ["Melissa"]
-:slug: openstacks-horizon
+date: 2014-02-20 22:32
+authors: ["Melissa"]
+slug: openstacks-horizon
 ---
 
 ![Openstack's Horizon](/images/tech-blog.png#blog)

@@ -1,8 +1,8 @@
 ---
 title: OSL to Mentor Four in Google Summer of Code
-:date: 2013-06-05 20:11
-:authors: ["Kayla Harr"]
-:slug: osl-to-mentor-four-in-google-summer-of-code
+date: 2013-06-05 20:11
+authors: ["Kayla Harr"]
+slug: osl-to-mentor-four-in-google-summer-of-code
 ---
 
 Students from India, Poland and the United Kingdom will work on projects for the
