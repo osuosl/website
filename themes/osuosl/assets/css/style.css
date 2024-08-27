@@ -13,9 +13,9 @@ html, body {
 }
 
 main {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
+    width: 976px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1,
@@ -157,15 +157,6 @@ textarea {
     display: none;
 }
 
-.menu {
-    display: inline-block;
-    margin-left: 210px;
-}
-
-.menu__container {
-    max-width: 1080px;
-}
-
 .menu__btn {
     display: block;
     width: 100%;
@@ -229,6 +220,7 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
     margin-bottom: 10px;
     margin-top: 10px;
     display: flex;
+    padding: 0;
 }
 
 .menu__item:hover {
@@ -241,7 +233,9 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
 }
 
 .menu__link {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 5px 10px;
     padding: .4rem .9375rem;
     font-weight: 400;
@@ -253,6 +247,12 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
 
 .menu__container {
     display: flex;
+}
+
+.dropdown__arrow {
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
 }
 
 .dropdown__content {
@@ -301,10 +301,12 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
 
 .submenu__list {
     list-style: none;
+    padding: 0;
 }
 
 .thirdmenu__list {
     list-style: none;
+    padding: 0;
 }
 
 .menu__item:hover .dropdown__content {

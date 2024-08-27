@@ -1,5 +1,7 @@
 {{ define "main" }}
 <main class="main_content">
+{{- partial "menu.html" . -}}
+
 {{ partial "carousel.html" (dict "context" . "items" "2i" "height" "50" "unit" "%" "duration" "6000") }}
 
 {{ .Content }}
