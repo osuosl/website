@@ -38,10 +38,12 @@
   description: Kali Linux is an open-source, multi-platform distribution, aimed at advanced Penetration Testing and Security Auditing. Kali Linux provides several hundred common tools and industry specific modifications, targeted towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics, Reverse Engineering, Vulnerability Management and Red Team Testing.
 - name: Minio
   description: Testing minio object storage server on ARM architecture.
-- name: MSYS2
-  description: MSYS2 is a collection of tools and libraries providing you with an easy-to-use environment for building, installing and running native Windows software.
+- name: Mumble
+  description: Mumble is a free, open source, low latency, high quality voice chat application.
 - name: Node.js
   description: Node.js is a JavaScript runtime for servers. It runs on a variety of OS and architecture platforms (https://github.com/nodejs/node/blob/main/BUILDING.md#platform-list for the current list), including Linux on AARCH64 (arm64).
+- name: OCaml
+  description: A modern, functional programming language with support for fast native code compilation on AARCH64
 - name: OpenDev
   description: OpenDev is a collaboratory for open source software development at scale. CI nodes supporting projects such as Openstack, Airship, Kata, pypa/pip, pyca/cryptography etc.
 - name: OpenFaaS
@@ -68,3 +70,5 @@
   description: Improving building and optimizing AARCH64 support on NetBSD with Ampere hardware
 - name: The Tor Project
   description: To advance human rights and freedoms by creating and deploying free and open source anonymity and privacy technologies, supporting their unrestricted availability and use, and furthering their scientific and popular understanding.
+- name: Xen Project
+  description: The Xen Project's mission is to deliver a powerful, secure, and flexible virtualization platform that supports a wide range of applications. Among the architectures fully supported by Xen are AARCH64 and x86. We maintain a robust testing infrastructure based on GitLab CI, which executes a variety of builds using different compilers and distributions, and also test Xen execution using QEMU as an emulator.
