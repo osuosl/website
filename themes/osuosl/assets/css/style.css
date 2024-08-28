@@ -121,36 +121,67 @@ textarea {
     font-weight: bold;
 }
 
-.search-container {
-    margin: 1.4em;
+.search-modal {
+    display: none;
 }
 
-.search-form {
+.search-modal.show {
     display: flex;
-    margin: 0;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
 }
 
-.search {
-    border-radius: 12px 0 0 12px;
-    border: medium none;
-    padding: 6px;
-    margin: 0;
-    width: 100px;
+.search-modal.hide {
+    display: none;
 }
 
-.submit-search {
-   border-radius: 0 12px 12px 0;
-   border-style: none;
-   padding: 5px;
-   margin: 0;
-   height: 33px;
-   width: 40px;
-   cursor: pointer;
-   background: black;
+.search-headers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.fa-search {
+.close-search {
+    height: fit-content;
+    border: none;
+    background: white;
+}
+
+.close-search i {
+    font-size: x-large;
+}
+
+.search-modal-container {
+    background: white;
+    width: 56rem;
+    height: 90vh;
+    overflow: scroll;
+    margin: 50px;
+    padding: 20px;
+}
+
+.open-search {
+    border-radius: 10px;
+    border-style: none;
+    padding: 5px;
+    margin: 1em;
+    height: 33px;
+    width: 40px;
+    cursor: pointer;
     color: white;
+    background: none;
+}
+
+.open-search:hover {
+    background: black;
 }
 
 /* 

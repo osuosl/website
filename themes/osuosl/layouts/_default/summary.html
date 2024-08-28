@@ -1,7 +1,7 @@
 <article class="list__item post">
     {{ partial "post_thumbnail.html" (dict "class" "list" "page" .) }}
     <header class="list__header">
-        <h2 class="list__title post__title">
+        <h2 data-pagefind-meta="title" class="list__title post__title">
             <a href="{{ .RelPermalink }}" rel="bookmark">
                 {{ .Title }}
             </a>
