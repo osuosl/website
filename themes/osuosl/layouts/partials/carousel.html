@@ -27,3 +27,10 @@
     <div class="prev">&lsaquo;</div>
     <div class="next">&rsaquo;</div>
 </div>
+
+<div class="mobile-carousel">
+    {{ with index .context.Site.Data.carousel.images 0 }} 
+    <h2 class="mobile-carousel-title"><a href="{{ .link }}">{{ .title }}</a></h2>
+    <img src="{{ .image }}" />
+    {{ end }}
+</div>

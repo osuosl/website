@@ -1,5 +1,5 @@
 {{- if .Site.Menus.main }}
-<div class="page-wrapper">
+<div class="main-menu">
     <button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
         <span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>
     </button>
@@ -55,6 +55,31 @@
                     {{ end }}
                 </ul>
             </div>
+        </li>
+        {{- else }}
+        <li class="menu__item{{ if or ($currentNode.IsMenuCurrent " main" .) ($currentNode.HasMenuCurrent "main" .) }}
+            menu__item--active{{ end }}">
+            <a class="menu__link" href="{{ .URL }}">
+                {{ .Pre }}
+                <span class="menu__text">{{ .Name }}</span>
+            </a>
+        </li>
+        {{- end }}
+        {{- end }}
+    </ul>
+</div>
+
+<div class="mobile-menu">
+    <ul class="menu__list">
+        {{- $currentNode := . }}
+        {{- range .Site.Menus.main }}
+        {{- if .HasChildren }}
+        <li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main" .)
+            ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
+            <a class="menu__link" href="{{ .URL }}">
+                {{ .Pre }}
+                <span class="menu__text">{{ .Name }}</span>
+            </a>
         </li>
         {{- else }}
         <li class="menu__item{{ if or ($currentNode.IsMenuCurrent " main" .) ($currentNode.HasMenuCurrent "main" .) }}

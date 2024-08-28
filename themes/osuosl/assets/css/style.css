@@ -77,6 +77,10 @@ textarea {
     height: auto;
 }
 
+.mobile-menu-container {
+    display: none;
+}
+
 .header {
     display: block;
 }
@@ -129,9 +133,9 @@ textarea {
 .search {
     border-radius: 12px 0 0 12px;
     border: medium none;
-    padding: 8px;
+    padding: 6px;
     margin: 0;
-    width: 200px;
+    width: 100px;
 }
 
 .submit-search {
@@ -153,6 +157,10 @@ textarea {
     Main menu
     source: Hugo mainroad theme
 */
+.mobile-menu {
+    display: none;
+}
+
 .no-js .menu__btn {
     display: none;
 }
@@ -358,6 +366,10 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
     Carousel
     Source: https://hugocodex.org/add-ons/slider-carousel/
 */
+.mobile-carousel {
+    display: none;
+}
+
 .carousel {
     position: relative;
     border-bottom: none;
@@ -705,7 +717,6 @@ textarea {
 .footer_headers {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin: auto;
     margin-top: 20px;
 }
@@ -741,4 +752,108 @@ textarea {
 
 .footer_map_container {
     margin-bottom: 10px;
+}
+
+.footer_menu_container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 979px) {
+    main,
+    .footer__container {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .mobile-carousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mobile-carousel img {
+        width: 100%;
+        height: auto;
+        max-height: 470px;
+        vertical-align: middle;
+    }
+
+    .footer_headers {
+        flex-direction: column;
+    }
+
+    .footer_menu_container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        width: 100%;
+    }
+    
+    .mobile-carousel {
+        padding-top: 20px;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .mobile-menu.show {
+        display: block;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    .mobile-menu-container {
+        display: block;
+    }
+
+    .toggle-mobile-menu {
+        padding: 11px 13px 9px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+
+    a.toggle-mobile-menu {
+        color: white;
+    }
+
+    .toggle-mobile-menu:hover {
+        background-color: #373737;
+        cursor: pointer;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .menu__text {
+        text-transform: capitalize;
+        color: white;
+    }
+
+    .menu__item {
+        background-color: rgba(0, 0, 0, 0.7);
+        margin: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
