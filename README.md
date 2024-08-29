@@ -27,6 +27,11 @@ there is a CSS tag, ``#blog`` that mimics the header image:
 
 To include a blog post on the front page's carousel, add it to the [carousel.yaml](/data/carousel.yaml) file.
 
+Dependencies
+------------
+
+The search feature is implemented using [Pagefind](https://pagefind.app/) and can be installed with `npx` or by [downloading the binary](https://pagefind.app/docs/installation/#downloading-a-precompiled-binary).
+
 Development
 -----------
 
@@ -34,4 +39,16 @@ To compile and host the site under development on port 1313, use:
 
 ```
 $ hugo server
+```
+
+Pagefind sources from the `public/` directory hugo compiles when the website is built. To view the website with full functionality:
+
+First compile it:
+```
+$ hugo
+```
+
+Then run it using pagefind:
+```
+$ ./pagefind --site public --serve
 ```
