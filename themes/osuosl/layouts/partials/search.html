@@ -1,0 +1,26 @@
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+
+<div class="search-modal">
+    <div class="search-modal-container">
+        <div class="search-headers">
+            <h1>Search</h1>
+            <button class="close-search" id="close-search"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
+        <div id="search"></div>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ 
+            element: "#search", 
+            showImages: false, 
+            showSubResults: true, 
+            processResult: function(result) {
+                result.title = result.metaTitle
+                return result;
+            }
+        });
+    });
+</script>

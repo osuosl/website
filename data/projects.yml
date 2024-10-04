@@ -40,6 +40,8 @@
   description: vm, mailing-list
 - name: Cacti
   description: co-location
+- name: cdxgen
+  description: vm, powerpc
 - name: Census Reporter
   description: vm
 - name: CentOS Linux
@@ -88,6 +90,8 @@
   description: vm, mirroring
 - name: Delve
   description: powerpc
+- name: DivestOS
+  description: mirroring
 - name: Django
   description: vm
 - name: Docker Matrix
@@ -292,6 +296,8 @@
   description: powerpc
 - name: Midnight Commander
   description: vm, mirroring 
+- name: Milvus
+  description: powerpc
 - name: Minio
   description: aarch64
 - name: Monitoring-plugins
@@ -306,14 +312,16 @@
   description: powerpc
 - name: Mozillazine
   description: Co-location, vm
+- name: MRCC
+  description: powerpc
 - name: Mulgara
   description: vm, mailing-list
 - name: MULTOVL
   description: powerpc
+- name: Mumble
+  description: aarch64
 - name: Musescore
   description: mirroring
-- name: Musicbrainz
-  description: vm, mirroring
 - name: Mutt
   description: mirroring, mailing-list, webapp
 - name: MX Linux
@@ -374,12 +382,12 @@
   description: vm, webapp, mirroring
 - name: OpenQuake
   description: powerpc
+- name: OpenSearch Project
+  description: powerpc
 - name: OpenShift
   description: powerpc
 - name: OpenStreetMap
   description: co-location, vm, mirroring
-- name: OpenWhisk
-  description: powerpc
 - name: OpenWRT
   description: ci-cd
 - name: OpenZFS
@@ -424,6 +432,8 @@
   description: powerpc
 - name: Privly
   description: webapp
+- name: Project Quay
+  description: powerpc
 - name: Python Software Foundation
   description: co-location, vm, webapp
 - name: PyTorch
@@ -468,6 +478,8 @@
   description: powerpc 
 - name: SharkLinux
   description: vm 
+- name: sire
+  description: powerpc
 - name: Skytable
   description: aarch64
 - name: Slackware
@@ -516,6 +528,8 @@
   description: mirroring
 - name: trivy
   description: powerpc
+- name: Tucana Linux
+  description: mirroring
 - name: Ubuntu
   description: mirroring
 - name: uClibc
@@ -526,12 +540,16 @@
   description: mirroring
 - name: VideoLAN
   description: mirroring, powerpc, ci-cd
+- name: vLLM
+  description: powerpc
 - name: WebDAV
   description: vm 
 - name: X2go
   description: powerpc
 - name: Xenia
   description: powerpc
+- name: Xen Project
+  description: aarch64
 - name: XBMC
   description: mirroring
 - name: Xiph

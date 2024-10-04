@@ -1,0 +1,95 @@
+{{- if .Site.Menus.main }}
+<div class="main-menu">
+    <button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+        <span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>
+    </button>
+
+    <ul class="menu__list">
+        {{- $currentNode := . }}
+        {{- range .Site.Menus.main }}
+        {{- if .HasChildren }}
+        <li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main" .)
+            ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
+            <a class="menu__link" href="{{ .URL }}">
+                {{ .Pre }}
+                <span class="menu__text">{{ .Name }}</span>
+            </a>
+            <div class="menu__container">
+                <ul class="submenu__list dropdown__content">
+                    {{- range .Children }}
+                    {{- if .HasChildren }}
+                    <li class="submenu__item menu__item{{ if or ($currentNode.IsMenuCurrent " main" .)
+                        ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
+                        <div class="menu__container">
+                            <a class="menu__link submenu__link" href="{{ .URL }}">
+                                {{ .Pre }}
+                                <span class="menu__text submenu__text">{{ .Name }}</span>
+                                {{ .Post }}
+                                <i class="fa-solid fa-caret-right dropdown__arrow"></i>
+                            </a>
+                            
+                            <ul class="thirdmenu__list third__dropdown">
+                                {{- range .Children }}
+                                <li class="thirdmenu__item menu__item{{ if or ($currentNode.IsMenuCurrent " main" .)
+                                    ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
+                                    <a class="menu__link thirdmenu__link" href="{{ .URL }}">
+                                        {{ .Pre }}
+                                        <span class="menu__text thirdmenu__text">{{ .Name }}</span>
+                                        {{ .Post }}
+                                    </a>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </li>
+                    {{- else }}
+                    <li class="submenu__item menu__item{{ if or ($currentNode.IsMenuCurrent " main" .)
+                        ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
+                        <a class="menu__link submenu__link" href="{{ .URL }}">
+                            {{ .Pre }}
+                            <span class="menu__text submenu__text">{{ .Name }}</span>
+                        </a>
+                    </li>
+                    {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+        </li>
+        {{- else }}
+        <li class="menu__item{{ if or ($currentNode.IsMenuCurrent " main" .) ($currentNode.HasMenuCurrent "main" .) }}
+            menu__item--active{{ end }}">
+            <a class="menu__link" href="{{ .URL }}">
+                {{ .Pre }}
+                <span class="menu__text">{{ .Name }}</span>
+            </a>
+        </li>
+        {{- end }}
+        {{- end }}
+    </ul>
+</div>
+
+<div class="mobile-menu">
+    <ul class="menu__list">
+        {{- $currentNode := . }}
+        {{- range .Site.Menus.main }}
+        {{- if .HasChildren }}
+        <li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main" .)
+            ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
+            <a class="menu__link" href="{{ .URL }}">
+                {{ .Pre }}
+                <span class="menu__text">{{ .Name }}</span>
+            </a>
+        </li>
+        {{- else }}
+        <li class="menu__item{{ if or ($currentNode.IsMenuCurrent " main" .) ($currentNode.HasMenuCurrent "main" .) }}
+            menu__item--active{{ end }}">
+            <a class="menu__link" href="{{ .URL }}">
+                {{ .Pre }}
+                <span class="menu__text">{{ .Name }}</span>
+            </a>
+        </li>
+        {{- end }}
+        {{- end }}
+    </ul>
+</div>
+{{- end }}

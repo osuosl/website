@@ -1,0 +1,10 @@
+{{ define "main" }}
+<main class="main_content">
+    {{- partial "menu.html" . -}}
+    <h1 data-pagefind-meta="title">{{ .Title }}</h1>
+    <p>by {{ delimit .Params.authors ", " " and " }} on {{ .Date | dateFormat "Mon, Jan 02 2006" }}</p>
+    <div>
+        {{ .Content }}
+    </div>
+</main>
+{{ end }}

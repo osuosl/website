@@ -7,38 +7,118 @@ slug: /powerdev/opence
 The Open Source Lab (OSUOSL) and Center for Genome Research and Biocomputing (CGRB) partner with IBM and OpenPOWER in order to provide a download resources around Open-CE. Open-CE is a community driven software distribution for machine learning that runs on standard Linux platforms with NVIDIA GPU technologies.
 
 <!-- Update the link to the current release when updating page -->
-- [Current release](#open-ce-release-193) 
+- [Current release](#open-ce-release-1110) 
 - [Previous releases](#previous-releases)
 
-Open-CE Release 1.9.3
----------------------
+Open-CE Release 1.11.0
+----------------------
 
-*Release date: 12/20/2023*
+This is release 1.11.0 of Open Cognitive Environment (Open-CE)
 
-This is bug fix release 3 of release 1.9. No other additions have been made since 1.9.1.
+Build Status:
+
+CPU Arch     | Build Base | Py3.10 | Py3.11 | CPU-only | CUDA 11.8 | CUDA 12.2 | Date
+------------ | ---------- | ------ | ------ | -------- | --------- | --------- | -------------
+ppc64le(P9)  | UBI 8      | DONE   | DONE   | DONE     | Err       | DONE      | 06/07/2024
+ppc64le(P10) | UBI 9      | DONE   | DONE   | DONE     | N/A       | N/A       | 06/11/2024
+x86_64       | UBI 9      | DONE   | DONE   | DONE     | Err       | DONE
+
+
 
 **What's new**
 
-- Various bugs fixed
 - Updated packages
 
-  - xgboost 1.7.6
-  - DALI 1.26
-  - mamba 1.4.2
-  - Onnxruntime 1.15.1
-  - Pytorch 2.0.1
-  - Ray 2.5.0
-  - Tensorboard 2.12.2
-  - Tensorflow-addons 0.19.0
-  - Tensorflow Serving 2.12.1
-  - Apache-beam 2.48.0
+  - absl-py 2.0.0
+  - apache-beam 2.53.0
+  - arrow-cpp[-proc] 15.0.1
+  - bazel 6.1.0
+  - black 23.10.0
+  - cmdstan 2.33.1
+  - cmdstanpy 1.2.0
+  - cudatoolkit[-dev] 12.2.0
+  - cudnn 8.9.6_12.2
+  - dali[-tf-plugin] 1.32.0
+  - datasets 2.16.1
+  - deepspeed 0.11.1
+  - fsspec 2023.10.0
+  - hatch-fancy-pypi-readme 23.1.0
+  - horovod 0.28.1
+  - huggingface_hub 0.20.0
+  - java-11-openjdk 11.0.6.10
+  - jax 0.4.23
+  - joblib 1.3.2
+  - jsonpatch 1.33
+  - keras 2.14.0
+  - langchain 0.1.6
+  - langchain-community 0.0.19
+  - langchain-core 0.1.22
+  - langsmith 0.0.87
+  - libnvjitlink 12.2.140
+  - lightgbm[-proc] 4.2.0
+  - lightning-app 2.1.3
+  - lightning-cloud 0.5.57
+  - lightning-fabric 2.1.3
+  - lightning-utilities 0.10.0
+  - mamba 1.5.6
+  - nasm 2.15.05
+  - nccl 2.19.3
+  - onnx 1.15.0
+  - onnxmltools 1.12.0
+  - onnxruntime 1.16.3
+  - openblas[-devel] 0.3.26
+  - [py-]opencv[-proc] 4.8.1
+  - packaging 23.2
+  - prophet 1.1.5
+  - pyarrow 15.0.1
+  - pyink 23.10.0
+  - pytorch[-base|-cpu] 2.1.2
+  - pytorch-lighting 2.1.3
+  - pytorch_geometric 2.4.0
+  - pytorch_scatter 2.1.2
+  - pytorch_sparse 0.6.18
+  - ray 2.9.2
+  - rust 1.77.0
+  - rust-std-\* 1.71.1
+  - scikit-learn 1.3.0
+  - sentencepiece 0.1.99
+  - skl2onnx 1.16.0
+  - sklearn-pandas 2.2.0
+  - stanio 0.3.0
+  - tensorboard 2.14.0
+  - tensorflow 2.14.1
+  - tensorflow-datasets 4.9.4
+  - tensorflow-estimator 2.14.0
+  - tensorflow-hub 0.15.0
+  - tensorflow-io[-gcs-filesystem] 0.35.0
+  - tensorflow-metadata 1.14.0
+  - tensorflow-probability 0.22.1
+  - tensorflow-text 2.14.0
+  - tf2onnx 1.15.1
+  - tiktoken 0.6.0
+  - tokenizers 0.15.2
+  - torchdata 0.7.1
+  - torchmetrics 1.2.1
+  - torchtext 0.16.2
+  - torchvision 0.16.2
+  - transformers 4.36.2
+  - uwsgi 2.0.25.1
+  - xgboost 2.0.3  
 
 - This release of Open-CE supports:
 
-  - NVIDIA's CUDA version 11.8
-  - Python 3.9 and 3.10
+  - NVIDIA's CUDA version 11.8, 12.2
+  - Python 3.10, 3.11
 
-- All the packages are built with openssl 1.*.
+- Important Notes:
+
+  - ppc64le builds with CUDA are UBI 8 container image based, not UBI 9 (amd64,arm64 only)
+    - Nvidia will not provide ppc64le-based UBI 8(+) images with CUDA > 12.4.1
+    - See: https://hub.docker.com/r/nvidia/cuda/tags?page=1&page_size=&ordering=&name=-devel-ubi
+  - CV-CUDA is disabled in DALI for ppc64le
+  - Jax and Jaxlib packages not available for ppc64le CUDA
+  - Python 3.9 is no longer supported
+  - OSU drops support of EL7
 
 
 **Learn more**
@@ -582,6 +662,38 @@ conda remove <package name>
 ```
 
 Important: This command removes the specified packages and any packages that depend on any of the specified packages. If you want to skip this dependency checking and remove just the requested packages, add the --force option. However, this may break your environment, so use this option with caution.
+
+
+Open-CE Release 1.9.3
+---------------------
+
+*Release date: 12/20/2023*
+
+This is bug fix release 3 of release 1.9. No other additions have been made since 1.9.1.
+
+**What's new**
+
+- Various bugs fixed
+- Updated packages
+
+  - xgboost 1.7.6
+  - DALI 1.26
+  - mamba 1.4.2
+  - Onnxruntime 1.15.1
+  - Pytorch 2.0.1
+  - Ray 2.5.0
+  - Tensorboard 2.12.2
+  - Tensorflow-addons 0.19.0
+  - Tensorflow Serving 2.12.1
+  - Apache-beam 2.48.0
+
+- This release of Open-CE supports:
+
+  - NVIDIA's CUDA version 11.8
+  - Python 3.9 and 3.10
+
+- All the packages are built with openssl 1.*.
+
 
 
 Open-CE Release 1.6.1

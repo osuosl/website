@@ -10,7 +10,7 @@
   description: Framework for testing Ansible roles and playbooks
 - name: Apache Bigtop
   description: An Apache Foundation project for Infrastructure Engineers and Data Scientists looking for comprehensive packaging, testing, and configuration of the leading open source big data components; supports a wide range of components/projects, including, but not limited to, Hadoop, HBase and Spark
-- name: apache-camel
+- name: Apache Camel 
   description: Camel is an Open Source integration framework that empowers you to quickly and easily integrate various systems consuming or producing data.
 - name: Apache CouchDB
   description: Seamless multi-master sync, that scales from Big Data to Mobile, with an Intuitive HTTP/JSON API and designed for Reliability.
@@ -74,6 +74,8 @@
   description: "ELENA is a general-purpose language with late binding. It is multi-paradigm, combining features of functional and object-oriented programming. Rich set of tools are provided to deal with message dispatching : multi-methods, message qualifying, generic message handlers, run-time interfaces"
 - name: Envoy
   description: sidecar binary used by the most popular service mesh in the microservice space (istio)
+- name: Falco
+  description: Falco is a cloud-native security tool designed for Linux systems. It employs custom rules on kernel events, which are enriched with container and Kubernetes metadata, to provide real-time alerts. Falco helps you gain visibility into abnormal behavior, potential security threats, and compliance violations, contributing to comprehensive runtime security.
 - name: Fedora Copr
   description: An easy-to-use automatic build system providing a package repository as its output
 - name: Fedora
@@ -148,10 +150,14 @@
   description: API’s for resource management and scheduling across entire datacenter and cloud environments. OSL hosts the CI infrastructure on POWER platform for this project
 - name: microbench
   description: Carefully measure the performance of the bandwidth between different system compenents on POWER systems to understand their influence on application development
+- name: Milvus
+  description: "Vector database built for scalable, similarity search"
 - name: Moonjit
   description: Builds and functionality testing
 - name: Mozilla
   description: Supports Mozilla projects in testing builds, running automated functionality tests, and debugging architecture-specific bugs.
+- name: MRCC
+  description: MRCC is a suite of ab initio and density functional quantum chemistry programs for high-accuracy electronic structure calculations developed and maintained by the quantum chemistry research group at the Department of Physical Chemistry and Materials Science, TU Budapest. Its special feature, the use of automated programming tools enabled the development of tensor manipulation routines which are independent of the number of indices of the corresponding tensors, thus significantly simplifying the general implementation of quantum chemical methods. Applying the automated tools of the program several quantum chemistry models and techniques of high complexity have been implemented so far including arbitrary single-reference coupled-cluster (CC) and configuration interaction (CI) methods, multi-reference CC approaches, CC and CI energy derivatives and response functions, arbitrary perturbative CC approaches. Many features of the package are also available with relativistic Hamiltonians allowing for accurate calculations on heavy element systems. The developed cost-reduction techniques and local correlation approaches also enable high-precision calculations for medium-sized and large molecules.
 - name: Multiple LLVM/HHVM/*
   description: Contributes towards FOSS software, optimizations for POWER arch; specifically contributes towards HHVM JIT, LLVM and other FOSS projects on POWER8
 - name: .Net
@@ -184,10 +190,10 @@
   description: Building an easy to use, yet powerful and state of art, Linux distribution aimed primarily at desktop use
 - name: OpenQuake
   description: An Open Source Engine for seismic hazard and risk assessment uses the infrastructure to try porting to POWER architecture and see how a different architecture affects the numerical tests (the code is covered by numerical, functional and qa tests)
+- name: OpenSearch Project
+  description: The POWER is used to build and assemble the OpenSearch software for ppc64le architecture
 - name: OpenShift
   description: Test builds of OpenShift for Continuous Integration
-- name: OpenWhisk
-  description: Supports building ppc64le Docker images for OpenWhisk, a programming service that provides event based execution of functions
 - name: OpenZFS
   description: OpenZFS is an advanced file system and volume manager which was originally developed for Solaris and is now maintained by the OpenZFS community.
 - name: OrientDB
@@ -212,6 +218,8 @@
   description: A library of useful vector functions for POWER
 - name: PyTorch
   description: Python framework for tensors and deep neural networks. Uses POWER8 for continuous integration and functional testing
+- name: Red Hat CoreOS
+  description: The operating system used for Red Hat OpenShift.
 - name: RDKit
   description: Open source toolkit for cheminformatics
 - name: RocksDB
@@ -226,6 +234,8 @@
   description: The Rust Exploit Mitigations PG maintains and improves the existing, implements, and research new exploit mitigations for the Rust compiler
 - name: SFTPGo
   description: SFTPGo is a fully featured and highly configurable SFTP server with optional FTP/S and WebDAV support, written in Go. It can serve local filesystem, S3 or Google Cloud Storage. POWER Docker image testing.
+- name: sire
+  description: Sire is a molecular modelling framework that provides extensive functionality to manipulate representations of biomolecular systems.
 - name: Snappy
   description: A fast compressor/decompressor
 - name: Snowpatch
@@ -252,6 +262,8 @@
   description: Scanner for vulnerabilities in container images, file systems, and Git repositories, as well as for configuration issues and hard-coded secrets
 - name: VideoLan
   description: Updates the Altivec code in x264 and x265 to VSX and makes sure it works correctly on POWER8le
+- name: vLLM
+  description: Fast and easy to use large language model inference and serving engine
 - name: Wazuh
   description: Wazuh is a free, open source and enterprise-ready security monitoring solution for threat detection, integrity monitoring, incident response and compliance.
 - name: WebM

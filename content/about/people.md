@@ -29,32 +29,6 @@ Ramereth
 
 {{< line_break >}}
 
-[Max Schmidt](#max-schmidt){#max-schmidt}
-------------------
-
-  **Faculty Research Assistant - Computational Scientist**
-
-![Max Schmidt](/images/max_schmidt_profile.jpg#right-people)
-
-Max joined the OSL in early 2022, and is split half time between OSL and the [Center for Quantitative Life Sciences (CQLS)](https://cqls.oregonstate.edu). He received his 
-degree in Computer Systems from OSU EECS in 2019, and spent two years at the [Clackamas Education Service District](https://clackesd.org) assisting school 
-districts across Clackamas County with enterprise level computing and infrastructure, before returning to OSU. Max's hybrid position with the OSL and 
-CQLS primarily focuses on delivering the services of a new community platform: the OpenPower Hub. In his free time Max spends it with 
-family and friends, in his home lab tinkering on some sort of computer or electronics, backpacking, skiing, seeking the perfect IPA, or 
-playing video games of a complex fashion.
-
-Max can be reached at max-at-cqls-dot-oregonstate-dot-edu
-
-  **GitHub Account**
-
-https://github.com/madmax-codewarrior-0
-
-  **Max on irc.libera.chat**
-
-madmax-cw
-
-{{< line_break >}}
-
 [Sharon Bousso](#sharon-bousso){#sharon-bousso}
 ------------------
 
@@ -95,32 +69,6 @@ https://github.com/antoniagaete
   **Nick on irc.libera.chat**
 
 antoniagaete
-
-{{< line_break >}}
-
-[Ayden Murphy-Kirsch](#ayden-murphy-kirsch){#ayden-murphy-kirsch}
-----------------------
-
-![Ayden Murphy-Kirsch](/images/ayden_murphy-kirsch.webp#right-people)
-
-  **Student Systems Engineer**
-
-Ayden joined the OSL in July of 2023 as a computer and electrical engineering 
-student. For multiple years, Ayden has been immersed in the open source ecosystem, 
-starting with the introduction to Linux in High school and a recent growing 
-familiarity with Open Source and the Foss Ecosystem--including many projects 
-spanning a variety of fields. Open Source hardware, such as RISK V, open personal 
-computing devices and numerous Virtual Reality projects are a current fascination. 
-Ayden enjoys Virtual Reality, tinkering on computers, 3D Design, server/network
-design, and DIY projects that never seem to go as planned.
-
-  **GitHub Account**
-
-https://github.com/starboundstitch
-
-  **Nick on irc.libera.chat**
-
-starboundstitch
 
 {{< line_break >}}
 
@@ -191,35 +139,12 @@ zwall
 
 {{< line_break >}}
 
-[Abigail Whittle](#abigail-whittle){#abigail-whittle}
-------------------
-
-  **Student Systems Engineer**
-
-![Abigail Whittle](/images/abigail-whittle.jpg#right-people)
-
-Abi joined the OSL in November 2022. She first heard of OSL while looking through the OSU jobs website and was
-instantly drawn to the Open Source environment that OSL supports and encourages. While she does not have any
-previous experience in open source software, she hopes that OSL will prepare her for future open source projects 
-and jumpstart her career in computer science. In her free time, Abi likes to play video games (namely Overwatch 
-and Dead by Daylight), watch comedy TV shows, and expand her knowledge in computer science and cyber security.
-
-  **GitHub Account**
-
-https://github.com/awhittle2
-
-  **Nick on irc.libera.chat**
-
-awhittle2
-
-{{< line_break >}}
-
 [Oria Weng](#oria-weng){#oria-weng}
 ------------------
 
   **Student Systems Engineer**
 
-![Oria Weng](/images/o.jpg#right-people)
+![Oria Weng](/images/o.webp#right-people)
 
 Oria has been excited about open-source software from far too young an age, so no one should have told her there was an Open Source Lab right at OSU! In all seriousness, she started at the OSL in November 2022 as a way to further explore computer science and get involved in the open-source community. When not learning new ways to play on computers, she dabbles in digital drawing, board games, and animation.
 

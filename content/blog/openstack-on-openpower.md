@@ -1,6 +1,6 @@
 ---
 title: OpenStack on OpenPOWER
-date: 2014-04-23 12:45
+date: 2014-04-23
 authors: ["ramereth"]
 slug: openstack-on-openpower
 ---

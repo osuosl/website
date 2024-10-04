@@ -64,6 +64,8 @@
   description: Provided hosting to support the development on the POWER platform of a high quality, portable, standalone C mathematical library (libm), used by the `Julia project`_
 - name: OpenShift Origin
   description: Used POWER infrastructure to demo OpenShift Origin clusters at KubeCon 2017
+- name: OpenWhisk
+  description: Supports building ppc64le Docker images for OpenWhisk, a programming service that provides event based execution of functions
 - name: oVirt
   description: Added support for POWER hosts for a virtual machine manager
 - name: pgSphere

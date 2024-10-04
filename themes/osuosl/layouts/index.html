@@ -1,0 +1,9 @@
+{{ define "main" }}
+<main class="main_content">
+{{- partial "menu.html" . -}}
+
+{{ partial "carousel.html" . }}
+
+{{ .Content }}
+</main>
+{{ end }}

@@ -9,7 +9,8 @@ innovation to the open source community. Current projects embrace open software 
 and open collaboration with open source based ISV and distribution partners, such Red Hat, SUSE and Ubuntu, who support
 the latest AARCH64 hardware via production and development (Fedora, CentOS, OpenSUSE, and Debian) distributions.
 
-Members of the community can use these [Ampere Computing eMAG](https://amperecomputing.com/wp-content/uploads/2019/04/Lenovo_ThinkSystem_HR350A_20190409.pdf) 
+Members of the community can use these [Ampere Computing eMAG](https://en.wikichip.org/wiki/ampere_computing/emag) or 
+[Ampere Computing Mt. Collins](https://amperecomputing.com/systems/altra/2u-mt-collins-2s-sas-3.5)
 AARCH64 servers to develop and test open source projects on the AARCH64 Architecture platform and in a AARCH64 environment.
 
 * List of [Current Projects & Academic Partners](/services/aarch64/current-projects)
