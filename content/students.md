@@ -15,7 +15,7 @@ the OSL and we are equally proud of their accomplishments beyond the lab.
 Explore our Student Experience pages to find out more about what it means to be
 part of the OSL family.
 
-[Employment](/about/employement)
+[Employment](/about/employment)
 
 [Education and Events](/about/education)
 

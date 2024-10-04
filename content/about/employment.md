@@ -1,6 +1,6 @@
 ---
-title: Employement
-slug: employement
+title: Employment
+slug: employment
 ---
 
 ![CASS Signs Installed](/images/CASSSignsInstalled.JPG)
