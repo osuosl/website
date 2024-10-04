@@ -1,6 +1,6 @@
 ---
 title: Openstack's Horizon
-date: 2014-02-20 22:32
+date: 2014-02-20
 authors: ["Melissa"]
 slug: openstacks-horizon
 ---
