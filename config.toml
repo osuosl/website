@@ -193,8 +193,8 @@ enableInlineShortcodes = true
 
             [[menu.main]]
                 parent = "students"
-                name = "Employement"
-                url = "/about/employement"
+                name = "Employment"
+                url = "/about/employment"
                 weight = 1
 
             [[menu.main]]
