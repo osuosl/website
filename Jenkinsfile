@@ -14,7 +14,8 @@ pipeline {
     stage('Build Hugo Site') {
       steps {
         script {
-          sh 'hugo --minify'  // Build the Hugo site for all branches
+          sh 'hugo --minify'          // Build the Hugo site for all branches
+          sh 'pagefind --site public' // Build pagefind index
         }
       }
     }
