@@ -47,8 +47,8 @@ pipeline {
           siteUrl = "https://new.osuosl.org/"
 
           slackSend channel: "#alerts",
-                    color: currentBuild.result == 'SUCCESS' ? ' good' : 'danger',
-                    message: "Build osuosl/website - ${env.BUILD_ID} finished with status ${currentBuild.result} (<${env.BUILD_URL}|Open>)"
+                    color: currentBuild.result == 'SUCCESS' ? 'good' : 'danger',
+                    message: "Build osuosl/website - #${env.BUILD_ID} finished with status ${currentBuild.result} (<${env.BUILD_URL}|Open>)"
         } else if (env.CHANGE_ID) {
           siteUrl = "https://osuosl-website-${env.CHANGE_ID}.staging.osuosl.org/"
         }
