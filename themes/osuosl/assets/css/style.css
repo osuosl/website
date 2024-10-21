@@ -1,21 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap');
 @font-face {
-    font-family: 'EksjaExtremesRegular';
-    src: url(https://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-regular-webfont.eot);
-    src: local(':'), url(https://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-regular-webfont.woff) format('woff'), url(https://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-regular-webfont.ttf) format('truetype'), url(https://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-regular-webfont.svg#webfont) format('svg');
-    font-weight: normal;
+    font-family: 'Stratum';
+    src: url('/fonts/Stratum2-Black.otf') format('opentype');
+    font-weight: 900;
     font-style: normal;
 }
-
-html, body {
-    font-family: 'Gudea', sans-serif;
-    margin: 0;
+@font-face {
+    font-family: 'Stratum';
+    src: url('/fonts/Stratum2-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: medium;
+}
+@font-face {
+    font-family: 'Kievit';
+    src: url('/fonts/KievitOffc.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kievit';
+    src: url('/fonts/KievitOffc-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
 }
 
-main {
-    width: 976px;
-    margin-left: auto;
-    margin-right: auto;
+body {
+    font-family: 'Kievit', sans-serif;
+    font-size: 18px;
+    margin: 0;
 }
 
 h1,
@@ -25,7 +36,7 @@ h4,
 h5,
 h6 {
     color: #D73F09;
-    font-weight: normal;
+    font-family: 'Stratum', sans-serif;
     margin: 0 0 1.25rem;
 }
 
@@ -35,7 +46,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 h3 {
@@ -212,7 +223,6 @@ textarea {
     display: block;
     padding: 10px 15px;
     padding: .625rem .9375rem;
-    font-weight: 700;
     text-align: right;
     text-transform: uppercase;
     cursor: pointer;
@@ -277,8 +287,6 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
     justify-content: space-between;
     padding: 5px 10px;
     padding: .4rem .9375rem;
-    font-weight: 400;
-    font-size: 16px;
     color: #000;
     text-transform: uppercase;
     text-decoration: none;
@@ -826,4 +834,35 @@ textarea {
 .card-links a {
     padding-right: 10px;
     padding-left: 10px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/images/OSLSignPicture.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: cover;
+    height: 450px;
+}
+
+.hero-text {
+    background-color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+.hero-text p {
+    padding: 0;
+    margin: 0;
+}
+
+.hero-text h1 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
 }
