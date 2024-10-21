@@ -2,8 +2,68 @@
 <main class="main_content">
 {{- partial "menu.html" . -}}
 
-{{ partial "carousel.html" . }}
+<!-- {{ partial "carousel.html" . }} -->
+<div class="hero-container">
+    <h1>Open Source Lab</h1>
+    <h2>A nonprofit organization working for the advancement of open source technologies.</h2>
+</div>
 
-{{ .Content }}
+<div class="info-container">
+    <h1>Hosting</h1>
+    <p>Based on your hosting needs, we offer unmanaged and managed hosting for different environments:</p>
+
+    <div class="cards-container">
+        <div class="card">
+            <div>
+                <h3><a href="services/hosting">General Hosting</a></h3>
+                <p>Open source projects are invited to use our services for hosting your development, which can be arranged based on your needs.</p>
+            </div>
+            <div class="card-links">
+                <a href="request-hosting/">Request Hosting</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <h3><a href="services/aarch64">AARCH64</a></h3>
+                <p>Use our AARCH64 servers to develop and test open source projects on the AARCH64 Architecture platform and in a AARCH64 environment.</p>
+            </div>
+            <div class="card-links">
+                <a href="services/aarch64/request_hosting/">Request Hosting</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3><a href="services/powerdev">OpenPOWER</a></h3>
+                <p>Use our OpenStack-based POWER servers to develop and test open source projects on the Power Architecture platform and in a PowerLinux environment.</p>
+            </div>
+            <div class="card-links">
+                <a href="services/powerdev/request_hosting/">Request Hosting</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3><a href="services/powerdev">POWER Continuous Integration (CI)</a></h3>
+                <p>Hosted via the OpenStack cluster is an OSL managed Jenkins service intended to allow projects easier access to the POWER architecture via Jenkins.</p>
+            </div>
+            <div class="card-links">
+                <a href="services/powerdev/request_powerci/">Request Hosting</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3><a href="services/ibm-z/">IBM Z</a></h3>
+                <p>Use our IBM Z based servers to host projects, with access to the s390x architecture via Jenkins.</p>
+            </div>
+            <div class="card-links">
+                <a href="services/ibm-z/request_ci/">Request Hosting</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- {{ .Content }} -->
 </main>
 {{ end }}

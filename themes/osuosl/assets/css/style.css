@@ -394,111 +394,6 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
 }
 
 /* 
-    Carousel
-    Source: https://hugocodex.org/add-ons/slider-carousel/
-*/
-.mobile-carousel {
-    display: none;
-}
-
-.carousel-container {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.slide {
-    width: 100%;
-    height: 25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.slide-title-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.7);
-    padding: 5px 2px;
-    margin-bottom: 10px;
-}
-
-.slide-info {
-    display: none;
-}
-
-.slide-info.show {
-    display: block;
-    margin-right: 90px;
-}
-
-.slide-title {
-    margin: 0;
-    padding: 5px;
-    font-family: "Impact", sans-serif;
-}
-
-.slide-title a {
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.slide-title a:hover {
-    text-decoration: underline;
-}
-
-.more-link {
-    position: absolute;
-    bottom: 20px;
-    right: 25px;
-    border: none;
-    box-shadow: none;
-    background: #f4f2ec;
-    text-decoration: none;
-    color: black;
-    font-weight: 400;
-    font-size: 14px;
-    width: fit-content;
-    height: auto;
-    padding: 5px 10px;
-    border-radius: 2px;
-    border: 1px solid #eee;
-}
-
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    color: #fff;
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 0.5rem;
-    z-index: 10;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-/* 
     Images 
 */
 img[src$='#center'] {
@@ -902,4 +797,33 @@ textarea {
     .footer__container {
         margin-bottom: 20px;
     }
+}
+
+/* Home Page */
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    min-height: 150px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .09), 0 1px 2px 0 rgba(0, 0, 0, .14);
+}
+
+.card-links {
+    display: flex;
+    justify-content: center;
+}
+
+.card-links a {
+    padding-right: 10px;
+    padding-left: 10px;
 }
