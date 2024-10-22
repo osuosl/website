@@ -9,8 +9,10 @@
 </div>
 <main class="main_content">
 <div class="info-container">
-    <h1>Hosting</h1>
-    <p>Based on your hosting needs, we offer unmanaged and managed hosting for different environments:</p>
+    <div class="hosting-container">
+        <h1>Hosting</h1>
+        <p>Based on your hosting needs, we offer unmanaged and managed hosting for different environments:</p>
+    </div>
 
     <div class="cards-container">
         <div class="card">
@@ -62,6 +64,22 @@
             </div>
         </div>
     </div>
+
+    <div class="blog-container">
+        <h1>Blog</h1>
+
+        <ul class="blog-summaries">
+            {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+            <li>
+                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                <p>{{ .Summary }}</p>
+                <small>{{ .Date.Format "January 2, 2006" }}</small>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+
+    <div class="space"></div>
 </div>
 
 </main>

@@ -879,3 +879,34 @@ textarea {
     margin: 0;
     margin-bottom: 10px;
 }
+
+.blog-container {
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #f7f5f5;
+    height: fit-content;
+}
+
+.blog-summaries {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.blog-summaries li {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.blog-summaries a {
+    text-decoration: none;
+}
+
+.hosting-container {
+    margin-top: 50px;
+}
+
+.space {
+    background: #fff;
+    height: 100px;
+}
