@@ -32,7 +32,6 @@ body {
 main {
     padding-left: 85px;
     padding-right: 85px;
-    padding-top: 20px;
 }
 
 h1,
@@ -598,9 +597,8 @@ textarea {
     flex-flow: row wrap;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    width: 976px;
+    padding-left: 85px;
+    padding-right: 85px;
 }
 
 .footer__links {
