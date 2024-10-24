@@ -1,0 +1,17 @@
+To install on Mac:
+
+For Mac OS X 10.3 or higher:
+-Double click the font file and Font Book will open a preview of the font.
+-Click Install Font at the bottom of the preview.
+
+Manual install on OS X:
+-Close any open applications. Newly installed fonts may not appear in your application’s menu if you ignore this step.
+-Drag and drop the unzipped fonts into the Fonts folder in your user’s Library folder: /Users/Your_Username_Here/Library/Fonts.
+-Note: As of OS Lion, the Library folder is hidden from users unless you hold down the Alt/Option key while clicking on the Go menu in the Finder
+
+
+To install on Windows:
+
+-Open fonts by clicking the Start button, clicking Control Panel, and then clicking Fonts.
+-Click and drag the font files into Fonts.
+-The fonts should copy and install automatically.

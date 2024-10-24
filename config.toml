@@ -210,24 +210,6 @@ enableInlineShortcodes = true
                         url = "/about/beaverbarcamp"
                         weight = 1
 
-                    [[menu.main]]
-                        parent = "education"
-                        name = "DevOps BootCamp"
-                        url = "/devops-bootcamp"
-                        weight = 2
-
-                    [[menu.main]]
-                        parent = "education"
-                        name = "GSOC"
-                        url = "/about/gsoc"
-                        weight = 3
-
-                    [[menu.main]]
-                        parent = "education"
-                        name = "CS312"
-                        url = "/students/cs312"
-                        weight = 4
-
             [[menu.main]]
                 parent = "students"
                 name = "Student Stories"

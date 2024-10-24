@@ -19,7 +19,7 @@ slug: faq
 14. [How can I contact OSUOSL to discuss a potential gift?](#how-can-i-contact-osuosl-to-discuss-a-potential-gift)
 
 
-###### How are you associated with Oregon State University?
+**How are you associated with Oregon State University?**
 
 The Open Source Lab is part of The School of Electrical Engineering and Computer Science at Oregon State University.
 Our staff are all OSU employees, and our student employees are all OSU students. We receive many benefits from being
@@ -28,19 +28,19 @@ interested in working with open source. We receive very little direct funding fr
 on external donations for our operations.
 
 
-###### Are donations tax deductible?
+**Are donations tax deductible?**
 
 The OSU Foundation is an IRS 501(c)(3) nonprofit corporation, which provides many donors a tax advantage. Please
 contact the OSU Foundation directly if you have questions about your eligibility.
 
 
-###### What is the OSU Foundation?
+**What is the OSU Foundation?**
 
 The OSU Foundation handles all donations for Oregon State University. The Foundation works with university partners
 like the OSL to raise funds that support the university’s priorities. For more information, visit their [website](http://osufoundation.org).
 
 
-###### I work for a company that has a donation matching program, how can I get them to match my donation to the OSUOSL?
+**I work for a company that has a donation matching program, how can I get them to match my donation to the OSUOSL?**
 
 Many corporations have programs which will match donations to educational institutions. The OSU Foundation can help you
 find out if your company has a [matching gift policy](http://www.osufoundation.org/s/359/foundation/index.aspx?sid=359&gid=34&pgid=4358).
@@ -49,7 +49,7 @@ If you don't find your employer or have further questions, please contact your e
 to find out if your donation is eligible for a matching program.
 
 
-###### How much money are you trying to raise?
+**How much money are you trying to raise?**
 
 ![Income for the 2019 fiscal year](/images/IncomeGraphic2019.png#right-faq)
 
@@ -64,7 +64,7 @@ expenses for the smaller projects and thus keep the vast majority of our hosting
 showing the breakdown of our income for the 2019 fiscal year.
 
 
-###### What will you use my donation for?**
+**What will you use my donation for?**
 
 ![Expenses for the 2019 fiscal year](/images/ExpensesGraphic2019.png#right-faq)
 
@@ -92,13 +92,13 @@ Below are a few examples of where we have spent money in the past year:
   core infrastructure hardware needs.
 
 
-###### What projects do you support?
+**What projects do you support?**
 The OSUOSL supports a large number of growing, high-impact open source communities. This includes the Apache Software
 Foundation, the Linux Foundation, Drupal, and many others. For a full list, please see our 
 [projects page](http://osuosl.org/services/hosting/communities).
 
 
-###### How is the OSUOSL run?
+**How is the OSUOSL run?**
 
 We have one full-time Director who oversees all lab activities, and we employ about seven to ten students at any
 given time.
@@ -107,7 +107,7 @@ The OSUOSL Advisory Council, a group of experts from open source projects and in
 opportunities and direction for the lab.  Learn more about our [Advisory Council members](http://osuosl.org/advisors).
 
 
-###### What will happen if you don't meet your fund raising goal?
+**What will happen if you don't meet your fund raising goal?**
 
 Our foremost goal is to continue to provide world-class hosting services to open source projects. Should we fail to
 meet our fundraising target, we will be forced to reevaluate our priorities and eliminate some of the lab's activities.
@@ -115,13 +115,13 @@ This decision, should it need to be made, will be discussed with the OSUOSL Advi
 leadership.
 
 
-###### Who else is supporting the OSUOSL financially?
+**Who else is supporting the OSUOSL financially?**
 
 The OSUOSL has many sponsors who generously support our efforts. The full list of OSL sponsors is available on our
 [sponsors page](http://osuosl.org/sponsors).  We also receive support from many individuals, smaller companies and projects.
 
 
-###### How do I donate to OSUOSL?
+**How do I donate to OSUOSL?**
 
 We accept donations online via the OSU Foundation's website. Follow [the link](https://securelb.imodules.com/s/359/foundation/index.aspx?sid=359&gid=34&pgid=1982&bledit=1&cid=3007&dids=79), 
 or click the “Make a Gift” link on our [donations page](http://osuosl.org/donate/). If you are donating directly from 
@@ -132,17 +132,17 @@ Source Lab under Outreach, Engagement, Research. If you'd like to discuss a larg
 please contact the OSUOSL at donations@osuosl.org or at 541-737-9900.
 
 
-###### What is your privacy policy?
+**What is your privacy policy?**
 
 The OSU Foundation privacy policy can be found [here](http://campaignforosu.org/staffresources/policiesandprocedures/).
 
 
-###### I would like to donate hardware/software, or something else. Would that help the OSUOSL?
+**I would like to donate hardware/software, or something else. Would that help the OSUOSL?**
 
 Please contact us at donations@osuosl.org to describe what you are hoping to donate. We often have a need for hardware,
 but would need to know the details of any potential gift.
 
 
-###### How can I contact OSUOSL to discuss a potential gift?
+**How can I contact OSUOSL to discuss a potential gift?**
 
 We can be reached at donations@osuosl.org (preferred), or by phone at 541-737-9900.
