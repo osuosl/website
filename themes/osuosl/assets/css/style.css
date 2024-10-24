@@ -75,10 +75,9 @@ a {
 }
 
 ul li {
-    /* list-style-image: url(/theme/img/bullet.png); */
+    /* list-style-image: url(https://communications.oregonstate.edu/sites/all/themes/doug_fir/images/bullet.png); */
     line-height: 20px;
     margin-bottom: 6px;
-    /* list-style-type: none; */
 }
 
 button {
@@ -297,10 +296,6 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
     text-decoration: none;
 }
 
-.menu__container {
-    display: flex;
-}
-
 .dropdown__arrow {
     position: absolute;
     right: 0;
@@ -316,15 +311,6 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
     max-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-}
-
-.third__dropdown {
-    display: none;
-    position: absolute;
-    left: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    min-width: 220px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .submenu__text {
@@ -349,6 +335,7 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
 
 .thirdmenu__link {
     margin: 0px;
+    margin-left: 15px;
 }
 
 .submenu__list {
@@ -660,34 +647,12 @@ textarea {
 }
 
 @media (max-width: 979px) {
-    main,
+    /* main,
     .footer__container {
         width: 90vw;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .carousel-container {
-        display: none;
-    }
-
-    .mobile-carousel {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .mobile-carousel img {
-        width: 100%;
-        height: auto;
-        max-height: 470px;
-        vertical-align: middle;
-    }
+    } */
 
     .footer_headers {
         flex-direction: column;
@@ -702,10 +667,6 @@ textarea {
 @media (max-width: 767px) {
     body {
         width: 100%;
-    }
-
-    .mobile-carousel {
-        padding-top: 20px;
     }
 
     .main-menu {

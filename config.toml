@@ -43,6 +43,24 @@ enableInlineShortcodes = true
             name = "Logos"
             url = "/about/logos"
             weight = 5
+        [[menu.main]]
+            parent = "about"
+            name = "Donate"
+            url = "/donate"
+            identifier = "donate"
+            weight = 6
+
+            [[menu.main]]
+                parent = "donate"
+                name = "Hardware Donations"
+                url = "/donate/hardware"
+                weight = 1
+
+            [[menu.main]]
+                parent = "donate"
+                name = "Sponsors"
+                url = "/sponsors"
+                weight = 2
         
     [[menu.main]]
         name = "Services"
@@ -186,55 +204,19 @@ enableInlineShortcodes = true
                 url = "/about/education"
                 weight = 2
 
-            [[menu.main]]
-                parent = "students"
-                name = "Beaver Barcamp"
-                url = "/about/beaverbarcamp"
-                weight = 3
-
-            [[menu.main]]
-                parent = "students"
-                name = "DevOps BootCamp"
-                url = "/devops-bootcamp"
-                weight = 4
-
-            [[menu.main]]
-                parent = "students"
-                name = "GSOC"
-                url = "/about/gsoc"
-                weight = 5
-
-            [[menu.main]]
-                parent = "students"
-                name = "CS312"
-                url = "/students/cs312"
-                weight = 6
+                    [[menu.main]]
+                        parent = "education"
+                        name = "Beaver Barcamp"
+                        url = "/about/beaverbarcamp"
+                        weight = 1
 
             [[menu.main]]
                 parent = "students"
                 name = "Student Stories"
                 url = "/student-stories"
-                weight = 7
+                weight = 3
 
-    [[menu.main]]
-        name = "Donate"
-        url = "/donate"
-        identifier = "donate"
-        weight = 5
-
-        [[menu.main]]
-            parent = "donate"
-            name = "Hardware Donations"
-            url = "/donate/hardware"
-            weight = 1
-
-        [[menu.main]]
-            parent = "donate"
-            name = "Sponsors"
-            url = "/sponsors"
-            weight = 2
-    
     [[menu.main]]
         name = "Blog"
-        weight = 6
+        weight = 5
         url = "/blog"
