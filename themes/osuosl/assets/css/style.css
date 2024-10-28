@@ -76,7 +76,6 @@ a {
 
 ul li {
     /* list-style-image: url(https://communications.oregonstate.edu/sites/all/themes/doug_fir/images/bullet.png); */
-    line-height: 20px;
     margin-bottom: 6px;
 }
 
@@ -566,6 +565,7 @@ textarea {
 
 .post__content {
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 /* 

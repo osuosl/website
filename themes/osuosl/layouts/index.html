@@ -71,9 +71,7 @@
         <ul class="blog-summaries">
             {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
             <li>
-                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                <p>{{ .Summary }}</p>
-                <small>{{ .Date.Format "January 2, 2006" }}</small>
+                {{ .Render "summary" }}
             </li>
             {{ end }}
         </ul>
