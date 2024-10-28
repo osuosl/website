@@ -568,6 +568,10 @@ textarea {
     margin-top: 10px;
 }
 
+.post__content img {
+    display: none;
+}
+
 /* 
     Footer
 */
