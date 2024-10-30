@@ -31,6 +31,7 @@ pipeline {
             // Deploy to a staging directory based on the PR number
             def stagingPath = "${STAGING_PATH}/osuosl-website-${env.CHANGE_ID}"
             sh """
+            rm -rf ${PRODUCTION_PATH}/css/*
             rsync -avH --delete public/ ${stagingPath}/
             """
           } else {

@@ -900,6 +900,10 @@ textarea {
         padding: 10px;
     }
 
+    .post__content ul {
+        all: unset;
+    }
+
     img[src$='#right-people'] {
         margin-left: 10px;
     }
