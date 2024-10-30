@@ -64,21 +64,21 @@
             </div>
         </div>
     </div>
-
-    <div class="blog-container">
-        <h1>Blog</h1>
-
-        <ul class="blog-summaries">
-            {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
-            <li>
-                {{ .Render "summary" }}
-            </li>
-            {{ end }}
-        </ul>
-    </div>
-
-    <div class="space"></div>
 </div>
+
+<div class="blog-container">
+    <h1>Blog</h1>
+
+    <ul class="blog-summaries">
+        {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+        <li>
+            {{ .Render "summary" }}
+        </li>
+        {{ end }}
+    </ul>
+</div>
+
+<div class="space"></div>
 
 </main>
 {{ end }}
