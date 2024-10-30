@@ -75,7 +75,7 @@ a {
 }
 
 ul li {
-    /* list-style-image: url(https://communications.oregonstate.edu/sites/all/themes/doug_fir/images/bullet.png); */
+    list-style-image: url(https://communications.oregonstate.edu/sites/all/themes/doug_fir/images/bullet.png);
     margin-bottom: 6px;
 }
 
@@ -273,6 +273,10 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
     margin-top: 10px;
     display: flex;
     padding: 0;
+}
+
+.menu__list li {
+    list-style-image: none;
 }
 
 .menu__item:hover {
@@ -715,15 +719,15 @@ textarea {
     height: fit-content;
 }
 
-.blog-summaries {
+.blog-container li {
+    list-style-image: none;
     list-style: none;
-    padding-left: 0;
-    margin-left: 0;
 }
 
-.blog-summaries li {
-    padding-top: 20px;
-    padding-bottom: 10px;
+.blog-summaries {
+    list-style-image: none;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .blog-summaries a {
