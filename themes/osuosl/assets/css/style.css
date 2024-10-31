@@ -892,6 +892,10 @@ textarea {
         padding-right: 10px;
     }
 
+    .footer_contact_container {
+        margin: 0 auto;
+    }
+
     .card {
         margin-right: 0px;
     }
