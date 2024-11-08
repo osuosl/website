@@ -1,12 +1,11 @@
 <article class="list__item post">
-    {{ partial "post_thumbnail.html" (dict "class" "list" "page" .) }}
     <header class="list__header">
         <h2 data-pagefind-meta="title" class="list__title post__title">
             <a href="{{ .RelPermalink }}" rel="bookmark">
                 {{ .Title }}
             </a>
         </h2>
-        <p>by {{ delimit .Params.authors ", " " and " }} on {{ .Date | dateFormat "Mon, Jan 02 2006" }}</p>
+        <small class="author-blog">by {{ delimit .Params.authors ", " " and " }} on {{ .Date | dateFormat "Mon, Jan 02 2006" }}</small>
         {{- with .Params.lead }}
         <p class="list__lead post__lead">{{ . }}</p>
         {{- end }}
@@ -15,7 +14,7 @@
         {{- end }}
     </header>
     <div class="content list__excerpt post__content clearfix">
-        {{ .Summary }}
+        {{ .Summary | plainify }}
     </div>
     {{- if .Site.Params.readmore }}
     {{- if .Truncated }}

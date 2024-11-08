@@ -6,7 +6,6 @@ slug: /powerdev/opence
 
 The Open Source Lab (OSUOSL) and Center for Genome Research and Biocomputing (CGRB) partner with IBM and OpenPOWER in order to provide a download resources around Open-CE. Open-CE is a community driven software distribution for machine learning that runs on standard Linux platforms with NVIDIA GPU technologies.
 
-<!-- Update the link to the current release when updating page -->
 - [Current release](#open-ce-release-1110) 
 - [Previous releases](#previous-releases)
 

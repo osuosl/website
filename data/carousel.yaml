@@ -1,9 +1,0 @@
-images:
-  - image: /images/OSLSignPicture.jpg
-    content_html: "1"
-    title: "FTP Server Rebuild - March 2024"
-    link: "/blog/ftp-server-rebuild-2024"
-  - image: /images/OSLSignPicture.jpg
-    content_html: "2"
-    title: "Now Providing Access to POWER10 for Open Source Projects"
-    link: "/blog/power10"
