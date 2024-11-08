@@ -236,16 +236,6 @@ textarea {
     user-select: none;
 }
 
-:focus>.menu__btn-title {
-    box-shadow: inset 0 0 1px 3px {
-            {
-            $highlightColor
-        }
-    }
-
-    ;
-}
-
 button:not(:-moz-focusring):focus>.menu__btn-title {
     box-shadow: none;
 }
@@ -253,16 +243,6 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
 .menu__btn:focus,
 .menu__btn-title:focus {
     outline: 0;
-}
-
-.js .menu__btn--active {
-    color: {
-            {
-            $highlightColor
-        }
-    }
-
-    ;
 }
 
 .menu__list {
