@@ -2,25 +2,21 @@
     font-family: 'Stratum';
     src: url('/fonts/Stratum2-Black.otf') format('opentype');
     font-weight: 900;
-    font-style: normal;
 }
 @font-face {
     font-family: 'Stratum';
     src: url('/fonts/Stratum2-Medium.otf') format('opentype');
     font-weight: 500;
-    font-style: medium;
 }
 @font-face {
     font-family: 'Kievit';
     src: url('/fonts/KievitOffc.ttf') format('truetype');
     font-weight: 400;
-    font-style: normal;
 }
 @font-face {
     font-family: 'Kievit';
     src: url('/fonts/KievitOffc-Bold.ttf') format('truetype');
     font-weight: 700;
-    font-style: bold;
 }
 
 body {
@@ -724,12 +720,14 @@ textarea {
 }
 
 @media (max-width: 979px) {
-    /* main,
-    .footer__container {
-        width: 90vw;
-        margin-left: auto;
-        margin-right: auto;
-    } */
+    main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card {
+        margin-right: 0px;
+    }
 
     .footer_headers {
         flex-direction: column;

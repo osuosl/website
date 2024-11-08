@@ -25,8 +25,6 @@ there is a CSS tag, ``#blog`` that mimics the header image:
 ![Image Alt](/images/image_path#blog)
 ```
 
-To include a blog post on the front page's carousel, add it to the [carousel.yaml](/data/carousel.yaml) file.
-
 Dependencies
 ------------
 
