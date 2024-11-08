@@ -14,7 +14,7 @@ pipeline {
     stage('Build Hugo Site') {
       steps {
         script {
-          sh 'hugo --gc --minify'     // Build the Hugo site for all branches
+          sh 'hugo --minify'          // Build the Hugo site for all branches
           sh 'pagefind --site public' // Build pagefind index
         }
       }
@@ -32,7 +32,7 @@ pipeline {
             def stagingPath = "${STAGING_PATH}/osuosl-website-${env.CHANGE_ID}"
             sh """
             rm -rf ${PRODUCTION_PATH}/css/*
-            rsync -avH ${stagingPath}/
+            rsync -avH --delete public/ ${stagingPath}/
             """
           } else {
             echo "Not a PR or main branch, skipping deployment"
