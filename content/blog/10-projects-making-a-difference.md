@@ -114,5 +114,3 @@ in ways that build a better future.*
    the General Public License. The TeachEngineering library is hosted by the OSL 
    and is indexed by the National Science Foundation's 
    [National Science Digital Library](http://nsdl.org/).
-
-   <!--  -->

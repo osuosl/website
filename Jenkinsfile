@@ -32,7 +32,7 @@ pipeline {
             def stagingPath = "${STAGING_PATH}/osuosl-website-${env.CHANGE_ID}"
             sh """
             rm -rf ${PRODUCTION_PATH}/css/*
-            rsync -avH --delete public/ ${stagingPath}/
+            rsync -avH ${stagingPath}/
             """
           } else {
             echo "Not a PR or main branch, skipping deployment"
