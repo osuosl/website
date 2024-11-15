@@ -5,6 +5,9 @@ theme = 'osuosl'
 relativeURLs = true
 enableInlineShortcodes = true
 
+[taxonomies]
+tag = "tags"
+
 [menu]
     [[menu.main]]
         name = "Home"

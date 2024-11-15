@@ -439,6 +439,16 @@ img[src$='#blog-center'] {
     margin-right: auto;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.page-content {
+    margin-bottom: 20px;
+}
+
 /* 
     Table 
 */
@@ -661,9 +671,9 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("/images/OSLSignPicture.jpg");
+    background-image: url("/images/facebook-servers.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 60%;
+    background-position: 0% 70%;
     background-size: cover;
     height: 500px;
 }
@@ -708,6 +718,18 @@ textarea {
 
 .blog-summaries a {
     text-decoration: none;
+}
+
+.blog-summaries li {
+    margin-bottom: 15px;
+}
+
+.blog-summaries a.read-more-link {
+    text-decoration: underline;
+}
+
+.blog-summaries h2 {
+    margin-bottom: 5px;
 }
 
 .hosting-container {
