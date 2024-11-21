@@ -4,17 +4,16 @@ slug: powerdev/request_hosting
 ---
 
 The Open Source Lab partners with IBM to host POWER based servers in order to provide an open platform for
-innovation to the open source community. For more information about this partnership, please visit our
-[POWER Development Hosting page](/services/powerdev).
+innovation to the open source community. **For more information about this partnership, please visit our [POWER Development Hosting page](/services/powerdev).**
 
-Please use the form below to request new hosting on the POWER environment hosted at the OSUOSL.
+Please use the form below to request *new* hosting on the POWER environment hosted at the OSUOSL.
 
-For any changes, updates, or issues with an existing project please send the specific request as an
+For any **changes, updates, or issues with an existing project** please send the specific request as an
 email to [powerdev-request@osuosl.org](mailto:powerdev-request@osuosl.org) and include the original
 project name in the subject line and the IP address(es) for the VM(s) in the message body of the request which
 will help us narrow down what specific VM it's for.
 
-This access is intended only for *free and open source* projects who qualify and are approved by
+This access is intended only for ***free and open source*** projects who qualify and are approved by
 both the OSUOSL and IBM. For proprietary sourced projects or products please use other POWER resources which
 can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
 
@@ -38,32 +37,34 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
         size="60" />
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-project-name">
-        <div class="description">Name of the open source project or education institution this request will be
-        supporting.</div>
         <label for="edit-submitted-project-name">Project Name <span class="form-required"
             title="This field is required.">*</span></label>
         <input type="text" id="edit-submitted-project-name" name="project_name" value="" size="60" maxlength="128"
         class="form-text required" />
+        <div class="description">Name of the open source project or education institution this request will be
+        supporting.</div>
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-project-url">
-        <div class="description">Primary website URL for the open source project or education institution.</div>
         <label for="edit-submitted-project-url">Project URL <span class="form-required" title="This field is required.">
             *</span></label>
         <input type="text" id="edit-submitted-project-url" name="project_url" value="" size="60" maxlength="128"
         class="form-text required" />
+        <div class="description">Primary website URL for the open source project or education institution.</div>
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-community-size">
-        <div class="description">How many estimated users do you have in your community?</div>
         <label for="edit-submitted-community-size">Estimated Size of  User Community <span class="form-required"
             title="This field is required.">*</span></label>
         <input type="text" id="edit-submitted-community-size" name="est_size_of_user_community" value="" size="60"
-        maxlength="128" class="form-text required" /> 
+        maxlength="128" class="form-text required" /> <div class="description">How many estimated users do you have in
+        your community?</div>
       </div>
       <div class="form-item webform-component webform-component-textarea" id="webform-component-mission">
         <label for="edit-submitted-mission">Description of Project Mission <span class="form-required"
             title="This field is required.">*</span></label>
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-mission"
         name="description_of_project_mission" cols="60" rows="5" class="form-textarea required"></textarea></div>
+        <div class="description">Please describe in detail the mission and purpose of this request in regards to how
+        the POWER architecture will support your project. Also describe the general mission of your project.</div>
       </div>
       <div class="form-item webform-component webform-component-textarea" id="webform-component-usage">
         <label for="edit-submitted-usage">Expected Usage Model <span class="form-required"
@@ -110,7 +111,8 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
         <label for="edit-submitted-power-architecture">POWER Architecture <span class="form-required"
             title="This field is required.">*</span></label>
         <select id="edit-submitted-power-architecture" name="power_architecture" class="form-select required">
-          <option value="POWER9" selected="selected">POWER9</option>
+          <option value="POWER10" selected="selected">POWER10</option>
+          <option value="POWER9">POWER9</option>
           <option value="POWER8">POWER8</option>
         </select>
       </div>
@@ -139,16 +141,19 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
             title="This field is required.">*</span></label>
         <select id="edit-submitted-distribution" name="distribution" class="form-select required">
           <option value="None selected" selected="selected">- Select -</option>
-          <option value="Fedora">Fedora</option>
-          <option value="CentOS">CentOS</option>
+          <option value="AlmaLinux">AlmaLinux</option>
+          <option value="CentOS Stream">CentOS Stream</option>
           <option value="Debian">Debian</option>
-          <option value="Ubuntu">Ubuntu</option>
+          <option value="Fedora">Fedora</option>
           <option value="OpenSUSE">OpenSUSE</option>
+          <option value="Rocky Linux">Rocky Linux</option>
+          <option value="Ubuntu">Ubuntu</option>
           <option value="Other">Other</option>
         </select>
         <div class="description">Which Linux distribution would you like to use for your machine? This would likely be
-        the latest stable version available for PPC. If you want a specific version, please state that in the comments
-        section on the last page.</div>
+        the latest stable version available for ppc64le. If you want a specific
+        version, please state that in the comments section on the last
+        page.</div>
       </div>
       <div class="form-item webform-component webform-component-select" id="webform-component-openstack-access">
         <label for="edit-submitted-openstack-access">OpenStack Access </label>
@@ -172,12 +177,12 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
       provided within 5-10 minutes.  If you don't receive this email please reach out to us at <a
       href="mailto:powerdev-request@osuosl.org">powerdev-request@osuosl.org</a> or via IRC in <b>#osuosl</b> on
       <a href="https://libera.chat/">Libera Chat</a>.</i></p>
-      <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+      <div class="g-recaptcha" data-sitekey="6LeOugIAAAAAALZJU8MBrWbtN6NC9sMGCu8Xgb41"></div>
       <!-- Formsender Settings -->
       <input type="hidden" name="last_name" value="" />
       <input type="hidden" name="token" value="15674hsda//*q23%^13jnxccv3ds54sa4g4sa532323!OoRdsfISDIdks38*(dsfjk)aS" />
       <!-- The following must be set to http://www.osuosl.org/services/powerdev/request_hosting in production -->
-      <input type="hidden" name="redirect" value="/form-submitted" />
+      <input type="hidden" name="redirect" value="https://www.osuosl.org/form-submitted" />
       <input type="hidden" name="mail_subject_prefix" value="New PowerLinux/OpenPOWER Hosting Request" />
       <input type="hidden" name="mail_subject_key" value="project_name" />
       <input type="hidden" name="send_to" value="PowerDev" />

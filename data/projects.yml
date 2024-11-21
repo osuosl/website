@@ -15,9 +15,9 @@
 - name: Apereo
   description: vm
 - name: Arch Linux
-  description: mirroring 
+  description: mirroring
 - name: Armbian
-  description: aarch64
+  description:  aarch64
 - name: Bazel
   description: powerpc
 - name: BearSSL
@@ -132,6 +132,8 @@
   description: co-location
 - name: Evolution Groupware Suite
   description: mailing-list
+- name: Falco
+  description:  powerpc
 - name: F-Droid
   description: ci-cd
 - name: Fedora Copr
@@ -152,6 +154,8 @@
   description: co-location
 - name: FOSS Translation
   description: vm
+- name: FreeBSD
+  description: powerpc
 - name: Freedesktop.org
   description: co-location, ci-cd
 - name: Freedroid
@@ -209,7 +213,7 @@
 - name: Hush
   description: vm
 - name: Inkscape
-  description: vm, mailing-list 
+  description: vm, mailing-list
 - name: INRIA
   description: powerpc
 - name: Istio
@@ -222,22 +226,26 @@
   description: aarch64
 - name: Jupyter / Base-notebook
   description: powerpc
+- name: K0S
+  description:  aarch64
 - name: K-3D
   description: vm
 - name: Kali Linux
-  description: aarch64
+  description: aarch64, mirroring
 - name: KDE
   description: vm, mirroring
 - name: Kodi
   description: vm
+- name: Kube-burner
+  description: powerpc
 - name: Kubeflow
   description: ci-cd, powerpc
 - name: LDC
   description: powerpc
 - name: LFS (Linux From Scratch)
-  description: mirroring 
+  description: mirroring
 - name: libGD
-  description: powerpc
+  description:  powerpc
 - name: libjpeg-turbo
   description: powerpc
 - name: libpng
@@ -295,7 +303,7 @@
 - name: Mesos
   description: powerpc
 - name: Midnight Commander
-  description: vm, mirroring 
+  description: vm, mirroring
 - name: Milvus
   description: powerpc
 - name: Minio
@@ -303,7 +311,7 @@
 - name: Monitoring-plugins
   description: mirroring
 - name: Monkey Server
-  description: vm 
+  description: vm
 - name: Moonjit
   description: powerpc
 - name: Mozdev
@@ -346,8 +354,8 @@
   description: powerpc
 - name: Nvidia-docker
   description: powerpc
-- name: Ocaml
-  description: powerpc
+- name: OCaml
+  description: powerpc, aarch64
 - name: OCM
   description: powerpc
 - name: OFTC
@@ -355,11 +363,13 @@
 - name: Open Advice
   description: webapp
 - name: OpenBLAS
-  description: powerpc 
-- name: OpenBMC
   description: powerpc
+- name: OpenBMC
+  description:  powerpc
 - name: OpenBSD
   description: ci-cd
+- name: Open-CE
+  description: powerpc
 - name: OpenCV
   description: powerpc
 - name: OpenDev
@@ -403,7 +413,7 @@
 - name: PA-RISC
   description: co-location, vm
 - name: Parrot
-  description: vm, mailing-list, mirroring 
+  description: vm, mailing-list, mirroring
 - name: Peeragogy
   description: vm, mailing-list
 - name: Pentoo Linux
@@ -426,6 +436,8 @@
   description: vm, mirroring
 - name: postgreSQL
   description: powerpc
+- name: Power Devops
+  description: powerpc
 - name: PowerPC Notebook
   description: powerpc
 - name: Presto
@@ -446,6 +458,8 @@
   description: powerpc
 - name: RebornOS
   description: aarch64, mirroring
+- name: Red Hat CoreOS
+  description: powerpc
 - name: Replicant
   description: webapp, mailing-list, mirroring
 - name: Replica.one
@@ -475,9 +489,9 @@
 - name: SFTPGo
   description: powerpc
 - name: SHA-3
-  description: powerpc 
+  description: powerpc
 - name: SharkLinux
-  description: vm 
+  description: vm
 - name: sire
   description: powerpc
 - name: Skytable
@@ -489,7 +503,7 @@
 - name: Snowpatch
   description: powerpc
 - name: Software Freedom Conservatory
-  description: vm 
+  description: vm
 - name: Spack
   description: aarch64, powerpc
 - name: Strimzi
@@ -501,9 +515,9 @@
 - name: Swift
   description: powerpc
 - name: SWI-Prolog
-  description: vm 
+  description: vm
 - name: Tahoe LAFS
-  description: mailing-list 
+  description: mailing-list
 - name: tcpdump/libpcap
   description: vm, ci-cd, powerpc, aarch64
 - name: Teaching Open Source
@@ -543,7 +557,7 @@
 - name: vLLM
   description: powerpc
 - name: WebDAV
-  description: vm 
+  description: vm
 - name: X2go
   description: powerpc
 - name: Xenia
