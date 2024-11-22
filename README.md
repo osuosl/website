@@ -18,8 +18,7 @@ authors: [OSUOSL Admin]
 ---
 ```
 
-For now, images in front matter are not supported. To include a header image, at the top of a blog post,
-there is a CSS tag, ``#blog`` that mimics the header image:
+To add a header image at the top of a blog pst, use the CSS tag ``#blog``:
 
 ```
 ![Image Alt](/images/image_path#blog)
