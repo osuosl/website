@@ -157,3 +157,20 @@ https://github.com/ArtofBugs
 oweng
 
 {{< line_break >}}
+
+![Johnathon Rohweder](#johnathon-rohweder)
+
+  **Student Systems Engineer**
+
+![Johnathon Rohweder](/images/johnathon.jpg#right-people)
+
+Johnathon joined the OSL in October 2024. He's been programming and exploring
+the field of Computer Science since middle school, and enjoys learning about
+Cybersecurity, Web Development, and Linux. When he's not learning about
+Computer Science he enjoys hiking and astrophotography.
+
+  **GitHub Account**
+
+https://github.com/Thats-Neat
+
+{{< line_break >}}
