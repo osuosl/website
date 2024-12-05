@@ -4,6 +4,7 @@ title = 'OSU Open Source Lab'
 theme = 'osuosl'
 relativeURLs = true
 enableInlineShortcodes = true
+disablePathToLower = true
 
 [taxonomies]
 tag = "tags"
