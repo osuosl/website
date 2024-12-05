@@ -1,6 +1,6 @@
 ---
 title: AARCH64 OpenStack Request Form
-slug: /aarch64/request-hosting
+slug: /aarch64/request_hosting
 ---
 The Open Source Lab partners with Ampere Computing to host AARCH64
 based servers in order to provide an open platform for innovation to
