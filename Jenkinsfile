@@ -3,7 +3,7 @@ pipeline {
   environment {
     GITHUB_TOKEN = credentials('site_pr_builder')
     STAGING_PATH = "/var/www/staging.osuosl.org/htdocs"
-    PRODUCTION_PATH = "/var/www/new.osuosl.org/htdocs"
+    PRODUCTION_PATH = "/var/www/osuosl.org/htdocs"
   }
   stages {
     stage('Checkout') {
@@ -45,7 +45,7 @@ pipeline {
       script {
         def siteUrl = ""
         if (env.BRANCH_NAME == 'main') {
-          siteUrl = "https://new.osuosl.org/"
+          siteUrl = "https://osuosl.org/"
 
           slackSend channel: "#alerts",
                     color: currentBuild.result == 'SUCCESS' ? 'good' : 'danger',
