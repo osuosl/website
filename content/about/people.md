@@ -158,7 +158,8 @@ oweng
 
 {{< line_break >}}
 
-![Johnathon Rohweder](#johnathon-rohweder)
+[Johnathon Rohweder](#johnathon-rohweder){#johnathon-rohweder}
+------------------
 
   **Student Systems Engineer**
 
