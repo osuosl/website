@@ -53,25 +53,6 @@ sharon123
 
 {{< line_break >}}
 
-[Antonia Gaete](#antonia-gaete){#antonia-gaete}
---------------------
-
-  **Student Systems Engineer**
-
-![Antonia Gaete](/images/antonia_gaete.jpg#right-people)
-
-Antonia joined the OSL in June 2022. She was intersted in joining OSL as a learning opportunity for career skills, in hopes of finding her niche as a Computer Science major. Antonia is most interested in development and hopes to learn skills from OSL that are needed to pursue a career in such areas. In her free time, Antonia enjoys playing/watching soccer, playing instruments, reading, and listening to music.
-
-  **GitHub Account**
-
-https://github.com/antoniagaete
-
-  **Nick on irc.libera.chat**
-
-antoniagaete
-
-{{< line_break >}}
-
 [Grant O'Connor](#grant-oconnor){#grant-oconnor}
 -----------------
 
