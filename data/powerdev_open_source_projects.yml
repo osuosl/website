@@ -194,6 +194,8 @@
   description: The POWER is used to build and assemble the OpenSearch software for ppc64le architecture
 - name: OpenShift
   description: Test builds of OpenShift for Continuous Integration
+- name: OpenSSL
+  description: CI to cover linux-ppc64le, discover issues as early as possible, and keep our OpenSSL current
 - name: OpenZFS
   description: OpenZFS is an advanced file system and volume manager which was originally developed for Solaris and is now maintained by the OpenZFS community.
 - name: OrientDB

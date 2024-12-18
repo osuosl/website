@@ -104,7 +104,7 @@
   description: co-location, vm, mirroring
 - name: EasyBuild
   description: powerpc
-- name: Eclipse Communication Framework 
+- name: Eclipse Communication Framework
   description: co-location, vm
 - name: Eclipse
   description: mirroring
@@ -395,6 +395,8 @@
 - name: OpenSearch Project
   description: powerpc
 - name: OpenShift
+  description: powerpc
+- name: OpenSSL
   description: powerpc
 - name: OpenStreetMap
   description: co-location, vm, mirroring
