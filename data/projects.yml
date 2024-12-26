@@ -90,8 +90,6 @@
   description: vm, mirroring
 - name: Delve
   description: powerpc
-- name: DivestOS
-  description: mirroring
 - name: Django
   description: vm
 - name: Docker Matrix
