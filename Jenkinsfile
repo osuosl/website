@@ -60,6 +60,11 @@ pipeline {
                      status: currentBuild.result,
                      targetUrl: "${siteUrl}",
                      message: "Site available: ${siteUrl}"
+
+        matrixSendMessage hostname: 'synapse.osuosl.org',
+                          accessTokenCredentialsId: 'matrix-notification',
+                          roomId: env.ROOM_ID
+                          body: "osuosl/website - #${env.BUILD_ID} finished with status ${currentBuild.result} [Open](${env.BUILD_URL})"
       }
     }
   }
