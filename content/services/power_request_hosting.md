@@ -20,7 +20,7 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
 {{< raw >}}
 <div id="content">
 <!-- Formsender error script -->
-<script src="../../../theme/js/formsender-error.js"></script>
+<script src="../../../js/formsender-error.js"></script>
   <form class="webform-client-form" enctype="multipart/form-data" action="https://formsender.osuosl.org:443"
   method="post" id="webform-client-form-1086" accept-charset="UTF-8">
     <div>

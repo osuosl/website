@@ -17,7 +17,7 @@ This access is intended only for ***free and open source*** projects who qualify
 For proprietary sourced projects or products please contact [info@amperecomputing.com](mailto:info@amperecomputing.com)
 
 {{< raw >}}
-<script src="../theme/js/formsender-error.js"></script>
+<script src="../js/formsender-error.js"></script>
 <form class="webform-client-form" enctype="multipart/form-data" action="https://formsender.osuosl.org:443"
   method="post" id="webform-client-form-1086" accept-charset="UTF-8">
     <div>
