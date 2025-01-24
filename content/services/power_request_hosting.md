@@ -25,20 +25,20 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
   method="post" id="webform-client-form-1086" accept-charset="UTF-8">
     <div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-name">
-        <label for="edit-submitted-name">Name <span class="form-required" title="This field is required.">*</span>
+        <label for="edit-submitted-name">Name <span class="form-required" title="This field is required."></span>
         </label>
         <input type="text" id="edit-submitted-name" name="name" value="" size="60" maxlength="128" class="form-text
         required" />
       </div>
       <div class="form-item webform-component webform-component-email" id="webform-component-email">
-        <label for="edit-submitted-email">Email <span class="form-required" title="This field is required.">*</span>
+        <label for="edit-submitted-email">Email <span class="form-required" title="This field is required."></span>
         </label>
         <input class="email form-text form-email required" type="email" id="edit-submitted-email" name="email"
         size="60" />
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-project-name">
         <label for="edit-submitted-project-name">Project Name <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <input type="text" id="edit-submitted-project-name" name="project_name" value="" size="60" maxlength="128"
         class="form-text required" />
         <div class="description">Name of the open source project or education institution this request will be
@@ -46,21 +46,21 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-project-url">
         <label for="edit-submitted-project-url">Project URL <span class="form-required" title="This field is required.">
-            *</span></label>
+            </span></label>
         <input type="text" id="edit-submitted-project-url" name="project_url" value="" size="60" maxlength="128"
         class="form-text required" />
         <div class="description">Primary website URL for the open source project or education institution.</div>
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-community-size">
         <label for="edit-submitted-community-size">Estimated Size of  User Community <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <input type="text" id="edit-submitted-community-size" name="est_size_of_user_community" value="" size="60"
         maxlength="128" class="form-text required" /> <div class="description">How many estimated users do you have in
         your community?</div>
       </div>
       <div class="form-item webform-component webform-component-textarea" id="webform-component-mission">
         <label for="edit-submitted-mission">Description of Project Mission <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-mission"
         name="description_of_project_mission" cols="60" rows="5" class="form-textarea required"></textarea></div>
         <div class="description">Please describe in detail the mission and purpose of this request in regards to how
@@ -68,7 +68,7 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
       </div>
       <div class="form-item webform-component webform-component-textarea" id="webform-component-usage">
         <label for="edit-submitted-usage">Expected Usage Model <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-usage" name="expected_usage_model"
         cols="60" rows="5" class="form-textarea required"></textarea></div>
         <div class="description">What types of activity will the machine be used for? (i.e. compile builds, performance
@@ -76,7 +76,7 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-duration">
         <label for="edit-submitted-duration">Anticipated duration of need <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <input type="text" id="edit-submitted-duration" name="anticipated_duration_of_need" value="" size="60"
         maxlength="128" class="form-text required" />
         <div class="description">How long do you expect you will need these resources? Ongoing or indefinitely are also
@@ -84,7 +84,7 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-ibm-ltc-advocate">
         <label for="edit-submitted-ibm-ltc-advocate">IBM Advocate <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <input type="text" id="edit-submitted-ibm-ltc-advocate" name="ibm_advocate" value="" size="60" maxlength="128"
         class="form-text required" />
         <div class="description">If you do not have an IBM Advocate, one will need to be assigned prior to activating
@@ -109,7 +109,7 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
       <h4>OpenStack Access Question(s)</h4>
       <div class="form-item webform-component webform-component-select" id="webform-component-power-architecture">
         <label for="edit-submitted-power-architecture">POWER Architecture <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <select id="edit-submitted-power-architecture" name="power_architecture" class="form-select required">
           <option value="POWER10" selected="selected">POWER10</option>
           <option value="POWER9">POWER9</option>
@@ -117,7 +117,7 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
         </select>
       </div>
       <div class="form-item webform-component webform-component-select" id="webform-component-flavor">
-        <label for="edit-submitted-flavor">Flavor <span class="form-required" title="This field is required.">*</span>
+        <label for="edit-submitted-flavor">Flavor <span class="form-required" title="This field is required."></span>
         </label>
         <select id="edit-submitted-flavor" name="flavor" class="form-select required">
           <option value="None selected" selected="selected">- Select -</option>
@@ -131,14 +131,14 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
       </div>
       <div class="form-item webform-component webform-component-number" id="webform-component-num-nodes">
         <label for="edit-submitted-num-nodes">Number of nodes <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <input type="number" id="edit-submitted-num-nodes" name="number_of_nodes" value="1" min="1" step="any"
         class="form-text form-number required" />
         <div class="description">Estimated number of nodes (machines) you'd like to have.</div>
       </div>
       <div class="form-item webform-component webform-component-select" id="webform-component-distribution">
         <label for="edit-submitted-distribution">Distribution <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <select id="edit-submitted-distribution" name="distribution" class="form-select required">
           <option value="None selected" selected="selected">- Select -</option>
           <option value="AlmaLinux">AlmaLinux</option>
@@ -169,7 +169,7 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
       </div>
       <div class="form-item webform-component webform-component-textarea" id="webform-component-ssh-key">
         <label for="edit-submitted-ssh-key">SSH Public Key <span class="form-required" title="This field is required.">
-            *</span></label>
+            </span></label>
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-ssh-key" name="ssh_public_key" cols="60" rows="5" class="form-textarea required"></textarea></div>
         <div class="description">Public SSH key to be used for initial access to the system.</div>
       </div>
@@ -180,7 +180,7 @@ can be found [here](https://developer.ibm.com/linuxonpower/cloud-resources/)
       <div class="g-recaptcha" data-sitekey="6LeOugIAAAAAALZJU8MBrWbtN6NC9sMGCu8Xgb41"></div>
       <!-- Formsender Settings -->
       <input type="hidden" name="last_name" value="" />
-      <input type="hidden" name="token" value="15674hsda//*q23%^13jnxccv3ds54sa4g4sa532323!OoRdsfISDIdks38*(dsfjk)aS" />
+      <input type="hidden" name="token" value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
       <!-- The following must be set to http://www.osuosl.org/services/powerdev/request_hosting in production -->
       <input type="hidden" name="redirect" value="https://www.osuosl.org/form-submitted" />
       <input type="hidden" name="mail_subject_prefix" value="New PowerLinux/OpenPOWER Hosting Request" />

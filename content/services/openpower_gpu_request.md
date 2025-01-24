@@ -33,31 +33,31 @@ amounts of resources, please provide details in the "Other information" section.
     <div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-first-name">
         <label for="edit-submitted-first-name">First name <span class="form-required" title="This field is
-        required.">*</span></label>
+        required."></span></label>
         <input type="text" id="edit-submitted-first-name" name="name" value="" size="60" maxlength="128"
         class="form-text required" />
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-last-name">
         <label for="edit-submitted-last-name">Last name <span class="form-required" title="This field is
-        required.">*</span></label>
+        required."></span></label>
         <input type="text" id="edit-submitted-last-name" name="lastname" value="" size="60" maxlength="128"
         class="form-text required" />
       </div>
       <div class="form-item webform-component webform-component-email" id="webform-component-email">
         <label for="edit-submitted-email">Email <span class="form-required" title="This field is
-        required.">*</span></label>
+        required."></span></label>
         <input class="email form-text form-email required" type="email" id="edit-submitted-email" name="email"
         size="60" />
       </div>
       <div class="form-item webform-component webform-component-phone" id="webform-component-phone">
         <label for="edit-submitted-phone">Phone number <span class="form-required" title="This field is
-        required.">*</span></label>
+        required."></span></label>
         <input class="phone form-text form-phone required" type="phone" id="edit-submitted-phone" name="phone"
         size="60" />
       </div>
       <div class="form-item webform-component webform-component-username" id="webform-component-username">
         <label for="edit-submitted-username">Username <span class="form-required" title="This field is
-        required.">*</span></label>
+        required."></span></label>
         <input class="username form-text form-username required" type="username" id="edit-submitted-username"
         name="username" size="60" />
       </div>
@@ -65,14 +65,14 @@ amounts of resources, please provide details in the "Other information" section.
         <div class="description">Name of the open source project or education institution this request will be
         supporting.</div>
         <label for="edit-submitted-project-name">Project Name <span class="form-required" title="This field is
-        required.">*</span></label>
+        required."></span></label>
         <input type="text" id="edit-submitted-project-name" name="project_name" value="" size="60" maxlength="128"
         class="form-text required" />
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-project-url">
         <div class="description">Primary website URL for the open source project or education institution.</div>
         <label for="edit-submitted-project-url">Project URL <span class="form-required" title="This field is
-        required.">*</span></label>
+        required."></span></label>
         <input type="text" id="edit-submitted-project-url" name="project_url" value="" size="60" maxlength="128"
         class="form-text required" />
       </div>
@@ -80,7 +80,7 @@ amounts of resources, please provide details in the "Other information" section.
         <div class="description">Please describe in detail the mission and purpose of this request in regards to how
         the POWER architecture will support your project. Also describe the general mission of your project.</div>
         <label for="edit-submitted-usage">Description of Project Mission <span class="form-required" title="This field
-        is required.">*</span></label>
+        is required."></span></label>
         <div class="form-textarea-wrapper resizable"><textarea id="edit-project-mission" name="project_mission"
         cols="60" rows="5" class="form-textarea required"></textarea></div>
       </div>
@@ -88,7 +88,7 @@ amounts of resources, please provide details in the "Other information" section.
         <div class="description">What types of activity will the machine be used for? (i.e. compile builds, performance
         testing, architecture troubleshooting, etc).</div>
         <label for="edit-submitted-usage">Expected Usage Model <span class="form-required" title="This field is
-        required.">*</span></label>
+        required."></span></label>
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-usage" name="expected_usage_model"
         cols="60" rows="5" class="form-textarea required"></textarea></div>
       </div>
@@ -96,20 +96,20 @@ amounts of resources, please provide details in the "Other information" section.
         <div class="description">How long do you expect you will need these resources? Ongoing or indefinitely are also
         acceptable answers.</div>
         <label for="edit-submitted-duration">Anticipated duration of need <span class="form-required" title="This field
-        is required.">*</span></label>
+        is required."></span></label>
         <input type="text" id="edit-submitted-duration" name="anticipated_duration_of_need" value="" size="60"
         maxlength="128" class="form-text required" />
       </div>
       <div class="form-item webform-component webform-component-number" id="webform-component-num-nodes">
         <div class="description">Estimated number of nodes (machines) you'd like to have.</div>
         <label for="edit-submitted-num-nodes">Number of nodes <span class="form-required" title="This field is
-        required.">*</span></label>
+        required."></span></label>
         <input type="number" id="edit-submitted-num-nodes" name="number_of_nodes" value="1" min="1" step="any"
         class="form-text form-number required" />
       </div>
       <div class="form-item webform-component webform-component-select" id="webform-component-power-architecture">
         <label for="edit-submitted-power-architecture">POWER Architecture <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <select id="edit-submitted-power-architecture" name="power_architecture" class="form-select required">
           <option value="POWER9" selected="selected">POWER9</option>
           <option value="POWER8">POWER8</option>
@@ -120,7 +120,7 @@ amounts of resources, please provide details in the "Other information" section.
         the latest stable version available for PPC. If you want a specific version, please state that in the comments
         section on the last page.</div>
         <label for="edit-submitted-distribution">Distribution <span class="form-required" title="This field is
-        required.">*</span></label>
+        required."></span></label>
         <select id="edit-submitted-distribution" name="distribution" class="form-select required">
           <option value="None selected" selected="selected">- Select -</option>
           <option value="CentOS">CentOS</option>
@@ -130,7 +130,7 @@ amounts of resources, please provide details in the "Other information" section.
       <div class="form-item webform-component webform-component-textarea" id="webform-component-ssh-key">
         <div class="description">Public SSH key to be used for initial access to the system.</div>
         <label for="edit-submitted-ssh-key">SSH Public Key <span class="form-required" title="This field is
-        required.">*</span></label>
+        required."></span></label>
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-ssh-key" name="ssh_public_key"
         cols="60" rows="5" class="form-textarea required"></textarea></div>
       </div>
@@ -157,7 +157,7 @@ amounts of resources, please provide details in the "Other information" section.
       <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
       <!-- Formsender Settings -->
       <input type="hidden" name="last_name" value="" />
-      <input type="hidden" name="token" value="15674hsda//*q23%^13jnxccv3ds54sa4g4sa532323!OoRdsfISDIdks38*(dsfjk)aS" />
+      <input type="hidden" name="token" value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
       <!-- The following must be set to http://www.osuosl.org/services/powerdev/request_gpu in production -->
       <input type="hidden" name="redirect" value="/form-submitted" />
       <input type="hidden" name="mail_subject_prefix" value="New OpenPOWER GPU Request" />
