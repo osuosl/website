@@ -5,8 +5,9 @@ slug: ibm-z/request_ci
 
 Please use the form below to request **new** access to the [IBM Z CI service](/services/ibm-z) provided by the OSUOSL.
 
-For any **changes, updates, or issues with an existing project** please send the specific request as an
-email to "mailto:ibm-z-ci-request@osuosl.org">[ibm-z-ci-request@osuosl.org](mailto:ibm-z-ci-request@osuosl.org) and include the original project name in the subject line and the names of the Jenkins jobs that have the issue in the message body.
+For any **changes, updates, or issues with an existing project** please send the specific request as an email to
+[ibm-z-ci-request@osuosl.org](mailto:ibm-z-ci-request@osuosl.org) and include the original project name in the subject
+line and the names of the Jenkins jobs that have the issue in the message body.
 
 This access is intended only for ***free and open source*** projects who qualify and are approved by
 both the OSUOSL and IBM. For proprietary sourced projects or products please use other POWER resources which
@@ -54,7 +55,7 @@ For more resources regarding Linux on IBM Z, take a look at IBM's [Linux on IBM 
         <label for="edit-submitted-community-size">Estimated Size of User Community <span class="form-required"
         title="This field is required."></span></label>
         <input type="text" id="edit-submitted-community-size" name="est_size_of_user_community" value="" size="60"
-        maxlength="128" class="form-text required" /> 
+        maxlength="128" class="form-text required" />
       </div>
       <div class="form-item webform-component webform-component-textarea" id="webform-component-mission">
         <div class="description">Please describe in detail the mission and purpose of this request in regards to how

@@ -8,16 +8,16 @@ the open source community. **For more information about AARCH64 Hosting, please 
 
 Please use the form below to request *new* hosting on the AARCH64 environment hosted at the OSUOSL.
 
-For any *changes, updates, or issues with an existing project* please send the specific 
-request as an email to [aarch64-hosting-request@osuosl.org](mailto:aarch64-hosting-request@osuosl.org)
-and include the original project name in the subject line and the IP address(es) for the VM(s) in 
-the message body of the request which will help us narrow down what specific VM it's for.
+For any *changes, updates, or issues with an existing project* please send the specific request as an email to
+[aarch64-hosting-request@osuosl.org](mailto:aarch64-hosting-request@osuosl.org) and include the original project name
+in the subject line and the IP address(es) for the VM(s) in the message body of the request which will help us narrow
+down what specific VM it's for.
 
-This access is intended only for ***free and open source*** projects who qualify and are approved by the OSUOSL. 
-For proprietary sourced projects or products please contact [info@amperecomputing.com](mailto:info@amperecomputing.com)
+This access is intended only for ***free and open source*** projects who qualify and are approved by the OSUOSL.  For
+proprietary sourced projects or products please contact [info@amperecomputing.com](mailto:info@amperecomputing.com)
 
 {{< raw >}}
-<script src="../js/formsender-error.js"></script>
+<script src="../../../js/formsender-error.js"></script>
 <form class="webform-client-form" enctype="multipart/form-data" action="https://formsender.osuosl.org:443"
   method="post" id="webform-client-form-1086" accept-charset="UTF-8">
     <div>
@@ -154,9 +154,8 @@ For proprietary sourced projects or products please contact [info@amperecomputin
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-ssh-key" name="ssh_public_key" cols="60" rows="5" class="form-textarea required"></textarea></div>
         <div class="description">Public SSH key to be used for initial access to the system.</div>
       </div>
-      <p><i>You should receive an automated email from our request ticketing
-      system to the email address you have provided within 5-10 minutes.  If
-      you don't receive this email please reach out to us at <a
+      <p><i>You should receive an automated email from our request ticketing system to the email address you have
+      provided within 5-10 minutes.  If you don't receive this email please reach out to us at <a
       href="mailto:aarch64-hosting-request@osuosl.org">aarch64-hosting-request@osuosl.org</a>
       or via IRC in <b>#osuosl</b> on <a href="https://libera.chat/">Libera Chat</a>.</i></p>
       <div class="g-recaptcha" data-sitekey="6LeOugIAAAAAALZJU8MBrWbtN6NC9sMGCu8Xgb41"></div>
