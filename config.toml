@@ -125,7 +125,7 @@ tag = "tags"
             [[menu.main]]
                 parent = "aarch64"
                 name = "AARCH64 OpenStack Request Form"
-                url = "/services/aarch64/request-hosting"
+                url = "/services/aarch64/request_hosting"
                 weight = 3
 
         [[menu.main]]

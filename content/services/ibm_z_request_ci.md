@@ -23,13 +23,13 @@ For more resources regarding Linux on IBM Z, take a look at IBM's [Linux on IBM 
     action="https://formsender.osuosl.org:443" method="post" id="webform-client-form-1086" accept-charset="UTF-8">
     <div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-name">
-        <label for="edit-submitted-name">Name <span class="form-required" title="This field is required.">*</span>
+        <label for="edit-submitted-name">Name <span class="form-required" title="This field is required."></span>
         </label>
         <input type="text" id="edit-submitted-name" name="name" value="" size="60" maxlength="128" class="form-text
         required" />
       </div>
       <div class="form-item webform-component webform-component-email" id="webform-component-email">
-        <label for="edit-submitted-email">Email <span class="form-required" title="This field is required.">*</span>
+        <label for="edit-submitted-email">Email <span class="form-required" title="This field is required."></span>
         </label>
         <input class="email form-text form-email required" type="email" id="edit-submitted-email" name="email"
         size="60" />
@@ -38,21 +38,21 @@ For more resources regarding Linux on IBM Z, take a look at IBM's [Linux on IBM 
         <div class="description">Name of the open source project or education institution this request will be
         supporting.</div>
         <label for="edit-submitted-project-name">Project Name <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <input type="text" id="edit-submitted-project-name" name="project_name" value="" size="60" maxlength="128"
         class="form-text required" />
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-project-url">
         <div class="description">Primary website URL for the open source project or education institution.</div>
         <label for="edit-submitted-project-url">Project URL <span class="form-required" title="This field is required.">
-            *</span></label>
+            </span></label>
         <input type="text" id="edit-submitted-project-url" name="project_url" value="" size="60" maxlength="128"
         class="form-text required" />
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-community-size">
         <div class="description">How many estimated users do you have in your community?</div>
         <label for="edit-submitted-community-size">Estimated Size of User Community <span class="form-required"
-        title="This field is required.">*</span></label>
+        title="This field is required."></span></label>
         <input type="text" id="edit-submitted-community-size" name="est_size_of_user_community" value="" size="60"
         maxlength="128" class="form-text required" /> 
       </div>
@@ -60,7 +60,7 @@ For more resources regarding Linux on IBM Z, take a look at IBM's [Linux on IBM 
         <div class="description">Please describe in detail the mission and purpose of this request in regards to how
         the IBM Z architecture will support your project. Also describe the general mission of your project.</div>
         <label for="edit-submitted-mission">Description of Project Mission <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-mission"
         name="description_of_project_mission" cols="60" rows="5" class="form-textarea required"></textarea></div>
       </div>
@@ -68,7 +68,7 @@ For more resources regarding Linux on IBM Z, take a look at IBM's [Linux on IBM 
         <div class="description">What types of activity will the machine be used for? (i.e. compile builds, performance
         testing, architecture troubleshooting, etc).</div>
         <label for="edit-submitted-usage">Expected Usage Model <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-usage" name="expected_usage_model"
         cols="60" rows="5" class="form-textarea required"></textarea></div>
       </div>
@@ -76,7 +76,7 @@ For more resources regarding Linux on IBM Z, take a look at IBM's [Linux on IBM 
         <div class="description">How long do you expect you will need these resources? Ongoing or indefinitely are also
         acceptable answers.</div>
         <label for="edit-submitted-duration">Anticipated duration of need <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <input type="text" id="edit-submitted-duration" name="anticipated_duration_of_need" value="" size="60"
         maxlength="128" class="form-text required" />
       </div>
@@ -99,7 +99,7 @@ For more resources regarding Linux on IBM Z, take a look at IBM's [Linux on IBM 
       <h4>IBM Z CI Access Question(s)</h4>
       <div class="webform-component" id="webform-component-platforms">
         <label for="webform-component-platforms">OS Platform(s) <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <div class="form-inline">
           <input type="checkbox" id="edit-submitted-debian" class="form-checkbox" name="platform_debian" value="requested" />
           <label for="edit-submitted-debian">Debian</label>
@@ -123,7 +123,7 @@ For more resources regarding Linux on IBM Z, take a look at IBM's [Linux on IBM 
         <div class="description">We use GitHub OAuth to authenticate into the CI system. Please provide a comma
         separated list of GitHub username(s) to gain access.</div>
         <label for="edit-submitted-ci-github">GitHub Username(s) for IBM Z CI <span class="form-required"
-            title="This field is required.">*</span></label>
+            title="This field is required."></span></label>
         <input type="text" id="edit-submitted-ci-github" name="ci-github" value="" size="60" maxlength="128"
             class="form-text required" />
       </div>
@@ -134,7 +134,7 @@ For more resources regarding Linux on IBM Z, take a look at IBM's [Linux on IBM 
       <div class="g-recaptcha" data-sitekey="6LeOugIAAAAAALZJU8MBrWbtN6NC9sMGCu8Xgb41"></div>
       <!-- Formsender Settings -->
       <input type="hidden" name="last_name" value="" />
-      <input type="hidden" name="token" value="15674hsda//*q23%^13jnxccv3ds54sa4g4sa532323!OoRdsfISDIdks38*(dsfjk)aS" />
+      <input type="hidden" name="token" value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
       <input type="hidden" name="redirect" value="https://www.osuosl.org/form-submitted" />
       <input type="hidden" name="mail_subject_prefix" value="New IBM Z CI Request" />
       <input type="hidden" name="mail_subject_key" value="project_name" />
