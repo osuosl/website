@@ -3,26 +3,23 @@ title: POWER Development Hosting
 slug: /powerdev
 ---
 
-The Open Source Lab partners with [IBM](http://www-03.ibm.com/linux/ltc/) to host 
-[POWER](http://en.wikipedia.org/wiki/IBM_POWER_microprocessors) based servers in order to provide an open platform 
-for innovation to the open source community. Current projects embrace open software projects ranging from KVM to 
-OpenStack and open collaboration with [OpenPOWER Foundation](http://openpowerfoundation.org) partners, including 
-[NVIDIA](http://www.nvidia.com), [Mellanox](https://www.mellanox.com), [Ubuntu](http://www.ubuntu.com) and 
-[Google](https://opensource.google.com/), and open source based ISV and distribution partners, such as 
-[Chef](https://www.chef.io/chef/), Red Hat, SUSE and Ubuntu, who support the latest POWER hardware via production 
-and development (Fedora, CentOS, OpenSUSE, and Debian) distributions.
+The Open Source Lab partners with [IBM](http://www-03.ibm.com/linux/ltc/) to host
+[POWER](http://en.wikipedia.org/wiki/IBM_POWER_microprocessors) based servers in order to provide an open platform for
+innovation to the open source community. Current projects embrace open software projects ranging from KVM to OpenStack
+and open collaboration with [OpenPOWER Foundation](http://openpowerfoundation.org) partners, including
+[NVIDIA](http://www.nvidia.com), [Mellanox](https://www.mellanox.com), [Ubuntu](http://www.ubuntu.com) and
+[Google](https://opensource.google.com/), and open source based ISV and distribution partners, such as
+[Chef](https://www.chef.io/chef/), Red Hat, SUSE and Ubuntu, who support the latest POWER hardware via production and
+development (Fedora, CentOS, OpenSUSE, and Debian) distributions.
 
-Members of the community can use these POWER servers to develop and test open
-source projects on the [Power Architecture](http://en.wikipedia.org/wiki/Power_Architectur) 
-platform and in a [PowerLinux](http://en.wikipedia.org/wiki/PowerLinux) environment. 
-Developers looking for assistance can go to the [Linux on IBM Power
-Systems Developer](https://developer.ibm.com/linuxonpower/) portal or 
-[IBM Portal for OpenPOWER](https://www-355.ibm.com/systems/power/openpower/).
-
+Members of the community can use these POWER servers to develop and test open source projects on the [Power
+Architecture](http://en.wikipedia.org/wiki/Power_Architectur) platform and in a
+[PowerLinux](http://en.wikipedia.org/wiki/PowerLinux) environment.  Developers looking for assistance can go to the
+[Linux on IBM Power Systems Developer](https://developer.ibm.com/linuxonpower/) portal or [IBM Portal for
+OpenPOWER](https://www-355.ibm.com/systems/power/openpower/).
 
 * List of [Current Projects & Academic Partners](/services/powerdev/current-projects)
 * List of [Former Projects & Academic Partners](/services/powerdev/former-projects)
-
 
 Two clusters of POWER resources are hosted at the Open Source Lab:
 

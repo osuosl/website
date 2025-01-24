@@ -16,7 +16,7 @@ project name in the subject line and the names of the Jenkins jobs that have the
 This access is intended only for *free and open source* projects who qualify and are approved by
 both the OSUOSL and IBM. For proprietary sourced projects or products please use other POWER resources which
 can be found [here](https://www.ibm.com/docs/en/linux-on-systems).
-        
+
 The POWER CI service uses Docker to deploy Jenkins workers. In the future we will add access to use OpenStack
 to deploy Jenkins workers (ppc64le only).
 
@@ -28,13 +28,13 @@ to deploy Jenkins workers (ppc64le only).
   method="post" id="webform-client-form-1086" accept-charset="UTF-8">
     <div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-name">
-        <label for="edit-submitted-name">Name <span class="form-required" title="This field is required."></span>
+        <label for="edit-submitted-name">Name <span class="form-required" title="This field is required.">&ast;</span>
         </label>
         <input type="text" id="edit-submitted-name" name="name" value="" size="60" maxlength="128" class="form-text
         required" />
       </div>
       <div class="form-item webform-component webform-component-email" id="webform-component-email">
-        <label for="edit-submitted-email">Email <span class="form-required" title="This field is required."></span>
+        <label for="edit-submitted-email">Email <span class="form-required" title="This field is required.">&ast;</span>
         </label>
         <input class="email form-text form-email required" type="email" id="edit-submitted-email" name="email"
         size="60" />
@@ -43,45 +43,45 @@ to deploy Jenkins workers (ppc64le only).
         <div class="description">Name of the open source project or education institution this request will be
         supporting.</div>
         <label for="edit-submitted-project-name">Project Name <span class="form-required"
-            title="This field is required."></span></label>
+            title="This field is required.">&ast;</span></label>
         <input type="text" id="edit-submitted-project-name" name="project_name" value="" size="60" maxlength="128"
         class="form-text required" />
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-project-url">
         <div class="description">Primary website URL for the open source project or education institution.</div>
-        <label for="edit-submitted-project-url">Project URL <span class="form-required" title="This field is required.">
-            </span></label>
+        <label for="edit-submitted-project-url">Project URL <span class="form-required" title="This field is
+        required.">&ast;</span></label>
         <input type="text" id="edit-submitted-project-url" name="project_url" value="" size="60" maxlength="128"
         class="form-text required" />
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-community-size">
         <div class="description">How many estimated users do you have in your community?</div>
         <label for="edit-submitted-community-size">Estimated Size of User Community <span class="form-required"
-        title="This field is required."></span></label>
+        title="This field is required.">&ast;</span></label>
         <input type="text" id="edit-submitted-community-size" name="est_size_of_user_community" value="" size="60"
         maxlength="128" class="form-text required" />
       </div>
       <div class="form-item webform-component webform-component-textarea" id="webform-component-mission">
         <div class="description">Please describe in detail the mission and purpose of this request in regards to how
         the POWER architecture will support your project. Also describe the general mission of your project.</div>
-        <label for="edit-submitted-mission">Description of Project Mission <span class="form-required"
-            title="This field is required."></span></label>
+        <label for="edit-submitted-mission">Description of Project Mission <span class="form-required" title="This field
+        is required.">&ast;</span></label>
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-mission"
         name="description_of_project_mission" cols="60" rows="5" class="form-textarea required"></textarea></div>
       </div>
       <div class="form-item webform-component webform-component-textarea" id="webform-component-usage">
         <div class="description">What types of activity will the machine be used for? (i.e. compile builds, performance
         testing, architecture troubleshooting, etc).</div>
-        <label for="edit-submitted-usage">Expected Usage Model <span class="form-required"
-            title="This field is required."></span></label>
+        <label for="edit-submitted-usage">Expected Usage Model <span class="form-required" title="This field is
+        required.">&ast;</span></label>
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-usage" name="expected_usage_model"
         cols="60" rows="5" class="form-textarea required"></textarea></div>
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-duration">
         <div class="description">How long do you expect you will need these resources? Ongoing or indefinitely are also
         acceptable answers.</div>
-        <label for="edit-submitted-duration">Anticipated duration of need <span class="form-required"
-            title="This field is required."></span></label>
+        <label for="edit-submitted-duration">Anticipated duration of need <span class="form-required" title="This field
+        is required.">&ast;</span></label>
         <input type="text" id="edit-submitted-duration" name="anticipated_duration_of_need" value="" size="60"
         maxlength="128" class="form-text required" />
       </div>
@@ -105,8 +105,8 @@ to deploy Jenkins workers (ppc64le only).
       <div class="form-item webform-component" id="webform-component-platforms">
         <div class="description">Some platforms may not be supported on a specific architecture, so please check with
             us first.</div>
-        <label for="webform-component-platforms">OS Platform(s) <span class="form-required"
-            title="This field is required."></span></label>
+        <label for="webform-component-platforms">OS Platform(s) <span class="form-required" title="This field is
+        required.">&ast;</span></label>
         <div class="form-inline">
           <input type="checkbox" id="edit-submitted-centos" class="form-checkbox" name="platform_centos" value="requested" />
           <label for="edit-submitted-centos">CentOS</label>
@@ -145,8 +145,8 @@ to deploy Jenkins workers (ppc64le only).
       <div class="form-item webform-component webform-component-textfield" id="webform-component-ci-github">
         <div class="description">We use GitHub OAuth to authenticate into the POWER CI system. Please provide a comma
         separated list of GitHub username(s) to gain access.</div>
-        <label for="edit-submitted-ci-github">GitHub Username(s) for POWER CI <span class="form-required"
-            title="This field is required."></span></label>
+        <label for="edit-submitted-ci-github">GitHub Username(s) for POWER CI <span class="form-required" title="This
+        field is required.">&ast;</span></label>
         <input type="text" id="edit-submitted-ci-github" name="ci-github" value="" size="60" maxlength="128"
             class="form-text required" />
       </div>
