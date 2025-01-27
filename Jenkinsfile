@@ -61,10 +61,14 @@ pipeline {
                      targetUrl: "${siteUrl}",
                      message: "Site available: ${siteUrl}"
 
-        matrixSendMessage hostname: 'synapse.osuosl.org',
-                          accessTokenCredentialsId: 'matrix-notification',
-                          roomId: credentials("matrix-room-id"),
-                          body: "osuosl/website - #${env.BUILD_ID} finished with status ${currentBuild.result} [Open](${env.BUILD_URL})"
+	withCredentials([string(credentialsId: 'matrix-room-id', variable: 'ROOM_ID')]){
+		matrixSendMessage hostname: 'synapse.osuosl.org',
+				  accessTokenCredentialsId: 'matrix-notification',
+				  roomId: ROOM_ID,
+				  body: "osuosl/website - #${env.BUILD_ID} finished with status ${currentBuild.result} [Open](${env.BUILD_URL})",
+				  formattedBody: "<p>osuosl/website - #${env.BUILD_ID} finished with status ${currentBuild.result} | <a href=\"${env.BUILD_URL}\">Open</a></p>",
+				  type: "m.notify"
+	}
       }
     }
   }
