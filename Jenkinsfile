@@ -63,7 +63,7 @@ pipeline {
 
         matrixSendMessage hostname: 'synapse.osuosl.org',
                           accessTokenCredentialsId: 'matrix-notification',
-                          roomId: env.ROOM_ID
+                          roomId: credentials("matrix-room-id"),
                           body: "osuosl/website - #${env.BUILD_ID} finished with status ${currentBuild.result} [Open](${env.BUILD_URL})"
       }
     }
