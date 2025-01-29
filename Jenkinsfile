@@ -66,8 +66,7 @@ pipeline {
 				  accessTokenCredentialsId: 'matrix-notification',
 				  roomId: ROOM_ID,
 				  body: "osuosl/website - #${env.BUILD_ID} finished with status ${currentBuild.result} [Open](${env.BUILD_URL})",
-				  formattedBody: "<p>osuosl/website - #${env.BUILD_ID} finished with status ${currentBuild.result} | <a href=\"${env.BUILD_URL}\">Open</a></p>",
-				  type: "m.notify"
+				  formattedBody: "osuosl/website - #${env.BUILD_ID} finished with status ${currentBuild.result} <a href=\"${env.BUILD_URL}\">Open</a>"
 	}
       }
     }
