@@ -2,8 +2,8 @@
 
 Migrated from our static [Pelican site](https://github.com/osuosl/osuosl-pelican)
 
-Based off of the [Mainroad theme](https://github.com/Vimux/Mainroad) and the previous [OSL
-theme](https://github.com/osuosl/dougfir-pelican-theme)
+Based off of the [Mainroad theme](https://github.com/Vimux/Mainroad) and the previous
+[OSL theme](https://github.com/osuosl/dougfir-pelican-theme)
 
 ## Changes From Pelican
 
@@ -25,8 +25,8 @@ To add a header image at the top of a blog post, use the CSS tag `#blog`:
 
 ## Dependencies
 
-The search feature is implemented using [Pagefind](https://pagefind.app/) and can be installed with `npx` or by
-[downloading the binary](https://pagefind.app/docs/installation/#downloading-a-precompiled-binary).
+The search feature is implemented using [Pagefind](https://pagefind.app/) and can be run with the npm script `serve` or
+by [downloading the binary](https://pagefind.app/docs/installation/#downloading-a-precompiled-binary).
 
 ## Development
 
@@ -48,6 +48,10 @@ hugo
 Then run it using Pagefind:
 
 ```bash
+# NPM script
+npm run serve
+
+# Binary
 ./pagefind --site public --serve
 ```
 
