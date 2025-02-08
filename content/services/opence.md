@@ -695,7 +695,7 @@ This is bug fix release 3 of release 1.9. No other additions have been made sinc
   - NVIDIA's CUDA 11.8
   - Python 3.9, 3.10
 
-- All the packages are built with openssl 1.*.
+- All the packages are built with openssl 1.\*.
 
 ### Open-CE Release 1.9.1
 
@@ -736,8 +736,8 @@ This is bug fix release 1 of release 1.6
 - Updated packages
   - pytorch-lightning 1.6.3
   - pyDeprecate 0.3.2
-  - torchmetrics  0.8.2
-  - tensorflow-io-gcs-filesystem  0.25.0
+  - torchmetrics 0.8.2
+  - tensorflow-io-gcs-filesystem 0.25.0
   - ray 1.11.1
 
 ### Open-CE Release 1.5.1
@@ -750,11 +750,8 @@ This is bug fix release 1 of release 1.5
 
 Key changes include:
 
-Refresh PyTorch to v1.10.1
-remove py36 blocks and dataclasses from all recipes
-Update DALI to 1.9 (from 1.9-dev)
-Update tensorflow metadata to 1.5.0
-Enable uwsgi for python version 3.9
+Refresh PyTorch to v1.10.1 remove py36 blocks and dataclasses from all recipes Update DALI to 1.9 (from 1.9-dev) Update
+tensorflow metadata to 1.5.0 Enable uwsgi for python version 3.9
 
 ### Open-CE Release 1.5.0
 
@@ -786,7 +783,8 @@ This is bug fix 1 of release 1.4 of Open Cognitive Environment (Open-CE). Main u
 - Update Tensorflow Probability to v0.14.1 (#open-ce/tensorflow-probability-feedstock#19)
 - Update pytorch-lightning to 1.4.9 and torchmetrics to v0.5.1 (#open-ce/pytorch-lightning-feedstock#24)
 
-For a complete list of changes also see the [1.4.0 release](https://github.com/open-ce/open-ce/releases/tag/open-ce-v1.4.0).
+For a complete list of changes also see the
+[1.4.0 release](https://github.com/open-ce/open-ce/releases/tag/open-ce-v1.4.0).
 
 ### Open-CE Release 1.3.1
 
@@ -794,8 +792,7 @@ For a complete list of changes also see the [1.4.0 release](https://github.com/o
 
 **What's new**
 
-This is bug fix 1 of release 1.3 of Open Cognitive Environment (Open-CE), code named Chipmunk.
-Bug Fix Changes
+This is bug fix 1 of release 1.3 of Open Cognitive Environment (Open-CE), code named Chipmunk. Bug Fix Changes
 
 - Fix uwsgi build #470 #474
 - Adjust h5py pins for py39 #473 #482
@@ -810,7 +807,8 @@ Bug Fix Changes
 - LightGBM: use system compilers when using system MPI open-ce/LightGBM-feedstock#21
 - OpenCV: disable LAPACK temporarily open-ce/opencv-feedstock#19
 
-For a complete list of changes also see the [1.3.0 release](https://github.com/open-ce/open-ce/releases/tag/open-ce-v1.3.0).
+For a complete list of changes also see the
+[1.3.0 release](https://github.com/open-ce/open-ce/releases/tag/open-ce-v1.3.0).
 
 ### Open-CE Release 1.2.2
 
@@ -905,14 +903,17 @@ Open-CE is distributed as prebuilt containers, or on demand through the Conda pr
 This is release 1.1 of Open Cognitive Environment (Open-CE), code named Meerkat.
 
 - Added support for CUDA 11.0, which is currently supported on RHEL8.
-- Added recipes for the following new packages: LightGBM, TensorFlow Model Optimization, TensorFlow Addons, PyTorch Lightning Bolts, Python Flatbuffers.
-- Added the open-ce tool for running build and validate commands. This replaces the previously existing build_env.py and build_feedstock.py entry points to Open-CE.
-- Added the open-ce test commands to test packages that are built by Open-CE.
-    open-ce build env will now output conda environment files that can be used to create conda environments containing the packages that were just built.
+- Added recipes for the following new packages: LightGBM, TensorFlow Model Optimization, TensorFlow Addons, PyTorch
+  Lightning Bolts, Python Flatbuffers.
+- Added the open-ce tool for running build and validate commands. This replaces the previously existing build_env.py and
+  build_feedstock.py entry points to Open-CE.
+- Added the open-ce test commands to test packages that are built by Open-CE. open-ce build env will now output conda
+  environment files that can be used to create conda environments containing the packages that were just built.
 - The open-ce build image command has been added to create Docker images from the output of open-ce build env.
 - Open-CE build tools can now accept --cuda_versions as an argument to choose a version of CUDA to build with.
 - open-ce build env will now check for circular dependencies between packages.
-- open-ce build env will verify that all packages that are being built can be installed within the same conda environment before starting a build.
+- open-ce build env will verify that all packages that are being built can be installed within the same conda
+  environment before starting a build.
 - Added the --skip_build_packages argument to open-ce build env.
 - Jinja can now be used within any Open-CE configuration file.
 - Improved performance when attempting to build packages that already exist.

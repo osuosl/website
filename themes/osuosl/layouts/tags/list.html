@@ -1,11 +1,12 @@
 {{ define "main" }}
-{{- partial "menu.html" . -}}
-<main class="main_content">
+  {{- partial "menu.html" . -}}
+  <main class="main_content">
     <h1>Student Stories</h1>
     {{- $studentStories := where (where .Site.RegularPages "Section" "blog") "Params.tags" "intersect" (slice
-    "student-stories") }}
+      "student-stories")
+    }}
     {{- range $studentStories }}
-    {{- .Render "summary" }}
+      {{- .Render "summary" }}
     {{- end }}
-</main>
+  </main>
 {{ end }}

@@ -8,8 +8,7 @@ tags: ["student-stories"]
 
 ![Reflections on My Time at the Open Source Lab, Travis Whitehead](/images/twhitehead_wide.jpg#center)
 
-Reflections on My Time at the Open Source Lab
-by Travis Whitehead
+Reflections on My Time at the Open Source Lab by Travis Whitehead
 
 Working at the Open Source Lab has been the highlight of my computer science experience at Oregon State University. It
 was just by chance that I came across a job listing for the OSL. I had never heard of the organization, and it certainly
@@ -40,5 +39,6 @@ Looking forward, I hope that the Open Source Lab continues to grow and expand so
 opportunities. The OSL is truly one of a kind, and I feel really thankful to have been able to work with the lab for the
 past several years.
 
-Excitingly, this is my last term at Oregon State. I'll be going on to work with [Tag1 Consulting](https://tag1consulting.com/), where I will continue
-to tackle exciting infrastructure challenges and contribute back to the open-source community whenever I can.
+Excitingly, this is my last term at Oregon State. I'll be going on to work with
+[Tag1 Consulting](https://tag1consulting.com/), where I will continue to tackle exciting infrastructure challenges and
+contribute back to the open-source community whenever I can.

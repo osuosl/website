@@ -3,23 +3,21 @@ title: "Hosting Details"
 slug: details
 ---
 
-We offer a wide variety of services to our hosted clients so the OSL can help
-offload work from your machine and/or infrastructure team. This list is not
-exhaustive, but is intended to give a better idea of the types of services we
+We offer a wide variety of services to our hosted clients so the OSL can help offload work from your machine and/or
+infrastructure team. This list is not exhaustive, but is intended to give a better idea of the types of services we
 provide.
 
-
-Managed vs. Unmanaged
----------------------
+## Managed vs. Unmanaged
 
 Most of our hosting falls into two categories, managed or unmanaged.
 
 #### Managed
 
 For managed hosting, we will take care of your system(s) using our configuration management which ensures your systems
-are always up to date, stable with tested configurations, and automated. We currently use [Chef](https://www.chef.io/) to manage all of our
-systems and can create a project-specific cookbook if you want to assist in managing the system. We'll also configure
-and maintain all of the services running on your system(s) including monitoring them and backing up any data.
+are always up to date, stable with tested configurations, and automated. We currently use [Chef](https://www.chef.io/)
+to manage all of our systems and can create a project-specific cookbook if you want to assist in managing the system.
+We'll also configure and maintain all of the services running on your system(s) including monitoring them and backing up
+any data.
 
 Managed systems are ideal for smaller projects that have simple requirements and don't want to deal with day-to-day
 system administration tasks.
@@ -27,17 +25,17 @@ system administration tasks.
 #### Unmanaged
 
 Unmanaged hosting means you control everything about your system(s). We only require that you keep one sudo-enabled
-account on the system for us to use as needed for troubleshooting. We will not actively manage, monitor or back
-up these systems unless requested. If you run into an issue with your unmanaged system(s), we're still available to
-help of course!
+account on the system for us to use as needed for troubleshooting. We will not actively manage, monitor or back up these
+systems unless requested. If you run into an issue with your unmanaged system(s), we're still available to help of
+course!
 
-Virtualization
---------------
+## Virtualization
 
 ![Hosting Detail - Sysadmin](/images/student-sysadmin.jpg#right)
 
-We currently have two virtualization clusters available for use: [Ganeti](http://www.ganeti.org/) and [OpenStack](http://openstack.org). Depending on the project's
-use case, we host their VM(s) on either or both platforms. Both clusters are powered with the [KVM hypervisor](http://www.linux-kvm.org/page/Main_Page).
+We currently have two virtualization clusters available for use: [Ganeti](http://www.ganeti.org/) and
+[OpenStack](http://openstack.org). Depending on the project's use case, we host their VM(s) on either or both platforms.
+Both clusters are powered with the [KVM hypervisor](http://www.linux-kvm.org/page/Main_Page).
 
 #### OpenStack
 
@@ -62,66 +60,64 @@ with full redundant storage using DRBD. Ganeti is very simple to use and maintai
 API to deploy and manage the VMs. We do have a simple web management interface which allows projects to access the
 console and power the VM on and off as needed.
 
-CI/CD Hardware Resources
-------------------------
+## CI/CD Hardware Resources
 
 ![Hosting Detail - CI/CD Hardware Resources](/images/facebook-servers.jpg#right)
 
 We understand that FOSS projects have growing demands for doing continuous integration and even continuous delivery
-(CI/CD).  While there are free resources available to most FOSS projects using such services as Travis-CI or CircleCI,
+(CI/CD). While there are free resources available to most FOSS projects using such services as Travis-CI or CircleCI,
 most of those free resources have limits which many projects run into. Here at the OSL, we can help with those needs in
 two ways:
 
 - Access to virtual machine resources via our OpenStack cluster(s)
 - Access to bare metal resources via OpenCompute hardware
 
-Thanks to a hardware donation from Facebook in 2015, we have three [OpenCompute Project](https://www.opencompute.org/) (OCP) racks which contain a
-total of 90 OpenRack V2 "[Winterfell](https://www.opencompute.org/wiki/Server/SpecsAndDesigns-old#Open_Rack_compatible_server_design)" servers. These servers have 144 GB of RAM, 2 x Intel(R) Xeon(R) CPU E5-2660 0 @
-2.20GHz and one 3TB 5400 RPM SATA disk. These servers are hosted in a smaller secondary data center near our offices
-and have some limitations on cooling and publicly addressable IP addresses. Due to this limitation, these servers are
-behind an IPv4 NAT network and require port forwarding to access the systems. We can open additional ports as needed
-but these machines are best suited for running tests and building software.
+Thanks to a hardware donation from Facebook in 2015, we have three [OpenCompute Project](https://www.opencompute.org/)
+(OCP) racks which contain a total of 90 OpenRack V2
+"[Winterfell](https://www.opencompute.org/wiki/Server/SpecsAndDesigns-old#Open_Rack_compatible_server_design)" servers.
+These servers have 144 GB of RAM, 2 x Intel(R) Xeon(R) CPU E5-2660 0 @ 2.20GHz and one 3TB 5400 RPM SATA disk. These
+servers are hosted in a smaller secondary data center near our offices and have some limitations on cooling and publicly
+addressable IP addresses. Due to this limitation, these servers are behind an IPv4 NAT network and require port
+forwarding to access the systems. We can open additional ports as needed but these machines are best suited for running
+tests and building software.
 
-These resources provide can be used in any way that is needed, whether it's integrating with [Jenkins](https://jenkins.io/), [Buildbot](https://buildbot.net/),
+These resources provide can be used in any way that is needed, whether it's integrating with
+[Jenkins](https://jenkins.io/), [Buildbot](https://buildbot.net/),
 [GitLab CE](https://gitlab.com/gitlab-org/gitlab-ce/), or any other CI/CD system you use.
 
-FTP Mirroring
--------------
+## FTP Mirroring
 
-We have a cluster of three servers behind the [ftp.osuosl.org](http://ftp.osuosl.org/) name with a total bandwidth capacity of more than 50
-gigabits per second. These servers are hosted geographically across the United States. Instead of pushing files and
-releases out from your own server, let us take care of the dirty work for you. We currently host approximately 100
-projects on our mirroring servers using around 11TB of disk space. We do our best to host as many projects as we can,
-however space is limited.
+We have a cluster of three servers behind the [ftp.osuosl.org](http://ftp.osuosl.org/) name with a total bandwidth
+capacity of more than 50 gigabits per second. These servers are hosted geographically across the United States. Instead
+of pushing files and releases out from your own server, let us take care of the dirty work for you. We currently host
+approximately 100 projects on our mirroring servers using around 11TB of disk space. We do our best to host as many
+projects as we can, however space is limited.
 
-E-Mail
-------
+## E-Mail
 
 #### Mail Relaying
 
-We have a number of local mail relays that OSL-hosted servers can use to help relieve some of the pressure that mail
-can put on your servers. These relays do spam and virus tagging.
+We have a number of local mail relays that OSL-hosted servers can use to help relieve some of the pressure that mail can
+put on your servers. These relays do spam and virus tagging.
 
 #### Mailing Lists
 
-We use [Mailman](http://www.list.org/) for any mailing list needs. We can help you migrate old lists or create new lists that are centrally
-managed on our system.
+We use [Mailman](http://www.list.org/) for any mailing list needs. We can help you migrate old lists or create new lists
+that are centrally managed on our system.
 
-Website Hosting
----------------
+## Website Hosting
 
 We offer website hosting for projects that require dynamic backend server support. We currently support hosting sites
 which require languages such as PHP, Python, and Ruby. We don't support every web application but we'll do our best to
 try and support a widely used platform. If you have a website that needs a home, let us know and we'll see how we can
 help.
 
-Database Hosting
-----------------
+## Database Hosting
 
-We offer high performance hosted [MySQL](http://mysql.com/) or [PostgreSQL](http://www.postgresql.org/) accounts for our clients on our cluster of database servers.
+We offer high performance hosted [MySQL](http://mysql.com/) or [PostgreSQL](http://www.postgresql.org/) accounts for our
+clients on our cluster of database servers.
 
-Co-Location Hosting
--------------------
+## Co-Location Hosting
 
 For those projects that need more than just a single virtual machine or website, we do offer co-location hosting. We
 have limited space, power and cooling but we generally can host something provided there is a warranted need for it.
@@ -132,24 +128,23 @@ than built by hand to ensure it operates as intended. We prefer that hardware al
 out-of-band management (i.e. IPMI, iLO, iDRAC, etc) and a three-year basic hardware warranty. We prefer not to host any
 machines larger than 2U, but can work with our clients to accommodate larger servers if needed.
 
-Monitoring
-----------
+## Monitoring
 
 #### Realtime
 
-We use [Nagios](http://nagios.org/) to monitor our managed hosts and send alerts to [PagerDuty](http://pagerduty.com/) when services go down. We are able to
-offer fine-grained monitoring and notification to our hosted clients as needed. In addition, we use [Prometheus](https://prometheus.io/) with
-[Grafana](https://grafana.com/) to track various metrics of our infrastructure.
+We use [Nagios](http://nagios.org/) to monitor our managed hosts and send alerts to [PagerDuty](http://pagerduty.com/)
+when services go down. We are able to offer fine-grained monitoring and notification to our hosted clients as needed. In
+addition, we use [Prometheus](https://prometheus.io/) with [Grafana](https://grafana.com/) to track various metrics of
+our infrastructure.
 
 #### Trend Graphs
 
-We primarily use [Munin](http://munin-monitoring.org/) to monitor the health of servers at the OSL. Statistics such as CPU usage, load, memory,
-network traffic and more can all be monitored and historically tracked.
+We primarily use [Munin](http://munin-monitoring.org/) to monitor the health of servers at the OSL. Statistics such as
+CPU usage, load, memory, network traffic and more can all be monitored and historically tracked.
 
-Backups
--------
+## Backups
 
-This service is to be used for disaster recovery rather than data recovery, meaning we keep backups for a limited
-period of time (usually long enough to provide a couple of full data sets that can be used to rebuild a server as
-opposed to recovering files from long ago). We currently utilize [rdiff-backup](http://www.nongnu.org/rdiff-backup/) for file storage backups and a variety
-of other tools for database backups.
+This service is to be used for disaster recovery rather than data recovery, meaning we keep backups for a limited period
+of time (usually long enough to provide a couple of full data sets that can be used to rebuild a server as opposed to
+recovering files from long ago). We currently utilize [rdiff-backup](http://www.nongnu.org/rdiff-backup/) for file
+storage backups and a variety of other tools for database backups.

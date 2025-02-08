@@ -3,24 +3,25 @@ title: POWER CI Request Form
 slug: /powerdev/request_powerci
 ---
 
-The Open Source Lab partners with IBM to host POWER based servers in order to provide an open platform for
-innovation to the open source community. For more information about this partnership, please visit our
+The Open Source Lab partners with IBM to host POWER based servers in order to provide an open platform for innovation to
+the open source community. For more information about this partnership, please visit our
 [POWER Development Hosting page](/services/powerdev).
 
 Please use the form below to request new access to the POWER CI service provided by the OSUOSL.
 
-For any changes, updates, or issues with an existing project please send the specific request as an
-email to [powerci-request@osuosl.org](mailto:powerci-request@osuosl.org) and include the original
-project name in the subject line and the names of the Jenkins jobs that have the issue in the message body.
+For any changes, updates, or issues with an existing project please send the specific request as an email to
+[powerci-request@osuosl.org](mailto:powerci-request@osuosl.org) and include the original project name in the subject
+line and the names of the Jenkins jobs that have the issue in the message body.
 
-This access is intended only for *free and open source* projects who qualify and are approved by
-both the OSUOSL and IBM. For proprietary sourced projects or products please use other POWER resources which
-can be found [here](https://www.ibm.com/docs/en/linux-on-systems).
+This access is intended only for _free and open source_ projects who qualify and are approved by both the OSUOSL and
+IBM. For proprietary sourced projects or products please use other POWER resources which can be found
+[here](https://www.ibm.com/docs/en/linux-on-systems).
 
-The POWER CI service uses Docker to deploy Jenkins workers. In the future we will add access to use OpenStack
-to deploy Jenkins workers (ppc64le only).
+The POWER CI service uses Docker to deploy Jenkins workers. In the future we will add access to use OpenStack to deploy
+Jenkins workers (ppc64le only).
 
 {{< raw >}}
+
 <div id="content">
 <!-- Formsender error script -->
 <script src="../../../js/formsender-error.js"></script>
@@ -108,27 +109,33 @@ to deploy Jenkins workers (ppc64le only).
         <label for="webform-component-platforms">OS Platform(s) <span class="form-required" title="This field is
         required.">&ast;</span></label>
         <div class="form-inline">
-          <input type="checkbox" id="edit-submitted-centos" class="form-checkbox" name="platform_centos" value="requested" />
+          <input type="checkbox" id="edit-submitted-centos" class="form-checkbox" name="platform_centos"
+            value="requested" />
           <label for="edit-submitted-centos">CentOS</label>
         </div>
         <div class="form-inline">
-          <input type="checkbox" id="edit-submitted-fedora" class="form-checkbox" name="platform_fedora" value="requested" />
+          <input type="checkbox" id="edit-submitted-fedora" class="form-checkbox" name="platform_fedora"
+            value="requested" />
           <label for="edit-submitted-fedora">Fedora</label>
         </div>
         <div class="form-inline">
-          <input type="checkbox" id="edit-submitted-debian" class="form-checkbox" name="platform_debian" value="requested" />
+          <input type="checkbox" id="edit-submitted-debian" class="form-checkbox" name="platform_debian"
+            value="requested" />
           <label for="edit-submitted-debian">Debian</label>
         </div>
         <div class="form-inline">
-          <input type="checkbox" id="edit-submitted-ubuntu" class="form-checkbox" name="platform_ubuntu" value="requested" />
+          <input type="checkbox" id="edit-submitted-ubuntu" class="form-checkbox" name="platform_ubuntu"
+            value="requested" />
           <label for="edit-submitted-ubuntu">Ubuntu</label>
         </div>
         <div class="form-inline">
-          <input type="checkbox" id="edit-submitted-gentoo" class="form-checkbox" name="platform_gentoo" value="requested" />
+          <input type="checkbox" id="edit-submitted-gentoo" class="form-checkbox" name="platform_gentoo"
+            value="requested" />
           <label for="edit-submitted-gentoo">Gentoo</label>
         </div>
         <div class="form-inline">
-          <input type="checkbox" id="edit-submitted-other" class="form-checkbox" name="platform_other" value="requested" />
+          <input type="checkbox" id="edit-submitted-other" class="form-checkbox" name="platform_other"
+            value="requested" />
           <label for="edit-submitted-other">Other (please specify in the "Other Information" field above)</label>
         </div>
       </div>
@@ -157,7 +164,8 @@ to deploy Jenkins workers (ppc64le only).
       <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
       <!-- Formsender Settings -->
       <input type="hidden" name="last_name" value="" />
-      <input type="hidden" name="token" value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
+      <input type="hidden" name="token"
+        value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
       <input type="hidden" name="redirect" value="/form-submitted" />
       <input type="hidden" name="mail_subject_prefix" value="New POWER CI Request" />
       <input type="hidden" name="mail_subject_key" value="project_name" />

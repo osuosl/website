@@ -5,14 +5,12 @@ authors: ["OSUOSL Admin"]
 slug: google-surpasses-1m-donations-osuosl
 ---
 
-Google has generously donated $300,000 to support the Oregon State University
-Open Source Lab. With this donation, the companies cumulative support of the Lab
-has now topped $1 million.
+Google has generously donated $300,000 to support the Oregon State University Open Source Lab. With this donation, the
+companies cumulative support of the Lab has now topped $1 million.
 
-Google is a Platinum Sponsor of the [OSL Alliance](/sponsors) program which enables
-commercial vendors to financially support the expansion of computing
-infrastructure, hosting services, and software development provided to open
-source projects at the OSUOSL.
+Google is a Platinum Sponsor of the [OSL Alliance](/sponsors) program which enables commercial vendors to financially
+support the expansion of computing infrastructure, hosting services, and software development provided to open source
+projects at the OSUOSL.
 
 The full press release is available here:
 [Google gift of $300,000 to OSU Open Source Lab raises Internet giant’s support to more than $1M](http://oregonstate.edu/ua/ncs/archives/2009/aug/google-gift-300000-osu-open-source-lab-raises-internet-giant%E2%80%99s-support-more-1m)
