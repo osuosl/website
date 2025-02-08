@@ -2,8 +2,8 @@
 
 Migrated from our static [Pelican site](https://github.com/osuosl/osuosl-pelican)
 
-Based off of the Mainroad theme on https://github.com/Vimux/Mainroad and the previous
-[OSL theme](https://github.com/osuosl/dougfir-pelican-theme)
+Based off of the [Mainroad theme](https://github.com/Vimux/Mainroad) and the previous [OSL
+theme](https://github.com/osuosl/dougfir-pelican-theme)
 
 ## Changes From Pelican
 
@@ -17,7 +17,7 @@ authors: [OSUOSL Admin]
 ---
 ```
 
-To add a header image at the top of a blog pst, use the CSS tag `#blog`:
+To add a header image at the top of a blog post, use the CSS tag `#blog`:
 
 ```md
 ![Image Alt](/images/image_path#blog)
@@ -30,13 +30,13 @@ The search feature is implemented using [Pagefind](https://pagefind.app/) and ca
 
 ## Development
 
-To compile and host the site under development on port 1313, use:
+To compile and host the site under development on port `1313`, use:
 
 ```bash
 hugo server
 ```
 
-Pagefind sources from the `public/` directory hugo compiles when the website is built. To view the website with full
+Pagefind sources from the `public/` directory Hugo compiles when the website is built. To view the website with full
 functionality:
 
 First compile it:
@@ -45,7 +45,7 @@ First compile it:
 hugo
 ```
 
-Then run it using pagefind:
+Then run it using Pagefind:
 
 ```bash
 ./pagefind --site public --serve
