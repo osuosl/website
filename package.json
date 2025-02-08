@@ -5,11 +5,13 @@
   "main": "",
   "scripts": {
     "serve": "pagefind --site public --serve",
-    "format": "prettier . -w"
+    "format": "prettier . -w",
+    "lint": "markdownlint-cli2 ./content/**/*.md"
   },
   "author": "",
   "license": "Apache-2.0",
   "devDependencies": {
+    "markdownlint-cli2": "^0.17.2",
     "prettier": "^3.4.2",
     "prettier-plugin-go-template": "^0.0.15"
   },
