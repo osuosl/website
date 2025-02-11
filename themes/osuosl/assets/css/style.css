@@ -117,8 +117,12 @@ pre {
 }
 
 .logo-container {
-  margin: 10px;
-  margin-left: 20px;
+  margin: 0.5rem;
+}
+
+.logo-container a,
+.logo-container img {
+  display: block;
 }
 
 .logo {
