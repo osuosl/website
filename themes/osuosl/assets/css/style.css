@@ -71,7 +71,7 @@ a {
 }
 
 ul li {
-  list-style-image: url(https://communications.oregonstate.edu/sites/all/themes/doug_fir/images/bullet.png);
+  list-style-type: "\203A  ";
   margin-bottom: 6px;
 }
 
@@ -266,7 +266,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__list li {
-  list-style-image: none;
+  list-style: none;
 }
 
 .menu__item:hover {
