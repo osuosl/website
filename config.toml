@@ -6,6 +6,10 @@ relativeURLs = true
 enableInlineShortcodes = true
 disablePathToLower = true
 
+[params]
+description = 'A nonprofit organization working for the advancement of open source technologies.'
+url = "https://osuosl.org/"
+
 [taxonomies]
 tag = "tags"
 
