@@ -1,27 +1,459 @@
 ---
 title: Open-CE
-author: Maximillian Schmidt (>1.8.0), Ken Lett (<=1.8.0)
+authors: [Maximillian Schmidt (>1.8.0), Ken Lett (<=1.8.0)]
 slug: /powerdev/opence
 ---
+<!-- markdownlint-disable MD036 -->
+<!--
+    https://github.com/DavidAnson/markdownlint/blob/main/doc/md036.md
+    Disable no-emphasis-as-heading and use emphasis, so "What's new" is only used as an anchorable heading to the current release
+ -->
 
-The Open Source Lab (OSUOSL) and Center for Genome Research and Biocomputing (CGRB) partner with IBM and OpenPOWER in order to provide a download resources around Open-CE. Open-CE is a community driven software distribution for machine learning that runs on standard Linux platforms with NVIDIA GPU technologies. Questions and general discussions involving OSU's builds can be directed to the Open-CE Slack channel: https://open-ce.slack.com/archives/C06DGE5GHND.
+The OSU Open Source Lab (OSUOSL) and Center for Quantitative Life Sciences (CQLS; previously CGRB) partner with IBM to provide download resources around Open-CE. Open-CE is a community driven software distribution for machine learning that runs on standard Linux platforms with IBM POWER10 and NVIDIA GPU technologies.
 
-- [Current release](#open-ce-release-1112) 
+We serve mid-stream between the public and development by building the Open-CE environment downstream of the development team. If any problems arise during the builds, we share the results of our attempts and help coordinate a fix with the development team. The result is a publicly available conda channel of prebuilt packages.
+
+The source we pull from: <https://github.com/open-ce/open-ce>
+
+The build tools: <https://github.com/open-ce/open-ce-builder>
+
+Questions and general discussions involving OSU's builds can be directed to the Open-CE Slack team: <https://open-ce.slack.com/archives/C06DGE5GHND>.
+
+- [Current release](#open-ce-release-1115)
 - [Previous releases](#previous-releases)
 
+## Open-CE Release 1.11.5
 
-Open-CE Release 1.11.2
-----------------------
+*Release date: 02/10/2025\**
 
-This is release 1.11.2 of Open Cognitive Environment (Open-CE)
+This is release 1.11.5 of Open Cognitive Environment (Open-CE), which contains CVE fixes.
+
+\**1.11.4 was completed on 12/04/2024. Due to the holiday season, 1.11.4 updates are combined with 1.11.5.*
 
 Build Status:
 
-CPU Arch     | Build Base | Py3.10 | Py3.11 | CPU-only | CUDA 11.8 | CUDA 12.2 | Date
------------- | ---------- | ------ | ------ | -------- | --------- | --------- | -------------
-ppc64le(P9)  | UBI 8      | DONE   | DONE   | DONE     | DONE      | DONE      | 08/15/2024
-ppc64le(P10) | UBI 9      | DONE   | DONE   | DONE     | N/A       | N/A       | 08/20/2024
-x86_64       | UBI 9      | DONE   | DONE   | DONE     | DONE      | DONE      | 08/20/2024
+CPU Arch     | Build Base | Py3.10 | Py3.11 | CPU-only | CUDA 12.2 | Date
+------------ | ---------- | ------ | ------ | -------- | --------- | ----------
+ppc64le(P9)  | UBI 8      | DONE   | DONE   | DONE     | DONE      | 02/10/2025
+ppc64le(P10) | UBI 9      | DONE   | DONE   | DONE     | N/A       | 02/10/2025
+x86_64       | UBI 9      | ?      | ?      | Err      | Err       | TBD
+
+### What's new
+
+- Updated packages
+
+  - aiohappyeyeballs 2.4.0
+  - aiohttp 3.10.2
+  - anyio 3.7.1
+  - backports.tarfile 1.0.0
+  - bazel 6.5.0
+  - bitsandbytes 0.44.0
+  - black 24.8.0
+  - cattrs 24.1.2
+  - cryptography 43.0.3
+  - cryptography-vectors 43.0.3
+  - deepspeed 0.15.1
+  - diskcache 5.6.3
+  - exceptiongroup 1.2.2
+  - fastapi 0.109.1
+  - hatch-requirements-txt 0.4.1
+  - jaraco.context 5.3.0
+  - jaraco.test 5.4.0
+  - jaraco.text 3.7.0
+  - langchain 0.2.16
+  - langchain-community 0.2.9
+  - langchain-core 0.2.39
+  - langchain-text-splitters 0.2.4
+  - langsmith 0.1.120
+  - llama-cpp-python 0.3.1
+  - llama.cpp 0.0.3821
+  - maturin 1.7.1
+  - mockupdb 1.7.0
+  - numpy 1.26.0
+  - numpy-base 1.26.0
+  - nvcc_linux-ppc64le 12.2
+  - polars 1.7.1
+  - polars-lts-cpu 1.7.1
+  - polars-u64-idx 1.7.1
+  - proxy-py 2.4.7
+  - pydantic 2.5.3
+  - pydantic-core 2.14.6
+  - pydantic-settings 2.0.1
+  - pymongo 4.8.0
+  - pyopenssl 24.2.1
+  - pytest-subprocess 1.5.2
+  - python-multipart 0.0.7
+  - pytorch-lightning 2.3.3
+  - ray-air 2.35.0
+  - ray-all 2.35.0
+  - ray-client 2.35.0
+  - ray-core 2.35.0
+
+- This release of Open-CE supports:
+
+  - NVIDIA's CUDA version 12.2
+  - Python 3.10, 3.11
+
+- Important Notes (n/a)
+
+### Learn more
+
+Get information about planning, configuring, and managing Open-CE below:
+
+- [Planning](#planning)
+- [System setup](#system-setup)
+- [Setting up the software repository](#setting-up-the-software-repository)
+- [Creating conda environments (recommended)](#creating-conda-environments-recommended)
+- [Installing the MLDL frameworks](#installing-frameworks-individually)
+- [Uninstalling the MLDL frameworks](#uninstalling-the-mldl-frameworks)
+
+### Planning
+
+We recommend users use one of the listed operating systems listed below. This is a standard conda repository and can be added to any conda install. Conda must be configured to give priority to installing packages from this channel.
+
+### System setup
+
+Open-CE can be installed and run directly on a bare-metal RHEL and Ubuntu based systems.
+
+### OSU Supported hardware
+
+- IBM Power System IC922 with NVIDIA Tesla T4 GPUs
+- IBM Power System AC922 with NVIDIA Tesla V100 GPUs
+- x86_64 systems with NVIDIA Tesla V100 or P100 GPUs
+
+### Supported operating systems
+
+- ppc64le
+  - Red Hat Enterprise Linux for POWER LE 8.1+
+  - Rocky / Alma Linux 8.1+
+  - Ubuntu 20.04.X
+
+- x86
+  - Red Hat Enterprise Linux for POWER LE 8.1+, 9.1+
+  - Rocky / Alma Linux 8.1+, 9.1+
+  - Ubuntu 20.04.X, 22.04.X
+
+### Required 3rd party software
+
+- NVIDIA GPU driver >=520.61.05
+- CUDA version 12.2
+
+### Installing the Open-CE Repository and Frameworks
+
+#### Setting up the software repository
+
+The Open-CE MLDL packages are distributed as conda packages in an online conda repository. Conda must be configured to give priority to installing packages from this channel.
+
+Add the Open-CE channel to the conda configuration by running the following command:
+
+  ```shell
+  conda config --prepend channels https://ftp.osuosl.org/pub/open-ce/current/
+  ```
+
+#### Creating conda environments (recommended)
+
+With conda, you can create environments that have different versions of Python or packages installed in them. Conda environments are optional but recommended. If not used, packages are installed in the default environment called base, which often has a higher risk of containing conflicting packages or dependencies. Switching between environments is called activating the environment.
+
+The syntax to create and activate a conda environment is:
+
+  ```shell
+  conda create --name <environment name> python=<python version>
+  conda activate <environment name>
+  ```
+
+**Note**: It is recommended that you specify the Python version when creating a new environment. If you do not specify the version, Python 3.7 is installed when any package that requires Python are installed.
+
+The only valid Python versions with Open-CE 1.9 are Python 3.9 and 3.10.
+
+For example, to create an environment named opence_env with Python 3.9:
+
+  ```shell
+  conda create --name opence_env python=3.11
+  conda activate opence_env
+  ```
+
+For more information on what you can do with conda environment see <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>.
+
+Note: Open-CE should be run as a non-privileged user and not root. The Open-CE components are designed to be usable by normal users, and the pre-installed docker images provide a non-root user by default. Some of the Open-CE components will give warnings or will fail when run as root.
+
+#### Installing frameworks individually
+
+You can install the MLDL frameworks individually. The framework packages include the following versions.
+
+##### Table 1. Framework packages (Open-CE 1.11.5)
+<!-- markdownlint-disable MD055 MD056 -->
+ Package                                | Latest Version | Summary                                                                          | noarch
+----------------------------------------|----------------|----------------------------------------------------------------------------------|--------
+ _pytorch_select                        | 2.0            | Package used to select the specific PyTorch build variant                        |
+ _tensorflow_select                     | 2.0            | Package used to select the specific Tensorflow build variant                     |
+ absl-py                                | 2.0.0          | This repository is a collection of Python library code for building...           |
+ aiohappyeyeballs                       | 2.4.0          | Happy Eyeballs for asyncio                                                       | X
+ aiohttp                                | 3.10.2         | Async http client/server framework (asyncio)                                     |
+ aioredis                               | 2.0.1          | asyncio (PEP 3156) Redis support                                                 | X
+ aiorwlock                              | 1.3.0          | Read write lock for asyncio.                                                     | X
+ annotated-types                        | 0.6.0          | Reusable constraint types to use with typing.Annotated                           |
+ anyio                                  | 3.7.1          | High level compatibility layer for multiple asynchronous event loop...           | X
+ apache-beam                            | 2.53.0         | Apache Beam: An advanced unified programming model                               |
+ array-record                           | 0.2.0          | A new file format derived from Riegeli                                           |
+ arrow-cpp                              | 15.0.1         | C++ libraries for Apache Arrow                                                   |
+ arrow-cpp-proc                         | 15.0.1         | A meta-package to select Arrow build variant                                     |
+ arviz                                  | 0.14.0         | Exploratory analysis of Bayesian models with Python                              | X
+ av                                     | 10.0.0         | Pythonic bindings for FFmpeg.                                                    |
+ backoff                                | 2.2.1          | Function decoration for backoff and retry                                        | X
+ backports.tarfile                      | 1.0.0          | Backport of CPython tarfile module                                               | X
+ bazel                                  | 6.5.0          | build system originally authored by Google                                       |
+ bitsandbytes                           | 0.44.0         | The bitsandbytes library is a lightweight Python wrapper around CUDA...          |
+ black                                  | 24.8.0         | The uncompromising code formatter.                                               |
+ blas                                   | 1.0            | None                                                                             |
+ blessed                                | 1.19.1         | Easy, practical library for making terminal apps, by providing an...             | X
+ boost_mp11                             | 1.76.0         | C++11 metaprogramming library                                                    |
+ bsddb3                                 | 6.2.9          | Python bindings for Oracle Berkeley DB                                           |
+ cattrs                                 | 24.1.2         | Composable complex class support for attrs and dataclasses.                      | X
+ cfitsio                                | 3.470          | A library for reading and writing FITS files                                     |
+ cli11                                  | 2.2.0          | CLI11 is a command line parser for C++11 and beyond that provides a...           |
+ cmake                                  | 3.26.4         | CMake is an extensible, open-source system that manages the build process        |
+ cmdstan                                | 2.33.1         | CmdStan, the command line interface to Stan                                      |
+ cmdstanpy                              | 1.2.0          | CmdStanPy is a lightweight interface to Stan for Python users which...           | X
+ coin-or-cbc                            | 2.10.7         | COIN-OR branch and cut (Cbc)                                                     |
+ coin-or-cgl                            | 0.60.6         | COIN-OR Cut Generation Library (Cgl)                                             |
+ coin-or-clp                            | 1.17.7         | COIN-OR linear programming (Clp)                                                 |
+ coin-or-osi                            | 0.108.7        | Coin OR Open Solver Interface (OSI)                                              |
+ coin-or-utils                          | 2.11.6         | COIN-OR Utilities (CoinUtils)                                                    |
+ coincbc                                | 2.10.7         | COIN-OR branch and cut (Cbc)                                                     | X
+ crcmod                                 | 1.7            | CRC Generator                                                                    |
+ cryptography                           | 43.0.3         | Provides cryptographic recipes and primitives to Python developers               |
+ cryptography-vectors                   | 43.0.3         | Test vectors for cryptography.                                                   |
+ cudatoolkit                            | 12.2.0         | CUDA Toolkit - Including CUDA runtime                                            |
+ cudatoolkit-dev                        | 12.2.0         | Develop, Optimize and Deploy GPU-accelerated Apps                                |
+ cudnn                                  | 8.9.6_12.2     | The NVIDIA CUDA Deep Neural Network library. A GPU-accelerated library...        |
+ dali                                   | 1.32.0         | A library containing both highly optimized building blocks and an...             |
+ dali-ffmpeg                            | 5.1.1          | Cross-platform solution to record, convert and stream audio and video.           |
+ dali-tf-plugin                         | 1.32.0         | A library containing both highly optimized building blocks and an...             |
+ datasets                               | 2.16.1         | HuggingFace/Datasets is an open library of NLP datasets.                         | X
+ dateutils                              | 0.6.12         | Various utilities for working with date and datetime objects                     | X
+ deepdiff                               | 5.8.1          | Deep Difference and Search of any Python object/data.                            | X
+ deepspeed                              | 0.15.1         | DeepSpeed Library: An easy-to-use deep learning optimization software suite.     |
+ diskcache                              | 5.6.3          | Disk and file backed cache.                                                      | X
+ dm-tree                                | 0.1.8          | A library for working with nested data structures.                               |
+ eigen                                  | 3.4.0          | C++ template library for linear algebra                                          |
+ etils                                  | 1.0.0          | Collection of eclectic utils for python.                                         | X
+ exceptiongroup                         | 1.2.2          | Backport of PEP 654 (exception groups)                                           | X
+ fastapi                                | 0.109.1        | FastAPI framework, high performance, easy to learn, fast to code, ready...       | X
+ ffmpeg                                 | 4.2.2          | Cross-platform solution to record, convert and stream audio and video.           |
+ fire                                   | 0.4.0          | Python Fire is a library for creating command line interfaces (CLIs)...          | X
+ flatbuffers                            | 23.1.21        | Memory Efficient Serialization Library                                           |
+ fsspec                                 | 2023.10.0      | A specification for pythonic filesystems                                         | X
+ gmock                                  | 1.13.0         | Google&#39;s C++ test framework                                                  |
+ googledrivedownloader                  | 0.4            | Minimal class to download shared files from Google Drive.                        | X
+ grpc-cpp                               | 1.54.3         | gRPC - A high-performance, open-source universal RPC framework                   |
+ grpcio                                 | 1.54.3         | HTTP/2-based RPC framework                                                       |
+ gtest                                  | 1.13.0         | Google&#39;s C++ test framework                                                  |
+ hatch-fancy-pypi-readme                | 23.1.0         | Fancy PyPI READMEs with Hatch                                                    | X
+ hatch-requirements-txt                 | 0.4.1          | Hatchling plugin to read project dependencies from requirements.txt              | X
+ hjson-py                               | 3.1.0          | Hjson, a user interface for JSON.                                                | X
+ holidays                               | 0.27           | Generate and work with holidays in Python                                        | X
+ horovod                                | 0.28.1         | Distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet. |
+ httplib2                               | 0.19.1         | A comprehensive HTTP client library                                              | X
+ huggingface_hub                        | 0.20.0         | Client library to download and publish models on the huggingface.co hub          | X
+ inquirer                               | 2.10.1         | Collection of common interactive command line user interfaces, based on...       | X
+ jaraco.context                         | 5.3.0          | Context managers by jaraco                                                       | X
+ jaraco.test                            | 5.4.0          | Testing support by jaraco                                                        | X
+ jaraco.text                            | 3.7.0          | Module for text manipulation                                                     |
+ java-11-openjdk-cos7-ppc64le           | 11.0.6.10      | (CDT) OpenJDK Runtime Environment                                                | X
+ java-11-openjdk-devel-cos7-ppc64le     | 11.0.6.10      | (CDT) OpenJDK Development Toolkit                                                | X
+ java-11-openjdk-headless-cos7-ppc64le  | 11.0.6.10      | (CDT) The OpenJDK runtime environment without audio and video support            | X
+ joblib                                 | 1.3.2          | Lightweight pipelining: using Python functions as pipeline jobs.                 | X
+ jpeg-turbo                             | 2.1.4          | IJG JPEG compliant runtime library with SIMD and other optimizations             |
+ jsonpatch                              | 1.33           | Apply JSON-Patches (RFC 6902)                                                    | X
+ keras                                  | 2.14.0         | Deep Learning for Python                                                         |
+ langchain                              | 0.2.16         | Building applications with LLMs through composability                            | X
+ langchain-community                    | 0.2.9          | Community contributed LangChain integrations.                                    | X
+ langchain-core                         | 0.2.39         | Core APIs for LangChain, the LLM framework for buildilng applications...         | X
+ langchain-text-splitters               | 0.2.4          | LangChain text splitting utilities                                               | X
+ langsmith                              | 0.1.120        | Client library to connect to the LangSmith language model tracing and...         | X
+ libabseil                              | 20230125.0     | Abseil Common Libraries (C++)                                                    |
+ libdate                                | 3.0.1          | A date and time library based on the C++11/14/17 &lt;chrono&gt; header           |
+ libflac                                | 1.3.3          | Flac audio format                                                                |
+ liblightgbm                            | 4.2.0          | Light Gradient Boosting Machine that uses tree based learning algorithms         |
+ libmamba                               | 1.5.7          | A fast drop-in alternative to conda, using libsolv for dependency resolution     |
+ libmambapy                             | 1.5.7          | A fast drop-in alternative to conda, using libsolv for dependency resolution     |
+ libnvjitlink                           | 12.2.140       | CUDA nvJitLink library                                                           |
+ libopenblas                            | 0.3.27         | An Optimized BLAS library                                                        |
+ libopenblas-static                     | 0.3.27         | OpenBLAS static libraries.                                                       |
+ libopencv                              | 4.8.1          | Computer vision and machine learning software library.                           |
+ libortools                             | 9.6            | Google Operations Research Tools (or-tools) python package                       |
+ libprotobuf                            | 3.21.12        | Protocol Buffers - Google&#39;s data interchange format. C++ Libraries...        |
+ libprotobuf-static                     | 3.21.12        | Protocol Buffers - Google&#39;s data interchange format. C++ Libraries...        |
+ libsndfile                             | 1.0.31         | libsndfile - a C library for reading and writing files containing...             |
+ libtar                                 | 1.2.20         | C library for manipulating tar files                                             |
+ libtensorflow                          | 2.14.1         | TensorFlow is a machine learning library, base GPU package, tensorflow only.     |
+ libxgboost                             | 2.0.3          | Scalable, Portable and Distributed Gradient Boosting Library                     |
+ lightgbm                               | 4.2.0          | Light Gradient Boosting Machine that uses tree based learning algorithms         |
+ lightgbm-proc                          | 4.2.0          | Light Gradient Boosting Machine that uses tree based learning algorithms         |
+ lightning-app                          | 2.1.3          | Use Lightning Apps to build everything from production-ready,...                 | X
+ lightning-cloud                        | 0.5.57         | Lightning Cloud.                                                                 | X
+ lightning-fabric                       | 2.1.3          | Use Lightning Apps to build everything from production-ready,...                 | X
+ lightning-utilities                    | 0.10.0         | Lightning Utilities.                                                             | X
+ llama-cpp-python                       | 0.3.1          | Python bindings for the llama.cpp library                                        |
+ llama.cpp                              | 0.0.3821       | Port of Facebook&#39;s LLaMA model in C/C++                                      |
+ llvm-openmp                            | 14.0.6         | The OpenMP API supports multi-platform shared-memory parallel...                 |
+ magma                                  | 2.6.1          | Dense linear algebra library similar to LAPACK but for...                        |
+ mamba                                  | 1.5.7          | A fast drop-in alternative to conda, using libsolv for dependency resolution     |
+ maturin                                | 1.7.1          | Build and publish crates with pyo3, rust-cpython and cffi bindings as...         |
+ mockupdb                               | 1.7.0          | MongoDB Wire Protocol server library                                             | X
+ nasm                                   | 2.15.05        | Netwide Assembler: an assembler targetting the Intel x86 series of processors.   |
+ nccl                                   | 2.19.3         | NVIDIA Collective Communications Library. Implements multi-GPU and...            |
+ nomkl                                  | 3.0            | None                                                                             |
+ numactl                                | 2.0.16         | Control NUMA policy for processes or shared memory                               |
+ numpy                                  | 1.26.0         | Array processing for numbers, strings, records, and objects.                     |
+ numpy-base                             | 1.26.0         | Array processing for numbers, strings, records, and objects.                     |
+ nvcc_linux-ppc64le                     | 12.2           | A meta-package to enable the right nvcc.                                         |
+ objsize                                | 0.6.1          | Traversal over Python&#39;s objects subtree and calculate the total...           | X
+ onnx                                   | 1.16.0         | Open Neural Network Exchange library                                             |
+ onnxconverter-common                   | 1.14.0         | Common utilities for ONNX converters                                             | X
+ onnxmltools                            | 1.12.0         | ONNXMLTools enables conversion of models to ONNX                                 | X
+ onnxruntime                            | 1.16.3         | cross-platform, high performance ML inferencing and training accelerator         |
+ openblas                               | 0.3.27         | An optimized BLAS library                                                        |
+ openblas-devel                         | 0.3.27         | OpenBLAS headers and libraries for developing software that used OpenBLAS.       |
+ opencensus                             | 0.7.13         | OpenCensus - A stats collection and distributed tracing framework                | X
+ opencv                                 | 4.8.1          | Computer vision and machine learning software library.                           |
+ opencv-proc                            | 4.8.1          | Computer vision and machine learning software library.                           |
+ openmpi                                | 4.1.5          | An open source Message Passing Interface implementation.                         |
+ optional-lite                          | 3.4.0          | A C++17-like optional, a nullable object for C++98, C++11 and later in...        |
+ orbit-ml                               | 1.1.4.2        | Orbit is a package for bayesian time series modeling and inference.              |
+ orc                                    | 1.9.0          | C++ libraries for Apache ORC                                                     |
+ ordered-set                            | 4.1.0          | A MutableSet that remembers its order, so that every entry has an index.         | X
+ orjson                                 | 3.9.15         | orjson is a fast, correct JSON library for Python.                               |
+ ortools-cpp                            | 9.6            | Google Operations Research Tools (or-tools) python package                       |
+ ortools-python                         | 9.6            | Google Operations Research Tools (or-tools) python package                       |
+ packaging                              | 23.2           | Core utilities for Python packages                                               | X
+ polars                                 | 1.7.1          | Polars is a blazingly fast DataFrames library implemented in Rust using...       |
+ polars-lts-cpu                         | 1.7.1          | Polars is a blazingly fast DataFrames library implemented in Rust using...       |
+ polars-u64-idx                         | 1.7.1          | Polars is a blazingly fast DataFrames library implemented in Rust using...       |
+ prophet                                | 1.1.5          | Automatic Forecasting Procedure                                                  |
+ protobuf                               | 4.21.12        | Protocol Buffers - Google&#39;s data interchange format.                         |
+ proxy-py                               | 2.4.7          | Proxy Server, Web Server, PubSub, Work acceptor &amp; executor framework.        | X
+ py-opencv                              | 4.8.1          | Computer vision and machine learning software library.                           |
+ pyarrow                                | 15.0.1         | Python libraries for Apache Arrow                                                |
+ pydantic                               | 2.5.3          | Data validation and settings management using python type hinting                |
+ pydantic-core                          | 2.14.6         | Core validation logic for pydantic written in rust                               |
+ pydantic-settings                      | 2.0.1          | Settings management using Pydantic                                               | X
+ pymongo                                | 4.8.0          | Python driver for MongoDB <http://www.mongodb.org>                               |
+ pyopenssl                              | 24.2.1         | Python wrapper module around the OpenSSL library                                 | X
+ pyro-api                               | 0.1.2          | Generic API for dispatch to Pyro backends.                                       | X
+ pyro-ppl                               | 1.8.4          | A Python library for probabilistic modeling and inference                        | X
+ pytest-subprocess                      | 1.5.2          | A plugin to fake subprocess for pytest                                           | X
+ python-flatbuffers                     | 23.1.21        | Python runtime library for use with the Flatbuffers serialization format.        | X
+ python-multipart                       | 0.0.7          | A streaming multipart parser for Python.                                         | X
+ pytorch                                | 2.1.2          | Meta-package to install GPU-enabled PyTorch variant                              |
+ pytorch-base                           | 2.1.2          | PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.    |
+ pytorch-lightning                      | 2.3.3          | PyTorch Lightning is the lightweight PyTorch wrapper for ML...                   | X
+ pytorch-lightning-bolts                | 0.7.0          | Pretrained SOTA Deep Learning models, callbacks and more for research...         | X
+ pytorch_geometric                      | 2.4.0          | Geometric Deep Learning Extension Library for PyTorch                            | X
+ pytorch_scatter                        | 2.1.2          | PyTorch Extension Library of Optimized Scatter Operations                        |
+ pytorch_sparse                         | 0.6.18         | PyTorch Extension Library of Optimized Autograd Sparse Matrix Operations         |
+ ray-air                                | 2.35.0         | Ray is a fast and simple framework for building and running distributed...       |
+ ray-all                                | 2.35.0         | Ray is a fast and simple framework for building and running distributed...       |
+ ray-client                             | 2.35.0         | Ray is a fast and simple framework for building and running distributed...       |
+ ray-core                               | 2.35.0         | Ray is a fast and simple framework for building and running distributed...       |
+ ray-data                               | 2.35.0         | Ray is a fast and simple framework for building and running distributed...       |
+ ray-default                            | 2.35.0         | Ray is a fast and simple framework for building and running distributed...       |
+ ray-rllib                              | 2.35.0         | Ray is a fast and simple framework for building and running distributed...       |
+ ray-serve                              | 2.35.0         | Ray is a fast and simple framework for building and running distributed...       |
+ ray-train                              | 2.35.0         | Ray is a fast and simple framework for building and running distributed...       |
+ ray-tune                               | 2.35.0         | Ray is a fast and simple framework for building and running distributed...       |
+ rdflib                                 | 6.1.1          | RDFLib is a Python library for working with RDF, a simple yet powerful...        | X
+ re-assert                              | 1.1.0          | show where your regex match assertion failed!                                    | X
+ rust                                   | 1.81.0         | Rust is a systems programming language that runs blazingly fast,...              |
+ rust-nightly                           | 1.82.0         | Rust is a systems programming language that runs blazingly fast,...              |
+ rust-std-powerpc64le-unknown-linux-gnu | 1.81.0         | Rust is a systems programming language that runs blazingly fast,...              | X
+ rust_linux-ppc64le                     | 1.81.0         | A safe systems programming language (conda activation scripts)                   |
+ safeint                                | 3.0.26         | SafeInt is a class library for C++ that manages integer overflows.               |
+ safetensors                            | 0.4.1          | Fast and Safe Tensor serialization                                               |
+ scikit-build-core                      | 0.10.7         | Build backend for CMake based projects                                           | X
+ scikit-learn                           | 1.3.0          | A set of python modules for machine learning and data mining                     |
+ sentencepiece                          | 0.1.99         | An unsupervised text tokenizer and detokenizer mainly for Neural...              |
+ setuptools                             | 72.1.0         | Download, build, install, upgrade, and uninstall Python packages                 | X
+ setuptools-rust                        | 1.5.1          | Setuptools rust extension plugin                                                 | X
+ skl2onnx                               | 1.16.0         | Convert scikit-learn models and pipelines to ONNX                                | X
+ sklearn-pandas                         | 2.2.0          | Pandas integration with sklearn                                                  | X
+ sse-starlette                          | 2.1.3          | SSE plugin for Starlette                                                         | X
+ stanio                                 | 0.3.0          | Preparing inputs to and reading outputs from Stan.                               | X
+ starlette                              | 0.40.0         | The little ASGI framework that shines.                                           | X
+ starlette-context                      | 0.3.6          | Access context in Starlette                                                      | X
+ starlette-full                         | 0.40.0         | The little ASGI framework that shines.                                           | X
+ starsessions                           | 1.3.0          | Pluggable session support for Starlette.                                         | X
+ tensorboard                            | 2.14.0         | TensorFlow&#39;s Visualization Toolkit.                                          | X
+ tensorboard-data-server                | 0.7.0          | Data server for TensorBoard                                                      | X
+ tensorflow                             | 2.14.1         | Meta-package to install GPU-enabled TensorFlow variant                           |
+ tensorflow-base                        | 2.14.1         | TensorFlow is a machine learning library, base GPU package, tensorflow only.     |
+ tensorflow-datasets                    | 4.9.4          | A collection of datasets ready to use with TensorFlow                            | X
+ tensorflow-estimator                   | 2.14.0         | TensorFlow Estimator                                                             | X
+ tensorflow-hub                         | 0.15.0         | A library for transfer learning by reusing parts of TensorFlow models.           | X
+ tensorflow-io                          | 0.35.0         | Dataset, streaming, and file system extensions                                   |
+ tensorflow-io-gcs-filesystem           | 0.35.0         | Dataset, streaming, and file system extensions                                   |
+ tensorflow-metadata                    | 1.14.0         | Utilities for passing TensorFlow-related metadata between tools                  | X
+ tensorflow-model-optimization          | 0.7.5          | A library that to optimize TensorFlow models for deployment and execution.       |
+ tensorflow-probability                 | 0.22.1         | TensorFlow Probability is a library for probabilistic reasoning and...           |
+ tensorflow-serving                     | 2.14.1         | TensorFlow Serving is an open-source library for serving machine learning models |
+ tensorflow-serving-api                 | 2.14.1         | TensorFlow Serving is an open-source library for serving machine learning models | X
+ tensorflow-text                        | 2.14.0         | TF.Text is a TensorFlow library of text related ops, modules, and subgraphs.     |
+ tf2onnx                                | 1.15.1         | Tensorflow to ONNX converter                                                     |
+ tiktoken                               | 0.6.0          | tiktoken is a fast BPE tokeniser for use with OpenAI&#39;s models                |
+ tokenize-rt                            | 4.2.1          | A wrapper around the stdlib `tokenize` which roundtrips.                         | X
+ tokenizers                             | 0.15.2         | Fast State-of-the-Art Tokenizers optimized for Research and Production           |
+ torchdata                              | 0.7.1          | Common modular data loading primitives for easily constructing flexible...       |
+ torchmetrics                           | 1.2.1          | Machine learning metrics for distributed, scalable PyTorch applications.         | X
+ torchtext                              | 0.16.2         | Meta-package to install torchtext variant for GPU-enabled pytorch                |
+ torchtext-base                         | 0.16.2         | Text utilities and datasets for PyTorch                                          |
+ torchvision                            | 0.16.2         | Meta-package to install GPU-enabled torchvision variant                          |
+ torchvision-base                       | 0.16.2         | Image and video datasets and models for torch deep learning                      |
+ transformers                           | 4.38.0         | State-of-the-art Natural Language Processing for TensorFlow 2.0 and PyTorch      | X
+ typing-extensions                      | 4.11.0         | Backported and Experimental Type Hints for Python                                | X
+ typing_extensions                      | 4.11.0         | Backported and Experimental Type Hints for Python                                | X
+ tzdata-java-cos7-ppc64le               | 2019c          | (CDT) OpenJDK Runtime Environment                                                | X
+ uvicorn                                | 0.22.0         | The lightning-fast ASGI server.                                                  |
+ uvicorn-standard                       | 0.22.0         | The lightning-fast ASGI server.                                                  |
+ uwsgi                                  | 2.0.25.1       | The uWSGI project aims at developing a full stack for building hosting...        |
+ werkzeug                               | 3.0.6          | The comprehensive WSGI web application library.                                  |
+ xgboost                                | 2.0.3          | Scalable, Portable and Distributed Gradient Boosting Library                     |
+ xgboost-proc                           | 2.0.3          | Scalable, Portable and Distributed Gradient Boosting Library                     |
+<!-- markdownlint-enable MD055 MD056 -->
+With the conda environment activated, run the following command:
+
+  ```shell
+  conda install <package name>
+  ```
+
+### Uninstalling the MLDL frameworks
+
+Find information about uninstalling machine learning and deep learning MLDL frameworks.
+
+The MLDL framework packages can be uninstalled individually, or you can uninstall all of the MLDL packages at the same time.
+
+If the frameworks are installed into a separate conda environment, all of the frameworks can be removed by simply deleting the environment:
+
+  ```shell
+  conda env remove -n <environment name>
+  ```
+
+Individual frameworks (and any packages that depend on them) can be removed by removing the individual package:
+
+  ```shell
+  conda remove <package name>
+  ```
+
+Important: This command removes the specified packages and any packages that depend on any of the specified packages. If you want to skip this dependency checking and remove just the requested packages, add the --force option. However, this may break your environment, so use this option with caution.
+
+## Previous releases
+
+We recommend that you install the most current release of Open-CE. However, if you have or need an earlier version installed, you can find information below:
+
+### Open-CE Release 1.11.2
+
+*Release date: 08/20/2024*
+
+This is release 1.11.2 of Open Cognitive Environment (Open-CE). *This update only applies to the ppc64le architecture.*
 
 **What's new**
 
@@ -46,365 +478,22 @@ x86_64       | UBI 9      | DONE   | DONE   | DONE     | DONE      | DONE      |
 
 - This release of Open-CE supports:
 
-  - NVIDIA's CUDA version 11.8, 12.2
+  - NVIDIA's CUDA 11.8, 12.2
   - Python 3.10, 3.11
 
 - Important Notes:
 
   - ppc64le builds with CUDA are UBI 8 container image based, not UBI 9 (amd64,arm64 only)
     - Nvidia will not provide ppc64le-based UBI 8(+) images with CUDA > 12.4.1
-    - See: https://hub.docker.com/r/nvidia/cuda/tags?page=1&page_size=&ordering=&name=-devel-ubi
+    - See: <https://hub.docker.com/r/nvidia/cuda/tags?page=1&page_size=&ordering=&name=-devel-ubi>
   - CV-CUDA is disabled in DALI for ppc64le
   - Jax and Jaxlib packages not available for ppc64le CUDA
 
-**Learn more**
+### Open-CE Release 1.11.0
 
-Get information about planning, configuring, and managing Open-CE 1.9 Below:
+*Release date: 06/07/2024*
 
-- [Planning](#planning)
-- [System setup](#system-setup)
-- [Setting up the software repository](#setting-up-the-software-repository)
-- [Creating conda environments (recommended)](#creating-conda-environments-recommended)
-- [Installing the MLDL frameworks](#installing-frameworks-individually)
-- [Uninstalling the MLDL frameworks](#uninstalling-the-mldl-frameworks)
-
-Planning
---------
-
-We recommend users use one of the listed operating systems listed below. This is a standard conda repository and can be added to any conda install. Conda must be configured to give priority to installing packages from this channel.
-
-System setup
-------------
-
-Open-CE can be installed and run directly on a bare-metal RHEL and Ubuntu based systems.
-
-### Supported hardware:
-
-- IBM Power System IC922 with NVIDIA Tesla T4 GPUs
-- IBM Power System AC922 with NVIDIA Tesla V100 GPUs
-- x86_64 systems with NVIDIA Tesla V100 or P100 GPUs
-
-### Supported operating systems:
-
-- ppc64le
-
-  - Community Enterprise Operating System (CentOS) 8.1-6
-  - Red Hat Enterprise Linux for POWER LE 8.1-6
-  - Rocky / Alma Linux 8.1-6
-  - Ubuntu 20.04.1
-
-
-- x86
-
-  - Community Enterprise Operating System (CentOS) 7.8, 8.x
-  - Red Hat Enterprise Linux for POWER LE 7.8, 8.1-6, 9.0
-  - Rocky / Alma Linux 8.1-6, 9.0
-  - Ubuntu 20.04.1-4, 22.04.x
-
-**Note: We (CQLS & OSL) have dropped support of RHEL/CentOS 7, as we have transitioned most systems away before the EOS date.**
-
-
-### Required 3rd party software:
-
-- NVIDIA GPU driver 520.61.05
-- CUDA version 11.8
-
-Installing the Open-CE Repository and Frameworks
-------------------------------------------------
-
-### Setting up the software repository
-
-The Open-CE MLDL packages are distributed as conda packages in an online conda repository. Conda must be configured to give priority to installing packages from this channel.
-
-Add the Open-CE channel to the conda configuration by running the following command:
-
-  ```
-  conda config --prepend channels https://ftp.osuosl.org/pub/open-ce/current/
-  ```
-
-### Creating conda environments (recommended)
-
-With conda, you can create environments that have different versions of Python or packages installed in them. Conda environments are optional but recommended. If not used, packages are installed in the default environment called base, which often has a higher risk of containing conflicting packages or dependencies. Switching between environments is called activating the environment.
-
-The syntax to create and activate a conda environment is:
-
-  ```
-  conda create --name <environment name> python=<python version>
-  conda activate <environment name>
-  ```
-
-**Note**: It is recommended that you specify the Python version when creating a new environment. If you do not specify the version, Python 3.7 is installed when any package that requires Python are installed.
-
-The only valid Python versions with Open-CE 1.9 are Python 3.9 and 3.10.
-
-For example, to create an environment named opence_env with Python 3.9:
-
-  ```
-  conda create --name opence_env python=3.9
-  0conda activate opence_env
-  ```
-
-For more information on what you can do with conda environment see https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html.
-
-Note: Open-CE should be run as a non-privileged user and not root. The Open-CE components are designed to be usable by normal users, and the pre-installed docker images provide a non-root user by default. Some of the Open-CE components will give warnings or will fail when run as root.
-
-### Installing frameworks individually
-
-You can install the MLDL frameworks individually. The framework packages include the following versions.
-
-**Table 1. Framework packages (Open-CE 1.9.1)**
-
-Package                                | Version    | Summary                                                                          | noarch
--------------------------------------- | ---------- | -------------------------------------------------------------------------------- | ------
-_pytorch_select                        | 2          | Package used to select the specific PyTorch build variant                        |       
-_tensorflow_select                     | 2          | Package used to select the specific Tensorflow build variant                     |       
-absl-py                                | 2.0.0      | This repository is a collection of Python library code for building...           |       
-aioredis                               | 2.0.1      | asyncio (PEP 3156) Redis support                                                 | X     
-aiorwlock                              | 1.3.0      | Read write lock for asyncio.                                                     | X     
-apache-beam                            | 2.53.0     | Apache Beam: An advanced unified programming model                               |       
-array-record                           | 0.2.0      | A new file format derived from Riegeli                                           |       
-arrow-cpp                              | 15.0.1     | C++ libraries for Apache Arrow                                                   |       
-arrow-cpp-proc                         | 15.0.1     | A meta-package to select Arrow build variant                                     |       
-arviz                                  | 0.14.0     | Exploratory analysis of Bayesian models with Python                              | X     
-av                                     | 10.0.0     | Pythonic bindings for FFmpeg.                                                    |       
-backoff                                | 2.2.1      | Function decoration for backoff and retry                                        | X     
-bazel                                  | 6.1.0      | build system originally authored by Google                                       |       
-bazel-toolchain                        | 0.1.5      | Helper script to generate a crosscompile toolchain for Bazel with the...         |       
-black                                  | 23.10.0    | The uncompromising code formatter.                                               |       
-blas                                   | 1          | None                                                                             |       
-blessed                                | 1.19.1     | Easy, practical library for making terminal apps, by providing an...             | X     
-boost_mp11                             | 1.76.0     | C++11 metaprogramming library                                                    |       
-bsddb3                                 | 6.2.9      | Python bindings for Oracle Berkeley DB                                           |       
-cfitsio                                | 3.47       | A library for reading and writing FITS files                                     |       
-cli11                                  | 2.2.0      | CLI11 is a command line parser for C++11 and beyond that provides a...           |       
-cmake                                  | 3.26.4     | CMake is an extensible, open-source system that manages the build process        |       
-cmdstan                                | 2.33.1     | CmdStan, the command line interface to Stan                                      |       
-cmdstanpy                              | 1.2.0      | CmdStanPy is a lightweight interface to Stan for Python users which...           | X     
-coin-or-cbc                            | 2.10.7     | COIN-OR branch and cut (Cbc)                                                     |       
-coin-or-cgl                            | 0.60.6     | COIN-OR Cut Generation Library (Cgl)                                             |       
-coin-or-clp                            | 1.17.7     | COIN-OR linear programming (Clp)                                                 |       
-coin-or-osi                            | 0.108.7    | Coin OR Open Solver Interface (OSI)                                              |       
-coin-or-utils                          | 2.11.6     | COIN-OR Utilities (CoinUtils)                                                    |       
-coincbc                                | 2.10.7     | COIN-OR branch and cut (Cbc)                                                     | X     
-crcmod                                 | 1.7        | CRC Generator                                                                    |       
-cudatoolkit                            | 12.2.0     | CUDA Toolkit - Including CUDA runtime                                            |       
-cudatoolkit-dev                        | 12.2.0     | Develop, Optimize and Deploy GPU-accelerated Apps                                |       
-cudnn                                  | 8.9.6_12.2 | The NVIDIA CUDA Deep Neural Network library. A GPU-accelerated library...        |       
-dali                                   | 1.32.0     | A library containing both highly optimized building blocks and an...             |       
-dali-ffmpeg                            | 5.1.1      | Cross-platform solution to record, convert and stream audio and video.           |       
-dali-tf-plugin                         | 1.32.0     | A library containing both highly optimized building blocks and an...             |       
-datasets                               | 2.16.1     | HuggingFace/Datasets is an open library of NLP datasets.                         | X     
-dateutils                              | 0.6.12     | Various utilities for working with date and datetime objects                     | X     
-deepdiff                               | 5.8.1      | Deep Difference and Search of any Python object/data.                            | X     
-deepspeed                              | 0.11.1     | DeepSpeed Library: An easy-to-use deep learning optimization software suite.     |       
-dm-tree                                | 0.1.8      | A library for working with nested data structures.                               |       
-eigen                                  | 3.4.0      | C++ template library for linear algebra                                          |       
-etils                                  | 1.0.0      | Collection of eclectic utils for python.                                         | X     
-fastapi                                | 0.92.0     | FastAPI framework, high performance, easy to learn, fast to code, ready...       | X     
-ffmpeg                                 | 4.2.2      | Cross-platform solution to record, convert and stream audio and video.           |       
-fire                                   | 0.4.0      | Python Fire is a library for creating command line interfaces (CLIs)...          | X     
-flatbuffers                            | 23.1.21    | Memory Efficient Serialization Library                                           |       
-fsspec                                 | 2023.10.0  | A specification for pythonic filesystems                                         | X     
-gmock                                  | 1.13.0     | Google's C++ test framework                                                      |       
-googledrivedownloader                  | 0.4        | Minimal class to download shared files from Google Drive.                        | X     
-grpc-cpp                               | 1.54.3     | gRPC - A high-performance, open-source universal RPC framework                   |       
-grpcio                                 | 1.54.3     | HTTP/2-based RPC framework                                                       |       
-gtest                                  | 1.13.0     | Google's C++ test framework                                                      |       
-hatch-fancy-pypi-readme                | 23.1.0     | Fancy PyPI READMEs with Hatch                                                    | X     
-hjson-py                               | 3.1.0      | Hjson, a user interface for JSON.                                                | X     
-holidays                               | 0.27       | Generate and work with holidays in Python                                        | X     
-horovod                                | 0.28.1     | Distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet. |       
-httplib2                               | 0.19.1     | A comprehensive HTTP client library                                              | X     
-huggingface_hub                        | 0.20.0     | Client library to download and publish models on the huggingface.co hub          | X     
-inquirer                               | 2.10.1     | Collection of common interactive command line user interfaces, based on...       | X     
-java-11-openjdk-cos7-ppc64le           | 11.0.6.10  | (CDT) OpenJDK Runtime Environment                                                | X     
-java-11-openjdk-devel-cos7-ppc64le     | 11.0.6.10  | (CDT) OpenJDK Development Toolkit                                                | X     
-java-11-openjdk-headless-cos7-ppc64le  | 11.0.6.10  | (CDT) The OpenJDK runtime environment without audio and video support            | X     
-jax                                    | 0.4.23     | Differentiate, compile, and transform Numpy code                                 |       
-jaxlib                                 | 0.4.23     | Composable transformations of Python+NumPy programs: differentiate,...           |       
-joblib                                 | 1.3.2      | Lightweight pipelining: using Python functions as pipeline jobs.                 | X     
-jpeg-turbo                             | 2.1.4      | IJG JPEG compliant runtime library with SIMD and other optimizations             |       
-jsonpatch                              | 1.33       | Apply JSON-Patches (RFC 6902)                                                    | X     
-keras                                  | 2.14.0     | Deep Learning for Python                                                         |       
-langchain                              | 0.1.13     | Building applications with LLMs through composability                            | X     
-langchain-community                    | 0.0.29     | Community contributed LangChain integrations.                                    | X     
-langchain-core                         | 0.1.35     | Core APIs for LangChain, the LLM framework for buildilng applications...         | X     
-langchain-text-splitters               | 0.0.2      | LangChain text splitting utilities                                               | X     
-langsmith                              | 0.1.19     | Client library to connect to the LangSmith language model tracing and...         | X     
-libabseil                              | 20230125   | Abseil Common Libraries (C++)                                                    |       
-libdate                                | 3.0.1      | A date and time library based on the C++11/14/17 &lt;chrono&gt; header           |       
-libflac                                | 1.3.3      | Flac audio format                                                                |       
-liblightgbm                            | 4.2.0      | Light Gradient Boosting Machine that uses tree based learning algorithms         |       
-libmamba                               | 1.5.7      | A fast drop-in alternative to conda, using libsolv for dependency resolution     |       
-libmambapy                             | 1.5.7      | A fast drop-in alternative to conda, using libsolv for dependency resolution     |       
-libnvjitlink                           | 12.2.140   | CUDA nvJitLink library                                                           |       
-libopenblas                            | 0.3.27     | An Optimized BLAS library                                                        |       
-libopenblas-static                     | 0.3.27     | OpenBLAS static libraries.                                                       |       
-libopencv                              | 4.8.1      | Computer vision and machine learning software library.                           |       
-libortools                             | 9.6        | Google Operations Research Tools (or-tools) python package                       |       
-libprotobuf                            | 3.21.12    | Protocol Buffers - Google&#39;s data interchange format. C++ Libraries...        |       
-libprotobuf-static                     | 3.21.12    | Protocol Buffers - Google&#39;s data interchange format. C++ Libraries...        |       
-libsndfile                             | 1.0.31     | libsndfile - a C library for reading and writing files containing...             |       
-libtar                                 | 1.2.20     | C library for manipulating tar files                                             |       
-libtensorflow                          | 2.14.1     | TensorFlow is a machine learning library, base GPU package, tensorflow only.     |       
-libxgboost                             | 2.0.3      | Scalable, Portable and Distributed Gradient Boosting Library                     |       
-lightgbm                               | 4.2.0      | Light Gradient Boosting Machine that uses tree based learning algorithms         |       
-lightgbm-proc                          | 4.2.0      | Light Gradient Boosting Machine that uses tree based learning algorithms         |       
-lightning-app                          | 2.1.3      | Use Lightning Apps to build everything from production-ready,...                 | X     
-lightning-cloud                        | 0.5.57     | Lightning Cloud.                                                                 | X     
-lightning-fabric                       | 2.1.3      | Use Lightning Apps to build everything from production-ready,...                 | X     
-lightning-utilities                    | 0.10.0     | Lightning Utilities.                                                             | X     
-llvm-openmp                            | 14.0.6     | The OpenMP API supports multi-platform shared-memory parallel...                 |       
-magma                                  | 2.6.1      | Dense linear algebra library similar to LAPACK but for...                        |       
-mamba                                  | 1.5.7      | A fast drop-in alternative to conda, using libsolv for dependency resolution     |       
-nasm                                   | 2.15.05    | Netwide Assembler: an assembler targetting the Intel x86 series of processors.   |       
-nccl                                   | 2.19.3     | NVIDIA Collective Communications Library. Implements multi-GPU and...            |       
-nomkl                                  | 3          | None                                                                             |       
-numactl                                | 2.0.16     | Control NUMA policy for processes or shared memory                               |       
-objsize                                | 0.6.1      | Traversal over Python&#39;s objects subtree and calculate the total...           | X     
-onnx                                   | 1.16.0     | Open Neural Network Exchange library                                             |       
-onnxconverter-common                   | 1.14.0     | Common utilities for ONNX converters                                             | X     
-onnxmltools                            | 1.12.0     | ONNXMLTools enables conversion of models to ONNX                                 | X     
-onnxruntime                            | 1.16.3     | cross-platform, high performance ML inferencing and training accelerator         |       
-openblas                               | 0.3.27     | An optimized BLAS library                                                        |       
-openblas-devel                         | 0.3.27     | OpenBLAS headers and libraries for developing software that used OpenBLAS.       |       
-opencensus                             | 0.7.13     | OpenCensus - A stats collection and distributed tracing framework                | X     
-opencv                                 | 4.8.1      | Computer vision and machine learning software library.                           |       
-opencv-proc                            | 4.8.1      | Computer vision and machine learning software library.                           |       
-openmpi                                | 4.1.5      | An open source Message Passing Interface implementation.                         |       
-optional-lite                          | 3.4.0      | A C++17-like optional, a nullable object for C++98, C++11 and later in...        |       
-orbit-ml                               | 1.1.4.2    | Orbit is a package for bayesian time series modeling and inference.              |       
-orc                                    | 1.9.0      | C++ libraries for Apache ORC                                                     |       
-ordered-set                            | 4.1.0      | A MutableSet that remembers its order, so that every entry has an index.         | X     
-orjson                                 | 3.9.15     | orjson is a fast, correct JSON library for Python.                               |       
-ortools-cpp                            | 9.6        | Google Operations Research Tools (or-tools) python package                       |       
-ortools-python                         | 9.6        | Google Operations Research Tools (or-tools) python package                       |       
-packaging                              | 23.2       | Core utilities for Python packages                                               | X     
-prophet                                | 1.1.5      | Automatic Forecasting Procedure                                                  |       
-protobuf                               | 4.21.12    | Protocol Buffers - Google&#39;s data interchange format.                         |       
-py-opencv                              | 4.8.1      | Computer vision and machine learning software library.                           |       
-pyarrow                                | 15.0.1     | Python libraries for Apache Arrow                                                |       
-pyink                                  | 23.10.0    | Pyink is a python formatter, forked from Black with slightly different behavior. | X     
-pyro-api                               | 0.1.2      | Generic API for dispatch to Pyro backends.                                       | X     
-pyro-ppl                               | 1.8.4      | A Python library for probabilistic modeling and inference                        | X     
-python-flatbuffers                     | 23.1.21    | Python runtime library for use with the Flatbuffers serialization format.        | X     
-python-multipart                       | 0.0.5      | A streaming multipart parser for Python.                                         | X     
-pytorch                                | 2.1.2      | Meta-package to install GPU-enabled PyTorch variant                              |       
-pytorch-base                           | 2.1.2      | PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.    |       
-pytorch-cpu                            | 2.1.2      | Meta-package to install CPU-only PyTorch variant                                 |       
-pytorch-lightning                      | 2.1.3      | PyTorch Lightning is the lightweight PyTorch wrapper for ML...                   | X     
-pytorch-lightning-bolts                | 0.7.0      | Pretrained SOTA Deep Learning models, callbacks and more for research...         | X     
-pytorch_geometric                      | 2.4.0      | Geometric Deep Learning Extension Library for PyTorch                            | X     
-pytorch_scatter                        | 2.1.2      | PyTorch Extension Library of Optimized Scatter Operations                        |       
-pytorch_sparse                         | 0.6.18     | PyTorch Extension Library of Optimized Autograd Sparse Matrix Operations         |       
-ray-air                                | 2.9.2      | Ray is a fast and simple framework for building and running distributed...       |       
-ray-all                                | 2.9.2      | Ray is a fast and simple framework for building and running distributed...       |       
-ray-client                             | 2.9.2      | Ray is a fast and simple framework for building and running distributed...       |       
-ray-core                               | 2.9.2      | Ray is a fast and simple framework for building and running distributed...       |       
-ray-data                               | 2.9.2      | Ray is a fast and simple framework for building and running distributed...       |       
-ray-default                            | 2.9.2      | Ray is a fast and simple framework for building and running distributed...       |       
-ray-rllib                              | 2.9.2      | Ray is a fast and simple framework for building and running distributed...       |       
-ray-serve                              | 2.9.2      | Ray is a fast and simple framework for building and running distributed...       |       
-ray-train                              | 2.9.2      | Ray is a fast and simple framework for building and running distributed...       |       
-ray-tune                               | 2.9.2      | Ray is a fast and simple framework for building and running distributed...       |       
-rdflib                                 | 6.1.1      | RDFLib is a Python library for working with RDF, a simple yet powerful...        | X     
-rust                                   | 1.77.0     | Rust is a systems programming language that runs blazingly fast,...              |       
-rust-std-powerpc64le-unknown-linux-gnu | 1.77.0     | Rust is a systems programming language that runs blazingly fast,...              | X     
-rust_linux-ppc64le                     | 1.77.0     | A safe systems programming language (conda activation scripts)                   |       
-safeint                                | 3.0.26     | SafeInt is a class library for C++ that manages integer overflows.               |       
-safetensors                            | 0.4.1      | Fast and Safe Tensor serialization                                               |       
-scikit-learn                           | 1.3.0      | A set of python modules for machine learning and data mining                     |       
-sentencepiece                          | 0.1.99     | An unsupervised text tokenizer and detokenizer mainly for Neural...              |       
-setuptools-rust                        | 1.5.1      | Setuptools rust extension plugin                                                 | X     
-skl2onnx                               | 1.16.0     | Convert scikit-learn models and pipelines to ONNX                                | X     
-sklearn-pandas                         | 2.2.0      | Pandas integration with sklearn                                                  | X     
-stanio                                 | 0.3.0      | Preparing inputs to and reading outputs from Stan.                               | X     
-starlette                              | 0.25.0     | The little ASGI framework that shines.                                           | X     
-starlette-full                         | 0.25.0     | The little ASGI framework that shines.                                           | X     
-starsessions                           | 1.3.0      | Pluggable session support for Starlette.                                         | X     
-tensorboard                            | 2.14.0     | TensorFlow&#39;s Visualization Toolkit.                                          | X     
-tensorboard-data-server                | 0.7.0      | Data server for TensorBoard                                                      | X     
-tensorflow                             | 2.14.1     | Meta-package to install GPU-enabled TensorFlow variant                           |       
-tensorflow-base                        | 2.14.1     | TensorFlow is a machine learning library, base GPU package, tensorflow only.     |       
-tensorflow-cpu                         | 2.14.1     | Meta-package to install CPU-only TensorFlow variant                              |       
-tensorflow-datasets                    | 4.9.4      | A collection of datasets ready to use with TensorFlow                            | X     
-tensorflow-estimator                   | 2.14.0     | TensorFlow Estimator                                                             | X     
-tensorflow-hub                         | 0.15.0     | A library for transfer learning by reusing parts of TensorFlow models.           | X     
-tensorflow-io                          | 0.35.0     | Dataset, streaming, and file system extensions                                   |       
-tensorflow-io-gcs-filesystem           | 0.35.0     | Dataset, streaming, and file system extensions                                   |       
-tensorflow-metadata                    | 1.14.0     | Utilities for passing TensorFlow-related metadata between tools                  | X     
-tensorflow-model-optimization          | 0.7.5      | A library that to optimize TensorFlow models for deployment and execution.       |       
-tensorflow-probability                 | 0.22.1     | TensorFlow Probability is a library for probabilistic reasoning and...           |       
-tensorflow-serving                     | 2.14.1     | TensorFlow Serving is an open-source library for serving machine learning models |       
-tensorflow-serving-api                 | 2.14.1     | TensorFlow Serving is an open-source library for serving machine learning models | X     
-tensorflow-text                        | 2.14.0     | TF.Text is a TensorFlow library of text related ops, modules, and subgraphs.     |       
-tf2onnx                                | 1.15.1     | Tensorflow to ONNX converter                                                     |       
-tiktoken                               | 0.6.0      | tiktoken is a fast BPE tokeniser for use with OpenAI&#39;s models                |       
-tokenize-rt                            | 4.2.1      | A wrapper around the stdlib tokenize which roundtrips.                           | X     
-tokenizers                             | 0.15.2     | Fast State-of-the-Art Tokenizers optimized for Research and Production           |       
-torchdata                              | 0.7.1      | Common modular data loading primitives for easily constructing flexible...       |       
-torchmetrics                           | 1.2.1      | Machine learning metrics for distributed, scalable PyTorch applications.         | X     
-torchtext                              | 0.16.2     | Meta-package to install torchtext variant for GPU-enabled pytorch                |       
-torchtext-base                         | 0.16.2     | Text utilities and datasets for PyTorch                                          |       
-torchtext-cpu                          | 0.16.2     | Meta-package to install torchtext variant for CPU-only pytorch                   |       
-torchvision                            | 0.16.2     | Meta-package to install GPU-enabled torchvision variant                          |       
-torchvision-base                       | 0.16.2     | Image and video datasets and models for torch deep learning                      |       
-torchvision-cpu                        | 0.16.2     | Meta-package to install CPU-only torchvision variant                             |       
-transformers                           | 4.38.0     | State-of-the-art Natural Language Processing for TensorFlow 2.0 and PyTorch      | X     
-tzdata-java-cos7-ppc64le               | 2019c      | (CDT) OpenJDK Runtime Environment                                                | X     
-uvicorn                                | 0.16.0     | The lightning-fast ASGI server.                                                  |       
-uwsgi                                  | 2.0.25.1   | The uWSGI project aims at developing a full stack for building hosting...        |       
-werkzeug                               | 3.0.3      | The comprehensive WSGI web application library.                                  |       
-xgboost                                | 2.0.3      | Scalable, Portable and Distributed Gradient Boosting Library                     |       
-xgboost-proc                           | 2.0.3      | Scalable, Portable and Distributed Gradient Boosting Library                     |       
-
-
-With the conda environment activated, run the following command:
-
-  ```
-  conda install <package name>
-  ```
-
-### Uninstalling the Open-CE MLDL frameworks
-
-Find information about uninstalling machine learning and deep learning MLDL frameworks.
-
-The MLDL framework packages can be uninstalled individually, or you can uninstall all of the MLDL packages at the same time.
-
-If the frameworks are installed into a separate conda environment, all of the frameworks can be removed by simply deleting the environment:
-
-  ```
-  conda env remove -n <environment name>
-  ```
-
-Individual frameworks (and any packages that depend on them) can be removed by removing the individual package:
-
-  ```
-  conda remove <package name>
-  ```
-
-Important: This command removes the specified packages and any packages that depend on any of the specified packages. If you want to skip this dependency checking and remove just the requested packages, add the --force option. However, this may break your environment, so use this option with caution.
-
-
-Previous releases
------------------
-We recommend that you install the most current release of Open-CE, however, if you have an earlier version installed, you can find information below:
-
-
-Open-CE Release 1.11.0
-----------------------
-
-This is release 1.11.0 of Open Cognitive Environment (Open-CE)
-
-Build Status:
-
-CPU Arch     | Build Base | Py3.10 | Py3.11 | CPU-only | CUDA 11.8 | CUDA 12.2 | Date
------------- | ---------- | ------ | ------ | -------- | --------- | --------- | -------------
-ppc64le(P9)  | UBI 8      | DONE   | DONE   | DONE     | Err       | DONE      | 06/07/2024
-ppc64le(P10) | UBI 9      | DONE   | DONE   | DONE     | N/A       | N/A       | 06/11/2024
-x86_64       | UBI 9      | DONE   | DONE   | DONE     | Err       | DONE
-
-
+This is release 1.11.0 of Open Cognitive Environment (Open-CE).
 
 **What's new**
 
@@ -484,241 +573,90 @@ x86_64       | UBI 9      | DONE   | DONE   | DONE     | Err       | DONE
   - torchvision 0.16.2
   - transformers 4.36.2
   - uwsgi 2.0.25.1
-  - xgboost 2.0.3  
+  - xgboost 2.0.3 _
 
 - This release of Open-CE supports:
 
-  - NVIDIA's CUDA version 11.8, 12.2
+  - NVIDIA's CUDA 11.8, 12.2
   - Python 3.10, 3.11
 
 - Important Notes:
 
-  - ppc64le builds with CUDA are UBI 8 container image based, not UBI 9 (amd64,arm64 only)
-    - Nvidia will not provide ppc64le-based UBI 8(+) images with CUDA > 12.4.1
-    - See: https://hub.docker.com/r/nvidia/cuda/tags?page=1&page_size=&ordering=&name=-devel-ubi
-  - CV-CUDA is disabled in DALI for ppc64le
-  - Jax and Jaxlib packages not available for ppc64le CUDA
   - Python 3.9 is no longer supported
   - OSU drops support of EL7
-  
+  - x86 does not currently have a build
+  - ppc64le builds with CUDA are UBI 8 container image based, not UBI 9 (amd64,arm64 only)
+    - Nvidia will not provide ppc64le-based UBI 8(+) images with CUDA > 12.4.1
+    - See: <https://hub.docker.com/r/nvidia/cuda/tags?page=1&page_size=&ordering=&name=-devel-ubi>
+  - CV-CUDA is disabled in DALI for ppc64le
+  - Jax and Jaxlib packages not available for ppc64le CUDA
 
-Open-CE Release 1.7.2
----------------------
+### Open-CE Release 1.10.0
 
-*Release date: 09/29/2022*
+*Release date: 01/29/2024 (x86), 02/14/2024 (ppc64le)*
 
-This is bug fix release 2 of release 1.7
+This is release 1.10.0 of Open Cognitive Environment (Open-CE).
 
 **What's new**
 
-- Various build fixed
 - Updated packages
-  - TensorFlow  2.9.2
-  - xgboost 1.6.2
-  - DALI  1.16.1
-  - Ray 1.13.1
-  - PyTorch Geometric 2.1.0
-  - numba 0.56.1
-  - snapml  1.8.10
-  - TF Serving  2.9.2
 
-**Learn more**
+  - aiorwlock 1.3.0
+  - arrow-cpp[-proc] 12.0.1
+  - backoff 2.2.1
+  - cfitsio 3.470
+  - cudnn 8.9.2_11.8
+  - dali[-tf-plugin] 1.28.0
+  - datasets 2.14.4
+  - deepspeed 0.10.0
+  - dm-tree 0.1.8
+  - flatbuffers 23.1.21
+  - grpc-cpp & grpcio 1.54.3
+  - holidays 0.27
+  - jaxlib 0.4.23
+  - keras 2.13.1
+  - libsolv[-static] 0.7.24
+  - lightgbm[-proc] 4.0.0
+  - lightning-app 2.0.6
+  - lightning-cloud 0.5.37
+  - lightning-fabric 2.0.6
+  - mamba 1.4.9
+  - nccl 2.18.3
+  - onnx[converter-common] 1.14.0
+  - opencensus 0.7.13
+  - [py-]opencv[-proc] 4.8.0
+  - openmpi 4.1.4
+  - orc 1.9.0
+  - prophet 1.1.4
+  - pyarrow 12.0.1
+  - pytorch-lighting 2.0.6
+  - pytorch-lightning-bolts 0.7.0
+  - pytorch_geometric 2.3.1
+  - ray 2.6.3
+  - scipy 1.11.1
+  - skl2onnx 1.15.0
+  - starlette[-full] 0.25.0
+  - tensorboard 2.13.0
+  - tensorflow 2.13.0
+  - tensorflow-addons 0.21.0
+  - tensorflow-hub 0.14.0
+  - tensorflow-io[-gcs-filesystem] 0.33.0
+  - tensorflow-model-optimization 0.7.5
+  - tensorflow-probability 0.20.0
+  - tf2onnx 1.15.0
 
-Get information about planning, configuring, and managing Open-CE 1.7 Below:
+- This release of Open-CE supports:
 
-- [Planning](#planning)
-- [System setup](#system-setup)
-- [Setting up the software repository](#setting-up-the-software-repository)
-- [Creating conda environments](#creating-conda-environments-recommended) (recommended)
-- [Installing the MLDL frameworks](#installing-frameworks-individually)
-- [Uninstalling the MLDL frameworks](#uninstalling-the-mldl-frameworks)
+  - NVIDIA's CUDA 11.8, 12.2
+  - Python 3.9, 3.10, 3.11
 
+- Important Notes:
 
-Planning
---------
+  - Built with OpenSSL v3
+  - CUDA 11.2 is no longer supported
+  - Python 3.8 is no longer supported
 
-We recommend users use one of the listed operating systems listed below. This is a standard conda repository and can be added to any conda install. Conda must be configured to give priority to installing packages from this channel.
-
-System setup
-------------
-
-Open-CE can be installed and run directly on a bare-metal RHEL and Ubuntu based systems.
-
-#### Supported hardware:
-
-- IBM Power System IC922 with NVIDIA Tesla T4 GPUs
-- IBM Power System AC922 with NVIDIA Tesla V100 GPUs
-- IBM Power System S822LC with NVIDIA Tesla P100 GPUs
-- x86_64 systems with NVIDIA Tesla V100 or P100 GPUs
-
-Supported operating systems:
-  - Red Hat Enterprise Linux for POWER LE 7.8, 8.x
-  - Community Enterprise Operating System (CentOS) 7.8, 8.x
-  - Ubuntu 20.04.1
-
-Required 3rd party software:
-  - NVIDIA GPU driver 440.33 - 520.61
-  - CUDA driver 11.2 or 11.4
-
-Installing the Open-CE Repository and Frameworks
-------------------------------------------------
-
-#### Setting up the software repository
-
-The Open-CE MLDL packages are distributed as conda packages in an online conda repository. Conda must be configured to give priority to installing packages from this channel.
-
-Add the Open-CE channel to the conda configuration by running the following command:
-
-```
-conda config --prepend channels https://ftp.osuosl.org/pub/open-ce/current/
-```
-
-#### Creating conda environments (recommended)
-
-With conda, you can create environments that have different versions of Python or packages installed in them. Conda environments are optional but recommended. If not used, packages are installed in the default environment called base, which often has a higher risk of containing conflicting packages or dependencies. Switching between environments is called activating the environment.
-
-The syntax to create and activate a conda environment is:
-
-```
-conda create --name <environment name> python=<python version> conda activate <environment name>
-```
-
-Note: It is recommended that you specify the Python version when creating a new environment. If you do not specify the version, Python 3.7 is installed when any package that requires Python are installed.
-
-The only valid Python versions with Open-CE are Python 3.8, 3.9 and 3.10
-
-For example, to create an environment named opence_env with Python 3.9:
-
-```
-conda create --name opence_env python=3.9 conda activate opence_env
-```
-
-For more information on what you can do with conda environment see https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html.
-
-Note: Open-CE should be run as a non-privileged user and not root. The Open-CE components are designed to be usable by normal users, and the pre-installed docker images provide a non-root user by default. Some of the Open-CE components will give warnings or will fail when run as root.
-
-
-#### Installing frameworks individually
-
-You can install the MLDL frameworks individually. The framework packages include the following versions.
-
-**Table 1. Framework packages (Open-CE 1.7.2)**
-
-Package                             | Description                    | Version    | Available on ppc64le | Available on x86_64
------------------------------------ | ------------------------------ | ---------- | -------------------- | -------------------
-``av``                              | AV                             |  8.0.3     |  X                   |  X
-``bazel``                           | Bazel                          |  5.1.1     |  X                   |  X
-``boost_mp11``                      | Boost MP11                     |  1.76.0    |  X                   |  X
-``cli11``                           | CLI11                          |  2.2.0     |  X                   |  X
-``cpp-filesystem``                  | CPP Filesystem                 |  1.5.8     |  X                   |  X
-``cudatoolkit``                     | Cuda Toolkit                   |  11.4.4    |  X                   |  X
-``cudatoolkit-dev``                 | Cuda Toolkit Dev               |  11.4.4    |  X                   |  X
-``cudnn``                           | Cudnn                          |  8.3.0.98  |  X                   |  X
-``dali``                            | DALI                           |  1.16.1    |  X                   |  X
-``dm-tree``                         | DM-Tree                        |  0.1.5     |  X                   |  X
-``grpc``                            | GRPC                           |  1.41.0    |  X                   |  X
-``gtest``                           | GTest                          |  1.10.0    |  X                   |  X
-``horovod``                         | Horovod                        |  0.25.0    |  X                   |  X
-``huggingface_hub``                 | Huggingface Hub                |  0.6.0     |  X                   |  X
-``jpeg-turbo``                      | JPEG Turbo                     |  2.1.0     |  X                   |  X
-``keras``                           | Keras                          |  2.9.0     |  X                   |  X
-``langcodes``                       | Langcodes                      |  3.3.0     |  X                   |  X
-``libdate``                         | Date                           |  3.0.1     |  X                   |  X
-``libflac``                         | Flac                           |  1.3.3     |  X                   |  X
-``libiconv``                        | IConv                          |  1.16      |  X                   |  X
-``libsndfile``                      | SndFile                        |  1.0.31    |  X                   |  X
-``libsolv``                         | Solv                           |  0.7.19    |  X                   |  X
-``lightgbm``                        | LightGBM                       |  3.3.2     |  X                   |  X
-``magma``                           | Magma                          |  2.6.1     |  X                   |  X
-``mamba``                           | Mamba                          |  0.25.1    |  X                   |  X
-``nccl``                            | NCCL                           |  2.12.7    |  X                   |  X
-``nlohmann_json``                   | Nlohmann JSON                  |  3.10.5    |  X                   |  X
-``numactl``                         | NumaCtl                        |  2.0.12    |  X                   |  X
-``onnx-runtime``                    | Onnx-runtime                   |  1.12.1    |  X                   |  X
-``onnx``                            | ONNX                           |  1.12      |  X                   |  X
-``onnxconverter-common``            | onnxconverter-common           |  1.9.0     |  X                   |  X
-``onnxmltools``                     | ONNX ML Tools                  |  1.11.1    |  X                   |  X
-``openblas``                        | OpenBLAS                       |  0.3.20    |  X                   |  X
-``opencv``                          | OpenCV                         |  4.6.0     |  X                   |  X
-``openmpi``                         | OpenMPI                        |  4.1.1     |  X                   |  X
-``optional-lite``                   | Optional Lite                  |  3.4.0     |  X                   |  X
-``orc``                             | ORC                            |  1.7.4     |  X                   |  X
-``pyarrow``                         | PyArrow                        |  8.0.0     |  X                   |  X
-``pybind11-abi``                    | PyBind11                       |  4         |  X                   |  X
-``pyDeprecate``                     | PyDeprecate                    |  0.3.2     |  X                   |  X
-``pyTorch-lightning-bolts``         | PyTorch Lightning Bolts        |  0.5.0     |  X                   |  X
-``pytorch-lightning``               | PyTorch Lightning              |  1.6.5     |  X                   |  X
-``pytorch_geometric``               | PyTorch Geometric              |  2.1,0     |  X                   |  X
-``pytorch_scatter``                 | PyTorch Scatter                |  2.0.8     |  X                   |  X
-``pytorch_sparse``                  | PyTorch Sparse                 |  0.6.10    |  X                   |  X
-``pytorch``                         | PyTorch for Cuda 11.2          |  1.10.2    |  X                   |  X
-``pytorch``                         | PyTorch for Cuda 11.4, CPU     |  1.12.1    |  X                   |  X
-``ray_all``                         | Ray                            |  1.13.1    |  X                   |  X
-``ray-tune``                        | Ray Tune                       |  1.13.1    |  X                   |  X
-``reproc``                          | Reproc                         |  14.2.3    |  X                   |  X
-``sacremoses``                      | Sacremoses                     |  0.0.53    |  X                   |  X
-``safeint``                         | SafeInt                        |  3.0.26    |  X                   |  X
-``sentencepiece``                   | SentencePiece                  |  0.1.96    |  X                   |  X
-``skl2onnx``                        | skl2onnx                       |  1.12.0    |  X                   |  X
-``spacy``                           | Spacy                          |  3.3.1     |  X                   |  X
-``spacy-legacy``                    | Spacy Legacy                   |  3.0.9     |  X                   |  X
-``spacy-loggers``                   | Spacy Loggers                  |  1.0.2     |  X                   |  X
-``spdlog``                          | SPDLog                         |  1.9.2     |  X                   |  X
-``tensorboard-data-server``         | TensorBoard Data Server        |  0.6.1     |  X                   |  X
-``tensorboard``                     | TensorBoard                    |  2.9.1     |  X                   |  X
-``tensorflow-addons``               | TensorFlow Addons              |  0.17.0    |  X                   |  X
-``tensorflow-datasets``             | TensorFlow Datasets            |  4.6.0     |  X                   |  X
-``tensorflow-estimators``           | TensorFlow Estimators          |  2.9.0     |  X                   |  X
-``tensorflow-hub``                  | TensorFlow Hub                 |  0.12.0    |  X                   |  X
-``tensorflow-io-gcs-filesystem``    | TensorFlow GCS Filesystem      |  0.26.0    |  X                   |  X
-``tensorflow-metadata``             | TensorFlow MetaData            |  1.8.0     |  X                   |  X
-``tensorflow-model-optimizations``  | TensorFlow Model Optimizations |  0.7.3     |  X                   |  X
-``tensorflow-probability``          | TensorFlow Probability         |  0.17.0    |  X                   |  X
-``tensorflow-text``                 | TensorFlow Text                |  2.9.0     |  X                   |  X
-``tensorflow-base``                 | Tensorflow                     |  2.9.2     |  X                   |  X
-``tf2onnx``                         | Tensorflow2ONNX                |  1.11.1    |  X                   |  X
-``tokenizers``                      | Tokenizers                     |  0.11.4    |  X                   |  X
-``torchtext-base``                  | TorchText for CUDA 11.2        |  0.11.2    |  X                   |  X
-``torchtext-base``                  | TorchText for CUDA 11.4, CPU   |  0.13.1    |  X                   |  X
-``torchvision-base``                | TorchVision for CUDA 11.2      |  0.11.3    |  X                   |  X
-``torchvision-base``                | TorchVision for CUDA 11.4, CPU |  0.11.3    |  X                   |  X
-``transformers``                    | Transformers                   |  4.19.2    |  X                   |  X
-``typeguard``                       | TypeGuard                      |  2.12.0    |  X                   |  X
-``uwsgi``                           | UWSGI                          |  2.0.20    |  X                   |  X
-``xgboost``                         | XGBoost                        |  1.6.2     |  X                   |  X
-``yaml-cpp``                        | YAML CPP                       |  0.6.3     |  X                   |  X
------------------------------------ | ------------------------------ | ---------- | -------------------- | -------------------
-
-
-With the conda environment activated, run the following command:
-
-```
-conda install <package name>
-```
-
-#### Uninstalling the MLDL frameworks:
-
-Find information about uninstalling machine learning and deep learning MLDL frameworks.
-
-The MLDL framework packages can be uninstalled individually, or you can uninstall all of the MLDL packages at the same time.
-
-If the frameworks are installed into a separate conda environment, all of the frameworks can be removed by simply deleting the environment:
-
-```
-conda env remove -n <environment name>
-```
-
-Individual frameworks (and any packages that depend on them) can be removed by removing the individual package:
-
-```
-conda remove <package name>
-```
-
-Important: This command removes the specified packages and any packages that depend on any of the specified packages. If you want to skip this dependency checking and remove just the requested packages, add the --force option. However, this may break your environment, so use this option with caution.
-
-
-Open-CE Release 1.9.3
----------------------
+### Open-CE Release 1.9.3
 
 *Release date: 12/20/2023*
 
@@ -742,15 +680,39 @@ This is bug fix release 3 of release 1.9. No other additions have been made sinc
 
 - This release of Open-CE supports:
 
-  - NVIDIA's CUDA version 11.8
-  - Python 3.9 and 3.10
+  - NVIDIA's CUDA 11.8
+  - Python 3.9, 3.10
 
 - All the packages are built with openssl 1.*.
 
+### Open-CE Release 1.9.1
 
+*Release date: 08/07/2023*
 
-Open-CE Release 1.6.1
----------------------
+This is bug fix release 1 of release 1.9.
+
+\**Version 1.8.0 was also released (01/12/2023), but no description/update was given.*
+
+### Open-CE Release 1.7.2
+
+*Release date: 09/29/2022*
+
+This is bug fix release 2 of release 1.7
+
+**What's new**
+
+- Various build fixed
+- Updated packages
+  - TensorFlow  2.9.2
+  - xgboost 1.6.2
+  - DALI 1.16.1
+  - Ray 1.13.1
+  - PyTorch Geometric 2.1.0
+  - numba 0.56.1
+  - snapml 1.8.10
+  - TF Serving 2.9.2
+
+### Open-CE Release 1.6.1
 
 *Release date: 05/19/2022*
 
@@ -766,10 +728,7 @@ This is bug fix release 1 of release 1.6
   - tensorflow-io-gcs-filesystem  0.25.0
   - ray 1.11.1
 
-
-
-Open-CE Release 1.5.1
----------------------
+### Open-CE Release 1.5.1
 
 *Release date: 01/11/2021*
 
@@ -785,10 +744,7 @@ Update DALI to 1.9 (from 1.9-dev)
 Update tensorflow metadata to 1.5.0
 Enable uwsgi for python version 3.9
 
-
-
-Open-CE Release 1.5.0
----------------------
+### Open-CE Release 1.5.0
 
 *Release date: 12/08/2021*
 
@@ -798,10 +754,7 @@ This is release 1.5.0 of the Open Cognitive Environment (Open-CE), codenamed Ott
 
 This release of Open-CE supports NVIDIA's CUDA versions 10.2,11.2 as well as Python 3.7,3.8,3.9.
 
-
-
-Open-CE Release 1.4.1
----------------------
+### Open-CE Release 1.4.1
 
 *Release date: 10/10/2021*
 
@@ -823,10 +776,7 @@ This is bug fix 1 of release 1.4 of Open Cognitive Environment (Open-CE). Main u
 
 For a complete list of changes also see the [1.4.0 release](https://github.com/open-ce/open-ce/releases/tag/open-ce-v1.4.0).
 
-
-
-Open-CE Release 1.3.1
----------------------
+### Open-CE Release 1.3.1
 
 *Release date: 08/26/2021*
 
@@ -850,10 +800,7 @@ Bug Fix Changes
 
 For a complete list of changes also see the [1.3.0 release](https://github.com/open-ce/open-ce/releases/tag/open-ce-v1.3.0).
 
-
-
-Open-CE Release 1.2.2
----------------------
+### Open-CE Release 1.2.2
 
 *Release date: 06/16/2021*
 
@@ -871,36 +818,36 @@ Bug Fix Changes
 - Changed PyArrow to build with -O2 optimizations to avoid a compiler error in GCC 7.x
 - Add patch to PyArrow to fix handling of decimal types with negative scale in C data import
 
-
-Previously, the Open-CE build tools were part of the [Open-CE repository](https://github.com/open-ce). 
+Previously, the Open-CE build tools were part of the [Open-CE repository](https://github.com/open-ce).
 [They can now be found in their own repo](https://github.com/open-ce/open-ce-builder).
 
 A release of Open-CE now only includes:
+
 - The Open-CE env files used to generate a conda channel containing all of the packages that are part of an Open-CE release.
 - A collection of feedstocks containing conda recipes for building the packages that are part of an Open-CE release.
 
 **New Features**
+
 - PyArrow is now included as part of Open-CE.
 - The protobuf version that all Open-CE packages use is now set to 3.11.2.
 - TensorFlow serving was removed, due to its incompatibility with protobuf 3.11.2
 
 **Bug Fix Changes**
+
 - The conda hash string has been removed from the name of all noarch packages.
 - The version of sqlite that TensorFlow uses is now explicitly set 38 39.
 
 Open-CE is distributed as prebuilt containers, or on demand through the Conda provisioning process.
-  - All of the Conda packages are available in a [Open-CE Conda channel](https://ftp.osuosl.org/pub/open-ce/)
-  - Conda packages are available in the [Open-CE 1.2.0 Conda channel](https://ftp.osuosl.org/pub/open-ce/1.2.0)
-  - There is no install package to download, instead connect to the Conda channel and install your packages from there
-  - Package dependencies are automatically resolved
-  - Delivery of packages is open and continuous
-  - Enable Python versions 3.6, 3.7, 3.8
-  - You can run more than one framework at the same time in the same environment. For example, you can run TensorFlow and PyTorch at the same time.
 
+- All of the Conda packages are available in a [Open-CE Conda channel](https://ftp.osuosl.org/pub/open-ce/)
+- Conda packages are available in the [Open-CE 1.2.0 Conda channel](https://ftp.osuosl.org/pub/open-ce/1.2.0)
+- There is no install package to download, instead connect to the Conda channel and install your packages from there
+- Package dependencies are automatically resolved
+- Delivery of packages is open and continuous
+- Enable Python versions 3.6, 3.7, 3.8
+- You can run more than one framework at the same time in the same environment. For example, you can run TensorFlow and PyTorch at the same time.
 
-
-Open-CE Release 1.2.0
----------------------
+### Open-CE Release 1.2.0
 
 *Release date: 04/16/2021*
 
@@ -908,35 +855,36 @@ Open-CE Release 1.2.0
 
 This is release 1.2 of Open Cognitive Environment (Open-CE), code named Prairiedog.
 
-Previously, the Open-CE build tools were part of the [Open-CE repository](https://github.com/open-ce). 
+Previously, the Open-CE build tools were part of the [Open-CE repository](https://github.com/open-ce).
 [They can now be found in their own repo](https://github.com/open-ce/open-ce-builder).
 
 A release of Open-CE now only includes:
+
 - The Open-CE env files used to generate a conda channel containing all of the packages that are part of an Open-CE release.
 - A collection of feedstocks containing conda recipes for building the packages that are part of an Open-CE release.
 
 **New Features**
+
 - PyArrow is now included as part of Open-CE.
 - The protobuf version that all Open-CE packages use is now set to 3.11.2.
 - TensorFlow serving was removed, due to its incompatibility with protobuf 3.11.2
 
 **Bug Fix Changes**
+
 - The conda hash string has been removed from the name of all noarch packages.
 - The version of sqlite that TensorFlow uses is now explicitly set 38 39.
 
 Open-CE is distributed as prebuilt containers, or on demand through the Conda provisioning process.
-  - All of the Conda packages are available in a [Open-CE Conda channel](https://ftp.osuosl.org/pub/open-ce/current)
-  - Conda packages are available in the [Open-CE 1.2.0 Conda channel](https://ftp.osuosl.org/pub/open-ce/1.2.0)
-  - There is no install package to download, instead connect to the Conda channel and install your packages from there
-  - Package dependencies are automatically resolved
-  - Delivery of packages is open and continuous
-  - Enable Python versions 3.6, 3.7, 3.8
-  - You can run more than one framework at the same time in the same environment. For example, you can run TensorFlow and PyTorch at the same time.
 
+- All of the Conda packages are available in a [Open-CE Conda channel](https://ftp.osuosl.org/pub/open-ce/current)
+- Conda packages are available in the [Open-CE 1.2.0 Conda channel](https://ftp.osuosl.org/pub/open-ce/1.2.0)
+- There is no install package to download, instead connect to the Conda channel and install your packages from there
+- Package dependencies are automatically resolved
+- Delivery of packages is open and continuous
+- Enable Python versions 3.6, 3.7, 3.8
+- You can run more than one framework at the same time in the same environment. For example, you can run TensorFlow and PyTorch at the same time.
 
-
-Open-CE Release 1.1.1
----------------------
+### Open-CE Release 1.1.1
 
 *Release date: 01/12/2021*
 
@@ -958,10 +906,7 @@ This is release 1.1 of Open Cognitive Environment (Open-CE), code named Meerkat.
 - Improved performance when attempting to build packages that already exist.
 - Added the patches key to the Open-CE environment files to allow for patching feedstocks.
 
-
-
-Open-CE Release 1.0.0
----------------------
+### Open-CE Release 1.0.0
 
 *Release date: 11/10/2020*
 
