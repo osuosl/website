@@ -693,7 +693,7 @@ textarea {
   justify-content: center;
   background-image: url("/images/zachary_homepage.jpg");
   background-repeat: no-repeat;
-  background-position: 0% 70%;
+  background-position: center;
   background-size: cover;
   height: 500px;
 }
