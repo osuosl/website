@@ -8,10 +8,13 @@ slug: /powerdev/opence
     https://github.com/DavidAnson/markdownlint/blob/main/doc/md036.md
     Disable no-emphasis-as-heading and use emphasis, so "What's new" is only used as an anchorable heading to the current release
  -->
+---
 
-The OSU Open Source Lab (OSUOSL) and Center for Quantitative Life Sciences (CQLS; previously CGRB) partner with IBM to provide download resources around Open-CE. Open-CE is a community driven software distribution for machine learning that runs on standard Linux platforms with IBM POWER10 and NVIDIA GPU technologies.
+The OSU Open Source Lab (OSUOSL) and Center for Quantitative Life Sciences (CQLS; previously CGRB) partner with IBM to provide download resources around Open-CE. Open-CE is a community driven set of software frameworks for implementing machine learning, deep learning, and AI models. It is built for standard Linux platforms based on the ppc64le and x86_64 architectures, and is accelerated by IBM POWER10 or NVIDIA GPU technologies.
 
 We serve mid-stream between the public and development by building the Open-CE environment downstream of the development team. If any problems arise during the builds, we share the results of our attempts and help coordinate a fix with the development team. The result is a publicly available conda channel of prebuilt packages.
+
+---
 
 The source we pull from: <https://github.com/open-ce/open-ce>
 
@@ -20,7 +23,7 @@ The build tools: <https://github.com/open-ce/open-ce-builder>
 Questions and general discussions involving OSU's builds can be directed to the Open-CE Slack team: <https://open-ce.slack.com/archives/C06DGE5GHND>.
 
 - [Current release](#open-ce-release-1115)
-- [Previous releases](#previous-releases)
+- [Alternate and Previous Releases](#alternate-and-previous-releases)
 
 ## Open-CE Release 1.11.5
 
@@ -38,9 +41,9 @@ ppc64le(P9)  | UBI 8      | DONE   | DONE   | DONE     | DONE      | 02/10/2025
 ppc64le(P10) | UBI 9      | DONE   | DONE   | DONE     | N/A       | 02/10/2025
 x86_64       | UBI 9      | ?      | ?      | Err      | Err       | TBD
 
-### What's new
+### What's New
 
-- Updated packages
+- **Updated Packages**
 
   - aiohappyeyeballs 2.4.0
   - aiohttp 3.10.2
@@ -89,14 +92,17 @@ x86_64       | UBI 9      | ?      | ?      | Err      | Err       | TBD
   - ray-client 2.35.0
   - ray-core 2.35.0
 
-- This release of Open-CE supports:
+- **This Release Supports**
 
-  - NVIDIA's CUDA version 12.2
+  - IBM Power 10 MMA
+  - Nvidia CUDA 12.2
   - Python 3.10, 3.11
 
-- Important Notes (n/a)
+- **Important Notes**
 
-### Learn more
+  - (n/a)
+
+### Learn More
 
 Get information about planning, configuring, and managing Open-CE below:
 
@@ -111,17 +117,19 @@ Get information about planning, configuring, and managing Open-CE below:
 
 We recommend users use one of the listed operating systems listed below. This is a standard conda repository and can be added to any conda install. Conda must be configured to give priority to installing packages from this channel.
 
-### System setup
+### System Setup
 
-Open-CE can be installed and run directly on a bare-metal RHEL and Ubuntu based systems.
+Open-CE can be installed and run directly on a bare-metal or VM systems installed with \[RH\]EL and Ubuntu.
 
-### OSU Supported hardware
+#### OSU Supported Hardware
 
-- IBM Power System IC922 with NVIDIA Tesla T4 GPUs
-- IBM Power System AC922 with NVIDIA Tesla V100 GPUs
+- IBM Power 10 systems
+  - See: [Alternate and Previous Releases](#alternate-and-previous-releases)
+- IBM Power 9 IC922 systems with NVIDIA Tesla T4 GPUs
+- IBM Power 9 AC922 systems with NVIDIA Tesla V100 GPUs
 - x86_64 systems with NVIDIA Tesla V100 or P100 GPUs
 
-### Supported operating systems
+#### Supported Operating Systems
 
 - ppc64le
   - Red Hat Enterprise Linux for POWER LE 8.1+
@@ -133,14 +141,14 @@ Open-CE can be installed and run directly on a bare-metal RHEL and Ubuntu based 
   - Rocky / Alma Linux 8.1+, 9.1+
   - Ubuntu 20.04.X, 22.04.X
 
-### Required 3rd party software
+##### Nvidia GPUs Required Software
 
 - NVIDIA GPU driver >=520.61.05
 - CUDA version 12.2
 
 ### Installing the Open-CE Repository and Frameworks
 
-#### Setting up the software repository
+#### Setting Up the Software Repository
 
 The Open-CE MLDL packages are distributed as conda packages in an online conda repository. Conda must be configured to give priority to installing packages from this channel.
 
@@ -150,7 +158,7 @@ Add the Open-CE channel to the conda configuration by running the following comm
   conda config --prepend channels https://ftp.osuosl.org/pub/open-ce/current/
   ```
 
-#### Creating conda environments (recommended)
+#### Creating Conda Environments (recommended)
 
 With conda, you can create environments that have different versions of Python or packages installed in them. Conda environments are optional but recommended. If not used, packages are installed in the default environment called base, which often has a higher risk of containing conflicting packages or dependencies. Switching between environments is called activating the environment.
 
@@ -176,11 +184,11 @@ For more information on what you can do with conda environment see <https://cond
 
 Note: Open-CE should be run as a non-privileged user and not root. The Open-CE components are designed to be usable by normal users, and the pre-installed docker images provide a non-root user by default. Some of the Open-CE components will give warnings or will fail when run as root.
 
-#### Installing frameworks individually
+#### Installing Frameworks Individually
 
 You can install the MLDL frameworks individually. The framework packages include the following versions.
 
-##### Table 1. Framework packages (Open-CE 1.11.5)
+##### Table 1. Framework Packages (current to v1.11.5)
 <!-- markdownlint-disable MD055 MD056 -->
  Package                                | Latest Version | Summary                                                                          | noarch
 ----------------------------------------|----------------|----------------------------------------------------------------------------------|--------
@@ -425,7 +433,7 @@ With the conda environment activated, run the following command:
   conda install <package name>
   ```
 
-### Uninstalling the MLDL frameworks
+### Uninstalling the MLDL Frameworks
 
 Find information about uninstalling machine learning and deep learning MLDL frameworks.
 
@@ -445,9 +453,11 @@ Individual frameworks (and any packages that depend on them) can be removed by r
 
 Important: This command removes the specified packages and any packages that depend on any of the specified packages. If you want to skip this dependency checking and remove just the requested packages, add the --force option. However, this may break your environment, so use this option with caution.
 
-## Previous releases
+## Alternate and Previous Releases
 
-We recommend that you install the most current release of Open-CE. However, if you have or need an earlier version installed, you can find information below:
+We recommend that you install the most current release of Open-CE. However, if you need or have installed an earlier version, you can find information below.
+
+For a full list of versions, including **Power 10 accelerated versions**, please see the full conda channel offerings here: <https://ftp.osuosl.org/pub/open-ce/>
 
 ### Open-CE Release 1.11.2
 
