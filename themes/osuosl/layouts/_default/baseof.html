@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
-  {{ partial "search.html" . }}
   {{- partial "head.html" . -}}
   <body>
+    {{ partial "search.html" . }}
     {{- partial "header.html" . -}}
     <div id="content">
       {{- block "main" . }}{{- end }}
