@@ -26,8 +26,10 @@ body {
 }
 
 main {
+  display: block flow-root;
   padding-left: 85px;
   padding-right: 85px;
+  margin-top: 0.5rem;
   margin-bottom: 100px;
 }
 
@@ -282,7 +284,6 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 .menu__list {
   list-style: none;
-  background: #fff;
   position: relative;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -411,8 +412,10 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .main-menu {
+  display: block flow-root;
   padding-left: 85px;
   padding-right: 85px;
+  box-shadow: 0 0 4px #d7d7d7;
 }
 
 .menu__item {
