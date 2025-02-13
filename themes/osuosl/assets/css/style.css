@@ -747,9 +747,8 @@ textarea {
 
 .cards-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 30px;
+  gap: 40px;
 }
 
 .card {
@@ -757,10 +756,7 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  margin-right: 40px;
-  margin-bottom: 40px;
-  width: 300px;
-  min-height: 200px;
+  max-width: 300px;
   box-shadow:
     0 1px 6px 0 rgba(0, 0, 0, 0.09),
     0 1px 2px 0 rgba(0, 0, 0, 0.14);
@@ -996,7 +992,7 @@ textarea {
   }
 
   .card {
-    margin-right: 0px;
+    max-width: unset;
   }
 
   .blog-container {
