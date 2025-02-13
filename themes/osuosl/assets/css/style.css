@@ -609,6 +609,14 @@ textarea {
   margin-bottom: 0.5rem;
 }
 
+.post__title a {
+  text-decoration: none;
+}
+
+.post__title:hover a {
+  text-decoration: underline;
+}
+
 .post__content {
   margin-bottom: 20px;
   margin-top: 10px;
@@ -826,10 +834,6 @@ textarea {
   list-style-image: none;
   padding-left: 0;
   margin-left: 0;
-}
-
-.blog-summaries a {
-  text-decoration: none;
 }
 
 .blog-container .read-more {
