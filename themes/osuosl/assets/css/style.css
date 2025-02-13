@@ -415,6 +415,10 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
   padding-right: 85px;
 }
 
+.menu__item {
+  margin: 0;
+}
+
 /*
     Images
 */
