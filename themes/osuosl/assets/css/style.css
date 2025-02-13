@@ -28,6 +28,7 @@ body {
 main {
   padding-left: 85px;
   padding-right: 85px;
+  margin-bottom: 100px;
 }
 
 h1,
@@ -70,8 +71,18 @@ a {
   color: #d73f09;
 }
 
-ul li {
+hr {
+  border: 0;
+  border-top: 2px solid #e5e2dd;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul {
   list-style-type: "\203A  ";
+}
+
+ul li {
   margin-bottom: 6px;
 }
 
@@ -277,10 +288,6 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
   margin-top: 10px;
   display: flex;
   padding: 0;
-}
-
-.menu__list li {
-  list-style: none;
 }
 
 .menu__item:hover {
@@ -585,9 +592,75 @@ textarea {
     Blog
 */
 
+.list__item.post + .list__item.post {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 2px solid #e5e2dd;
+}
+
+.post__title {
+  margin-bottom: 0.5rem;
+}
+
 .post__content {
   margin-bottom: 20px;
   margin-top: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+  font-size: 1.25rem;
+  list-style: none;
+}
+
+.page-item {
+  margin: 0;
+}
+
+.page-item a:hover {
+  background-color: #e6e2dd;
+  text-decoration: underline;
+}
+
+.page-item.active {
+  font-weight: bold;
+}
+
+/* Link boxes */
+.page-item a {
+  display: inline-block;
+  border-top: 1px solid #e5e2dd;
+  border-bottom: 1px solid #e5e2dd;
+  padding: 0.5rem;
+  line-height: 1;
+  text-decoration: none;
+}
+.page-item + .page-item a {
+  border-left: 1px solid #e5e2dd;
+}
+
+.page-item:first-child a {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-left: 1px solid #e5e2dd;
+}
+
+.page-item:last-child a {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-right: 1px solid #e5e2dd;
+}
+
+/* Make the page numbers not jump around in size */
+.page-number a {
+  text-align: center;
+  min-width: 2ch;
+}
+
+.list__footer-readmore:hover {
+  text-decoration: underline;
 }
 
 /*
@@ -756,25 +829,15 @@ textarea {
   text-decoration: none;
 }
 
-.blog-summaries li {
-  margin-bottom: 15px;
-}
-
-.blog-summaries a.read-more-link {
-  text-decoration: underline;
-}
-
-.blog-summaries h2 {
-  margin-bottom: 5px;
+.blog-container .read-more {
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .hosting-container {
   margin-top: 50px;
-}
-
-.space {
-  background: #fff;
-  height: 100px;
 }
 
 @media (max-width: 979px) {

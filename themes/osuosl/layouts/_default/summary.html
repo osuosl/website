@@ -18,11 +18,9 @@
   <div class="content list__excerpt post__content clearfix">
     {{ .Summary | plainify }}
   </div>
-  {{- if .Site.Params.readmore }}
-    {{- if .Truncated }}
-      <div class="list__footer clearfix">
-        <a class="list__footer-readmore btn" href="{{ .RelPermalink }}">{{ T "read_more" }}</a>
-      </div>
-    {{- end }}
+  {{- if .Truncated }}
+    <div class="list__footer clearfix">
+      <a class="list__footer-readmore btn" href="{{ .RelPermalink }}">Read more</a>
+    </div>
   {{- end }}
 </article>

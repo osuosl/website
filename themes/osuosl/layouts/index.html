@@ -9,7 +9,7 @@
     </div>
   </div>
   <main class="main_content">
-    <div class="info-container">
+    <section class="info-container">
       <div class="hosting-container">
         <h1>Hosting</h1>
         <p>Based on your hosting needs, we offer unmanaged and managed hosting for different environments:</p>
@@ -77,22 +77,22 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="blog-container">
+    <section class="blog-container">
       <h1>Blog</h1>
 
-      <ul class="blog-summaries">
+      <div class="blog-summaries">
         {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
-          <li>
-            {{ .Render "summary" }}
-          </li>
+          {{ .Render "summary" }}
         {{ end }}
-      </ul>
+      </div>
 
-      <h3><a href="/blog" class="read-more-link">More Blog Posts</a></h3>
-    </div>
-
-    <div class="space"></div>
+      <p class="read-more">
+        <a href="/blog" class="read-more-link"
+          >More Blog Posts ({{ where .Site.RegularPages "Section" "blog" | len }})</a
+        >
+      </p>
+    </section>
   </main>
 {{ end }}

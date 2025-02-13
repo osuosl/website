@@ -2,11 +2,15 @@
   {{- partial "menu.html" . -}}
   <main class="main_content">
     <h1>OSU Open Source Lab</h1>
-    <div>
-      {{ .Content }}
-    </div>
+    {{ if .Content }}
+      <div>
+        {{ .Content }}
+      </div>
+    {{ end }}
+    {{ partial "pagination.html" . }}
     {{- range .Paginator.Pages }}
       {{- .Render "summary" }}
     {{- end }}
+    {{ partial "pagination.html" . }}
   </main>
 {{ end }}
