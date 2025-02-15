@@ -756,6 +756,11 @@ textarea {
   margin: 0;
 }
 
+.hero-links i {
+  font-size: 0.8em;
+  margin-right: 0.25ch;
+}
+
 .card {
   padding: 1rem;
   box-shadow:
