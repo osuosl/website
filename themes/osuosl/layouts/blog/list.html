@@ -8,9 +8,11 @@
       </div>
     {{ end }}
     {{ partial "pagination.html" . }}
-    {{- range .Paginator.Pages }}
-      {{- .Render "summary" }}
-    {{- end }}
+    <div class="blog-summaries">
+      {{- range .Paginator.Pages }}
+        {{- .Render "summary" }}
+      {{- end }}
+    </div>
     {{ partial "pagination.html" . }}
   </main>
 {{ end }}
