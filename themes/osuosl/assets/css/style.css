@@ -416,6 +416,7 @@ img[src$="#right"] {
 img[src$="#right-people"] {
   float: right;
   width: 110px;
+  margin-left: 0.5rem;
 }
 
 img[src$="#right-barcamp"] {
