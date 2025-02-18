@@ -102,6 +102,7 @@ hr {
 
 ul {
   list-style-type: "\203A  ";
+  padding-inline-start: 1rem;
 }
 
 ul li {
