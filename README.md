@@ -55,6 +55,18 @@ npm run serve
 ./pagefind --site public --serve
 ```
 
+## Adding Content
+
+Regular pages use the default `/archetypes/default.md` archetype.
+
+Blog posts are stored in `/content/blog` and use the associated `/archetypes/blog.md` archetype.
+
+To add a blog post, use the `hugo new` command:
+
+```bash
+hugo new blog/your-slug-title-here.md
+```
+
 ## License
 
 [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/)
