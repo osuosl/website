@@ -1,8 +1,9 @@
 ---
-title: OSU Open Source Lab announces OSL Alliance Corporate Sponsorship Program
+title: "OSU Open Source Lab announces OSL Alliance Corporate Sponsorship Program"
 date: 2009-03-03
 authors: ["OSUOSL Admin"]
 slug: osl-announces-osl-alliance-corp-spons-prog
+tags: []
 ---
 
 IBM, Google and Real Networks among lab's industry donors

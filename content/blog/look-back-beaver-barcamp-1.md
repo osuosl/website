@@ -1,8 +1,9 @@
 ---
-title: A Look Back at Beaver BarCamp 1
+title: "A Look Back at Beaver BarCamp 1"
 date: 2013-08-19
 authors: ["Melissa Morse"]
 slug: look-back-beaver-barcamp-1
+tags: []
 ---
 
 ![First Beaver BarCamp](/images/FirstBeaverBarCamp.png#blog)

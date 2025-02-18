@@ -1,5 +1,5 @@
 ---
-title: Amanda Kelner on Graduating
+title: "Amanda Kelner on Graduating"
 date: 2017-07-30
 authors: ["Amanda Kelner"]
 slug: amanda-kelner-graduating

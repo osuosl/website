@@ -1,8 +1,9 @@
 ---
-title: OSL in the Spotlight at Summer Conferences
+title: "OSL in the Spotlight at Summer Conferences"
 date: 2012-08-13
 authors: ["Kayla Harr"]
 slug: osl-spotlight-summer-conferences
+tags: []
 ---
 
 ![OSL in the Spotlight at Summer Conferences](/images/CorbinTalkWebsite_0.jpg#blog)

@@ -1,8 +1,9 @@
 ---
-title: Come See the OSUOSL at OSCON 2011
+title: "Come See the OSUOSL at OSCON 2011"
 date: 2011-07-22
 authors: ["OSUOSL Admin"]
 slug: come-see-osuosl-oscon-2011
+tags: []
 ---
 
 ![OSCON 2011](/images/oscon2011_attending.gif#blog)

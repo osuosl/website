@@ -1,8 +1,9 @@
 ---
-title: OSL Staff Participate at DrupalCon 2013
+title: "OSL Staff Participate at DrupalCon 2013"
 date: 2013-06-04
 authors: ["Melissa Morse"]
 slug: osl-staff-participate-drupalcon-2013
+tags: []
 ---
 
 ![OSL Staff Participate at DrupalCon 2013](/images/DrupalCon-FeaturedImage.jpg#blog)

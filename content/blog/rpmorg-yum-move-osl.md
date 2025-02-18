@@ -1,8 +1,9 @@
 ---
-title: rpm.org and yum move to OSUOSL
+title: "rpm.org and yum move to OSUOSL"
 date: 2008-09-29
 authors: ["OSUOSL Admin"]
 slug: rpmorg-yum-move-osl
+tags: []
 ---
 
 The Oregon State University Open Source Lab is proud to be the new home for two very important OSS projects. We are now

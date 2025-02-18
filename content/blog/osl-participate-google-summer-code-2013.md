@@ -1,8 +1,9 @@
 ---
-title: OSL to Participate in Google Summer of Code 2013
+title: "OSL to Participate in Google Summer of Code 2013"
 date: 2013-04-11
 authors: ["Kayla Harr"]
 slug: osl-participate-google-summer-code-2013
+tags: []
 ---
 
 ![OSL to Participate in Google Summer of Code 2013](/images/gsoc-feature.png#blog)

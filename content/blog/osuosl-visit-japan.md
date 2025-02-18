@@ -1,8 +1,9 @@
 ---
-title: OSUOSL Visit to Japan
+title: "OSUOSL Visit to Japan"
 date: 2009-04-16
 authors: ["OSUOSL Admin"]
 slug: osuosl-visit-japan
+tags: []
 ---
 
 ![OSUOSL Visit to Japan](/images/deb_matz_0.jpg#blog)

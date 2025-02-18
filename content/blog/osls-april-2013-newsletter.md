@@ -1,8 +1,9 @@
 ---
-title: OSL's April 2013 Newsletter
+title: "OSL's April 2013 Newsletter"
 date: 2013-05-01
 authors: ["Mitchell Garcia"]
 slug: osls-april-2013-newsletter
+tags: []
 ---
 
 ![Lance Albertson](/images/lalbertson.jpg)

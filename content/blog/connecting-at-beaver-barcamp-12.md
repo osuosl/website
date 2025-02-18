@@ -1,8 +1,9 @@
 ---
-title: Connecting at Beaver BarCamp 12
+title: "Connecting at Beaver BarCamp 12"
 date: 2013-10-17
 authors: ["Melissa"]
 slug: connecting-at-beaver-barcamp-12
+tags: []
 ---
 
 ![Beaver Bar Camp](/images/bbc12-blog-post.jpg#blog)

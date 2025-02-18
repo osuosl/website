@@ -1,8 +1,9 @@
 ---
-title: SCALE x13
+title: "SCALE x13"
 date: 2015-03-24
 authors: ["Elijah Voigt"]
 slug: scale-x13
+tags: []
 ---
 
 ![SCALE x13](/images/scale-x13.jpg#blog)

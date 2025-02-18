@@ -1,8 +1,9 @@
 ---
-title: DevOps DayCamp 2015
+title: "DevOps DayCamp 2015"
 date: 2015-10-29
 authors: ["Amanda Kelner"]
 slug: devops-daycamp-15
+tags: []
 ---
 
 ![DevOps DayCamp 2015](/images/daycamp2015.jpg#blog)

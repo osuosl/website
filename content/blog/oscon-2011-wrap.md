@@ -1,8 +1,9 @@
 ---
-title: Highlights from OSCON 2011
+title: "Highlights from OSCON 2011"
 date: 2011-08-01
 authors: ["OSUOSL Admin"]
 slug: oscon-2011-wrap
+tags: []
 ---
 
 ## Summer Camp for Geeks

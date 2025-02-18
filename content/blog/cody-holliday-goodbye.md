@@ -1,5 +1,5 @@
 ---
-title: Goodbye Letter from Graduating Senior, Cody Holliday
+title: "Goodbye Letter from Graduating Senior, Cody Holliday"
 date: 2018-06-14
 authors: ["Cody Holliday"]
 slug: cody-holiday-goodbye

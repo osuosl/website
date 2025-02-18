@@ -1,8 +1,9 @@
 ---
-title: Hardware Donation Expands OSUOSL Infrastructure
+title: "Hardware Donation Expands OSUOSL Infrastructure"
 date: 2009-05-22
 authors: ["OSUOSL Admin"]
 slug: hardware-donation-expands-osuosl-infrastructure
+tags: []
 ---
 
 The Oregon State University Open Source Lab recently received a large gift in-kind donation from a local Portland

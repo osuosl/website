@@ -1,8 +1,9 @@
 ---
-title: OSL Summer 2016 Internship
+title: "OSL Summer 2016 Internship"
 date: 2016-10-31
-slug: summer-2016-internship
 authors: ["Amanda Kelner"]
+slug: summer-2016-internship
+tags: []
 ---
 
 ![OSL Interns](/images/Interns2016-1.jpg#blog)

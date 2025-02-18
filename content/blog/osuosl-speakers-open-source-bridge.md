@@ -1,8 +1,9 @@
 ---
-title: OSUOSL Speakers at Open Source Bridge
+title: "OSUOSL Speakers at Open Source Bridge"
 date: 2010-05-10
 authors: ["OSUOSL Admin"]
 slug: osuosl-speakers-open-source-bridge
+tags: []
 ---
 
 We're always excited to see open source events happening, especially when they are in our home state of Oregon!

@@ -1,8 +1,9 @@
 ---
 title: "New Project: polr"
 date: 2017-08-09
-slug: project-announcement-polr
 authors: ["Amanda Kelner"]
+slug: project-announcement-polr
+tags: []
 ---
 
 ![New Project: polr](/images/NewProjectAdjustedImage.png#blog)

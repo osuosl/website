@@ -1,8 +1,9 @@
 ---
-title: Special Student Attendee Packages for LinuxCon North America 2011
+title: "Special Student Attendee Packages for LinuxCon North America 2011"
 date: 2011-05-16
 authors: ["OSUOSL Admin"]
 slug: students-linuxcon2011
+tags: []
 ---
 
 You may recall from our recent newsletter that the OSL team is organizing a student focused track at the

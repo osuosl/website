@@ -1,8 +1,9 @@
 ---
-title: DevOps DayCamp
+title: "DevOps DayCamp"
 date: 2014-09-15
 authors: ["Rachel Turner"]
 slug: devops-daycamp
+tags: []
 ---
 
 ![DevOps DayCamp](/images/dodc_2.gif#blog)

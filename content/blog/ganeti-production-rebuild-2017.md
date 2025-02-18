@@ -1,8 +1,9 @@
 ---
-title: Ganeti Production Rebuild - Dec 11-15 & 18-19, 2017
+title: "Ganeti Production Rebuild - Dec 11-15 & 18-19, 2017"
 date: 2017-12-06
 authors: ["Lance Albertson"]
 slug: ganeti-production-rebuild-2017
+tags: []
 ---
 
 ![OSL Sign Picture](/images/OSLSignPicture.jpg#blog)

@@ -1,8 +1,9 @@
 ---
-title: Open Source Bridge Promotes Community
+title: "Open Source Bridge Promotes Community"
 date: 2013-06-24
 authors: ["Melissa Morse"]
 slug: open-source-bridge-promotes-community
+tags: []
 ---
 
 ![Open Source Bridge Promotes Community](/images/osbridgecommunity.jpg#blog)

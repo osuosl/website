@@ -1,8 +1,9 @@
 ---
-title: A Look Back at Mozila Firefox 1.0
+title: "A Look Back at Mozila Firefox 1.0"
 date: 2004-11-16
 authors: ["Anonymous"]
 slug: look-back-mozilla-firefox-10
+tags: []
 ---
 
 _As the Open Source Lab celebrates a decade of open source hosting, development and education, the lab is reflecting on

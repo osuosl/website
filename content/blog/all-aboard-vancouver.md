@@ -1,8 +1,9 @@
 ---
-title: All Aboard for Vancouver!
+title: "All Aboard for Vancouver!"
 date: 2011-08-10
 authors: ["OSUOSL Admin"]
 slug: all-aboard-vancouver
+tags: []
 ---
 
 ![LinuxCon Header](/images/header_linuxcon_na_0.png#blog)

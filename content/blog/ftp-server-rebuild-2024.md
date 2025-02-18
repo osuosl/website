@@ -1,8 +1,9 @@
 ---
-title: FTP Server Rebuild - March 2024
+title: "FTP Server Rebuild - March 2024"
 date: 2024-03-07
 slug: ftp-server-rebuild-2024
 authors: ["Lance Albertson"]
+tags: []
 ---
 
 ![OSL Sign](/images/OSLSignPicture.jpg)

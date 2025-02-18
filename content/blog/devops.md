@@ -1,8 +1,9 @@
 ---
-title: Building a Bright Future With DevOps
+title: "Building a Bright Future With DevOps"
 date: 2012-08-02
 authors: ["Kayla Harr"]
 slug: devops
+tags: []
 ---
 
 ![Student Experience at OSUOSL](/images/MikeRacksPicweb.jpg#blog)

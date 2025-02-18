@@ -1,5 +1,5 @@
 ---
-title: Cody Holliday on Why we should stop using C
+title: "Cody Holliday on Why we should stop using C"
 date: 2017-07-31
 authors: ["Cody Holliday"]
 slug: cody-holliday-stop-using-c

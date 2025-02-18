@@ -1,8 +1,9 @@
 ---
-title: MeeGo Comes to OSUOSL
+title: "MeeGo Comes to OSUOSL"
 date: 2010-04-13
 authors: ["OSUOSL Admin"]
 slug: meego-comes-osuosl
+tags: []
 ---
 
 As part a major effort and plan by the worldwide Nokia (Mameo project) and Intel (Moblin project) to share the MeeGo

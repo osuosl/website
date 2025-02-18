@@ -1,8 +1,9 @@
 ---
-title: OSL Staff Mentors International Students Through Google Summer of Code
+title: "OSL Staff Mentors International Students Through Google Summer of Code"
 date: 2013-02-11
 authors: ["Kayla Harr"]
 slug: osl-staff-mentors-international-students-through-google-summer-of-code
+tags: []
 ---
 
 ![OSL Staff Mentors International Students Through Google Summer of Code](/images/GsoC2012logo.jpg#blog)

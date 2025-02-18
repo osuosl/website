@@ -1,8 +1,9 @@
 ---
-title: Write the Docs '15
+title: "Write the Docs '15"
 date: 2015-06-17
 authors: ["Elijah Voigt"]
 slug: write-the-docs-15
+tags: []
 ---
 
 ![Write the Docs '15](/images/document-all-the-things.jpg#blog)

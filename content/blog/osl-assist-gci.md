@@ -1,8 +1,9 @@
 ---
-title: OSU Open Source Lab to assist young students in “Google Code-in” contest
+title: "OSU Open Source Lab to assist young students in “Google Code-in” contest"
 date: 2010-11-15
 authors: ["OSUOSL Admin"]
 slug: osl-assist-gci
+tags: []
 ---
 
 CORVALLIS, Ore. - High school students can soon participate in the [Google Code-in Contest](http://code.google.com/gci)

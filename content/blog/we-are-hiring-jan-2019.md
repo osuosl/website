@@ -1,8 +1,9 @@
 ---
-title: Hiring two DevOps student positions
+title: "Hiring two DevOps student positions"
 date: 2019-01-22
 slug: were-hiring-jan-2019
 authors: ["Lance Albertson"]
+tags: []
 ---
 
 ![Hiring two DevOps student position](/images/osl-students-2018.jpg#blog)

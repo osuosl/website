@@ -1,8 +1,9 @@
 ---
-title: A Little Love for the LUG
+title: "A Little Love for the LUG"
 date: 2011-08-03
 authors: ["OSUOSL Admin"]
 slug: lug-love
+tags: []
 ---
 
 The Oregon State University Linux Users Group ([LUG](http://lug.oregonstate.edu/)) exists to promote free and open

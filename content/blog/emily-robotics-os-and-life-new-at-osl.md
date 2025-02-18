@@ -3,6 +3,7 @@ title: "Emily on Essentials: Robotics, Open Source and Life as New Student at th
 date: 2011-06-03
 authors: ["OSUOSL Admin"]
 slug: emily-essentials-robotics-open-source-and-life-new-student-osl
+tags: []
 ---
 
 _Ed. Note: As part of our ongoing series of interviews with the OSL's student employees, this week we're bringing you

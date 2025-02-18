@@ -3,6 +3,7 @@ title: "OSL Newsletter: A Look Back at 2010"
 date: 2011-01-03
 authors: ["Lance Albertson"]
 slug: osl-newsletter-look-back-2010
+tags: []
 ---
 
 We’ve had plenty of good things happening at the OSL since we brought your our last newsletter, and as we’re busy

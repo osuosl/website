@@ -1,8 +1,9 @@
 ---
-title: Helping Drupal Grow
+title: "Helping Drupal Grow"
 date: 2009-02-05
 authors: ["OSUOSL Admin"]
 slug: drupal_infrastructure
+tags: []
 ---
 
 Submitted by OSUOSL Admin on February 5, 2009

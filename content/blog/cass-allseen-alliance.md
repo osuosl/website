@@ -1,8 +1,9 @@
 ---
-title: CASS and the AllSeen Alliance
+title: "CASS and the AllSeen Alliance"
 date: 2016-02-11
 authors: ["Amanda Kelner"]
 slug: cass-allseen-alliance
+tags: []
 ---
 
 ![AllSeen Alliance](/images/AllSeen-Alliance-Picture.png#blog)
