@@ -5,6 +5,7 @@ theme = 'osuosl'
 relativeURLs = true
 enableInlineShortcodes = true
 disablePathToLower = true
+ignoreLogs = ['warning-goldmark-raw-html']
 
 [params]
 description = 'A nonprofit organization working for the advancement of open source technologies.'
