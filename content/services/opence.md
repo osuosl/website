@@ -100,7 +100,9 @@ x86_64       | UBI 9      | ?      | ?      | Err      | Err       | TBD
 
 - **Important Notes**
 
-  - (n/a)
+  - Release 1.11.4
+    - Drops support for CUDA 11.8
+    - No support for Python 3.10
 
 ### Learn More
 
