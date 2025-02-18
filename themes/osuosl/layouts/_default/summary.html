@@ -5,10 +5,18 @@
         {{ .Title }}
       </a>
     </h2>
-    <p class="author-blog">
-      <span><i class="fa-regular fa-user"></i> {{ delimit .Params.authors ", " " and " }}</span>
-      <span><i class="fa-regular fa-calendar"></i> {{ .Date | dateFormat "Mon, Jan 02 2006" }}</span>
-    </p>
+    <div class="metadata">
+      <p><i class="fa-regular fa-user"></i> {{ delimit .Params.authors ", " " and " }}</p>
+      <p><i class="fa-regular fa-calendar-days"></i> {{ .Date | dateFormat "Mon, Jan 02 2006" }}</p>
+      <p><i class="fa-regular fa-clock"></i> {{ .ReadingTime }} minute read</p>
+      {{ with .GetTerms "tags" }}
+        <ul class="tag-list">
+          {{ range . }}
+            <li class="tag"><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
     {{- with .Params.lead }}
       <p class="list__lead post__lead">{{ . }}</p>
     {{- end }}

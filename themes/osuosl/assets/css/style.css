@@ -643,6 +643,36 @@ textarea {
   min-width: 2ch;
 }
 
+.metadata {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5ch;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85em;
+}
+
+.metadata p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.metadata .tag-list {
+  padding-inline-start: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.metadata li {
+  margin: 0;
+}
+
+.tag {
+  font-weight: bold;
+}
+
 /*
     Footer
 */
@@ -831,14 +861,6 @@ textarea {
 
 .blog-container {
   margin-top: 50px;
-}
-
-.author-blog {
-  margin-top: 0.25rem;
-  margin-bottom: 0.5rem;
-  font-size: 0.85em;
-  display: flex;
-  gap: 1.5ch;
 }
 
 .blog-summaries {
