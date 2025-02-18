@@ -1,18 +1,27 @@
 {{ define "main" }}
   {{- partial "menu.html" . -}}
   <main class="main_content">
-    <h1>OSU Open Source Lab Blog</h1>
-    {{ if .Content }}
+    <h1>Blog</h1>
+    <p>All <b>{{ .Pages.Len }}</b> posts</p>
+    <div class="blog-split">
       <div>
-        {{ .Content }}
+        <div class="blog-summaries">
+          {{- range .Paginator.Pages }}
+            {{- .Render "summary" }}
+          {{- end }}
+        </div>
+        {{ partial "pagination.html" . }}
       </div>
-    {{ end }}
-    {{ partial "pagination.html" . }}
-    <div class="blog-summaries">
-      {{- range .Paginator.Pages }}
-        {{- .Render "summary" }}
-      {{- end }}
+      <aside>
+        <div class="tag-cloud card">
+          <h2>Tags</h2>
+          <ul>
+            {{ range .Site.Taxonomies.tags.ByCount }}
+              <li><a href="{{ .Page.RelPermalink }}" class="tag">#{{ .Page.LinkTitle }}</a> ({{ .Count }})</li>
+            {{ end }}
+          </ul>
+        </div>
+      </aside>
     </div>
-    {{ partial "pagination.html" . }}
   </main>
 {{ end }}

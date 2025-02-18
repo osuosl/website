@@ -864,6 +864,29 @@ textarea {
   margin-top: 50px;
 }
 
+.blog-split {
+  display: grid;
+  grid-template-columns: 1fr min(30%, 350px);
+  gap: 1rem 2rem;
+}
+
+.tag-cloud {
+  position: sticky;
+  top: 2rem;
+}
+
+.tag-cloud h2 {
+  margin-bottom: 0;
+}
+
+.tag-cloud :first-child {
+  margin-top: 0;
+}
+
+.tag-cloud :last-child {
+  margin-bottom: 0;
+}
+
 .blog-summaries {
   display: flex;
   flex-direction: column;
@@ -890,6 +913,14 @@ textarea {
   .footer_menu_container {
     display: flex;
     flex-direction: row;
+  }
+
+  .blog-split {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-split aside {
+    order: -1;
   }
 }
 
