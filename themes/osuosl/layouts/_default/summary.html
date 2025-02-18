@@ -24,7 +24,7 @@
       <div class="list__meta meta">{{ . }}</div>
     {{- end }}
   </header>
-  <div class="content list__excerpt post__content clearfix">
+  <div class="content list__excerpt post__content">
     {{ .Summary | plainify }}
   </div>
   {{- if .Truncated }}
