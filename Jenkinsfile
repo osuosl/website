@@ -60,6 +60,14 @@ pipeline {
                      status: currentBuild.result,
                      targetUrl: "${siteUrl}",
                      message: "Site available: ${siteUrl}"
+
+	withCredentials([string(credentialsId: 'matrix-room-id', variable: 'ROOM_ID')]){
+		matrixSendMessage hostname: 'synapse.osuosl.org',
+				  accessTokenCredentialsId: 'matrix-notification',
+				  roomId: ROOM_ID,
+				  body: "osuosl/website - #${env.BUILD_ID} finished with status ${currentBuild.result} [Open](${env.BUILD_URL})",
+				  formattedBody: "osuosl/website - #${env.BUILD_ID} finished with status ${currentBuild.result} <br> <a href=\"${env.BUILD_URL}\">Open Jenkins Run</a> <br> <a href=\"${siteUrl}\">Open Staging Site</a>"
+	}
       }
     }
   }
