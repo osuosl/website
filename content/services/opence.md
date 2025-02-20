@@ -772,8 +772,11 @@ This is bug fix release 1 of release 1.5
 
 Key changes include:
 
-Refresh PyTorch to v1.10.1 remove py36 blocks and dataclasses from all recipes Update DALI to 1.9 (from 1.9-dev) Update
-tensorflow metadata to 1.5.0 Enable uwsgi for python version 3.9
+- Refresh PyTorch to v1.10.1
+- Remove py36 blocks and dataclasses from all recipes
+- Update DALI to 1.9 (from 1.9-dev)
+- Update tensorflow metadata to 1.5.0
+- Enable uwsgi for python version 3.9
 
 ### Open-CE Release 1.5.0
 
