@@ -17,7 +17,7 @@
 - name: Arch Linux
   description: mirroring
 - name: Armbian
-  description:  aarch64
+  description: aarch64
 - name: Bazel
   description: powerpc
 - name: BearSSL
@@ -131,7 +131,7 @@
 - name: Evolution Groupware Suite
   description: mailing-list
 - name: Falco
-  description:  powerpc
+  description: powerpc
 - name: F-Droid
   description: ci-cd
 - name: Fedora Copr
@@ -225,7 +225,7 @@
 - name: Jupyter / Base-notebook
   description: powerpc
 - name: K0S
-  description:  aarch64
+  description: aarch64
 - name: K-3D
   description: vm
 - name: Kali Linux
@@ -243,7 +243,7 @@
 - name: LFS (Linux From Scratch)
   description: mirroring
 - name: libGD
-  description:  powerpc
+  description: powerpc
 - name: libjpeg-turbo
   description: powerpc
 - name: libpng
@@ -363,7 +363,7 @@
 - name: OpenBLAS
   description: powerpc
 - name: OpenBMC
-  description:  powerpc
+  description: powerpc
 - name: OpenBSD
   description: ci-cd
 - name: Open-CE

@@ -4,8 +4,8 @@ slug: powerdev/request_gpu
 ---
 
 The Open Source Lab partners with IBM to host POWER based servers in order to provide an open platform for innovation to
-the open source community. For more information about this partnership, please visit our [POWER Development Hosting
-page]("/services/powerdev")
+the open source community. For more information about this partnership, please visit our
+[POWER Development Hosting page]("/services/powerdev")
 
 Please use the form below to request new hosting on the OpenPOWER GPU POWER environment hosted at the OSUOSL.
 
@@ -13,7 +13,7 @@ For any changes, updates, or issues with an existing project please send the spe
 [openpower-gpu-support@osuosl.org]("mailto:openpower-gpu-support@osuosl.org") and include the original project name in
 the subject line.
 
-This access is intended only for *free and open source* projects who qualify and are approved by both the OSUOSL and
+This access is intended only for _free and open source_ projects who qualify and are approved by both the OSUOSL and
 IBM. For proprietary sourced projects or products please use other POWER resources which can be found
 [here]("https://developer.ibm.com/linuxonpower/cloud-resources/").
 
@@ -24,6 +24,7 @@ questions or concerns about access as well as requests that require large amount
 in the "Other information" section.
 
 {{< raw >}}
+
 <div id="content">
 <!-- Formsender error script -->
 <script src="../../../js/formsender-error.js"></script>
@@ -157,7 +158,8 @@ in the "Other information" section.
       <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
       <!-- Formsender Settings -->
       <input type="hidden" name="last_name" value="" />
-      <input type="hidden" name="token" value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
+      <input type="hidden" name="token"
+        value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
       <!-- The following must be set to http://www.osuosl.org/services/powerdev/request_gpu in production -->
       <input type="hidden" name="redirect" value="/form-submitted" />
       <input type="hidden" name="mail_subject_prefix" value="New OpenPOWER GPU Request" />
@@ -165,7 +167,9 @@ in the "Other information" section.
       <input type="hidden" name="send_to" value="OpenPOWER-GPU" />
       <input type="hidden" name="ibm_power" value="ibm-power" />
       <input type="hidden" name="support" value="support" />
-      <input type="hidden" name="fields_to_join" value="username,name,lastname,phone,project_name,date,email,ibm_power,support,distribution,number_of_nodes,other_information" />
+      <input type="hidden" name="fields_to_join"
+        value="username,name,lastname,phone,project_name,date,email,ibm_power,support,distribution,number_of_nodes,other_information"
+      />
       <!-- /Formsender Settings -->
       <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op"
       value="Submit" class="form-submit" /></div>

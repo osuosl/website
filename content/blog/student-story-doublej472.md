@@ -1,5 +1,5 @@
 ---
-title: On Leaving the Open Source Lab, Jonathan Frederick
+title: "On Leaving the Open Source Lab, Jonathan Frederick"
 authors: ["Jonathan Frederick"]
 date: 2019-09-25
 slug: student-story-doublej472

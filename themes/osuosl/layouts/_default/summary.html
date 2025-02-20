@@ -1,26 +1,35 @@
-<article class="list__item post">
-    <header class="list__header">
-        <h2 data-pagefind-meta="title" class="list__title post__title">
-            <a href="{{ .RelPermalink }}" rel="bookmark">
-                {{ .Title }}
-            </a>
-        </h2>
-        <small class="author-blog">by {{ delimit .Params.authors ", " " and " }} on {{ .Date | dateFormat "Mon, Jan 02 2006" }}</small>
-        {{- with .Params.lead }}
-        <p class="list__lead post__lead">{{ . }}</p>
-        {{- end }}
-        {{ with partial "post_meta.html" . -}}
-        <div class="list__meta meta">{{ . }}</div>
-        {{- end }}
-    </header>
-    <div class="content list__excerpt post__content clearfix">
-        {{ .Summary | plainify }}
+<article class="list__item post card">
+  <header class="list__header">
+    <h2 data-pagefind-meta="title" class="list__title post__title ">
+      <a href="{{ .RelPermalink }}" rel="bookmark" class="hover-link">
+        {{ .Title }}
+      </a>
+    </h2>
+    <div class="metadata">
+      <p><i class="fa-regular fa-user"></i> {{ delimit .Params.authors ", " " and " }}</p>
+      <p><i class="fa-regular fa-calendar-days"></i> {{ .Date | dateFormat "Mon, Jan 02 2006" }}</p>
+      <p><i class="fa-regular fa-clock"></i> {{ .ReadingTime }} minute read</p>
+      {{ with .GetTerms "tags" }}
+        <ul class="tag-list">
+          {{ range . }}
+            <li class="tag"><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
     </div>
-    {{- if .Site.Params.readmore }}
-    {{- if .Truncated }}
+    {{- with .Params.lead }}
+      <p class="list__lead post__lead">{{ . }}</p>
+    {{- end }}
+    {{ with partial "post_meta.html" . -}}
+      <div class="list__meta meta">{{ . }}</div>
+    {{- end }}
+  </header>
+  <div class="content list__excerpt post__content">
+    {{ .Summary | plainify }}
+  </div>
+  {{- if .Truncated }}
     <div class="list__footer clearfix">
-        <a class="list__footer-readmore btn" href="{{ .RelPermalink }}">{{ T "read_more" }}</a>
+      <a class="list__footer-readmore link-button" href="{{ .RelPermalink }}">Read more &rarr;</a>
     </div>
-    {{- end }}
-    {{- end }}
+  {{- end }}
 </article>

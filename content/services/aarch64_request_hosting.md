@@ -2,21 +2,23 @@
 title: AARCH64 OpenStack Request Form
 slug: /aarch64/request_hosting
 ---
-The Open Source Lab partners with Ampere Computing to host AARCH64
-based servers in order to provide an open platform for innovation to
-the open source community. **For more information about AARCH64 Hosting, please visit our [AARCH64 Development Hosting page](/services/aarch64).**
 
-Please use the form below to request *new* hosting on the AARCH64 environment hosted at the OSUOSL.
+The Open Source Lab partners with Ampere Computing to host AARCH64 based servers in order to provide an open platform
+for innovation to the open source community. **For more information about AARCH64 Hosting, please visit our
+[AARCH64 Development Hosting page](/services/aarch64).**
 
-For any *changes, updates, or issues with an existing project* please send the specific request as an email to
-[aarch64-hosting-request@osuosl.org](mailto:aarch64-hosting-request@osuosl.org) and include the original project name
-in the subject line and the IP address(es) for the VM(s) in the message body of the request which will help us narrow
-down what specific VM it's for.
+Please use the form below to request _new_ hosting on the AARCH64 environment hosted at the OSUOSL.
 
-This access is intended only for ***free and open source*** projects who qualify and are approved by the OSUOSL.  For
+For any _changes, updates, or issues with an existing project_ please send the specific request as an email to
+[aarch64-hosting-request@osuosl.org](mailto:aarch64-hosting-request@osuosl.org) and include the original project name in
+the subject line and the IP address(es) for the VM(s) in the message body of the request which will help us narrow down
+what specific VM it's for.
+
+This access is intended only for **_free and open source_** projects who qualify and are approved by the OSUOSL. For
 proprietary sourced projects or products please contact [info@amperecomputing.com](mailto:info@amperecomputing.com)
 
 {{< raw >}}
+
 <script src="../../../js/formsender-error.js"></script>
 <form class="webform-client-form" enctype="multipart/form-data" action="https://formsender.osuosl.org:443"
   method="post" id="webform-client-form-1086" accept-charset="UTF-8">
@@ -152,7 +154,9 @@ proprietary sourced projects or products please contact [info@amperecomputing.co
       <div class="form-item webform-component webform-component-textarea" id="webform-component-ssh-key">
         <label for="edit-submitted-ssh-key">SSH Public Key <span class="form-required" title="This field is
         required.">&ast;</span></label>
-        <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-ssh-key" name="ssh_public_key" cols="60" rows="5" class="form-textarea required"></textarea></div>
+        <div class="form-textarea-wrapper resizable">
+          <textarea id="edit-submitted-ssh-key" name="ssh_public_key" cols="60" rows="5" class="form-textarea required"></textarea>
+        </div>
         <div class="description">Public SSH key to be used for initial access to the system.</div>
       </div>
       <p><i>You should receive an automated email from our request ticketing system to the email address you have
@@ -162,7 +166,8 @@ proprietary sourced projects or products please contact [info@amperecomputing.co
       <div class="g-recaptcha" data-sitekey="6LeOugIAAAAAALZJU8MBrWbtN6NC9sMGCu8Xgb41"></div>
       <!-- Formsender Settings -->
       <input type="hidden" name="last_name" value="" />
-      <input type="hidden" name="token" value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
+      <input type="hidden" name="token"
+        value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
       <!-- The following must be set to http://www.osuosl.org/services/powerdev/request_hosting in production -->
       <input type="hidden" name="redirect" value="https://www.osuosl.org/form-submitted" />
       <input type="hidden" name="mail_subject_prefix" value="New AARCH64 Hosting Request" />

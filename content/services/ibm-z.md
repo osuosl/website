@@ -5,14 +5,14 @@ slug: /ibm-z
 
 The Open Source Lab partners with [Marist College](http://www.marist.edu/), who has a long-standing relationship with
 [IBM](https://www.ibm.com/us-en/), to provide access to [IBM Z](https://en.wikipedia.org/wiki/IBM_Z) based servers for
-the open source community.  With this partnership, the Open Source Lab is able to offer continuous integration services
-via Jenkins allowing open source projects to build and test on the s390x architecture.  More information about running
-Linux on IBM Z can be found at IBM's [Linux on IBM Z
-community](https://www.ibm.com/developerworks/community/groups/community/lozopensource).
+the open source community. With this partnership, the Open Source Lab is able to offer continuous integration services
+via Jenkins allowing open source projects to build and test on the s390x architecture. More information about running
+Linux on IBM Z can be found at IBM's
+[Linux on IBM Z community](https://www.ibm.com/developerworks/community/groups/community/lozopensource).
 
 ### IBM Z Continuous Integration (IBM Z CI)
 
-An OSL-managed Jenkins service is hosted at https://ibmz-ci.osuosl.org. This service is intended to allow projects
+An OSL-managed Jenkins service is hosted at <https://ibmz-ci.osuosl.org>. This service is intended to allow projects
 easier access to the s390x architecture via Jenkins.
 
 Users can request access to register one or more GitHub repositories on the Jenkins server, where they can configure the

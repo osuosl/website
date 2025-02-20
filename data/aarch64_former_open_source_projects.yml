@@ -1,6 +1,10 @@
 - name: gVisor
   description: Provide isolation for containers, so that the overall system remains secure.
 - name: MSYS2
-  description: MSYS2 is a collection of tools and libraries providing you with an easy-to-use environment for building, installing and running native Windows software.
+  description:
+    MSYS2 is a collection of tools and libraries providing you with an easy-to-use environment for building, installing
+    and running native Windows software.
 - name: Skytable
-  description: Skytable is an insanely fast, free and open-source, realtime NoSQL database that aims to provide flexible data modeling without compromising on performance or queryability — at scale.
+  description:
+    Skytable is an insanely fast, free and open-source, realtime NoSQL database that aims to provide flexible data
+    modeling without compromising on performance or queryability — at scale.

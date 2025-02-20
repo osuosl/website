@@ -15,8 +15,7 @@ If you are interested in donating hardware to the OSL, please keep the following
 - Hardware must be made by a vendor and cannot be custom built
 - Shipping must be covered
 
-Current Wishlist
-----------------
+## Current Wishlist
 
 Our hardware needs change over time, but here is a current list of specific needs:
 
@@ -28,4 +27,4 @@ Our hardware needs change over time, but here is a current list of specific need
 - 40Gb+ edge / core routers
 - 1Gb managed ToR switches
 
-Please contact us at donations@osuosl.org if you are interested in donating any hardware to the OSL.
+Please contact us at <donations@osuosl.org> if you are interested in donating any hardware to the OSL.
