@@ -1,0 +1,20 @@
+name: Markdownlint Check
+
+# This action works with pull requests and pushes on the main branch
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+
+jobs:
+  lint:
+    name: Markdownlint Check
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: DavidAnson/markdownlint-cli2-action@v19
+      with:
+        config: './.markdownlint.yaml'
+        globs: |
+          **/*.md
