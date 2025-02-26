@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "pagefind --site public --serve",
     "format": "prettier . -w",
-    "lint": "markdownlint-cli2 ./content/**/*.md"
+    "lint": "markdownlint-cli2 \"./content/**/*.md\""
   },
   "author": "",
   "license": "Apache-2.0",
