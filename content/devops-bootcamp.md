@@ -18,4 +18,4 @@ times every month during the school year. During these sessions OSL students and
 interested on necessary topics. DevOps BootCamp starts with the basics and does not assume familiarity with software
 development or Linux.
 
-To learn more about DevOps BootCamp, please visit http://devopsbootcamp.osuosl.org
+To learn more about DevOps BootCamp, please visit <http://devopsbootcamp.osuosl.org>

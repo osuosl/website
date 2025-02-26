@@ -18,7 +18,7 @@ administration you are required to do in your own infrastructure.
 ## To Request Hosting
 
 The Open Source Lab provides hosting for projects and communities involved with open source software development.
-Typically we refer to the Open Source Initiative's definition of open source, found at http://www.opensource.org. If
+Typically we refer to the Open Source Initiative's definition of open source, found at <http://www.opensource.org.> If
 your project follows an open development model and is freely available under an OSI-approved license, you may qualify
 for hosting. For more about which projects we consider for hosting, see our [Hosting Policy](/services/hosting/policy).
 

@@ -18,7 +18,7 @@ Explore our Student Experience pages to find out more about what it means to be 
 
 [Education and Events](/about/education)
 
-## Introducing our Sponsor a Student Program!
+## Introducing our Sponsor a Student Program
 
 The OSL is funded on individual donations and a handful of contracted projects. You now have the opportunity to fund one
 of our student employees and give them the chance at a life changing opportunity and to become part of the next

@@ -11,7 +11,7 @@ Open Source Community. These services include:
 - Managed/unmanaged hosting – anything from a website, to a virtual machine, to dedicated hardware.
 - FTP mirroring from our national mirror network.
 - Various other services such as email relay, DNS, database servers, backups and monitoring. See our services page for
-  more information: http://osuosl.org/services/hosting.
+  more information: <http://osuosl.org/services/hosting>.
 
 ## Conditions of Use Policy
 
@@ -29,7 +29,7 @@ OSUOSL reserves the right to disable accounts, disconnect systems and/or discont
 
 Our hosting services are limited to open source projects and related community sites. In general, this refers to
 licenses approved by the Open Source Initiative (OSI), which maintains a list of approved licenses on their website:
-http://www.opensource.org/. Projects that release under other “open” licenses which are not OSI-approved will be
+<http://www.opensource.org/.> Projects that release under other “open” licenses which are not OSI-approved will be
 considered on a case-by-case basis.
 
 We provide hosting for various types of projects. Some are software/code-based projects such as Linux distributions,

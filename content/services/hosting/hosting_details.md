@@ -11,7 +11,7 @@ provide.
 
 Most of our hosting falls into two categories, managed or unmanaged.
 
-#### Managed
+### Managed
 
 For managed hosting, we will take care of your system(s) using our configuration management which ensures your systems
 are always up to date, stable with tested configurations, and automated. We currently use [Chef](https://www.chef.io/)
@@ -22,7 +22,7 @@ any data.
 Managed systems are ideal for smaller projects that have simple requirements and don't want to deal with day-to-day
 system administration tasks.
 
-#### Unmanaged
+### Unmanaged
 
 Unmanaged hosting means you control everything about your system(s). We only require that you keep one sudo-enabled
 account on the system for us to use as needed for troubleshooting. We will not actively manage, monitor or back up these
@@ -37,7 +37,7 @@ We currently have two virtualization clusters available for use: [Ganeti](http:/
 [OpenStack](http://openstack.org). Depending on the project's use case, we host their VM(s) on either or both platforms.
 Both clusters are powered with the [KVM hypervisor](http://www.linux-kvm.org/page/Main_Page).
 
-#### OpenStack
+### OpenStack
 
 OpenStack offers a full API and web interface which allows projects to manage their VM resources as they see fit. Our
 OpenStack cluster currently offers the following services:
@@ -52,7 +52,7 @@ We plan to add more OpenStack services as needed by projects. Our cluster is cur
 eight compute nodes. Storage is powered via a six-node Ceph cluster. If you need to dynamically create/destroy/manage
 your services, our OpenStack cluster is the way to go.
 
-#### Ganeti
+### Ganeti
 
 We have used Ganeti for ten years and it continues to be the stable solution for long-running VMs that need minimal
 changes. We have a cluster with eight nodes for small projects and offer VMs at a variety of sizes and platforms, all
@@ -95,12 +95,12 @@ projects as we can, however space is limited.
 
 ## E-Mail
 
-#### Mail Relaying
+### Mail Relaying
 
 We have a number of local mail relays that OSL-hosted servers can use to help relieve some of the pressure that mail can
 put on your servers. These relays do spam and virus tagging.
 
-#### Mailing Lists
+### Mailing Lists
 
 We use [Mailman](http://www.list.org/) for any mailing list needs. We can help you migrate old lists or create new lists
 that are centrally managed on our system.
@@ -130,14 +130,14 @@ machines larger than 2U, but can work with our clients to accommodate larger ser
 
 ## Monitoring
 
-#### Realtime
+### Realtime
 
 We use [Nagios](http://nagios.org/) to monitor our managed hosts and send alerts to [PagerDuty](http://pagerduty.com/)
 when services go down. We are able to offer fine-grained monitoring and notification to our hosted clients as needed. In
 addition, we use [Prometheus](https://prometheus.io/) with [Grafana](https://grafana.com/) to track various metrics of
 our infrastructure.
 
-#### Trend Graphs
+### Trend Graphs
 
 We primarily use [Munin](http://munin-monitoring.org/) to monitor the health of servers at the OSL. Statistics such as
 CPU usage, load, memory, network traffic and more can all be monitored and historically tracked.
