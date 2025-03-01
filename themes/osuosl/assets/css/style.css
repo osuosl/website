@@ -912,6 +912,10 @@ textarea {
   font-size: 1.25rem;
 }
 
+
+/*
+    Tablet styles
+*/
 @media (max-width: 979px) {
   main {
     padding-left: 15px;
@@ -936,6 +940,9 @@ textarea {
   }
 }
 
+/*
+    Mobile styles
+*/
 @media (max-width: 767px) {
   body {
     width: 100%;
