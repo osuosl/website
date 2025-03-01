@@ -1,0 +1,7 @@
+<ul class="breadcrumbs">
+  {{- range .Ancestors.Reverse }}
+    {{ $title := cond (eq .Title site.Title) "Home" .Title }}
+    <li><a href="{{ .RelPermalink }}" class="hover-link">{{ $title }}</a></li>
+  {{- end }}
+  <li><a href="{{ .RelPermalink }}" class="hover-link">{{ .Title }}</a></li>
+</ul>

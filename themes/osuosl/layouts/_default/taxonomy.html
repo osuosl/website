@@ -1,6 +1,7 @@
 {{ define "main" }}
   {{- partial "menu.html" . -}}
   <main class="main_content">
+    {{- partial "breadcrumbs.html" . -}}
     <h1>{{ .Title }}</h1>
     {{ .Content }}
     <ul>

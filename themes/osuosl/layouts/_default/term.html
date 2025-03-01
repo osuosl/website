@@ -1,6 +1,7 @@
 {{ define "main" }}
   {{- partial "menu.html" . -}}
   <main class="main_content">
+    {{- partial "breadcrumbs.html" . -}}
     <h1>Tag: #{{ .Slug }}</h1>
     <p><b>{{ .Pages.Len }}</b> posts tagged <a href="{{ .RelPermalink }}" class="tag">#{{ .Slug }}</a></p>
     {{ .Content }}

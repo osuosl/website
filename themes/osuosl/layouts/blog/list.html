@@ -1,6 +1,7 @@
 {{ define "main" }}
   {{- partial "menu.html" . -}}
   <main class="main_content">
+    {{- partial "breadcrumbs.html" . -}}
     <h1>Blog</h1>
     <p>All <b>{{ .Pages.Len }}</b> posts</p>
     <div class="blog-split">

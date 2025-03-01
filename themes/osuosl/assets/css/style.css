@@ -910,6 +910,30 @@ textarea {
   font-size: 1.25rem;
 }
 
+/*
+    Blog post
+*/
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  margin: 0;
+}
+
+.breadcrumbs li:first-child::before {
+  content: unset;
+}
+
+.breadcrumbs li::before {
+  content: "/";
+  display: inline-block;
+  margin: 0 0.25rem;
+}
+
 
 /*
     Tablet styles
