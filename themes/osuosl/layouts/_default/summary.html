@@ -8,7 +8,7 @@
     <div class="metadata">
       <p><i class="fa-regular fa-user"></i> {{ delimit .Params.authors ", " " and " }}</p>
       <p><i class="fa-regular fa-calendar-days"></i> {{ .Date | dateFormat "Mon, Jan 02 2006" }}</p>
-      <p><i class="fa-regular fa-clock"></i> {{ .ReadingTime }} minute read</p>
+      <p><i class="fa-regular fa-hourglass-half"></i> {{ .ReadingTime }} mins</p>
       {{ with .GetTerms "tags" }}
         <ul class="tag-list">
           {{ range . }}
