@@ -428,11 +428,6 @@ img[src$="#right-people"] {
   margin-left: 0.5rem;
 }
 
-img[src$="#right-barcamp"] {
-  float: right;
-  width: 200px;
-}
-
 img[src$="#right-bootcamp"] {
   float: right;
   height: 200px;
@@ -465,6 +460,13 @@ img[src$="#blog-center"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+img[src$="#tag-image"] {
+  display: block;
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
 }
 
 .clearfix::after {

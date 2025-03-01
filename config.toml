@@ -216,16 +216,23 @@ weight = 2
 [[menu.main]]
 parent = "education"
 name = "Beaver Barcamp"
-url = "/about/beaverbarcamp"
+url = "/tags/beaver-barcamp"
 weight = 1
 
 [[menu.main]]
 parent = "students"
 name = "Student Stories"
-url = "/student-stories"
+url = "/tags/student-stories"
 weight = 3
 
 [[menu.main]]
 name = "Blog"
 weight = 5
 url = "/blog"
+identifier = "blog"
+
+[[menu.main]]
+parent = "blog"
+name = "Tags"
+weight = 1
+url = "/tags"

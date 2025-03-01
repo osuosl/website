@@ -1,9 +1,9 @@
 ---
 title: "Beaver BarCamp"
-slug: beaverbarcamp
+slug: beaver-barcamp
 ---
 
-![Beaver Bar Camp](/images/barcamp.png#right-barcamp)
+![Beaver Bar Camp](/images/barcamp.png#tag-image)
 
 Beaver BarCamp is an annual unconference hosted by the Open Source Lab as an all day event that allows you to “share
 your passion.” All participants work together to create an interactive schedule geared towards topics of the group’s

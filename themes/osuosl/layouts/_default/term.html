@@ -1,14 +1,9 @@
 {{ define "main" }}
   {{- partial "menu.html" . -}}
   <main class="main_content">
-    <h1>Tag: #{{ .Title }}</h1>
-    <p>
-      <b>{{ .Pages.Len }}</b> posts tagged <a href="{{ .Page.RelPermalink }}" class="tag">#{{ .Page.LinkTitle }}</a>
-    </p>
+    <h1>Tag: #{{ .Slug }}</h1>
+    <p><b>{{ .Pages.Len }}</b> posts tagged <a href="{{ .RelPermalink }}" class="tag">#{{ .Slug }}</a></p>
     {{ .Content }}
-    {{- $studentStories := where (where .Site.RegularPages "Section" "blog") "Params.tags" "intersect" (slice
-      "student-stories")
-    }}
     <div class="blog-split">
       <div>
         {{ partial "pagination.html" . }}
@@ -20,17 +15,7 @@
         {{ partial "pagination.html" . }}
       </div>
       <aside>
-        <div class="tag-cloud card">
-          <h2>Tags</h2>
-          <ul>
-            {{ range .Site.Taxonomies.tags.ByCount }}
-              <li>
-                <a href="{{ .Page.RelPermalink }}" class="tag">#{{ .Page.LinkTitle }}</a> ({{ .Count }})
-                {{- if eq .Page.Title $.Title -}}&nbsp;<small>&larr;</small>{{- end -}}
-              </li>
-            {{ end }}
-          </ul>
-        </div>
+        {{ partial "tag_cloud.html" . }}
       </aside>
     </div>
   </main>
