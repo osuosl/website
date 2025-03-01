@@ -283,10 +283,11 @@ pre {
 
 .menu__item:hover {
   background-color: var(--background-surface-low);
+  color: var(--on-contrast);
 }
 
-.menu__item:first-child {
-  border: 0;
+.menu__item:hover .menu__link {
+  color: var(--on-contrast);
 }
 
 .menu__link {
@@ -295,7 +296,7 @@ pre {
   justify-content: space-between;
   padding: 5px 10px;
   padding: 0.4rem 0.9375rem;
-  color: var(--foreground);
+  color: inherit;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -360,15 +361,6 @@ pre {
 .submenu__item:hover .third__dropdown {
   display: flex;
   flex-direction: column;
-}
-
-.menu__link:hover {
-  background-color: var(--background-surface-lowest);
-  color: var(--on-contrast);
-}
-
-.menu__item:hover .menu__link {
-  color: var(--on-contrast);
 }
 
 .js .menu__list {
