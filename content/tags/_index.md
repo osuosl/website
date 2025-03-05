@@ -1,4 +1,4 @@
 ---
-title: "All Tags"
+title: "Tags"
 slug: tags
 ---
