@@ -934,6 +934,24 @@ textarea {
   margin: 0 0.25rem;
 }
 
+/*
+    Archive styles
+*/
+.archive-title-count {
+  font-size: 1rem;
+  color: var(--contrast);
+  font-weight: 500;
+}
+
+.archive-list {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.archive-list li {
+  display: flex;
+  gap: 1ch;
+}
 
 /*
     Tablet styles

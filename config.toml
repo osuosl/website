@@ -9,6 +9,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 [params]
 description = 'A nonprofit organization working for the advancement of open source technologies.'
 url = "https://osuosl.org/"
+archivesSections = ['blog']
 
 [taxonomies]
 tag = "tags"
@@ -235,3 +236,9 @@ parent = "blog"
 name = "Tags"
 weight = 1
 url = "/tags"
+
+[[menu.main]]
+parent = "blog"
+name = "Archives"
+weight = 2
+url = "/archives"

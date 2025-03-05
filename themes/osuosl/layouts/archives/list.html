@@ -1,0 +1,20 @@
+{{ define "main" }}
+  {{- partial "menu.html" . -}}
+  <main class="main_content">
+    {{- partial "breadcrumbs.html" . -}}
+    <h1>{{ .Title }}</h1>
+    {{ $posts := (where .Page.Site.RegularPages "Section" "in" .Site.Params.archivesSections) }}
+    <p>All <b>{{ $posts.Len }}</b> posts</p>
+    {{ range $posts.GroupByDate "2006" }}
+      <h2>{{ .Key }} <span class="archive-title-count">({{ len .Pages }} posts)</span></h2>
+      <ul class="archive-list">
+        {{ range .Pages.ByTitle }}
+          <li>
+            <span class="date-wrap">{{ .Date | dateFormat "2006-02" }}</span>
+            <a href="{{ .RelPermalink }}" class="hover-link">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </main>
+{{ end }}
