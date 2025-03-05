@@ -281,8 +281,13 @@ pre {
   padding: 0;
 }
 
-.menu__item:hover {
+.menu__item:has(.menu__item:hover) {
   background-color: var(--background-surface-low);
+  color: var(--on-contrast);
+}
+
+.menu__item:hover {
+  background-color: var(--background-surface-lowest);
   color: var(--on-contrast);
 }
 
