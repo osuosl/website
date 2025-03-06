@@ -1,9 +1,18 @@
 {{ define "main" }}
   {{- partial "menu.html" . -}}
+  {{ $cover := or .Params.Cover "/images/OSLSignPicture.jpg" }}
   <main class="main_content">
     <article class="blog-post">
       {{- partial "breadcrumbs.html" . -}}
-      <h1 data-pagefind-meta="title">{{ .Title }}</h1>
+      <img
+        src="{{ $cover }}"
+        alt=""
+        class="blog-post-cover"
+        {{- if .Params.cover_height -}}
+          style="object-position: center {{ .Params.cover_height }}"
+        {{- end -}}
+      />
+      <h1 class="blog-post-title" data-pagefind-meta="title">{{ .Title }}</h1>
       <p>by {{ delimit .Params.authors ", " " and " }} on {{ .Date | dateFormat "Mon, Jan 02 2006" }}</p>
       {{ .Content }}
     </article>
