@@ -923,6 +923,28 @@ textarea {
 /*
     Blog post
 */
+.blog-post {
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.blog-post-cover {
+  max-height: 30vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog-post h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--background-surface);
+}
+
+.blog-post img {
+  display: block;
+  margin-inline: auto;
+  box-shadow: 0 0 16px var(--background-surface);
+}
+
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
