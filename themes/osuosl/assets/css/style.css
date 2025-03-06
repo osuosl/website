@@ -624,8 +624,13 @@ textarea {
   text-decoration: underline;
 }
 
-.page-item.active {
-  font-weight: bold;
+.page-item.active a {
+  background-color: var(--primary);
+  color: var(--on-contrast);
+}
+
+.page-item.active a:hover {
+  background-color: var(--primary-hover);
 }
 
 /* Link boxes */
