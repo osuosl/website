@@ -962,6 +962,14 @@ textarea {
   object-fit: cover;
 }
 
+.blog-post-title {
+  margin-bottom: 0;
+}
+
+.blog-post-info {
+  margin-top: 0;
+}
+
 .blog-post h2 {
   font-size: 1.5rem;
   border-bottom: 1px solid var(--background-surface);
