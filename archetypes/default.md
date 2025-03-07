@@ -1,4 +1,4 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "{{ replace .Name '-' ' ' | title }}"
 slug: {{ .Name }}
 ---
