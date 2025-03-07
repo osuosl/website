@@ -4,9 +4,8 @@ date: 2018-06-20
 authors: ["Mohamed Eldebri"]
 slug: tds-telecom-support
 tags: []
+cover: "/images/tds_osl_logos.png"
 ---
-
-![TDS Telecom Support of OSU Open Source Lab Tops $5 Million](/images/tds_osl_logos.png)
 
 TDS Telecommunications, a telephone and Internet services provider has been supporting the OSL since 2005 by providing
 bandwidth and colocation hosting for the OSL's mirrors. TDS recently made a large bandwidth donation valued at more than

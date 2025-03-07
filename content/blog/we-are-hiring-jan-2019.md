@@ -1,12 +1,11 @@
 ---
 title: "Hiring two DevOps student positions"
 date: 2019-01-22
-slug: were-hiring-jan-2019
 authors: ["Lance Albertson"]
+slug: were-hiring-jan-2019
 tags: []
+cover: "/images/osl-students-2018.jpg"
 ---
-
-![Hiring two DevOps student position](/images/osl-students-2018.jpg)
 
 Are you a student at Oregon State University who likes working with open source software? If so, then we have a job for
 you! We currently have two [student systems engineer](https://jobs.oregonstate.edu/postings/70962) positions open which

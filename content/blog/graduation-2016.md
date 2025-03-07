@@ -4,9 +4,8 @@ date: 2016-06-01
 authors: ["Amanda Kelner"]
 slug: graduation-2016
 tags: []
+cover: "/images/Graduation2016PostPicture.png"
 ---
-
-![OSL 2016 graduates](/images/Graduation2016PostPicture.png)
 
 As exciting as the end of the school year is for everyone, and with it the promise of sun, no classes, shorts, extended
 vacations, and no classes, it also brings an inevitable goodbye to those leaving to enter the real world.

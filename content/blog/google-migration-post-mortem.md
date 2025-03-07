@@ -4,9 +4,8 @@ date: 2014-07-03
 authors: ["Justin Dugger"]
 slug: google-migration-post-mortem
 tags: []
+cover: "/images/Justinblog1_0.gif"
 ---
-
-![Google Migration Post Mortem](/images/Justinblog1_0.gif)
 
 OSU administration recently approached the OSL asking us to help migrate their email archives to Google. Through
 contacts with other local universities that had made the switch recently, we discovered that Portland State University

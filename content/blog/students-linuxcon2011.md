@@ -4,6 +4,7 @@ date: 2011-05-16
 authors: ["OSUOSL Admin"]
 slug: students-linuxcon2011
 tags: []
+cover: "/images/tux_bus.jpg"
 ---
 
 You may recall from our recent newsletter that the OSL team is organizing a student focused track at the

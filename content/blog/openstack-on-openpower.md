@@ -4,9 +4,8 @@ date: 2014-04-23
 authors: ["ramereth"]
 slug: openstack-on-openpower
 tags: []
+cover: "/images/openstack-power.png"
 ---
-
-![OpenStack on OpenPOWER](/images/openstack-power.png)
 
 [Openstack](http://openstack.org/) has been growing in popularity over the past few years and recently we’ve started to
 look into it further here at the OSL. We plan to continue to use [Ganeti](https://code.google.com/p/ganeti/) for our

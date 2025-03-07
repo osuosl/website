@@ -1,11 +1,11 @@
 ---
-title: Donate to Our Crowdfunding Campaign!
+title: "Donate to Our Crowdfunding Campaign!"
 date: 2017-08-03
-slug: crowdfunding-campaign-2017
 authors: ["Amanda Kelner"]
+slug: crowdfunding-campaign-2017
+tags: []
+cover: "/images/OSLWorkers2Adjusted.jpg"
 ---
-
-![OSL Students](/images/OSLWorkers2Adjusted.jpg)
 
 We’re very excited to announce our very first [crowdfunding campaign](https://create.osufoundation.org/project/6976)
 through the OSU foundation! The OSL relies on donations and revenue generating projects to fund its work and its

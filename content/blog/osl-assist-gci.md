@@ -4,6 +4,7 @@ date: 2010-11-15
 authors: ["OSUOSL Admin"]
 slug: osl-assist-gci
 tags: []
+cover: ""
 ---
 
 CORVALLIS, Ore. - High school students can soon participate in the [Google Code-in Contest](http://code.google.com/gci)

@@ -4,9 +4,8 @@ date: 2014-10-01
 authors: ["lucyw"]
 slug: using-variables-custom-drupal-theme
 tags: []
+cover: "/images/variables-drupal-theme.jpg"
 ---
-
-![Using Variables in a Custom Drupal Theme](/images/variables-drupal-theme.jpg)
 
 At the Open Source Lab we host many of our sites as a Drupal multisite. This means that we have several instances of
 Drupal using the same theme, and then we can populate each site with different content as needed (for instance,

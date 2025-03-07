@@ -4,9 +4,8 @@ date: 2014-08-04
 authors: ["Daniel Takamori"]
 slug: make-bash-not-war
 tags: []
+cover: "/images/makebash.jpg"
 ---
-
-![Make Bash, not War](/images/makebash.jpg)
 
 At the OSL we have shared workstations, most of which are named after colors. In the NOC, I usually work at
 emerald.workstation.osuosl.bak (Figure 1). I use tmux (Figure \*) to multiplex so I can have multiple terminals open in

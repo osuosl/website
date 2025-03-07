@@ -4,6 +4,7 @@ date: 2011-08-29
 authors: ["OSUOSL Admin"]
 slug: lots-love-linuxcon
 tags: []
+cover: "/images/LLD_Panel.jpg"
 ---
 
 You may recall our [earlier article](/blog) on the OSU Open Source Lab's plans for

@@ -4,9 +4,8 @@ date: 2013-05-01
 authors: ["Melissa Morse"]
 slug: students-community-members-learn-together-beaver-barcamp-11
 tags: []
+cover: "/images/BeaverBarcamp11-2(1).JPG"
 ---
-
-![Students & Community Members Learn Together at Beaver BarCamp 11](</images/BeaverBarcamp11-2(1).JPG>)
 
 **More than 150 Oregon State students, community members and students from other Oregon universities gathered in the
 Kelley Engineering building April 20 to attend the Open Source Lab’s Beaver BarCamp 11. Attendees presented nearly 50

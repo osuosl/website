@@ -4,9 +4,8 @@ date: 2013-04-11
 authors: ["Kayla Harr"]
 slug: osl-participate-google-summer-code-2013
 tags: []
+cover: "/images/gsoc-feature.png"
 ---
-
-![OSL to Participate in Google Summer of Code 2013](/images/gsoc-feature.png)
 
 This year will be the lab's seventh straight as a GSOC mentor.
 

@@ -4,6 +4,7 @@ date: 2018-01-19
 authors: ["Jonathan Frederick"]
 slug: jonathan-frederick-packer
 tags: ["student-stories"]
+cover: ""
 ---
 
 At the OSL we use Packer to build our images, because of the reproducible and easy work-flow it allows. We can create an

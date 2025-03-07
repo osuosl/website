@@ -4,9 +4,8 @@ date: 2014-11-06
 authors: ["Rachel Turner"]
 slug: successful-devops-daycamp
 tags: []
+cover: "/images/successfuldevopsdaycamp.jpg"
 ---
-
-![A Successful DevOps DayCamp](/images/successfuldevopsdaycamp.jpg)
 
 Over 100 students and community members attended the Open Source Lab’s DevOps DayCamp in the Kelley Engineering Center
 at Oregon State University on Saturday, Oct. 11.

@@ -4,11 +4,9 @@ authors: ["Travis Whitehead"]
 date: 2019-04-24
 slug: student-story-whitehet
 tags: ["student-stories"]
+cover: "/images/twhitehead_wide.jpg"
+cover_height: 20%
 ---
-
-![Reflections on My Time at the Open Source Lab, Travis Whitehead](/images/twhitehead_wide.jpg)
-
-Reflections on My Time at the Open Source Lab by Travis Whitehead
 
 Working at the Open Source Lab has been the highlight of my computer science experience at Oregon State University. It
 was just by chance that I came across a job listing for the OSL. I had never heard of the organization, and it certainly

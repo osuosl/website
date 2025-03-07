@@ -4,6 +4,7 @@ date: 2012-08-18
 authors: ["Kayla Harr"]
 slug: support-success
 tags: []
+cover: ""
 ---
 
 When staff members at the Oregon State University Open Source Lab were working with creators of the Drupal content

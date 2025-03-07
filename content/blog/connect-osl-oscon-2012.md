@@ -4,6 +4,7 @@ date: 2012-07-11
 authors: ["Kayla Harr"]
 slug: connect-osl-oscon-2012
 tags: []
+cover: ""
 ---
 
 Staff members and students from the Oregon State University Open Source Lab will represent the lab at Portland’s

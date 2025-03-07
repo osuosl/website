@@ -4,6 +4,7 @@ date: 2004-11-16
 authors: ["Anonymous"]
 slug: look-back-mozilla-firefox-10
 tags: []
+cover: ""
 ---
 
 _As the Open Source Lab celebrates a decade of open source hosting, development and education, the lab is reflecting on

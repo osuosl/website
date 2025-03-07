@@ -4,9 +4,8 @@ date: 2015-03-24
 authors: ["Elijah Voigt"]
 slug: scale-x13
 tags: []
+cover: "/images/scale-x13.jpg"
 ---
-
-![SCALE x13](/images/scale-x13.jpg)
 
 A few months ago, Emily Dunham and I were chatting about the talks we had recently presented at the Seattle GNU/Linux
 conference, and the topic of other conferences and events we were interested in speaking at came up. She pointed me to

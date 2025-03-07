@@ -1,12 +1,11 @@
 ---
 title: "Thank You for Supporting our Crowdfunding Campaign!"
 date: 2017-09-07
-slug: crowdfunding-2017-results
 authors: ["Amanda Kelner"]
+slug: crowdfunding-2017-results
 tags: []
+cover: "/images/OSLWorkers2Adjusted.jpg"
 ---
-
-![OSL Students](/images/OSLWorkers2Adjusted.jpg)
 
 As of September 1, the OSL has concluded its first ever crowdfunding campaign. With the support of our donors and the
 larger open source community, we managed to raise **$7,140** to support our students here at the lab in compensating

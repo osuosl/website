@@ -4,6 +4,7 @@ date: 2008-09-29
 authors: ["OSUOSL Admin"]
 slug: rpmorg-yum-move-osl
 tags: []
+cover: ""
 ---
 
 The Oregon State University Open Source Lab is proud to be the new home for two very important OSS projects. We are now

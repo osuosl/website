@@ -4,9 +4,8 @@ date: 2017-12-06
 authors: ["Lance Albertson"]
 slug: ganeti-production-rebuild-2017
 tags: []
+cover: ""
 ---
-
-![OSL Sign Picture](/images/OSLSignPicture.jpg)
 
 ## Service(s) affected
 

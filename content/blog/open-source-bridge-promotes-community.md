@@ -4,9 +4,8 @@ date: 2013-06-24
 authors: ["Melissa Morse"]
 slug: open-source-bridge-promotes-community
 tags: []
+cover: "/images/osbridgecommunity.jpg"
 ---
-
-![Open Source Bridge Promotes Community](/images/osbridgecommunity.jpg)
 
 **With the open source conference season well underway, OSL students and staff were excited to attend
 [Open Source Bridge](http://opensourcebridge.org/) at the Eliot Center in downtown Portland from June 18-21. Now in its

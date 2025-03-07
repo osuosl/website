@@ -4,6 +4,7 @@ date: 2010-08-11
 authors: ["Lance Albertson"]
 slug: osl-newsletter-august-2010
 tags: []
+cover: "/images/winetour2010.jpg"
 ---
 
 ## OSL Newsletter

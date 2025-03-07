@@ -4,9 +4,8 @@ date: 2016-10-31
 authors: ["Amanda Kelner"]
 slug: summer-2016-internship
 tags: []
+cover: "/images/Interns2016-1.jpg"
 ---
-
-![OSL Interns](/images/Interns2016-1.jpg)
 
 In a new program, the Oregon State University Open Source Lab (OSL) partnered with Intel to give community college
 students an opportunity to get hands-on experience with open-source projects. This summer, four students interned for 10
@@ -29,7 +28,7 @@ before the internship. Although her interest was in cybersecurity, her professor
 “The experience was very beneficial. I got to experiment with different languages, different platforms, and learned a
 lot of important tools,” Hannah said.
 
-![The Interns at the Facebook Data Center](/images/InternsatFB.jpg#right)
+![The Interns at the Facebook Data Center](/images/InternsatFB.jpg)
 
 The interns also appreciated the experience with a collaborative workflow. Working in groups is not encouraged in their
 school courses, so the internship gave them a sneak peak at the practical execution of real-world projects and access to

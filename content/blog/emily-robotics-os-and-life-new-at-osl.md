@@ -4,13 +4,12 @@ date: 2011-06-03
 authors: ["OSUOSL Admin"]
 slug: emily-essentials-robotics-open-source-and-life-new-student-osl
 tags: []
+cover: "/images/emily_robot_1.jpg"
 ---
 
 _Ed. Note: As part of our ongoing series of interviews with the OSL's student employees, this week we're bringing you
 the story of Emily Dunham, one the newest additions to the OSL. Emily joined us just over a month ago as a student
 developer. Emily was kind enough to share her thoughts with the Lab's student writer, Anthony Casson._
-
-![Emily with her robot](/images/emily_robot_1.jpg)
 
 Emily hard at work on her latest creation, which fetched the Artistic Design award at this year's
 [Oregon State University Engineering Expo](http://engr.oregonstate.edu/expo2011/)

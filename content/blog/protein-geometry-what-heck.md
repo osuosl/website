@@ -4,9 +4,8 @@ date: 2014-03-29
 authors: ["Jack Twilley"]
 slug: protein-geometry-what-heck
 tags: []
+cover: "/images/jack-twilley-post.png"
 ---
-
-![Protein Geometry - What the Heck is That?](/images/jack-twilley-post.png)
 
 When I bumped into my biochemistry professor, Dr. Kevin Ahern, on campus a few months ago, I had the pleasure of
 explaining how I actually get to use what I learned in his class. And at the Open Source Lab of all places. At the lab,

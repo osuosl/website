@@ -4,9 +4,8 @@ date: 2014-06-11
 authors: ["Emily Dunham"]
 slug: vim-trick-ftw
 tags: []
+cover: "/images/emilyvim.png"
 ---
-
-![Vim Trick FTW!](/images/emilyvim.png)
 
 Recently, I learned a useful Vim trick. One of our hosted clients has a Dokuwiki instance that we help manage, and they
 were having problems with a lot of spam user accounts being created. We added a CAPCHA to the wiki to make it less

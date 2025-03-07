@@ -4,6 +4,7 @@ date: 2010-11-04
 authors: ["Lance Albertson"]
 slug: selected-google-code-2010
 tags: []
+cover: ""
 ---
 
 We are thrilled to have been selected as mentoring organization for the

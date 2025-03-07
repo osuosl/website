@@ -4,6 +4,7 @@ date: 2011-08-07
 authors: ["OSUOSL Admin"]
 slug: energysec
 tags: []
+cover: ""
 ---
 
 Energy Sector Security Consortium and the Oregon State University Open Source Lab Partner to Establish Effective and

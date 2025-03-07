@@ -4,9 +4,8 @@ date: 2011-07-22
 authors: ["OSUOSL Admin"]
 slug: come-see-osuosl-oscon-2011
 tags: []
+cover: "/images/oscon2011_attending.gif"
 ---
-
-![OSCON 2011](/images/oscon2011_attending.gif)
 
 It's that time of year again in Portland, Oregon. It's sunny and warm - well, it is today - and the annual
 [OSCON](http://oscon.com/) conference is just around the corner. The [OSU Open Source Lab](/) team will be participating

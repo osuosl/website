@@ -4,6 +4,7 @@ date: 2011-08-01
 authors: ["OSUOSL Admin"]
 slug: oscon-2011-wrap
 tags: []
+cover: "/images/alan_corbin_emily.jpg"
 ---
 
 ## Summer Camp for Geeks

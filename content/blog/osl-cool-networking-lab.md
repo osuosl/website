@@ -4,6 +4,7 @@ date: 2009-01-10
 authors: ["OSUOSL Admin"]
 slug: osl-cool-networking-lab
 tags: []
+cover: ""
 ---
 
 The Oregon State University Open Source Lab was recently featured in a Network World online story about really cool

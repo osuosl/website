@@ -4,9 +4,8 @@ date: 2018-04-18
 authors: ["Travis Whitehead"]
 slug: cody-holliday-ctf-2018
 tags: []
+cover: "/images/cody-holliday-ctf-2018.jpg"
 ---
-
-![Cody Holliday CTF 2018](/images/cody-holliday-ctf-2018.jpg)
 
 The Open Source Lab's Cody Holliday recently competed on a team with five other students at the Department of Energy
 Cyber Defense Competition. Despite that this was their first time competing, they ranked first place in the regional

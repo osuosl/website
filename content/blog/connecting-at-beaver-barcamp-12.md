@@ -4,9 +4,8 @@ date: 2013-10-17
 authors: ["Melissa"]
 slug: connecting-at-beaver-barcamp-12
 tags: []
+cover: "/images/bbc12-blog-post.jpg"
 ---
-
-![Beaver Bar Camp](/images/bbc12-blog-post.jpg)
 
 More than 160 students, community members and educators gathered in the Kelley Engineering Center at Oregon State to
 share ideas, make connections and learn together at the Open Source Lab’s Beaver BarCamp 12 on Saturday, October 12. An

@@ -4,6 +4,7 @@ date: 2011-07-22
 authors: ["OSUOSL Admin"]
 slug: osl-talks-oswald-and-ganeti-open-source-bridge
 tags: []
+cover: ""
 ---
 
 ![OSL Talks OSWALD and Ganeti at Open Source Bridge](/images/osbridge_2011_lobby.jpg)

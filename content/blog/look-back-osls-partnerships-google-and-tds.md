@@ -4,6 +4,7 @@ date: 2006-03-06
 authors: ["Anonymous"]
 slug: look-back-osls-partnerships-google-and-tds
 tags: []
+cover: ""
 ---
 
 _As the Open Source Lab celebrates a decade of open source hosting, development and education, the lab is reflecting on

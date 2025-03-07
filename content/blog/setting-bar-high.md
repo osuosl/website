@@ -4,9 +4,8 @@ date: 2012-05-10
 authors: ["Kayla Harr"]
 slug: setting-bar-high
 tags: []
+cover: "/images/bbc9-clover.jpg"
 ---
-
-![Setting the Bar High](/images/bbc9-clover.jpg)
 
 The Oregon State University Open Source Lab’s [Beaver BarCamp 9](http://beaverbarcamp.org/) brought around 70 people to
 the Kelley Engineering Center on April 21 to discuss projects, explore new interests and share ideas. The sessions held

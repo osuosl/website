@@ -4,6 +4,7 @@ date: 2009-03-03
 authors: ["OSUOSL Admin"]
 slug: linux-new-home-osl
 tags: []
+cover: ""
 ---
 
 [Linux.com](http://linux.com/) is now being run by the [Linux Foundation](http://linuxfoundation.org/) and, along with

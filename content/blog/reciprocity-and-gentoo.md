@@ -4,9 +4,8 @@ date: 2009-02-05
 authors: ["OSUOSL Admin"]
 slug: reciprocity-and-gentoo
 tags: []
+cover: "/images/donnie_lance_gentoo_0.jpg"
 ---
-
-![Reciprocity and Gentoo](/images/donnie_lance_gentoo_0.jpg)
 
 It's not an overstatement to say that Gentoo was integral to the Open Source Lab’s foundation. The Linux-based operating
 system was one of the OSL's first projects - it even preceded the existence of the lab - and was instrumental in

@@ -4,6 +4,7 @@ date: 2009-03-03
 authors: ["OSUOSL Admin"]
 slug: osl-announces-osl-alliance-corp-spons-prog
 tags: []
+cover: ""
 ---
 
 IBM, Google and Real Networks among lab's industry donors

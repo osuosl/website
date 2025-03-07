@@ -4,6 +4,7 @@ date: 2010-10-07
 authors: ["Lance Albertson"]
 slug: leslie-hawthorn-joins-osu-open-source-lab
 tags: []
+cover: ""
 ---
 
 CORVALLIS, Ore. - The Oregon State University Open Source Lab is pleased to announce that Leslie Hawthorn has just

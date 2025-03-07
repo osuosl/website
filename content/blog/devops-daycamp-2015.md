@@ -4,9 +4,8 @@ date: 2015-10-29
 authors: ["Amanda Kelner"]
 slug: devops-daycamp-15
 tags: []
+cover: "/images/daycamp2015.jpg"
 ---
-
-![DevOps DayCamp 2015](/images/daycamp2015.jpg)
 
 In early October, we hosted our second annual DevOps DayCamp to over eighty students, faculty, and community members,
 acting as a feeder workshop into the year long DevOps BootCamp series. Beyond its promotional function, our DayCamp

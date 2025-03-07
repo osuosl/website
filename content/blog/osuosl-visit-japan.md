@@ -4,6 +4,7 @@ date: 2009-04-16
 authors: ["OSUOSL Admin"]
 slug: osuosl-visit-japan
 tags: []
+cover: ""
 ---
 
 ![OSUOSL Visit to Japan](/images/deb_matz_0.jpg)

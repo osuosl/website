@@ -4,11 +4,12 @@ date: 2011-04-29
 authors: ["Lance Albertson"]
 slug: osl-newsletter-april-2011
 tags: []
+cover: "/images/OSL_Prineville.jpg"
 ---
 
-![OSL in Prineville](/images/OSL_Prineville.jpg)
-
 **The OSL Team and Our Host, David Recordon, at Facebook's Prineville Data Center**
+
+![OSL in Prineville](/images/OSL_Prineville.jpg)
 
 We've been spending the past few weeks making our plans for the summer: specing out longer term projects for our student
 employees, sharing our knowledge at conferences and continuing our mission to grow and support the world of open source.

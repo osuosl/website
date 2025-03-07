@@ -4,13 +4,12 @@ date: 2011-07-06
 authors: ["OSUOSL Admin"]
 slug: eric-searcy
 tags: []
+cover: "/images/eric_searcy.jpg"
 ---
 
 Eric Searcy, a former three-year student employee at the [Open Source Lab](/), has picked up a new role at the
 [Linux Foundation](http://linuxfoundation.org/) as the organization’s IT Infrastructure Manager. He will be in charge of
 maintaining and deploying systems, systems security, and keeping the Foundation's IT infrastructure up and running.
-
-![Eric Searcy](/images/eric_searcy.jpg)
 
 In Spring 2008, Searcy graduated from [Oregon State University](http://oregonstate.edu/) with a degree in Computer
 Science. He immediately began working for Corvallis-based InsightsNow, a market research company, as its Infrastructure

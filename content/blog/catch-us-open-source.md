@@ -4,6 +4,7 @@ date: 2009-06-17
 authors: ["OSUOSL Admin"]
 slug: catch-us-open-source-bridge
 tags: []
+cover: ""
 ---
 
 Open Source Bridge starts today and runs through Friday at the [Oregon Convention Center](http://oregoncc.org/) in

@@ -4,6 +4,7 @@ date: 2018-02-05
 authors: ["Jack Twilley"]
 slug: jack-twilley-goodbye
 tags: ["student-stories"]
+cover: ""
 ---
 
 About a decade ago, I was becoming disenchanted with my time in the computer industry. It wasn't _bad_, it just wasn't

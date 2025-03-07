@@ -4,6 +4,7 @@ date: 2012-08-06
 authors: ["Kayla Harr"]
 slug: osl-advances-new-staff-members-renewed-focus
 tags: []
+cover: ""
 ---
 
 The Oregon State University Open Source Lab recently hired three new full-time staff members as part of a movement

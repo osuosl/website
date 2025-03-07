@@ -4,6 +4,7 @@ date: 2013-05-01
 authors: ["Mitchell Garcia"]
 slug: osls-april-2013-newsletter
 tags: []
+cover: ""
 ---
 
 ![Lance Albertson](/images/lalbertson.jpg)

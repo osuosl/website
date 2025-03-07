@@ -4,6 +4,7 @@ date: 2009-02-05
 authors: ["OSUOSL Admin"]
 slug: drupal_infrastructure
 tags: []
+cover: ""
 ---
 
 Submitted by OSUOSL Admin on February 5, 2009

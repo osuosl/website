@@ -4,9 +4,8 @@ date: 2011-08-10
 authors: ["OSUOSL Admin"]
 slug: all-aboard-vancouver
 tags: []
+cover: "/images/header_linuxcon_na_0.png"
 ---
-
-![LinuxCon Header](/images/header_linuxcon_na_0.png)
 
 The OSUOSL Heads to LinuxCon North America 2011 Next Week
 

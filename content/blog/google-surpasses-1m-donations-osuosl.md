@@ -4,6 +4,7 @@ date: 2009-08-11
 authors: ["OSUOSL Admin"]
 slug: google-surpasses-1m-donations-osuosl
 tags: []
+cover: ""
 ---
 
 Google has generously donated $300,000 to support the Oregon State University Open Source Lab. With this donation, the

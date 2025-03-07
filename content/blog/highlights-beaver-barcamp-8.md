@@ -4,6 +4,7 @@ date: 2011-10-31
 authors: ["OSUOSL Admin"]
 slug: highlights-beaver-barcamp-8
 tags: []
+cover: ""
 ---
 
 **Beaver BarCamp 8 Quick Facts:**

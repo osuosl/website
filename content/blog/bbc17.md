@@ -4,9 +4,8 @@ date: 2017-05-09
 authors: ["Amanda Kelner"]
 slug: bbc17
 tags: []
+cover: "/images/BBC17_img_1.jpg"
 ---
-
-![Beaver BarCamp 2017](/images/BBC17_img_1.jpg)
 
 April 8 started out like any other Saturday in Spring in Corvallis: rainy, then sunny, then windy, windy-rainy sleet,
 hail, and then of course, sunny again. Despite the crazy weather, people from all walks of life still convened at the

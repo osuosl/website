@@ -4,9 +4,8 @@ date: 2014-02-20
 authors: ["Melissa"]
 slug: openstacks-horizon
 tags: []
+cover: "/images/tech-blog.png"
 ---
-
-![Openstack's Horizon](/images/tech-blog.png)
 
 _The first tech post is by Chance Zibolski, a community system administrator and project lead of Ganeti Web Manager, a
 Web administration panel that allows administrators and clients access to administer and use Google’s open source cloud

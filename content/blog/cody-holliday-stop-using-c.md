@@ -4,6 +4,7 @@ date: 2017-07-31
 authors: ["Cody Holliday"]
 slug: cody-holliday-stop-using-c
 tags: ["student-stories"]
+cover: ""
 ---
 
 Programming languages are a touchy topic in Computer Science. In certain crowds even mentioning a language will elicit

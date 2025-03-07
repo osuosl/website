@@ -4,6 +4,7 @@ date: 2011-04-19
 authors: ["Lance Albertson"]
 slug: open-compute-tour
 tags: []
+cover: "/images/Powered_by_Gnomes.jpg"
 ---
 
 If you've been following the news, you've likely heard of the [Open Compute Project](http://opencompute.org/),

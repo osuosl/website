@@ -1,11 +1,11 @@
 ---
 title: 10 Projects Making a Difference
-authors: ["Melissa Morse"]
 date: 2013-11-25
-img: making-a-difference.png
+authors: ["Melissa Morse"]
+slug: 10-projects-making-a-difference
+tags: []
+cover: ""
 ---
-
-![10 Projects Making a Difference](/images/making-a-difference.png)
 
 Submitted by Melissa Morse on November 25, 2013
 

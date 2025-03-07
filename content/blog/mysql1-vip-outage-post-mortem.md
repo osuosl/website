@@ -4,9 +4,8 @@ date: 2015-08-07
 authors: ["jordane"]
 slug: mysql1-vip-outage-post-mortem
 tags: []
+cover: "/images/outagepic2_0.jpg"
 ---
-
-![Mysql1-vip Outage Post-Mortem](/images/outagepic2_0.jpg)
 
 **Background**
 

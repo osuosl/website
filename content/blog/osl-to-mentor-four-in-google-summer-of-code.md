@@ -4,6 +4,7 @@ date: 2013-06-05
 authors: ["Kayla Harr"]
 slug: osl-to-mentor-four-in-google-summer-of-code
 tags: []
+cover: ""
 ---
 
 Students from India, Poland and the United Kingdom will work on projects for the OSL this summer. The Oregon State

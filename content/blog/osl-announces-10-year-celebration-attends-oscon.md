@@ -4,9 +4,8 @@ date: 2013-07-30
 authors: ["Melissa"]
 slug: osl-announces-10-year-celebration-attends-oscon
 tags: []
+cover: "/images/osl-announces-10.jpg"
 ---
-
-![OSL Announces 10 year Celebration; Attends OSCON](/images/osl-announces-10.jpg#blog)
 
 **The Open Source Lab (OSL) recently kicked off its 10 year celebration at the O’Reilly Open Source Conference in
 Portland July 23 - 26.**

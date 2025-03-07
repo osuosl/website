@@ -4,6 +4,7 @@ date: 2024-08-15
 authors: ["Lance Albertson"]
 slug: power10
 tags: []
+cover: ""
 ---
 
 We are excited to announce a major upgrade to our OpenPOWER cluster, which will greatly benefit our open source

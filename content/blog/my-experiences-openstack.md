@@ -4,9 +4,8 @@ date: 2014-09-15
 authors: ["Geoff Corey"]
 slug: my-experiences-openstack
 tags: []
+cover: "/images/Geoffbloggraphic2_0.jpg"
 ---
-
-![My Experiences with Openstack](/images/Geoffbloggraphic2_0.jpg)
 
 In the simplest of terms, [OpenStack](http://www.openstack.org/) is a massive undertaking. The goal of OpenStack is to
 fit just about every use case imaginable. This goal brings with it a daunting list of configuration options and requires

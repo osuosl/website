@@ -4,6 +4,7 @@ date: 2018-04-23
 authors: ["Cody Holliday"]
 slug: cody-holiday-cyber-defense
 tags: ["student-stories"]
+cover: ""
 ---
 
 I took part in a Cyber Defense Competition hosted by the Department of Energy, and it was a fantastic experience! Our
