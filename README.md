@@ -131,7 +131,7 @@ date: 2025-01-02
 authors: ["OSL Admin"]
 slug: testing
 tags: []
-cover:
+cover: ""
 draft: true
 ---
 ```
