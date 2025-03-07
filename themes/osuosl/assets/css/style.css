@@ -922,11 +922,12 @@ textarea {
 
 .link-button.secondary {
   border: 1px solid;
-  background: transparent;
+  background-color: transparent;
   color: var(--contrast);
 }
 
 .link-button.secondary:hover {
+  background-color: rgb(from var(--contrast) r g b / 0.05);
   color: var(--contrast-hover);
 }
 
