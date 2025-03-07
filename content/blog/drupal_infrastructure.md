@@ -3,7 +3,7 @@ title: "Helping Drupal Grow"
 date: 2009-02-05
 authors: ["OSUOSL Admin"]
 slug: drupal_infrastructure
-tags: []
+tags: ["student-stories"]
 cover: ""
 ---
 
@@ -33,4 +33,4 @@ Both Searcy and Newton credit the Open Source Lab with providing them with real-
 the systems administration side of the Lab for university students are unique," says Newton. "I can't name any other
 school that offers the same thing."
 
-**Category:** [Student Stories](/student-stories)
+**Category:** [Student Stories](/tags/student-stories)

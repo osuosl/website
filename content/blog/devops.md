@@ -3,7 +3,7 @@ title: "Building a Bright Future With DevOps"
 date: 2012-08-02
 authors: ["Kayla Harr"]
 slug: devops
-tags: []
+tags: ["student-stories"]
 cover: "/images/MikeRacksPicweb.jpg"
 ---
 
@@ -76,4 +76,4 @@ Media contact: Kayla Harr, <harrk@osuosl.org>
 To support the OSL and the student employees who help the lab provide top-quality hosting and development services,
 visit our [Donate](/donate) page.
 
-**Category:** [Student Stories](/student-stories)
+**Category:** [Student Stories](/tags/student-stories)
