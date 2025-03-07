@@ -3,7 +3,7 @@ title: "Coming Soon: Beaver BarCamp 15"
 date: 2015-05-01
 authors: ["Rachel Turner"]
 slug: coming-soon-beaver-barcamp-15
-tags: []
+tags: ["beaver-barcamp"]
 cover: "/images/beaver-barcamp-15.jpg"
 ---
 

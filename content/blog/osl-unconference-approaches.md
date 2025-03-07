@@ -3,7 +3,7 @@ title: "OSL 'Unconference' Approaches"
 date: 2012-04-03
 authors: ["Kayla Harr"]
 slug: osl-unconference-approaches
-tags: []
+tags: ["beaver-barcamp"]
 cover: ""
 ---
 

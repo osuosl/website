@@ -3,7 +3,7 @@ title: "Beaver BarCamp 17: New Horizons"
 date: 2017-05-09
 authors: ["Amanda Kelner"]
 slug: bbc17
-tags: []
+tags: ["beaver-barcamp"]
 cover: "/images/BBC17_img_1.jpg"
 ---
 

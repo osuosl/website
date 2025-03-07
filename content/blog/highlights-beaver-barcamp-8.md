@@ -3,7 +3,7 @@ title: "Highlights From Beaver Barcamp 8"
 date: 2011-10-31
 authors: ["OSUOSL Admin"]
 slug: highlights-beaver-barcamp-8
-tags: []
+tags: ["beaver-barcamp"]
 cover: ""
 ---
 

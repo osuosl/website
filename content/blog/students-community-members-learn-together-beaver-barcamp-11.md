@@ -3,7 +3,7 @@ title: "Students & Community Members Learn Together at Beaver BarCamp 11"
 date: 2013-05-01
 authors: ["Melissa Morse"]
 slug: students-community-members-learn-together-beaver-barcamp-11
-tags: []
+tags: ["beaver-barcamp"]
 cover: "/images/BeaverBarcamp11-2(1).JPG"
 ---
 
