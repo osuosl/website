@@ -2,6 +2,14 @@
   <div class="post-image">
     {{ $cover := or .Params.Cover "/images/OSLSignPicture.jpg" }}
     <img
+      class="post-image-front"
+      src="{{ $cover }}"
+      {{- if .Params.cover_height -}}
+        style="object-position: center {{ .Params.cover_height }}"
+      {{- end -}}
+    />
+    <img
+      class="post-image-back"
       src="{{ $cover }}"
       {{- if .Params.cover_height -}}
         style="object-position: center {{ .Params.cover_height }}"

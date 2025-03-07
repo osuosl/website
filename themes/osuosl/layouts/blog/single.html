@@ -4,18 +4,37 @@
   <main class="main_content">
     <article class="blog-post">
       {{- partial "breadcrumbs.html" . -}}
-      <img
-        src="{{ $cover }}"
-        alt=""
-        class="blog-post-cover"
-        {{- if .Params.cover_height -}}
-          style="object-position: center {{ .Params.cover_height }}"
-        {{- end -}}
-      />
+      <div class="blog-post-cover-wrapper">
+        <img
+          src="{{ $cover }}"
+          alt=""
+          class="blog-post-cover"
+          {{- if .Params.cover_height -}}
+            style="object-position: center {{ .Params.cover_height }}"
+          {{- end -}}
+        />
+        <img
+          src="{{ $cover }}"
+          alt=""
+          class="blog-post-cover-back"
+          {{- if .Params.cover_height -}}
+            style="object-position: center {{ .Params.cover_height }}"
+          {{- end -}}
+        />
+      </div>
       <h1 class="blog-post-title" data-pagefind-meta="title">{{ .Title }}</h1>
-      <p class="blog-post-info">
-        by {{ delimit .Params.authors ", " " and " }} on {{ .Date | dateFormat "Mon, Jan 02 2006" }}
-      </p>
+      <div class="metadata">
+        <div><i class="fa-regular fa-user"></i> {{ delimit .Params.authors ", " " and " }}</div>
+        <div><i class="fa-regular fa-calendar-days"></i> {{ .Date | dateFormat "Mon, Jan 02 2006" }}</div>
+        <div><i class="fa-regular fa-hourglass-half"></i> {{ .ReadingTime }} mins</div>
+        {{ with .GetTerms "tags" }}
+          <ul class="tag-list">
+            {{ range . }}
+              <li class="tag"><a href="{{ .RelPermalink }}">#{{ .Slug }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </div>
       {{ .Content }}
     </article>
   </main>
