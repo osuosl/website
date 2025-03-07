@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name '-' ' ' | title }}"
-date: {{ .Date | dateFormat "2006-04-13" }}
+date: {{ .Date | dateFormat "2006-01-02" }}
 authors: ["OSL Admin"]
 slug: {{ .Name }}
 tags: []
