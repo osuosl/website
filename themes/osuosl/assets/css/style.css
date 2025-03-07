@@ -729,7 +729,10 @@ textarea {
   padding: 1rem 0 2rem;
   font-size: 0.85rem;
   color: var(--on-contrast);
-  background: var(--background-surface-low);
+  background-color: var(--contrast);
+  background-image: url("/images/repeatable-treeline.png");
+  background-repeat: repeat-x;
+  background-position: left bottom;
   border-top: 5px solid var(--primary);
 }
 
@@ -745,6 +748,10 @@ textarea {
 .footer__links {
   -webkit-order: 1;
   order: 1;
+}
+
+.footer h2 {
+  color: var(--on-contrast);
 }
 
 .footer a {
@@ -763,7 +770,13 @@ textarea {
 }
 
 .footer_links {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer_links a {
   margin-right: 20px;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
 }
