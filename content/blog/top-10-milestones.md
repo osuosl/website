@@ -6,7 +6,7 @@ slug: top-10-milestones
 tags: []
 ---
 
-![Top 10 Milestones](/images/top-10-milestones.jpg#blog)
+![Top 10 Milestones](/images/top-10-milestones.jpg)
 
 The Open Source Lab is celebrating 10 years of open source hosting, development and education. Here is a look back at
 some of our most important accomplishments.

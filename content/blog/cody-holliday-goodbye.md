@@ -11,7 +11,7 @@ of servers we had in the data center. Fascinated at the treasure trove of artifa
 conventions passed, old CDs labeled "Fedora 10" or "Ubuntu 8". That scrap of paper on the wall of an IRC log with Linus
 Torvalds.
 
-![Cody Holliday](/images/Cody_OSL_awards.jpg#right-barcamp)
+![Cody Holliday](/images/Cody_OSL_awards.jpg)
 
 I may have been infatuated with the aura of the OSL, but the what made it all worthwhile were the people. Justin, Chris,
 Anthony, Lee, Jack (whose goodbye is below), Taylor, and Lance were the first people I interacted with and they really

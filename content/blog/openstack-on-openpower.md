@@ -6,7 +6,7 @@ slug: openstack-on-openpower
 tags: []
 ---
 
-![OpenStack on OpenPOWER](/images/openstack-power.png#blog)
+![OpenStack on OpenPOWER](/images/openstack-power.png)
 
 [Openstack](http://openstack.org/) has been growing in popularity over the past few years and recently we’ve started to
 look into it further here at the OSL. We plan to continue to use [Ganeti](https://code.google.com/p/ganeti/) for our
@@ -20,7 +20,7 @@ Earlier this year we teamed up with [IBM](http://www-03.ibm.com/linux/ltc/) to w
 the x86 architecture. Thanks to the hard work by both the IBM and OSUOSL team, we’ve been able to deploy Openstack on
 four IBM OpenPOWER machines which support KVM and little endian.
 
-![OpenStack running Fedora Guest](/images/ppc64-openstack.png#center)
+![OpenStack running Fedora Guest](/images/ppc64-openstack.png)
 
 OpenStack on OpenPOWER screenshot running a Fedora Guest.
 

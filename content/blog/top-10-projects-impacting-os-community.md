@@ -6,7 +6,7 @@ slug: top-10-projects-impacting-open-source-community
 tags: []
 ---
 
-![Top 10 Projects Impacting the Open Source Community](/images/osl10-projects-impacting-the-os-community.png#blog)
+![Top 10 Projects Impacting the Open Source Community](/images/osl10-projects-impacting-the-os-community.png)
 
 _The Open Source Lab serves as a trusted third-party home to some of the largest open source projects. By promoting
 collaboration, accessibility and transparency, these projects are advancing the open source mission. The following (in

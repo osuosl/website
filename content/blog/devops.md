@@ -6,7 +6,7 @@ slug: devops
 tags: []
 ---
 
-![Student Experience at OSUOSL](/images/MikeRacksPicweb.jpg#blog)
+![Student Experience at OSUOSL](/images/MikeRacksPicweb.jpg)
 
 Sometimes finding the best solution means starting over. That was Mike Cooper's dilemma as he tackled his first solo
 project at the Oregon State University Open Source Lab. An OSU sophomore studying computer science who had just been

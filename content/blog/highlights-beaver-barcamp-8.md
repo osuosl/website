@@ -22,7 +22,7 @@ Kelley Engineering Center during [Beaver BarCamp 8](http://beaverbarcamp.org/) (
 the desire for people to share and learn in an open environment. It is an intense event with discussions, demos, and
 interaction from attendees.
 
-![BBC 8 Schedule Grid and Registration Desk Staffed by Our Own Stalwart Project Manager, Greg Lund-Chaix](/images/bbc8reception.png#center)
+![BBC 8 Schedule Grid and Registration Desk Staffed by Our Own Stalwart Project Manager, Greg Lund-Chaix](/images/bbc8reception.png)
 
 More than 130 people met for the second and final Corvallis BarCamp of the year, hosted by the [OSU Open Source Lab](/).
 There were sessions for many tastes at BBC 8.
@@ -37,7 +37,7 @@ BBC 8's flagship sponsor Mozilla launched the day with a
 [Andy Rosic](http://twitter.com/arosic), CEO of Portland, ORE., based Thumb Arcade, treated attendees to a speed
 hackathon touching on [Geo, Mobile and Augmented Reality](http://beaverbarcamp.org/index.php/Speed_Hacking).
 
-![Mozilla's Michael Coates, Julie Deroche and Ben Kero Talk Shop with Student Attendees](/images/BBC_Mozilla_0.jpg#center)
+![Mozilla's Michael Coates, Julie Deroche and Ben Kero Talk Shop with Student Attendees](/images/BBC_Mozilla_0.jpg)
 
 Some attendees took a different route by hosting non-technical sessions, including “Cheap Home Brewing” and “Planning
 and Cooking for Yourself to Save Money.” A good and delicious time was had by all.
@@ -49,7 +49,7 @@ attending future Beaver BarCamps, remember to sign up for the
 [event mailing list](http://groups.google.com/group/beaverbarcamp) or join our
 [Facebook group](https://www.facebook.com/groups/70326572242/).
 
-![Our Very Own Student Developer, Emily Dunham, Models BBC8's Custom Swag](/images/BBC8_Shirts_0.jpg#center)
+![Our Very Own Student Developer, Emily Dunham, Models BBC8's Custom Swag](/images/BBC8_Shirts_0.jpg)
 
 Many thanks to all of our attendees for a fabulous BBC 8! Most of all, thanks to our generous sponsors, especially
 Mozilla, for their support of the event. We could not have made the day possible without your support!

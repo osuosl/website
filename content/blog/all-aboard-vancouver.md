@@ -6,7 +6,7 @@ slug: all-aboard-vancouver
 tags: []
 ---
 
-![LinuxCon Header](/images/header_linuxcon_na_0.png#blog)
+![LinuxCon Header](/images/header_linuxcon_na_0.png)
 
 The OSUOSL Heads to LinuxCon North America 2011 Next Week
 
@@ -27,7 +27,7 @@ pursuit of future careers in the Linux arena. Other efforts include
 [Linux Training Scholarships](http://www.linuxfoundation.org/news-media/announcements/2011/08/linux-foundation-announces-linux-training-scholarship-recipients),
 with the first round of scholarship recipients announced just yesterday.
 
-![Our Stalwart Lead Systems Administrator/Architect, Lance Albertson](/images/lance_linuxcon_11.jpg#blog-center)
+![Our Stalwart Lead Systems Administrator/Architect, Lance Albertson](/images/lance_linuxcon_11.jpg)
 
 We'll also be at LinuxCon the rest of the week to enjoy the sessions and the company of our fellow Linux and open source
 enthusiasts. While we're looking forward to many of the talks, we're particularly looking forward to our very own

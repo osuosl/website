@@ -6,7 +6,7 @@ authors: ["Amanda Kelner"]
 tags: []
 ---
 
-![OSL Students](/images/OSLWorkers2Adjusted.jpg#blog)
+![OSL Students](/images/OSLWorkers2Adjusted.jpg)
 
 As of September 1, the OSL has concluded its first ever crowdfunding campaign. With the support of our donors and the
 larger open source community, we managed to raise **$7,140** to support our students here at the lab in compensating

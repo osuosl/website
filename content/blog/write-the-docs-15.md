@@ -6,7 +6,7 @@ slug: write-the-docs-15
 tags: []
 ---
 
-![Write the Docs '15](/images/document-all-the-things.jpg#blog)
+![Write the Docs '15](/images/document-all-the-things.jpg)
 
 The day is May 18. The location is the Portland's Crystal Ballroom. The conference is Write the Docs (WtD). Excitement
 and anticipation fill the air as we collectively munch on breakfast foods and find a seat. The keynote begins and

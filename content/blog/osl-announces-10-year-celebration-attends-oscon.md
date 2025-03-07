@@ -19,7 +19,7 @@ open source leader.
 “It’s an important milestone," says OSL Director Lance Albertson. "We’re not just a small group of people anymore but a
 maturing organization with a smart staff of both students and non-students."
 
-![Build the Future icons](/images/buildthefuture-icons_0.gif#center)
+![Build the Future icons](/images/buildthefuture-icons_0.gif)
 
 Icons used to represent the three key areas of the Build The Future initiative: education, outreach and research &
 infrastructure.
@@ -41,7 +41,7 @@ of the open source community.
 “OSCON was awesome," OSL Student Developer Geoff Corey says. "It was fun working the booth and telling people from
 different backgrounds what exactly we do at the OSL”.
 
-![OSCON table](/images/oscontable2.jpg#center)
+![OSCON table](/images/oscontable2.jpg)
 
 "Hosted by the OSL" signs for the OSL's hosted communities.
 
@@ -59,7 +59,7 @@ food along with a slideshow displaying the history of the lab and Squishymedia g
 office space in downtown Portland to help in the party efforts. The atmosphere felt like a family reunion, as old
 friends reconnected and new employees were welcomed.
 
-![Lance Albertson Speech](/images/historyspeach.jpg#center)
+![Lance Albertson Speech](/images/historyspeach.jpg)
 
 OSL Director, Lance Albertson, and past OSL Project Manager, Greg Lund-Chaix, speak about the history of the OSL at the
 alumni party hosted at [Squishymedia](http://squishymedia.com/).

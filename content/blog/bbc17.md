@@ -6,7 +6,7 @@ slug: bbc17
 tags: []
 ---
 
-![Beaver BarCamp 2017](/images/BBC17_img_1.jpg#blog)
+![Beaver BarCamp 2017](/images/BBC17_img_1.jpg)
 
 April 8 started out like any other Saturday in Spring in Corvallis: rainy, then sunny, then windy, windy-rainy sleet,
 hail, and then of course, sunny again. Despite the crazy weather, people from all walks of life still convened at the
@@ -41,7 +41,7 @@ a new way to experience the event, a way that shows exactly what to expect from 
 Attendees were excited about this new offer because it they could reach a broader audience and circulate their ideas
 beyond this one-day event.
 
-![Caleb Boylan presenting on Ceph](/images/BBC17_img_3.jpg#blog-center)
+![Caleb Boylan presenting on Ceph](/images/BBC17_img_3.jpg)
 
 Interested in joining us next year? There are lots of ways to stay informed, including:
 

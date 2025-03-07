@@ -6,7 +6,7 @@ slug: look-back-beaver-barcamp-1
 tags: []
 ---
 
-![First Beaver BarCamp](/images/FirstBeaverBarCamp.png#blog)
+![First Beaver BarCamp](/images/FirstBeaverBarCamp.png)
 
 After attending [BarCamp Portland](http://barcampportland.org/), Alex Polvi was inspired to create a similar opportunity
 for Corvallis. At the time, Polvi was a computer science student at Oregon State University, and he approached Associate

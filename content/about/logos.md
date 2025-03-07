@@ -10,16 +10,16 @@ logo. The four versions are what are permitted. Sizing should be the only thing 
 
 [Logo for light backgrounds and to use in print materials](/images/osllogo-print_0.png)
 
-![Print logo](/images/osllogo-print_0.png#center)
+![Print logo](/images/osllogo-print_0.png)
 
 [Logo for light backgrounds and to use on the web or with a digital display](/images/osllogo-web_0.png)
 
-![Web light logo](/images/osllogo-web_0.png#center)
+![Web light logo](/images/osllogo-web_0.png)
 
 [All black logo for light backgrounds](/images/osllogo-black_0.png)
 
-![Black logo](/images/osllogo-black_0.png#center)
+![Black logo](/images/osllogo-black_0.png)
 
 [All white logo for dark backgrounds](/images/osllogo-white_0.png)
 
-![White logo](/images/osllogo-white_0.png#center-white)
+![White logo](/images/osllogo-white_0.png)

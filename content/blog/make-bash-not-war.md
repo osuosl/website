@@ -6,7 +6,7 @@ slug: make-bash-not-war
 tags: []
 ---
 
-![Make Bash, not War](/images/makebash.jpg#blog)
+![Make Bash, not War](/images/makebash.jpg)
 
 At the OSL we have shared workstations, most of which are named after colors. In the NOC, I usually work at
 emerald.workstation.osuosl.bak (Figure 1). I use tmux (Figure \*) to multiplex so I can have multiple terminals open in
@@ -28,4 +28,4 @@ replaced with a ♦ (which is an ASCII character). There should be a check to ma
 with something else if it fails. All in all, this is just quick hack to make life prettier!
 [Source!](https://gist.github.com/dspt/113418b78abebab76d97)
 
-![Bash Not War](/images/bashnotwarscreen.png#center)
+![Bash Not War](/images/bashnotwarscreen.png)

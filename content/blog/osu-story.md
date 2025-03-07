@@ -6,7 +6,7 @@ authors: ["Jonathan Frederick"]
 tags: []
 ---
 
-![Changing the World, One Line of Code at a Time](/images/OSLWorkers2Adjusted.jpg#blog)
+![Changing the World, One Line of Code at a Time](/images/OSLWorkers2Adjusted.jpg)
 
 The [OSU Experience Site](http://experience.oregonstate.edu/) has published an online
 [article](http://experience.oregonstate.edu/feature-story/changing-world-one-line-code-time) about our students! In it

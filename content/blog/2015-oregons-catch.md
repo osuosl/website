@@ -3,10 +3,9 @@ title: "OSL GSOC 2015 - Oregon's Catch"
 date: 2015-09-14
 authors: ["Evan Tschuy"]
 slug: gsoc15-oregons-catch
-# :img: oregonscatch-gsoc.jpg
 ---
 
-![GSOC 2015 Oregon's Catch](/images/oregonscatch-gsoc.jpg#blog)
+![GSOC 2015 Oregon's Catch](/images/oregonscatch-gsoc.jpg)
 
 This summer the Open Source Lab had three students from around the world working on open source software through
 [Google Summer of Code](https://developers.google.com/open-source/gsoc/). The OSL has participated in GSoC for nine
@@ -20,7 +19,7 @@ Chaitanya worked on the backend, making data entry easier. It now has several im
 entry, search, and inline forms so users don't need to leave the page to add related items. It is also now themeable, so
 other organizations can use easily set up a customized version for their area.
 
-![What's Fresh location](/images/whats-fresh-screenshot.png#blog-center)
+![What's Fresh location](/images/whats-fresh-screenshot.png)
 
 It was initially slow-going as we got more familiar with working with each other and as he got comfortable working on
 the project. Since Chaitanya was more familiar with Python and Django than Javascript, it took a while for things to

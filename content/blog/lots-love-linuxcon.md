@@ -17,7 +17,7 @@ best part of the day? Letting our attendees know that we could forgo the conclud
 were tired from 5+ hours of lecture and having them not only decline to leave early, but then keep the panel discussion
 going a full twenty minutes over schedule because of all the great questions.
 
-![OSUOSL Staffers Wrapping Up the Linux Learners Day Careers in Open Source Panel](/images/LLD_Panel.jpg#center)
+![OSUOSL Staffers Wrapping Up the Linux Learners Day Careers in Open Source Panel](/images/LLD_Panel.jpg)
 
 We want to make sure the content we created is most widely useful, so we've made all the presentations
 [available on Slideshare](http://www.slideshare.net/osuosl/presentations). The presentations are downloadable and
@@ -31,7 +31,7 @@ discounted packages for student attendees of LinuxCon and arranging the LinuxCon
 attendees in Corvallis and Portland. And our sincerest thanks for inviting us to be a part of the conference program and
 to spread the Linux love amongst the next generation of computer scientists and technologists.
 
-![Proud to Help the Linux Foundation in their Search for the Next Linus Torvalds](/images/Linus_in_Waiting.jpg#center)
+![Proud to Help the Linux Foundation in their Search for the Next Linus Torvalds](/images/Linus_in_Waiting.jpg)
 
 You no doubt know that this year marks the [20th Anniversary of Linux](http://www.linuxfoundation.org/20th/), making
 this year's LinuxCon North America that much more exciting for all in attendance. OSLers were out in force at the
@@ -39,7 +39,7 @@ this year's LinuxCon North America that much more exciting for all in attendance
 truly wonderful evening. We were also incredibly excited to tour the 20th Anniversary of Linux Gallery and see the many
 artifacts of Linux history on display.
 
-![OSUOSL Staffers in Full Gala Regalia; Back Row: Tim Harder, Jeff Sheltren, Greg Lund-Chaix; Front Row: Lance Albertson, Leslie Hawthorn, Deb Bryant, Peter Krenesky](/images/OSL_Team_0.jpg#center)
+![OSUOSL Staffers in Full Gala Regalia; Back Row: Tim Harder, Jeff Sheltren, Greg Lund-Chaix; Front Row: Lance Albertson, Leslie Hawthorn, Deb Bryant, Peter Krenesky](/images/OSL_Team_0.jpg)
 
 Last but not least, we capped off our time at the conference with an inside look at the OSL's operations.
 [Lance Albertson](http://twitter.com/ramereth), the OSL's Lead Systems Adminstrator/Architect, spoke on Hosting Open
@@ -48,7 +48,7 @@ infrastructure for some of the world's most well-known open source projects, we 
 [got Slashdotted](http://linux.slashdot.org/story/11/08/23/1655244/Inside-Oregon-State-Universitys-Open-Source-Lab).
 Victory!
 
-![Lance Albertson on Hosting Open Source Projects at the OSUOSL](/images/Lance_Talk.jpg#center)
+![Lance Albertson on Hosting Open Source Projects at the OSUOSL](/images/Lance_Talk.jpg)
 
 _Ed. Note:_ The Careers in Open Source Panel photo was taken by Linux Learners Day attendee Jason Barnett and is used
 with his permission. The

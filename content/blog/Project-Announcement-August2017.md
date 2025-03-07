@@ -6,7 +6,7 @@ slug: project-announcement-polr
 tags: []
 ---
 
-![New Project: polr](/images/NewProjectAdjustedImage.png#blog)
+![New Project: polr](/images/NewProjectAdjustedImage.png)
 
 In July 2017, the OSL began providing virtual machine and database for hosting the demo service of polr. The project
 itself simplifies long and complicated urls. It was started by a high school student back in 2014 who has since

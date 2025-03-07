@@ -6,7 +6,7 @@ slug: student-story-doublej472
 tags: ["student-stories"]
 ---
 
-![On Leaving the Open Source Lab, Jonathan Frederick](/images/doublej472-story.jpg#blog)
+![On Leaving the Open Source Lab, Jonathan Frederick](/images/doublej472-story.jpg)
 
 My first Linux operating system was Ubuntu 10.04, when I was still young. It was my first experience with open-source
 software, which I didn't fully appreciate at the time. I just wanted an operating system to work on my Dell hand-me-down

@@ -6,7 +6,7 @@ slug: osl-spotlight-summer-conferences
 tags: []
 ---
 
-![OSL in the Spotlight at Summer Conferences](/images/CorbinTalkWebsite_0.jpg#blog)
+![OSL in the Spotlight at Summer Conferences](/images/CorbinTalkWebsite_0.jpg)
 
 The open source community is driven by the people who use, change and support open source software. This summer, members
 of the Open Source Lab staff enjoyed opportunities to connect with those people face-to-face at annual open source
@@ -47,7 +47,7 @@ individual knowledge.
 
 “You can learn about things you weren’t aware of,” Wilson says. “It helps everybody here in a very tangible way.”
 
-![Lund-Chaix, Lett and Grigar field questions after presenting on the benefits of collaboration between developers and system administrators.](/images/KenRudyGregTalkWebsite.jpg#center)
+![Lund-Chaix, Lett and Grigar field questions after presenting on the benefits of collaboration between developers and system administrators.](/images/KenRudyGregTalkWebsite.jpg)
 
 That commitment to supporting the open source community won Albertson the conference’s highest honor at its official
 party June 27. Albertson was presented with the Truly Outstanding Open Source Citizen award for his efforts to introduce
@@ -78,7 +78,7 @@ as many open source projects hosted by the OSL. Students and full-time staff int
 throughout the conference, sharing information about the lab’s current projects, explaining the OSL’s innovative
 integration of student employees and enjoying the opportunity to connect with other open source enthusiasts.
 
-![OSCON attendees at the Oregon Convention Center](/images/OSCONWelcomeWebsite.jpg#center)
+![OSCON attendees at the Oregon Convention Center](/images/OSCONWelcomeWebsite.jpg)
 
 “It was good to interact with the corporate world and meet people professionally,” says Dean Johnson, a sophomore who
 began working at the lab in June. “People were really grateful for our mirrors and what we do, and it was nice to feel
@@ -92,7 +92,7 @@ with Lincoln County, Ore., already knew about the OSL’s services, but visited 
 and governments, but for everyone. Having a regional site like that where we can grab security updates and things like
 that is fantastic.”
 
-![OSL staff and students greet OSL supporters, users and alumni at the lab's OSCON booth.](/images/OSCONBoothWebsite.jpg#center)
+![OSL staff and students greet OSL supporters, users and alumni at the lab's OSCON booth.](/images/OSCONBoothWebsite.jpg)
 
 While at OSCON, Albertson delivered a talk on private cloud computing, and all of the OSL members in attendance hosted a
 Birds of a Feather session to introduce interested conference attendees to the lab and to offer those who already follow

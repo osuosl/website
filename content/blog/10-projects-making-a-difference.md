@@ -5,7 +5,7 @@ date: 2013-11-25
 img: making-a-difference.png
 ---
 
-![10 Projects Making a Difference](/images/making-a-difference.png#blog)
+![10 Projects Making a Difference](/images/making-a-difference.png)
 
 Submitted by Melissa Morse on November 25, 2013
 

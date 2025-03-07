@@ -412,17 +412,6 @@ img {
   max-width: 100%;
 }
 
-img[src$="#center"] {
-  display: block;
-  margin: auto;
-}
-
-img[src$="#center-white"] {
-  display: block;
-  margin: auto;
-  background: grey;
-}
-
 img[src$="#right"] {
   float: right;
 }
@@ -454,17 +443,6 @@ img[src$="#sponsors"] {
 img[src$="#right-faq"] {
   float: right;
   height: 250px;
-}
-
-img[src$="#blog"] {
-  width: 400px;
-}
-
-img[src$="#blog-center"] {
-  width: 500px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 img[src$="#tag-image"] {

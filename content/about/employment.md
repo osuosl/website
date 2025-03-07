@@ -7,7 +7,7 @@ slug: employment
 
 ## What does it mean to work here?
 
-![What does it mean to work here?](/images/SEQuotesCollage.png#center)
+![What does it mean to work here?](/images/SEQuotesCollage.png)
 
 The Open Source Lab hires undergraduates for an on-campus, paid internship, 20 hours a week year-round, typically for
 two or more years, allowing students to continue taking classes while gaining real-world experience.

@@ -6,7 +6,7 @@ slug: coming-soon-beaver-barcamp-15
 tags: []
 ---
 
-![Beaver BarCamp 2015 Logo](/images/beaver-barcamp-15.jpg#blog)
+![Beaver BarCamp 2015 Logo](/images/beaver-barcamp-15.jpg)
 
 Spring is almost here, and that means Beaver BarCamp 15 is quickly approaching. The OSL's annual unconference is
 scheduled for Saturday, April 18th. Participants are beginning to gather ideas and information for their sessions, and

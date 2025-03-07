@@ -6,8 +6,6 @@ slug: power10
 tags: []
 ---
 
-![OSL Sign](/images/OSLSignPicture.jpg)
-
 We are excited to announce a major upgrade to our OpenPOWER cluster, which will greatly benefit our open source
 projects. In collaboration with IBM, we have successfully integrated [POWER10](https://en.wikipedia.org/wiki/Power10)
 capabilities into our current OpenPOWER cluster, powered by [OpenStack](https://www.openstack.org/) using

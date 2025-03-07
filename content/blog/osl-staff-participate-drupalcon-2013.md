@@ -6,7 +6,7 @@ slug: osl-staff-participate-drupalcon-2013
 tags: []
 ---
 
-![OSL Staff Participate at DrupalCon 2013](/images/DrupalCon-FeaturedImage.jpg#blog)
+![OSL Staff Participate at DrupalCon 2013](/images/DrupalCon-FeaturedImage.jpg)
 
 Open Source Lab staff members attended [DrupalCon](https://portland2013.drupal.org/) May 20-24 at the Oregon Convention
 Center in Portland. OSL attendees welcomed the opportunity to contribute and learn during the many sessions and social

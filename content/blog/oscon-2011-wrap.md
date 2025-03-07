@@ -12,7 +12,7 @@ tags: []
 especially during the summer months. They’re happy to exit the groove, though, when major open source events roll into
 the region.**
 
-![Expo Hall Floor at OSCON 2011, a.k.a. Summer Camp for Geeks](/images/Show_Floor.jpg#center)
+![Expo Hall Floor at OSCON 2011, a.k.a. Summer Camp for Geeks](/images/Show_Floor.jpg)
 
 A group of them took a break from their daily routines and traveled to the Oregon Convention Center in Portland last
 week for [OSCON](http://oscon.com/), now in its 13th year. Amidst dozens of booths, each with its own ornamentation --
@@ -30,12 +30,12 @@ Meanwhile, the students jumped from booth to booth with the masses to learn abou
 initiatives within large companies like Facebook, Google and Intel. The Lab’s OSCON newcomers like freshmen Emily Dunham
 and Alan Sherman were surprised by the varied relationships between attendees and the open source community.
 
-![Alan Sherman and Emily Dunham Staffing the OSUOSL's OSCON Booth](/images/alan_emily.jpg#center)
+![Alan Sherman and Emily Dunham Staffing the OSUOSL's OSCON Booth](/images/alan_emily.jpg)
 
 “I found it a bit interesting to get an idea of what the end users are like,” Dunham said. “It was a much more corporate
 image than what I previously associated with open source, but it’s a good reminder that it really is for everyone.”
 
-![Alan Sherman and John Hawley Rocked the Softlayer Server Challenge; The challenge? Repopulate 20 drive bays and plug in 3 sets of 6 network cables into their respective switch in as short a time as possible.](/images/server_challenger.jpg#center)
+![Alan Sherman and John Hawley Rocked the Softlayer Server Challenge; The challenge? Repopulate 20 drive bays and plug in 3 sets of 6 network cables into their respective switch in as short a time as possible.](/images/server_challenger.jpg)
 
 Both Dunham and OSUOSL Outreach Manager [Leslie Hawthorn](http://twitter.com/lhawthorn) attended a special part of the
 Google-sponsored lunch on Wednesday. It recognized women in the open source community.
@@ -49,7 +49,7 @@ individual “birds of feather” sessions, held after hours.
 “They provide good opportunity for community members to actually discuss things without the format of the expo hall or
 the tutorials,” he said. “It’s really cool that they provided that space and that time for that.”
 
-![Michael Downey, OpenMRS Community Infrastructure Lead, Sports a "This Project Supported by the OSL" Sign as He Walks the OSCON Expo Hall Floor; Little Known Fact: The Portable Booth with OSL Sign Motif Was Originally Popularized by John "Warthog9" Hawley, Systems Administrator for kernel.org](/images/michael_downey.jpg#center)
+![Michael Downey, OpenMRS Community Infrastructure Lead, Sports a "This Project Supported by the OSL" Sign as He Walks the OSCON Expo Hall Floor; Little Known Fact: The Portable Booth with OSL Sign Motif Was Originally Popularized by John "Warthog9" Hawley, Systems Administrator for kernel.org](/images/michael_downey.jpg)
 
 When they weren’t migrating to different spots, the students helped operate the OSL booth, complete with
 [Ganeti Web Manager](http://code.osuosl.org/projects/ganeti-webmgr) for users to demo.
@@ -69,7 +69,7 @@ Lab held its own amongst large-scale corporations.
 “I think what the OSL does is remarkably important and is possibly the most important thing done at OSCON,” Simpson
 said.
 
-![OSL Student Employees Alan Sherman, Emily Dunham and Corbin Simpson Enjoy the Hallway Track](/images/alan_corbin_emily.jpg#center)
+![OSL Student Employees Alan Sherman, Emily Dunham and Corbin Simpson Enjoy the Hallway Track](/images/alan_corbin_emily.jpg)
 
 _Ed. Note:_ This story was written by [Anthony Casson](http://twitter.com/ascasson), Student Writer for the OSL. You can
 see more awesome photos of the OSL in action at OSCON in Anthony's

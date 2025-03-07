@@ -15,7 +15,7 @@ Jeff spoke about the OSUOSL including the history, current projects, and some of
 the lab. There was a lot of interest in the audience about forming open source groups at other universities and
 potential collaboration with the OSUOSL.
 
-![Jeff at Flourish](/images/jeff_flourish_2009.jpg#center)
+![Jeff at Flourish](/images/jeff_flourish_2009.jpg)
 
 Photo from <http://www.flickr.com/photos/9202804@N06/3409624367/> used with permission.
 

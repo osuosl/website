@@ -6,7 +6,7 @@ slug: cass-allseen-alliance
 tags: []
 ---
 
-![AllSeen Alliance](/images/AllSeen-Alliance-Picture.png#blog)
+![AllSeen Alliance](/images/AllSeen-Alliance-Picture.png)
 
 Oregon State University has joined the world’s technology leaders — including LG, Microsoft, and Qualcomm — to advance
 the collaborative development of the Internet of Things (IoT).

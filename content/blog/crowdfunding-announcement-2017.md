@@ -5,7 +5,7 @@ slug: crowdfunding-campaign-2017
 authors: ["Amanda Kelner"]
 ---
 
-![OSL Students](/images/OSLWorkers2Adjusted.jpg#blog)
+![OSL Students](/images/OSLWorkers2Adjusted.jpg)
 
 We’re very excited to announce our very first [crowdfunding campaign](https://create.osufoundation.org/project/6976)
 through the OSU foundation! The OSL relies on donations and revenue generating projects to fund its work and its
@@ -25,4 +25,4 @@ our progress. If you would like to become a regular donor for the OSL, please co
 Also, for regular updates on this project and many others, follow us on [Facebook](https://www.facebook.com/OSUOSL/),
 [Twitter](https://twitter.com/osuosl), and [Instagram](https://www.instagram.com/osuosl/).
 
-![OSL Workers in the Office](/images/OSLWorkers1.jpg#blog-center)
+![OSL Workers in the Office](/images/OSLWorkers1.jpg)

@@ -6,7 +6,7 @@ slug: google-migration-post-mortem
 tags: []
 ---
 
-![Google Migration Post Mortem](/images/Justinblog1_0.gif#blog)
+![Google Migration Post Mortem](/images/Justinblog1_0.gif)
 
 OSU administration recently approached the OSL asking us to help migrate their email archives to Google. Through
 contacts with other local universities that had made the switch recently, we discovered that Portland State University

@@ -6,7 +6,7 @@ authors: ["Lance Albertson"]
 tags: []
 ---
 
-![Hiring two DevOps student position](/images/osl-students-2018.jpg#blog)
+![Hiring two DevOps student position](/images/osl-students-2018.jpg)
 
 Are you a student at Oregon State University who likes working with open source software? If so, then we have a job for
 you! We currently have two [student systems engineer](https://jobs.oregonstate.edu/postings/70962) positions open which

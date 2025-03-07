@@ -14,7 +14,7 @@ some OSU Open Source Lab ([OSL](/)) students also LUG members were treated t
 An incredible 23 organizations and companies listed below opened their booths and handed the students boxes of t-shirts,
 books and other great gifts to help the LUG’s development this coming year.
 
-![The OSU LUG Cannot Live on OSL Goodies Alone](/images/swag_osl.jpg#center)
+![The OSU LUG Cannot Live on OSL Goodies Alone](/images/swag_osl.jpg)
 
 “At the start of the school year, you have a bunch of freshmen coming in being pulled left and right by all these
 different organizations,” said Emily Dunham, a sophomore developer at the OSL and LUG member. “We want to give the

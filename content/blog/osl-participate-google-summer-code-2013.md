@@ -6,7 +6,7 @@ slug: osl-participate-google-summer-code-2013
 tags: []
 ---
 
-![OSL to Participate in Google Summer of Code 2013](/images/gsoc-feature.png#blog)
+![OSL to Participate in Google Summer of Code 2013](/images/gsoc-feature.png)
 
 This year will be the lab's seventh straight as a GSOC mentor.
 

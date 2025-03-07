@@ -6,7 +6,7 @@ slug: devops-bootcamp-extends-osl-reach
 tags: []
 ---
 
-![DevOps Bootcamp Extends OSL Reach](/images/dobc-extends-osl-reach.jpg#blog)
+![DevOps Bootcamp Extends OSL Reach](/images/dobc-extends-osl-reach.jpg)
 
 Sometimes, it’s hard to be popular. The increasing popularity of open source means that there are always more students
 interested in the Open Source Lab than we have the ability to hire and mentor. In order to increase the lab’s reach and

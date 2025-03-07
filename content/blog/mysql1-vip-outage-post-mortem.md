@@ -6,7 +6,7 @@ slug: mysql1-vip-outage-post-mortem
 tags: []
 ---
 
-![Mysql1-vip Outage Post-Mortem](/images/outagepic2_0.jpg#blog)
+![Mysql1-vip Outage Post-Mortem](/images/outagepic2_0.jpg)
 
 **Background**
 

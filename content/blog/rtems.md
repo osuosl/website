@@ -6,7 +6,7 @@ authors: ["Amanda Kelner"]
 tags: []
 ---
 
-![RTEMS](/images/windows-on-building.jpg#blog)
+![RTEMS](/images/windows-on-building.jpg)
 
 Within the last several years, the OSL has provided a home for the Real-Time Executive for Multiprocessor System, or
 RTEMS. RTEMS is an open Real-Time Operating System (RTOS) that supports both open application programming interfaces

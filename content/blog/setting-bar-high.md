@@ -6,7 +6,7 @@ slug: setting-bar-high
 tags: []
 ---
 
-![Setting the Bar High](/images/bbc9-clover.jpg#blog)
+![Setting the Bar High](/images/bbc9-clover.jpg)
 
 The Oregon State University Open Source Lab’s [Beaver BarCamp 9](http://beaverbarcamp.org/) brought around 70 people to
 the Kelley Engineering Center on April 21 to discuss projects, explore new interests and share ideas. The sessions held
@@ -27,7 +27,7 @@ Attendees brought expertise in a variety of fields, culminating in immersive dis
 When one member of a session group didn’t understand a concept, other attendees would assist the presenter in using a
 different frame of thinking to communicate ideas.
 
-![Soo-Hyun Yoo, far left, answers questions about the robot-operating-system-controlled robots he built and programmed.](/images/bbc9-robot.jpg#center)
+![Soo-Hyun Yoo, far left, answers questions about the robot-operating-system-controlled robots he built and programmed.](/images/bbc9-robot.jpg)
 
 Soo Hyun-Yoo, a freshman in computer science, presented his two robot-operating-system-controlled robots in his session,
 explaining how the ROS software runs his robots and demonstrating their movement with a joystick tripod he built
@@ -43,14 +43,14 @@ cards and taped it onto the event schedule. Participants were invited to follow 
 sessions caught their attention. While computer science and programming remained the interests shared by most BarCamp
 attendees, the diverse sessions allowed people to apply that interest to a wide range of topics.
 
-![Members of Portland State University’s Computer Action Team present and demonstrate the automation software Puppet.](/images/bbc9-psu.jpg#center)
+![Members of Portland State University’s Computer Action Team present and demonstrate the automation software Puppet.](/images/bbc9-psu.jpg)
 
 In one session, representatives from Portland State University took to a KEC classroom to discuss the PSU Computer
 Action Team’s use of Puppet automation software and detailed how others could effectively utilize Puppet in system
 administration. Simultaneously, a radically different session was taking place on the lawn outside the building: How to
 Find Four-Leaf Clovers.
 
-![Open Source Lab Developer Emily Dunham, center, and student Nick Snowhill search for four-leaf clovers with guidance from student Amanda Abbot, right.](/images/bbc9-clover.jpg#center)
+![Open Source Lab Developer Emily Dunham, center, and student Nick Snowhill search for four-leaf clovers with guidance from student Amanda Abbot, right.](/images/bbc9-clover.jpg)
 
 Amanda Abbott, a junior in chemistry, led the session, in which she instructed her participants in how to recognize a
 four-leaf clover in a dense patch of clovers and grass. Abbott has been regularly finding four-leaf clovers since

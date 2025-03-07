@@ -14,7 +14,7 @@ members of the press to tour this newly opened facility and learn more about the
 Lab crew was fortunate enough to be invited to join this august group for a tour thanks to
 [David Recordon](http://davidrecordon.com/), Facebook's Senior Open Programs Manager.
 
-![Powered by Gnomes](/images/Powered_by_Gnomes.jpg#center)
+![Powered by Gnomes](/images/Powered_by_Gnomes.jpg)
 
 **Little Known Fact: The Prineville data center is actually powered by gnomes.**
 
@@ -24,7 +24,7 @@ We kicked off the day with opening ceremonies, including introductions by severa
 the Oregon Legislature and the Mayor of Prineville, Betty Ropple. Finishing off the morning's event, Mayor Ropple and
 Facebook's staff pushed a gigantic "Like" button on the opening of the data center.
 
-![Facebook Likes Prineville](/images/Facebook_Likes_Prineville.jpg#center)
+![Facebook Likes Prineville](/images/Facebook_Likes_Prineville.jpg)
 
 **There's so much "Like" going on in this photo that you can't even see the button through the glow.**
 
@@ -33,7 +33,7 @@ Facebook's staff pushed a gigantic "Like" button on the opening of the data cent
 We had a bit of down time before our actual tour began, so we chilled out in the facility's game room and enjoyed
 playing Xbox together.
 
-![OSLers XBox](/images/OSLers_XBOX.jpg#center)
+![OSLers XBox](/images/OSLers_XBOX.jpg)
 
 **A little Halo, anyone?**
 
@@ -41,7 +41,7 @@ playing Xbox together.
 
 And since we wanted to be great guests, our students also fixed one of the displays that was offline when we arrived.
 
-![Fixing TV Game Room](/images/Fixing_TV_Game_Room.jpg#center)
+![Fixing TV Game Room](/images/Fixing_TV_Game_Room.jpg)
 
 **How many sys admins does it take to fix a display? At least four.**
 
@@ -50,7 +50,7 @@ And since we wanted to be great guests, our students also fixed one of the displ
 Among the many amazing things we saw on the tour, we were treated to the first design spec ever created for the data
 center.
 
-![Prineville Data Center Design Spec v1](/images/Prineville_Data_Center_Design_Spec_v1.jpg#center)
+![Prineville Data Center Design Spec v1](/images/Prineville_Data_Center_Design_Spec_v1.jpg)
 
 **Preliminary electrical specification for the Prineville facility, created late one night on a napkin.**
 

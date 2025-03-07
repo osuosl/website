@@ -6,7 +6,7 @@ slug: devops-daycamp
 tags: []
 ---
 
-![DevOps DayCamp](/images/dodc_2.gif#blog)
+![DevOps DayCamp](/images/dodc_2.gif)
 
 The Open Source Lab will host the new DevOps DayCamp on Saturday, October 11, in the Kelley Engineering Center from 9
 a.m. until 6 p.m. The event is free and open to the public.

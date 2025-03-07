@@ -6,7 +6,7 @@ slug: student-story-whitehet
 tags: ["student-stories"]
 ---
 
-![Reflections on My Time at the Open Source Lab, Travis Whitehead](/images/twhitehead_wide.jpg#center)
+![Reflections on My Time at the Open Source Lab, Travis Whitehead](/images/twhitehead_wide.jpg)
 
 Reflections on My Time at the Open Source Lab by Travis Whitehead
 

@@ -6,7 +6,7 @@ authors: ["Amanda Kelner"]
 tags: []
 ---
 
-![The OSL at PyCon](/images/PyCon16-logo.png#blog)
+![The OSL at PyCon](/images/PyCon16-logo.png)
 
 The month of June opened with the annual [PyCon](https://us.pycon.org/2016/) event at the Oregon Convention Center in
 Portland, the largest annual gathering for the [Python](https://www.python.org) community. This year, the OSL had the

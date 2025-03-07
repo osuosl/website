@@ -6,7 +6,7 @@ slug: osl-talks-oswald-and-ganeti-open-source-bridge
 tags: []
 ---
 
-![OSL Talks OSWALD and Ganeti at Open Source Bridge](/images/osbridge_2011_lobby.jpg#blog)
+![OSL Talks OSWALD and Ganeti at Open Source Bridge](/images/osbridge_2011_lobby.jpg)
 
 Three representatives of the Open Source Lab gave presentations at last week's
 [Open Source Bridge conference](http://opensourcebridge.org/) in Portland.
@@ -44,7 +44,7 @@ On the second day of OS Bridge, Albertson and Krenesky gave their presentation, 
 is the launching point for Ganeti Web Manager (GWM), a web application that allows administrators and clients to access
 their Ganeti clusters.
 
-![OSBRIDGE 2011 Hacker Lounge](/images/osbridge_2011_hacker_lounge.jpg#center)
+![OSBRIDGE 2011 Hacker Lounge](/images/osbridge_2011_hacker_lounge.jpg)
 
 Many OSL members are part of GWM's development - both students and full-time staff. The tool is still in its early
 stages, but it's growing. Wednesday marked the second year Albertson gave a presentation at OS Bridge about Ganeti; last

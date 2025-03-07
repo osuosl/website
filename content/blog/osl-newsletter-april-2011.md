@@ -6,7 +6,7 @@ slug: osl-newsletter-april-2011
 tags: []
 ---
 
-![OSL in Prineville](/images/OSL_Prineville.jpg#center)
+![OSL in Prineville](/images/OSL_Prineville.jpg)
 
 **The OSL Team and Our Host, David Recordon, at Facebook's Prineville Data Center**
 
@@ -56,7 +56,7 @@ running on Supercell and our first report from the field has come in from the Dr
 Drupal's use of Supercell [on the blog](http://randyfay.com/node/99) of their stalwart Infrastructure Team member,
 [Randy Fay](http://twitter.com/randyfay).
 
-![Welcome to Developer's Paradise](/images/dev_paradise.jpg#center)
+![Welcome to Developer's Paradise](/images/dev_paradise.jpg)
 
 Photo Credit: Nik Cubrilovic
 

@@ -6,7 +6,7 @@ slug: summer-2016-internship
 tags: []
 ---
 
-![OSL Interns](/images/Interns2016-1.jpg#blog)
+![OSL Interns](/images/Interns2016-1.jpg)
 
 In a new program, the Oregon State University Open Source Lab (OSL) partnered with Intel to give community college
 students an opportunity to get hands-on experience with open-source projects. This summer, four students interned for 10
@@ -75,4 +75,4 @@ Albertson was pleased with the success of the internship program. “Long-term w
 internship every term. We could also extend the opportunity to the Bend campus. I think it has the potential for growing
 and this is just the first step,” he said.
 
-![Intern's Receive Certificates on Their Last Day](/images/Interncertificates.jpg#blog-center)
+![Intern's Receive Certificates on Their Last Day](/images/Interncertificates.jpg)

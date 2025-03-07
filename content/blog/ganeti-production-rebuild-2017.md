@@ -6,7 +6,7 @@ slug: ganeti-production-rebuild-2017
 tags: []
 ---
 
-![OSL Sign Picture](/images/OSLSignPicture.jpg#blog)
+![OSL Sign Picture](/images/OSLSignPicture.jpg)
 
 ## Service(s) affected
 

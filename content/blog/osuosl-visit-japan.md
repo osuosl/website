@@ -6,7 +6,7 @@ slug: osuosl-visit-japan
 tags: []
 ---
 
-![OSUOSL Visit to Japan](/images/deb_matz_0.jpg#blog)
+![OSUOSL Visit to Japan](/images/deb_matz_0.jpg)
 
 Deb Bryant, the OSU Open Source Lab's Public Sector Communities Manager, was recently invited to participate in a number
 of events in and around Matsue City, located in the Shimane Prefecture of Japan. The region has drawn national

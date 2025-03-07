@@ -6,7 +6,7 @@ slug: open-source-bridge-promotes-community
 tags: []
 ---
 
-![Open Source Bridge Promotes Community](/images/osbridgecommunity.jpg#blog)
+![Open Source Bridge Promotes Community](/images/osbridgecommunity.jpg)
 
 **With the open source conference season well underway, OSL students and staff were excited to attend
 [Open Source Bridge](http://opensourcebridge.org/) at the Eliot Center in downtown Portland from June 18-21. Now in its
@@ -36,7 +36,7 @@ attended ranged from [Leveling up in DevOps: the Art of Bad Shell Scripts](http:
 “I really enjoyed the diversity of not only the people attending but also the session topics,” Albertson says. “I
 noticed a wider variety of topics this year than in the past--from advanced technical to sociological topics.”
 
-![Lance Albertson Presentation](/images/lancepresentation.jpg#center)
+![Lance Albertson Presentation](/images/lancepresentation.jpg)
 
 Lance Albertson giving a presentation on how the OSU Open Source Lab mentors "rockstar" students.
 

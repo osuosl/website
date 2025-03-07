@@ -6,7 +6,7 @@ slug: new-project-libpng
 tags: []
 ---
 
-![OSL Sign New Project](/images/NewProjectAdjustedImage.png#blog)
+![OSL Sign New Project](/images/NewProjectAdjustedImage.png)
 
 The OSL took on a new project and delivers a new
 [mirroring site libpng source](http://www.libpng.org/pub/png/libpng.html) for libpng tarball distributions that is 20+

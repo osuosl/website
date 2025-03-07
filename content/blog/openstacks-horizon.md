@@ -6,7 +6,7 @@ slug: openstacks-horizon
 tags: []
 ---
 
-![Openstack's Horizon](/images/tech-blog.png#blog)
+![Openstack's Horizon](/images/tech-blog.png)
 
 _The first tech post is by Chance Zibolski, a community system administrator and project lead of Ganeti Web Manager, a
 Web administration panel that allows administrators and clients access to administer and use Google’s open source cloud
@@ -30,7 +30,7 @@ separated out from the Openstack dashboard and can be used as a general purpose 
 provides utilities from mapping Django models to interactive/editable tables to creating tabbed page layouts and
 multiple step modal windows for performing actions.
 
-![Openstack Screenshot](/images/openstack-screenshot.png#center)
+![Openstack Screenshot](/images/openstack-screenshot.png)
 
 Openstack Horizon screenshot.
 

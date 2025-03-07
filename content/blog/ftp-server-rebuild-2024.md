@@ -6,8 +6,6 @@ authors: ["Lance Albertson"]
 tags: []
 ---
 
-![OSL Sign](/images/OSLSignPicture.jpg)
-
 ## Service(s) affected
 
 FTP mirroring service which includes (but not limited to) the following hostnames:

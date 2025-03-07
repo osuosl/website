@@ -16,7 +16,7 @@ involvement. LinuxCon NA 2011 will take place the week of August 15th in Vancouv
 Conference registration is now open, and the folks at the Linux Foundation were kind enough to put together several
 discounted packages for student attendees.
 
-![Tux Bus](/images/tux_bus.jpg#center)
+![Tux Bus](/images/tux_bus.jpg)
 
 All Aboard the Tux Bus for Vancouver!
 

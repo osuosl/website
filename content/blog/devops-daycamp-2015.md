@@ -6,7 +6,7 @@ slug: devops-daycamp-15
 tags: []
 ---
 
-![DevOps DayCamp 2015](/images/daycamp2015.jpg#blog)
+![DevOps DayCamp 2015](/images/daycamp2015.jpg)
 
 In early October, we hosted our second annual DevOps DayCamp to over eighty students, faculty, and community members,
 acting as a feeder workshop into the year long DevOps BootCamp series. Beyond its promotional function, our DayCamp

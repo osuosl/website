@@ -6,7 +6,7 @@ slug: connecting-at-beaver-barcamp-12
 tags: []
 ---
 
-![Beaver Bar Camp](/images/bbc12-blog-post.jpg#blog)
+![Beaver Bar Camp](/images/bbc12-blog-post.jpg)
 
 More than 160 students, community members and educators gathered in the Kelley Engineering Center at Oregon State to
 share ideas, make connections and learn together at the Open Source Lab’s Beaver BarCamp 12 on Saturday, October 12. An
@@ -51,7 +51,7 @@ present. The volunteer has to make it up as they go along, allowing students and
 speaking. Russ Earl, a software engineer with Intel, attended Beaver BarCamp for the first time and participated in
 PowerPoint karaoke.
 
-![Beaver Bar Camp](/images/bbc12-blog-post.jpg#blog-center)
+![Beaver Bar Camp](/images/bbc12-blog-post.jpg)
 
 _“I'd heard about PowerPoint karaoke but didn't quite know what to expect,” says Earl. “It was a fun time and a good
 chance to practice speaking skills.”_

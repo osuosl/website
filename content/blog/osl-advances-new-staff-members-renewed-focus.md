@@ -43,7 +43,7 @@ after spending over a decade in various positions on the OSU campus. Lett has wo
 School of [Electrical Engineering and Computer Science](http://eecs.oregonstate.edu/), completed an undergraduate degree
 in physics as a student and worked with [Central Web Services](http://oregonstate.edu/cws/) as a software developer.
 
-![Lett joins the OSL as senior software developer](/images/KenLettBioPicsm.jpg#center)
+![Lett joins the OSL as senior software developer](/images/KenLettBioPicsm.jpg)
 
 Rudy Grigar and Justin Dugger, who joined the lab as senior systems architects, bring varied experiences of their own to
 the OSL, both in the private sector and in educational settings. Grigar, who graduated from OSU in 2010, worked at the
@@ -57,7 +57,7 @@ Associate Director of Operations – a move that allows him to use the knowledge
 hosting over the past five years to evaluate the lab's approach to hosting and development tasks and implement new
 methods to promote efficiency.
 
-![Grigar, who worked in the OSL as a student, returns to the lab as senior systems architect.](/images/RudyGrigarBiopic.jpg#center)
+![Grigar, who worked in the OSL as a student, returns to the lab as senior systems architect.](/images/RudyGrigarBiopic.jpg)
 
 Project Manager Greg Lund-Chaix, who has spent the last several years working heavily on the Oregon Virtual School
 District, is also refocusing his efforts within the lab. Lund-Chaix will still be involved in the virtual school
@@ -72,7 +72,7 @@ outreach manager in the past but have been unattached since the staff member's d
 > “I saw that it was really an important role to have in our organization, but we can certainly do it with students,”
 > says Albertson, who doesn't shy away from giving students the opportunity to fulfill varied roles in the lab.
 
-![Dugger is serving as a senior systems architect in the lab after working at Kansas State University.](/images/JustinDuggerbiopicsm.jpg#center)
+![Dugger is serving as a senior systems architect in the lab after working at Kansas State University.](/images/JustinDuggerbiopicsm.jpg)
 
 As OSL staff work to optimize the lab's resources and place more emphasis on the value of the student experience, close
 mentoring and expanded student responsibilities will be essential to success. All of the new staff members will

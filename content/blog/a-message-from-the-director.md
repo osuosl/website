@@ -6,7 +6,7 @@ slug: a-message-from-the-director
 tags: []
 ---
 
-![OSL Sign](/images/OSLSignPicture.jpg#blog)
+![OSL Sign](/images/OSLSignPicture.jpg)
 
 Since its creation in 2002, the Open Source Lab (OSL) has been a beacon of innovation, experiential learning, and
 hosting at Oregon State University and beyond. As Director, I’ve had the pleasure of watching the lab and its employees
