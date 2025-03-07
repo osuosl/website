@@ -12,6 +12,11 @@
           <li>
             <span class="date-wrap">{{ .Date | dateFormat "2006-02" }}</span>
             <a href="{{ .RelPermalink }}" class="hover-link">{{ .Title }}</a>
+            {{ with .GetTerms "tags" }}
+              {{ range . }}
+                <span class="tag"><a href="{{ .RelPermalink }}" class="hover-link">#{{ .Slug }}</a></span>
+              {{ end }}
+            {{ end }}
           </li>
         {{ end }}
       </ul>

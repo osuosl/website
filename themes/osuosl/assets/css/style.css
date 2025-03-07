@@ -707,7 +707,7 @@ textarea {
   margin-bottom: 0;
 }
 
-.metadata .tag-list {
+.tag-list {
   padding-inline-start: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -1046,9 +1046,16 @@ textarea {
   padding-inline-start: 0;
 }
 
-.archive-list li {
+.archive-list > li {
   display: flex;
   gap: 1ch;
+  align-items: flex-end;
+}
+
+.archive-list .tag a {
+  opacity: 0.5;
+  color: var(--contrast);
+  font-size: smaller;
 }
 
 /*
