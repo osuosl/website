@@ -34,7 +34,7 @@
 
   --foreground: #000000;
   --background: #ffffff;
-  --background-surface-high: #e5e2dd;
+  --background-surface-high: #f4f4f4;
   --background-surface: #d2d2d2;
   --background-surface-low: #2a2a2a;
   --background-surface-lowest: #121212;
@@ -119,6 +119,19 @@ ul {
 
 ul li {
   margin-bottom: 6px;
+}
+
+blockquote {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 1.5ch;
+  padding-block: 0.25rem;
+  border-left: 4px solid var(--background-surface);
+  background-color: var(--background-surface-high);
+}
+
+blockquote > p {
+  margin-block: 0;
 }
 
 button {
