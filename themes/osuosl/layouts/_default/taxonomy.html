@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{- partial "menu.html" . -}}
+  <main class="main_content">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <ul>
+      {{ range .Data.Terms.ByCount }}
+        <li><a href="{{ .Page.RelPermalink }}" class="tag">#{{ .Page.LinkTitle }}</a> ({{ .Count }})</li>
+      {{ end }}
+    </ul>
+  </main>
+{{ end }}

@@ -1,14 +1,14 @@
 ---
-title: FTP Server Rebuild - March 2024
+title: "FTP Server Rebuild - March 2024"
 date: 2024-03-07
 slug: ftp-server-rebuild-2024
 authors: ["Lance Albertson"]
+tags: []
 ---
 
 ![OSL Sign](/images/OSLSignPicture.jpg)
 
-Service(s) affected:
---------------------
+## Service(s) affected
 
 FTP mirroring service which includes (but not limited to) the following hostnames:
 
@@ -20,8 +20,7 @@ FTP mirroring service which includes (but not limited to) the following hostname
 - rsync.osuosl.org
 - rsync2.osuosl.org
 
-Reason for outage:
-------------------
+## Reason for outage
 
 We will upgrade all three servers' operating system from CentOS 7 to AlmaLinux 8. Unfortunately, due to an issue with
 how the disks were partitioned, we are unable to do in-place upgrades. This will require to do a full reinstall
@@ -37,10 +36,9 @@ Since ftp-osl acts as a primary for our mirror infrastructure, we will set up a 
 of syncing while we reinstall the hardware running ftp-osl. This server will not be in the main DNS rotation, but it
 will still be syncing content for the other servers.
 
-Please check https://status.osuosl.org/ for any future updates to this planned outage.
+Please check <https://status.osuosl.org/> for any future updates to this planned outage.
 
-Outage Window:
---------------
+## Outage Window
 
 Currently proposed schedule for the servers:
 
@@ -48,7 +46,6 @@ Currently proposed schedule for the servers:
 - ftp-nyc: 03/18/2024 - 03/22/2024
 - ftp-osl: 04/01/2024 - 04/05/2024
 
-Projects affected:
-------------------
+## Projects affected
 
 All projects with hosted content on our FTP mirror network.

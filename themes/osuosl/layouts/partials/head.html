@@ -1,12 +1,43 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }}</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {{ $styles := resources.Get "css/style.css" }}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script type="text/javascript" src="/js/mobile-menu.js"></script>
-    <script type="text/javascript" src="/js/search-modal.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  {{ "<!-- Primary Meta Tags -->" | safeHTML }}
+  {{ $title := cond (eq .Title site.Title) .Title (printf "%s | %s" .Title .Site.Title) }}
+  {{ $image :=  printf "%simages/zachary_homepage.jpg" .Site.Params.Url }}
+  <title>{{ $title }}</title>
+  <meta name="title" content="{{ $title }}" />
+  <meta name="description" content="{{ .Site.Params.Description }}" />
+
+  {{ "<!-- Open Graph / Facebook -->" | safeHTML }}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Site.Params.Url }}" />
+  <meta property="og:title" content="{{ $title }}" />
+  <meta property="og:description" content="{{ .Site.Params.Description }}" />
+  <meta property="og:image" content="{{ $image }}" />
+
+  {{ "<!-- Twitter -->" | safeHTML }}
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="{{ .Site.Params.Url }}" />
+  <meta property="twitter:title" content="{{ $title }}" />
+  <meta property="twitter:description" content="{{ .Site.Params.Description }}" />
+  <meta property="twitter:image" content="{{ $image }}" />
+
+  {{ "<!-- Styles -->" | safeHTML }}
+  {{ $styles := resources.Get "css/style.css" }}
+  <link rel="stylesheet" href="{{ $styles }}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  {{ "<!-- Scripts -->" | safeHTML }}
+  <script type="text/javascript" src="/js/mobile-menu.js"></script>
+  <script type="text/javascript" src="/js/search-modal.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  {{ "<!-- Favicon -->" | safeHTML }}
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="{{ $title }}" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
 </head>

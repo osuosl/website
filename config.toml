@@ -1,226 +1,231 @@
-baseURL = '/'
+baseURL = 'https://osuosl.org/'
 languageCode = 'en-us'
 title = 'OSU Open Source Lab'
 theme = 'osuosl'
 relativeURLs = true
 enableInlineShortcodes = true
 disablePathToLower = true
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[params]
+description = 'A nonprofit organization working for the advancement of open source technologies.'
+url = "https://osuosl.org/"
 
 [taxonomies]
 tag = "tags"
 
 [menu]
-    [[menu.main]]
-        name = "Home"
-        url = "/"
-        weight = 1
-        identifier = "home"
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+identifier = "home"
 
-    [[menu.main]]
-        name = "About"
-        url = "/about"
-        weight = 2
-        identifier = "about"
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 2
+identifier = "about"
 
-        [[menu.main]]
-            parent = "about"
-            name = "About OSL"
-            url = "/about"
-            weight = 1
-        [[menu.main]]
-            parent = "about"
-            name = "FAQ"
-            url = "/donate/faq"
-            weight = 2
-        [[menu.main]]
-            parent = "about"
-            name = "Contact Us"
-            url = "/contact"
-            weight = 3
-        [[menu.main]]
-            parent = "about"
-            name = "Staff"
-            url = "/about/people"
-            weight = 4
-        [[menu.main]]
-            parent = "about"
-            name = "Logos"
-            url = "/about/logos"
-            weight = 5
-        [[menu.main]]
-            parent = "about"
-            name = "Donate"
-            url = "/donate"
-            identifier = "donate"
-            weight = 6
+[[menu.main]]
+parent = "about"
+name = "About OSL"
+url = "/about"
+weight = 1
+[[menu.main]]
+parent = "about"
+name = "FAQ"
+url = "/donate/faq"
+weight = 2
+[[menu.main]]
+parent = "about"
+name = "Contact Us"
+url = "/contact"
+weight = 3
+[[menu.main]]
+parent = "about"
+name = "Staff"
+url = "/about/people"
+weight = 4
+[[menu.main]]
+parent = "about"
+name = "Logos"
+url = "/about/logos"
+weight = 5
+[[menu.main]]
+parent = "about"
+name = "Donate"
+url = "/donate"
+identifier = "donate"
+weight = 6
 
-            [[menu.main]]
-                parent = "donate"
-                name = "Hardware Donations"
-                url = "/donate/hardware"
-                weight = 1
+[[menu.main]]
+parent = "donate"
+name = "Hardware Donations"
+url = "/donate/hardware"
+weight = 1
 
-            [[menu.main]]
-                parent = "donate"
-                name = "Sponsors"
-                url = "/sponsors"
-                weight = 2
-        
-    [[menu.main]]
-        name = "Services"
-        url = "/services"
-        weight = 3
-        identifier = "services"
+[[menu.main]]
+parent = "donate"
+name = "Sponsors"
+url = "/sponsors"
+weight = 2
 
-        [[menu.main]]
-            parent = "services"
-            name = "Hosting"
-            url = "/services/hosting"
-            identifier = "hosting"
-            weight = 1
+[[menu.main]]
+name = "Services"
+url = "/services"
+weight = 3
+identifier = "services"
 
-            [[menu.main]]
-                parent = "hosting"
-                name = "Hosted Projects"
-                url = "/communities"
-                weight = 1
+[[menu.main]]
+parent = "services"
+name = "Hosting"
+url = "/services/hosting"
+identifier = "hosting"
+weight = 1
 
-            [[menu.main]]
-                parent = "hosting"
-                name = "Hosting Details"
-                url = "/services/hosting/details"
-                weight = 2
+[[menu.main]]
+parent = "hosting"
+name = "Hosted Projects"
+url = "/communities"
+weight = 1
 
-            [[menu.main]]
-                parent = "hosting"
-                name = "Hosting Policy"
-                url = "/services/hosting/policy"
-                weight = 3
+[[menu.main]]
+parent = "hosting"
+name = "Hosting Details"
+url = "/services/hosting/details"
+weight = 2
 
-            [[menu.main]]
-                parent = "hosting"
-                name = "Request Hosting"
-                url = "/request-hosting"
-                weight = 4
+[[menu.main]]
+parent = "hosting"
+name = "Hosting Policy"
+url = "/services/hosting/policy"
+weight = 3
 
-        [[menu.main]]
-            parent = "services"
-            name = "AARCH64 Development Hosting"
-            url = "/services/aarch64"
-            identifier = "aarch64"
-            weight = 2
+[[menu.main]]
+parent = "hosting"
+name = "Request Hosting"
+url = "/request-hosting"
+weight = 4
 
-            [[menu.main]]
-                parent = "aarch64"
-                name = "Current AARCH64 Projects"
-                url = "/services/aarch64/current-projects"
-                weight = 1
+[[menu.main]]
+parent = "services"
+name = "AARCH64 Development Hosting"
+url = "/services/aarch64"
+identifier = "aarch64"
+weight = 2
 
-            [[menu.main]]
-                parent = "aarch64"
-                name = "Former AARCH64 Projects"
-                url = "/services/aarch64/former-projects"
-                weight = 2
+[[menu.main]]
+parent = "aarch64"
+name = "Current AARCH64 Projects"
+url = "/services/aarch64/current-projects"
+weight = 1
 
-            [[menu.main]]
-                parent = "aarch64"
-                name = "AARCH64 OpenStack Request Form"
-                url = "/services/aarch64/request_hosting"
-                weight = 3
+[[menu.main]]
+parent = "aarch64"
+name = "Former AARCH64 Projects"
+url = "/services/aarch64/former-projects"
+weight = 2
 
-        [[menu.main]]
-            parent = "services"
-            name = "POWERLinx/OpenPOWER Development Hosting"
-            identifier = "powerdev"
-            url = "/services/powerdev"
-            weight = 3
+[[menu.main]]
+parent = "aarch64"
+name = "AARCH64 OpenStack Request Form"
+url = "/services/aarch64/request_hosting"
+weight = 3
 
-            [[menu.main]]
-                parent = "powerdev"
-                name = "Current POWERdev Projects"
-                url = "/services/powerdev/current-projects"
-                weight = 1
+[[menu.main]]
+parent = "services"
+name = "POWERLinx/OpenPOWER Development Hosting"
+identifier = "powerdev"
+url = "/services/powerdev"
+weight = 3
 
-            [[menu.main]]
-                parent = "powerdev"
-                name = "Former POWERdev Projects"
-                url = "/services/powerdev/former-projects"
-                weight = 2
+[[menu.main]]
+parent = "powerdev"
+name = "Current POWERdev Projects"
+url = "/services/powerdev/current-projects"
+weight = 1
 
-            [[menu.main]]
-                parent = "powerdev"
-                name = "OpenPOWER GPU Request Form"
-                url = "/services/powerdev/request_gpu"
-                weight = 3
+[[menu.main]]
+parent = "powerdev"
+name = "Former POWERdev Projects"
+url = "/services/powerdev/former-projects"
+weight = 2
 
-            [[menu.main]]
-                parent = "powerdev"
-                name = "OpenPOWER OpenStack Request Form"
-                url = "/services/powerdev/request_hosting"
-                weight = 4
+[[menu.main]]
+parent = "powerdev"
+name = "OpenPOWER GPU Request Form"
+url = "/services/powerdev/request_gpu"
+weight = 3
 
-            [[menu.main]]
-                parent = "powerdev"
-                name = "POWER CI Request Form"
-                url = "/services/powerdev/request_powerci"
-                weight = 5
+[[menu.main]]
+parent = "powerdev"
+name = "OpenPOWER OpenStack Request Form"
+url = "/services/powerdev/request_hosting"
+weight = 4
 
-            [[menu.main]]
-                parent = "powerdev"
-                name = "Open-CE"
-                url = "/services/powerdev/opence"
-                weight = 6
+[[menu.main]]
+parent = "powerdev"
+name = "POWER CI Request Form"
+url = "/services/powerdev/request_powerci"
+weight = 5
 
-            [[menu.main]]
-                parent = "powerdev"
-                name = "Cryo-EM"
-                url = "/services/powerdev/cryo-em"
-                weight = 7
+[[menu.main]]
+parent = "powerdev"
+name = "Open-CE"
+url = "/services/powerdev/opence"
+weight = 6
 
-        [[menu.main]]
-            parent = "services"
-            name = "IBM Z Development Hosting"
-            identifier = "ibm-z"
-            url = "/services/ibm-z"
-            weight = 4
+[[menu.main]]
+parent = "powerdev"
+name = "Cryo-EM"
+url = "/services/powerdev/cryo-em"
+weight = 7
 
-            [[menu.main]]
-                parent = "ibm-z"
-                name = "IBM Z CI Request Form"
-                url = "/services/ibm-z/request_ci"
+[[menu.main]]
+parent = "services"
+name = "IBM Z Development Hosting"
+identifier = "ibm-z"
+url = "/services/ibm-z"
+weight = 4
 
-    [[menu.main]]
-        name = "Student Experience"
-        url = "/students"
-        identifier = "students"
-        weight = 4
+[[menu.main]]
+parent = "ibm-z"
+name = "IBM Z CI Request Form"
+url = "/services/ibm-z/request_ci"
 
-            [[menu.main]]
-                parent = "students"
-                name = "Employment"
-                url = "/about/employment"
-                weight = 1
+[[menu.main]]
+name = "Student Experience"
+url = "/students"
+identifier = "students"
+weight = 4
 
-            [[menu.main]]
-                parent = "students"
-                name = "Education"
-                identifier = "education"
-                url = "/about/education"
-                weight = 2
+[[menu.main]]
+parent = "students"
+name = "Employment"
+url = "/about/employment"
+weight = 1
 
-                    [[menu.main]]
-                        parent = "education"
-                        name = "Beaver Barcamp"
-                        url = "/about/beaverbarcamp"
-                        weight = 1
+[[menu.main]]
+parent = "students"
+name = "Education"
+identifier = "education"
+url = "/about/education"
+weight = 2
 
-            [[menu.main]]
-                parent = "students"
-                name = "Student Stories"
-                url = "/student-stories"
-                weight = 3
+[[menu.main]]
+parent = "education"
+name = "Beaver Barcamp"
+url = "/about/beaverbarcamp"
+weight = 1
 
-    [[menu.main]]
-        name = "Blog"
-        weight = 5
-        url = "/blog"
+[[menu.main]]
+parent = "students"
+name = "Student Stories"
+url = "/student-stories"
+weight = 3
+
+[[menu.main]]
+name = "Blog"
+weight = 5
+url = "/blog"

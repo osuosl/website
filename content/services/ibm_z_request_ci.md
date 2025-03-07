@@ -9,15 +9,16 @@ For any **changes, updates, or issues with an existing project** please send the
 [ibm-z-ci-request@osuosl.org](mailto:ibm-z-ci-request@osuosl.org) and include the original project name in the subject
 line and the names of the Jenkins jobs that have the issue in the message body.
 
-This access is intended only for ***free and open source*** projects who qualify and are approved by both the OSUOSL and
+This access is intended only for **_free and open source_** projects who qualify and are approved by both the OSUOSL and
 IBM. For proprietary sourced projects or products please use other POWER resources which can be found
 [here](https://developer.ibm.com/linuxonpower/cloud-resources/). The IBM Z CI service uses Docker to deploy Jenkins
 workers.
 
-For more resources regarding Linux on IBM Z, take a look at IBM's [Linux on IBM Z
-community](https://www.ibm.com/developerworks/community/groups/community/lozopensource).
+For more resources regarding Linux on IBM Z, take a look at IBM's
+[Linux on IBM Z community](https://www.ibm.com/developerworks/community/groups/community/lozopensource).
 
 {{< raw >}}
+
 <div id="content">
 <!-- Formsender error script -->
 <script src="../../../js/formsender-error.js"></script>
@@ -103,19 +104,23 @@ community](https://www.ibm.com/developerworks/community/groups/community/lozopen
         <label for="webform-component-platforms">OS Platform(s) <span class="form-required"
             title="This field is required."></span></label>
         <div class="form-inline">
-          <input type="checkbox" id="edit-submitted-debian" class="form-checkbox" name="platform_debian" value="requested" />
+          <input type="checkbox" id="edit-submitted-debian" class="form-checkbox" name="platform_debian"
+            value="requested" />
           <label for="edit-submitted-debian">Debian</label>
         </div>
         <div class="form-inline">
-          <input type="checkbox" id="edit-submitted-ubuntu" class="form-checkbox" name="platform_ubuntu" value="requested" />
+          <input type="checkbox" id="edit-submitted-ubuntu" class="form-checkbox" name="platform_ubuntu"
+            value="requested" />
           <label for="edit-submitted-ubuntu">Ubuntu</label>
         </div>
         <div class="form-inline">
-          <input type="checkbox" id="edit-submitted-fedora" class="form-checkbox" name="platform_fedora" value="requested" />
+          <input type="checkbox" id="edit-submitted-fedora" class="form-checkbox" name="platform_fedora"
+            value="requested" />
           <label for="edit-submitted-fedora">Fedora</label>
         </div>
         <div class="form-inline">
-          <input type="checkbox" id="edit-submitted-other" class="form-checkbox" name="platform_other" value="requested" />
+          <input type="checkbox" id="edit-submitted-other" class="form-checkbox" name="platform_other"
+            value="requested" />
           <label for="edit-submitted-other">Other (please specify in the "Other Information" field above)</label>
         </div>
         <div class="description">Some platforms may not be supported on a specific architecture, so please check with
@@ -130,13 +135,14 @@ community](https://www.ibm.com/developerworks/community/groups/community/lozopen
             class="form-text required" />
       </div>
       <p><i>You should receive an automated email from our request ticketing system to the email address you have
-      provided within 5-10 minutes.  If you don't receive this email please reach out to us at 
+      provided within 5-10 minutes.  If you don't receive this email please reach out to us at
       <a href="mailto:ibm-z-ci-request@osuosl.org">ibm-z-ci-request@osuosl.org</a> or via IRC in <b>#osuosl</b> on
       <a href="https://libera.chat/">Libera Chat</a>.</i></p>
       <div class="g-recaptcha" data-sitekey="6LeOugIAAAAAALZJU8MBrWbtN6NC9sMGCu8Xgb41"></div>
       <!-- Formsender Settings -->
       <input type="hidden" name="last_name" value="" />
-      <input type="hidden" name="token" value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
+      <input type="hidden" name="token"
+        value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
       <input type="hidden" name="redirect" value="https://www.osuosl.org/form-submitted" />
       <input type="hidden" name="mail_subject_prefix" value="New IBM Z CI Request" />
       <input type="hidden" name="mail_subject_key" value="project_name" />

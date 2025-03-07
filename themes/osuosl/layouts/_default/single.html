@@ -1,9 +1,9 @@
 {{ define "main" }}
-{{- partial "menu.html" . -}}
-<main class="main_content">
+  {{- partial "menu.html" . -}}
+  <main class="main_content">
     <h1 data-pagefind-meta="title">{{ .Title }}</h1>
     <div class="clearfix page-content">
-        {{ .Content }}
+      {{ .Content }}
     </div>
-</main>
+  </main>
 {{ end }}

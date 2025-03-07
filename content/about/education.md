@@ -4,8 +4,7 @@ slug: education
 author: Amanda Kelner
 ---
 
-The Open Source Lab offers a number of events and educational opportunities to
-improve student experience.
+The Open Source Lab offers a number of events and educational opportunities to improve student experience.
 
 [Beaver Barcamp](/about/beaverbarcamp)
 

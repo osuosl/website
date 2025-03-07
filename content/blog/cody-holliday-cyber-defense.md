@@ -1,5 +1,5 @@
 ---
-title: Cody Holliday on the Department of Energy Cyber Defense Competition 2018
+title: "Cody Holliday on the Department of Energy Cyber Defense Competition 2018"
 date: 2018-04-23
 authors: ["Cody Holliday"]
 slug: cody-holiday-cyber-defense
@@ -39,7 +39,7 @@ firewall into place to block them while we reconfigured the controller for our e
 When we were nearing the end of the competition the Red Team taunted all the Blue Teams by playing Disco Inferno and
 burning out the motors of all the extractors that were compromised.
 
-By the end we were in 2nd or 3rd place nationally before the final scoring.  Once the final score had been released we
+By the end we were in 2nd or 3rd place nationally before the final scoring. Once the final score had been released we
 were surprised to see that other school had risen so much that we were in fourth nationally, but we were definitely
 pleased to see that we had won first at our location. All in all it was a rewarding experience that I wish I could do
 again this coming fall, but that is another story all to itself.

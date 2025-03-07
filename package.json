@@ -1,0 +1,21 @@
+{
+  "name": "osl-website",
+  "version": "1.0.0",
+  "description": "Migrated from our static [Pelican site](https://github.com/osuosl/osuosl-pelican)",
+  "main": "",
+  "scripts": {
+    "serve": "pagefind --site public --serve",
+    "format": "prettier . -w",
+    "lint": "markdownlint-cli2 \"./content/**/*.md\""
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "markdownlint-cli2": "^0.17.2",
+    "prettier": "^3.4.2",
+    "prettier-plugin-go-template": "^0.0.15"
+  },
+  "dependencies": {
+    "pagefind": "^1.3.0"
+  }
+}
