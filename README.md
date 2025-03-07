@@ -122,20 +122,41 @@ To add a blog post, use the `hugo new` command:
 hugo new blog/your-slug-title-here.md
 ```
 
-The author of a page should be included as an array of `authors` within the front matter:
+As an example, here is the result of running `hugo new blog/testing.md`:
 
 ```md
 ---
-# ...
-authors: [OSUOSL Admin]
-# ...
+title: "Testing"
+date: 2025-01-02
+authors: ["OSL Admin"]
+slug: testing
+tags: []
+cover:
+draft: true
 ---
 ```
 
-To add a header image at the top of a blog post, use the CSS tag `#blog`:
+You will have to fill out some of the frontmatter.
+
+- The title should be modified to be the actual name
+- The author of a page should be included in the array of `authors`, replacing "OSL Admin" if it is not an admin post
+- A related tag should be added if possible
+- A cover image should be set if possible
+  - Landscape images are preferred
+  - Wrap the cover text in quotes to catch whitespace in file names
+- Draft should be set to false if the post is meant to be published. The field can be removed entirely.
+
+After these fixes it should end up like this:
 
 ```md
-![Image Alt](/images/image_path#blog)
+---
+title: "Testing Something or What Have You"
+date: 2025-03-02
+authors: ["Your Namehere"]
+slug: testing
+tags: []
+cover: "/images/testing.png"
+---
 ```
 
 ### Adding a New Tag
