@@ -3,7 +3,7 @@ title: "Mysql1-vip Outage Post-Mortem"
 date: 2015-08-07
 authors: ["jordane"]
 slug: mysql1-vip-outage-post-mortem
-tags: []
+tags: ["outages"]
 cover: "/images/outagepic2_0.jpg"
 ---
 

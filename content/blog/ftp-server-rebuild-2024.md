@@ -3,7 +3,7 @@ title: "FTP Server Rebuild - March 2024"
 date: 2024-03-07
 authors: ["Lance Albertson"]
 slug: ftp-server-rebuild-2024
-tags: []
+tags: ["outages"]
 cover: ""
 ---
 
