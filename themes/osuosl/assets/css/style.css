@@ -965,8 +965,8 @@ textarea {
 
 .blog-post-cover {
   grid-area: -1/1;
-  width: 100%;
   max-height: 30vh;
+  margin: auto;
   object-fit: contain;
 }
 
