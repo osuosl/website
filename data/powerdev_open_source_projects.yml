@@ -69,6 +69,13 @@
   description: A universal operating system composed entirely of free software, and packaged by the Debian Project
 - name: Debian-CI
   description: Provide a system available to Debian community to enable debuging of problems
+- name: Debian Reproducible Builds
+  description:
+    Reproducible Builds elevate deterministic builds by making the build process independently verifiable by anyone.
+    This means others can confirm your binaries match the source code exactly, fostering trust, improving debugging,
+    speeding up builds, and demonstrating your commitment to high standards. It also allows the development of
+    extremely concise and easily verifiable patches for any version of your software, eg. for customers that have high
+    security requirements and need to audit every release they make.
 - name: Deeplearning4j
   description:
     Makes deep learning simple and accessible to enterprises. The project uses POWER VMs at OSL for compile builds,
