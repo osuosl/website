@@ -465,7 +465,7 @@
 - name: Replica.one
   description: ci-cd, vm
 - name: Reproducible builds
-  description: ci-cd
+  description: ci-cd, co-location, powerpc
 - name: Robot Operating System
   description: vm, mailing-list, mirroring
 - name: Rocky Linux
