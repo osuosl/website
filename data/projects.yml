@@ -268,6 +268,8 @@
   description: co-location
 - name: Linux Fund
   description: vm
+- name: Linux Kernel (compile and boot testing)
+  description: powerpc
 - name: Linux Kernel (powerpc arch development)
   description: powerpc
 - name: Linux Kernel (Various Kernel Developers)
