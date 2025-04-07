@@ -199,6 +199,8 @@
     as small convolutions. Enabling POWER JIT-code generation and optimization.
 - name: Linux Kernel (bugfixing on linux-next)
   description: Fixing a bug on powerpc in linux-next
+- name: Linux Kernel (compile and boot testing)
+  description: Compile and boot testing
 - name: Linux Kernel (powerpc arch development)
   description: PowerPC Linux Kernel testing
 - name: Linux Kernel (Various Kernel Developers)
