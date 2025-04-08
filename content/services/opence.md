@@ -33,7 +33,8 @@ Questions and general discussions involving OSU's builds can be directed to the 
 
 This is release 1.11.5 of Open Cognitive Environment (Open-CE), which contains CVE fixes.
 
-\*_1.11.4 was completed on 12/04/2024. Due to the holiday season, 1.11.4 updates are combined with 1.11.5._
+\*_1.11.4 was completed on 12/04/2024. Due to the holiday season, 1.11.4 updates are combined with 1.11.5.
+x86_64 was released 03/28/2025_
 
 Build Status:
 
@@ -41,7 +42,7 @@ Build Status:
 | ------------ | ---------- | ------ | ------ | -------- | --------- | ---------- |
 | ppc64le(P9)  | UBI 8      | DONE   | DONE   | DONE     | DONE      | 02/10/2025 |
 | ppc64le(P10) | UBI 9      | DONE   | DONE   | DONE     | N/A       | 02/10/2025 |
-| x86_64       | UBI 9      | ?      | ?      | Err      | Err       | TBD        |
+| x86_64       | UBI 9      | DONE   | DONE   | DONE     | DONE      | 03/28/2025 |
 
 ### What's New
 
