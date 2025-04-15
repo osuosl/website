@@ -147,6 +147,10 @@
   description: Ports Mozilla Firefox to POWER8
 - name: Flathub
   description: Provide support for ppc64le on all Flatpaks currently available on Flathub
+- name: FreeBSD CI
+  description: Support FreeBSD Continuous Integration for the POWER platform (64 bit BE and LE targets initially). Once
+    a day, if there's code changes, our CI produces a bootable disk image for both BE and LE targets that automatically
+    runs kernel, drivers and userland test cases to validate the build.
 - name: FRRouting
   description: Free routing stack (BGP, OSPF, ISIS, RIP, EIGRP, PIM, etc)
 - name: GCC Fortran
