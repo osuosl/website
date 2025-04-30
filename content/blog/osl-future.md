@@ -18,8 +18,8 @@ support as we update our contract, but that still may not be enough.
 
 For transparency, the $250,000 is broken down into the following roughly:
 
-- Staff pay $150k (60%)
-- Student pay $65k (26%)
+- Staff pay $150k (60%) (1 staff)
+- Student pay $65k (26%) (8 students)
 - Other expenses $35k (14%)
 
 Other expenses include items such as hardware, travel, subscription services and other miscellaneous expenses needed to
