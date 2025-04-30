@@ -26,7 +26,7 @@ Other expenses include items such as hardware, travel, subscription services and
 run the OSL day to day.
 
 If any of you can assist or connect me with potential supporters, please reach out as soon as possible. I need to
-provide leadership with an update on any funding changes by **Monday, May 14, 2025**. Please reach out directly via
+provide leadership with an update on any funding changes by **Wednesday, May 14, 2025**. Please reach out directly via
 _**<donations@osuosl.org>**_ if you’re able to help us make it through this difficult time.
 
 The OSU Foundation is an IRS 501(c)(3) nonprofit corporation, which provides many donors a tax advantage. Please
