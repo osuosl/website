@@ -112,11 +112,10 @@ projects.
 
 ## How do I donate to OSUOSL?
 
-We accept donations online via the OSU Foundation's website. Follow
-[the link](https://securelb.imodules.com/s/359/foundation/index.aspx?sid=359&gid=34&pgid=1982&bledit=1&cid=3007&dids=79),
-or click the “Make a Gift” link on our [donations page](http://osuosl.org/donate/). If you are donating directly from
-the Foundation donation page, you can find us under “I want to view additional options” and “Outreach, Engagement,
-Research.”
+We accept donations online via the OSU Foundation's website. Follow [the
+link](https://give.fororegonstate.org/PL1Uv3Fkug), or click the “Make a Gift” link on our [donations
+page](http://osuosl.org/donate/). If you are donating directly from the Foundation donation page, you can find us under
+“I want to view additional options” and “Outreach, Engagement, Research.”
 
 You can also phone a contribution to the OSU Foundation at **800-354-7281** and specify that your gift is for the Open
 Source Lab under Outreach, Engagement, Research. If you'd like to discuss a large donation or a gift-in-kind donation,
