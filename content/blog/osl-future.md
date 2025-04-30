@@ -7,10 +7,10 @@ tags: []
 ---
 
 I am writing to inform you about a critical and time-sensitive situation facing the Open Source Lab. Over the past
-several years, we have been operating at a deficit due to a decline in corporate donations. While OSU’s College of
-Engineering (CoE) has generously filled this gap, recent changes in university funding have led to a significant
-reduction in CoE’s budget. As a result, our current funding model is no longer sustainable and CoE needs to find ways
-to cut programs.
+several years, we have been operating at a deficit due to a decline in corporate donations. While the Oregon State
+College of Engineering (CoE) has generously filled this gap, recent changes in university funding makes our current
+funding model no longer sustainable. As a result, our current funding model is no longer sustainable and CoE needs to
+find ways to cut programs.
 
 Earlier this week, I was informed that unless we secure $250,000 in committed funds, the OSL will be forced to shut
 down later this year. I have reached out to our largest corporate sponsor and they are working to increase their
