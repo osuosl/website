@@ -30,7 +30,8 @@ provide leadership with an update on any funding changes by **Monday, May 14, 20
 _**<donations@osuosl.org>**_ if you’re able to help us make it through this difficult time.
 
 The OSU Foundation is an IRS 501(c)(3) nonprofit corporation, which provides many donors a tax advantage. Please
-contact the OSU Foundation directly if you have questions about your eligibility.
+contact the OSU Foundation directly if you have questions about your eligibility. You can donate directly to us by
+visiting our [donation page](/donate).
 
 OSL provides hosting for over 500 Free and Open Source Projects from all over the world. Over the course of its 22-year
 existence, the OSL has mentored over 130 students, many of whom have gone on to create their own companies and work
