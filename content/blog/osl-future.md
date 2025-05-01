@@ -6,15 +6,14 @@ slug: osl-future
 tags: []
 ---
 
-I am writing to inform you about a critical and time-sensitive situation facing the Open Source Lab. Over the past
+I am writing to inform you about a critical and time-sensitive situation facing the Open Source Lab (OSL). Over the past
 several years, we have been operating at a deficit due to a decline in corporate donations. While the Oregon State
 College of Engineering (CoE) has generously filled this gap, recent changes in university funding makes our current
-funding model no longer sustainable. As a result, our current funding model is no longer sustainable and CoE needs to
-find ways to cut programs.
+funding model no longer sustainable. As a result, our current funding model is no longer sustainable.
 
-Earlier this week, I was informed that unless we secure $250,000 in committed funds, the OSL will be forced to shut
-down later this year. I have reached out to our largest corporate sponsor and they are working to increase their
-support as we update our contract, but that still may not be enough.
+Unless we secure $250,000 in committed funds, the OSL will shut down later this year. I have reached out to our largest
+corporate sponsor and they are working to increase their support as we update our contract, but that still may not be
+enough.
 
 For transparency, the $250,000 is broken down into the following roughly:
 
@@ -46,12 +45,6 @@ Some notable milestones over the years include:
   Buildroot/Busybox, Inkscape, Cinc and many more!
 - Virtual machines for x86, aarch64 and ppc64le are used by many projects for CI and other hosted services
 
-Additionally, the university has long-term plans to deprecate the data center where all of our hosting is currently
-located. Much of the university hosting has been moved to the cloud or the state data center, and OSU lacks the funds
-to replace the aging UPS/HVAC systems. I am actively seeking a new location to host our systems, but finding suitable
-data center space on campus has proven to be extremely challenging.
-
-To be clear: OSL’s immediate need is securing additional funding, the data center situation can be worked on later.
 Your commitment is crucial for us to move forward. I am available to answer any questions you might have.
 
 Thank you for your continued support!
