@@ -41,7 +41,7 @@ the OSL to raise funds that support the university’s priorities. For more info
 
 Many corporations have programs which will match donations to educational institutions. The OSU Foundation can help you
 find out if your company has a
-[matching gift policy](http://www.osufoundation.org/s/359/foundation/index.aspx?sid=359&gid=34&pgid=4358).
+[matching gift policy](https://fororegonstate.org/giving/ways-to-make-your-gift/matching-gifts).
 
 If you don't find your employer or have further questions, please contact your employer or the OSU Foundation directly
 to find out if your donation is eligible for a matching program.
@@ -123,7 +123,7 @@ please contact the OSUOSL at <donations@osuosl.org> or at **541-737-9900**.
 
 ## What is your privacy policy?
 
-The OSU Foundation privacy policy can be found [here](http://campaignforosu.org/staffresources/policiesandprocedures/).
+The OSU Foundation privacy policy can be found [here](https://www.fororegonstate.org/home/privacy-policy).
 
 ## I would like to donate hardware/software, or something else. Would that help the OSUOSL?
 
