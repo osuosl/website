@@ -28,29 +28,6 @@ Ramereth
 
 {{< line_break >}}
 
-## [Sharon Bousso](#sharon-bousso){#sharon-bousso}
-
-![Sharon Bousso](/images/sharon_bousso.png#right-people)
-
-**Student Systems Engineer**
-
-Sharon joined OSL in June of 2023 and is studying Computer Science. She had her first Linux machine in fourth grade, it
-was an ancient Thinkpad running Lubuntu, and that was just the beginning of her Linux journey. Sharon got interested in
-Computer Science and Computer Security from a young age, and went on to work as a Security Engineer at a small company
-based in San Francisco. She is very passionate about Linux and the open source movement and is thrilled to partake in
-the community. In her free time, Sharon likes to rock climb and read, and has many software development side projects
-she works on.
-
-**GitHub Account**
-
-<https://github.com/sharoninator>
-
-**Nick on irc.libera.chat**
-
-sharon123
-
-{{< line_break >}}
-
 ## [Grant O'Connor](#grant-oconnor){#grant-oconnor}
 
 ![Grant O'Connor](/images/grant.jpg#right-people)
