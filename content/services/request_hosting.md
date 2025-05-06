@@ -86,7 +86,7 @@ ticket system.
         <div class="description">We realize that most projects are not in a position to help cover the costs, but any
         contribution certainly helps!</div>
     </div>
-    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+    <div class="g-recaptcha" data-sitekey="6LeOugIAAAAAALZJU8MBrWbtN6NC9sMGCu8Xgb41"></div>
     <!-- Formsender Settings -->
     <input type="hidden" name="last_name" value="" />
     <input type="hidden" name="token"
