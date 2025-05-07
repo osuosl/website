@@ -161,7 +161,7 @@ in the "Other information" section.
       <input type="hidden" name="token"
         value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
       <!-- The following must be set to http://www.osuosl.org/services/powerdev/request_gpu in production -->
-      <input type="hidden" name="redirect" value="/form-submitted" />
+      <input type="hidden" name="redirect" value="https://www.osuosl.org/form-submitted" />
       <input type="hidden" name="mail_subject_prefix" value="New OpenPOWER GPU Request" />
       <input type="hidden" name="mail_subject_key" value="project_name" />
       <input type="hidden" name="send_to" value="OpenPOWER-GPU" />

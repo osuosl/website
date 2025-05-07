@@ -166,7 +166,7 @@ Jenkins workers (ppc64le only).
       <input type="hidden" name="last_name" value="" />
       <input type="hidden" name="token"
         value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
-      <input type="hidden" name="redirect" value="/form-submitted" />
+      <input type="hidden" name="redirect" value="https://www.osuosl.org/form-submitted" />
       <input type="hidden" name="mail_subject_prefix" value="New POWER CI Request" />
       <input type="hidden" name="mail_subject_key" value="project_name" />
       <input type="hidden" name="send_to" value="PowerCI" />
