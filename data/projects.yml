@@ -219,7 +219,7 @@
 - name: Jaws
   description: vm, mailing-list
 - name: Jenkins
-  description: co-location, vm, mailing-list, mirroring
+  description: mailing-list, mirroring
 - name: Jitesoft
   description: aarch64
 - name: Jupyter / Base-notebook
