@@ -27,85 +27,38 @@ Questions and general discussions involving OSU's builds can be directed to the 
 - [Current release](#open-ce-release-1115)
 - [Alternate and Previous Releases](#alternate-and-previous-releases)
 
-## Open-CE Release 1.11.5
+## Open-CE Release 1.11.6
 
-\*Release date: 02/10/2025\*\*
+_Release date: 05/20/2025_
 
-This is release 1.11.5 of Open Cognitive Environment (Open-CE), which contains CVE fixes.
-
-\*_1.11.4 was completed on 12/04/2024. Due to the holiday season, 1.11.4 updates are combined with 1.11.5.
-x86_64 was released 03/28/2025_
+This is release 1.11.6 of Open Cognitive Environment (Open-CE), which contains CVE fixes and updates to llama, rdflib tests,
+and others.
 
 Build Status:
 
-| CPU Arch     | Build Base | Py3.10 | Py3.11 | CPU-only | CUDA 12.2 | Date       |
-| ------------ | ---------- | ------ | ------ | -------- | --------- | ---------- |
-| ppc64le(P9)  | UBI 8      | DONE   | DONE   | DONE     | DONE      | 02/10/2025 |
-| ppc64le(P10) | UBI 9      | DONE   | DONE   | DONE     | N/A       | 02/10/2025 |
-| x86_64       | UBI 9      | DONE   | DONE   | DONE     | DONE      | 03/28/2025 |
+| CPU Arch     | Build Base | Py3.11 | CPU-only | CUDA 12.2 | Date       |
+| ------------ | ---------- | ------ | -------- | --------- | ---------- |
+| ppc64le(P9)  | UBI 8      | DONE   | DONE     | DONE      | 05/20/2025 |
+| ppc64le(P10) | UBI 9      | DONE   | DONE     | N/A       | 05/28/2025 |
+| x86_64       | UBI 9      | BUILD  | BUILD    | BUILD     | TBD        |
 
 ### What's New
 
 - **Updated Packages**
 
-  - aiohappyeyeballs 2.4.0
-  - aiohttp 3.10.2
-  - anyio 3.7.1
-  - backports.tarfile 1.0.0
-  - bazel 6.5.0
-  - bitsandbytes 0.44.0
-  - black 24.8.0
-  - cattrs 24.1.2
-  - cryptography 43.0.3
-  - cryptography-vectors 43.0.3
-  - deepspeed 0.15.1
-  - diskcache 5.6.3
-  - exceptiongroup 1.2.2
-  - fastapi 0.109.1
-  - hatch-requirements-txt 0.4.1
-  - jaraco.context 5.3.0
-  - jaraco.test 5.4.0
-  - jaraco.text 3.7.0
-  - langchain 0.2.16
-  - langchain-community 0.2.9
-  - langchain-core 0.2.39
-  - langchain-text-splitters 0.2.4
-  - langsmith 0.1.120
-  - llama-cpp-python 0.3.1
-  - llama.cpp 0.0.3821
-  - maturin 1.7.1
-  - mockupdb 1.7.0
-  - numpy 1.26.0
-  - numpy-base 1.26.0
-  - nvcc_linux-ppc64le 12.2
-  - polars 1.7.1
-  - polars-lts-cpu 1.7.1
-  - polars-u64-idx 1.7.1
-  - proxy-py 2.4.7
-  - pydantic 2.5.3
-  - pydantic-core 2.14.6
-  - pydantic-settings 2.0.1
-  - pymongo 4.8.0
-  - pyopenssl 24.2.1
-  - pytest-subprocess 1.5.2
-  - python-multipart 0.0.7
-  - pytorch-lightning 2.3.3
-  - ray-air 2.35.0
-  - ray-all 2.35.0
-  - ray-client 2.35.0
-  - ray-core 2.35.0
+  - llama-cpp-python 0.3.8
+  - llama.cpp 0.0.5038
 
 - **This Release Supports**
 
   - IBM Power 10 MMA
   - Nvidia CUDA 12.2
-  - Python 3.10, 3.11
+  - Python 3.11
 
 - **Important Notes**
 
-  - Release 1.11.4
-    - Drops support for CUDA 11.8
-    - No support for Python 3.10
+  - cmdstan and prophet will be used from Anaconda's channel for x86
+  - llama.cpp for P10 is built with GCC-13; remaining packages with GCC-12
 
 ### Learn More
 
@@ -203,14 +156,14 @@ will give warnings or will fail when run as root.
 
 You can install the MLDL frameworks individually. The framework packages include the following versions.
 
-##### Table 1. Framework Packages (current to v1.11.5)
+##### Table 1. Framework Packages (current to v1.11.6)
 
 <!-- markdownlint-disable MD055 MD056 -->
 
 | Package                                | Latest Version | Summary                                                                          | noarch |
-| -------------------------------------- | -------------- | -------------------------------------------------------------------------------- | ------ |
-| \_pytorch_select                       | 2.0            | Package used to select the specific PyTorch build variant                        |        |
-| \_tensorflow_select                    | 2.0            | Package used to select the specific Tensorflow build variant                     |        |
+|----------------------------------------|----------------|----------------------------------------------------------------------------------|--------|
+| _pytorch_select                        | 2.0            | Package used to select the specific PyTorch build variant                        |        |
+| _tensorflow_select                     | 2.0            | Package used to select the specific Tensorflow build variant                     |        |
 | absl-py                                | 2.0.0          | This repository is a collection of Python library code for building...           |        |
 | aiohappyeyeballs                       | 2.4.0          | Happy Eyeballs for asyncio                                                       | X      |
 | aiohttp                                | 3.10.2         | Async http client/server framework (asyncio)                                     |        |
@@ -268,11 +221,11 @@ You can install the MLDL frameworks individually. The framework packages include
 | fire                                   | 0.4.0          | Python Fire is a library for creating command line interfaces (CLIs)...          | X      |
 | flatbuffers                            | 23.1.21        | Memory Efficient Serialization Library                                           |        |
 | fsspec                                 | 2023.10.0      | A specification for pythonic filesystems                                         | X      |
-| gmock                                  | 1.13.0         | Google&#39;s C++ test framework                                                  |        |
+| gmock                                  | 1.13.0         | Google's C++ test framework                                                      |        |
 | googledrivedownloader                  | 0.4            | Minimal class to download shared files from Google Drive.                        | X      |
 | grpc-cpp                               | 1.54.3         | gRPC - A high-performance, open-source universal RPC framework                   |        |
 | grpcio                                 | 1.54.3         | HTTP/2-based RPC framework                                                       |        |
-| gtest                                  | 1.13.0         | Google&#39;s C++ test framework                                                  |        |
+| gtest                                  | 1.13.0         | Google's C++ test framework                                                      |        |
 | hatch-fancy-pypi-readme                | 23.1.0         | Fancy PyPI READMEs with Hatch                                                    | X      |
 | hatch-requirements-txt                 | 0.4.1          | Hatchling plugin to read project dependencies from requirements.txt              | X      |
 | hjson-py                               | 3.1.0          | Hjson, a user interface for JSON.                                                | X      |
@@ -307,8 +260,8 @@ You can install the MLDL frameworks individually. The framework packages include
 | libopenblas-static                     | 0.3.27         | OpenBLAS static libraries.                                                       |        |
 | libopencv                              | 4.8.1          | Computer vision and machine learning software library.                           |        |
 | libortools                             | 9.6            | Google Operations Research Tools (or-tools) python package                       |        |
-| libprotobuf                            | 3.21.12        | Protocol Buffers - Google&#39;s data interchange format. C++ Libraries...        |        |
-| libprotobuf-static                     | 3.21.12        | Protocol Buffers - Google&#39;s data interchange format. C++ Libraries...        |        |
+| libprotobuf                            | 3.21.12        | Protocol Buffers - Google's data interchange format. C++ Libraries...            |        |
+| libprotobuf-static                     | 3.21.12        | Protocol Buffers - Google's data interchange format. C++ Libraries...            |        |
 | libsndfile                             | 1.0.31         | libsndfile - a C library for reading and writing files containing...             |        |
 | libtar                                 | 1.2.20         | C library for manipulating tar files                                             |        |
 | libtensorflow                          | 2.14.1         | TensorFlow is a machine learning library, base GPU package, tensorflow only.     |        |
@@ -319,21 +272,19 @@ You can install the MLDL frameworks individually. The framework packages include
 | lightning-cloud                        | 0.5.57         | Lightning Cloud.                                                                 | X      |
 | lightning-fabric                       | 2.1.3          | Use Lightning Apps to build everything from production-ready,...                 | X      |
 | lightning-utilities                    | 0.10.0         | Lightning Utilities.                                                             | X      |
-| llama-cpp-python                       | 0.3.1          | Python bindings for the llama.cpp library                                        |        |
-| llama.cpp                              | 0.0.3821       | Port of Facebook&#39;s LLaMA model in C/C++                                      |        |
+| llama-cpp-python                       | 0.3.8          | Python bindings for the llama.cpp library                                        |        |
+| llama.cpp                              | 0.0.5038       | Port of Facebook's LLaMA model in C/C++                                          |        |
 | llvm-openmp                            | 14.0.6         | The OpenMP API supports multi-platform shared-memory parallel...                 |        |
 | magma                                  | 2.6.1          | Dense linear algebra library similar to LAPACK but for...                        |        |
 | mamba                                  | 1.5.7          | A fast drop-in alternative to conda, using libsolv for dependency resolution     |        |
 | maturin                                | 1.7.1          | Build and publish crates with pyo3, rust-cpython and cffi bindings as...         |        |
 | mockupdb                               | 1.7.0          | MongoDB Wire Protocol server library                                             | X      |
-| nasm                                   | 2.15.05        | Netwide Assembler: an assembler targeting the Intel x86 series of processors.    |        |
+| nasm                                   | 2.15.05        | Netwide Assembler: an assembler targetting the Intel x86 series of processors.   |        |
 | nccl                                   | 2.19.3         | NVIDIA Collective Communications Library. Implements multi-GPU and...            |        |
 | nomkl                                  | 3.0            | None                                                                             |        |
 | numactl                                | 2.0.16         | Control NUMA policy for processes or shared memory                               |        |
-| numpy                                  | 1.26.0         | Array processing for numbers, strings, records, and objects.                     |        |
-| numpy-base                             | 1.26.0         | Array processing for numbers, strings, records, and objects.                     |        |
 | nvcc_linux-ppc64le                     | 12.2           | A meta-package to enable the right nvcc.                                         |        |
-| objsize                                | 0.6.1          | Traversal over Python&#39;s objects subtree and calculate the total...           | X      |
+| objsize                                | 0.6.1          | Traversal over Python's objects subtree and calculate the total...               | X      |
 | onnx                                   | 1.16.0         | Open Neural Network Exchange library                                             |        |
 | onnxconverter-common                   | 1.14.0         | Common utilities for ONNX converters                                             | X      |
 | onnxmltools                            | 1.12.0         | ONNXMLTools enables conversion of models to ONNX                                 | X      |
@@ -356,14 +307,14 @@ You can install the MLDL frameworks individually. The framework packages include
 | polars-lts-cpu                         | 1.7.1          | Polars is a blazingly fast DataFrames library implemented in Rust using...       |        |
 | polars-u64-idx                         | 1.7.1          | Polars is a blazingly fast DataFrames library implemented in Rust using...       |        |
 | prophet                                | 1.1.5          | Automatic Forecasting Procedure                                                  |        |
-| protobuf                               | 4.21.12        | Protocol Buffers - Google&#39;s data interchange format.                         |        |
+| protobuf                               | 4.21.12        | Protocol Buffers - Google's data interchange format.                             |        |
 | proxy-py                               | 2.4.7          | Proxy Server, Web Server, PubSub, Work acceptor &amp; executor framework.        | X      |
 | py-opencv                              | 4.8.1          | Computer vision and machine learning software library.                           |        |
 | pyarrow                                | 15.0.1         | Python libraries for Apache Arrow                                                |        |
 | pydantic                               | 2.5.3          | Data validation and settings management using python type hinting                |        |
 | pydantic-core                          | 2.14.6         | Core validation logic for pydantic written in rust                               |        |
 | pydantic-settings                      | 2.0.1          | Settings management using Pydantic                                               | X      |
-| pymongo                                | 4.8.0          | Python driver for MongoDB <http://www.mongodb.org>                               |        |
+| pymongo                                | 4.8.0          | Python driver for MongoDB                                                        |        |
 | pyopenssl                              | 24.2.1         | Python wrapper module around the OpenSSL library                                 | X      |
 | pyro-api                               | 0.1.2          | Generic API for dispatch to Pyro backends.                                       | X      |
 | pyro-ppl                               | 1.8.4          | A Python library for probabilistic modeling and inference                        | X      |
@@ -408,7 +359,7 @@ You can install the MLDL frameworks individually. The framework packages include
 | starlette-context                      | 0.3.6          | Access context in Starlette                                                      | X      |
 | starlette-full                         | 0.40.0         | The little ASGI framework that shines.                                           | X      |
 | starsessions                           | 1.3.0          | Pluggable session support for Starlette.                                         | X      |
-| tensorboard                            | 2.14.0         | TensorFlow&#39;s Visualization Toolkit.                                          | X      |
+| tensorboard                            | 2.14.0         | TensorFlow's Visualization Toolkit.                                              | X      |
 | tensorboard-data-server                | 0.7.0          | Data server for TensorBoard                                                      | X      |
 | tensorflow                             | 2.14.1         | Meta-package to install GPU-enabled TensorFlow variant                           |        |
 | tensorflow-base                        | 2.14.1         | TensorFlow is a machine learning library, base GPU package, tensorflow only.     |        |
@@ -424,7 +375,7 @@ You can install the MLDL frameworks individually. The framework packages include
 | tensorflow-serving-api                 | 2.14.1         | TensorFlow Serving is an open-source library for serving machine learning models | X      |
 | tensorflow-text                        | 2.14.0         | TF.Text is a TensorFlow library of text related ops, modules, and subgraphs.     |        |
 | tf2onnx                                | 1.15.1         | Tensorflow to ONNX converter                                                     |        |
-| tiktoken                               | 0.6.0          | tiktoken is a fast BPE tokeniser for use with OpenAI&#39;s models                |        |
+| tiktoken                               | 0.6.0          | tiktoken is a fast BPE tokeniser for use with OpenAI's models                    |        |
 | tokenize-rt                            | 4.2.1          | A wrapper around the stdlib `tokenize` which roundtrips.                         | X      |
 | tokenizers                             | 0.15.2         | Fast State-of-the-Art Tokenizers optimized for Research and Production           |        |
 | torchdata                              | 0.7.1          | Common modular data loading primitives for easily constructing flexible...       |        |
@@ -443,6 +394,7 @@ You can install the MLDL frameworks individually. The framework packages include
 | werkzeug                               | 3.0.6          | The comprehensive WSGI web application library.                                  |        |
 | xgboost                                | 2.0.3          | Scalable, Portable and Distributed Gradient Boosting Library                     |        |
 | xgboost-proc                           | 2.0.3          | Scalable, Portable and Distributed Gradient Boosting Library                     |        |
+| zipp                                   | 3.19.2         | A pathlib-compatible Zipfile object wrapper                                      | X      |
 
 <!-- markdownlint-enable MD055 MD056 -->
 
@@ -483,6 +435,78 @@ version, you can find information below.
 
 For a full list of versions, including **Power 10 accelerated versions**, please see the full conda channel offerings
 here: <https://ftp.osuosl.org/pub/open-ce/>
+
+### Open-CE Release 1.11.5
+
+_\*Release date: 02/10/2025_
+
+This is release 1.11.5 of Open Cognitive Environment (Open-CE), which contains CVE fixes.
+
+\*_1.11.4 was completed on 12/04/2024. Due to the holiday season, 1.11.4 updates are combined with 1.11.5.
+x86_64 was released 03/28/2025_
+
+**What's New**
+
+- **Updated Packages**
+
+  - aiohappyeyeballs 2.4.0
+  - aiohttp 3.10.2
+  - anyio 3.7.1
+  - backports.tarfile 1.0.0
+  - bazel 6.5.0
+  - bitsandbytes 0.44.0
+  - black 24.8.0
+  - cattrs 24.1.2
+  - cryptography 43.0.3
+  - cryptography-vectors 43.0.3
+  - deepspeed 0.15.1
+  - diskcache 5.6.3
+  - exceptiongroup 1.2.2
+  - fastapi 0.109.1
+  - hatch-requirements-txt 0.4.1
+  - jaraco.context 5.3.0
+  - jaraco.test 5.4.0
+  - jaraco.text 3.7.0
+  - langchain 0.2.16
+  - langchain-community 0.2.9
+  - langchain-core 0.2.39
+  - langchain-text-splitters 0.2.4
+  - langsmith 0.1.120
+  - llama-cpp-python 0.3.1
+  - llama.cpp 0.0.3821
+  - maturin 1.7.1
+  - mockupdb 1.7.0
+  - numpy 1.26.0
+  - numpy-base 1.26.0
+  - nvcc_linux-ppc64le 12.2
+  - polars 1.7.1
+  - polars-lts-cpu 1.7.1
+  - polars-u64-idx 1.7.1
+  - proxy-py 2.4.7
+  - pydantic 2.5.3
+  - pydantic-core 2.14.6
+  - pydantic-settings 2.0.1
+  - pymongo 4.8.0
+  - pyopenssl 24.2.1
+  - pytest-subprocess 1.5.2
+  - python-multipart 0.0.7
+  - pytorch-lightning 2.3.3
+  - ray-air 2.35.0
+  - ray-all 2.35.0
+  - ray-client 2.35.0
+  - ray-core 2.35.0
+
+- **This Release Supports**
+
+  - IBM Power 10 MMA
+  - Nvidia CUDA 12.2
+  - Python 3.10, 3.11
+
+- **Important Notes**
+
+  - Release 1.11.4
+    - Drops support for CUDA 11.8
+    - No support for Python 3.10
 
 ### Open-CE Release 1.11.2
 
