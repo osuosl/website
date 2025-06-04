@@ -13,5 +13,4 @@ student with more than a year left of your schooling, this is your rare chance t
 
 Learn more and apply for our Student Systems Engineer position here! [https://jobs.oregonstate.edu/postings/167527](https://jobs.oregonstate.edu/postings/167527)
 
-Starting hourly $16.88; can work hybrid on-campus/remote based on the needs of the OSL. The deadline to apply has been
-extended to 7/31/2025.
+The deadline to apply has been extended to 7/31/2025; apply now! Starting hourly $16.88; can work hybrid on-campus/remote based on the needs of the OSL.
