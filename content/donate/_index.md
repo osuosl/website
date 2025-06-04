@@ -43,4 +43,3 @@ the RISC-V architecture.
 
 Thank you for making a secure donation to the Open Source Lab Fund through the OSU Foundation. Your gift will support
 the continued growth and development of a strong Open Source community.
-
