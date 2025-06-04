@@ -8,6 +8,20 @@ mission to contribute to the growth of Open Source software. By hosting pioneeri
 between the public and private sectors, and training a new generation of  innovators, the Lab promotes Open Source
 software that people around the world can create and use together.
 
+## How to Donate to the OSU Open Source Lab
+
+_Once you click the “Make a Gift” link below, you will be redirected to the OSU Foundation’s website to process your
+donation. Once there, be sure to type “**Open Source Lab Fund**” in the “**I want to give to**” field to ensure your
+donation reaches us._
+
+{{< raw >}}
+<a class="link-button" style="font-size: 1.5rem" href="https://give.fororegonstate.org/PL1Uv3Fkug"><i class="fa-solid
+fa-hand-holding-dollar"></i> Make a gift</a>
+{{< /raw >}}
+
+If you prefer to give by phone, please call the Oregon State University Foundation at **(800) 354-7281**. If you have
+any questions, please check our [FAQ](/donate/faq) or email <donations@osuosl.org>
+
 ## What we do
 
 OSUOSL currently hosts ~1,000 sub-projects. We provide hosting for medium to large high-impact FOSS projects that need a
@@ -30,15 +44,3 @@ the RISC-V architecture.
 Thank you for making a secure donation to the Open Source Lab Fund through the OSU Foundation. Your gift will support
 the continued growth and development of a strong Open Source community.
 
-## How to Donate to the OSU Open Source Lab
-
-_Once you click the “Make a Gift” link below, you will be redirected to the OSU Foundation’s website to process your
-donation. Once there, be sure to type “Open Source Lab Fund” in the “I want to give to” field to ensure your donation
-reaches us._
-
-[Make a Gift](https://give.fororegonstate.org/PL1Uv3Fkug)
-
-![Campaign for OSU](/images/grey-campaign.png#left)
-
-If you prefer to give by phone, please call the Oregon State University Foundation at **(800) 354-7281**. If you have
-any questions, please check our [FAQ](/donate/faq) or email <donations@osuosl.org>

@@ -21,10 +21,10 @@ Our hardware needs change over time, but here is a current list of specific need
 
 - 1U general purpose servers (PowerEdge R240/R640 or similar)
 - 2U storage servers (PowerEdge R740 or similar)
-- 10Gb Network Interface Cards
-- 4TB or 6TB enterprise class 3.5" hard drives
-- NVMe SSD drives (800G+)
-- 40Gb+ edge / core routers
+- 10Gb/40Gb Network Interface Cards
+- 4TB+ enterprise class SAS 3.5" hard drives
+- NVMe or SSD drives (800G+)
+- 40Gb+ edge / core routers (Arista preferred)
 - 1Gb managed ToR switches
 
 Please contact us at <donations@osuosl.org> if you are interested in donating any hardware to the OSL.
