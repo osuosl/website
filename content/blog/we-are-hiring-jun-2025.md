@@ -1,17 +1,26 @@
 ---
-title: "Deadline extended: Hiring students!"
-date: 2025-06-04
+title: "We're Hiring: Join the OSU Open Source Lab as a Student Systems Engineer!"
+date: 2025-06-05
 slug: hiring-jun-2025
-authors: ["Pam Bielenberg", "Oria Weng"]
+authors: ["Pam Bielenberg", "Oria Weng", "Lance Albertson"]
 tags: []
 ---
 
 ![Students working at computers](/images/osl-students-2018.jpg#blog)
 
-The OSL is hiring again! Do you love the Linux system and the Open Source community? If you are an undergraduate
-student with more than a year left of your schooling, this is your rare chance to get real-world work experience.
+Are you passionate about Linux and the open source community? Looking to gain hands-on experience in a real-world
+production environment?
 
-Learn more and apply for our Student Systems Engineer position here! [https://jobs.oregonstate.edu/postings/167527](https://jobs.oregonstate.edu/postings/167527)
+The Oregon State University Open Source Lab (OSUOSL) is hiring! We're looking for an enthusiastic undergraduate student
+enrolled at a university in Oregon with at least one year remaining in their program. This is a unique opportunity to
+work with cutting-edge technology, contribute to open source projects, and be part of a team that supports the global
+open source ecosystem.
 
-The deadline to apply has been extended to 7/31/2025; apply now! Starting hourly $16.88; can work hybrid
-on-campus/remote based on the needs of the OSL.
+- 🔧 Position: Student Systems Engineer
+- 💼 Pay: Starting at $16.88/hour
+- 🌐 Work Mode: Hybrid (on-campus/remote based on OSL needs)
+- 📅 Application Deadline: Extended to July 31, 2025
+
+👉 Learn more and [apply here](https://jobs.oregonstate.edu/postings/167527)
+
+Don’t miss your chance to turn your passion into experience—apply today!
