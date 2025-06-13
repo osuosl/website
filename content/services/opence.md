@@ -29,7 +29,7 @@ Questions and general discussions involving OSU's builds can be directed to the 
 
 ## Open-CE Release 1.11.6
 
-_Release date: 05/20/2025_
+_Release date: 05/20/2025 (ppc64le), 06/10/2025 (x86_64)_
 
 This is release 1.11.6 of Open Cognitive Environment (Open-CE), which contains CVE fixes and updates to llama, rdflib tests,
 and others.
@@ -40,7 +40,7 @@ Build Status:
 | ------------ | ---------- | ------ | -------- | --------- | ---------- |
 | ppc64le(P9)  | UBI 8      | DONE   | DONE     | DONE      | 05/20/2025 |
 | ppc64le(P10) | UBI 9      | DONE   | DONE     | N/A       | 05/28/2025 |
-| x86_64       | UBI 9      | BUILD  | BUILD    | BUILD     | TBD        |
+| x86_64       | UBI 9      | DONE   | DONE     | DONE      | 06/10/2025 |
 
 ### What's New
 
