@@ -59,7 +59,7 @@
 - name: Cloud Foundry
   description: powerpc
 - name: CPAN
-  description: mirroring
+  description: vm,mirroring
 - name: Cppcheck
   description: vm
 - name: CRAN
