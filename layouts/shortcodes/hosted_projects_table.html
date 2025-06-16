@@ -1,7 +1,7 @@
 {{ if .IsNamedParams }}
   <table class="hosted_projects_table">
     <thead>
-      <th>Project</th>
+      <th>Name ({{ len (index $.Site.Data .Params.file) }} projects)</th>
       <th>Services</th>
     </thead>
     <tbody>
