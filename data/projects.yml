@@ -59,7 +59,7 @@
 - name: Cloud Foundry
   description: powerpc
 - name: CPAN
-  description: vm,mirroring
+  description: mirroring
 - name: Cppcheck
   description: vm
 - name: CRAN
@@ -424,6 +424,8 @@
   description: vm
 - name: perfbook
   description: powerpc
+- name: Perl CPAN Testers
+  description: vm
 - name: Persistent SI-HTM
   description: powerpc
 - name: PersonalTelco
