@@ -282,6 +282,8 @@
   description: powerpc
 - name: LLVM
   description: powerpc
+- name: LLVM BOLT
+  description: powerpc
 - name: LTTng
   description: powerpc
 - name: LuneOS

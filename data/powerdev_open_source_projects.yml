@@ -225,6 +225,8 @@
   description:
     Supports project specific porting efforts of POWER8 ppc64/ppc64le to run buildbot instances; these instances build
     LLVM and run the test suites when patches are checked in to ensure they run properly on the POWER architecture
+- name: LLVM BOLT
+  description: post-link optimizer developed to speed up large applications
 - name: LTTng
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
 - name: Machine Learning/Deep Learning
