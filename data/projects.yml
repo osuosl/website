@@ -402,6 +402,8 @@
   description: powerpc
 - name: OpenStreetMap
   description: co-location, vm, mirroring
+- name: OpenVox packages
+  description: webapp
 - name: OpenWRT
   description: ci-cd
 - name: OpenZFS
