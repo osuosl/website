@@ -49,52 +49,6 @@ GrantOC
 
 {{< line_break >}}
 
-## [Paul Simko](#paul-simko){#paul-simko}
-
-**Student Systems Engineer**
-
-![Paul Simko](/images/paul.png#right-people)
-
-Paul joined the OSL in May 2021. He's been using OSL mirrors since arriving on campus, and is glad for the opportunity
-to contribute to the FOSS ecosystem. He's been using Linux since high school, and enjoys optimizing his work environment
-and trying out new community projects. Paul is a computer science major and is interested in cybersecurity,
-infrastructure automation, and spending 3 hours writing scripts that save 1 minute. He spends the time that these
-scripts save hunting mushrooms, reading, and rock climbing.
-
-**GitHub Account**
-
-<https://github.com/pasimko>
-
-**Nick on irc.libera.chat**
-
-paul-osl
-
-{{< line_break >}}
-
-## [Zachary Wallace](#zachary-wallace){#zachary-wallace}
-
-**Student Systems Engineer**
-
-![Zach Wallace](/images/zwall.png#right-people)
-
-Starting in November of 2022, Zach was brought aboard during his Junior year of his college career as a Computer Science
-major. Zach's first introduction to programming dated back to the fifth grade, in 2013, where he did a presentation on
-"How to Create an Adder in Lua". His first experience with the Linux environment started in late-2019, when he used a
-Raspberry-Pi to set up a local file sharing server; and ever since then he's used some flavor of Linux as a daily driver
-for both personal and server use. Outside of the office and classroom, Zach enjoys modding games, with an added interest
-in level design. With now being employed at the Open Source Lab, he hopes to further understand the duties of a systems
-administrator while also providing assistance in service hosting for the FOSS community.
-
-**GitHub Account**
-
-<https://github.com/sectopodwreck>
-
-**Nick on irc.libera.chat**
-
-zwall
-
-{{< line_break >}}
-
 ## [Oria Weng](#oria-weng){#oria-weng}
 
 **Student Systems Engineer**
