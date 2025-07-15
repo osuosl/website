@@ -154,12 +154,6 @@ weight = 2
 
 [[menu.main]]
 parent = "powerdev"
-name = "OpenPOWER GPU Request Form"
-url = "/services/powerdev/request_gpu"
-weight = 3
-
-[[menu.main]]
-parent = "powerdev"
 name = "OpenPOWER OpenStack Request Form"
 url = "/services/powerdev/request_hosting"
 weight = 4
