@@ -85,3 +85,26 @@ Science he enjoys hiking and astrophotography.
 <https://github.com/Thats-Neat>
 
 {{< line_break >}}
+
+## [Hollister Mala](#hollister-mala){#hollister-mala}
+
+**Student Systems Engineer**
+
+![Hollister Mala](/images/hollister.jpg#right-people)
+
+Hollister joined the OSL in July, 2025 after graduating from High School. He
+will be studying Computer Science at OSU starting in the Fall. Hollister first
+started using open-soruce software to setup game servers and to make old
+laptops functional again. By 2020, he was using open-source software for almost
+all of his computers and servers. Hollister also enjoys Robotics, Cybersecurity
+and 3D Printing.
+
+**GitHub Account**
+
+<https://github.com/hollistermala>
+
+**Nick on irc.libera.chat**
+
+hollistermala
+
+{{< line_break >}}
