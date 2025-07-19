@@ -421,6 +421,8 @@
   description:
     Scanner for vulnerabilities in container images, file systems, and Git repositories, as well as for configuration
     issues and hard-coded secrets
+- name: Unres
+  description: Efficient modeling of protein folding using POWER for increased processing and scalability
 - name: VideoLan
   description: Updates the Altivec code in x264 and x265 to VSX and makes sure it works correctly on POWER8le
 - name: vLLM
