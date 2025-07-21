@@ -560,6 +560,8 @@
   description: mailing-list
 - name: UEK Maple Tree
   description: powerpc
+- name: Unres
+  description: powerpc
 - name: Vector Linux
   description: mirroring
 - name: VideoLAN
