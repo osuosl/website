@@ -108,3 +108,23 @@ and 3D Printing.
 hollistermala
 
 {{< line_break >}}
+
+## [Tiffany Chang](#tiffany-chang){#tiffany-chang}
+
+**Student Systems Engineer**
+
+![Tiffany Chang](/images/tchang.jpg#right-people)
+
+Tiffany joined the OSL in July, 2025 as a sophmore to build up her programming skills and explore the open source-community. 
+Within computer science, she's excited about web development and computer graphics. In her free time, Tiffany enjoys
+making digital art and listening to new music.
+
+**GitHub Account**
+
+<https://github.com/tffnychng>
+
+**Nick on irc.libera.chat**
+
+changtif
+
+{{< line_break >}}
