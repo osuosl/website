@@ -246,6 +246,8 @@
   description: powerpc
 - name: libjpeg-turbo
   description: powerpc
+- name: liboqs
+  description: powerpc
 - name: libpng
   description: mirroring
 - name: LibreHealth

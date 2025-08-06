@@ -195,6 +195,8 @@
   description: GD is an open source code library for the dynamic creation of images by programmers.
 - name: libjpeg-turbo
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
+- name: liboqs
+  description: a collection of open-source implementations of quantum-safe key encapsulation mechanism (KEM)
 - name: libvpx
   description: Adds VSX optimizations for libvpx on POWER architecture
 - name: LIBXSMM
