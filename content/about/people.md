@@ -149,7 +149,9 @@ as microcontrollers. Outside of school, Ally enjoys editing videos, video games,
 
 ![Ankit Malhotra](/images/amalhotra.jpg#right-people)
 
-Ankit joined the OSL as a sophomore in July 2025 to learn and explore the fascinating infrastructure behind the open source community. Outside of school, he stays busy learning about AI, reading, playing video games, and staying active with tennis and the gym.
+Ankit joined the OSL as a sophomore in July 2025 to learn and explore the fascinating infrastructure behind the open
+source community. Outside of school, he stays busy learning about AI, reading, playing video games, and staying active
+with tennis and the gym.
 
 **GitHub Account**
 
