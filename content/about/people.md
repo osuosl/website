@@ -144,4 +144,3 @@ as microcontrollers. Outside of school, Ally enjoys editing videos, video games,
 <https://github.com/aokiam>
 
 {{< line_break >}}
-
