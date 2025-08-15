@@ -128,3 +128,20 @@ Tiffany enjoys making digital art and listening to new music.
 changtif
 
 {{< line_break >}}
+
+## [Ally Aoki](#ally-aoki){#ally-aoki}
+
+**Student Systems Engineer**
+
+![Ally Aoki](/images/aokial.jpg#right-people)
+
+Ally joined the OSL in July, 2025 as a junior to hone their skills while learning more about different aspects of
+computer science. With their focus in computer systems, Ally enjoys embedded systems and working with hardware such
+as microcontrollers. Outside of school, Ally enjoys editing videos, video games, and cooking.
+
+**GitHub Account**
+
+<https://github.com/aokiam>
+
+{{< line_break >}}
+
