@@ -143,4 +143,16 @@ as microcontrollers. Outside of school, Ally enjoys editing videos, video games,
 
 <https://github.com/aokiam>
 
+## [Ankit Malhotra](#ankit-malhotra){#ankit-malhotra}
+
+**Student Systems Engineer**
+
+![Ankit Malhotra](/images/amalhotra.jpg#right-people)
+
+Ankit joined the OSL as a sophomore in July 2025 to learn and explore the fascinating infrastructure behind the open source community. Outside of school, he stays busy learning about AI, reading, playing video games, and staying active with tennis and the gym.
+
+**GitHub Account**
+
+<https://github.com/bredisrising>
+
 {{< line_break >}}
