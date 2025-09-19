@@ -28,27 +28,6 @@ Ramereth
 
 {{< line_break >}}
 
-## [Grant O'Connor](#grant-oconnor){#grant-oconnor}
-
-![Grant O'Connor](/images/grant.jpg#right-people)
-
-**Student Systems Engineer**
-
-Grant joined the OSL in July 2023 as a Sophomore Computer Science major in order to grow his technical knowledge and
-gain experience. Grant was first introduced to programming in his Freshman year of high school where he learned the
-basics of game development in Unity. In his free time, Grant enjoys playing board games and video games as well as
-designing and developing video games.
-
-**GitHub Account**
-
-<https://github.com/GrantAOConnor>
-
-**Nick on irc.libera.chat**
-
-GrantOC
-
-{{< line_break >}}
-
 ## [Oria Weng](#oria-weng){#oria-weng}
 
 **Student Systems Engineer**
