@@ -466,6 +466,8 @@
   description: vm
 - name: Rainmeter
   description: vm
+- name: Ransomware-Emulation
+  description: powerpc
 - name: RDKit
   description: powerpc
 - name: RebornOS

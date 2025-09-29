@@ -34,3 +34,7 @@
   description: Conduct research with IBM partners for the MMA Power10 architecture.
 - name: University of Colorado Denver
   description: Provide support for the Numerical Linear Algebra package in LINPACK on POWER architectures
+- name: University of Texas at Austin
+  description: 
+    Exploring the behavioral traits for modern ransomware actors, building a robust detector that is able to identify
+    zero-day ransomware attacks with confidence and low impact.
