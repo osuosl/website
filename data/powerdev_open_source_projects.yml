@@ -361,6 +361,8 @@
 - name: PyTorch
   description:
     Python framework for tensors and deep neural networks. Uses POWER8 for continuous integration and functional testing
+- name: QEMU
+  description: A generic and open source machine emulator and virtualizer
 - name: Red Hat CoreOS
   description: The operating system used for Red Hat OpenShift.
 - name: RDKit
