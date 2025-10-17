@@ -346,6 +346,10 @@
   description:
     Supports development and compiling efforts for Debian on PowerPC. The goal is to design an Open Hardware notebook
     motherboard based on the Power Architecture NXP T2080 CPU
+- name: PQ Code Package
+  description: 
+    A collection of open source projects aiming to build high-assurance software implementations of 
+    standards-track post-quantum cryptography algorithms
 - name: Presto
   description:
     Supports efforts of a POWER8 ppc64le port of Presto, a distributed SQL query engine for running interactive analytic

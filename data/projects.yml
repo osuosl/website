@@ -452,6 +452,8 @@
   description: powerpc
 - name: PowerPC Notebook
   description: powerpc
+- name: PQ Code Package
+  description: powerpc
 - name: Presto
   description: powerpc
 - name: Privly
