@@ -508,6 +508,8 @@
   description: powerpc
 - name: SharkLinux
   description: vm
+- name: SIMD Info/AI
+  description: powerpc
 - name: sire
   description: powerpc
 - name: Skytable
