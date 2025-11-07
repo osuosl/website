@@ -476,6 +476,8 @@
   description: aarch64, mirroring
 - name: Red Hat CoreOS
   description: powerpc
+- name: RefPerSys
+  description: powerpc
 - name: Replicant
   description: webapp, mailing-list, mirroring
 - name: Replica.one
