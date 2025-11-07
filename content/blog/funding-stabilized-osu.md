@@ -1,7 +1,7 @@
 ---
 title: "Featured: Strong support stabilizes funding for the Open Source Lab"
 date: 2025-11-07
-author: ["Oria Weng"]
+authors: ["Oria Weng"]
 slug: funding-stabilizes-osu
 tags: []
 ---
