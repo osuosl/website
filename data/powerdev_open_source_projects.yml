@@ -454,6 +454,3 @@
   description:
     Xenia is an experimental emulator for the Xbox 360. The goal of the project is to experiment, research, and educate
     on the topic of emulation of modern devices and operating systems.
-- name: RefPerSys
-  description:
-    open source inference engine project (symbolic artificial intelligence)
