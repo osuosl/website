@@ -371,6 +371,8 @@
   description: The operating system used for Red Hat OpenShift.
 - name: RDKit
   description: Open source toolkit for cheminformatics
+- name: RefPerSys
+  description: Open source inference engine project (symbolic artificial intelligence).
 - name: RocksDB
   description: Building the fastest key/value database, PPC port for CI and testing
 - name: Rocky Linux
