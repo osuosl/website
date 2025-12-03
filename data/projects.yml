@@ -504,6 +504,8 @@
   description: vm, webapp, mirroring
 - name: Salix Linux
   description: mirroring
+- name: SciPy
+  description: powerpc
 - name: SFTPGo
   description: powerpc
 - name: SHA-3

@@ -387,6 +387,9 @@
   description:
     The Rust Exploit Mitigations PG maintains and improves the existing, implements, and research new exploit
     mitigations for the Rust compiler
+- name: SciPy
+  description:
+    Fundamental algorithms for scientific computing in Python.
 - name: SFTPGo
   description:
     SFTPGo is a fully featured and highly configurable SFTP server with optional FTP/S and WebDAV support, written in
