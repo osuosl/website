@@ -424,6 +424,8 @@
   description: A packet analyzer for UNIX-like OSes
 - name: Tesseract-OCR
   description: Offers a POWER8 testing platform for Google's optical character recognition library, Tesseract OCR
+- name: The NetBSD Foundation
+  description: To run NetBSD on everything, including toasters.
 - name: Travis CI
   description: Continuous Integration using Travis and Power
 - name: Travis/Rust/Swift

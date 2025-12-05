@@ -551,7 +551,7 @@
 - name: The Julia Language
   description: powerpc
 - name: The NetBSD Foundation
-  description: aarch64
+  description: aarch64, powerpc
 - name: The Tor Project
   description: aarch64
 - name: Tobin's Linux kernel
