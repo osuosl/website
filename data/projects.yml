@@ -596,3 +596,5 @@
   description: co-location
 - name: Yum
   description: vm, mirroring
+- name: Zig
+  description: powerpc
