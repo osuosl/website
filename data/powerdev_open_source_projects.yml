@@ -233,6 +233,8 @@
   description: post-link optimizer developed to speed up large applications
 - name: LTTng
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
+- name: Lynx
+  description: Open source chess engine
 - name: Machine Learning/Deep Learning
   description:
     Enable and optimize frameworks of OpenBLAS, NVIDIA/Caffe, BVLC/Caffe, Torch, TensorFlow, Theano, DIGITS for IBM

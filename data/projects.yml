@@ -292,6 +292,8 @@
   description: powerpc
 - name: LuneOS
   description: mailing-list
+- name: Lynx
+  description: powerpc
 - name: LyX
   description: vm
 - name: MacPorts
