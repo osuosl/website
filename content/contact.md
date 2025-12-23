@@ -23,7 +23,7 @@ _NOTE: We previously had our IRC channels on the Freenode Network, however we ha
 
 ## Mailing Addresses
 
-**Shipping Address (for small parts and snail mail)**
+**For small parts and snail mail:**
 
 ATTN: Lance Albertson  
 OSU Open Source Lab  
@@ -31,14 +31,14 @@ OSU Open Source Lab
 1800 SW Campus Way  
 Corvallis, OR 97331
 
-**Shipping Address (for large servers)**
+**For servers and hardware donations:**
 
-_Please consult with us prior to sending anything to this address_
+We require coordination for all hardware shipments. Please contact us at <support@osuosl.org> before sending any
+equipment.
 
-ATTN: Lance Albertson  
-OSU Open Source Lab  
-191 S.W. 35th St.  
-Corvallis, OR 97331
+- **Small shipments (up to 2 servers):** May use the address above after coordinating with our staff
+- **Large shipments (more than 2 servers or palletized freight):** We will provide an alternative shipping location
+  upon coordination
 
 ## Phone
 
