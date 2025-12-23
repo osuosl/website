@@ -2,3 +2,4 @@ public/
 pagefind
 .hugo_build.lock
 node_modules
+*.swp
