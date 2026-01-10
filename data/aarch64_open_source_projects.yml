@@ -8,6 +8,9 @@
     focused on long-term stability and providing a robust production-grade platform that is 1:1 binary compatible with
     RHEL® and pre-CentOS-Stream CentOS™ (e.g. CentOS 8.3). Founded by the team behind the well-established CloudLinux
     OS.
+- name: Anaconda
+  description:
+    Supports the development of MVApich and downstream package builds for Conda-Forge and Bioconda on ARM
 - name: Antrea
   description:
     A Kubernetes-native project that implements the Container Network Interface (CNI) and Kubernetes NetworkPolicy

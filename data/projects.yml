@@ -7,7 +7,7 @@
 - name: Amahi
   description: vm
 - name: Anaconda
-  description: powerpc
+  description: aarch64, powerpc
 - name: Antrea
   description: aarch64
 - name: Apache Software Foundation
