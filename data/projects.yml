@@ -316,6 +316,8 @@
   description: powerpc
 - name: Minio
   description: aarch64
+- name: MongoDB
+  description: powerpc
 - name: Monitoring-plugins
   description: mirroring
 - name: Monkey Server
