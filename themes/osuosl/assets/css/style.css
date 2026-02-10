@@ -452,6 +452,116 @@ img[src$="#blog"] {
   width: 400px;
 }
 
+/* Blog image float classes: use #blog-right or #blog-left as a URL fragment on
+   markdown images, or class="blog-right"/"blog-left" on Hugo figure shortcodes,
+   to float images alongside text in blog posts at a fixed 400px width. */
+
+/* Markdown image: fills its parent <p> container */
+img[src$="#blog-right"] {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hugo wraps standalone markdown images in <p> tags, so we float the parent */
+p:has(> img[src$="#blog-right"]) {
+  float: right;
+  width: 400px;
+  margin: 0 0 1rem 1rem;
+}
+
+/* Hugo figure shortcode: float the figure element directly */
+figure.blog-right {
+  float: right;
+  width: 400px;
+  margin: 0 0 1rem 1rem;
+}
+
+figure.blog-right img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figure.blog-right figcaption {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+/* Mirror of blog-right for left-floated images */
+img[src$="#blog-left"] {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+p:has(> img[src$="#blog-left"]) {
+  float: left;
+  width: 400px;
+  margin: 0 1rem 1rem 0;
+}
+
+figure.blog-left {
+  float: left;
+  width: 400px;
+  margin: 0 1rem 1rem 0;
+}
+
+figure.blog-left img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figure.blog-left figcaption {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+/* Prevent floated images from bleeding into the next section */
+h2:has(~ p > img[src$="#blog-right"]),
+h2:has(~ p > img[src$="#blog-left"]),
+.main_content h2 {
+  clear: both;
+}
+
+/* Multi-column project list for use with the raw shortcode */
+.project-list {
+  column-count: 3;
+  column-gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-list ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+/* Mobile: disable floats and reduce project list columns */
+@media (max-width: 767px) {
+  p:has(> img[src$="#blog-right"]),
+  p:has(> img[src$="#blog-left"]) {
+    float: none;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  figure.blog-right,
+  figure.blog-left {
+    float: none;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .project-list {
+    column-count: 2;
+  }
+}
+
 img[src$="#blog-center"] {
   width: 500px;
   display: block;
