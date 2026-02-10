@@ -18,6 +18,8 @@
   description: mirroring
 - name: Armbian
   description: aarch64
+- name: Artizyou
+  description: vm
 - name: Bazel
   description: powerpc
 - name: BearSSL
