@@ -94,9 +94,8 @@ migration to a state-of-the-art facility ensures the long-term stability of the 
 OSU students the rare opportunity to lead a professional data center migration: an experience that makes them some of
 the most sought-after graduates in the tech industry.
 
-This is a massive undertaking, and we're raising funds to cover the critical extra expenses incurred during this
-transition. To help replenish our reserves, **we've partnered with the OSU Foundation to launch a fundraising
-campaign**.
+This is a massive undertaking, and we've launched a **new fundraising campaign through the OSU Foundation specifically
+to help cover the extra costs of this migration** and replenish the reserves we've drawn down during the transition.
 
 {{< raw >}}
 <a href="https://www.beavsgive.org/organizations/open-source-lab"
