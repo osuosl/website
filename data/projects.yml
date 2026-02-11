@@ -70,6 +70,8 @@
   description: powerpc
 - name: crosstool-NG
   description: vm
+- name: Cryptography
+  description: powerpc
 - name: CVPM
   description: vm
 - name: Cyber-Complex Foundation

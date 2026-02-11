@@ -65,6 +65,13 @@
   description: community-led collection of recipes, build infrastructure and distributions for the conda package manager
 - name: CRIU
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
+- name: Cryptography
+  description:
+    Cryptography is a core Python library providing secure cryptographic recipes and primitives to developers. The
+    project’s mission is to make cryptography safer, easier to use correctly, and broadly accessible across platforms.
+    This request is specifically to validate and troubleshoot ppc64le wheel compatibility on POWER8 systems. Access to
+    POWER architecture systems helps ensure that prebuilt wheels meet manylinux expectations and do not include
+    unsupported CPU instructions, improving reliability for users running on IBM POWER platforms.
 - name: Debian
   description: A universal operating system composed entirely of free software, and packaged by the Debian Project
 - name: Debian-CI
