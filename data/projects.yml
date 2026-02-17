@@ -446,6 +446,8 @@
   description: powerpc
 - name: PersonalTelco
   description: co-location
+- name: pgFirstAid
+  description: vm
 - name: phpBB
   description: co-location, vm, mirroring
 - name: PicaLibre
