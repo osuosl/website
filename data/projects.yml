@@ -360,6 +360,8 @@
   description: powerpc
 - name: Nettle
   description: powerpc
+- name: NexaOS
+  description: mirroring
 - name: Node.js
   description: powerpc,aarch64
 - name: NTPSEC
