@@ -38,3 +38,6 @@
   description: 
     Exploring the behavioral traits for modern ransomware actors, building a robust detector that is able to identify
     zero-day ransomware attacks with confidence and low impact.
+- name: University of Texas at El Paso
+  description: 
+    Quantify the "Workload Tipping Points" where commodity x86 and ARM64 architectures succumb to the Memory Wall, compared to the deterministic scaling of IBM Power10.
