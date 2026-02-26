@@ -609,4 +609,4 @@
 - name: Yum
   description: vm, mirroring
 - name: Zig
-  description: powerpc
+  description: aarch64, powerpc
