@@ -146,3 +146,6 @@
     wide range of applications. Among the architectures fully supported by Xen are AARCH64 and x86. We maintain a robust
     testing infrastructure based on GitLab CI, which executes a variety of builds using different compilers and
     distributions, and also test Xen execution using QEMU as an emulator.
+- name: Zig
+  description:
+    Zig is a general-purpose programming language and toolchain for maintaining robust, optimal and reusable software.
