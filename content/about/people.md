@@ -9,12 +9,13 @@ slug: people
 
 ![Lance Albertson](/images/lalbertson.jpg#right-people)
 
-[Lance](http://lancealbertson.com) became OSL director in early 2013. He has managed all of the hosting activities that
-the OSL provides for more than 160 high-profile open source projects since joining the lab as lead systems administrator
-and architect in 2007. Lance’s involvement in the open source community began in 2003, when he became a developer and
-package maintainer with [Gentoo Linux](http://gentoo.org). Prior to joining the OSL, Lance was a UNIX Administrator for
-the Enterprise Server Technologies group at [Kansas State University](http://ksu.edu). In his free time he helps
-organize [Beaver BarCamp](http://beaverbarcamp.org), and enjoys playing the trumpet and spending time with his family.
+[Lance](https://github.com/ramereth) became OSL director in early 2013. He has managed all of the hosting activities
+that the OSL provides for more than 160 high-profile open source projects since joining the lab as lead systems
+administrator and architect in 2007. Lance’s involvement in the open source community began in 2003, when he became a
+developer and package maintainer with [Gentoo Linux](http://gentoo.org). Prior to joining the OSL, Lance was a UNIX
+Administrator for the Enterprise Server Technologies group at [Kansas State University](http://ksu.edu). In his free
+time he helps organize [Beaver BarCamp](http://beaverbarcamp.org), and enjoys playing the trumpet and spending time
+with his family.
 
 Lance can be reached at lance-at-osuosl-dot-org
 

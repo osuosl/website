@@ -70,9 +70,9 @@ students familiarize themselves with the work.
 > point where we understand the skills and the technical knowledge required.”_
 
 That shift in responsibilities is part of the process OSL Associate Director of Operations
-[Lance Albertson](http://lancealbertson.com/) hopes to provide students with throughout their time in the lab. Albertson
-gives students increasing levels of independence as they progress and lets them tackle problems on their own, offering
-support when they need it but first allowing them the opportunity to succeed without his help.
+[Lance Albertson](https://github.com/ramereth) hopes to provide students with throughout their time in the lab.
+Albertson gives students increasing levels of independence as they progress and lets them tackle problems on their own,
+offering support when they need it but first allowing them the opportunity to succeed without his help.
 
 > _“I make sure they have ownership of something,” Albertson says. “I try not to manage what they do as much as I can.
 > If I give them a big project they usually take it on and they will immerse themselves.”_

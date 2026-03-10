@@ -44,13 +44,12 @@ Max Ogden.
 
 ## Developer News
 
-Our developer team has been hard at work adding new features to
-[Ganeti Web Manager](http://code.osuosl.org/projects/ganeti-webmgr), putting out the
-[0.4 release on December 22nd](http://www.lancealbertson.com/2010/12/ganeti-web-manager-0-4-released/). New features
-include improvements to the caching system, SSH key feeds, import tools and more. You can learn more about Ganeti Web
-Manager's permissions system on the blog of our Lead Developer, Peter Krenesky. For details on how the OSL uses Google's
-[Ganeti](http://code.google.com/p/ganeti/) to manage our clusters, check out the
-[writings](http://www.lancealbertson.com/category/ganeti/) from our Lead Systems Administrator/Architect, Lance
+Our developer team has been hard at work adding new features to [Ganeti Web
+Manager](http://code.osuosl.org/projects/ganeti-webmgr), putting out the [0.4 release on December
+22nd](https://github.com/ramereth). New features include improvements to the caching system, SSH key feeds, import
+tools and more. You can learn more about Ganeti Web Manager's permissions system on the blog of our Lead Developer,
+Peter Krenesky. For details on how the OSL uses Google's [Ganeti](http://code.google.com/p/ganeti/) to manage our
+clusters, check out the [writings](https://github.com/ramereth) from our Lead Systems Administrator/Architect, Lance
 Albertson.
 
 We've also created a Twitter stream for Ganeti Web Manager news, [@ganetiwebmgr](http://twitter.com/ganetiwebmgr).

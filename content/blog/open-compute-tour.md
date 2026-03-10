@@ -62,10 +62,9 @@ has had on the local economy. Sadly, we missed seeing Mark Zuckerberg due to a l
 rest of the day more than made up for it.
 
 You can read more about the facility on
-[Lance Albertson's blog](http://www.lancealbertson.com/2011/04/facebook-prineville-datacenter/), or check out Greg
-Lund-Chaix's post on our visit. For more photos, check out
-[Leslie Hawthorn](http://www.flickr.com/photos/lesliehawthorn/sets/72157626533387248/) and
-[Lance Albertson's](http://www.flickr.com/photos/ramereth/sets/72157626388292459/) albums on Flickr. Many thanks once
-again to David and Facebook for having us!
+[Lance Albertson's blog](https://github.com/ramereth), or check out Greg Lund-Chaix's post on our visit. For more
+photos, check out [Leslie Hawthorn](http://www.flickr.com/photos/lesliehawthorn/sets/72157626533387248/) and [Lance
+Albertson's](http://www.flickr.com/photos/ramereth/sets/72157626388292459/) albums on Flickr. Many thanks once again to
+David and Facebook for having us!
 
 _The OSL is pleased to host_ [OpenCompute.org](http://opencompute.org/).
