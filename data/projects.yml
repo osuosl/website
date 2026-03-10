@@ -584,6 +584,8 @@
   description: powerpc
 - name: Unres
   description: powerpc
+- name: Vertex Linux
+  description: mirroring
 - name: Vector Linux
   description: mirroring
 - name: VideoLAN
