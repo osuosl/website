@@ -97,9 +97,12 @@ the most sought-after graduates in the tech industry.
 This is a massive undertaking, and we've launched a **new fundraising campaign through the OSU Foundation specifically
 to help cover the extra costs of this migration** and replenish the reserves we've drawn down during the transition.
 
+**Update:** This specific fundraising campaign has ended. You can still support the OSL by
+donating directly.
+
 {{< raw >}}
-<a href="https://www.beavsgive.org/organizations/open-source-lab"
-  class="link-button">Donate to support the OSL migration →</a>
+<a href="https://osuosl.org/donate/"
+  class="link-button">Donate to support the OSL →</a>
 {{< /raw >}}
 
 Your donation directly supports:
