@@ -80,9 +80,9 @@
   description:
     Reproducible Builds elevate deterministic builds by making the build process independently verifiable by anyone.
     This means others can confirm your binaries match the source code exactly, fostering trust, improving debugging,
-    speeding up builds, and demonstrating your commitment to high standards. It also allows the development of
-    extremely concise and easily verifiable patches for any version of your software, eg. for customers that have high
-    security requirements and need to audit every release they make.
+    speeding up builds, and demonstrating your commitment to high standards. It also allows the development of extremely
+    concise and easily verifiable patches for any version of your software, eg. for customers that have high security
+    requirements and need to audit every release they make.
 - name: Deeplearning4j
   description:
     Makes deep learning simple and accessible to enterprises. The project uses POWER VMs at OSL for compile builds,
@@ -155,9 +155,10 @@
 - name: Flathub
   description: Provide support for ppc64le on all Flatpaks currently available on Flathub
 - name: FreeBSD CI
-  description: Support FreeBSD Continuous Integration for the POWER platform (64 bit BE and LE targets initially). Once
-    a day, if there's code changes, our CI produces a bootable disk image for both BE and LE targets that automatically
-    runs kernel, drivers and userland test cases to validate the build.
+  description:
+    Support FreeBSD Continuous Integration for the POWER platform (64 bit BE and LE targets initially). Once a day, if
+    there's code changes, our CI produces a bootable disk image for both BE and LE targets that automatically runs
+    kernel, drivers and userland test cases to validate the build.
 - name: FRRouting
   description: Free routing stack (BGP, OSPF, ISIS, RIP, EIGRP, PIM, etc)
 - name: GCC Fortran
@@ -287,6 +288,10 @@
   description: Multiple Overlap of Genomic Regions
 - name: Netty
   description: Non-blocking network framework for the JVM
+- name: Nix
+  description:
+    Nix is a functional programming language and package manager, with an OS built on top of it. Tree-sitter is an
+    incremental parsing tool and parser generator.
 - name: Node.js
   description:
     Supports project specific porting efforts of POWER8 ppc64/ppc64le; provides stable POWER releases for community
@@ -356,9 +361,9 @@
     Supports development and compiling efforts for Debian on PowerPC. The goal is to design an Open Hardware notebook
     motherboard based on the Power Architecture NXP T2080 CPU
 - name: PQ Code Package
-  description: 
-    A collection of open source projects aiming to build high-assurance software implementations of 
-    standards-track post-quantum cryptography algorithms
+  description:
+    A collection of open source projects aiming to build high-assurance software implementations of standards-track
+    post-quantum cryptography algorithms
 - name: Presto
   description:
     Supports efforts of a POWER8 ppc64le port of Presto, a distributed SQL query engine for running interactive analytic
@@ -397,8 +402,7 @@
     The Rust Exploit Mitigations PG maintains and improves the existing, implements, and research new exploit
     mitigations for the Rust compiler
 - name: SciPy
-  description:
-    Fundamental algorithms for scientific computing in Python.
+  description: Fundamental algorithms for scientific computing in Python.
 - name: SFTPGo
   description:
     SFTPGo is a fully featured and highly configurable SFTP server with optional FTP/S and WebDAV support, written in
@@ -472,5 +476,4 @@
   description:
     Zig is a general-purpose programming language and toolchain for maintaining robust, optimal and reusable software.
 - name: MongoDB
-  description:
-    MongoDB is a source-available, cross-platform, document-oriented database program.
+  description: MongoDB is a source-available, cross-platform, document-oriented database program.
