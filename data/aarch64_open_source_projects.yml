@@ -9,8 +9,7 @@
     RHEL® and pre-CentOS-Stream CentOS™ (e.g. CentOS 8.3). Founded by the team behind the well-established CloudLinux
     OS.
 - name: Anaconda
-  description:
-    Supports the development of MVApich and downstream package builds for Conda-Forge and Bioconda on ARM
+  description: Supports the development of MVApich and downstream package builds for Conda-Forge and Bioconda on ARM
 - name: Antrea
   description:
     A Kubernetes-native project that implements the Container Network Interface (CNI) and Kubernetes NetworkPolicy
@@ -87,6 +86,10 @@
   description: Testing minio object storage server on ARM architecture.
 - name: Mumble
   description: Mumble is a free, open source, low latency, high quality voice chat application.
+- name: Nix
+  description:
+    Nix is a functional programming language and package manager, with an OS built on top of it. Tree-sitter is an
+    incremental parsing tool and parser generator.
 - name: Node.js
   description:
     Node.js is a JavaScript runtime for servers. It runs on a variety of OS and architecture platforms
