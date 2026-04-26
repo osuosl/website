@@ -42,7 +42,7 @@ This can be done from the command line:
 
 ```bash
 # Fork
-git clone git@github.com:YOURUSERNAMEHERE/website.git ./osl-website
+git clone git@github.com:osuosl/website.git ./osl-website
 
 # Branch
 git clone git@github.com:osuosl/website.git ./osl-website
