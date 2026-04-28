@@ -21,6 +21,28 @@ information and SSH-based remote access, please visit our [development hosting](
 
 ---
 
+[![Red Hat Logo](/images/redhat-logo.svg#sponsors)](https://www.redhat.com/)
+
+**Red Hat** is the leading provider of enterprise open source software solutions, specializing in Linux, cloud
+computing, and container technologies.
+
+Red Hat's mission is to advance open source development and foster innovation across the technology industry. Their
+commitment to the open source community is demonstrated through significant financial contributions that enable the OSL
+to continue providing critical infrastructure and support to open source projects worldwide.
+
+---
+
+[![Microsoft Logo](/images/microsoft-logo.svg#sponsors)](https://www.microsoft.com/)
+
+**Microsoft** is a global technology leader with extensive involvement in the open source ecosystem, maintaining
+thousands of open source projects on GitHub.
+
+Microsoft supports the OSL through generous financial contributions, recognizing the vital role that open source
+infrastructure plays in enabling innovation and community-driven development. This funding helps the OSL deliver
+reliable hosting and services to the open source community.
+
+---
+
 [![Intel Logo](/images/Intel_logo_2023.svg#sponsors)](https://intel.com)
 
 **Intel** is a global leader in silicon manufacturing and computing technology.
