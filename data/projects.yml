@@ -150,6 +150,8 @@
   description: mirroring
 - name: Firefox
   description: powerpc
+- name: Firefox JIT
+  description: powerpc
 - name: FOSDEM
   description: mirroring
 - name: Fosshost
