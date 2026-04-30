@@ -152,6 +152,8 @@
   description: Supports optimization of software scaling in FFmpeg running on POWER systems
 - name: Firefox
   description: Ports Mozilla Firefox to POWER8
+- name: Firefox JIT
+  description: Optimize the SpiderMonkey engine for POWER10
 - name: Flathub
   description: Provide support for ppc64le on all Flatpaks currently available on Flathub
 - name: FreeBSD CI
