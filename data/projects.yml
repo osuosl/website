@@ -424,6 +424,8 @@
   description: ci-cd
 - name: OpenZFS
   description: webapp, powerpc, aarch64, vm
+- name: Oreon Linux
+  description: mirroring, aarch64
 - name: OrientDB
   description: powerpc
 - name: OSDV
