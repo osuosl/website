@@ -111,6 +111,9 @@
   description:
     OpenZFS is an advanced file system and volume manager which was originally developed for Solaris and is now
     maintained by the OpenZFS community.
+- name: Oreon Linux
+  description: Globally supported Linux, built on trusted technology. A stable and easy to use desktop OS for people
+    who want a more user friendly RHEL® alternative.
 - name: OSMC
   description: A media centre for people. Play everything without collecting any data.
 - name: RebornOS
