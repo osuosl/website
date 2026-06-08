@@ -410,6 +410,8 @@
   description: vm, webapp, mirroring
 - name: OpenQuake
   description: powerpc
+- name: Open Quantum Safe
+  description: powerpc
 - name: OpenSearch Project
   description: powerpc
 - name: OpenShift

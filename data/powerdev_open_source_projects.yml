@@ -331,6 +331,9 @@
     An Open Source Engine for seismic hazard and risk assessment uses the infrastructure to try porting to POWER
     architecture and see how a different architecture affects the numerical tests (the code is covered by numerical,
     functional and qa tests)
+- name: Open Quantum Safe
+  description:
+    Supporting the development and prototyping of quantum-resilient cryptography.
 - name: OpenSearch Project
   description: The POWER is used to build and assemble the OpenSearch software for ppc64le architecture
 - name: OpenShift
