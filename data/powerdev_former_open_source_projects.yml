@@ -105,6 +105,10 @@
   description: Provides ppc64le builds for pgSphere, a PostgreSQL extension for spherical geometry
 - name: qiskit-sdk-py
   description: Python tools for running quantum information experiments
+- name: SFTPGo
+  description:
+    SFTPGo is a fully featured and highly configurable SFTP server with optional FTP/S and WebDAV support, written in
+    Go. It can serve local filesystem, S3 or Google Cloud Storage. POWER Docker image testing.
 - name: SHA-3
   description:
     Ensures support and viability of Secure Hash Algorithm 3 on POWER, including POWER8 specific optimizations

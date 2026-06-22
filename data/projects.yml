@@ -524,8 +524,6 @@
   description: mirroring
 - name: SciPy
   description: powerpc
-- name: SFTPGo
-  description: powerpc
 - name: SHA-3
   description: powerpc
 - name: SharkLinux

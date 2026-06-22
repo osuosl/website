@@ -408,10 +408,6 @@
     mitigations for the Rust compiler
 - name: SciPy
   description: Fundamental algorithms for scientific computing in Python.
-- name: SFTPGo
-  description:
-    SFTPGo is a fully featured and highly configurable SFTP server with optional FTP/S and WebDAV support, written in
-    Go. It can serve local filesystem, S3 or Google Cloud Storage. POWER Docker image testing.
 - name: sire
   description:
     Sire is a molecular modelling framework that provides extensive functionality to manipulate representations of
