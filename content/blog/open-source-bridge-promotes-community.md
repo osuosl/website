@@ -36,10 +36,6 @@ attended ranged from [Leveling up in DevOps: the Art of Bad Shell Scripts](http:
 “I really enjoyed the diversity of not only the people attending but also the session topics,” Albertson says. “I
 noticed a wider variety of topics this year than in the past--from advanced technical to sociological topics.”
 
-![Lance Albertson Presentation](/images/lancepresentation.jpg#center)
-
-Lance Albertson giving a presentation on how the OSU Open Source Lab mentors "rockstar" students.
-
 In the culture track, the OSL presented [How We Mentor “Rock Star” Students](http://opensourcebridge.org/sessions/1093),
 in conjunction with [Portland State University’s CAT](http://cat.pdx.edu/) presentation Zero to Root in 12 Months.
 Albertson and Senior Software Engineer Ken Lett emphasized that mentoring college students involves much more than

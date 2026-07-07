@@ -12,9 +12,9 @@ Our students have been instrumental in setting up and maintaining the infrastruc
 and we are very excited to be able to dedicate more time to this important project.
 
 Additionally, the Drupal Association has committed to make a $5,000 donation to the Open Source Lab general fund. This
-money is used to support all of our activities at the OSL, for specifics, please see our [FAQ](/faq). It is great to see
-a project hosted at the OSL become large enough that they are able to support the Lab with a monetary donation,
-especially as we celebrate our sixth anniversary with the [Give 6](/donate/buildthefuture) program.
+money is used to support all of our activities at the OSL, for specifics, please see our [FAQ](/donate/faq). It is great
+to see a project hosted at the OSL become large enough that they are able to support the Lab with a monetary donation,
+especially as we celebrate our sixth anniversary with the Give 6 program.
 
 For more information about Drupal, see <http://drupal.org> Or visit the Drupal Association website at
 <http://association.drupal.org/>

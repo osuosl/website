@@ -23,6 +23,4 @@ available free-of-charge to educators. The TeachEngineering initiative is run by
 Colorado at Boulder, Duke University, Worcester Polytechnic University, Colorado School of Mines and Oregon State
 University. The project is hosted at [OSU’s Open Source Lab](/).
 
-For more information about TeachEngineering, visit <http://teachengineering.org>. For more information about the
-TeachEngineering project and the Open Source Lab, see our
-[TeachEngineering Featured Project Story](/blog/teachengineering)
+For more information about TeachEngineering, visit <http://teachengineering.org>.

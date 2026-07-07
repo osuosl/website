@@ -6,7 +6,7 @@ slug: recap-oscon-2014
 tags: []
 ---
 
-![A Recap of OSCON 2014](/images/OSCON_blog_post_0.jpg#blog)
+![A Recap of OSCON 2014](/images/OSCON%20blog%20post_0.jpg#blog)
 
 The OSL made a strong showing at the [O’Reilly Open Source Conference](http://www.oscon.com/oscon2014) (OSCON) this year
 with the majority of the student employees attending along with all of the full time staff. The conference was held in

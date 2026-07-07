@@ -15,8 +15,8 @@ line and the IP address(es) for the VM(s) in the message body of the request whi
 specific VM it's for.
 
 This access is intended only for **_free and open source_** projects who qualify and are approved by both the OSUOSL and
-IBM. For proprietary sourced projects or products please use other POWER resources which can be found
-[here](https://developer.ibm.com/linuxonpower/cloud-resources/)
+IBM. For proprietary sourced projects or products please use the
+[IBM Linux on Power cloud resources](https://developer.ibm.com/linuxonpower/cloud-resources/)
 
 {{< raw >}}
 

@@ -14,8 +14,8 @@ For any changes, updates, or issues with an existing project please send the spe
 line and the names of the Jenkins jobs that have the issue in the message body.
 
 This access is intended only for _free and open source_ projects who qualify and are approved by both the OSUOSL and
-IBM. For proprietary sourced projects or products please use other POWER resources which can be found
-[here](https://www.ibm.com/docs/en/linux-on-systems).
+IBM. For proprietary sourced projects or products please use the resources in
+[IBM's Linux on Systems documentation](https://www.ibm.com/docs/en/linux-on-systems).
 
 The POWER CI service uses Docker to deploy Jenkins workers. In the future we will add access to use OpenStack to deploy
 Jenkins workers (ppc64le only).

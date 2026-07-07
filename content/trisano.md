@@ -43,4 +43,4 @@ Schonstal isn’t sure what he will do after he graduates in the spring, but he 
 have prepared him well. "The open source community is really merit-based, so people who contribute more are going to be
 well-regarded in the community," he says.
 
-**Category:** [Student Stories](/students/stories)
+**Category:** [Student Stories](/student-stories)
