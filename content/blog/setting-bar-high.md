@@ -94,4 +94,4 @@ presents Beaver BarCamp to promote idea sharing, collaboration and open source i
 BarCamp 10 this fall.
 
 To support the OSL's world-class hosting and development services, as well as events like Beaver BarCamp, visit our
-[Donate](\donate) page.
+[Donate](/donate) page.

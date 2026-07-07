@@ -10,7 +10,7 @@ via Jenkins allowing open source projects to build and test on the s390x archite
 Linux on IBM Z can be found at IBM's
 [Linux on IBM Z community](https://www.ibm.com/developerworks/community/groups/community/lozopensource).
 
-### IBM Z Continuous Integration (IBM Z CI)
+## IBM Z Continuous Integration (IBM Z CI)
 
 An OSL-managed Jenkins service is hosted at <https://ibmz-ci.osuosl.org>. This service is intended to allow projects
 easier access to the s390x architecture via Jenkins.

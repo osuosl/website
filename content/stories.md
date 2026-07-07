@@ -27,7 +27,7 @@ first-year students, didn't yet have a clear idea of what he hoped to do with hi
 
 [Read more](/blog/open-source-open-future)
 
-## [Helping Drupal Grow](/students/stories/drupal_infrastructure)
+## [Helping Drupal Grow](/blog/drupal_infrastructure)
 
 Submitted by OSUOSL Admin on February 5, 2009
 
@@ -38,9 +38,9 @@ community for help. OSL offered to host the equipment, and students Eric Searcy 
 the association that runs Drupal. Searcy, now a systems administrator at InsightsNow in Corvallis, dealt with the
 scaling of the Web side of Drupal while Newton worked with the database.
 
-[Read more](students/stories/drupal_infrastructure)
+[Read more](/blog/drupal_infrastructure)
 
-## [A History of Development](/students/stories/trisano)
+## [A History of Development](/trisano)
 
 Submitted by OSUOSL Admin on February 5, 2009
 
@@ -48,4 +48,4 @@ During his time at OSL, Josh Schonstal has worked on One Laptop Per Child and re
 TriSano, a tool that will help the Centers for Disease Control monitor outbreaks of infectious disease, environmental
 hazards, and bioterrorism attacks. TriSano is soon to be deployed in hospitals throughout Utah.
 
-[Read more](students/stories/trisano)
+[Read more](/trisano)

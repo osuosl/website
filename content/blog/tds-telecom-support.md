@@ -10,6 +10,5 @@ tags: []
 
 TDS Telecommunications, a telephone and Internet services provider has been supporting the OSL since 2005 by providing
 bandwidth and colocation hosting for the OSL's mirrors. TDS recently made a large bandwidth donation valued at more than
-$1 million, making their cumulative support to the OSL top $5 million.
-[Click here](http://today.oregonstate.edu/news/tds-telecom-support-osu-open-source-lab-tops-5-million) to read more
-about the story in the OSU newsroom.
+$1 million, making their cumulative support to the OSL top $5 million. Read more in the
+[OSU newsroom story](http://today.oregonstate.edu/news/tds-telecom-support-osu-open-source-lab-tops-5-million).

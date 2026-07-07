@@ -35,7 +35,7 @@ and Alan Sherman were surprised by the varied relationships between attendees an
 “I found it a bit interesting to get an idea of what the end users are like,” Dunham said. “It was a much more corporate
 image than what I previously associated with open source, but it’s a good reminder that it really is for everyone.”
 
-![Alan Sherman and John Hawley Rocked the Softlayer Server Challenge; The challenge? Repopulate 20 drive bays and plug in 3 sets of 6 network cables into their respective switch in as short a time as possible.](/images/server_challenger.jpg#center)
+![Alan Sherman and John Hawley Rocked the Softlayer Server Challenge; The challenge? Repopulate 20 drive bays and plug in 3 sets of 6 network cables into their respective switch in as short a time as possible.](/images/server_challenge.jpg#center)
 
 Both Dunham and OSUOSL Outreach Manager [Leslie Hawthorn](http://twitter.com/lhawthorn) attended a special part of the
 Google-sponsored lunch on Wednesday. It recognized women in the open source community.
