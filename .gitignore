@@ -3,3 +3,5 @@ pagefind
 .hugo_build.lock
 node_modules
 *.swp
+# htmltest cache
+tmp/

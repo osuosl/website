@@ -1,0 +1,14 @@
+DirectoryPath: public
+CheckExternal: false
+CheckInternal: true
+# relativeURLs=true makes Hugo emit directory links without trailing slashes;
+# web servers resolve these fine.
+IgnoreDirectoryMissingTrailingSlash: true
+IgnoreInternalEmptyHash: true
+CacheExpires: "1h"
+IgnoreURLs:
+  # Legacy image styling: content uses /images/foo.jpg#class fragments that CSS
+  # attribute selectors match (img[src$="#center"] etc.). htmltest reads the
+  # fragment as an anchor and fails. Remove this rule once the image render
+  # hook (theme rebuild) strips fragments from the rendered src attributes.
+  - '\.(jpg|jpeg|png|gif|webp|svg|JPG)#'

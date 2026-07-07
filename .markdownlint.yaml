@@ -8,3 +8,6 @@ no-inline-html: false
 
 # MD036/no-emphasis-as-heading : Emphasis used instead of a heading : https://github.com/DavidAnson/markdownlint/blob/v0.34.0/doc/md036.md
 no-emphasis-as-heading: false
+
+# MD045/no-alt-text : Images must have alternate text (WCAG 2.1 AA / ADA Title II requirement)
+no-alt-text: true

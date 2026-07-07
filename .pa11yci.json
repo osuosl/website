@@ -1,0 +1,24 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "runners": ["axe", "htmlcs"],
+    "timeout": 30000,
+    "chromeLaunchConfig": {
+      "args": ["--no-sandbox", "--disable-dev-shm-usage"]
+    }
+  },
+  "urls": [
+    "http://localhost:8080/",
+    "http://localhost:8080/about/",
+    "http://localhost:8080/blog/",
+    "http://localhost:8080/blog/drupal_infrastructure/",
+    "http://localhost:8080/communities/",
+    "http://localhost:8080/donate/",
+    "http://localhost:8080/request-hosting/",
+    "http://localhost:8080/services/aarch64/request_hosting/",
+    "http://localhost:8080/services/powerdev/request_hosting/",
+    "http://localhost:8080/services/powerdev/request_powerci/",
+    "http://localhost:8080/services/ibm-z/request_ci/",
+    "http://localhost:8080/404.html"
+  ]
+}

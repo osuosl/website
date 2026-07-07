@@ -12,6 +12,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "markdownlint-cli2": "^0.19.0",
+    "pa11y-ci": "^4.1.1",
     "prettier": "^3.4.2",
     "prettier-plugin-go-template": "^0.0.15"
   },

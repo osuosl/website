@@ -1,0 +1,59 @@
+name: Hugo Build Check
+
+# Builds the site the same way the Jenkins deploy does (hugo + pagefind),
+# then checks internal link/asset integrity (htmltest) and runs a WCAG 2.1 AA
+# accessibility scan (pa11y-ci) against the built output.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    name: Build, link check, accessibility scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The deploy node (web2) tracks the latest Hugo release, so CI builds
+      # with latest extended to surface new-Hugo breakage before deploys do.
+      - name: Install Hugo (latest extended)
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: latest
+          extended: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build site
+        run: hugo --minify --cleanDestinationDir --printPathWarnings
+
+      - name: Build search index
+        run: npx pagefind --site public
+
+      - name: Install htmltest
+        run: curl -s https://htmltest.wjdp.uk | bash -s -- -b ./bin
+
+      - name: Check internal links and assets (htmltest)
+        run: ./bin/htmltest -c .htmltest.yml
+
+      - name: Serve built site
+        run: |
+          python3 -m http.server 8080 --directory public &
+          for i in $(seq 1 20); do
+            curl -fs http://localhost:8080/ > /dev/null && break
+            sleep 0.5
+          done
+
+      # WCAG 2.1 AA scan (ADA Title II requirement). Non-blocking until the
+      # accessible theme rebuild lands; remove continue-on-error at that point
+      # to make this a required check.
+      - name: Accessibility scan (pa11y-ci, WCAG 2.1 AA)
+        continue-on-error: true
+        run: npx pa11y-ci --config .pa11yci.json
