@@ -2,8 +2,6 @@
 title: "Now Providing Access to POWER10 for Open Source Projects"
 date: 2024-08-15
 authors: ["Lance Albertson"]
-slug: power10
-tags: []
 ---
 
 ![OSL Sign](/images/OSLSignPicture.jpg)

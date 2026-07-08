@@ -2,7 +2,6 @@
 title: "Reflections on My Time at the Open Source Lab, Travis Whitehead"
 authors: ["Travis Whitehead"]
 date: 2019-04-24
-slug: student-story-whitehet
 tags: ["student-stories"]
 ---
 

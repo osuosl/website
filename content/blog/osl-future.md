@@ -2,8 +2,6 @@
 title: "Future of OSL in Jeopardy"
 date: 2025-04-30
 authors: ["Lance Albertson"]
-slug: osl-future
-tags: []
 ---
 
 I am writing to inform you about a critical and time-sensitive situation facing the Open Source Lab (OSL). Over the past

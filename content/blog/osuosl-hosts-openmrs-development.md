@@ -2,8 +2,6 @@
 title: "OSUOSL Hosts OpenMRS Development"
 date: 2009-01-12
 authors: ["OSUOSL Admin"]
-slug: osuosl-hosts-openmrs-development
-tags: []
 ---
 
 OpenMRS is an open source electronic medical record system framework. Led by the

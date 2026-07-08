@@ -2,7 +2,6 @@
 title: "Network Outage 2016-12-17 Post-mortem"
 date: 2016-12-19
 authors: ["Lance Albertson"]
-slug: network-outage-2016-12-17
 tags: ["outages"]
 ---
 

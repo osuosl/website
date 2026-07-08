@@ -2,7 +2,6 @@
 title: "Mohamed Eldebri on OSL's participation in the Corvallis Maker Fair"
 date: 2018-05-07
 authors: ["Mohamed Eldebri"]
-slug: mohamed-eldebri-maker-fair
 tags: ["student-stories"]
 ---
 

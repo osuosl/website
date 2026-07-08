@@ -2,8 +2,6 @@
 title: "Make Bash, Not War"
 date: 2014-08-04
 authors: ["Daniel Takamori"]
-slug: make-bash-not-war
-tags: []
 ---
 
 ![Make Bash, not War](/images/makebash.jpg#blog)

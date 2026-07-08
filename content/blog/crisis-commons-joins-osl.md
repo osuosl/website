@@ -2,8 +2,6 @@
 title: "CrisisCommons is pleased to announce partnership with OSU's Open Source Lab"
 date: 2010-12-15
 authors: ["OSUOSL Admin"]
-slug: crisis-commons-joins-osl
-tags: []
 ---
 
 [CrisisCommons](http://crisiscommons.org/) is a global network of volunteers who use creative problem solving and open

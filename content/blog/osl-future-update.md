@@ -2,8 +2,6 @@
 title: "Forging Our Future: OSL's Path to Sustainability – A Call for Smart Solutions and Enduring Support"
 date: 2025-05-09
 authors: ["Lance Albertson"]
-slug: osl-future-update
-tags: []
 ---
 
 Following our [OSL Future](/blog/osl-future) post, the community response has been incredible! Thanks to your amazing

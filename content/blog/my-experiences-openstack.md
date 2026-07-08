@@ -2,8 +2,6 @@
 title: "My Experiences with Openstack"
 date: 2014-09-15
 authors: ["Geoff Corey"]
-slug: my-experiences-openstack
-tags: []
 ---
 
 ![My Experiences with Openstack](/images/Geoffbloggraphic2_0.jpg#blog)

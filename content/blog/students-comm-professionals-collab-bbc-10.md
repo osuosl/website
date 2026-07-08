@@ -2,8 +2,6 @@
 title: "Students, Community and Professionals Collaborate at Beaver BarCamp 10"
 date: 2012-11-03
 authors: ["Kayla Harr"]
-slug: students-comm-professionals-collab-bbc-10
-tags: []
 ---
 
 ![Students, Community and Professionals Collaborate at Beaver BarCamp 10](/images/MikeMorganBBC10.jpg#blog)

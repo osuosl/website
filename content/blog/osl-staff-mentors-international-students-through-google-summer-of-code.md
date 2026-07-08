@@ -2,8 +2,6 @@
 title: "OSL Staff Mentors International Students Through Google Summer of Code"
 date: 2013-02-11
 authors: ["Kayla Harr"]
-slug: osl-staff-mentors-international-students-through-google-summer-of-code
-tags: []
 ---
 
 **Real-world work experience is one of the most valuable things an employer can provide to students preparing to enter

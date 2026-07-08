@@ -1,9 +1,7 @@
 ---
 title: "RTEMS"
-slug: rtems
 date: 2016-02-24
 authors: ["Amanda Kelner"]
-tags: []
 ---
 
 ![RTEMS](/images/windows-on-building.jpg#blog)

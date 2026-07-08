@@ -2,7 +2,6 @@
 title: "Cody Holliday on the Department of Energy Cyber Defense Competition 2018"
 date: 2018-04-23
 authors: ["Cody Holliday"]
-slug: cody-holiday-cyber-defense
 tags: ["student-stories"]
 ---
 

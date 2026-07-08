@@ -2,8 +2,6 @@
 title: "Selected for Google Code-in 2010"
 date: 2010-11-04
 authors: ["Lance Albertson"]
-slug: selected-google-code-2010
-tags: []
 ---
 
 We are thrilled to have been selected as mentoring organization for the
