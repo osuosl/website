@@ -20,9 +20,6 @@
     {{- with .Params.lead }}
       <p class="list__lead post__lead">{{ . }}</p>
     {{- end }}
-    {{ with partial "post_meta.html" . -}}
-      <div class="list__meta meta">{{ . }}</div>
-    {{- end }}
   </header>
   <div class="content list__excerpt post__content">
     {{ .Summary | plainify }}
