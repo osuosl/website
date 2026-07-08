@@ -1,7 +1,6 @@
 baseURL = 'https://osuosl.org/'
 languageCode = 'en-us'
 title = 'OSU Open Source Lab'
-theme = 'osuosl'
 relativeURLs = true
 enableInlineShortcodes = true
 disablePathToLower = true
