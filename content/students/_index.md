@@ -1,6 +1,6 @@
 ---
 title: "Student Experience"
-slug: students
+aliases: ["/devops-bootcamp/"]
 ---
 
 ![CASS](/images/CASS_group_photo_17.jpg)
@@ -14,9 +14,9 @@ accomplishments beyond the lab.
 
 Explore our Student Experience pages to find out more about what it means to be part of the OSL family.
 
-[Employment](/about/employment)
+[Employment](/students/employment)
 
-[Education and Events](/about/education)
+[Education and Events](/students/education)
 
 ## Introducing our Sponsor a Student Program
 

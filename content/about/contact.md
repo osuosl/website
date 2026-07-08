@@ -1,6 +1,6 @@
 ---
 title: Contact Us
-slug: contact
+aliases: ["/contact/"]
 ---
 
 ## Email

@@ -23,4 +23,4 @@ donations. For example, we are experimenting with grants, paid development on op
 endeavors which allow us to remain focused on supporting open source software around the globe.
 
 To make a donation to the OSU Open Source Lab, please see our [donate](/donate) page. Our supporters are listed on our
-[sponsors](/sponsors) page.
+[sponsors](/about/sponsors) page.

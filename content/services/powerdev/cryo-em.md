@@ -1,7 +1,5 @@
 ---
 title: "Cryo-EM"
-author: Maximillian Schmidt
-slug: /powerdev/cryo-em
 ---
 
 The OSU Open Source Lab (OSUOSL) and Center for Quantitative Life Sciences (CQLS) partner with IBM and OpenPOWER in

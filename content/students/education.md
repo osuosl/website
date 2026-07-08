@@ -1,15 +1,14 @@
 ---
 title: "Education"
-slug: education
-author: Amanda Kelner
+aliases: ["/about/education/"]
 ---
 
 The Open Source Lab offers a number of events and educational opportunities to improve student experience.
 
-[Beaver Barcamp](/about/beaverbarcamp)
+[Beaver Barcamp](/students/beaver-barcamp)
 
-[DevOps BootCamp](/devops-bootcamp/)
+[DevOps BootCamp](https://devopsbootcamp.osuosl.org/)
 
-[Google Summer of Code (GSOC)](/about/gsoc/)
+[Google Summer of Code (GSOC)](/students/gsoc/)
 
 [OSU Course CS312](/students/cs312/)

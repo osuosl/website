@@ -1,6 +1,5 @@
 ---
 title: Donate
-slug: /donate
 ---
 
 The OSU Open Source Lab (OSUOSL) offers support services to the world’s leading Open Source projects as part of its

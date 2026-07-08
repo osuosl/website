@@ -1,6 +1,5 @@
 ---
 title: IBM Z Development Hosting
-slug: /ibm-z
 ---
 
 The Open Source Lab partners with [Marist College](http://www.marist.edu/), who has a long-standing relationship with
@@ -21,4 +20,4 @@ to run their tests, package any necessary files and binaries after running the b
 the Jenkins server for later access. The service also supports providing e-mail notifications on build status and
 embedded build-notification for webpages.
 
-To request access to the IBM Z CI service, use our [IBM Z CI request form](/services/ibm-z/request_ci).
+To request access to the IBM Z CI service, use our [IBM Z CI request form](/services/ibm-z/request-ci).

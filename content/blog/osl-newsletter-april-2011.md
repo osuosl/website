@@ -19,7 +19,7 @@ OSL, [follow us on Twitter](http://twitter.com/osuosl) or [find us on Facebook](
 
 Before we share our good news, we want to take a moment to express our sincerest thanks to our sponsors. Without the
 support of our generous donors, the OSL would not be able to provide support and services to our
-[hosted communities](/communities). If you or your company would like to join our list of supporters, please visit our
+[hosted communities](/projects). If you or your company would like to join our list of supporters, please visit our
 [Donations information page](/donate).
 
 It's always wonderful to see the successes of the OSL's alums, and we've seen many of our former student employees go on

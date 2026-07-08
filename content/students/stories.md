@@ -1,6 +1,6 @@
 ---
 title: Student Stories
-slug: student-stories
+aliases: ["/student-stories/", "/stories/"]
 ---
 
 ![Students](/images/2017_BootCamp_smaller.jpg#right)

@@ -1,7 +1,5 @@
 ---
 title: Open-CE
-authors: [Maximillian Schmidt (>1.8.0), Ken Lett (<=1.8.0)]
-slug: /powerdev/opence
 ---
 
 <!-- markdownlint-disable no-duplicate-heading -->

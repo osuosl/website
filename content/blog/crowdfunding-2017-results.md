@@ -12,7 +12,7 @@ them for their work and enriching their experience through events such as [Beave
 and other conferences.
 
 We are so very thankful for the support of our partners and friends. If you would like to donate to the OSL, visit our
-[donation page](http://osuosl.org/donate/) or our
+[donation page](/donate/) or our
 [OSU Foundation page](https://securelb.imodules.com/s/359/foundation/index.aspx?sid=359&gid=34&pgid=1982&bledit=1&cid=3007&dids=79)
 to make a direct donation. And follow us on [Facebook](https://www.facebook.com/OSUOSL/),
 [Twitter](https://twitter.com/osuosl), and [Instagram](https://www.instagram.com/osuosl/) to hear about more fundraising

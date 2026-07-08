@@ -1,7 +1,6 @@
 ---
 title: "Advisory Board"
-slug: /advisors
-type: page
+aliases: ["/advisors/"]
 ---
 
 Featuring industry leaders from global open source projects and commercial vendors, the Open Source Lab's advisory board

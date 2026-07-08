@@ -1,7 +1,7 @@
 ---
 title: POWER CI Request Form
-slug: /powerdev/request_powerci
 recaptcha: true
+aliases: ["/services/powerdev/request_powerci/"]
 ---
 
 The Open Source Lab partners with IBM to host POWER based servers in order to provide an open platform for innovation to

@@ -7,10 +7,6 @@ timeZone = 'America/Los_Angeles'
 # must be page-relative.
 relativeURLs = true
 
-# Mixed-case URLs inherited from the Pelican migration; goes away with
-# the content restructure.
-disablePathToLower = true
-
 enableRobotsTXT = true
 
 [pagination]

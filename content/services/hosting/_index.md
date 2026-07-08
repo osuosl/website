@@ -1,6 +1,5 @@
 ---
 title: "Hosting"
-slug: /
 ---
 
 ![Hosting](/images/Hosting.jpg#right-hosting)
@@ -22,6 +21,6 @@ Typically we refer to the Open Source Initiative's definition of open source, fo
 your project follows an open development model and is freely available under an OSI-approved license, you may qualify
 for hosting. For more about which projects we consider for hosting, see our [Hosting Policy](/services/hosting/policy).
 
-To request hosting with the Open Source Lab, [please fill out this Hosting Request form](/request-hosting)
+To request hosting with the Open Source Lab, [please fill out this Hosting Request form](/services/hosting/request)
 
 _Please give us a few days to discuss and respond._

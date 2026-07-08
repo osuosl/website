@@ -10,6 +10,6 @@ The Open Source Lab's Cody Holliday recently competed on a team with five other 
 Cyber Defense Competition. Despite that this was their first time competing, they ranked first place in the regional
 competition, and fourth place nationally!
 [Read more about the competition.](https://blogs.oregonstate.edu/eecsnews/2018/04/12/student-team-wins-regional-doe-cyber-defense-competition/)
-You can also read about [his experience working at the OSL](/student-stories/).
+You can also read about [his experience working at the OSL](/students/stories/).
 
 Way to go Cody!
