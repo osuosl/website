@@ -1,0 +1,28 @@
+baseURL = 'https://osuosl.org/'
+languageCode = 'en-us'
+title = 'OSU Open Source Lab'
+timeZone = 'America/Los_Angeles'
+
+# Per-PR staging serves the site from a subdirectory, so generated URLs
+# must be page-relative.
+relativeURLs = true
+
+# Mixed-case URLs inherited from the Pelican migration; goes away with
+# the content restructure.
+disablePathToLower = true
+
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 10
+
+[taxonomies]
+tag = 'tags'
+
+[markup.goldmark.renderer]
+# Content embeds raw HTML (request forms, occasional inline markup).
+unsafe = true
+
+[module.hugoVersion]
+extended = true
+min = '0.146.0'
