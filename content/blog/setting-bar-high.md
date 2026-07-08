@@ -2,8 +2,6 @@
 title: "Setting the Bar High"
 date: 2012-05-10
 authors: ["Kayla Harr"]
-slug: setting-bar-high
-tags: []
 ---
 
 ![Setting the Bar High](/images/bbc9-clover.jpg#blog)

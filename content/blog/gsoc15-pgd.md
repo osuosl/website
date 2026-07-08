@@ -2,8 +2,6 @@
 title: "OSL GSOC 2015 - Protein Geometry Database"
 date: 2015-09-12
 authors: ["Elijah Voigt"]
-slug: gsoc15-pgd
-tags: []
 ---
 
 ![GSOC 2015 Protein Geometry Database](/images/pgd-gsoc.jpg#blog)

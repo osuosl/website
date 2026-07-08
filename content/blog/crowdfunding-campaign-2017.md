@@ -1,7 +1,6 @@
 ---
 title: Donate to Our Crowdfunding Campaign!
 date: 2017-08-03
-slug: crowdfunding-campaign-2017
 authors: ["Amanda Kelner"]
 ---
 

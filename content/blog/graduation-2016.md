@@ -2,8 +2,6 @@
 title: "Congratulations 2016 Graduates!"
 date: 2016-06-01
 authors: ["Amanda Kelner"]
-slug: graduation-2016
-tags: []
 ---
 
 ![OSL 2016 graduates](/images/Graduation2016PostPicture.png#blog)

@@ -2,11 +2,9 @@
 title: "New Project: libpng Now Mirrored on ftp.osuosl.org"
 date: 2017-04-28
 authors: ["Amanda Kelner"]
-slug: new-project-libpng
-tags: []
 ---
 
-![OSL Sign New Project](/images/NewProjectAdjustedImage.png#blog)
+![New Project: libpng Now Mirrored on ftp.osuosl.org](/images/NewProjectAdjustedImage.png#blog)
 
 The OSL took on a new project and delivers a new
 [mirroring site libpng source](http://www.libpng.org/pub/png/libpng.html) for libpng tarball distributions that is 20+

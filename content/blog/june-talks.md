@@ -2,8 +2,6 @@
 title: "Out and About with the OSL in June"
 date: 2011-06-06
 authors: ["OSUOSL Admin"]
-slug: june-talks
-tags: []
 ---
 
 Summer conference season is upon us, and employees of the OSL will be giving several talks. Kicking off June's

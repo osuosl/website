@@ -2,8 +2,6 @@
 title: "Openstack's Horizon"
 date: 2014-02-20
 authors: ["Melissa"]
-slug: openstacks-horizon
-tags: []
 ---
 
 ![Openstack's Horizon](/images/tech-blog.png#blog)

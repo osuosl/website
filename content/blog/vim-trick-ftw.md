@@ -2,8 +2,6 @@
 title: "Vim Trick FTW!"
 date: 2014-06-11
 authors: ["Emily Dunham"]
-slug: vim-trick-ftw
-tags: []
 ---
 
 ![Vim Trick FTW!](/images/emilyvim.png#blog)

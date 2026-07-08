@@ -2,7 +2,6 @@
 title: "Jonathan Frederick on Packer Templates project at the OSL"
 date: 2018-01-19
 authors: ["Jonathan Frederick"]
-slug: jonathan-frederick-packer
 tags: ["student-stories"]
 ---
 

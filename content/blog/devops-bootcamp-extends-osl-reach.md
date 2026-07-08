@@ -2,8 +2,6 @@
 title: "DevOps Bootcamp Extends OSL Reach"
 date: 2013-12-16
 authors: ["Melissa Morse"]
-slug: devops-bootcamp-extends-osl-reach
-tags: []
 ---
 
 ![DevOps Bootcamp Extends OSL Reach](/images/dobc-extends-osl-reach.jpg#blog)

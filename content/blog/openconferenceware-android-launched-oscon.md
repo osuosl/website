@@ -2,8 +2,6 @@
 title: "OpenConferenceWare-Android Launched for OSCON"
 date: 2010-07-12
 authors: ["OSUOSL Admin"]
-slug: openconferenceware-android-launched-oscon
-tags: []
 ---
 
 We are happy to announce that we've completed work on our OpenConferenceware-Android application to make it available

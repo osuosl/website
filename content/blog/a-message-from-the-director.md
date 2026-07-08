@@ -2,8 +2,6 @@
 title: "A Message from the Director"
 date: 2017-08-15
 authors: ["Lance Albertson"]
-slug: a-message-from-the-director
-tags: []
 ---
 
 ![OSL Sign](/images/OSLSignPicture.jpg#blog)

@@ -2,8 +2,6 @@
 title: "OSL Newsletter - August 2010"
 date: 2010-08-11
 authors: ["Lance Albertson"]
-slug: osl-newsletter-august-2010
-tags: []
 ---
 
 ## OSL Newsletter

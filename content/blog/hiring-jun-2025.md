@@ -1,9 +1,7 @@
 ---
 title: "We're Hiring: Join the OSU Open Source Lab as a Student Systems Engineer!"
 date: 2025-06-05
-slug: hiring-jun-2025
 authors: ["Pam Bielenberg", "Oria Weng", "Lance Albertson"]
-tags: []
 ---
 
 ![Students working at computers](/images/osl-students-2018.jpg#blog)

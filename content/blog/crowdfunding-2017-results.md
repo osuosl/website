@@ -1,9 +1,7 @@
 ---
 title: "Thank You for Supporting our Crowdfunding Campaign!"
 date: 2017-09-07
-slug: crowdfunding-2017-results
 authors: ["Amanda Kelner"]
-tags: []
 ---
 
 ![OSL Students](/images/OSLWorkers2Adjusted.jpg#blog)
