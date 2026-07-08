@@ -1,6 +1,7 @@
 ---
 title: OpenPOWER OpenStack Request Form
 slug: powerdev/request_hosting
+recaptcha: true
 ---
 
 The Open Source Lab partners with IBM to host POWER based servers in order to provide an open platform for innovation to
@@ -18,11 +19,11 @@ This access is intended only for **_free and open source_** projects who qualify
 IBM. For proprietary sourced projects or products please use the
 [IBM Linux on Power cloud resources](https://developer.ibm.com/linuxonpower/cloud-resources/)
 
+{{< formsender-error >}}
+
 {{< raw >}}
 
 <div id="content">
-<!-- Formsender error script -->
-<script src="../../../js/formsender-error.js"></script>
   <form class="webform-client-form" enctype="multipart/form-data" action="https://formsender.osuosl.org:443"
   method="post" id="webform-client-form-1086" accept-charset="UTF-8">
     <div>

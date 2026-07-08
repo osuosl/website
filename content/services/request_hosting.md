@@ -1,14 +1,16 @@
 ---
 title: Request Hosting
 url: /request-hosting
+recaptcha: true
 ---
 
 Please give us a few days or a week to discuss and respond to your request. This form will send an email to our support
 ticket system.
 
+{{< formsender-error >}}
+
 {{< raw >}}
 
-<script src="../js/formsender-error.js"></script>
 <form class="webform-client-form" enctype="multipart/form-data"
     action="https://formsender.osuosl.org:443" method=post id="webform-client-form-535"
     accept-charset="UTF-8">

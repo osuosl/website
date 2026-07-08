@@ -1,34 +1,33 @@
-// Get error number and message from query string
-function getQueryVariable(variable) {
-  var query = window.location.search.substring(1);
-  var vars = query.split("&");
-  for (var i = 0; i < vars.length; i++) {
-    var pair = vars[i].split("=");
-    if (pair[0] == variable) {
-      return pair[1];
-    }
+// Displays formsender's error details when it redirects back to the form
+// page with ?error=<number>&message=<text> in the query string.
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var errorNumber = params.get("error");
+  var errorMessage = params.get("message");
+
+  if (!errorNumber || !errorMessage) {
+    return;
   }
-  return false;
-}
 
-var errorNumber = getQueryVariable("error");
-var errorMessage = getQueryVariable("message");
+  document.addEventListener("DOMContentLoaded", function () {
+    var box = document.createElement("div");
+    box.className = "form-error";
+    box.setAttribute("role", "alert");
+    box.style.color = "red";
 
-// errorMessage will only be a string if a query string is present.
-// If a query string is present, there was an error. Format the message.
-if (typeof errorMessage == "string") {
-  errorMessage = errorMessage.replace("+", " ").replace("/", "");
-}
+    var heading = document.createElement("h3");
+    heading.textContent = "An error occurred with your form submission";
+    var number = document.createElement("p");
+    number.textContent = "Error number: " + errorNumber;
+    var message = document.createElement("p");
+    message.textContent = "Error message: " + errorMessage;
+    box.append(heading, number, message);
 
-// If both these exist, there was an error with the submission, write to page
-if (errorNumber && errorMessage) {
-  document.write(
-    "<h3 style='color:red'>An error occurred with your form submission</h3>",
-    "<p style='color:red'>Error number: ",
-    errorNumber,
-    "</p>",
-    "<p style='color:red'>Error message: ",
-    errorMessage,
-    "</p>",
-  );
-}
+    var form = document.querySelector(".webform-client-form");
+    if (form && form.parentNode) {
+      form.parentNode.insertBefore(box, form);
+    } else {
+      (document.querySelector("main") || document.body).prepend(box);
+    }
+  });
+})();

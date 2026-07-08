@@ -1,6 +1,7 @@
 ---
 title: POWER CI Request Form
 slug: /powerdev/request_powerci
+recaptcha: true
 ---
 
 The Open Source Lab partners with IBM to host POWER based servers in order to provide an open platform for innovation to
@@ -20,11 +21,11 @@ IBM. For proprietary sourced projects or products please use the resources in
 The POWER CI service uses Docker to deploy Jenkins workers. In the future we will add access to use OpenStack to deploy
 Jenkins workers (ppc64le only).
 
+{{< formsender-error >}}
+
 {{< raw >}}
 
 <div id="content">
-<!-- Formsender error script -->
-<script src="../../../js/formsender-error.js"></script>
   <form class="webform-client-form" enctype="multipart/form-data" action="https://formsender.osuosl.org:443"
   method="post" id="webform-client-form-1086" accept-charset="UTF-8">
     <div>
