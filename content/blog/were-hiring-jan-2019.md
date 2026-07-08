@@ -11,6 +11,6 @@ you! We currently have two [student systems engineer](https://jobs.oregonstate.e
 includes working with open source projects, gaining mentorship from professional staff, and interacting directly with
 clients.
 
-Check out our [employment](/about/employment) page to see what you gain when you work with us!
+Check out our [employment](/students/employment) page to see what you gain when you work with us!
 
 **Update Mar 7, 2019: We filled this position and are no longer looking for more applicants at this time.**

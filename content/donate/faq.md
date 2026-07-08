@@ -1,6 +1,5 @@
 ---
 title: "FAQ"
-slug: faq
 ---
 
 1. [How are you associated with Oregon State University?](#how-are-you-associated-with-oregon-state-university)
@@ -89,8 +88,7 @@ Below are a few examples of where we have spent money in the past year:
 ## What projects do you support?
 
 The OSUOSL supports a large number of growing, high-impact open source communities. This includes the Apache Software
-Foundation, the Linux Foundation, Drupal, and many others. For a full list, please see our
-[projects page](http://osuosl.org/services/hosting/communities).
+Foundation, the Linux Foundation, Drupal, and many others. For a full list, please see our [projects page](/projects).
 
 ## How is the OSUOSL run?
 
@@ -107,15 +105,14 @@ leadership.
 ## Who else is supporting the OSUOSL financially?
 
 The OSUOSL has many sponsors who generously support our efforts. The full list of OSL sponsors is available on our
-[sponsors page](http://osuosl.org/sponsors). We also receive support from many individuals, smaller companies and
-projects.
+[sponsors page](/about/sponsors). We also receive support from many individuals, smaller companies and projects.
 
 ## How do I donate to OSUOSL?
 
 We accept donations online via the OSU Foundation's website. Follow
 [the link](https://give.fororegonstate.org/PL1Uv3Fkug), or click the “Make a Gift” link on our
-[donations page](http://osuosl.org/donate/). If you are donating directly from the Foundation donation page, you can
-find us under “I want to view additional options” and “Outreach, Engagement, Research.”
+[donations page](/donate/). If you are donating directly from the Foundation donation page, you can find us under “I
+want to view additional options” and “Outreach, Engagement, Research.”
 
 You can also phone a contribution to the OSU Foundation at **800-354-7281** and specify that your gift is for the Open
 Source Lab under Outreach, Engagement, Research. If you'd like to discuss a large donation or a gift-in-kind donation,

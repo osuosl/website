@@ -1,6 +1,6 @@
 ---
 title: Employment
-slug: employment
+aliases: ["/about/employment/"]
 ---
 
 ![CASS Signs Installed](/images/CASSSignsInstalled.JPG)

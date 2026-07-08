@@ -1,10 +1,11 @@
 ---
-title: "OSL Alumnus Alex Plovi sells CoreOS to RedHat"
+title: "OSL Alumnus Alex Polvi sells CoreOS to Red Hat"
 date: 2018-02-21
 authors: ["Cody Holliday"]
+aliases: ["/blog/osl-alumnus-Alex-Polvi-sells-startup/"]
 ---
 
-![OSL Alumnus Alex Plovi sells CoreOS to RedHat](/images/COS_RHblog.png#blog)
+![OSL Alumnus Alex Polvi sells CoreOS to Red Hat](/images/COS_RHblog.png#blog)
 
 CoreOS is a San Francisco based company that focuses on developing software for container management. Alex Polvi, the
 CEO of CoreOS and OSL alumnus, recently

@@ -75,4 +75,4 @@ Media contact: Kayla Harr, <harrk@osuosl.org>
 To support the OSL and the student employees who help the lab provide top-quality hosting and development services,
 visit our [Donate](/donate) page.
 
-**Category:** [Student Stories](/student-stories)
+**Category:** [Student Stories](/students/stories)

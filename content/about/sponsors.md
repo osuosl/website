@@ -1,6 +1,6 @@
 ---
 title: Sponsors
-slug: sponsors
+aliases: ["/sponsors/"]
 ---
 
 We gratefully acknowledge the generous support of the following organizations whose annual contributions of $25,000 or

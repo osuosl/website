@@ -1,6 +1,5 @@
 ---
 title: Formerly Hosted Projects
-slug: powerdev/former-projects
 ---
 
 Below are a list of projects formerly hosted on the OpenPOWER infrastructure at the OSL.

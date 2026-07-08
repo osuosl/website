@@ -1,6 +1,5 @@
 ---
 title: POWER Development Hosting
-slug: /powerdev
 ---
 
 The Open Source Lab partners with [IBM](http://www-03.ibm.com/linux/ltc/) to host
@@ -31,7 +30,7 @@ continuous integration work, but are not ideal for performance testing. We start
 can increase given resource availability and justification.
 
 To request access to an OpenStack POWER instance, use our
-[OpenPOWER OpenStack request form](/services/powerdev/request_hosting).
+[OpenPOWER OpenStack request form](/services/powerdev/request-hosting).
 
 ### POWER Continuous Integration (POWER CI)
 
@@ -44,7 +43,7 @@ virtual machine if need be. Users can also configure the system to run their tes
 binaries after running the build, and archive the build artifacts on the Jenkins server for later access. The service
 also supports providing e-mail notifications on build status and embedded build-notification for webpages.
 
-To request access to the POWER CI service, use our [POWER CI request form](/services/powerdev/request_powerci).
+To request access to the POWER CI service, use our [POWER CI request form](/services/powerdev/request-ci).
 
 ## GPU
 

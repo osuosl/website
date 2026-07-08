@@ -1,6 +1,6 @@
 ---
 title: Google Summer of Code
-slug: gsoc
+aliases: ["/about/gsoc/"]
 ---
 
 ![Google Summer of Code](/images/gsoc.jpg#right)

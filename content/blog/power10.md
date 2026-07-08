@@ -45,7 +45,7 @@ open-source community to thrive.
 
 ## Getting access to POWER10
 
-To get access to POWER10, please fill out [this form](/services/powerdev/request_hosting). If you already have access to
+To get access to POWER10, please fill out [this form](/services/powerdev/request-hosting). If you already have access to
 our POWER8 or POWER9 systems, feel free to fill this form out again.
 
 Thank you to IBM for making this possible!

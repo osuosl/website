@@ -1,6 +1,5 @@
 ---
 title: AARCH64 Development Hosting
-slug: /aarch64
 ---
 
 The OSL partners with [Ampere Computing](http://amperecomputing.com/) to host
@@ -24,4 +23,4 @@ integration work, but are not ideal for performance testing. We start projects o
 given resource availability and justification.
 
 To request access to an OpenStack AARCH64 instance, use our
-[AARCH64 OpenStack request form](/services/aarch64/request_hosting).
+[AARCH64 OpenStack request form](/services/aarch64/request-hosting).

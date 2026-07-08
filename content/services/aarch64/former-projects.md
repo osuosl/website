@@ -1,6 +1,5 @@
 ---
 title: Formerly Hosted Projects
-slug: /aarch64/former-projects
 ---
 
 Below are a list of formerly hosted AARCH64 projects

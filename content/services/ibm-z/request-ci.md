@@ -1,7 +1,7 @@
 ---
 title: IBM Z CI Request Form
-slug: ibm-z/request_ci
 recaptcha: true
+aliases: ["/services/ibm-z/request_ci/"]
 ---
 
 Please use the form below to request **new** access to the [IBM Z CI service](/services/ibm-z) provided by the OSUOSL.

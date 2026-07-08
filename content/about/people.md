@@ -1,6 +1,5 @@
 ---
 title: "Staff"
-slug: people
 ---
 
 ## [Lance Albertson](#lance-albertson){#lance-albertson}

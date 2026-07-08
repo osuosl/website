@@ -1,6 +1,5 @@
 ---
 title: Current AARCH64 Projects
-slug: /aarch64/current-projects
 ---
 
 Below are a list of currently hosted AARCH64 projects

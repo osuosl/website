@@ -39,7 +39,7 @@ Networks for sponsoring the tour.
 
 We've brought in a number of new projects during 2010, including [CONNECT](http://www.connectopensource.org/),
 [OpenEFS](http://openefs.org/), [Meego](http://meego.com/) and [OSGeo](http://www.osgeo.org/), just to name a few. For
-further information on projects hosted at OSUOSL, please see [our Communities page](/communities).
+further information on projects hosted at OSUOSL, please see [our Communities page](/projects).
 
 ## Donations update
 
