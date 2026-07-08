@@ -2,47 +2,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  {{ "<!-- Primary Meta Tags -->" | safeHTML }}
-  {{ $title := cond (eq .Title site.Title) .Title (printf "%s | %s" .Title .Site.Title) }}
-  {{ $image :=  printf "%simages/zachary_homepage.jpg" .Site.Params.Url }}
+  {{ $title := cond (eq .Title site.Title) .Title (printf "%s | %s" .Title site.Title) }}
   <title>{{ $title }}</title>
   <meta name="title" content="{{ $title }}" />
-  <meta name="description" content="{{ .Site.Params.Description }}" />
+  <meta name="description" content="{{ or .Description site.Params.description }}" />
 
-  {{ "<!-- Open Graph / Facebook -->" | safeHTML }}
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ .Site.Params.Url }}" />
-  <meta property="og:title" content="{{ $title }}" />
-  <meta property="og:description" content="{{ .Site.Params.Description }}" />
-  <meta property="og:image" content="{{ $image }}" />
+  {{ partial "opengraph.html" . }}
+  {{ partial "twitter_cards.html" . }}
 
-  {{ "<!-- Twitter -->" | safeHTML }}
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="{{ .Site.Params.Url }}" />
-  <meta property="twitter:title" content="{{ $title }}" />
-  <meta property="twitter:description" content="{{ .Site.Params.Description }}" />
-  <meta property="twitter:image" content="{{ $image }}" />
-
-  {{ "<!-- Styles -->" | safeHTML }}
-  {{ $styles := resources.Get "css/style.css" }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+  {{/* Styles */}}
+  {{ $styles := resources.Get "css/style.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  {{ "<!-- Scripts -->" | safeHTML }}
-  <script type="text/javascript" src="/js/mobile-menu.js"></script>
-  <script type="text/javascript" src="/js/search-modal.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  {{/* Scripts */}}
+  {{ $js := slice (resources.Get "js/mobile-menu.js") (resources.Get "js/search-modal.js")
+    | resources.Concat "js/main.js"
+    | minify
+    | fingerprint
+  }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+  {{ if .Params.recaptcha }}
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  {{ end }}
 
-  {{ "<!-- Favicon -->" | safeHTML }}
-  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  {{/* Favicons */}}
+  <link rel="icon" type="image/png" href="{{ "favicon/favicon-96x96.png" | relURL }}" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="{{ "favicon/favicon.svg" | relURL }}" />
+  <link rel="shortcut icon" href="{{ "favicon/favicon.ico" | relURL }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon/apple-touch-icon.png" | relURL }}" />
   <meta name="apple-mobile-web-app-title" content="{{ $title }}" />
-  <link rel="manifest" href="/favicon/site.webmanifest" />
+  <link rel="manifest" href="{{ "favicon/site.webmanifest" | relURL }}" />
 
   {{ with .OutputFormats.Get "rss" }}
-    {{ "<!-- RSS -->" | safeHTML }}
     {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
   {{ end }}
 </head>

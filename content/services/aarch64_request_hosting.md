@@ -1,6 +1,7 @@
 ---
 title: AARCH64 OpenStack Request Form
 slug: /aarch64/request_hosting
+recaptcha: true
 ---
 
 The Open Source Lab partners with Ampere Computing to host AARCH64 based servers in order to provide an open platform
@@ -17,9 +18,10 @@ what specific VM it's for.
 This access is intended only for **_free and open source_** projects who qualify and are approved by the OSUOSL. For
 proprietary sourced projects or products please contact [info@amperecomputing.com](mailto:info@amperecomputing.com)
 
+{{< formsender-error >}}
+
 {{< raw >}}
 
-<script src="../../../js/formsender-error.js"></script>
 <form class="webform-client-form" enctype="multipart/form-data" action="https://formsender.osuosl.org:443"
   method="post" id="webform-client-form-1086" accept-charset="UTF-8">
     <div>

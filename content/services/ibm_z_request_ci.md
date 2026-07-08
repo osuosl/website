@@ -1,6 +1,7 @@
 ---
 title: IBM Z CI Request Form
 slug: ibm-z/request_ci
+recaptcha: true
 ---
 
 Please use the form below to request **new** access to the [IBM Z CI service](/services/ibm-z) provided by the OSUOSL.
@@ -17,11 +18,11 @@ Docker to deploy Jenkins workers.
 For more resources regarding Linux on IBM Z, take a look at IBM's
 [Linux on IBM Z community](https://www.ibm.com/developerworks/community/groups/community/lozopensource).
 
+{{< formsender-error >}}
+
 {{< raw >}}
 
 <div id="content">
-<!-- Formsender error script -->
-<script src="../../../js/formsender-error.js"></script>
   <form class="webform-client-form" enctype="multipart/form-data"
     action="https://formsender.osuosl.org:443" method="post" id="webform-client-form-1086" accept-charset="UTF-8">
     <div>

@@ -5,9 +5,11 @@
   <div class="hero-container">
     <div class="hero-text">
       <h1>Open Source Lab</h1>
-      <p>{{ .Site.Params.Description }}</p>
+      <p>{{ site.Params.description }}</p>
       <p class="hero-links">
-        <a class="link-button" style="background-color: olivedrab" href="/donate"><i class="fa-solid fa-hand-holding-dollar"></i> Donate</a>
+        <a class="link-button" style="background-color: olivedrab" href="/donate"
+          ><i class="fa-solid fa-hand-holding-dollar"></i> Donate</a
+        >
         <a class="link-button" href="/services"><i class="fa-solid fa-server"></i> Services</a>
         <a class="link-button secondary" href="blog"><i class="fa-solid fa-newspaper"></i> Blog</a>
       </p>
@@ -93,14 +95,14 @@
       <h1>Blog</h1>
 
       <div class="blog-summaries">
-        {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+        {{ range first 5 (where site.RegularPages "Section" "blog") }}
           {{ .Render "summary" }}
         {{ end }}
       </div>
 
       <p class="read-more">
         <a href="/blog" class="read-more-link"
-          >More Blog Posts ({{ where .Site.RegularPages "Section" "blog" | len }})</a
+          >More Blog Posts ({{ where site.RegularPages "Section" "blog" | len }})</a
         >
       </p>
     </section>

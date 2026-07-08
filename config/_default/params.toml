@@ -1,2 +1,4 @@
 description = 'A nonprofit organization working for the advancement of open source technologies.'
-url = 'https://osuosl.org/'
+
+# Site-wide default image for OpenGraph/Twitter cards.
+images = ['images/zachary_homepage.jpg']

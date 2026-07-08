@@ -1,8 +1,8 @@
-{{- if .Site.Menus.main }}
+{{- if site.Menus.main }}
   <div class="main-menu">
     <ul class="menu__list">
       {{- $currentNode := . }}
-      {{- range .Site.Menus.main }}
+      {{- range site.Menus.main }}
         {{- if .HasChildren }}
           <li
             class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main" .)
@@ -86,7 +86,7 @@
   <div class="mobile-menu">
     <ul class="menu__list">
       {{- $currentNode := . }}
-      {{- range .Site.Menus.main }}
+      {{- range site.Menus.main }}
         {{- if .HasChildren }}
           <li
             class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main" .)

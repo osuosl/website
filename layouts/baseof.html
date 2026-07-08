@@ -8,7 +8,7 @@
       <div id="content">
         {{- block "main" . }}{{- end }}
       </div>
-      {{- partial "footer.html" . -}}
+      {{- partialCached "footer.html" . -}}
     </div>
   </body>
 </html>
