@@ -1,0 +1,11 @@
+{{- /*
+  Renders an inline SVG icon from layouts/_partials/icons/.
+  Usage: {{ partial "icon.html" (dict "name" "search" "label" "Search") }}
+  Pass "label" only when the icon stands alone; icons next to visible
+  text should omit it (they render aria-hidden).
+
+  Icon artwork: Font Awesome Free 6.x, CC BY 4.0
+  (https://fontawesome.com/license/free)
+*/ -}}
+{{- with .label }}<span class="visually-hidden">{{ . }}</span>{{ end -}}
+{{- partial (printf "icons/%s.html" .name) . -}}
