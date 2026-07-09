@@ -6,8 +6,6 @@
   description: powerpc
 - name: Amahi
   description: vm
-- name: Amazon Corretto
-  description: powerpc
 - name: Anaconda
   description: aarch64, powerpc
 - name: Antrea

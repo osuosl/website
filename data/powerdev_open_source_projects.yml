@@ -10,10 +10,6 @@
     For the past year, I've been working on porting the .NET framework to musl based platforms like Alpine Linux. While
     aarch64, armv7 and x86_64 and s390x are now well supported, ppc64le is still needing some work and optimizations. As
     I don't have access to a ppc64le machine, it is very hard for me to diagnose issues.
-- name: Amazon Corretto
-  description:
-    Corretto is Amazon's OpenJDK distribution. Our mission is to make Shenandoah the best garbage collector it can be,
-    on every platform.
 - name: Anaconda
   description:
     Installation program used by Fedora, RHEL, and others; uses POWER support for Continuous Integration and development
