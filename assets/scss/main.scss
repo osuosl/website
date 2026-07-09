@@ -1,0 +1,41 @@
+// OSU Open Source Lab stylesheet.
+// Bootstrap 5.3 themed to match oregonstate.edu's Madrone design system.
+// Compiled by Hugo extended's built-in Sass (no external toolchain).
+
+// 1. Bootstrap functions, then our variable overrides, then Bootstrap's
+//    defaults — overrides must come first so !default picks them up.
+@import "bootstrap/functions";
+@import "variables";
+@import "bootstrap/variables";
+@import "bootstrap/variables-dark";
+@import "bootstrap/maps";
+@import "bootstrap/mixins";
+@import "bootstrap/utilities";
+
+// 2. Bootstrap layout & components (subset — skip carousel, modal,
+//    offcanvas, toasts, tooltips, etc. that the site doesn't use).
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/containers";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/alert";
+@import "bootstrap/close";
+@import "bootstrap/helpers";
+@import "bootstrap/utilities/api";
+
+// 3. Site layers.
+@import "fonts";
+@import "madrone";
+@import "legacy-images";

@@ -1,0 +1,78 @@
+// OSU brand palette — values extracted from oregonstate.edu's Madrone
+// design system CSS. Beaver Orange fails WCAG AA for normal-size text on
+// light backgrounds (4.56:1 on white), so links use the darkened
+// $osu-orange-link (5.46:1); reserve $osu-beaver-orange for large/bold
+// text, buttons with white text, and decoration.
+
+$osu-beaver-orange: #d73f09;
+$osu-orange-link: #c4340a;
+$osu-orange-link-dark: #ff7a42; // 6.6:1 on $osu-bg-dark
+$osu-warm-black: #423e3c;
+$osu-near-black: #212529;
+$osu-neutral-100: #f7f5f5;
+$osu-neutral-200: #e9e5e4;
+$osu-pine-stand: #4a773c;
+$osu-luminance: #ffb500;
+$osu-high-tide: #00859b;
+$osu-stratosphere: #006a8e;
+$osu-red: #c72127;
+$osu-hop-bine: #aa9d2e;
+$osu-bg-dark: #1c1c1c;
+$osu-surface-dark: #2a2a2a;
+
+// Bootstrap theme colors
+$primary: $osu-beaver-orange;
+$secondary: $osu-warm-black;
+$success: $osu-pine-stand;
+$info: $osu-high-tide;
+$warning: $osu-luminance;
+$danger: $osu-red;
+$light: $osu-neutral-100;
+$dark: $osu-near-black;
+
+$min-contrast-ratio: 4.5;
+
+// Typography — Stratum2Web headings (Madrone weight 500), Open Sans body
+$font-family-sans-serif:
+  "Open Sans",
+  system-ui,
+  -apple-system,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif;
+$headings-font-family: "Stratum2Web", $font-family-sans-serif;
+$headings-font-weight: 500;
+$h1-font-size: 2.8125rem; // Madrone h1 at >=1200px; RFS scales it below
+$line-height-base: 1.6;
+
+// Body / links
+$body-color: $osu-warm-black;
+$body-bg: #fff;
+$body-secondary-bg: $osu-neutral-100;
+$body-tertiary-bg: $osu-neutral-200;
+$link-color: $osu-orange-link;
+$link-hover-color: shade-color($osu-orange-link, 20%);
+
+// Dark mode (Bootstrap color modes)
+$body-bg-dark: $osu-bg-dark;
+$body-color-dark: $osu-neutral-200;
+$body-secondary-bg-dark: $osu-surface-dark;
+$body-tertiary-bg-dark: $osu-surface-dark;
+$link-color-dark: $osu-orange-link-dark;
+$link-hover-color-dark: tint-color($osu-orange-link-dark, 20%);
+$border-color-dark: #444;
+
+// Components
+$border-radius: 0.25rem;
+$card-cap-bg: transparent;
+$navbar-light-color: $osu-warm-black;
+$navbar-light-hover-color: $osu-orange-link;
+$navbar-light-active-color: $osu-orange-link;
+$dropdown-link-active-bg: $osu-neutral-100;
+$dropdown-link-active-color: $osu-orange-link;
+$pagination-color: $osu-orange-link;
+$pagination-active-bg: $osu-beaver-orange;
+$pagination-active-border-color: $osu-beaver-orange;
+$form-label-font-weight: 600;

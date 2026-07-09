@@ -1,0 +1,157 @@
+// Legacy content-image layout classes. Content markdown carries
+// /images/foo.jpg#fragment hooks; the image render hook strips the
+// fragment and emits class="img-<fragment>" instead. These rules are a
+// class-based port of the old img[src$="#..."] attribute selectors.
+
+.img-center {
+  display: block;
+  margin: auto;
+}
+
+.img-center-white {
+  display: block;
+  margin: auto;
+  background: grey;
+}
+
+.img-right {
+  float: right;
+}
+
+.img-right-people {
+  float: right;
+  width: 110px;
+  margin-left: 0.5rem;
+}
+
+.img-right-barcamp {
+  float: right;
+  width: 200px;
+}
+
+.img-right-bootcamp {
+  float: right;
+  height: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.img-right-hosting {
+  float: right;
+  height: 221px;
+  width: 358.5px;
+  margin: 5px;
+}
+
+.img-sponsors {
+  width: 200px;
+}
+
+.img-right-faq {
+  float: right;
+  height: 250px;
+}
+
+.img-blog {
+  width: 400px;
+  max-width: 100%;
+}
+
+.img-blog-center {
+  width: 500px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Floated blog images: Hugo wraps standalone markdown images in <p>, so
+// the parent paragraph is what floats.
+.img-blog-right,
+.img-blog-left {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+p:has(> .img-blog-right) {
+  float: right;
+  width: 400px;
+  margin: 0 0 1rem 1rem;
+}
+
+p:has(> .img-blog-left) {
+  float: left;
+  width: 400px;
+  margin: 0 1rem 1rem 0;
+}
+
+// Figure shortcode variants
+figure.blog-right {
+  float: right;
+  width: 400px;
+  margin: 0 0 1rem 1rem;
+}
+
+figure.blog-left {
+  float: left;
+  width: 400px;
+  margin: 0 1rem 1rem 0;
+}
+
+figure.blog-right img,
+figure.blog-left img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figure figcaption {
+  font-size: 0.85rem;
+  color: var(--bs-secondary-color);
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+// Keep floats from bleeding into following headings
+.prose h2 {
+  clear: both;
+}
+
+// Multi-column project list (used with the raw shortcode)
+.project-list {
+  column-count: 3;
+  column-gap: 2rem;
+  margin-bottom: 1rem;
+
+  ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  p:has(> .img-blog-right),
+  p:has(> .img-blog-left),
+  figure.blog-right,
+  figure.blog-left {
+    float: none;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .img-right,
+  .img-right-people,
+  .img-right-barcamp,
+  .img-right-bootcamp,
+  .img-right-hosting,
+  .img-right-faq {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  .project-list {
+    column-count: 2;
+  }
+}
