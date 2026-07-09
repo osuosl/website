@@ -1,0 +1,451 @@
+// Site chrome and components, following oregonstate.edu's Madrone
+// unit-site pattern: white header bar with the OSU logo and unit name,
+// nav bar on warm neutral, dark footer.
+
+// ---------------------------------------------------------------- helpers
+.svg-icon {
+  vertical-align: -0.125em;
+  flex-shrink: 0;
+}
+
+// Theme-conditional display (data-bs-theme lives on <html>)
+[data-bs-theme="dark"] .light-only,
+html:not([data-bs-theme="dark"]) .dark-only {
+  display: none !important;
+}
+
+// Consistent, theme-aware focus indicator (WCAG 2.4.7 / 1.4.11)
+:focus-visible {
+  outline: 2px solid var(--bs-body-color);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  z-index: 2000;
+  padding: 0.5rem 1rem;
+  background: var(--bs-body-bg);
+  color: var(--bs-link-color);
+  transform: translateY(-300%);
+  transition: transform 0.15s ease-in;
+
+  &:focus {
+    transform: none;
+  }
+}
+
+// ----------------------------------------------------------------- header
+.site-header {
+  background: var(--bs-body-bg);
+  border-bottom: 1px solid var(--bs-border-color);
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-height: 4.5rem;
+  }
+
+  .osu-logo img {
+    height: 2.75rem;
+    width: auto;
+  }
+
+  .osu-logo-crest img {
+    height: 2.75rem;
+    width: auto;
+  }
+
+  .header-divider {
+    align-self: stretch;
+    border-left: 1px solid var(--bs-border-color);
+  }
+
+  .site-name {
+    font-family: $headings-font-family;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.15;
+    color: $osu-beaver-orange; // large bold text: 4.56:1 passes AA-large
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $osu-orange-link;
+      text-decoration: underline;
+    }
+  }
+
+  .header-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    .btn {
+      --bs-btn-color: var(--bs-body-color);
+      --bs-btn-hover-color: var(--bs-link-color);
+      --bs-btn-hover-bg: var(--bs-secondary-bg);
+      font-size: 1.1rem;
+    }
+  }
+}
+
+[data-bs-theme="dark"] .site-header .site-name {
+  color: $osu-orange-link-dark;
+}
+
+// -------------------------------------------------------------------- nav
+.site-nav {
+  background: var(--bs-tertiary-bg);
+  border-bottom: 1px solid var(--bs-border-color);
+
+  .navbar {
+    padding: 0;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+
+    &:hover,
+    &:focus {
+      background: var(--bs-secondary-bg);
+    }
+
+    &.active {
+      box-shadow: inset 0 -3px 0 $osu-beaver-orange;
+    }
+  }
+
+  .dropdown-menu {
+    border-radius: 0 0 $border-radius $border-radius;
+    margin-top: 0;
+  }
+
+  .nav-donate .btn {
+    font-weight: 600;
+    margin: 0.35rem 0.5rem;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .site-nav .nav-donate .btn {
+    margin: 0.5rem 1rem;
+  }
+}
+
+// ------------------------------------------------------------------- hero
+.hero {
+  position: relative;
+  isolation: isolate;
+  color: #fff;
+  padding: clamp(3rem, 8vw, 6rem) 0;
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgba(20, 12, 8, 0.62); // keeps white text >= 7:1
+  }
+
+  h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+  }
+
+  .hero-lead {
+    font-size: 1.25rem;
+    max-width: 42rem;
+  }
+}
+
+// ------------------------------------------------------------- home bands
+.home-section {
+  padding: 3rem 0;
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.band-alt {
+  background: var(--bs-secondary-bg);
+}
+
+.stats-band {
+  .stat-number {
+    font-family: $headings-font-family;
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: $osu-orange-link; // AA on both band backgrounds
+    display: block;
+  }
+
+  .stat-label {
+    font-weight: 600;
+  }
+}
+
+[data-bs-theme="dark"] .stats-band .stat-number {
+  color: $osu-orange-link-dark;
+}
+
+.service-card {
+  height: 100%;
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-actions {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+.featured-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
+  .featured-project {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--bs-border-color);
+    border-radius: $border-radius;
+    background: var(--bs-body-bg);
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      border-color: var(--bs-link-color);
+      text-decoration: underline;
+    }
+  }
+}
+
+.sponsor-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+
+  img {
+    max-height: 3.5rem;
+    width: auto;
+  }
+}
+
+[data-bs-theme="dark"] .sponsor-row img {
+  background: #fff;
+  padding: 0.4rem;
+  border-radius: $border-radius;
+}
+
+// ----------------------------------------------------------------- prose
+.prose {
+  max-width: 70ch;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.page-header {
+  margin: 2rem 0 1.5rem;
+}
+
+// ------------------------------------------------------------------ blog
+.blog-card {
+  margin-bottom: 1.5rem;
+
+  .card-title a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  .post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.25rem;
+    row-gap: 0.25rem;
+    font-size: 0.875rem;
+    color: var(--bs-secondary-color);
+    margin-bottom: 0.75rem;
+  }
+}
+
+.post-meta {
+  color: var(--bs-secondary-color);
+}
+
+.tag-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+// ---------------------------------------------------------------- search
+.search-dialog {
+  width: calc(100vw - 2rem);
+  max-width: 40rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: $border-radius;
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  padding: 1.25rem;
+
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .search-dialog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+
+    h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+// ---------------------------------------------------------------- footer
+.site-footer {
+  background: $osu-near-black;
+  color: $osu-neutral-200;
+  margin-top: auto;
+  padding: 3rem 0 2rem;
+  font-size: 0.95rem;
+
+  a {
+    color: #fff;
+  }
+
+  h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $osu-neutral-200;
+    margin-bottom: 0.75rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  .footer-logo img {
+    width: 220px;
+    height: auto;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .footer-legal {
+    border-top: 1px solid #444;
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    color: $osu-neutral-200;
+  }
+}
+
+// keep the page footer glued to the bottom on short pages
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// ------------------------------------------- legacy raw-form compatibility
+// The request forms are raw Drupal-era HTML until the forms rework lands.
+// Give their inputs usable styling under Bootstrap.
+.webform-client-form {
+  max-width: 40rem;
+
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    color: var(--bs-body-color);
+    background: var(--bs-body-bg);
+    border: 1px solid var(--bs-secondary-color);
+    border-radius: $border-radius;
+    margin-bottom: 0.25rem;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 0.35rem;
+  }
+
+  .form-item {
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+    color: var(--bs-secondary-color);
+  }
+
+  .form-required::after {
+    content: "*";
+    color: $osu-red;
+    margin-left: 0.15rem;
+  }
+
+  input[type="submit"] {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+}
