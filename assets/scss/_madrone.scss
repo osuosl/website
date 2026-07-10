@@ -133,7 +133,10 @@ html:not([data-bs-theme="dark"]) .dark-only {
       background: var(--bs-secondary-bg);
     }
 
+    // Tab-style active state: the link color needs the body background
+    // to clear 4.5:1 (it is only 4.37:1 on the neutral nav bar).
     &.active {
+      background: var(--bs-body-bg);
       box-shadow: inset 0 -3px 0 $osu-beaver-orange;
     }
   }
