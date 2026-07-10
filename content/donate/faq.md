@@ -99,8 +99,7 @@ time.
 
 Our foremost goal is to continue to provide world-class hosting services to open source projects. Should we fail to meet
 our fundraising target, we will be forced to reevaluate our priorities and eliminate some of the lab's activities. This
-decision, should it need to be made, will be discussed with the OSUOSL Advisory Council, and decided upon with OSU
-leadership.
+decision, should it need to be made, will be decided upon with OSU leadership.
 
 ## Who else is supporting the OSUOSL financially?
 
