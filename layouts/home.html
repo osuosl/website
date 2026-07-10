@@ -37,10 +37,19 @@
 
   <section class="home-section stats-band band-alt" aria-label="The lab in numbers">
     <div class="container-xxl">
+      {{ $founded := time.AsTime site.Params.founded }}
+      {{ $years := sub now.Year $founded.Year }}
+      {{ if lt (now.Format "01-02") ($founded.Format "01-02") }}{{ $years = sub $years 1 }}{{ end }}
       <div class="row g-4 text-center">
         {{ range site.Data.stats }}
+          {{ $number := .number }}
+          {{ if eq .compute "years" }}
+            {{ $number = $years }}
+          {{ else if eq .compute "projects" }}
+            {{ $number = len site.Data.projects }}
+          {{ end }}
           <div class="col-6 col-lg-3">
-            <span class="stat-number">{{ .number }}</span>
+            <span class="stat-number">{{ $number }}{{ .suffix }}</span>
             <span class="stat-label">{{ .label }}</span>
           </div>
         {{ end }}

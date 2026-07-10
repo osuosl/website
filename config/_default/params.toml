@@ -1,4 +1,7 @@
 description = 'A nonprofit organization working for the advancement of open source technologies.'
 
+# The OSL's birthday; drives the "years hosting open source" stat.
+founded = '2003-10-11'
+
 # Site-wide default image for OpenGraph/Twitter cards.
 images = ['images/zachary_homepage.jpg']
