@@ -27,6 +27,11 @@ module.exports = {
       // iframe we cannot modify (it also ships a hidden unlabeled
       // textarea). Google provides the accessible audio challenge inside
       // the widget itself.
+      // NOTE: these exceptions are specific to the v2 checkbox widget.
+      // If the forms move to reCAPTCHA v3 (invisible), remove these,
+      // re-run the scan, and re-add only what still fires — likely just
+      // the floating badge iframe, or nothing if the badge is replaced
+      // with Google's inline attribution text.
       ".g-recaptcha",
       "iframe[src*='recaptcha']",
       "#g-recaptcha-response",
