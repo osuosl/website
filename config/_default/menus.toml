@@ -23,15 +23,9 @@ weight = 3
 
 [[main]]
 parent = 'about'
-name = 'Advisory Board'
-pageRef = '/about/advisors'
-weight = 4
-
-[[main]]
-parent = 'about'
 name = 'Logos'
 pageRef = '/about/logos'
-weight = 5
+weight = 4
 
 [[main]]
 parent = 'about'

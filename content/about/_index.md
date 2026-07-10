@@ -1,5 +1,6 @@
 ---
 title: "About"
+aliases: ["/advisors/", "/about/advisors/"]
 ---
 
 The Open Source Lab is a nonprofit organization working for the advancement of open source technologies.
