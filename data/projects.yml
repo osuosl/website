@@ -432,6 +432,8 @@
   description: mirroring, aarch64
 - name: OrientDB
   description: powerpc
+- name: ORTSOC
+  description: vm
 - name: OSDV
   description: vm
 - name: OSGeo
