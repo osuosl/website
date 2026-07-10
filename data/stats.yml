@@ -1,10 +1,13 @@
-# Homepage stats band. Review the numbers when the about-page copy
-# changes; sources are noted per entry.
-- number: "20+"
-  label: years hosting open source # founded 2003
-- number: "160+"
-  label: projects call the OSL home # about page
-- number: "430 TB"
+# Homepage stats band. Entries either carry a static `number` or a
+# `compute` key the home template resolves at build time:
+#   years    - full years since site params `founded`
+#   projects - number of entries in data/projects.yml
+- compute: years
+  label: years hosting open source
+- compute: projects
+  suffix: "+"
+  label: projects call the OSL home # "+": many host their own subprojects
+- number: 430 TB
   label: delivered to the world every month # about page
-- number: "10"
-  label: students employed and trained each year # donate FAQ
+- number: "6"
+  label: students employed and trained each year
