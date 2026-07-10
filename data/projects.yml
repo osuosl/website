@@ -13,7 +13,7 @@
 - name: Antrea
   description: aarch64
 - name: Apache Software Foundation
-  description: co-location, mirroring, powerpc
+  description: powerpc
 - name: Apereo
   description: vm
 - name: Arch Linux
@@ -37,7 +37,7 @@
 - name: Bro
   description: vm
 - name: Buildbot
-  description: co-location, vm
+  description: vm
 - name: Buildroot
   description: vm, mailing-list, ci-cd
 - name: BusyBox
@@ -57,7 +57,7 @@
 - name: Cinc Project
   description: vm,aarch64,powerpc,mirroring
 - name: CiviCRM
-  description: co-location, vm
+  description: vm
 - name: ClickHouse
   description: powerpc
 - name: Cloud Foundry
@@ -109,7 +109,7 @@
 - name: EasyBuild
   description: powerpc
 - name: Eclipse Communication Framework
-  description: co-location, vm
+  description: vm
 - name: Eclipse
   description: mirroring
 - name: Eclipse OMR
@@ -133,7 +133,7 @@
 - name: ELRepo
   description: mirroring, aarch64
 - name: Enlightenment
-  description: co-location
+  description: vm
 - name: Evolution Groupware Suite
   description: mailing-list
 - name: Falco
@@ -163,7 +163,7 @@
 - name: FreeBSD
   description: powerpc
 - name: Freedesktop.org
-  description: co-location, ci-cd
+  description: vm, ci-cd
 - name: Freedroid
   description: vm, mirroring
 - name: Funtoo Linux
@@ -271,11 +271,11 @@
 - name: linhes
   description: vm
 - name: LinuxChix
-  description: co-location, vm
+  description: vm
 - name: Linux Driver Project
   description: webapp, mailing-list
 - name: Linux Foundation
-  description: co-location
+  description: vm
 - name: Linux Fund
   description: vm
 - name: Linux Kernel (BPF memory model development)
@@ -333,7 +333,7 @@
 - name: Moonjit
   description: powerpc
 - name: Mozdev
-  description: co-location, vm, mirroring
+  description: vm
 - name: Mozilla
   description: powerpc
 - name: Mozillazine
@@ -355,7 +355,7 @@
 - name: Mycroft Project
   description: webapp
 - name: MythTV
-  description: co-location, vm, mirroring
+  description: vm, mirroring
 - name: Mythubuntu
   description: mirroring
 - name: NAS-Admin
@@ -401,7 +401,7 @@
 - name: Open Hatch
   description: vm
 - name: OpenID
-  description: co-location, webapp, mailing-list
+  description: webapp, mailing-list
 - name: OpenJDK
   description: powerpc
 - name: open-lldp
@@ -459,7 +459,7 @@
 - name: pgFirstAid
   description: vm
 - name: phpBB
-  description: co-location, vm, mirroring
+  description: vm, mirroring
 - name: PicaLibre
   description: vm
 - name: Pipcook
@@ -503,7 +503,7 @@
 - name: Replica.one
   description: ci-cd, vm
 - name: Reproducible builds
-  description: ci-cd, co-location, powerpc
+  description: ci-cd, powerpc
 - name: Robot Operating System
   description: vm, mailing-list, mirroring
 - name: Rocky Linux
