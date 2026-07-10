@@ -1,5 +1,6 @@
 ---
 title: "Hosting"
+aliases: ["/hosting/"]
 ---
 
 ![Hosting](/images/Hosting.jpg#right-hosting)

@@ -1,5 +1,6 @@
 ---
 title: "Open Source Lab Logos"
+aliases: ["/logos/", "/friends/logos/"]
 ---
 
 Below are the four versions of our logo.

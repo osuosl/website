@@ -1,5 +1,6 @@
 ---
 title: "Hosting Policy"
+aliases: ["/services/hosting/coup/"]
 ---
 
 ## Services

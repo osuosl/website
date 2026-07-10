@@ -1,10 +1,11 @@
 ---
 title: Donate
+aliases: ["/member_options/", "/contribute/", "/buildthefuture/", "/give6/", "/donate/buildthefuture/", "/dw-donate/"]
 ---
 
 The OSU Open Source Lab (OSUOSL) offers support services to the world’s leading Open Source projects as part of its
 mission to contribute to the growth of Open Source software. By hosting pioneering projects, building connections
-between the public and private sectors, and training a new generation of  innovators, the Lab promotes Open Source
+between the public and private sectors, and training a new generation of innovators, the Lab promotes Open Source
 software that people around the world can create and use together.
 
 ## How to Donate to the OSU Open Source Lab
@@ -15,8 +16,7 @@ donation reaches us._
 
 {{< raw >}}
 <a class="link-button" style="font-size: 1.5rem" href="https://give.fororegonstate.org/PL1Uv3Fkug"><i class="fa-solid
-fa-hand-holding-dollar"></i> Make a gift</a>
-{{< /raw >}}
+fa-hand-holding-dollar"></i> Make a gift</a> {{< /raw >}}
 
 If you prefer to give by phone, please call the Oregon State University Foundation at **(800) 354-7281**. If you have
 any questions, please check our [FAQ](/donate/faq) or email <donations@osuosl.org>

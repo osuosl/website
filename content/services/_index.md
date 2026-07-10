@@ -1,5 +1,6 @@
 ---
 title: "Services"
+aliases: ["/development/"]
 ---
 
 ## [Hosting Services](/services/hosting/)

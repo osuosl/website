@@ -1,6 +1,6 @@
 ---
 title: Hosted Projects
-aliases: ["/communities/"]
+aliases: ["/communities/", "/services/hosting/communities/"]
 ---
 
 We tailor fit our hosting to the needs of each project and try our best to help improve our partners' community
