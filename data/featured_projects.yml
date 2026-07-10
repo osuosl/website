@@ -1,0 +1,22 @@
+# A hand-picked sample of hosted projects for the homepage strip.
+# Every entry must also exist in data/projects.yml.
+- name: Apache Software Foundation
+  url: https://www.apache.org/
+- name: Drupal
+  url: https://www.drupal.org/
+- name: Gentoo Linux
+  url: https://www.gentoo.org/
+- name: Debian
+  url: https://www.debian.org/
+- name: Fedora
+  url: https://fedoraproject.org/
+- name: phpBB
+  url: https://www.phpbb.com/
+- name: Inkscape
+  url: https://inkscape.org/
+- name: Buildroot
+  url: https://buildroot.org/
+- name: Yocto Project
+  url: https://www.yoctoproject.org/
+- name: OpenID
+  url: https://openid.net/

@@ -1,0 +1,22 @@
+# Sponsor logos for the homepage strip (order = display order).
+- name: IBM
+  url: https://www.ibm.com/
+  logo: /images/ibm-logo_small.jpg
+- name: Red Hat
+  url: https://www.redhat.com/
+  logo: /images/redhat-logo.svg
+- name: Microsoft
+  url: https://www.microsoft.com/
+  logo: /images/microsoft-logo.svg
+- name: Intel
+  url: https://www.intel.com/
+  logo: /images/Intel_logo_2023.svg
+- name: Google
+  url: https://www.google.com/
+  logo: /images/Google_2015_logo.svg
+- name: Tag1 Consulting
+  url: https://www.tag1consulting.com/
+  logo: /images/tag1_logo.png
+- name: TDS Telecom
+  url: https://tdstelecom.com/
+  logo: /images/tds_logo.jpg

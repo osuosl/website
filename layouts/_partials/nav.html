@@ -1,0 +1,79 @@
+<div class="site-nav">
+  <nav class="navbar navbar-expand-lg container-xxl py-0" aria-label="Main">
+    <button
+      class="navbar-toggler ms-auto my-2"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#site-nav-menu"
+      aria-controls="site-nav-menu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      {{ partial "icon.html" (dict "name" "bars") }} Menu
+    </button>
+    <div class="collapse navbar-collapse" id="site-nav-menu">
+      <ul class="navbar-nav">
+        {{ $page := . }}
+        {{ range site.Menus.main }}
+          {{ if .Params.button }}
+            <li class="nav-item nav-donate">
+              <a class="btn btn-primary" href="{{ .URL }}">
+                {{ partial "icon.html" (dict "name" "donate") }}
+                {{ .Name }}
+              </a>
+            </li>
+          {{ else if .HasChildren }}
+            {{ $active := $page.HasMenuCurrent "main" . }}
+            {{ $toggleClass := "nav-link dropdown-toggle" }}
+            {{ if $active }}{{ $toggleClass = print $toggleClass " active" }}{{ end }}
+            <li class="nav-item dropdown">
+              <button class="{{ $toggleClass }}" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ .Name }}
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  {{ $itemClass := "dropdown-item" }}
+                  {{ if $page.IsMenuCurrent "main" . }}{{ $itemClass = print $itemClass " active" }}{{ end }}
+                  <a
+                    class="{{ $itemClass }}"
+                    {{ if $page.IsMenuCurrent "main" . }}aria-current="page"{{ end }}
+                    href="{{ .URL }}"
+                  >
+                    {{ .Name }} overview
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                {{ range .Children }}
+                  <li>
+                    {{ $itemClass := "dropdown-item" }}
+                    {{ if $page.IsMenuCurrent "main" . }}{{ $itemClass = print $itemClass " active" }}{{ end }}
+                    <a
+                      class="{{ $itemClass }}"
+                      {{ if $page.IsMenuCurrent "main" . }}aria-current="page"{{ end }}
+                      href="{{ .URL }}"
+                    >
+                      {{ .Name }}
+                    </a>
+                  </li>
+                {{ end }}
+              </ul>
+            </li>
+          {{ else }}
+            {{ $active := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }}
+            {{ $linkClass := "nav-link" }}
+            {{ if $active }}{{ $linkClass = print $linkClass " active" }}{{ end }}
+            <li class="nav-item">
+              <a
+                class="{{ $linkClass }}"
+                {{ if $page.IsMenuCurrent "main" . }}aria-current="page"{{ end }}
+                href="{{ .URL }}"
+              >
+                {{ .Name }}
+              </a>
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </nav>
+</div>

@@ -1,68 +1,89 @@
-<footer class="footer">
-  <div class="container footer__container flex">
-    <div class="footer_headers">
-      <div class="footer_contact_container">
-        <p class="footer_contact_header">Contact Info</p>
-        <div class="footer_contact_info_container">
-          <p>
-            OSU Open Source Lab<br />
-            224 Milne Computer Center<br />
-            1800 SW Campus Way<br />
-            Corvallis, OR 97331<br />
-            <a href="mailto:info@osuosl.org" style="margin: 0px">info@osuosl.org</a><br />
-            Phone: 541-737-9900<br />
-          </p>
-
-          <div class="footer_map_container">
-            <a href="https://www.google.com/maps/place/Milne+Computer+Center,+1800+SW+Campus+Way,+Corvallis,+OR+97331">
-              <img
-                src="{{ "images/milne_street.png" | relURL }}"
-                alt="Street view of the Milne Computer Center building"
-              />
+<footer class="site-footer">
+  <div class="container-xxl">
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-logo">
+          <a href="https://oregonstate.edu/">
+            <img
+              src="{{ "images/osu-logo-2c-dark.svg" | relURL }}"
+              alt="Oregon State University"
+              width="220"
+              height="70"
+            />
+          </a>
+        </div>
+        <address class="mt-3 mb-0">
+          <strong>OSU Open Source Lab</strong><br />
+          224 Milne Computer Center<br />
+          1800 SW Campus Way<br />
+          Corvallis, OR 97331<br />
+          <a href="mailto:info@osuosl.org">info@osuosl.org</a><br />
+          Phone: <a href="tel:+15417379900">541-737-9900</a>
+        </address>
+      </div>
+      <nav class="col-lg-6 col-md-6" aria-label="Footer">
+        <div class="row g-4">
+          {{ range site.Menus.main }}
+            {{ if .HasChildren }}
+              <div class="col-6 col-lg-4">
+                <h2><a href="{{ .URL }}">{{ .Name }}</a></h2>
+                <ul>
+                  {{ range .Children }}
+                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
+          {{ end }}
+          <div class="col-6 col-lg-4">
+            <h2>Site</h2>
+            <ul>
+              {{ range site.Menus.main }}
+                {{ if not .HasChildren }}
+                  <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="col-lg-3">
+        <h2>Community</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/osuosl">
+              {{ partial "icon.html" (dict "name" "github") }}
+              GitHub
             </a>
-          </div>
-
-          <div>
-            <a href="https://oregonstate.edu/copyright">Copyright</a>
-            &copy;2016&ndash;{{ now.Year }}<br />
-            Oregon State University<br />
-            <a href="https://oregonstate.edu/official-web-disclaimer">Disclaimer</a>
-          </div>
-        </div>
+          </li>
+          <li>
+            <a href="https://status.osuosl.org/">
+              {{ partial "icon.html" (dict "name" "heart-pulse") }}
+              Service status
+            </a>
+          </li>
+          <li>
+            <a href="https://libera.chat/">
+              {{ partial "icon.html" (dict "name" "users") }}
+              #osuosl on Libera.Chat
+            </a>
+          </li>
+          <li>
+            <a href="{{ "blog/index.xml" | relURL }}">
+              {{ partial "icon.html" (dict "name" "rss") }}
+              Blog RSS feed
+            </a>
+          </li>
+        </ul>
       </div>
-
-      <div class="footer_menu_container">
-        <div class="footer_menu_link_container"><a class="footer_links" href="/">HOME</a></div>
-        <div class="footer_menu_link_container">
-          <a href="/about" class="footer_links">ABOUT</a>
-          <div class="footer_link_container submenu_footer_link_container">
-            <a href="/about">About OSL</a>
-            <a href="/donate/faq">FAQ</a>
-            <a href="/contact">Contact Us</a>
-            <a href="/about/people">Staff</a>
-            <a href="/about/logos">Logos</a>
-            <a href="/donate">Donate</a>
-          </div>
-        </div>
-        <div class="footer_menu_link_container">
-          <a href="/services" class="footer_links">SERVICES</a>
-          <div class="footer_link_container submenu_footer_link_container">
-            <a href="/services/hosting">Hosting</a>
-            <a href="/services/aarch64">AARCH64 Development Hosting</a>
-            <a href="/services/powerdev">POWERLinux/OpenPOWER Development Hosting</a>
-            <a href="/services/ibm-z">IBM Z Development Hosting</a>
-          </div>
-        </div>
-        <div class="footer_menu_link_container">
-          <a href="/students" class="footer_links">STUDENT EXPERIENCE</a>
-          <div class="footer_link_container submenu_footer_link_container">
-            <a href="/about/employment">Employment</a>
-            <a href="/about/education">Education</a>
-            <a href="/student-stories">Student Stories</a>
-          </div>
-        </div>
-        <div class="footer_menu_link_container"><a href="/blog" class="footer_links">BLOG</a></div>
-      </div>
+    </div>
+    <div class="footer-legal d-flex flex-wrap gap-3 justify-content-between">
+      <p class="mb-0">Copyright &copy;2016&ndash;{{ now.Year }} Oregon State University</p>
+      <ul class="list-unstyled d-flex flex-wrap gap-3 mb-0">
+        <li><a href="https://oregonstate.edu/copyright">Copyright</a></li>
+        <li><a href="https://accessibility.oregonstate.edu/">Accessibility</a></li>
+        <li><a href="https://oregonstate.edu/official-web-disclaimer">Disclaimer</a></li>
+      </ul>
     </div>
   </div>
 </footer>

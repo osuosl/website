@@ -1,0 +1,33 @@
+# Hosting offerings shown as cards on the homepage.
+- name: General Hosting
+  url: /services/hosting/
+  request_url: /services/hosting/request/
+  description: >-
+    Open source projects are invited to use our hosting services for development, which can be set up based on your
+    needs.
+
+- name: AARCH64
+  url: /services/aarch64/
+  request_url: /services/aarch64/request-hosting/
+  description: >-
+    Use our AARCH64 servers to develop and test open source projects on the AARCH64 architecture platform.
+
+- name: OpenPOWER
+  url: /services/powerdev/
+  request_url: /services/powerdev/request-hosting/
+  description: >-
+    Use our OpenStack-based POWER servers to develop and test open source projects on the Power architecture platform
+    and in a PowerLinux environment.
+
+- name: POWER CI
+  url: /services/powerdev/
+  request_url: /services/powerdev/request-ci/
+  description: >-
+    An OSL-managed Jenkins service hosted on our OpenStack cluster, giving projects easier access to the POWER
+    architecture for continuous integration.
+
+- name: IBM Z
+  url: /services/ibm-z/
+  request_url: /services/ibm-z/request-ci/
+  description: >-
+    Use our IBM Z based servers to host projects, with access to the s390x architecture via Jenkins.

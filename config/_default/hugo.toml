@@ -19,6 +19,42 @@ tag = 'tags'
 # Content embeds raw HTML (request forms, occasional inline markup).
 unsafe = true
 
+[imaging]
+quality = 80
+resampleFilter = 'Lanczos'
+
 [module.hugoVersion]
 extended = true
 min = '0.146.0'
+
+# Declaring any mount clears the defaults, so all defaults are restated.
+# The extra static/images mount exposes content images as processable
+# resources (responsive srcset via the image render hook) while the
+# originals stay published verbatim under /images/.
+[[module.mounts]]
+source = 'archetypes'
+target = 'archetypes'
+
+[[module.mounts]]
+source = 'assets'
+target = 'assets'
+
+[[module.mounts]]
+source = 'content'
+target = 'content'
+
+[[module.mounts]]
+source = 'data'
+target = 'data'
+
+[[module.mounts]]
+source = 'layouts'
+target = 'layouts'
+
+[[module.mounts]]
+source = 'static'
+target = 'static'
+
+[[module.mounts]]
+source = 'static/images'
+target = 'assets/images'

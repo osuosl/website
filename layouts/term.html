@@ -1,34 +1,38 @@
 {{ define "main" }}
-  {{- partial "menu.html" . -}}
-  <main class="main_content">
-    <h1>Tag: #{{ .Title }}</h1>
-    <p>
-      <b>{{ .Pages.Len }}</b> posts tagged <a href="{{ .Page.RelPermalink }}" class="tag">#{{ .Page.LinkTitle }}</a>
-    </p>
+  <div class="container-xxl py-4">
+    <header class="page-header">
+      <h1 data-pagefind-meta="title">Tag: #{{ .Title }}</h1>
+      <p>
+        <strong>{{ .Pages.Len }}</strong> posts tagged
+        <a class="badge text-bg-secondary text-decoration-none" href="{{ .Page.RelPermalink }}"
+          >#{{ .Page.LinkTitle }}</a
+        >
+      </p>
+    </header>
     {{ .Content }}
-    <div class="blog-split">
-      <div>
-        {{ partial "pagination.html" . }}
-        <div class="blog-summaries">
-          {{- range .Paginator.Pages }}
-            {{- .Render "summary" }}
-          {{- end }}
-        </div>
+    <div class="row g-4">
+      <div class="col-lg-8">
+        {{ range .Paginator.Pages }}
+          {{ .Render "summary" }}
+        {{ end }}
         {{ partial "pagination.html" . }}
       </div>
-      <aside>
-        <div class="tag-cloud card">
-          <h2>Tags</h2>
-          <ul>
-            {{ range site.Taxonomies.tags.ByCount }}
-              <li>
-                <a href="{{ .Page.RelPermalink }}" class="tag">#{{ .Page.LinkTitle }}</a> ({{ .Count }})
-                {{- if eq .Page.Title $.Title -}}&nbsp;<small>&larr;</small>{{- end -}}
-              </li>
-            {{ end }}
-          </ul>
+      <aside class="col-lg-4" aria-label="Blog tags">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="h5">Tags</h2>
+            <ul class="tag-list">
+              {{ range site.Taxonomies.tags.ByCount }}
+                <li>
+                  <a class="badge text-bg-secondary text-decoration-none" href="{{ .Page.RelPermalink }}">
+                    #{{ .Page.LinkTitle }} ({{ .Count }})
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
         </div>
       </aside>
     </div>
-  </main>
+  </div>
 {{ end }}

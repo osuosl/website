@@ -1,10 +1,16 @@
 {{ if .IsNamedParams }}
-  <table class="projects_table">
+  {{ $data := index site.Data (.Get "file") }}
+  <table class="table table-striped caption-top">
+    <caption>
+      {{ .Get "table_title" }} ({{ len $data }} projects)
+    </caption>
     <thead>
-      <th colspan="2">{{ .Params.table_title }} ({{ len (index $.Site.Data .Params.file) }} projects)</th>
+      <tr>
+        <th scope="col">Project</th>
+        <th scope="col">Description</th>
+      </tr>
     </thead>
     <tbody>
-      {{ $data := index $.Site.Data .Params.file }}
       {{ range $data }}
         <tr>
           <td>{{ .name }}</td>

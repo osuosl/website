@@ -1,0 +1,61 @@
+{{- /*
+  Renders a responsive <img>. Context (dict):
+  src   image path like "/images/foo.jpg" (may be URL-encoded)
+  alt   alt text
+  class optional class list
+  Bitmap images under /images/ get resized variants + srcset; SVG/GIF and
+  anything else fall through to a plain img tag.
+  */
+-}}
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $class := .class | default "" -}}
+{{- $img := "" -}}
+{{- $clean := (urls.Parse $src).Path -}}
+{{- $lower := lower $clean -}}
+{{- if and (strings.HasPrefix $clean "/images/") (not (strings.HasSuffix $lower ".svg")) (not (strings.HasSuffix $lower ".gif")) -}}
+  {{- $img = resources.Get (strings.TrimPrefix "/" $clean) -}}
+{{- end -}}
+{{- if $img -}}
+  {{- $widths := slice -}}
+  {{- range slice 480 800 1200 -}}
+    {{- if le . $img.Width -}}{{- $widths = $widths | append . -}}{{- end -}}
+  {{- end -}}
+  {{- if $widths -}}
+    {{- $fallback := $img.Process (printf "resize %dx" (index $widths (sub (len $widths) 1))) -}}
+    {{- $candidates := slice -}}
+    {{- range $widths -}}
+      {{- $v := $img.Process (printf "resize %dx" .) -}}
+      {{- $candidates = $candidates | append (printf "%s %dw" $v.RelPermalink .) -}}
+    {{- end -}}
+    <img
+      src="{{ $fallback.RelPermalink }}"
+      srcset="{{ delimit $candidates ", " }}"
+      sizes="(max-width: 767px) 100vw, 700px"
+      width="{{ $fallback.Width }}"
+      height="{{ $fallback.Height }}"
+      alt="{{ $alt }}"
+      {{ with $class }}class="{{ . }}"{{ end }}
+      loading="lazy"
+      decoding="async"
+    />
+  {{- else -}}
+    <img
+      src="{{ $img.RelPermalink }}"
+      width="{{ $img.Width }}"
+      height="{{ $img.Height }}"
+      alt="{{ $alt }}"
+      {{ with $class }}class="{{ . }}"{{ end }}
+      loading="lazy"
+      decoding="async"
+    />
+  {{- end -}}
+{{- else -}}
+  <img
+    src="{{ $clean | relURL }}"
+    alt="{{ $alt }}"
+    {{ with $class }}class="{{ . }}"{{ end }}
+    loading="lazy"
+    decoding="async"
+  />
+{{- end -}}

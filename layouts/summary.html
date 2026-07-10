@@ -1,32 +1,30 @@
-<article class="list__item post card">
-  <header class="list__header">
-    <h2 data-pagefind-meta="title" class="list__title post__title ">
-      <a href="{{ .RelPermalink }}" rel="bookmark" class="hover-link">
-        {{ .Title }}
-      </a>
+<article class="card blog-card">
+  <div class="card-body">
+    <h2 class="card-title h4">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h2>
-    <div class="metadata">
-      <p><i class="fa-regular fa-user"></i> {{ delimit .Params.authors ", " " and " }}</p>
-      <p><i class="fa-regular fa-calendar-days"></i> {{ .Date.Format "Mon, Jan 02 2006" }}</p>
-      <p><i class="fa-regular fa-clock"></i> {{ .ReadingTime }} minute read</p>
-      {{ with .GetTerms "tags" }}
-        <ul class="tag-list">
-          {{ range . }}
-            <li class="tag"><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
-          {{ end }}
-        </ul>
-      {{ end }}
+    <div class="post-meta">
+      <span>{{ partial "icon.html" (dict "name" "user") }} {{ delimit .Params.authors ", " " and " }}</span>
+      <span>
+        {{ partial "icon.html" (dict "name" "calendar") }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Mon, Jan 02 2006" }}</time>
+      </span>
+      <span>{{ partial "icon.html" (dict "name" "clock") }} {{ .ReadingTime }} minute read</span>
     </div>
-    {{- with .Params.lead }}
-      <p class="list__lead post__lead">{{ . }}</p>
-    {{- end }}
-  </header>
-  <div class="content list__excerpt post__content">
-    {{ .Summary | plainify }}
+    {{ with .GetTerms "tags" }}
+      <ul class="tag-list mb-2">
+        {{ range . }}
+          <li>
+            <a class="badge text-bg-secondary text-decoration-none" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+    <p class="card-text">{{ .Summary | plainify }}</p>
+    {{ if .Truncated }}
+      <a class="btn btn-outline-secondary btn-sm" href="{{ .RelPermalink }}">
+        Read more<span class="visually-hidden"> of {{ .Title }}</span> &rarr;
+      </a>
+    {{ end }}
   </div>
-  {{- if .Truncated }}
-    <div class="list__footer clearfix">
-      <a class="list__footer-readmore link-button" href="{{ .RelPermalink }}">Read more &rarr;</a>
-    </div>
-  {{- end }}
 </article>

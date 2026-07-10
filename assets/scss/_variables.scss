@@ -64,15 +64,13 @@ $link-color-dark: $osu-orange-link-dark;
 $link-hover-color-dark: tint-color($osu-orange-link-dark, 20%);
 $border-color-dark: #444;
 
-// Components
+// Components. Color-mode note: only override component colors with
+// values that adapt (CSS variables) or read equally in light and dark —
+// static Sass colors here silently break dark mode.
 $border-radius: 0.25rem;
 $card-cap-bg: transparent;
-$navbar-light-color: $osu-warm-black;
-$navbar-light-hover-color: $osu-orange-link;
-$navbar-light-active-color: $osu-orange-link;
 $dropdown-link-active-bg: $osu-neutral-100;
 $dropdown-link-active-color: $osu-orange-link;
-$pagination-color: $osu-orange-link;
 $pagination-active-bg: $osu-beaver-orange;
 $pagination-active-border-color: $osu-beaver-orange;
 $form-label-font-weight: 600;

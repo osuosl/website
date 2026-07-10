@@ -1,9 +1,8 @@
 {{ define "main" }}
-  {{- partial "menu.html" . -}}
-  <main class="main_content">
-    <h1 data-pagefind-meta="title">{{ .Title }}</h1>
-    <div class="clearfix page-content">
+  <div class="container-xxl">
+    <article class="prose py-4">
+      <h1 data-pagefind-meta="title">{{ .Title }}</h1>
       {{ .Content }}
-    </div>
-  </main>
+    </article>
+  </div>
 {{ end }}
