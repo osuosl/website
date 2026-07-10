@@ -1,0 +1,20 @@
+{{ $former := where (index site.Data (.Get "file")) "status" "former" }}
+<table class="table table-striped caption-top">
+  <caption>
+    Previously hosted projects ({{ len $former }} projects)
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Services</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range sort $former "name" }}
+      <tr>
+        <td>{{ .name }}</td>
+        <td>{{ .description }}</td>
+      </tr>
+    {{ end }}
+  </tbody>
+</table>

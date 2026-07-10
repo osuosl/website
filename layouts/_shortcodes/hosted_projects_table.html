@@ -1,8 +1,12 @@
 {{ if .IsNamedParams }}
   {{ $data := index site.Data (.Get "file") }}
+  {{ $current := slice }}
+  {{ range $data }}
+    {{ if ne .status "former" }}{{ $current = $current | append . }}{{ end }}
+  {{ end }}
   <table class="table table-striped caption-top">
     <caption>
-      Hosted projects ({{ len $data }} projects)
+      Hosted projects ({{ len $current }} projects)
     </caption>
     <thead>
       <tr>
@@ -11,7 +15,7 @@
       </tr>
     </thead>
     <tbody>
-      {{ range $data }}
+      {{ range $current }}
         <tr>
           <td>{{ .name }}</td>
           <td>{{ .description }}</td>

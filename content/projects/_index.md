@@ -20,3 +20,10 @@ projects may have hundreds of sub-projects (such as the Apache Software Foundati
 | webapp                | Hosting web applications which may use PHP, Rails, Django, Flask or even static hosting. |
 
 {{< hosted_projects_table file="projects" >}}
+
+## Previously hosted projects
+
+We are grateful to the many projects that called the OSL home over the years. Below are projects we previously provided
+hosting for and the services they used:
+
+{{< former_projects file="projects" >}}
