@@ -1,0 +1,7 @@
+{{- $class := .Get "class" -}}
+<figure{{ with $class }} class="{{ . }}"{{ end }}>
+  {{ if .Get "link" }}<a href="{{ .Get "link" }}">{{ end -}}
+  {{ partial "responsive-image.html" (dict "src" (.Get "src") "alt" (or (.Get "alt") (.Get "caption")) "class" "") }}
+  {{- if .Get "link" }}</a>{{ end }}
+  {{ with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+</figure>

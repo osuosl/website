@@ -1,110 +1,125 @@
 {{ define "main" }}
-  {{- partial "menu.html" . -}}
-
-
-  <div class="hero-container">
-    <div class="hero-text">
+  <section class="hero">
+    <div class="hero-bg">
+      {{ with resources.Get "images/zachary_homepage.jpg" }}
+        {{ $small := .Process "resize 720x q70" }}
+        {{ $medium := .Process "resize 1280x q75" }}
+        {{ $large := .Process "resize 1920x q75" }}
+        <img
+          src="{{ $medium.RelPermalink }}"
+          srcset="{{ $small.RelPermalink }} 720w, {{ $medium.RelPermalink }} 1280w, {{ $large.RelPermalink }} 1920w"
+          sizes="100vw"
+          width="{{ $medium.Width }}"
+          height="{{ $medium.Height }}"
+          alt=""
+          fetchpriority="high"
+        />
+      {{ end }}
+    </div>
+    <div class="container-xxl">
       <h1>Open Source Lab</h1>
-      <p>{{ site.Params.description }}</p>
-      <p class="hero-links">
-        <a class="link-button" style="background-color: olivedrab" href="/donate"
-          ><i class="fa-solid fa-hand-holding-dollar"></i> Donate</a
-        >
-        <a class="link-button" href="/services"><i class="fa-solid fa-server"></i> Services</a>
-        <a class="link-button secondary" href="blog"><i class="fa-solid fa-newspaper"></i> Blog</a>
+      <p class="hero-lead">
+        A nonprofit organization at Oregon State University working for the advancement of open source technologies —
+        free hosting and infrastructure for the world's open source community since 2003.
+      </p>
+      <p class="d-flex flex-wrap gap-2 mb-0">
+        <a class="btn btn-primary btn-lg" href="{{ "donate/" | relURL }}">
+          {{ partial "icon.html" (dict "name" "donate") }}
+          Donate
+        </a>
+        <a class="btn btn-light btn-lg" href="{{ "services/hosting/request/" | relURL }}">
+          {{ partial "icon.html" (dict "name" "server") }}
+          Request Hosting
+        </a>
       </p>
     </div>
-  </div>
-  <main class="main_content">
-    <section class="info-container">
-      <div class="hosting-container">
-        <h1>Hosting</h1>
-        <p>Based on your hosting needs, we offer unmanaged and managed hosting for different environments:</p>
-      </div>
+  </section>
 
-      <div class="hosting-card-container">
-        <div class="hosting card">
-          <div>
-            <h2><a href="services/hosting" class="hover-link">General Hosting</a></h2>
-            <p>
-              Open source projects are invited to use our hosting services for development, which can be set up based on
-              your needs.
-            </p>
+  <section class="home-section stats-band band-alt" aria-label="The lab in numbers">
+    <div class="container-xxl">
+      <div class="row g-4 text-center">
+        {{ range site.Data.stats }}
+          <div class="col-6 col-lg-3">
+            <span class="stat-number">{{ .number }}</span>
+            <span class="stat-label">{{ .label }}</span>
           </div>
-          <div class="hosting-links">
-            <a class="link-button" href="services/hosting/request/">Request Hosting</a>
-            <a class="link-button secondary" href="services/hosting">More Info</a>
-          </div>
-        </div>
-        <div class="hosting card">
-          <div>
-            <h2><a href="services/aarch64" class="hover-link">AARCH64</a></h2>
-            <p>
-              Use our AARCH64 servers to develop and test open source projects on the AARCH64 Architecture platform and
-              in a AARCH64 environment.
-            </p>
-          </div>
-          <div class="hosting-links">
-            <a class="link-button" href="services/aarch64/request-hosting/">Request Hosting</a>
-            <a class="link-button secondary" href="services/aarch64">More Info</a>
-          </div>
-        </div>
-
-        <div class="hosting card">
-          <div>
-            <h2><a href="services/powerdev" class="hover-link">OpenPOWER</a></h2>
-            <p>
-              Use our OpenStack-based POWER servers to develop and test open source projects on the Power Architecture
-              platform and in a PowerLinux environment.
-            </p>
-          </div>
-          <div class="hosting-links">
-            <a class="link-button" href="services/powerdev/request-hosting/">Request Hosting</a>
-            <a class="link-button secondary" href="services/powerdev">More Info</a>
-          </div>
-        </div>
-
-        <div class="hosting card">
-          <div>
-            <h2><a href="services/powerdev" class="hover-link">POWER Continuous Integration (CI)</a></h2>
-            <p>
-              Hosted via the OpenStack cluster is an OSL managed Jenkins service intended to allow projects easier
-              access to the POWER architecture via Jenkins.
-            </p>
-          </div>
-          <div class="hosting-links">
-            <a class="link-button" href="services/powerdev/request-ci/">Request Hosting</a>
-            <a class="link-button secondary" href="services/powerdev">More Info</a>
-          </div>
-        </div>
-
-        <div class="hosting card">
-          <div>
-            <h2><a href="services/ibm-z/" class="hover-link">IBM Z</a></h2>
-            <p>Use our IBM Z based servers to host projects, with access to the s390x architecture via Jenkins.</p>
-          </div>
-          <div class="hosting-links">
-            <a class="link-button" href="services/ibm-z/request-ci/">Request Hosting</a>
-            <a class="link-button secondary" href="services/ibm-z/">More Info</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="blog-container">
-      <h1>Blog</h1>
-
-      <div class="blog-summaries">
-        {{ range first 5 (where site.RegularPages "Section" "blog") }}
-          {{ .Render "summary" }}
         {{ end }}
       </div>
+    </div>
+  </section>
 
-      <p class="read-more">
-        <a href="/blog" class="read-more-link"
-          >More Blog Posts ({{ where site.RegularPages "Section" "blog" | len }})</a
-        >
+  <section class="home-section">
+    <div class="container-xxl">
+      <h2>Hosting for open source projects</h2>
+      <p>Based on your needs, we offer unmanaged and managed hosting across several environments:</p>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        {{ range site.Data.services }}
+          <div class="col">
+            <div class="card service-card">
+              <div class="card-body">
+                <h3 class="card-title h5">
+                  <a class="text-decoration-none" href="{{ .url | relURL }}">{{ .name }}</a>
+                </h3>
+                <p class="card-text">{{ .description }}</p>
+                <div class="card-actions">
+                  <a class="btn btn-primary btn-sm" href="{{ .request_url | relURL }}">
+                    Request<span class="visually-hidden"> {{ .name }}</span>
+                  </a>
+                  <a class="btn btn-outline-secondary btn-sm" href="{{ .url | relURL }}">
+                    More info<span class="visually-hidden"> about {{ .name }}</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section band-alt">
+    <div class="container-xxl">
+      <h2>Trusted by open source communities</h2>
+      <div class="featured-projects">
+        {{ range site.Data.featured_projects }}
+          <a class="featured-project" href="{{ .url }}">{{ .name }}</a>
+        {{ end }}
+      </div>
+      <p class="mt-3 mb-0">
+        <a href="{{ "projects/" | relURL }}">See all {{ len site.Data.projects }} hosted projects &rarr;</a>
       </p>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="container-xxl">
+      <h2>Latest from the blog</h2>
+      <div class="row g-4">
+        {{ range first 3 (where site.RegularPages "Section" "blog") }}
+          <div class="col-lg-4 d-flex">
+            {{ .Render "summary" }}
+          </div>
+        {{ end }}
+      </div>
+      <p class="mt-3 mb-0">
+        <a href="{{ "blog/" | relURL }}"> More posts ({{ len (where site.RegularPages "Section" "blog") }}) &rarr; </a>
+      </p>
+    </div>
+  </section>
+
+  <section class="home-section band-alt" aria-label="Sponsors">
+    <div class="container-xxl">
+      <h2>Supported by</h2>
+      <div class="sponsor-row">
+        {{ range site.Data.sponsors }}
+          <a href="{{ .url }}">
+            <img src="{{ .logo | relURL }}" alt="{{ .name }}" height="56" />
+          </a>
+        {{ end }}
+      </div>
+      <p class="mt-3 mb-0">
+        <a href="{{ "about/sponsors/" | relURL }}">About our sponsors &rarr;</a>
+      </p>
+    </div>
+  </section>
 {{ end }}

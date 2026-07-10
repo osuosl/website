@@ -13,9 +13,13 @@
       </li>
       <li class="page-item">
         {{ if $paginator.HasPrev }}
-          <a class="page-link" href="{{ $paginator.Prev.URL }}" rel="prev">&larr;</a>
+          <a class="page-link" href="{{ $paginator.Prev.URL }}" rel="prev">
+            {{ partial "icon.html" (dict "name" "chevron-left" "label" "Previous page") }}
+          </a>
         {{ else }}
-          <a class="page-link" href="{{ $paginator.First.URL }}">&larr;</a>
+          <a class="page-link" href="{{ $paginator.First.URL }}">
+            {{ partial "icon.html" (dict "name" "chevron-left" "label" "Previous page") }}
+          </a>
         {{ end }}
       </li>
       {{ range $paginator.Pagers }}
@@ -46,9 +50,13 @@
       {{ end }}
       <li class="page-item">
         {{ if $paginator.HasNext }}
-          <a class="page-link" href="{{ $paginator.Next.URL }}" rel="next">&rarr;</a>
+          <a class="page-link" href="{{ $paginator.Next.URL }}" rel="next">
+            {{ partial "icon.html" (dict "name" "chevron-right" "label" "Next page") }}
+          </a>
         {{ else }}
-          <a class="page-link" href="{{ $paginator.Last.URL }}">&rarr;</a>
+          <a class="page-link" href="{{ $paginator.Last.URL }}">
+            {{ partial "icon.html" (dict "name" "chevron-right" "label" "Next page") }}
+          </a>
         {{ end }}
       </li>
       <li class="page-item">

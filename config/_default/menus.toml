@@ -4,21 +4,10 @@
 # links on their section landing pages.
 
 [[main]]
-name = 'Home'
-pageRef = '/'
-weight = 5
-
-[[main]]
 name = 'About'
 identifier = 'about'
 pageRef = '/about'
 weight = 10
-
-[[main]]
-parent = 'about'
-name = 'About the OSL'
-pageRef = '/about'
-weight = 1
 
 [[main]]
 parent = 'about'

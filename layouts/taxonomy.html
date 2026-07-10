@@ -1,12 +1,15 @@
 {{ define "main" }}
-  {{- partial "menu.html" . -}}
-  <main class="main_content">
-    <h1>{{ .Title }}</h1>
+  <div class="container-xxl py-4">
+    <h1 data-pagefind-meta="title">{{ .Title }}</h1>
     {{ .Content }}
-    <ul>
+    <ul class="tag-list mt-3">
       {{ range .Data.Terms.ByCount }}
-        <li><a href="{{ .Page.RelPermalink }}" class="tag">#{{ .Page.LinkTitle }}</a> ({{ .Count }})</li>
+        <li>
+          <a class="badge text-bg-secondary text-decoration-none" href="{{ .Page.RelPermalink }}">
+            #{{ .Page.LinkTitle }} ({{ .Count }})
+          </a>
+        </li>
       {{ end }}
     </ul>
-  </main>
+  </div>
 {{ end }}

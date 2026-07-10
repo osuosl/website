@@ -1,0 +1,10 @@
+{{- /*
+  Markdown image hook. Legacy content styles images with URL fragments
+  (/images/foo.jpg#center); the fragment becomes an img-<name> class and
+  the image renders responsively via the responsive-image partial.
+  */
+-}}
+{{- $u := urls.Parse .Destination -}}
+{{- $class := "" -}}
+{{- with $u.Fragment }}{{ $class = printf "img-%s" . }}{{ end -}}
+{{- partial "responsive-image.html" (dict "src" $u.Path "alt" .PlainText "class" $class) -}}

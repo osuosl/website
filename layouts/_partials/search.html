@@ -1,26 +1,7 @@
-<link href="{{ "pagefind/pagefind-ui.css" | relURL }}" rel="stylesheet" />
-<script src="{{ "pagefind/pagefind-ui.js" | relURL }}"></script>
-
-<div class="search-modal">
-  <div class="search-modal-container">
-    <div class="search-headers">
-      <h1>Search</h1>
-      <button class="close-search" id="close-search"><i class="fa fa-times" aria-hidden="true"></i></button>
-    </div>
-    <div id="search"></div>
+<dialog id="search-dialog" class="search-dialog" aria-label="Site search">
+  <div class="search-dialog-header">
+    <h2>Search</h2>
+    <button type="button" class="btn-close" id="close-search" aria-label="Close search"></button>
   </div>
-</div>
-
-<script>
-  window.addEventListener("DOMContentLoaded", (event) => {
-    new PagefindUI({
-      element: "#search",
-      showImages: false,
-      showSubResults: true,
-      processResult: function (result) {
-        result.title = result.metaTitle;
-        return result;
-      },
-    });
-  });
-</script>
+  <div id="search" data-pagefind-base="{{ "pagefind/" | relURL }}"></div>
+</dialog>

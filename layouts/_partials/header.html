@@ -1,26 +1,35 @@
-<header>
-  <div class="header-container">
-    <div class="logo-container">
-      <a href="https://oregonstate.edu">
-        <img
-          src="{{ "images/OSU_newlogo.png" | relURL }}"
-          class="logo"
-          width="250"
-          height="80"
-          alt="Oregon State University"
-        />
-      </a>
+<header class="site-header">
+  <div class="container-xxl header-inner">
+    <a class="osu-logo d-none d-md-inline-flex" href="https://oregonstate.edu/">
+      <img
+        src="{{ "images/osu-logo.svg" | relURL }}"
+        alt="Oregon State University"
+        class="light-only"
+        width="138"
+        height="44"
+      />
+      <img
+        src="{{ "images/osu-logo-2c-dark.svg" | relURL }}"
+        alt="Oregon State University"
+        class="dark-only"
+        width="138"
+        height="44"
+      />
+    </a>
+    <a class="osu-logo-crest d-inline-flex d-md-none" href="https://oregonstate.edu/">
+      <img src="{{ "images/osu-logo-crest.svg" | relURL }}" alt="Oregon State University" width="35" height="44" />
+    </a>
+    <div class="header-divider" aria-hidden="true"></div>
+    <a class="site-name" href="{{ site.Home.RelPermalink }}">Open&nbsp;Source&nbsp;Lab</a>
+    <div class="header-actions">
+      <button type="button" class="btn" id="theme-toggle" aria-pressed="false" aria-label="Dark color theme">
+        <span class="light-only">{{ partial "icon.html" (dict "name" "moon") }}</span>
+        <span class="dark-only">{{ partial "icon.html" (dict "name" "sun") }}</span>
+      </button>
+      <button type="button" class="btn" id="open-search" aria-haspopup="dialog">
+        {{ partial "icon.html" (dict "name" "search") }}
+        <span class="visually-hidden">Search</span>
+      </button>
     </div>
-    <div class="search-container">
-      <button class="open-search" id="open-search"><i class="fa-solid fa-search"></i></button>
-    </div>
-    <div class="mobile-menu-container">
-      <a class="toggle-mobile-menu" id="toggle-mobile-menu"><i class="fa-solid fa-bars"></i></a>
-    </div>
-  </div>
-  <div class="subheader-container">
-    <a href="https://cass.oregonstate.edu/">Center for Applied Systems & Software</a>
-    <span class="logo-divider">&raquo;</span>
-    <a href="{{ site.Home.RelPermalink }}" class="osl-logo-link">OSU Open Source Lab</a>
   </div>
 </header>

@@ -1,30 +1,35 @@
 {{ define "main" }}
-  {{- partial "menu.html" . -}}
-  <main class="main_content">
-    <h1>Blog</h1>
-    <p>
-      All <b>{{ .Pages.Len }}</b> posts
-      <a href="{{ .Page.RelPermalink }}index.xml" target="_blank"><i class="fa-solid fa-rss"></i></a>
-    </p>
-    <div class="blog-split">
-      <div>
-        <div class="blog-summaries">
-          {{- range .Paginator.Pages }}
-            {{- .Render "summary" }}
-          {{- end }}
-        </div>
+  <div class="container-xxl py-4">
+    <header class="page-header d-flex align-items-center gap-3 flex-wrap">
+      <h1 class="mb-0" data-pagefind-meta="title">Blog</h1>
+      <a href="{{ .RelPermalink }}index.xml">
+        {{ partial "icon.html" (dict "name" "rss" "label" "Blog RSS feed") }}
+      </a>
+    </header>
+    <p>All <strong>{{ .Pages.Len }}</strong> posts</p>
+    <div class="row g-4">
+      <div class="col-lg-8">
+        {{ range .Paginator.Pages }}
+          {{ .Render "summary" }}
+        {{ end }}
         {{ partial "pagination.html" . }}
       </div>
-      <aside>
-        <div class="tag-cloud card">
-          <h2>Tags</h2>
-          <ul>
-            {{ range site.Taxonomies.tags.ByCount }}
-              <li><a href="{{ .Page.RelPermalink }}" class="tag">#{{ .Page.LinkTitle }}</a> ({{ .Count }})</li>
-            {{ end }}
-          </ul>
+      <aside class="col-lg-4" aria-label="Blog tags">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="h5">Tags</h2>
+            <ul class="tag-list">
+              {{ range site.Taxonomies.tags.ByCount }}
+                <li>
+                  <a class="badge text-bg-secondary text-decoration-none" href="{{ .Page.RelPermalink }}">
+                    #{{ .Page.LinkTitle }} ({{ .Count }})
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
         </div>
       </aside>
     </div>
-  </main>
+  </div>
 {{ end }}

@@ -1,10 +1,39 @@
 {{ define "main" }}
-  {{- partial "menu.html" . -}}
-  <main class="main_content">
-    <h1 data-pagefind-meta="title">{{ .Title }}</h1>
-    <p>by {{ delimit .Params.authors ", " " and " }} on {{ .Date.Format "Mon, Jan 02 2006" }}</p>
-    <div>
+  <div class="container-xxl py-4">
+    <article class="prose">
+      <header class="mb-4">
+        <h1 data-pagefind-meta="title">{{ .Title }}</h1>
+        <div class="post-meta">
+          <span>{{ partial "icon.html" (dict "name" "user") }} {{ delimit .Params.authors ", " " and " }}</span>
+          <span>
+            {{ partial "icon.html" (dict "name" "calendar") }}
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Mon, Jan 02 2006" }}</time>
+          </span>
+          <span>{{ partial "icon.html" (dict "name" "clock") }} {{ .ReadingTime }} minute read</span>
+        </div>
+        {{ with .GetTerms "tags" }}
+          <ul class="tag-list mt-2">
+            {{ range . }}
+              <li>
+                <a class="badge text-bg-secondary text-decoration-none" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </header>
       {{ .Content }}
-    </div>
-  </main>
+      <nav class="d-flex justify-content-between gap-3 mt-5 pt-3 border-top" aria-label="More posts">
+        <div>
+          {{ with .NextInSection }}
+            <a href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>
+          {{ end }}
+        </div>
+        <div class="text-end">
+          {{ with .PrevInSection }}
+            <a href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>
+          {{ end }}
+        </div>
+      </nav>
+    </article>
+  </div>
 {{ end }}

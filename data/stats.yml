@@ -1,0 +1,10 @@
+# Homepage stats band. Review the numbers when the about-page copy
+# changes; sources are noted per entry.
+- number: "20+"
+  label: years hosting open source # founded 2003
+- number: "160+"
+  label: projects call the OSL home # about page
+- number: "430 TB"
+  label: delivered to the world every month # about page
+- number: "10"
+  label: students employed and trained each year # donate FAQ

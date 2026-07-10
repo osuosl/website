@@ -1,14 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
   {{- partial "head.html" . -}}
   <body>
-    {{ partial "search.html" . }}
+    <a class="skip-link" href="#main">Skip to main content</a>
     <div class="layout-container">
       {{- partial "header.html" . -}}
-      <div id="content">
+      {{- partial "nav.html" . -}}
+      <main id="main" data-pagefind-body>
         {{- block "main" . }}{{- end }}
-      </div>
+      </main>
       {{- partialCached "footer.html" . -}}
     </div>
+    {{ partial "search.html" . }}
+    {{ $bootstrap := resources.Get "js/vendor/bootstrap.bundle.min.js" | fingerprint }}
+    <script src="{{ $bootstrap.RelPermalink }}" integrity="{{ $bootstrap.Data.Integrity }}" defer></script>
+    {{ $site := resources.Get "js/site.js" | minify | fingerprint }}
+    <script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}" defer></script>
   </body>
 </html>

@@ -2,6 +2,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  {{/* Apply the stored/preferred color theme before first paint */}}
+  <script>
+    (function () {
+      var theme = localStorage.getItem("theme");
+      if (!theme) {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-bs-theme", theme);
+    })();
+  </script>
+
   {{ $title := cond (eq .Title site.Title) .Title (printf "%s | %s" .Title site.Title) }}
   <title>{{ $title }}</title>
   <meta name="title" content="{{ $title }}" />
@@ -10,18 +21,20 @@
   {{ partial "opengraph.html" . }}
   {{ partial "twitter_cards.html" . }}
 
+  {{/* Fonts: preload the two faces used above the fold */}}
+  <link
+    rel="preload"
+    as="font"
+    type="font/woff2"
+    crossorigin
+    href="{{ "fonts/OpenSans-Variable-normal-latin.woff2" | relURL }}"
+  />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="{{ "fonts/Stratum2WebMedium.woff2" | relURL }}" />
+
   {{/* Styles */}}
   {{ $styles := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  {{/* Scripts */}}
-  {{ $js := slice (resources.Get "js/mobile-menu.js") (resources.Get "js/search-modal.js")
-    | resources.Concat "js/main.js"
-    | minify
-    | fingerprint
-  }}
-  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
   {{ if .Params.recaptcha }}
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   {{ end }}
