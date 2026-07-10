@@ -43,6 +43,12 @@ jobs:
       - name: Check internal links and assets (htmltest)
         run: ./bin/htmltest -c .htmltest.yml
 
+      # Every alias stub must land on a real page (no chains/loops).
+      # Server-side collisions are covered by scripts/check-redirects.py
+      # against a live deploy.
+      - name: Check alias redirects
+        run: python3 scripts/check-aliases.py public
+
       - name: Serve built site
         run: |
           python3 -m http.server 8080 --directory public &
