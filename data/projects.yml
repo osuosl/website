@@ -44,6 +44,7 @@
   description: vm, mailing-list
 - name: Cacti
   description: co-location
+  status: former
 - name: cdxgen
   description: vm, powerpc
 - name: Census Reporter
@@ -158,6 +159,7 @@
   description: mirroring
 - name: Fosshost
   description: co-location
+  status: former
 - name: FOSS Translation
   description: vm
 - name: FreeBSD
@@ -232,6 +234,9 @@
   description: aarch64
 - name: Jupyter / Base-notebook
   description: powerpc
+- name: Kernel.org
+  description: co-location
+  status: former
 - name: K0S
   description: aarch64
 - name: K-3D
@@ -614,6 +619,7 @@
   description: co-location, mirroring
 - name: Yocto
   description: co-location
+  status: former
 - name: Yum
   description: vm, mirroring
 - name: Zig
