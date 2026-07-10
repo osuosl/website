@@ -23,26 +23,26 @@
               </a>
             </li>
           {{ else if .HasChildren }}
-            {{ $active := $page.HasMenuCurrent "main" . }}
-            {{ $toggleClass := "nav-link dropdown-toggle" }}
-            {{ if $active }}{{ $toggleClass = print $toggleClass " active" }}{{ end }}
+            {{ $active := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }}
+            {{ $linkClass := "nav-link" }}
+            {{ if $active }}{{ $linkClass = print $linkClass " active" }}{{ end }}
             <li class="nav-item dropdown">
-              <button class="{{ $toggleClass }}" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a
+                class="{{ $linkClass }}"
+                {{ if $page.IsMenuCurrent "main" . }}aria-current="page"{{ end }}
+                href="{{ .URL }}"
+              >
                 {{ .Name }}
+              </a>
+              <button
+                class="nav-link dropdown-toggle dropdown-toggle-split"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="visually-hidden">Toggle {{ .Name }} submenu</span>
               </button>
               <ul class="dropdown-menu">
-                <li>
-                  {{ $itemClass := "dropdown-item" }}
-                  {{ if $page.IsMenuCurrent "main" . }}{{ $itemClass = print $itemClass " active" }}{{ end }}
-                  <a
-                    class="{{ $itemClass }}"
-                    {{ if $page.IsMenuCurrent "main" . }}aria-current="page"{{ end }}
-                    href="{{ .URL }}"
-                  >
-                    {{ .Name }} overview
-                  </a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
                 {{ range .Children }}
                   <li>
                     {{ $itemClass := "dropdown-item" }}

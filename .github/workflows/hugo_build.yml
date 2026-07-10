@@ -58,10 +58,7 @@ jobs:
           done
 
       # WCAG 2.1 AA scan (ADA Title II requirement) — blocking.
-      # Notes: htmlcs contrast rules are ignored in .pa11yci.json (they
-      # false-positive on CSS custom-property colors; axe-core's
-      # color-contrast rule is the enforcing check), and the reCAPTCHA
-      # widget internals plus the hero text (axe cannot verify text over
-      # images; the scrim guarantees >=7:1) are hidden from the scan.
+      # The rationale for every ignored rule and hidden element is
+      # documented inline in .pa11yci.js.
       - name: Accessibility scan (pa11y-ci, WCAG 2.1 AA)
-        run: npx pa11y-ci --config .pa11yci.json
+        run: npx pa11y-ci --config .pa11yci.js

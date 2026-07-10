@@ -146,6 +146,28 @@ html:not([data-bs-theme="dark"]) .dark-only {
     margin-top: 0;
   }
 
+  // Split dropdowns: the parent name is a normal link (like
+  // oregonstate.edu) with an adjacent caret button toggling the submenu.
+  .nav-item.dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    > .dropdown-toggle-split {
+      border: 0;
+      background: transparent;
+
+      &:hover,
+      &:focus {
+        background: var(--bs-secondary-bg);
+      }
+    }
+
+    > .dropdown-menu {
+      flex-basis: 100%;
+    }
+  }
+
   .nav-donate .btn {
     font-weight: 600;
     margin: 0.35rem 0.5rem;
@@ -289,7 +311,7 @@ html:not([data-bs-theme="dark"]) .dark-only {
 
 // ----------------------------------------------------------------- prose
 .prose {
-  max-width: 70ch;
+  max-width: 60rem;
 
   img {
     max-width: 100%;
@@ -340,6 +362,15 @@ html:not([data-bs-theme="dark"]) .dark-only {
 
 // ---------------------------------------------------------------- search
 .search-dialog {
+  // Pagefind UI theming: map its palette onto the Bootstrap color-mode
+  // variables so results stay readable in dark mode.
+  --pagefind-ui-font: var(--bs-body-font-family);
+  --pagefind-ui-text: var(--bs-body-color);
+  --pagefind-ui-primary: var(--bs-link-color);
+  --pagefind-ui-background: var(--bs-body-bg);
+  --pagefind-ui-border: var(--bs-border-color);
+  --pagefind-ui-tag: var(--bs-secondary-bg);
+
   width: calc(100vw - 2rem);
   max-width: 40rem;
   border: 1px solid var(--bs-border-color);
@@ -462,9 +493,14 @@ html:not([data-bs-theme="dark"]) .dark-only {
     color: var(--bs-secondary-color);
   }
 
-  .form-required::after {
-    content: "*";
+  // Some legacy forms put a literal * inside .form-required, others leave
+  // the span empty — only synthesize an asterisk for the empty ones.
+  .form-required {
     color: $osu-red;
+  }
+
+  .form-required:empty::after {
+    content: "*";
     margin-left: 0.15rem;
   }
 

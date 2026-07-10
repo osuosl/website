@@ -1,5 +1,7 @@
-// Displays formsender's error details when it redirects back to the form
-// page with ?error=<number>&message=<text> in the query string.
+// Displays formsender's error details when it redirects to a page with
+// ?error=<number>&message=<text> in the query string. On the
+// /form-submitted page this also hides the success copy so users are not
+// told their submission worked when it did not.
 (function () {
   var params = new URLSearchParams(window.location.search);
   var errorNumber = params.get("error");
@@ -10,24 +12,30 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    var success = document.getElementById("form-success");
+    if (success) {
+      success.hidden = true;
+    }
+
     var box = document.createElement("div");
-    box.className = "form-error";
+    box.className = "alert alert-danger";
     box.setAttribute("role", "alert");
-    box.style.color = "red";
 
     var heading = document.createElement("h3");
+    heading.className = "h5";
     heading.textContent = "An error occurred with your form submission";
-    var number = document.createElement("p");
-    number.textContent = "Error number: " + errorNumber;
     var message = document.createElement("p");
-    message.textContent = "Error message: " + errorMessage;
-    box.append(heading, number, message);
+    message.textContent = "Error " + errorNumber + ": " + errorMessage;
+    var advice = document.createElement("p");
+    advice.className = "mb-0";
+    advice.textContent = "Please go back, correct the problem, and submit the form again.";
+    box.append(heading, message, advice);
 
     var form = document.querySelector(".webform-client-form");
     if (form && form.parentNode) {
       form.parentNode.insertBefore(box, form);
     } else {
-      (document.querySelector("main") || document.body).prepend(box);
+      (document.querySelector("main .prose") || document.querySelector("main") || document.body).prepend(box);
     }
   });
 })();
