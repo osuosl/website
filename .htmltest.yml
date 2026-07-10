@@ -5,6 +5,8 @@ CheckInternal: true
 # web servers resolve these fine.
 IgnoreDirectoryMissingTrailingSlash: true
 IgnoreInternalEmptyHash: true
+# alt="" is correct for decorative images (WCAG); missing alt still fails
+IgnoreAltEmpty: true
 CacheExpires: "1h"
 IgnoreURLs:
   # Legacy image styling: content uses /images/foo.jpg#class fragments that CSS
