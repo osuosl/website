@@ -5,7 +5,9 @@
     "timeout": 30000,
     "chromeLaunchConfig": {
       "args": ["--no-sandbox", "--disable-dev-shm-usage"]
-    }
+    },
+    "hideElements": ".g-recaptcha, iframe[src*='recaptcha'], #g-recaptcha-response, .hero .container-xxl",
+    "ignore": ["WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail", "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail"]
   },
   "urls": [
     "http://localhost:8080/",

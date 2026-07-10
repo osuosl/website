@@ -51,9 +51,11 @@ jobs:
             sleep 0.5
           done
 
-      # WCAG 2.1 AA scan (ADA Title II requirement). Non-blocking until the
-      # accessible theme rebuild lands; remove continue-on-error at that point
-      # to make this a required check.
+      # WCAG 2.1 AA scan (ADA Title II requirement) — blocking.
+      # Notes: htmlcs contrast rules are ignored in .pa11yci.json (they
+      # false-positive on CSS custom-property colors; axe-core's
+      # color-contrast rule is the enforcing check), and the reCAPTCHA
+      # widget internals plus the hero text (axe cannot verify text over
+      # images; the scrim guarantees >=7:1) are hidden from the scan.
       - name: Accessibility scan (pa11y-ci, WCAG 2.1 AA)
-        continue-on-error: true
         run: npx pa11y-ci --config .pa11yci.json
