@@ -7,7 +7,9 @@
 - compute: projects
   suffix: "+"
   label: projects call the OSL home # "+": many host their own subprojects
-- number: 430 TB
-  label: delivered to the world every month # about page
+# 3.74 Gbps avg (primary DC) + 556 Mbps (ftp-chi) + 544 Mbps (ftp-nyc)
+# = 4.84 Gbps ~= 1,568 TB over a 30-day month; floored to 1,500+
+- number: 1,500+ TB
+  label: delivered to the world every month
 - number: "6"
   label: students employed and trained each year
