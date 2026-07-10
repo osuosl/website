@@ -1,6 +1,6 @@
 ---
 title: Contact Us
-aliases: ["/contact/"]
+aliases: ["/contact/", "/info/location/", "/about/news/pr/"]
 ---
 
 ## Email
@@ -37,8 +37,8 @@ We require coordination for all hardware shipments. Please contact us at <suppor
 equipment.
 
 - **Small shipments (up to 2 servers):** May use the address above after coordinating with our staff
-- **Large shipments (more than 2 servers or palletized freight):** We will provide an alternative shipping location
-  upon coordination
+- **Large shipments (more than 2 servers or palletized freight):** We will provide an alternative shipping location upon
+  coordination
 
 ## Phone
 

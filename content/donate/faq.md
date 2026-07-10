@@ -1,5 +1,6 @@
 ---
 title: "FAQ"
+aliases: ["/faq/"]
 ---
 
 1. [How are you associated with Oregon State University?](#how-are-you-associated-with-oregon-state-university)

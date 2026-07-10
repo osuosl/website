@@ -1,18 +1,18 @@
 ---
 title: Sponsors
-aliases: ["/sponsors/"]
+aliases: ["/sponsors/", "/info/sponsors/", "/members/", "/friends/"]
 ---
 
 We gratefully acknowledge the generous support of the following organizations whose annual contributions of $25,000 or
-more during fiscal years 2024 and 2025 have been vital to the Open Source Lab's operations and ability to serve the
-open source community.
+more during fiscal years 2024 and 2025 have been vital to the Open Source Lab's operations and ability to serve the open
+source community.
 
 ---
 
 [![IBM Logo](/images/ibm-logo_small.jpg#sponsors)](https://www.ibm.com/)
 
-**IBM** is a long-standing supporter of the Open Source Lab, contributing both valuable hardware resources and
-financial support.
+**IBM** is a long-standing supporter of the Open Source Lab, contributing both valuable hardware resources and financial
+support.
 
 A strong advocate, sponsor, and contributor to the Linux developer community and open technology development, IBM
 continues this tradition by generously contributing POWER servers to the OSL. These systems provide essential
@@ -70,9 +70,9 @@ source movement, developing numerous open source projects and sponsoring initiat
 infrastructures.
 
 As demonstrated by their significant contributions to projects like Yjs and Goose, and their position as a leading
-contributor to Drupal (#2 all-time), Tag1 Consulting is deeply invested in the success of open source. Tag1 supports
-the OSL through financial contributions, which are vital in enabling us to provide reliable infrastructure and services
-to the open source community.
+contributor to Drupal (#2 all-time), Tag1 Consulting is deeply invested in the success of open source. Tag1 supports the
+OSL through financial contributions, which are vital in enabling us to provide reliable infrastructure and services to
+the open source community.
 
 ---
 
@@ -84,5 +84,5 @@ TDS Telecom provides significant support to the OSL through a generous donation 
 contribution, totaling 40 gigabits over a five-year period, greatly enhances the OSL's ability to deliver open source
 software to millions globally. In addition to the bandwidth, TDS hosts several OSU servers in their data centers,
 enabling the OSL to maintain critical mirroring servers in geographically diverse locations like New York, NY, and
-Chicago, IL. This distributed infrastructure allows faster, more reliable downloads for users accessing mirrored
-project files.
+Chicago, IL. This distributed infrastructure allows faster, more reliable downloads for users accessing mirrored project
+files.

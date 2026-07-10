@@ -1,5 +1,6 @@
 ---
 title: OSU Open Source Lab
+aliases: ["/home/"]
 ---
 
 The Open Source Lab is a nonprofit organization working for the advancement of open source technologies.

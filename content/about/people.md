@@ -1,5 +1,6 @@
 ---
 title: "Staff"
+aliases: ["/info/people/"]
 ---
 
 ## [Lance Albertson](#lance-albertson){#lance-albertson}
@@ -13,8 +14,8 @@ that the OSL provides for more than 160 high-profile open source projects since 
 administrator and architect in 2007. Lance’s involvement in the open source community began in 2003, when he became a
 developer and package maintainer with [Gentoo Linux](http://gentoo.org). Prior to joining the OSL, Lance was a UNIX
 Administrator for the Enterprise Server Technologies group at [Kansas State University](http://ksu.edu). In his free
-time he helps organize [Beaver BarCamp](http://beaverbarcamp.org), and enjoys playing the trumpet and spending time
-with his family.
+time he helps organize [Beaver BarCamp](http://beaverbarcamp.org), and enjoys playing the trumpet and spending time with
+his family.
 
 Lance can be reached at lance-at-osuosl-dot-org
 
@@ -71,12 +72,10 @@ Science he enjoys hiking and astrophotography.
 
 ![Hollister Mala](/images/hollister.jpg#right-people)
 
-Hollister joined the OSL in July, 2025 after graduating from High School. He
-will be studying Computer Science at OSU starting in the Fall. Hollister first
-started using open-soruce software to setup game servers and to make old
-laptops functional again. By 2020, he was using open-source software for almost
-all of his computers and servers. Hollister also enjoys Robotics, Cybersecurity
-and 3D Printing.
+Hollister joined the OSL in July, 2025 after graduating from High School. He will be studying Computer Science at OSU
+starting in the Fall. Hollister first started using open-soruce software to setup game servers and to make old laptops
+functional again. By 2020, he was using open-source software for almost all of his computers and servers. Hollister also
+enjoys Robotics, Cybersecurity and 3D Printing.
 
 **GitHub Account**
 
@@ -95,8 +94,8 @@ hollistermala
 ![Tiffany Chang](/images/tchang.jpg#right-people)
 
 Tiffany joined the OSL in July, 2025 as a sophmore to build up her programming skills and explore the open source
-community. Within computer science, she's excited about web development and computer graphics. In her free time,
-Tiffany enjoys making digital art and listening to new music.
+community. Within computer science, she's excited about web development and computer graphics. In her free time, Tiffany
+enjoys making digital art and listening to new music.
 
 **GitHub Account**
 
@@ -115,8 +114,8 @@ changtif
 ![Ally Aoki](/images/aokial.jpg#right-people)
 
 Ally joined the OSL in July, 2025 as a junior to hone their skills while learning more about different aspects of
-computer science. With their focus in computer systems, Ally enjoys embedded systems and working with hardware such
-as microcontrollers. Outside of school, Ally enjoys editing videos, video games, and cooking.
+computer science. With their focus in computer systems, Ally enjoys embedded systems and working with hardware such as
+microcontrollers. Outside of school, Ally enjoys editing videos, video games, and cooking.
 
 **GitHub Account**
 

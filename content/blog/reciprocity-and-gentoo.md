@@ -2,6 +2,7 @@
 title: "Reciprocity and Gentoo"
 date: 2009-02-05
 authors: ["OSUOSL Admin"]
+aliases: ["/about/stories/gentoo/"]
 ---
 
 ![Reciprocity and Gentoo](/images/donnie_lance_gentoo_0.jpg#blog)
