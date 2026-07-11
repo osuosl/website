@@ -3,6 +3,15 @@
 // nav bar on warm neutral, dark footer.
 
 // ---------------------------------------------------------------- helpers
+// Site container: fluid with a small constant margin on both sides at
+// every viewport (like oregonstate.edu), instead of Bootstrap's snapping
+// max-width containers.
+.container-site {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 3vw, 3rem);
+}
+
 .svg-icon {
   vertical-align: -0.125em;
   flex-shrink: 0;
@@ -311,8 +320,6 @@ html:not([data-bs-theme="dark"]) .dark-only {
 
 // ----------------------------------------------------------------- prose
 .prose {
-  max-width: 60rem;
-
   img {
     max-width: 100%;
     height: auto;
@@ -495,8 +502,14 @@ html:not([data-bs-theme="dark"]) .dark-only {
 
   // Some legacy forms put a literal * inside .form-required, others leave
   // the span empty — only synthesize an asterisk for the empty ones.
+  // 4.5:1 in both modes: #c72127 is 5.7:1 on white but 2.98:1 on the dark
+  // background, where the 40% tint reads 5.8:1.
   .form-required {
     color: $osu-red;
+  }
+
+  @at-root [data-bs-theme="dark"] & .form-required {
+    color: tint-color($osu-red, 40%);
   }
 
   .form-required:empty::after {

@@ -1,19 +1,13 @@
 // pa11y-ci configuration: WCAG 2.1 AA scan over a representative page set,
 // run in CI against the built site (see .github/workflows/hugo_build.yml).
 //
-// Two runners:
-//  - axe: computes real rendered colors, including CSS custom properties.
-//    Its color-contrast rule is the enforcing contrast check and has caught
-//    real bugs (e.g. the light-mode active-nav contrast fix in this repo).
-//  - htmlcs (HTML CodeSniffer): good structural checks, but it cannot
-//    resolve CSS custom-property colors, so its two contrast rules
-//    misreport on every Bootstrap 5 component site-wide (readings like
-//    "1.36:1" against an unresolved var() background). Those two rules are
-//    ignored globally below; every other htmlcs rule still applies.
-//
-// Note: scanners only see the page's initial state. Interactive states
-// (open search dialog with results, dropdown panels, dark mode) are part
-// of the manual QA checklist instead.
+// Two runners, both fully enabled (no ignored rules): axe and htmlcs
+// analyze differently and each has caught real bugs the other missed —
+// axe flagged the light-mode active-nav contrast, htmlcs flagged the
+// required-asterisk contrast that axe's text heuristics skip. See the
+// "Accessibility testing" section of the README for the rationale and
+// the manual QA checklist that covers what scanners cannot see (dialog
+// contents, dropdown panels, both color modes, zoom/reflow).
 module.exports = {
   defaults: {
     standard: "WCAG2AA",
@@ -40,15 +34,8 @@ module.exports = {
       // has a 66% dark scrim; even over pure-white image pixels the
       // computed contrast for the white text is >= 7.2:1 (see the scrim
       // comment in assets/scss/_madrone.scss).
-      ".hero .container-xxl",
+      ".hero .container-site",
     ].join(", "),
-    ignore: [
-      // htmlcs contrast rules only — see the runner note above. axe's
-      // color-contrast rule remains active on every element of every
-      // scanned page.
-      "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
-      "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
-    ],
   },
   urls: [
     "http://localhost:8080/",
