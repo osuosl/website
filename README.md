@@ -106,6 +106,53 @@ npm run serve
 ./pagefind --site public --serve
 ```
 
+## Testing
+
+CI (`.github/workflows/hugo_build.yml`) runs on every pull request: a Hugo build, a Pagefind index, internal link/asset
+validation ([htmltest](https://github.com/wjdp/htmltest) with `.htmltest.yml`), an alias-redirect check
+(`scripts/check-aliases.py` — every redirect stub must land on a real page, so the site can never ship a redirect chain
+or loop), and the accessibility scan described below. `scripts/check-redirects.py` is a manual companion that follows
+redirects on a **live** host (production or a staging deploy), catching collisions between the site's redirects and
+server-side Apache rules.
+
+### Accessibility testing
+
+The site must conform to [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) (the ADA Title II web rule, which OSU requires of
+its units). CI runs [pa11y-ci](https://github.com/pa11y/pa11y-ci) (config: `.pa11yci.js`) as a blocking check over a
+representative page set, with **two runners, both fully enabled**:
+
+- [axe-core](https://github.com/dequelabs/axe-core) — actively maintained by Deque, analyzes fully rendered pages
+  (including CSS custom properties), and is tuned for few false positives.
+- [HTML CodeSniffer](https://github.com/squizlabs/HTML_CodeSniffer) — maps checks directly onto WCAG techniques and is
+  stricter and more verbose; older and less actively maintained than axe.
+
+We run both because they analyze differently and each has caught real bugs the other missed in this repo: axe flagged
+the light-mode active-nav contrast; HTML CodeSniffer flagged the required-asterisk contrast that axe's text heuristics
+skip. When the runners disagree, fix the issue or document a narrowly-scoped exception with a comment in `.pa11yci.js` —
+the config intentionally contains no ignored rules.
+
+To run the scan locally:
+
+```bash
+hugo && npx pagefind --site public
+python3 -m http.server 8080 --directory public &
+npx pa11y-ci --config .pa11yci.js
+```
+
+#### Manual QA checklist
+
+Automated scanners only see each page's initial, static state. Before launches or significant UI changes, also verify by
+hand:
+
+- **Keyboard**: Tab through every template — skip link appears first and works, nav dropdowns open with Enter/Space and
+  close with Escape, the search dialog traps and restores focus, no keyboard traps.
+- **Screen reader**: smoke test (NVDA + Firefox or VoiceOver + Safari) on the homepage, a form (including the error
+  path), search, and a blog post.
+- **Both color modes**: toggle dark mode and check contrast of interactive states (hover, focus, active), search
+  results, and form messages — scanners only test the mode the browser prefers.
+- **Interactive states**: open search with results on screen, open each nav dropdown, submit a form with an error.
+- **Zoom/reflow**: 400% zoom (320px-wide reflow) with no horizontal scrolling or lost content; 200% text-only zoom.
+
 ## Adding Content
 
 Content is added inside the `/content` folder, though it varies based on what you would like to do.
