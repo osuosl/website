@@ -2,14 +2,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  {{/* Apply the stored/preferred color theme before first paint */}}
+  {{/* Apply a stored color-theme choice before first paint. The default
+    is light (matching oregonstate.edu); dark is opt-in via the header
+    toggle and persists in localStorage.
+  */}}
   <script>
     (function () {
       var theme = localStorage.getItem("theme");
-      if (!theme) {
-        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      if (theme) {
+        document.documentElement.setAttribute("data-bs-theme", theme);
       }
-      document.documentElement.setAttribute("data-bs-theme", theme);
     })();
   </script>
 
