@@ -16,7 +16,7 @@
         />
       {{ end }}
     </div>
-    <div class="container-xxl">
+    <div class="container-site">
       <h1>Open Source Lab</h1>
       <p class="hero-lead">
         A nonprofit organization at Oregon State University working for the advancement of open source technologies —
@@ -36,7 +36,7 @@
   </section>
 
   <section class="home-section stats-band band-alt" aria-label="The lab in numbers">
-    <div class="container-xxl">
+    <div class="container-site">
       {{ $founded := time.AsTime site.Params.founded }}
       {{ $years := sub now.Year $founded.Year }}
       {{ if lt (now.Format "01-02") ($founded.Format "01-02") }}{{ $years = sub $years 1 }}{{ end }}
@@ -59,7 +59,7 @@
   </section>
 
   <section class="home-section">
-    <div class="container-xxl">
+    <div class="container-site">
       <h2>Hosting for open source projects</h2>
       <p>Based on your needs, we offer unmanaged and managed hosting across several environments:</p>
       <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
@@ -88,7 +88,7 @@
   </section>
 
   <section class="home-section band-alt">
-    <div class="container-xxl">
+    <div class="container-site">
       <h2>Trusted by open source communities</h2>
       <div class="featured-projects">
         {{ range site.Data.featured_projects }}
@@ -103,7 +103,7 @@
   </section>
 
   <section class="home-section">
-    <div class="container-xxl">
+    <div class="container-site">
       <h2>Latest from the blog</h2>
       <div class="row g-4">
         {{ range first 3 (where site.RegularPages "Section" "blog") }}
@@ -119,7 +119,7 @@
   </section>
 
   <section class="home-section band-alt" aria-label="Sponsors">
-    <div class="container-xxl">
+    <div class="container-site">
       <h2>Supported by</h2>
       <div class="sponsor-row">
         {{ range site.Data.sponsors }}
