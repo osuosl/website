@@ -29,19 +29,19 @@ proprietary sourced projects or products please contact [info@amperecomputing.co
         <label for="edit-submitted-name">Name <span class="form-required" title="This field is required.">&ast;</span>
         </label>
         <input type="text" id="edit-submitted-name" name="name" value="" size="60" maxlength="128" class="form-text
-        required" />
+        required" required />
       </div>
       <div class="form-item webform-component webform-component-email" id="webform-component-email">
         <label for="edit-submitted-email">Email <span class="form-required" title="This field is required.">&ast;</span>
         </label>
         <input class="email form-text form-email required" type="email" id="edit-submitted-email" name="email"
-        size="60" />
+        size="60" required />
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-project-name">
         <label for="edit-submitted-project-name">Project Name <span class="form-required" title="This field is
         required.">&ast;</span></label>
         <input type="text" id="edit-submitted-project-name" name="project_name" value="" size="60" maxlength="128"
-        class="form-text required" />
+        class="form-text required" required />
         <div class="description">Name of the open source project or education institution this request will be
         supporting.</div>
       </div>
@@ -49,21 +49,22 @@ proprietary sourced projects or products please contact [info@amperecomputing.co
         <label for="edit-submitted-project-url">Project URL <span class="form-required" title="This field is
         required.">&ast; </span></label>
         <input type="text" id="edit-submitted-project-url" name="project_url" value="" size="60" maxlength="128"
-        class="form-text required" />
+        class="form-text required" required />
         <div class="description">Primary website URL for the open source project or education institution.</div>
       </div>
       <div class="form-item webform-component webform-component-textfield" id="webform-component-community-size">
         <label for="edit-submitted-community-size">Estimated Size of  User Community <span class="form-required"
         title="This field is required.">&ast;</span></label>
         <input type="text" id="edit-submitted-community-size" name="est_size_of_user_community" value="" size="60"
-        maxlength="128" class="form-text required" /> <div class="description">How many estimated users do you have in
+        maxlength="128" class="form-text required" required />
+        <div class="description">How many estimated users do you have in
         your community?</div>
       </div>
       <div class="form-item webform-component webform-component-textarea" id="webform-component-mission">
         <label for="edit-submitted-mission">Description of Project Mission <span class="form-required" title="This field
         is required.">&ast;</span></label>
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-mission"
-        name="description_of_project_mission" cols="60" rows="5" class="form-textarea required"></textarea></div>
+        name="description_of_project_mission" cols="60" rows="5" class="form-textarea required" required></textarea></div>
         <div class="description">Please describe in detail the mission and purpose of this request in regards to how
         the AARCH64 architecture will support your project. Also describe the
         general mission of your project.</div>
@@ -72,7 +73,7 @@ proprietary sourced projects or products please contact [info@amperecomputing.co
         <label for="edit-submitted-usage">Expected Usage Model <span class="form-required" title="This field is
         required.">&ast;</span></label>
         <div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-usage" name="expected_usage_model"
-        cols="60" rows="5" class="form-textarea required"></textarea></div>
+        cols="60" rows="5" class="form-textarea required" required></textarea></div>
         <div class="description">What types of activity will the machine be used for? (i.e. compile builds, performance
         testing, architecture troubleshooting, etc).</div>
       </div>
@@ -80,7 +81,7 @@ proprietary sourced projects or products please contact [info@amperecomputing.co
         <label for="edit-submitted-duration">Anticipated duration of need <span class="form-required" title="This field
         is required.">&ast;</span></label>
         <input type="text" id="edit-submitted-duration" name="anticipated_duration_of_need" value="" size="60"
-        maxlength="128" class="form-text required" />
+        maxlength="128" class="form-text required" required />
         <div class="description">How long do you expect you will need these resources? Ongoing or indefinitely are also
         acceptable answers.</div>
       </div>
@@ -105,7 +106,7 @@ proprietary sourced projects or products please contact [info@amperecomputing.co
         <label for="edit-submitted-flavor">Flavor <span class="form-required" title="This field is
         required.">&ast;</span>
         </label>
-        <select id="edit-submitted-flavor" name="flavor" class="form-select required">
+        <select id="edit-submitted-flavor" name="flavor" class="form-select required" required>
           <option value="None selected" selected="selected">- Select -</option>
           <option value="tiny">1 CPU, 512M RAM, 4G Disk</option>
           <option value="small">1 CPU, 1G RAM, 15G Disk</option>
@@ -119,13 +120,13 @@ proprietary sourced projects or products please contact [info@amperecomputing.co
         <label for="edit-submitted-num-nodes">Number of nodes <span class="form-required" title="This field is
         required.">&ast;</span></label>
         <input type="number" id="edit-submitted-num-nodes" name="number_of_nodes" value="1" min="1" step="any"
-        class="form-text form-number required" />
+        class="form-text form-number required" required />
         <div class="description">Estimated number of nodes (machines) you'd like to have.</div>
       </div>
       <div class="form-item webform-component webform-component-select" id="webform-component-distribution">
         <label for="edit-submitted-distribution">Distribution <span class="form-required" title="This field is
         required.">&ast;</span></label>
-        <select id="edit-submitted-distribution" name="distribution" class="form-select required">
+        <select id="edit-submitted-distribution" name="distribution" class="form-select required" required>
           <option value="None selected" selected="selected">- Select -</option>
           <option value="AlmaLinux">AlmaLinux</option>
           <option value="CentOS Steam">CentOS Stream</option>
@@ -157,7 +158,7 @@ proprietary sourced projects or products please contact [info@amperecomputing.co
         <label for="edit-submitted-ssh-key">SSH Public Key <span class="form-required" title="This field is
         required.">&ast;</span></label>
         <div class="form-textarea-wrapper resizable">
-          <textarea id="edit-submitted-ssh-key" name="ssh_public_key" cols="60" rows="5" class="form-textarea required"></textarea>
+          <textarea id="edit-submitted-ssh-key" name="ssh_public_key" cols="60" rows="5" class="form-textarea required" required></textarea>
         </div>
         <div class="description">Public SSH key to be used for initial access to the system.</div>
       </div>
@@ -167,17 +168,17 @@ proprietary sourced projects or products please contact [info@amperecomputing.co
       or via IRC in <b>#osuosl</b> on <a href="https://libera.chat/">Libera Chat</a>.</i></p>
       <div class="g-recaptcha" data-sitekey="6LeOugIAAAAAALZJU8MBrWbtN6NC9sMGCu8Xgb41"></div>
       <!-- Formsender Settings -->
-      <input type="hidden" name="last_name" value="" />
+      <input type="hidden" name="last_name" value="" required />
       <input type="hidden" name="token"
-        value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
+        value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" required />
       <!-- The following must be set to http://www.osuosl.org/services/powerdev/request_hosting in production -->
-      <input type="hidden" name="redirect" value="https://www.osuosl.org/form-submitted" />
-      <input type="hidden" name="mail_subject_prefix" value="New AARCH64 Hosting Request" />
-      <input type="hidden" name="mail_subject_key" value="project_name" />
-      <input type="hidden" name="send_to" value="AARCH64-Hosting" />
+      <input type="hidden" name="redirect" value="https://www.osuosl.org/form-submitted" required />
+      <input type="hidden" name="mail_subject_prefix" value="New AARCH64 Hosting Request" required />
+      <input type="hidden" name="mail_subject_key" value="project_name" required />
+      <input type="hidden" name="send_to" value="AARCH64-Hosting" required />
       <!-- /Formsender Settings -->
       <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op"
-      value="Submit" class="form-submit" /></div>
+      value="Submit" class="form-submit" required /></div>
     </div>
   </form>
 {{< /raw >}}

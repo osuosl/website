@@ -90,17 +90,17 @@ ticket system.
     </div>
     <div class="g-recaptcha" data-sitekey="6LeOugIAAAAAALZJU8MBrWbtN6NC9sMGCu8Xgb41"></div>
     <!-- Formsender Settings -->
-    <input type="hidden" name="last_name" value="" />
+    <input type="hidden" name="last_name" value="" required />
     <input type="hidden" name="token"
-        value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" />
+        value="F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G" required />
     <!-- The following must be set to http://www.osuosl.org/request-hosting in production -->
-    <input type="hidden" name="redirect" value="https://www.osuosl.org/form-submitted" />
-    <input type="hidden" name="mail_subject_prefix" value="New Hosting Request" />
-    <input type="hidden" name="mail_subject_key" value="project_name" />
-    <input type="hidden" name="send_to" value="HostingRequests" />
+    <input type="hidden" name="redirect" value="https://www.osuosl.org/form-submitted" required />
+    <input type="hidden" name="mail_subject_prefix" value="New Hosting Request" required />
+    <input type="hidden" name="mail_subject_key" value="project_name" required />
+    <input type="hidden" name="send_to" value="HostingRequests" required />
     <!-- /Formsender Settings -->
     <div class="form-actions form-wrapper" id="edit-actions">
-        <input type="submit" id="edit-submit" name="op" value="Submit" class="form-submit" />
+        <input type="submit" id="edit-submit" name="op" value="Submit" class="form-submit" required />
     </div>
 </form>
 {{< /raw >}}
