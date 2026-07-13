@@ -117,9 +117,11 @@ server-side Apache rules.
 
 ### Accessibility testing
 
-The site must conform to [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) (the ADA Title II web rule, which OSU requires of
-its units). CI runs [pa11y-ci](https://github.com/pa11y/pa11y-ci) (config: `.pa11yci.js`) as a blocking check over a
-representative page set, with **two runners, both fully enabled**:
+The site must conform to [WCAG 2.1 Level AA](https://www.w3.org/TR/WCAG21/): the Department of Justice's rule on digital
+accessibility under ADA Title II requires it of Oregon State University, with a compliance date of April 26, 2027 — see
+[OSU's New ADA Rule on Digital Accessibility](https://accessibility.oregonstate.edu/digital-accessibility/ada) page. CI
+runs [pa11y-ci](https://github.com/pa11y/pa11y-ci) (config: `.pa11yci.js`) as a blocking check over a representative
+page set, with **two runners, both fully enabled**:
 
 - [axe-core](https://github.com/dequelabs/axe-core) — actively maintained by Deque, analyzes fully rendered pages
   (including CSS custom properties), and is tuned for few false positives.
