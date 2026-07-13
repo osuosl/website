@@ -12,13 +12,17 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    // On the form-submitted page, drop the success heading/copy so the
+    // error alert is the whole story; the alert's heading becomes the
+    // page's h1 (visually small) to keep the heading structure valid.
+    var onSubmittedPage = false;
     var success = document.getElementById("form-success");
     if (success) {
+      onSubmittedPage = true;
       success.hidden = true;
-      // The static page is titled for the success case; correct it.
       var pageHeading = document.querySelector("main h1");
       if (pageHeading) {
-        pageHeading.textContent = "Form Not Submitted";
+        pageHeading.hidden = true;
       }
       document.title = document.title.replace("Form Submitted", "Form Not Submitted");
     }
@@ -27,8 +31,8 @@
     box.className = "alert alert-danger";
     box.setAttribute("role", "alert");
 
-    var heading = document.createElement("h3");
-    heading.className = "h5";
+    var heading = document.createElement(onSubmittedPage ? "h1" : "h2");
+    heading.className = "h5 alert-heading";
     heading.textContent = "An error occurred with your form submission";
     var message = document.createElement("p");
     message.textContent = "Error " + errorNumber + ": " + errorMessage;
