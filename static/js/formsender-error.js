@@ -15,6 +15,12 @@
     var success = document.getElementById("form-success");
     if (success) {
       success.hidden = true;
+      // The static page is titled for the success case; correct it.
+      var pageHeading = document.querySelector("main h1");
+      if (pageHeading) {
+        pageHeading.textContent = "Form Not Submitted";
+      }
+      document.title = document.title.replace("Form Submitted", "Form Not Submitted");
     }
 
     var box = document.createElement("div");

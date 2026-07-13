@@ -123,7 +123,7 @@ IBM. For proprietary sourced projects or products please use the
         <label for="edit-submitted-flavor">Flavor <span class="form-required" title="This field is
         required.">&ast;</span></label>
         <select id="edit-submitted-flavor" name="flavor" class="form-select required" required>
-          <option value="None selected" selected="selected">- Select -</option>
+          <option value="" selected="selected">- Select -</option>
           <option value="tiny">1 CPU, 512M RAM, 4G Disk</option>
           <option value="small">1 CPU, 1G RAM, 15G Disk</option>
           <option value="medium">2 CPU, 4G RAM, 30G Disk</option>
@@ -143,7 +143,7 @@ IBM. For proprietary sourced projects or products please use the
         <label for="edit-submitted-distribution">Distribution <span class="form-required" title="This field is
         required.">&ast;</span></label>
         <select id="edit-submitted-distribution" name="distribution" class="form-select required" required>
-          <option value="None selected" selected="selected">- Select -</option>
+          <option value="" selected="selected">- Select -</option>
           <option value="AlmaLinux">AlmaLinux</option>
           <option value="CentOS Stream">CentOS Stream</option>
           <option value="Debian">Debian</option>
@@ -161,7 +161,7 @@ IBM. For proprietary sourced projects or products please use the
       <div class="form-item webform-component webform-component-select" id="webform-component-openstack-access">
         <label for="edit-submitted-openstack-access">OpenStack Access </label>
         <select id="edit-submitted-openstack-access" name="openstack_access" class="form-select">
-          <option value="None selected" selected="selected">- None -</option>
+          <option value="" selected="selected">- None -</option>
           <option value="Have the OSL create the node(s) for me">Have the OSL create the node(s) for me</option>
           <option value="I'd like to have access to the Openstack GUI/API">I&#039;d like to have access to the
           Openstack GUI/API</option>
