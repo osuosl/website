@@ -35,6 +35,17 @@ module.exports = {
       // computed contrast for the white text is >= 7.2:1 (see the scrim
       // comment in assets/scss/_madrone.scss).
       ".hero .container-site",
+      // Bootstrap selects: the dropdown chevron is a background-image
+      // (data: SVG pinned to the right edge), and any background image
+      // makes axe report contrast as unverifiable (messageKey bgImage,
+      // computed ratio 0) even though the text sits on the solid
+      // $input-bg with 2.25rem of padding reserved for the chevron.
+      // Text and background are the same tokens (--bs-body-color on
+      // --bs-body-bg) that both runners fully verify on .form-control
+      // inputs on the same pages, so a token regression still fails the
+      // scan. Re-check this exception if .form-select ever gets its own
+      // colors.
+      ".form-select",
     ].join(", "),
   },
   urls: [

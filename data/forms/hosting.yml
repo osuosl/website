@@ -1,0 +1,47 @@
+# General hosting request form (content/services/hosting/request.md).
+# Field `name` keys are the formsender POST parameters — never change
+# them; the ticket templates on the formsender side key on them.
+send_to: HostingRequests
+subject_prefix: New Hosting Request
+fields:
+  - name: name
+    label: Name
+    required: true
+    autocomplete: name
+  - name: email
+    label: Email
+    type: email
+    required: true
+    autocomplete: email
+  - name: project_name
+    label: Project Name
+    required: true
+  - name: project_url
+    label: Project URL
+    required: true
+  - name: software_license
+    label: Software License
+    required: true
+    description: What software license does your project primarily use?
+  - name: est_size_of_user_community
+    label: Estimated size of user community
+    required: true
+  - name: other_pertinent_information_about_project
+    label: Other pertinent information about your project?
+    type: textarea
+  - name: requested_services_hosting
+    label: The type(s) of server(s) or service(s) you are requesting hosting for, if applicable.
+    type: textarea
+    required: true
+  - name: service_purpose
+    label: The purpose of said server or service (will it be Web, development, etc?).
+    type: textarea
+    required: true
+  - name: estimated_bandwidth_usage
+    label: Your estimated bandwidth usage.
+    required: true
+  - name: possible_contributions_to_cover_costs
+    label: Contributions that you may be able to make to cover costs.
+    required: true
+    description:
+      We realize that most projects are not in a position to help cover the costs, but any contribution certainly helps!
