@@ -133,6 +133,18 @@ the light-mode active-nav contrast; HTML CodeSniffer flagged the required-asteri
 skip. When the runners disagree, fix the issue or document a narrowly-scoped exception with a comment in `.pa11yci.js` —
 the config intentionally contains no ignored rules.
 
+Two kinds of result get different treatment, and the distinction matters:
+
+- **Proven violations fail the build.** No exceptions.
+- **"Needs review" results are capped at warning** (`levelCapWhenNeedsReview`). These are cases axe could not measure
+  rather than failures it found — mainly contrast where an image sits behind or on the element (the hero photo, the
+  chevron Bootstrap draws on every `<select>`). They stay visible in the CI output, and the manual contrast sweep in the
+  QA checklist below is what actually clears them.
+
+Prefer that cap over `hideElements`, which drops the element from the DOM both runners see and therefore deletes _all_
+coverage of it — an unlabeled `<select>` would sail through. `hideElements` is reserved for markup we cannot fix at all
+(the third-party reCAPTCHA widget).
+
 To run the scan locally:
 
 ```bash

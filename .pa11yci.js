@@ -16,11 +16,29 @@ module.exports = {
     chromeLaunchConfig: {
       args: ["--no-sandbox", "--disable-dev-shm-usage"],
     },
+    // axe reports two kinds of result: "violations" (it proved a failure)
+    // and "incomplete" (it could not decide and a human must look). pa11y
+    // folds both into errors by default, which would fail the build on
+    // things axe merely could not measure — notably contrast anywhere an
+    // image sits behind or on the element: the hero's photo, and the
+    // chevron background-image Bootstrap draws on every .form-select.
+    //
+    // Capping needs-review at "warning" keeps every rule enabled on every
+    // element and still fails the build on proven violations, while the
+    // undecidable ones stay visible in the CI output instead of blocking
+    // it. This replaces hiding those elements: hideElements drops the
+    // element from the DOM both runners see, so it silently deletes ALL
+    // coverage of it (an unlabeled select would have gone undetected).
+    // What axe cannot measure is covered instead by the manual contrast
+    // sweep in the README's QA checklist, and for the selects by a
+    // computed-contrast assertion in both color modes.
+    levelCapWhenNeedsReview: "warning",
     hideElements: [
       // Google reCAPTCHA widget internals: a third-party, cross-origin
       // iframe we cannot modify (it also ships a hidden unlabeled
       // textarea). Google provides the accessible audio challenge inside
-      // the widget itself.
+      // the widget itself. Unlike the cases above, this is not a
+      // "cannot measure" — it is a "cannot fix", so it stays hidden.
       // NOTE: these exceptions are specific to the v2 checkbox widget.
       // If the forms move to reCAPTCHA v3 (invisible), remove these,
       // re-run the scan, and re-add only what still fires — likely just
@@ -29,23 +47,6 @@ module.exports = {
       ".g-recaptcha",
       "iframe[src*='recaptcha']",
       "#g-recaptcha-response",
-      // Hero text over a photo: axe cannot compute contrast when an image
-      // is behind text, so it reports "must verify" as an error. The hero
-      // has a 66% dark scrim; even over pure-white image pixels the
-      // computed contrast for the white text is >= 7.2:1 (see the scrim
-      // comment in assets/scss/_madrone.scss).
-      ".hero .container-site",
-      // Bootstrap selects: the dropdown chevron is a background-image
-      // (data: SVG pinned to the right edge), and any background image
-      // makes axe report contrast as unverifiable (messageKey bgImage,
-      // computed ratio 0) even though the text sits on the solid
-      // $input-bg with 2.25rem of padding reserved for the chevron.
-      // Text and background are the same tokens (--bs-body-color on
-      // --bs-body-bg) that both runners fully verify on .form-control
-      // inputs on the same pages, so a token regression still fails the
-      // scan. Re-check this exception if .form-select ever gets its own
-      // colors.
-      ".form-select",
     ].join(", "),
   },
   urls: [
