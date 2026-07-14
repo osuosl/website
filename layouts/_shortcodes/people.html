@@ -1,0 +1,28 @@
+{{- /*
+  Staff roster from data/people.yml. Each entry renders as a section
+  whose id preserves the page's long-standing heading anchors
+  (#lance-albertson etc.).
+  */
+-}}
+{{ range site.Data.people }}
+  <section class="person" id="{{ .id }}">
+    <h2><a href="#{{ .id }}">{{ .name }}</a></h2>
+    <p class="person-role">{{ .role }}</p>
+    {{ partial "responsive-image.html" (dict "src" .photo "alt" .name "class" "img-right-people") }}
+    {{ $.Page.RenderString (dict "display" "block") .bio }}
+    <dl class="person-contact">
+      {{ with .email }}
+        <dt>Email</dt>
+        <dd>{{ . }}</dd>
+      {{ end }}
+      {{ with .github }}
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/{{ . }}">github.com/{{ . }}</a></dd>
+      {{ end }}
+      {{ with .irc }}
+        <dt>Nick on irc.libera.chat</dt>
+        <dd>{{ . }}</dd>
+      {{ end }}
+    </dl>
+  </section>
+{{ end }}

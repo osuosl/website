@@ -1,0 +1,78 @@
+# Staff listed on /about/people. Keys: name, id (heading anchor — keep
+# stable, links point at these), role, photo, bio (markdown), and
+# optional email (spelled out to deter scrapers), github (username),
+# irc (nick on irc.libera.chat).
+- name: Lance Albertson
+  id: lance-albertson
+  role: Director
+  photo: /images/lalbertson.jpg
+  email: lance-at-osuosl-dot-org
+  github: ramereth
+  irc: Ramereth
+  bio:
+    "[Lance](https://github.com/ramereth) became OSL director in early 2013. He has managed all of the hosting
+    activities that the OSL provides for more than 160 high-profile open source projects since joining the lab as lead
+    systems administrator and architect in 2007. Lance's involvement in the open source community began in 2003, when he
+    became a developer and package maintainer with [Gentoo Linux](http://gentoo.org). Prior to joining the OSL, Lance
+    was a UNIX Administrator for the Enterprise Server Technologies group at [Kansas State University](http://ksu.edu).
+    In his free time he helps organize [Beaver BarCamp](http://beaverbarcamp.org), and enjoys playing the trumpet and
+    spending time with his family."
+- name: Oria Weng
+  id: oria-weng
+  role: Student Systems Engineer
+  photo: /images/o.webp
+  github: ArtofBugs
+  irc: oweng
+  bio:
+    Oria has been excited about open-source software from far too young an age, so no one should have told her there was
+    an Open Source Lab right at OSU! In all seriousness, she started at the OSL in November 2022 as a way to further
+    explore computer science and get involved in the open-source community. When not learning new ways to play on
+    computers, she dabbles in digital drawing, board games, and animation.
+- name: Johnathon Rohweder
+  id: johnathon-rohweder
+  role: Student Systems Engineer
+  photo: /images/johnathon.jpg
+  github: Thats-Neat
+  bio:
+    Johnathon joined the OSL in October 2024. He's been programming and exploring the field of Computer Science since
+    middle school, and enjoys learning about Cybersecurity, Web Development, and Linux. When he's not learning about
+    Computer Science he enjoys hiking and astrophotography.
+- name: Hollister Mala
+  id: hollister-mala
+  role: Student Systems Engineer
+  photo: /images/hollister.jpg
+  github: hollistermala
+  irc: hollistermala
+  bio:
+    Hollister joined the OSL in July, 2025 after graduating from High School. He will be studying Computer Science at
+    OSU starting in the Fall. Hollister first started using open-source software to setup game servers and to make old
+    laptops functional again. By 2020, he was using open-source software for almost all of his computers and servers.
+    Hollister also enjoys Robotics, Cybersecurity and 3D Printing.
+- name: Tiffany Chang
+  id: tiffany-chang
+  role: Student Systems Engineer
+  photo: /images/tchang.jpg
+  github: tffnychng
+  irc: changtif
+  bio:
+    Tiffany joined the OSL in July, 2025 as a sophomore to build up her programming skills and explore the open source
+    community. Within computer science, she's excited about web development and computer graphics. In her free time,
+    Tiffany enjoys making digital art and listening to new music.
+- name: Ally Aoki
+  id: ally-aoki
+  role: Student Systems Engineer
+  photo: /images/aokial.jpg
+  github: aokiam
+  bio:
+    Ally joined the OSL in July, 2025 as a junior to hone their skills while learning more about different aspects of
+    computer science. With their focus in computer systems, Ally enjoys embedded systems and working with hardware such
+    as microcontrollers. Outside of school, Ally enjoys editing videos, video games, and cooking.
+- name: Ankit Malhotra
+  id: ankit-malhotra
+  role: Student Systems Engineer
+  photo: /images/amalhotra.jpg
+  github: bredisrising
+  bio:
+    Ankit joined the OSL as a sophomore in July 2025 to learn and explore the fascinating infrastructure behind the open
+    source community. Outside of school, he stays busy learning about AI, reading, playing video games, and staying
+    active with tennis and the gym.
