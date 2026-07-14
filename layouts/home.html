@@ -40,7 +40,7 @@
       {{ $founded := time.AsTime site.Params.founded }}
       {{ $years := sub now.Year $founded.Year }}
       {{ if lt (now.Format "01-02") ($founded.Format "01-02") }}{{ $years = sub $years 1 }}{{ end }}
-      {{ $currentProjects := sub (len site.Data.projects) (len (where site.Data.projects "status" "former")) }}
+      {{ $currentProjects := sub (len site.Data.projects.hosted) (len (where site.Data.projects.hosted "status" "former")) }}
       <div class="row g-4 text-center">
         {{ range site.Data.stats }}
           {{ $number := .number }}
@@ -96,7 +96,7 @@
         {{ end }}
       </div>
       <p class="mt-3 mb-0">
-        {{ $currentProjects := sub (len site.Data.projects) (len (where site.Data.projects "status" "former")) }}
+        {{ $currentProjects := sub (len site.Data.projects.hosted) (len (where site.Data.projects.hosted "status" "former")) }}
         <a href="{{ "projects/" | relURL }}">See all {{ $currentProjects }} hosted projects &rarr;</a>
       </p>
     </div>
