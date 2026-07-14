@@ -1,2 +1,7 @@
 {{- $ext := strings.HasPrefix .Destination "http" -}}
-<a href="{{ .Destination | safeURL }}" {{ if $ext }}rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- /* Links are inline: the trailing {{- trim keeps the file's final
+  newline out of the output, which would otherwise render as a space
+  between the link and any punctuation right after it. */
+-}}
+<a href="{{ .Destination | safeURL }}" {{ if $ext }}rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a
+>{{- "" -}}
