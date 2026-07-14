@@ -12,12 +12,12 @@ Below are a list of currently hosted OpenPOWER projects and our OpenPOWER academ
 
 ## FOSS Projects {#foss-projects}
 
-{{< project_table file="powerdev_open_source_projects" table_title="FOSS Projects" >}}
+{{< project_table data="powerdev" category="foss" title="FOSS Projects" >}}
 
 ## Academic Partners {#academic-partners}
 
-{{< project_table file="powerdev_academic_partners" table_title="Academic Partners" >}}
+{{< project_table data="powerdev" category="academic" title="Academic Partners" >}}
 
 ## OpenPOWER GPU Projects {#openpower-gpu-projects}
 
-{{< project_table file="powerdev_gpu_projects" table_title="OpenPOWER GPU Projects" >}}
+{{< project_table data="powerdev" category="gpu" title="OpenPOWER GPU Projects" >}}

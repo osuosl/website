@@ -1,0 +1,1046 @@
+# Projects hosted by the OSL (general hosting: VMs, mirroring,
+# mailing lists, co-location, CI/CD, web apps).
+# Keys: name, services (list of service tags), status (omit for
+# current projects, 'former' for previously hosted ones).
+- name: Abyss OS
+  services:
+    - aarch64
+    - powerpc
+- name: AlmaLinux
+  services:
+    - aarch64
+    - powerpc
+- name: Alpine Linux
+  services:
+    - powerpc
+- name: Amahi
+  services:
+    - vm
+- name: Amazon Corretto
+  services:
+    - powerpc
+- name: Anaconda
+  services:
+    - aarch64
+    - powerpc
+- name: Antrea
+  services:
+    - aarch64
+- name: Apache Software Foundation
+  services:
+    - powerpc
+- name: Apereo
+  services:
+    - vm
+- name: Arch Linux
+  services:
+    - mirroring
+- name: Armbian
+  services:
+    - aarch64
+- name: Artizyou
+  services:
+    - vm
+- name: Bazel
+  services:
+    - powerpc
+- name: BearSSL
+  services:
+    - powerpc
+- name: BioJS
+  services:
+    - vm
+    - webapp
+- name: Blockchain
+  services:
+    - powerpc
+- name: BlueMika
+  services:
+    - powerpc
+- name: Briar
+  services:
+    - ci-cd
+- name: Bro
+  services:
+    - vm
+- name: Buildbot
+  services:
+    - vm
+- name: Buildroot
+  services:
+    - vm
+    - mailing-list
+    - ci-cd
+- name: BusyBox
+  services:
+    - vm
+    - mailing-list
+- name: Cacti
+  services:
+    - co-location
+  status: former
+- name: cdxgen
+  services:
+    - vm
+    - powerpc
+- name: Census Reporter
+  services:
+    - vm
+- name: CentOS Linux
+  services:
+    - mirroring
+- name: Checkpoint-restore
+  services:
+    - powerpc
+- name: Chimera Linux
+  services:
+    - aarch64
+    - powerpc
+- name: Cinc Project
+  services:
+    - vm
+    - aarch64
+    - powerpc
+    - mirroring
+- name: CiviCRM
+  services:
+    - vm
+- name: ClickHouse
+  services:
+    - powerpc
+- name: Cloud Foundry
+  services:
+    - powerpc
+- name: CPAN
+  services:
+    - mirroring
+- name: Cppcheck
+  services:
+    - vm
+- name: CRAN
+  services:
+    - mirroring
+- name: CRIU
+  services:
+    - powerpc
+- name: crosstool-NG
+  services:
+    - vm
+- name: Cryptography
+  services:
+    - powerpc
+- name: CVPM
+  services:
+    - vm
+- name: Cyber-Complex Foundation
+  services:
+    - mirroring
+- name: Cygwin
+  services:
+    - mirroring
+- name: Darcs
+  services:
+    - vm
+    - mailing-list
+- name: Debian Linux
+  services:
+    - co-location
+    - mirroring
+- name: Debian OpenQA
+  services:
+    - vm
+    - ci-cd
+- name: Debian Ports
+  services:
+    - vm
+- name: Debian RISCV
+  services:
+    - ci-cd
+- name: Deeplearning4j
+  services:
+    - powerpc
+- name: Deluge
+  services:
+    - vm
+    - mirroring
+- name: Delve
+  services:
+    - powerpc
+- name: Django
+  services:
+    - vm
+- name: Docker Matrix
+  services:
+    - powerpc
+- name: Docker
+  services:
+    - powerpc
+- name: DotFile-HPC
+  services:
+    - powerpc
+- name: Drupal
+  services:
+    - co-location
+    - vm
+    - mirroring
+- name: EasyBuild
+  services:
+    - powerpc
+- name: Eclipse Communication Framework
+  services:
+    - vm
+- name: Eclipse
+  services:
+    - mirroring
+- name: Eclipse OMR
+  services:
+    - powerpc
+- name: Eclipse OpenJ9
+  services:
+    - powerpc
+- name: Eclipse Adoptium
+  services:
+    - aarch64
+- name: Eclipse Platform
+  services:
+    - powerpc
+    - aarch64
+- name: Eigen
+  services:
+    - powerpc
+- name: Elastic Beats
+  services:
+    - powerpc
+- name: ELENA LANG
+  services:
+    - powerpc
+- name: Elgg
+  services:
+    - vm
+- name: eLinux
+  services:
+    - webapp
+    - mailing-list
+- name: ELRepo
+  services:
+    - mirroring
+    - aarch64
+- name: Enlightenment
+  services:
+    - vm
+- name: Evolution Groupware Suite
+  services:
+    - mailing-list
+- name: Falco
+  services:
+    - powerpc
+- name: F-Droid
+  services:
+    - ci-cd
+- name: Fedora Copr
+  services:
+    - powerpc
+    - vm
+- name: Fedora Linux
+  services:
+    - co-location
+    - mirroring
+- name: Fedora RISCV
+  services:
+    - ci-cd
+- name: FFmpeg
+  services:
+    - powerpc
+- name: Finnix
+  services:
+    - mirroring
+- name: Firefox
+  services:
+    - powerpc
+- name: Firefox JIT
+  services:
+    - powerpc
+- name: FOSDEM
+  services:
+    - mirroring
+- name: Fosshost
+  services:
+    - co-location
+  status: former
+- name: FOSS Translation
+  services:
+    - vm
+- name: FreeBSD
+  services:
+    - powerpc
+- name: Freedesktop.org
+  services:
+    - vm
+    - ci-cd
+- name: Freedroid
+  services:
+    - vm
+    - mirroring
+- name: Funtoo Linux
+  services:
+    - mirroring
+- name: GCC/Clang
+  services:
+    - powerpc
+- name: GCC Compile Farm Project
+  services:
+    - co-location
+    - ci-cd
+    - powerpc
+    - aarch64
+- name: GCC Fortran
+  services:
+    - powerpc
+- name: GenPi64
+  services:
+    - aarch64
+- name: Gentoo Linux
+  services:
+    - co-location
+    - vm
+    - mirroring
+    - powerpc
+    - aarch64
+- name: Ginga Middleware
+  services:
+    - powerpc
+- name: Glassbeats
+  services:
+    - webapp
+- name: GNOME
+  services:
+    - co-location
+    - vm
+    - mirroring
+    - ci-cd
+    - aarch64
+- name: GNU Assembly
+  services:
+    - vm
+- name: GNU Radio
+  services:
+    - vm
+- name: godon
+  services:
+    - vm
+- name: Go Language
+  services:
+    - powerpc
+- name: Grml
+  services:
+    - mirroring
+- name: grommunio
+  services:
+    - powerpc
+- name: GSB (Gnome.SlackBuild)
+  services:
+    - mirroring
+- name: Hackage
+  services:
+    - mirroring
+- name: Hadoop Spark
+  services:
+    - powerpc
+- name: Haiku
+  services:
+    - mirroring
+- name: Harmony Agreements
+  services:
+    - mailing-list
+- name: HELICS
+  services:
+    - ci-cd
+    - aarch64
+- name: Heptapod
+  services:
+    - ci-cd
+    - aarch64
+- name: heyoka
+  services:
+    - powerpc
+- name: HHVM
+  services:
+    - mirroring
+    - powerpc
+- name: Hortonworks Data Platform
+  services:
+    - powerpc
+- name: Hush
+  services:
+    - vm
+- name: Inkscape
+  services:
+    - vm
+    - mailing-list
+- name: INRIA
+  services:
+    - powerpc
+- name: Istio
+  services:
+    - powerpc
+- name: Jaws
+  services:
+    - vm
+    - mailing-list
+- name: Jenkins
+  services:
+    - mailing-list
+    - mirroring
+- name: Jitesoft
+  services:
+    - aarch64
+- name: Jupyter / Base-notebook
+  services:
+    - powerpc
+- name: Kernel.org
+  services:
+    - co-location
+  status: former
+- name: K0S
+  services:
+    - aarch64
+- name: K-3D
+  services:
+    - vm
+- name: Kali Linux
+  services:
+    - aarch64
+    - mirroring
+- name: KDE
+  services:
+    - vm
+    - mirroring
+- name: Kodi
+  services:
+    - vm
+- name: Kube-burner
+  services:
+    - powerpc
+- name: Kubeflow
+  services:
+    - ci-cd
+    - powerpc
+- name: LDC
+  services:
+    - powerpc
+- name: LFS (Linux From Scratch)
+  services:
+    - mirroring
+- name: libGD
+  services:
+    - powerpc
+- name: libjpeg-turbo
+  services:
+    - powerpc
+- name: liboqs
+  services:
+    - powerpc
+- name: libpng
+  services:
+    - mirroring
+- name: LibreHealth
+  services:
+    - vm
+- name: libvirt
+  services:
+    - vm
+- name: libvpx
+  services:
+    - powerpc
+- name: LIBXSMM
+  services:
+    - powerpc
+- name: LineageOS
+  services:
+    - ci-cd
+- name: linhes
+  services:
+    - vm
+- name: LinuxChix
+  services:
+    - vm
+- name: Linux Driver Project
+  services:
+    - webapp
+    - mailing-list
+- name: Linux Foundation
+  services:
+    - vm
+- name: Linux Fund
+  services:
+    - vm
+- name: Linux Kernel (BPF memory model development)
+  services:
+    - powerpc
+- name: Linux Kernel (compile and boot testing)
+  services:
+    - powerpc
+- name: Linux Kernel (powerpc arch development)
+  services:
+    - powerpc
+- name: Linux Kernel (Various Kernel Developers)
+  services:
+    - powerpc
+- name: Linux NFSD Testing and Development
+  services:
+    - powerpc
+- name: Linux Plumbers Conference
+  services:
+    - vm
+    - mailing-list
+- name: Linux Standard Base
+  services:
+    - powerpc
+- name: LLVM
+  services:
+    - powerpc
+- name: LLVM BOLT
+  services:
+    - powerpc
+- name: LTTng
+  services:
+    - powerpc
+- name: LuneOS
+  services:
+    - mailing-list
+- name: Lynx
+  services:
+    - powerpc
+- name: LyX
+  services:
+    - vm
+- name: MacPorts
+  services:
+    - vm
+- name: Mageia
+  services:
+    - vm
+- name: Mandriva Users
+  services:
+    - vm
+- name: Manjaro Linux
+  services:
+    - mirroring
+- name: Manulix
+  services:
+    - mirroring
+- name: MariaDB
+  services:
+    - mirroring
+- name: Mesos
+  services:
+    - powerpc
+- name: Midnight Commander
+  services:
+    - vm
+    - mirroring
+- name: Milvus
+  services:
+    - powerpc
+- name: Minio
+  services:
+    - aarch64
+- name: MongoDB
+  services:
+    - powerpc
+- name: Monitoring-plugins
+  services:
+    - mirroring
+- name: Monkey Server
+  services:
+    - vm
+- name: Moonjit
+  services:
+    - powerpc
+- name: Mozdev
+  services:
+    - vm
+- name: Mozilla
+  services:
+    - powerpc
+- name: Mozillazine
+  services:
+    - co-location
+    - vm
+- name: MRCC
+  services:
+    - powerpc
+- name: Mulgara
+  services:
+    - vm
+    - mailing-list
+- name: MULTOVL
+  services:
+    - powerpc
+- name: Mumble
+  services:
+    - aarch64
+- name: Musescore
+  services:
+    - mirroring
+- name: Mutt
+  services:
+    - mirroring
+    - mailing-list
+    - webapp
+- name: MX Linux
+  services:
+    - mirroring
+- name: Mycroft Project
+  services:
+    - webapp
+- name: MythTV
+  services:
+    - vm
+    - mirroring
+- name: Mythubuntu
+  services:
+    - mirroring
+- name: NAS-Admin
+  services:
+    - co-location
+    - mirroring
+- name: .Net
+  services:
+    - powerpc
+- name: Nettle
+  services:
+    - powerpc
+- name: Nix
+  services:
+    - powerpc
+    - aarch64
+- name: Node.js
+  services:
+    - powerpc
+    - aarch64
+- name: NTPSEC
+  services:
+    - vm
+- name: NumPy
+  services:
+    - powerpc
+- name: Nvidia-docker
+  services:
+    - powerpc
+- name: OCaml
+  services:
+    - powerpc
+    - aarch64
+- name: OCM
+  services:
+    - powerpc
+- name: OFTC
+  services:
+    - vm
+- name: Open Advice
+  services:
+    - webapp
+- name: OpenBLAS
+  services:
+    - powerpc
+- name: OpenBMC
+  services:
+    - powerpc
+- name: OpenBSD
+  services:
+    - ci-cd
+- name: Open-CE
+  services:
+    - powerpc
+- name: OpenCV
+  services:
+    - powerpc
+- name: OpenDev
+  services:
+    - aarch64
+- name: OpenFAAS
+  services:
+    - aarch64
+- name: open-fcoe
+  services:
+    - vm
+    - mailing-list
+    - mirroring
+- name: Open Hatch
+  services:
+    - vm
+- name: OpenID
+  services:
+    - webapp
+    - mailing-list
+- name: OpenJDK
+  services:
+    - powerpc
+- name: open-lldp
+  services:
+    - vm
+    - mailing-list
+- name: OpenMandriva
+  services:
+    - aarch64
+    - powerpc
+- name: OpenMRS
+  services:
+    - vm
+    - webapp
+    - mirroring
+- name: OpenQuake
+  services:
+    - powerpc
+- name: Open Quantum Safe
+  services:
+    - powerpc
+- name: OpenSearch Project
+  services:
+    - powerpc
+- name: OpenShift
+  services:
+    - powerpc
+- name: OpenSSL
+  services:
+    - powerpc
+- name: OpenStreetMap
+  services:
+    - co-location
+    - vm
+    - mirroring
+- name: OpenVox packages
+  services:
+    - webapp
+- name: OpenWRT
+  services:
+    - ci-cd
+- name: OpenZFS
+  services:
+    - webapp
+    - powerpc
+    - aarch64
+    - vm
+- name: Oreon Linux
+  services:
+    - mirroring
+    - aarch64
+- name: OrientDB
+  services:
+    - powerpc
+- name: OSDV
+  services:
+    - vm
+- name: OSGeo
+  services:
+    - co-location
+    - vm
+- name: OSMC
+  services:
+    - aarch64
+- name: PA-RISC
+  services:
+    - co-location
+    - vm
+- name: Parrot
+  services:
+    - vm
+    - mailing-list
+    - mirroring
+- name: Peeragogy
+  services:
+    - vm
+    - mailing-list
+- name: Pentoo Linux
+  services:
+    - mirroring
+- name: Peregrine
+  services:
+    - vm
+- name: perfbook
+  services:
+    - powerpc
+- name: Perl CPAN Testers
+  services:
+    - vm
+- name: Persistent SI-HTM
+  services:
+    - powerpc
+- name: PersonalTelco
+  services:
+    - co-location
+- name: pgFirstAid
+  services:
+    - vm
+- name: phpBB
+  services:
+    - vm
+    - mirroring
+- name: PicaLibre
+  services:
+    - vm
+- name: Pipcook
+  services:
+    - ci-cd
+- name: Plan 9 Foundation
+  services:
+    - vm
+    - mirroring
+- name: postgreSQL
+  services:
+    - powerpc
+- name: Power Devops
+  services:
+    - powerpc
+- name: PowerPC Notebook
+  services:
+    - powerpc
+- name: PQ Code Package
+  services:
+    - powerpc
+- name: Presto
+  services:
+    - powerpc
+- name: Privly
+  services:
+    - webapp
+- name: Project Quay
+  services:
+    - powerpc
+- name: Python Software Foundation
+  services:
+    - co-location
+    - vm
+    - webapp
+- name: PyTorch
+  services:
+    - powerpc
+- name: QEMU
+  services:
+    - vm
+- name: Rainmeter
+  services:
+    - vm
+- name: Ransomware-Emulation
+  services:
+    - powerpc
+- name: RDKit
+  services:
+    - powerpc
+- name: RebornOS
+  services:
+    - aarch64
+    - mirroring
+- name: Red Hat CoreOS
+  services:
+    - powerpc
+- name: RefPerSys
+  services:
+    - powerpc
+- name: Replicant
+  services:
+    - webapp
+    - mailing-list
+    - mirroring
+- name: Replica.one
+  services:
+    - ci-cd
+    - vm
+- name: Reproducible builds
+  services:
+    - ci-cd
+    - powerpc
+- name: Robot Operating System
+  services:
+    - vm
+    - mailing-list
+    - mirroring
+- name: Rocky Linux
+  services:
+    - powerpc
+    - aarch64
+- name: RPM Fusion
+  services:
+    - powerpc
+- name: RPM
+  services:
+    - mailing-list
+    - mirroring
+- name: RTEMS
+  services:
+    - co-location
+- name: Ruby
+  services:
+    - powerpc
+- name: Rust
+  services:
+    - powerpc
+- name: Rust Exploit Mitigations
+  services:
+    - powerpc
+- name: Sahana Foundation
+  services:
+    - vm
+    - webapp
+    - mirroring
+- name: Salix Linux
+  services:
+    - mirroring
+- name: SciPy
+  services:
+    - powerpc
+- name: SHA-3
+  services:
+    - powerpc
+- name: SharkLinux
+  services:
+    - vm
+- name: SIMD Info/AI
+  services:
+    - powerpc
+- name: sire
+  services:
+    - powerpc
+- name: Skytable
+  services:
+    - aarch64
+- name: Slackware
+  services:
+    - vm
+    - mirroring
+- name: Snappy
+  services:
+    - powerpc
+- name: Snowpatch
+  services:
+    - powerpc
+- name: Software Freedom Conservatory
+  services:
+    - vm
+- name: Spack
+  services:
+    - aarch64
+    - powerpc
+- name: Strimzi
+  services:
+    - powerpc
+- name: Sourceware
+  services:
+    - aarch64
+    - vm
+    - co-location
+- name: sqlite
+  services:
+    - powerpc
+- name: Swift
+  services:
+    - powerpc
+- name: SWI-Prolog
+  services:
+    - vm
+- name: Tahoe LAFS
+  services:
+    - mailing-list
+- name: tcpdump/libpcap
+  services:
+    - vm
+    - ci-cd
+    - powerpc
+    - aarch64
+- name: Teaching Open Source
+  services:
+    - vm
+    - webapp
+    - mirroring
+- name: Tesseract-OCR
+  services:
+    - powerpc
+- name: The Documentation Foundation
+  services:
+    - mirroring
+- name: The Julia Language
+  services:
+    - powerpc
+- name: The NetBSD Foundation
+  services:
+    - aarch64
+    - powerpc
+- name: The Tor Project
+  services:
+    - aarch64
+- name: Tobin's Linux kernel
+  services:
+    - powerpc
+- name: Travis-CI
+  services:
+    - powerpc
+- name: Trinity Rescue Kit
+  services:
+    - mirroring
+- name: Trisquel Linux
+  services:
+    - mirroring
+- name: trivy
+  services:
+    - powerpc
+- name: Tucana Linux
+  services:
+    - mirroring
+- name: Ubuntu
+  services:
+    - mirroring
+- name: uClibc
+  services:
+    - mailing-list
+- name: UEK Maple Tree
+  services:
+    - powerpc
+- name: Unres
+  services:
+    - powerpc
+- name: Vertex Linux
+  services:
+    - mirroring
+- name: Vector Linux
+  services:
+    - mirroring
+- name: VideoLAN
+  services:
+    - mirroring
+    - powerpc
+    - ci-cd
+- name: vLLM
+  services:
+    - powerpc
+- name: WebDAV
+  services:
+    - vm
+- name: X2go
+  services:
+    - powerpc
+- name: Xenia
+  services:
+    - powerpc
+- name: Xen Project
+  services:
+    - aarch64
+- name: XBMC
+  services:
+    - mirroring
+- name: Xiph
+  services:
+    - co-location
+    - mirroring
+- name: Yocto
+  services:
+    - co-location
+  status: former
+- name: Yum
+  services:
+    - vm
+    - mirroring
+- name: Zig
+  services:
+    - aarch64
+    - powerpc

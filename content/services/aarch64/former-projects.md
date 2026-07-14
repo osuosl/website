@@ -4,4 +4,4 @@ title: Formerly Hosted Projects
 
 Below are a list of formerly hosted AARCH64 projects
 
-{{< project_table file="aarch64_former_open_source_projects" table_title="Former FOSS Projects" >}}
+{{< project_table data="aarch64" status="former" title="Former FOSS Projects" >}}

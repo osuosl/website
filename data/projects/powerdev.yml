@@ -1,278 +1,370 @@
+# Projects using the POWER development environment.
+# Keys: name, description, category (foss | academic | gpu), status
+# (omit for current projects, 'former' for previously hosted ones).
 - name: Abyss OS
   description:
     An experimental distribution that aims to provide a flexible ecosystem based on pure-llvm and musl userland
+  category: foss
 - name: AlmaLinux
-  description:
+  description: >-
     An Open Source, community-governed and forever-free enterprise Linux distribution, focused on long-term stability,
     providing a robust production-grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL and pre-Stream CentOS.
+  category: foss
 - name: Alpine Linux
-  description:
+  description: >-
     For the past year, I've been working on porting the .NET framework to musl based platforms like Alpine Linux. While
     aarch64, armv7 and x86_64 and s390x are now well supported, ppc64le is still needing some work and optimizations. As
     I don't have access to a ppc64le machine, it is very hard for me to diagnose issues.
+  category: foss
 - name: Amazon Corretto
-  description:
+  description: >-
     Corretto is Amazon's OpenJDK distribution. Our mission is to make Shenandoah the best garbage collector it can be,
     on every platform.
+  category: foss
 - name: Anaconda
-  description:
+  description: >-
     Installation program used by Fedora, RHEL, and others; uses POWER support for Continuous Integration and development
+  category: foss
 - name: Ansible Molecule
   description: Framework for testing Ansible roles and playbooks
+  category: foss
 - name: Apache Bigtop
-  description:
+  description: >-
     An Apache Foundation project for Infrastructure Engineers and Data Scientists looking for comprehensive packaging,
     testing, and configuration of the leading open source big data components; supports a wide range of
     components/projects, including, but not limited to, Hadoop, HBase and Spark
+  category: foss
 - name: Apache Camel
-  description:
+  description: >-
     Camel is an Open Source integration framework that empowers you to quickly and easily integrate various systems
     consuming or producing data.
+  category: foss
 - name: Apache CouchDB
-  description:
+  description: >-
     Seamless multi-master sync, that scales from Big Data to Mobile, with an Intuitive HTTP/JSON API and designed for
     Reliability.
+  category: foss
 - name: Apache Software Foundation
-  description:
+  description: >-
     Supports POWER builds for CouchDB and possible other ASF projects in the future; currently working to support
     Cloudant on POWER
+  category: foss
 - name: Apache Spark / Arrow
   description: Apache Arrow is an in-memory columnar to exchange data among AI frameworks such as Apache Spark
+  category: foss
 - name: Bazel
   description: Build and test software of any size, quickly and reliably.
+  category: foss
 - name: Blockchain
   description: Continuous intergration for IBM Blockchain hyperledger fabric code for POWER
+  category: foss
 - name: BlueMika
   description: An open source library that searches in files/web pages/documents/etc and give you the results
+  category: foss
 - name: cdxgen
-  description:
+  description: >-
     An open source cli tool for calculating a software Bill-of-Materials built with plugins for extensibility on the
     POWER architecture.
+  category: foss
 - name: checkpoint-restore
-  description:
+  description: >-
     Implements checkpoint-restore functionality for Linux on POWER architecture; functionality can be used for wide
     range of use-cases, including live migration, ‘suspend’ and ‘resume’ operations on containers, reboot-less kernel
     upgrades
+  category: foss
 - name: Chimera Linux
-  description:
+  description: >-
     Chimera is a general-purpose Linux system based on FreeBSD core userland utilities, the LLVM toolchain, musl libc
     and the apk package manager. The goal is to provide a system that is simple and clean yet fully-featured, and to
     improve the portability and quality of software across the Linux stack. It is currently available on aarch64,
     ppc64le, riscv64 and x86_64 architectures, with a big emphasis on portability.
+  category: foss
 - name: Cinc Project
   description: ppc64le builds for various Cinc Project packages (Cinc Client primarily)
+  category: foss
 - name: ClickHouse
   description: Make the best open-source analytics DBMS
+  category: foss
 - name: Cloud Foundry
   description: Supports porting on POWER, continuous integration and builds integration
+  category: foss
 - name: conda-forge
   description: community-led collection of recipes, build infrastructure and distributions for the conda package manager
+  category: foss
 - name: CRIU
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
+  category: foss
 - name: Cryptography
-  description:
+  description: >-
     Cryptography is a core Python library providing secure cryptographic recipes and primitives to developers. The
     project’s mission is to make cryptography safer, easier to use correctly, and broadly accessible across platforms.
     This request is specifically to validate and troubleshoot ppc64le wheel compatibility on POWER8 systems. Access to
     POWER architecture systems helps ensure that prebuilt wheels meet manylinux expectations and do not include
     unsupported CPU instructions, improving reliability for users running on IBM POWER platforms.
+  category: foss
 - name: Debian
   description: A universal operating system composed entirely of free software, and packaged by the Debian Project
+  category: foss
 - name: Debian-CI
   description: Provide a system available to Debian community to enable debuging of problems
+  category: foss
 - name: Debian Reproducible Builds
-  description:
+  description: >-
     Reproducible Builds elevate deterministic builds by making the build process independently verifiable by anyone.
     This means others can confirm your binaries match the source code exactly, fostering trust, improving debugging,
     speeding up builds, and demonstrating your commitment to high standards. It also allows the development of extremely
     concise and easily verifiable patches for any version of your software, eg. for customers that have high security
     requirements and need to audit every release they make.
+  category: foss
 - name: Deeplearning4j
-  description:
+  description: >-
     Makes deep learning simple and accessible to enterprises. The project uses POWER VMs at OSL for compile builds,
     performance testing, architecture troubleshooting, including CUDA
+  category: foss
 - name: Delve
-  description:
+  description: >-
     Delve is a debugger for the Go programming language. The goal of the project is to provide a simple, full featured
     debugging tool for Go.
+  category: foss
 - name: Docker 4 Power
-  description:
+  description: >-
     Enrich the PowerPC container ecosystem by providing both a platform for developers to create docker containers, and
     for the PowerPC community to find docker images.
+  category: foss
 - name: Docker Matrix
   description: A Docker image for Matrix, an open federated Instant Messaging and VoIP communication server
+  category: foss
 - name: Docker Open Source
-  description:
+  description: >-
     An open platform for developers and sysadmins to build, ship, and run distributed applications on laptops, data
     center VMs, or the cloud; provides build system to the Docker community to share Docker images built on this system;
     system is used on demand builds
+  category: foss
 - name: DotFile-HPC
-  description:
+  description: >-
     Our goal is to help PhD students, researchers, open-source contributors and enterprise employees overcome the
     challenges of working with unfamiliar high-performance computing (HPC) architectures. Setting up a development
     environment on an unknown architecture can take months and be a frustrating experience. Our mission is to save time
     and make the process more enjoyable - just like Python does. By providing a user-friendly development environment,
     we aim to help our users focus on their work and enjoy a better life.
+  category: foss
 - name: EasyBuild
-  description:
+  description: >-
     EasyBuild is a software build and installation framework that allows you to manage (scientific) software on High
     Performance Computing (HPC) systems in an efficient way.
+  category: foss
 - name: Eclipse OMR
   description: Build an enterprise caliber technology foundation for language runtimes within cloud platforms.
+  category: foss
 - name: Eclipse OpenJ9
   description: Provides high performance Java Virtual Machine capabilities for the POWER platform
+  category: foss
 - name: Eclipse Platform
   description: Provides a foundation for building arbitrary tools and applications, especially IDEs
+  category: foss
 - name: EESSI
-  description:
+  description: >-
     The European Environment for Scientific Software Installations (EESSI, pronounced as “easy“) is a brand new
     collaboration between different European HPC sites & industry partners, with the common goal to set up a shared
     repository of scientific software installations that can be used on a variety of systems
+  category: foss
 - name: Eigen
   description:
     "A C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms."
+  category: foss
 - name: Elastic Beats
-  description:
+  description: >-
     Part of the Elastic stack (Elasticsearch, Kibana, Logstash, Beats). Manual testing and checking that the Beats are
     working on POWER platform
+  category: foss
 - name: ELENA LANG
-  description:
-    "ELENA is a general-purpose language with late binding. It is multi-paradigm, combining features of functional and
+  description: >-
+    ELENA is a general-purpose language with late binding. It is multi-paradigm, combining features of functional and
     object-oriented programming. Rich set of tools are provided to deal with message dispatching : multi-methods,
-    message qualifying, generic message handlers, run-time interfaces"
+    message qualifying, generic message handlers, run-time interfaces
+  category: foss
 - name: Envoy
   description: sidecar binary used by the most popular service mesh in the microservice space (istio)
+  category: foss
 - name: Falco
-  description:
+  description: >-
     Falco is a cloud-native security tool designed for Linux systems. It employs custom rules on kernel events, which
     are enriched with container and Kubernetes metadata, to provide real-time alerts. Falco helps you gain visibility
     into abnormal behavior, potential security threats, and compliance violations, contributing to comprehensive runtime
     security.
+  category: foss
 - name: Fedora Copr
   description: An easy-to-use automatic build system providing a package repository as its output
+  category: foss
 - name: Fedora
   description: Provide a location for developers to port their Fedora projects to the POWER architecture
+  category: foss
 - name: FFmpeg
   description: Supports optimization of software scaling in FFmpeg running on POWER systems
+  category: foss
 - name: Firefox
   description: Ports Mozilla Firefox to POWER8
+  category: foss
 - name: Firefox JIT
   description: Optimize the SpiderMonkey engine for POWER10
+  category: foss
 - name: Flathub
   description: Provide support for ppc64le on all Flatpaks currently available on Flathub
+  category: foss
 - name: FreeBSD CI
-  description:
+  description: >-
     Support FreeBSD Continuous Integration for the POWER platform (64 bit BE and LE targets initially). Once a day, if
     there's code changes, our CI produces a bootable disk image for both BE and LE targets that automatically runs
     kernel, drivers and userland test cases to validate the build.
+  category: foss
 - name: FRRouting
   description: Free routing stack (BGP, OSPF, ISIS, RIP, EIGRP, PIM, etc)
+  category: foss
 - name: GCC Fortran
   description: Compiler optimizations and bug fixing for POWER port of GCC fortran compiler
+  category: foss
 - name: Gentoo PowerPC Project
   description: Part of Gentoo Linux and is responsible for porting Gentoo to PowerPC architecture of all flavors
+  category: foss
 - name: Glasgow Haskell Compiler (GHC)
   description: state-of-the-art open source compiler and interactive environment for the functional language Haskell
+  category: foss
 - name: glibc
   description: The GNU C Library project provides the core libraries for the GNU system and GNU/Linux systems
+  category: foss
 - name: Go Language
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
+  category: foss
 - name: grommunio
   description:
     Delivering 100% open source Microsoft Exchange alternative with native protocol support (MAPI/HTTP, EWS, ...)
+  category: foss
 - name: Hadoop_Spark
-  description:
+  description: >-
     CI environment powered by a Jenkins server running Hadoop and Spark builds for including POWER into the Hyperledger
     fabric community to perform Continuous Integration for IBM Hyperledger fabric codebase.
+  category: foss
 - name: heyoka
-  description:
+  description: >-
     heyoka is a C++ library for the integration of ordinary differential equations (ODEs) via Taylor's method and LLVM.
+  category: foss
 - name: Hortonworks Data Platform
-  description:
+  description: >-
     A secure, enterprise-ready open source Apache Hadoop distribution based on a centralized architecture (YARN) now on
     POWER
+  category: foss
 - name: INRIA
   description: Updating the HACL* Cryptographic Library to build on POWER
+  category: foss
 - name: Istio
   description: Supports compiling and testing Istio, a platform for microservice management, on POWER
+  category: foss
 - name: Julia/LLVM
   description: ppc64el port of the Julia language to LLVM-6.0
+  category: foss
 - name: jupyter/base-notebook
   description: Provides docker image of jupyter/base-notebook on POWER
+  category: foss
 - name: Kubeflow
-  description:
+  description: >-
     A project dedicated to making deployments of machine learning (ML) workflows on Kubernetes simple, portable and
     scalable
+  category: foss
 - name: LDC
   description: Supports project specific porting efforts for the the LLVM-based D compiler
+  category: foss
 - name: libGD
   description: GD is an open source code library for the dynamic creation of images by programmers.
+  category: foss
 - name: libjpeg-turbo
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
+  category: foss
 - name: liboqs
   description: a collection of open-source implementations of quantum-safe key encapsulation mechanism (KEM)
+  category: foss
 - name: libvpx
   description: Adds VSX optimizations for libvpx on POWER architecture
+  category: foss
 - name: LIBXSMM
-  description:
+  description: >-
     LIBXSMM is a library for specialized dense and sparse matrix operations as well as for deep learning primitives such
     as small convolutions. Enabling POWER JIT-code generation and optimization.
+  category: foss
 - name: Linux Kernel (BPF memory model development)
   description: Developing a BPF memory model, testing with POWER8
+  category: foss
 - name: Linux Kernel (bugfixing on linux-next)
   description: Fixing a bug on powerpc in linux-next
+  category: foss
 - name: Linux Kernel (compile and boot testing)
   description: Compile and boot testing
+  category: foss
 - name: Linux Kernel (powerpc arch development)
   description: PowerPC Linux Kernel testing
+  category: foss
 - name: Linux Kernel (Various Kernel Developers)
   description: Testing issues with RCU_SCALE_TEST parameter
+  category: foss
 - name: Linux NFSD testing and development
   description: Cross platform development and testing of Linux in-kernel NFS server (knfsd)
+  category: foss
 - name: Linux Standard Base
   description: Tests for and maintains compatibility between Linux distributions
+  category: foss
 - name: LLVM Memory Order Loads Handling
-  description:
+  description: >-
     The C standard currently specifies that that memory_order_consume loads feed into carries a dependency, however, no
     known implementation does anything other than promote memory_order_consume to memory_order_acquire. C users
     therefore avoid memory_order_consume loads in favour of volatile loads, inline assembly, and other subterfuge. There
     has been considerable work within the C++ standards committee to address similar issues in C++, however, the current
     proposals involve C++ templates, which have no reasonable C equivalent. We proposes a new _Dependent_ptr type
     qualifier to provide this functionality in the C language. We are implementing the same in LLVM.
+  category: foss
 - name: LLVM
-  description:
+  description: >-
     Supports project specific porting efforts of POWER8 ppc64/ppc64le to run buildbot instances; these instances build
     LLVM and run the test suites when patches are checked in to ensure they run properly on the POWER architecture
+  category: foss
 - name: LLVM BOLT
   description: post-link optimizer developed to speed up large applications
+  category: foss
 - name: LTTng
   description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
+  category: foss
 - name: Lynx
   description: Open source chess engine
+  category: foss
 - name: Machine Learning/Deep Learning
-  description:
+  description: >-
     Enable and optimize frameworks of OpenBLAS, NVIDIA/Caffe, BVLC/Caffe, Torch, TensorFlow, Theano, DIGITS for IBM
     POWER Platform
+  category: foss
 - name: Maple Tree
   description: "Oracle Linux kernel POWER architecture troubleshooting: remove mmap_sem"
+  category: foss
 - name: Mesos
-  description:
+  description: >-
     API’s for resource management and scheduling across entire datacenter and cloud environments. OSL hosts the CI
     infrastructure on POWER platform for this project
+  category: foss
 - name: microbench
-  description:
+  description: >-
     Carefully measure the performance of the bandwidth between different system compenents on POWER systems to
     understand their influence on application development
+  category: foss
 - name: Milvus
-  description: "Vector database built for scalable, similarity search"
+  description: Vector database built for scalable, similarity search
+  category: foss
 - name: Moonjit
   description: Builds and functionality testing
+  category: foss
 - name: Mozilla
-  description:
+  description: >-
     Supports Mozilla projects in testing builds, running automated functionality tests, and debugging
     architecture-specific bugs.
+  category: foss
 - name: MRCC
-  description:
+  description: >-
     MRCC is a suite of ab initio and density functional quantum chemistry programs for high-accuracy electronic
     structure calculations developed and maintained by the quantum chemistry research group at the Department of
     Physical Chemistry and Materials Science, TU Budapest. Its special feature, the use of automated programming tools
@@ -284,201 +376,710 @@
     CC approaches. Many features of the package are also available with relativistic Hamiltonians allowing for accurate
     calculations on heavy element systems. The developed cost-reduction techniques and local correlation approaches also
     enable high-precision calculations for medium-sized and large molecules.
+  category: foss
 - name: Multiple LLVM/HHVM/*
-  description:
+  description: >-
     Contributes towards FOSS software, optimizations for POWER arch; specifically contributes towards HHVM JIT, LLVM and
     other FOSS projects on POWER8
+  category: foss
 - name: .Net
   description: Support IBM efforts to port to PPC64le
+  category: foss
 - name: MULTOVL
   description: Multiple Overlap of Genomic Regions
+  category: foss
 - name: Netty
   description: Non-blocking network framework for the JVM
+  category: foss
 - name: Nix
-  description:
+  description: >-
     Nix is a functional programming language and package manager, with an OS built on top of it. Tree-sitter is an
     incremental parsing tool and parser generator.
+  category: foss
 - name: Node.js
-  description:
+  description: >-
     Supports project specific porting efforts of POWER8 ppc64/ppc64le; provides stable POWER releases for community
     builds of Node.js
+  category: foss
 - name: NumPy
   description: Numerical computing in Python, now on POWER
+  category: foss
 - name: Nvidia-docker
   description:
     Uses images agnostics of the NVIDIA driver to make Docker images portable while still leveraging NVIDIA GPUs
+  category: foss
 - name: OCaml
   description: A modern, functional programming language with support for fast native code compilation on POWER
+  category: foss
 - name: OCM
-  description:
-    "Observationally Cooperative Multithreading: provides a 'kinder gentler' form of concurrency, allowing programmers
-    to imagine that a single thread runs on the machine at any one time; uses POWER8 hardware transactional memory to
-    run multiple threads at the same time while appearing to be running only one at a time"
+  description: >-
+    Observationally Cooperative Multithreading: provides a 'kinder gentler' form of concurrency, allowing programmers to
+    imagine that a single thread runs on the machine at any one time; uses POWER8 hardware transactional memory to run
+    multiple threads at the same time while appearing to be running only one at a time
+  category: foss
 - name: OpenBLAS
   description: Optimizes BLAS 1/2 double precision for POWER8 VSX
+  category: foss
 - name: OpenBMC
   description: Open source BMC firmware, which supports PowerPC hosts
+  category: foss
 - name: OpenCV
   description: Implements POWER8 and POWER9 VSX SIMD optimizations for OpenCV
+  category: foss
 - name: OpenJDK and OpenJFX Snaps
-  description:
+  description: >-
     To create verifiable JDK and JavaFX builds for Linux from source in the form of Snap packages. The packages are
     built for the 'ppc64el' Debian architecture in addition to five other architectures.
+  category: foss
 - name: OpenJDK
-  description:
+  description: >-
     Supports project specific porting efforts of POWER8 ppc64/ppc64le; provides support for Java 7 and 8 which is being
     consumed by most major distributions
+  category: foss
 - name: OpenMandriva
   description: Building an easy to use, yet powerful and state of art, Linux distribution aimed primarily at desktop use
+  category: foss
 - name: OpenQuake
-  description:
+  description: >-
     An Open Source Engine for seismic hazard and risk assessment uses the infrastructure to try porting to POWER
     architecture and see how a different architecture affects the numerical tests (the code is covered by numerical,
     functional and qa tests)
+  category: foss
 - name: Open Quantum Safe
-  description:
-    Supporting the development and prototyping of quantum-resilient cryptography.
+  description: Supporting the development and prototyping of quantum-resilient cryptography.
+  category: foss
 - name: OpenSearch Project
   description: The POWER is used to build and assemble the OpenSearch software for ppc64le architecture
+  category: foss
 - name: OpenShift
   description: Test builds of OpenShift for Continuous Integration
+  category: foss
 - name: OpenSSL
   description: CI to cover linux-ppc64le, discover issues as early as possible, and keep our OpenSSL current
+  category: foss
 - name: OpenZFS
-  description:
+  description: >-
     OpenZFS is an advanced file system and volume manager which was originally developed for Solaris and is now
     maintained by the OpenZFS community.
+  category: foss
 - name: OrientDB
-  description:
+  description: >-
     Multi-Model NoSQL database management system that supports graph, document, key/value and object models. Uses
     PowerCI infrastructure for regression tests
+  category: foss
 - name: ORNL Research Cloud
-  description:
+  description: >-
     Container and software development and testing for Oak Ridge National Laboratory Summit Supercomputer. Compile
     testing, container builds, and general compatibility testing for several open source software stacks.
+  category: foss
 - name: Perfbook
-  description:
+  description: >-
     Provides education on parallel programming, and availability of a ppc64le system will help ensure that this
     education is not x86-centric.
+  category: foss
 - name: Persistent SI-HTM
   description: Enable the use of hardware transactions, on Power machines, with snapshot isolation consistency.
+  category: foss
 - name: postgreSQL
   description:
     Allows the postgres database system to build and troubleshoot on pp64le architecture on various distributions.
+  category: foss
 - name: PowerPC Notebook
-  description:
+  description: >-
     Supports development and compiling efforts for Debian on PowerPC. The goal is to design an Open Hardware notebook
     motherboard based on the Power Architecture NXP T2080 CPU
+  category: foss
 - name: PQ Code Package
-  description:
+  description: >-
     A collection of open source projects aiming to build high-assurance software implementations of standards-track
     post-quantum cryptography algorithms
+  category: foss
 - name: Presto
-  description:
+  description: >-
     Supports efforts of a POWER8 ppc64le port of Presto, a distributed SQL query engine for running interactive analytic
     queries against big data sources
+  category: foss
 - name: Primerclip
-  description:
+  description: >-
     Supports efficient trimming of primer sequences from next-generation sequencing reads sequenced from libraries which
     use PCR to amplify the target DNA
+  category: foss
 - name: Project Quay
   description: Builds, stores, and distributes Docker containers
+  category: foss
 - name: PVECLIB
   description: A library of useful vector functions for POWER
+  category: foss
 - name: PyTorch
-  description:
+  description: >-
     Python framework for tensors and deep neural networks. Uses POWER8 for continuous integration and functional testing
+  category: foss
 - name: QEMU
   description: A generic and open source machine emulator and virtualizer
+  category: foss
 - name: Red Hat CoreOS
   description: The operating system used for Red Hat OpenShift.
+  category: foss
 - name: RDKit
   description: Open source toolkit for cheminformatics
+  category: foss
 - name: RefPerSys
   description: Open source inference engine project (symbolic artificial intelligence).
+  category: foss
 - name: RocksDB
   description: Building the fastest key/value database, PPC port for CI and testing
+  category: foss
 - name: Rocky Linux
   description: A community-driven effort to bring you enterprise-grade, production-ready Linux.
+  category: foss
 - name: RPM Fusion
-  description:
+  description: >-
     A community driven third party repository for Fedora and Enterprise Linux. They use a dedicated VM as a builder
     connected to their main infrastructure for building packages for ppc64le platform
+  category: foss
 - name: Ruby
   description: A dynamic, open source programming language with a focus on simplicity and productivity
+  category: foss
 - name: Rust Exploit Mitigations
-  description:
+  description: >-
     The Rust Exploit Mitigations PG maintains and improves the existing, implements, and research new exploit
     mitigations for the Rust compiler
+  category: foss
 - name: SciPy
   description: Fundamental algorithms for scientific computing in Python.
+  category: foss
 - name: sire
-  description:
+  description: >-
     Sire is a molecular modelling framework that provides extensive functionality to manipulate representations of
     biomolecular systems.
+  category: foss
 - name: Snappy
   description: A fast compressor/decompressor
+  category: foss
 - name: Snowpatch
-  description:
+  description: >-
     An open source tool which provides CI testing for open-source projects which use a traditional patches + email
     system for accepting contributions; improves the state of continuous integration for a number of open source
     projects which are critical to the OpenPOWER community, providing automated test capabilities, similar to work
     already being done on the x86 architecture
+  category: foss
 - name: Spack
-  description:
+  description: >-
     Spack is the “App store” for running scientific software on supercomputers by drastically reducing deployment time
     and delivering the best possible performance of the software
+  category: foss
 - name: sqlite
   description: modernc.org/sqlite is a Go port of the SQLite C project.
+  category: foss
 - name: Strimzi
-  description:
+  description: >-
     Strimzi provides a way to run an Apache Kafka cluster on Kubernetes in various deployment configurations. The goal
     is to enable IBM Power arch (ppc64le) arch in upstream Jenkins CI setup for strimzi-kafka-operator.
+  category: foss
 - name: Swift
-  description:
+  description: >-
     Fast and highly comprehensible programming language for Unix-based operating systems. Supports objects-oriented,
     protocol-oriented, and functional programming paradigms.
+  category: foss
 - name: tcpdump/libpcap
   description: A packet analyzer for UNIX-like OSes
+  category: foss
 - name: Tesseract-OCR
   description: Offers a POWER8 testing platform for Google's optical character recognition library, Tesseract OCR
+  category: foss
 - name: The NetBSD Foundation
   description: To run NetBSD on everything, including toasters.
+  category: foss
 - name: Travis CI
   description: Continuous Integration using Travis and Power
+  category: foss
 - name: Travis/Rust/Swift
   description: Provides access to the POWER8 architeture for Travis, Rust, or Swift project developers
+  category: foss
 - name: TripleO CI
   description: Continuous Integration and Delivery for RedHat OpenStack Platform
+  category: foss
 - name: trivy
-  description:
+  description: >-
     Scanner for vulnerabilities in container images, file systems, and Git repositories, as well as for configuration
     issues and hard-coded secrets
+  category: foss
 - name: Unres
   description: Efficient modeling of protein folding using POWER for increased processing and scalability
+  category: foss
 - name: VideoLan
   description: Updates the Altivec code in x264 and x265 to VSX and makes sure it works correctly on POWER8le
+  category: foss
 - name: vLLM
   description: Fast and easy to use large language model inference and serving engine
+  category: foss
 - name: Wazuh
-  description:
+  description: >-
     Wazuh is a free, open source and enterprise-ready security monitoring solution for threat detection, integrity
     monitoring, incident response and compliance.
+  category: foss
 - name: WebM
   description: Dedicated to developing a high-quality, open video format for the web that's freely available to everyone
+  category: foss
 - name: Whonix
   description: Anonymity, privacy, security online
+  category: foss
 - name: X2Go
-  description:
+  description: >-
     A Remote Desktop and Remote Application Solution. Originally developed on x86/x64 hardware platforms, the server and
     client components are also available for ARM (Raspbian) and POWER (big and little endian). In short, it's for Linux
     what Citrix is for Windows.
+  category: foss
 - name: Xenia
-  description:
+  description: >-
     Xenia is an experimental emulator for the Xbox 360. The goal of the project is to experiment, research, and educate
     on the topic of emulation of modern devices and operating systems.
+  category: foss
 - name: Zig
-  description:
+  description: >-
     Zig is a general-purpose programming language and toolchain for maintaining robust, optimal and reusable software.
+  category: foss
 - name: MongoDB
   description: MongoDB is a source-available, cross-platform, document-oriented database program.
+  category: foss
+- name: Abebeos
+  description: Provide Barrier-Free Power PC OSS-Development
+  category: foss
+  status: former
+- name: Akari
+  description: Testing framework for porting and optimizing x86 SIMD library to OpenPOWER systems
+  category: foss
+  status: former
+- name: Alberta Speculation
+  description: Investigate multi-threaded speculation of alternative paths of execution in a sequential execution
+  category: foss
+  status: former
+- name: BearSSL
+  description: >-
+    An SSL/TLS library, with a focus on a clean, secure implementation of protocol, up-to-date with the latest research;
+    POWER8 systems writes specific implementations of AES/GCM and other cryptographic algorithms that leverage the
+    specific opcodes offered by the CPU, for better performance
+  category: foss
+  status: former
+- name: Blosc
+  description: PowerPC testing for Blosc, a high performance compressor optmized for binary data
+  category: foss
+  status: former
+- name: CentOS
+  description: Provided support and testing for alpha testing of CentOS Linux distribution on POWER architecture
+  category: foss
+  status: former
+- name: Diffusion magnetic resonance imaging of human brain
+  description: >-
+    Drive diffusion basis spectrum imaging (DBSI) for clinical applications and large scale trials for a diffusion MRI
+    modality which can increase the magnetic resonance imaging specificity for neurodegeneration diseases
+  category: foss
+  status: former
+- name: dlib
+  description: >-
+    A modern C++ toolkit containing machine learning algorithms and tools for creating complex software in C++ to solve
+    real world problems. The projects ran tests and benchmarked PowerPC8 VSX optimizations.
+  category: foss
+  status: former
+- name: Drupal Testbots
+  description: Powered the testing and review of code contribution for Drupal 8 (qa.drupal.org)
+  category: foss
+  status: former
+- name: Elephant Shed
+  description: >-
+    Provides ppc64le build and performance testing for Elephant Shed, a bundle of PostgreSQL tools and web UI for easy
+    administration of PostgreSQL servers
+  category: foss
+  status: former
+- name: EQueue
+  description: an efficient lock-free queue for pipeline parallelism on multi-core architectures
+  category: foss
+  status: former
+- name: GCC/Clang
+  description: >-
+    Contributes to improved support of GCC and Clang projects on POWER machines by working on IBM Linux Technology
+    Center items on bountysource.com
+  category: foss
+  status: former
+- name: GCC
+  description: >-
+    Contributed to improving support of various open source projects in the GCC family on POWER machines; began by
+    tackling IBM Linux Technology Center items on bountysource.com
+  category: foss
+  status: former
+- name: gdb
+  description: Worked on adding `fast tracepoint support`_ for ppc/ppc64/ppc64le
+  category: foss
+  status: former
+- name: Genome Analysis Toolkit (GATK)
+  description: >-
+    A software package for analysis of high-throughput sequencing data with a primary focus on variant discovery and
+    genotyping as well as strong emphasis on data quality assurance, hosted on POWER architecture to run faster
+  category: foss
+  status: former
+- name: Ginga Middleware
+  description: ISDB middleware for interactive DTV. Supports project in porting to POWER8
+  category: foss
+  status: former
+- name: GLIBC
+  description: >-
+    GNU C Library: GNU project's implementation of the C standard library; supported the development and testing on the
+    POWER platform
+  category: foss
+  status: former
+- name: GMP
+  description: >-
+    Entailed the compilation of gmp-6.1.0 (from gmplib.org) and measurement of its performance with gmpbench-0.2 on the
+    POWER platform
+  category: foss
+  status: former
+- name: ICU
+  description: The International Components for Unicode project runs their build machines on a OSL hosted POWER VM
+  category: foss
+  status: former
+- name: Jellyfish
+  description: >-
+    A fast multi-threaded k-mer counter. POWER infrastructure is being used to compile builds, performance testing,
+    architecture troubleshooting
+  category: foss
+  status: former
+- name: juju-charms
+  description: >-
+    Adds ppc64el support to appliance image for building/interfacing with juju, the juju charm store, and assembling
+    charms
+  category: foss
+  status: former
+- name: JXcore on PPC
+  description: >-
+    Supports the platforms that the mainstream node.js does not; IBM has a PPC version of V8; Besides V8, JXcore also
+    implements SpiderMonkey engine; project involved providing stable PPC releases on each version of Node.JS / JXcore
+  category: foss
+  status: former
+- name: LAPACK
+  description: >-
+    The Numerical Linear Algebra package project tests builds on IBM architecture and with IBM compiler and also uses it
+    to fix bugs with IBM xlf
+  category: foss
+  status: former
+- name: libpod
+  description: a library for applications looking to use the Container Pod concept, popularized by Kubernetes
+  category: foss
+  status: former
+- name: Linux Kernel
+  description: Allows maintainer of Linux kernel features to test on ppc64le
+  category: foss
+  status: former
+- name: MulticoreWare x265
+  description: Use GCC PowerPC altivec instructions to optimize the x265 open source HEVC implemenation
+  category: foss
+  status: former
+- name: MySQL
+  description: Involved testing on POWER8, provide fixes to platform specific bugs and make more stable on POWER8
+  category: foss
+  status: former
+- name: Nettle
+  description: A cryptographic library that is designed to fit easily in more or less any context
+  category: foss
+  status: former
+- name: Nokogiri
+  description: Provide support on RHEL 7.1 LE & Ubuntu 14.04 on ppc64le arch
+  category: foss
+  status: former
+- name: ONNX
+  description: >-
+    Open Neural Network Exchange, ONNX provides an open source format for AI models, both deep learning and traditional
+    ML
+  category: foss
+  status: former
+- name: OpenFaaS
+  description: Making Serverless Functions Simple
+  category: foss
+  status: former
+- name: Openlibm
+  description: >-
+    Provided hosting to support the development on the POWER platform of a high quality, portable, standalone C
+    mathematical library (libm), used by the `Julia project`_
+  category: foss
+  status: former
+- name: OpenShift Origin
+  description: Used POWER infrastructure to demo OpenShift Origin clusters at KubeCon 2017
+  category: foss
+  status: former
+- name: OpenWhisk
+  description: >-
+    Supports building ppc64le Docker images for OpenWhisk, a programming service that provides event based execution of
+    functions
+  category: foss
+  status: former
+- name: oVirt
+  description: Added support for POWER hosts for a virtual machine manager
+  category: foss
+  status: former
+- name: pgSphere
+  description: Provides ppc64le builds for pgSphere, a PostgreSQL extension for spherical geometry
+  category: foss
+  status: former
+- name: qiskit-sdk-py
+  description: Python tools for running quantum information experiments
+  category: foss
+  status: former
+- name: SFTPGo
+  description: >-
+    SFTPGo is a fully featured and highly configurable SFTP server with optional FTP/S and WebDAV support, written in
+    Go. It can serve local filesystem, S3 or Google Cloud Storage. POWER Docker image testing.
+  category: foss
+  status: former
+- name: SHA-3
+  description:
+    Ensures support and viability of Secure Hash Algorithm 3 on POWER, including POWER8 specific optimizations
+  category: foss
+  status: former
+- name: Squash
+  description: >-
+    A plugin-based abstraction library for general purpose data compression algorithms which provides a common API for a
+    large number of compression libraries, allowing people to easily test multiple codecs to see which works best, or
+    pass along the choice to their users; it involved development and testing on the POWER platform and adding support
+    for the big-endian architecture
+  category: foss
+  status: former
+- name: Tobin's Linux kernel
+  description: Supports a volunteer developer's efforts to test the Linux kernel on POWER
+  category: foss
+  status: former
+- name: VSXSIMD
+  description: SIMD Optimization Bountys
+  category: foss
+  status: former
+- name: X265 HEVC Encoder
+  description: >-
+    Explores POWER8-specific optimizations for x265 including, but not restricted to, assembly optimizations and
+    thread-related optimizations
+  category: foss
+  status: former
+- name: Zarafa
+  description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
+  category: foss
+  status: former
+- name: BLCR
+  description: >-
+    Berkeley Lab Checkpoint/Restart for LINUX is a kernel-level checkpointer implemented via a loadable kernel module
+    and a userspace library. They use the system to compile, test and debug kernel modules against a range of linux
+    kernels.
+  category: academic
+- name: Harvard
+  description:
+    Provide a set of tools that help Linux kernel developers understand Linux-kernel memory-ordering restrictions.
+  category: academic
+- name: Harvey Mudd College
+  description: Observationally Cooperative Multithreading (OCM) provides a
+  category: academic
+- name: NYU Langonne Health P10
+  description: Hybrid Classical Quantum AI Model Training and Inferencing
+  category: academic
+- name: Oswego State University of NY
+  description: Uses POWER infrastructure to develop concurrency support components for OpenJDK
+  category: academic
+- name: Portland State University
+  description: Test out different configurations of tickless kernel on PPC64
+  category: academic
+- name: Scuola Superiore Sant'Anna (SSSUP)
+  description: >-
+    The Linux kernel exposes subtle and informally specified relaxed-memory semantics to programmers. To understand them
+    and to develop formal models to use in verification, we adopt an empirical approach by testing what results parallel
+    kernel code can actually produce when executed on the hardware. The purpose of this project is to develop and
+    execute a key ingredient of our approach, a tool which takes small 'litmus tests' and generates Linux kernel modules
+    to run them for many iterations, collecting statistics of their behavior.
+  category: academic
+- name: Technische Hochschule Nürnberg
+  description: >-
+    Implements native code generation on PowerPC 64-bit little endian for 'The Glorious Glasgow Haskell Compilation
+    System' and as a pre-release for openSUSE and SUSE Linux Enterprise on POWER8 servers
+  category: academic
+- name: University of Alberta
+  description: >-
+    Our goal is to evaluate the support for and experiment with accessing application profiling information during
+    runtime. In particular we are looking to evaluate the performance overhead of accessing the perf APIs during
+    runtime.
+  category: academic
+- name: University of Campinas
+  description: Conduct research with IBM partners for the MMA Power10 architecture.
+  category: academic
+- name: University of Colorado Denver
+  description: Provide support for the Numerical Linear Algebra package in LINPACK on POWER architectures
+  category: academic
+- name: University of Texas at Austin
+  description: >-
+    Exploring the behavioral traits for modern ransomware actors, building a robust detector that is able to identify
+    zero-day ransomware attacks with confidence and low impact.
+  category: academic
+- name: University of Texas at El Paso
+  description: >-
+    Quantify the "Workload Tipping Points" where commodity x86 and ARM64 architectures succumb to the Memory Wall,
+    compared to the deterministic scaling of IBM Power10.
+  category: academic
+- name: Oregon State University
+  description: >-
+    The goal of this project is to apply mutation testing technique on RCU module of Linux Kernel. They run RCUtorture
+    on Linux kernel for extended period of time and also step-wise increase the testing time on POWER platform.
+  category: academic
+  status: former
+- name: University of Alberta and Universidade de Campinas
+  description: >-
+    The goal is to investigate the use of the speculation support in POWER8 for the speeding up the sequential execution
+    of programs. Single-threaded speculation has been used in the past, through trace-based compilation. The goal of
+    this project is to investigate multi-threaded speculation of alternative paths of execution in a sequential
+    execution. This is a joint project between University of Alberta -(UofA) and Universidade de Campinas (Unicamp).
+  category: academic
+  status: former
+- name: APMA2822B
+  description: Students taking a course on Parallel Computing at Brown University experimenting with the AC922 servers
+  category: gpu
+- name: Brookhaven National Lab
+  description: >-
+    Development of Singularity containers for distributed machine learning (Horovod) to be run on Summit supercomputer
+    at OLCF.
+  category: gpu
+- name: CADA
+  description: >-
+    CADA - CUDA Accelerated DNA Assembly is being developed by Ryan Kitchen to change the way genome assembly uses
+    hardware resources.
+  category: gpu
+- name: CASHX Pipeline
+  description: >-
+    Sequence alignment tools CASHX and pipeline were ported to work on the IBM POWER8 to take full advantage of higher
+    thread count machines. CASHX is one of the few non-BWA based high throughput genome alignment tools.
+  category: gpu
+- name: CASSA
+  description: >-
+    CASSA - CUDA Accelerated Scalable Sequence Aligner. The CGRB is working with Ryan Kitchen to develop this new
+    alignment tool.
+  category: gpu
+- name: Cryo-EM
+  description: >-
+    Frank Liu and Suvadip Paul are using GPU Acceleration on POWER8 and POWER9 architecture to build, debug, and test
+    software used to examine and model highly detailed microscopic structures such as proteins gathered using Cryo-EM
+    technology.
+  category: gpu
+- name: Cuttlefish denovo DNA
+  description: Eric Aker at PacBell is using the POWER8 platform to test the denovo assembly of the Cuttlefish genome.
+  category: gpu
+- name: Deeplearning4j
+  description: >-
+    Deeplearning4j is a Java-based toolkit for building/training/deploying deep neural networks. POWER architecture is
+    one of the main platforms that Deeplearning4j project is going to support.
+  category: gpu
+- name: Diabetic Retinopathy
+  description: train a cnn based on a dataset of retinal images which are very large in size (4500 x 3500)
+  category: gpu
+- name: DIAMOND Sequence Alignment Tool
+  description: >-
+    Benjamin Buchfink - creator of the DIAMOND Sequence alignment tool - helped port this software onto the IBM POWER8
+    architecture based on requests from the research community. DIAMOND is a sequence aligner for protein and translated
+    DNA searches and it functions as a drop-in replacement for the NCBI Basic Local Alignment Search Tool.
+  category: gpu
+- name: FBPIC and Numba
+  description: >-
+    Rémi Lehe is working on installing Numba and FBPIC on an OpenPower platform. Once the code is working they plan to
+    run the test suite that we routinely use for Continuous Integration.
+  category: gpu
+- name: GeneMark
+  description: >-
+    Mark Borodovsky and Alexandre Lomsadze from GeneMark are currently working on porting tools onto the POWER8
+    platform. GeneMark and its associated tools are used throughout the genomics field for gene prediction.
+  category: gpu
+- name: Gene Prediction Analysis in Salvia hispanica Genome
+  description: >-
+    Assembles and annotates the Salvia hispanica (Chia) genome to help identify candidates for providing neutraceutical
+    and human health benefits.
+  category: gpu
+- name: GPGPUSim+Ramulator Simulator
+  description:
+    Yunfan Li at Oregon State is using POWER to calibrate a cycle accurate GPU simulator with a real GPU chip.
+  category: gpu
+- name: Haystack
+  description: >-
+    Haystack is our open-source NLP solution for Question Answering workloads. We are planning to provide support for
+    users running the compute-intensive application on the POWER architecture. In order to develop and test the builds
+    and deployment, we would like to have access to a VM.
+  category: gpu
+- name: Julia Language
+  description: >-
+    Collaboration between IBM, OSU, and Julia Language mathematical software community enabled developers to use
+    graphics processing unit (GPU) technology. This made the software ready for the new CAPI and NVLink acceleration
+    technologies. This was an instrumental step in getting independent software vendors to port to POWER.
+  category: gpu
+- name: Lecture Video Summarization
+  description: >-
+    There are large number of educational videos on YouTube and other platforms. However the lack of any content based
+    access to the videos make them very difficult to be queried. A students has to watch the full video or jump or fast
+    forward to see whether the video is of his/her interest or not. This summarization tool aims to make such videos
+    more useful and interactive along with a content based index.
+  category: gpu
+- name: Patagonia
+  description: Natural Iron Fertilization.
+  category: gpu
+- name: PointR
+  description: >-
+    Demonstrate PowerAI Vision Training with PointR edge wireless mesh edge infrastructure, Applies to multiple
+    industrial use cases
+  category: gpu
+- name: PyTorch
+  description: Freddie Mendoza is working on PyTorch on the POWER8 systems.
+  category: gpu
+- name: PyTorch
+  description:
+    Using GPUs on POWER to demo running sample AI workloads based on TensorFlow & PyTorch for a workshop event.
+  category: gpu
+- name: Rust
+  description:
+    Continuous integration and development of core Rust language projects on ppc64le + NVIDIA GPU environments.
+  category: gpu
+- name: Singularity (Horovod)
+  description: >-
+    Development of  Singularity containers for distributed machine learning (Horovod) to be run on Summit supercomputer
+    at OLCF
+  category: gpu
+- name: TardisDB
+  description: >-
+    The combination of the POWER9 architecture with NVLink capable GPUs offers promising new features as well as
+    superior bandwidth and latency guarantees concerning CPU-GPU Interconnects. TardisDB aims to become a full code
+    generating based RDBMS which also includes native tuple versioning capabilities.
+  category: gpu
+- name: Tensorflow on POWER
+  description: Community builds of the TensorFlow Open Source project automatically built on POWER.
+  category: gpu
+- name: Tensorflow
+  description: >-
+    Ted Chang is building and testing the latest source on POWER because is not a supported architecture of Tensorflow.
+  category: gpu
+- name: Texas A&M
+  description: Jian Tao from Texas A&M is interested in testing the performance of the POWER8 systems.
+  category: gpu
+- name: The Street-based Environmental Exposure Project
+  description: >-
+    The Street-based Environmental Exposure Project is using POWER8 for compiling builds and performance testing. Their
+    project is working to understand links between built environment exposures and human health.
+  category: gpu
+- name: UNICAMP
+  description: >-
+    Rodrigues de Sousa Faria is studying for a masters in Electrical Engineering at the University of Campinas and is
+    using machine learning on POWER to develop solutions for his thesis.
+  category: gpu
+- name: UNIVA
+  description: >-
+    The UNIVA team is working on a version of UGE that will support POWER8-9 architectures for cross platform
+    integration.
+  category: gpu
+- name: Virginia Tech
+  description: James McClure is looking at IBM POWER8 and developing tools on the platform.
+  category: gpu
+- name: VSEARCH
+  description: >-
+    Torbjørn Rognes and Tomas Flourithe creators of VSEARCH are using the POWER8 platform to build and provide binaries
+    for their tool.
+  category: gpu
+- name: Xiaoli Fern Lab OSU
+  description: >-
+    Xiaoli Fern lab is working on identification of bird sounds using GPU technology. They are currently testing tools
+    on the POWER8 platform with the P100 GPU on the board for increased performance.
+  category: gpu
