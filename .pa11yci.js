@@ -52,6 +52,7 @@ module.exports = {
     "http://localhost:8080/",
     "http://localhost:8080/about/",
     "http://localhost:8080/about/people/",
+    "http://localhost:8080/about/sponsors/",
     "http://localhost:8080/blog/",
     "http://localhost:8080/blog/drupal_infrastructure/",
     "http://localhost:8080/projects/",
