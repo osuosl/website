@@ -1,12 +1,14 @@
 {{- /*
-  Staff roster from data/people.yml. Each entry renders as a section
-  whose id preserves the page's long-standing heading anchors
-  (#lance-albertson etc.).
+  Staff roster from data/people.yml. Each entry's heading keeps the
+  page's long-standing anchor id (#lance-albertson etc.). The id has to
+  sit on the h2 rather than the section: Pagefind only offers headings
+  as search sub-results, so anchoring it elsewhere drops every
+  per-person deep link from the site search.
   */
 -}}
 {{ range site.Data.people }}
-  <section class="person" id="{{ .id }}">
-    <h2><a href="#{{ .id }}">{{ .name }}</a></h2>
+  <section class="person">
+    <h2 id="{{ .id }}"><a href="#{{ .id }}">{{ .name }}</a></h2>
     <p class="person-role">{{ .role }}</p>
     {{ partial "responsive-image.html" (dict "src" .photo "alt" .name "class" "img-right-people") }}
     {{ $.Page.RenderString (dict "display" "block") .bio }}

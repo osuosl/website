@@ -23,9 +23,17 @@
       {{ if $f.required }}data-required-group{{ end }}
       {{ if $f.description }}aria-describedby="{{ $descId }}"{{ end }}
     >
+      {{/* Unlike a single control, a checkbox group cannot carry the
+        required attribute, so the group's requirement reaches assistive
+        tech through the legend text rather than the (decorative)
+        asterisk.
+      */}}
       <legend class="form-label">
         {{- $f.label -}}
-        {{- if $f.required }}<span class="form-required" aria-hidden="true"> *</span>{{ end -}}
+        {{- if $f.required }}
+          <span class="form-required" aria-hidden="true"> *</span>
+          <span class="visually-hidden">(required)</span>
+        {{ end -}}
       </legend>
       {{ range $f.options }}
         <div class="form-check">
