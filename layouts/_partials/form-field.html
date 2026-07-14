@@ -1,0 +1,95 @@
+{{- /*
+  Renders one request-form field from a data/forms/*.yml entry.
+
+  Keys: name (the POST parameter — must never change, formsender and the
+  ticket templates key on it), label, type (text | email | number |
+  textarea | select | checkbox-group | heading; default text), required,
+  description (markdown), autocomplete, placeholder (selects: an
+  empty-value first option, which required selects must move off),
+  value (inputs: initial value; selects: the pre-selected option),
+  min (number), options, id (checkbox-group/heading DOM id).
+  */
+-}}
+{{- $f := . -}}
+{{- $type := $f.type | default "text" -}}
+{{- if eq $type "heading" -}}
+  <h2 class="h4 mt-4">{{ $f.label }}</h2>
+{{- else -}}
+  {{- $id := printf "field-%s" (or $f.id $f.name) -}}
+  {{- $descId := printf "%s-desc" $id -}}
+  {{- if eq $type "checkbox-group" -}}
+    <fieldset
+      class="mb-3"
+      {{ if $f.required }}data-required-group{{ end }}
+      {{ if $f.description }}aria-describedby="{{ $descId }}"{{ end }}
+    >
+      <legend class="form-label">
+        {{- $f.label -}}
+        {{- if $f.required }}<span class="form-required" aria-hidden="true"> *</span>{{ end -}}
+      </legend>
+      {{ range $f.options }}
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="field-{{ .name }}" name="{{ .name }}" value="requested" />
+          <label class="form-check-label" for="field-{{ .name }}">{{ .label }}</label>
+        </div>
+      {{ end }}
+      {{ with $f.description }}
+        <div class="form-text" id="{{ $descId }}">{{ . | markdownify }}</div>
+      {{ end }}
+    </fieldset>
+  {{- else -}}
+    <div class="mb-3">
+      <label class="form-label" for="{{ $id }}">
+        {{- $f.label -}}
+        {{- if $f.required }}<span class="form-required" aria-hidden="true"> *</span>{{ end -}}
+      </label>
+      {{- if eq $type "textarea" }}
+        <textarea
+          class="form-control"
+          id="{{ $id }}"
+          name="{{ $f.name }}"
+          rows="5"
+          {{ if $f.required }}required{{ end }}
+          {{ if $f.description }}aria-describedby="{{ $descId }}"{{ end }}
+        ></textarea>
+      {{- else if eq $type "select" }}
+        <select
+          class="form-select"
+          id="{{ $id }}"
+          name="{{ $f.name }}"
+          {{ if $f.required }}required{{ end }}
+          {{ if $f.description }}aria-describedby="{{ $descId }}"{{ end }}
+        >
+          {{- with $f.placeholder }}
+            <option value="" selected>{{ . }}</option>
+          {{- end }}
+          {{- range $f.options }}
+            {{- $val := . }}
+            {{- $label := . }}
+            {{- if reflect.IsMap . }}
+              {{- $val = .value }}
+              {{- $label = .label | default .value }}
+            {{- end }}
+            <option value="{{ $val }}" {{ if eq $val $f.value }}selected{{ end }}>{{ $label }}</option>
+          {{- end }}
+        </select>
+      {{- else }}
+        <input
+          type="{{ $type }}"
+          class="form-control"
+          id="{{ $id }}"
+          name="{{ $f.name }}"
+          {{ if $f.required }}required{{ end }}
+          {{ if eq $type "text" }}maxlength="128"{{ end }}
+          {{ with $f.autocomplete }}autocomplete="{{ . }}"{{ end }}
+          {{ with $f.value }}value="{{ . }}"{{ end }}
+          {{ with $f.min }}min="{{ . }}"{{ end }}
+          {{ if $f.description }}aria-describedby="{{ $descId }}"{{ end }}
+        />
+      {{- end }}
+      {{ with $f.description }}
+        <div class="form-text" id="{{ $descId }}">{{ . | markdownify }}</div>
+      {{ end }}
+    </div>
+  {{- end -}}
+{{- end -}}

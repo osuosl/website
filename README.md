@@ -159,6 +159,18 @@ hand:
 
 Content is added inside the `/content` folder, though it varies based on what you would like to do.
 
+### Request forms
+
+The five hosting/CI request forms are data-driven: each page holds only its intro text plus a
+`{{</* request-form <name> */>}}` shortcode, and the fields live in `data/forms/<name>.yml`. To add or change a field,
+edit the YAML — the shortcode and the `form-field` partial render Bootstrap-styled, accessible markup (labels, help
+text, required indicators, checkbox-group validation) automatically. Two rules:
+
+- A field's `name` key is the formsender POST parameter. Never rename one without coordinating with the formsender
+  ticket templates.
+- Shared formsender settings (action URL, token, reCAPTCHA site key) live under `[params.formsender]` in
+  `config/_default/params.toml`.
+
 ### Adding a New Blog Post
 
 Regular pages use the default `/archetypes/default.md` archetype.

@@ -1,0 +1,139 @@
+# OpenPOWER OpenStack hosting request form
+# (content/services/powerdev/request-hosting.md).
+# Field `name` keys are the formsender POST parameters — never change
+# them; the ticket templates on the formsender side key on them.
+send_to: PowerDev
+subject_prefix: New PowerLinux/OpenPOWER Hosting Request
+contact: powerdev-request@osuosl.org
+fields:
+  - name: name
+    label: Name
+    required: true
+    autocomplete: name
+  - name: email
+    label: Email
+    type: email
+    required: true
+    autocomplete: email
+  - name: project_name
+    label: Project Name
+    required: true
+    description: Name of the open source project or education institution this request will be supporting.
+  - name: project_url
+    label: Project URL
+    required: true
+    description: Primary website URL for the open source project or education institution.
+  - name: est_size_of_user_community
+    label: Estimated Size of User Community
+    required: true
+    description: How many estimated users do you have in your community?
+  - name: description_of_project_mission
+    label: Description of Project Mission
+    type: textarea
+    required: true
+    description:
+      Please describe in detail the mission and purpose of this request in regards to how the POWER architecture will
+      support your project. Also describe the general mission of your project.
+  - name: expected_usage_model
+    label: Expected Usage Model
+    type: textarea
+    required: true
+    description:
+      What types of activity will the machine be used for? (i.e. compile builds, performance testing, architecture
+      troubleshooting, etc).
+  - name: anticipated_duration_of_need
+    label: Anticipated duration of need
+    required: true
+    description:
+      How long do you expect you will need these resources? Ongoing or indefinitely are also acceptable answers.
+  - name: ibm_advocate
+    label: IBM Advocate
+    required: true
+    description:
+      If you do not have an IBM Advocate, one will need to be assigned prior to activating access. OSUOSL and IBM will
+      work with the requesting project to find an appropriate advocate.
+  - name: deployment_timeframe
+    label: Deployment timeframe
+    type: select
+    value: Within 7 business Days
+    options:
+      - Within 7 business Days
+      - Within 3 business Days
+      - value: Within 1 business Days
+        label: Within 1 business Day
+    description:
+      Normal turnaround for access is typically 7 business days. If you need it sooner than that, please choose which
+      time frame you need. We will do our best to accommodate your request.
+  - name: other_information
+    label: Other information
+    type: textarea
+    description: Is there anything additional you would like to provide for your request?
+  - type: heading
+    label: OpenStack Access Question(s)
+    id: openstack-questions
+  - name: power_architecture
+    label: POWER Architecture
+    type: select
+    required: true
+    value: POWER10
+    options:
+      - POWER10
+      - POWER9
+      - POWER8
+  - name: flavor
+    label: Flavor
+    type: select
+    required: true
+    placeholder: "- Select -"
+    options:
+      - value: tiny
+        label: 1 CPU, 512M RAM, 4G Disk
+      - value: small
+        label: 1 CPU, 1G RAM, 15G Disk
+      - value: medium
+        label: 2 CPU, 4G RAM, 30G Disk
+      - value: large
+        label: 4 CPU, 8G RAM, 60G Disk
+      - value: xlarge
+        label: 8 CPU, 16G RAM, 80G Disk
+      - value: xxlarge
+        label: 16 CPU, 32G RAM, 320G Disk
+  - name: number_of_nodes
+    label: Number of nodes
+    type: number
+    required: true
+    value: "1"
+    min: "1"
+    description: Estimated number of nodes (machines) you'd like to have.
+  - name: distribution
+    label: Distribution
+    type: select
+    required: true
+    placeholder: "- Select -"
+    options:
+      - AlmaLinux
+      - CentOS Stream
+      - Debian
+      - Fedora
+      - OpenSUSE
+      - Rocky Linux
+      - Ubuntu
+      - Other
+    description:
+      Which Linux distribution would you like to use for your machine? This would likely be the latest stable version
+      available for ppc64le. If you want a specific version, please note that in the Other information field above.
+  - name: openstack_access
+    label: OpenStack Access
+    type: select
+    placeholder: "- None -"
+    options:
+      - Have the OSL create the node(s) for me
+      - I'd like to have access to the Openstack GUI/API
+    description:
+      We use OpenStack to manage the POWER ppc64/ppc64le nodes. We can either create the node for you or we can grant
+      you access to the OpenStack GUI and API and let you manage it yourself. What do you prefer?
+  - name: ssh_public_key
+    label: SSH Public Key
+    type: textarea
+    required: true
+    description: Public SSH key to be used for initial access to the system.

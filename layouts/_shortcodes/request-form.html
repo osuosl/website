@@ -1,0 +1,59 @@
+{{- /*
+  Renders a formsender request form from data/forms/<name>.yml:
+
+  {{< request-form hosting
+>}}
+
+The data file carries the per-form pieces (send_to, subject_prefix, contact, fields); shared formsender settings live in
+[params.formsender]. Field markup comes from the form-field partial. */ -}}
+{{- $name := .Get 0 -}}
+{{- $form := index site.Data.forms $name -}}
+{{- if not $form -}}
+  {{- errorf "request-form: no data/forms/%s.yml (page %s)" $name .Position -}}
+{{- end -}}
+{{- $fs := site.Params.formsender -}}
+<form
+  class="webform-client-form"
+  action="{{ $fs.action }}"
+  method="post"
+  enctype="multipart/form-data"
+  accept-charset="UTF-8"
+>
+  <p class="form-text">Fields marked with * are required.</p>
+  {{ range $form.fields }}
+    {{- partial "form-field.html" . -}}
+  {{ end }}
+  {{ with $form.contact }}
+    <p>
+      <em>
+        You should receive an automated email from our request ticketing system to the email address you have provided
+        within 5-10 minutes. If you don't receive this email please reach out to us at
+        <a href="mailto:{{ . }}">{{ . }}</a> or via IRC in <strong>#osuosl</strong> on
+        <a href="https://libera.chat/">Libera Chat</a>.
+      </em>
+    </p>
+  {{ end }}
+  <div class="g-recaptcha" data-sitekey="{{ $fs.recaptcha_sitekey }}"></div>
+  {{/* Formsender envelope. last_name is a spam honeypot and must stay empty.
+    The subject key is the field whose value formsender puts in the ticket
+    subject; every form uses project_name. The redirect's static value
+    points at production — request-form.js rebases it onto the current
+    origin so staging and local submissions come back to the same site.
+  */}}
+  <input type="hidden" name="last_name" value="" />
+  <input type="hidden" name="token" value="{{ $fs.token }}" />
+  <input
+    type="hidden"
+    name="redirect"
+    value="{{ "form-submitted/" | absURL }}"
+    data-relative-value="{{ "form-submitted/" | relURL }}"
+  />
+  <input type="hidden" name="mail_subject_prefix" value="{{ $form.subject_prefix }}" />
+  <input type="hidden" name="mail_subject_key" value="project_name" />
+  <input type="hidden" name="send_to" value="{{ $form.send_to }}" />
+  <div class="form-actions">
+    <button type="submit" name="op" value="Submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+{{- $js := resources.Get "js/request-form.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>

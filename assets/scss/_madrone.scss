@@ -459,66 +459,32 @@ html:not([data-bs-theme="dark"]) .dark-only {
   min-height: 100vh;
 }
 
-// ------------------------------------------- legacy raw-form compatibility
-// The request forms are raw Drupal-era HTML until the forms rework lands.
-// Give their inputs usable styling under Bootstrap.
+// ------------------------------------------------------------ request forms
+// Rendered by the request-form shortcode from data/forms/*.yml; the
+// controls themselves use Bootstrap's form classes.
 .webform-client-form {
   max-width: 40rem;
 
-  label {
-    display: block;
+  .form-label {
     font-weight: 600;
-    margin-bottom: 0.25rem;
   }
 
-  input[type="text"],
-  input[type="email"],
-  input[type="number"],
-  select,
-  textarea {
-    display: block;
-    width: 100%;
-    padding: 0.375rem 0.75rem;
+  // Bootstrap's reboot sizes <legend> at 1.5rem for horizontal forms;
+  // checkbox-group legends should read like the other field labels.
+  legend.form-label {
+    float: none;
     font-size: 1rem;
-    color: var(--bs-body-color);
-    background: var(--bs-body-bg);
-    border: 1px solid var(--bs-secondary-color);
-    border-radius: $border-radius;
     margin-bottom: 0.25rem;
   }
 
-  input[type="checkbox"] {
-    margin-right: 0.35rem;
-  }
-
-  .form-item {
-    margin-bottom: 1rem;
-  }
-
-  .description {
-    font-size: 0.875rem;
-    color: var(--bs-secondary-color);
-  }
-
-  // Some legacy forms put a literal * inside .form-required, others leave
-  // the span empty — only synthesize an asterisk for the empty ones.
-  // 4.5:1 in both modes: #c72127 is 5.7:1 on white but 2.98:1 on the dark
-  // background, where the 40% tint reads 5.8:1.
+  // Required-field asterisks, 4.5:1 in both modes: #c72127 is 5.7:1 on
+  // white but 2.98:1 on the dark background, where the 40% tint reads
+  // 5.8:1.
   .form-required {
     color: $osu-red;
   }
 
   @at-root [data-bs-theme="dark"] & .form-required {
     color: tint-color($osu-red, 40%);
-  }
-
-  .form-required:empty::after {
-    content: "*";
-    margin-left: 0.15rem;
-  }
-
-  input[type="submit"] {
-    @extend .btn;
-    @extend .btn-primary;
   }
 }

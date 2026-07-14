@@ -1,0 +1,101 @@
+# POWER CI request form (content/services/powerdev/request-ci.md).
+# Field `name` keys are the formsender POST parameters — never change
+# them; the ticket templates on the formsender side key on them.
+send_to: PowerCI
+subject_prefix: New POWER CI Request
+contact: powerci-request@osuosl.org
+fields:
+  - name: name
+    label: Name
+    required: true
+    autocomplete: name
+  - name: email
+    label: Email
+    type: email
+    required: true
+    autocomplete: email
+  - name: project_name
+    label: Project Name
+    required: true
+    description: Name of the open source project or education institution this request will be supporting.
+  - name: project_url
+    label: Project URL
+    required: true
+    description: Primary website URL for the open source project or education institution.
+  - name: est_size_of_user_community
+    label: Estimated Size of User Community
+    required: true
+    description: How many estimated users do you have in your community?
+  - name: description_of_project_mission
+    label: Description of Project Mission
+    type: textarea
+    required: true
+    description:
+      Please describe in detail the mission and purpose of this request in regards to how the POWER architecture will
+      support your project. Also describe the general mission of your project.
+  - name: expected_usage_model
+    label: Expected Usage Model
+    type: textarea
+    required: true
+    description:
+      What types of activity will the machine be used for? (i.e. compile builds, performance testing, architecture
+      troubleshooting, etc).
+  - name: anticipated_duration_of_need
+    label: Anticipated duration of need
+    required: true
+    description:
+      How long do you expect you will need these resources? Ongoing or indefinitely are also acceptable answers.
+  - name: deployment_timeframe
+    label: Deployment timeframe
+    type: select
+    value: Within 7 business Days
+    options:
+      - Within 7 business Days
+      - Within 3 business Days
+      - value: Within 1 business Days
+        label: Within 1 business Day
+    description:
+      Normal turnaround for access is typically 7 business days. If you need it sooner than that, please choose which
+      time frame you need. We will do our best to accommodate your request.
+  - name: other_information
+    label: Other information
+    type: textarea
+    description: Is there anything additional you would like to provide for your request?
+  - type: heading
+    label: POWER CI Access Question(s)
+    id: ci-questions
+  - type: checkbox-group
+    id: platforms
+    label: OS Platform(s)
+    required: true
+    description: Some platforms may not be supported on a specific architecture, so please check with us first.
+    options:
+      - name: platform_centos
+        label: CentOS
+      - name: platform_fedora
+        label: Fedora
+      - name: platform_debian
+        label: Debian
+      - name: platform_ubuntu
+        label: Ubuntu
+      - name: platform_gentoo
+        label: Gentoo
+      - name: platform_other
+        label: Other (please specify in the "Other information" field above)
+  - name: gpu_access
+    label: GPU Access
+    type: select
+    value: "No"
+    options:
+      - "No"
+      - "Yes"
+    description:
+      Thanks to a collaboration with the [Center for Genome Research and Biocomputing
+      (CGRB)](https://cgrb.oregonstate.edu/), our POWER CI system does have access to GPU's via Jenkins. If you require
+      GPU access, please answer "Yes".
+  - name: ci-github
+    label: GitHub Username(s) for POWER CI
+    required: true
+    description:
+      We use GitHub OAuth to authenticate into the POWER CI system. Please provide a comma separated list of GitHub
+      username(s) to gain access.
