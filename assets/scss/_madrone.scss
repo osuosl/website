@@ -459,6 +459,24 @@ html:not([data-bs-theme="dark"]) .dark-only {
   min-height: 100vh;
 }
 
+// ------------------------------------------------------------ staff roster
+// Rendered by the people shortcode from data/people.yml.
+.person {
+  clear: both; // start below the previous entry's floated portrait
+
+  + .person {
+    margin-top: 2.5rem;
+  }
+
+  .person-role {
+    font-weight: 600;
+  }
+
+  .person-contact dt {
+    font-weight: 600;
+  }
+}
+
 // ------------------------------------------------------------ request forms
 // Rendered by the request-form shortcode from data/forms/*.yml; the
 // controls themselves use Bootstrap's form classes.
