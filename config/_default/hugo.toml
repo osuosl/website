@@ -19,6 +19,12 @@ tag = 'tags'
 # Content embeds raw HTML (request forms, occasional inline markup).
 unsafe = true
 
+[markup.highlight]
+# Hugo's default (monokai) fails WCAG AA: its pink #f92672 is 3.93:1 on
+# the code background. modus-vivendi is designed for WCAG conformance
+# and, being a fixed dark block, reads the same in both color modes.
+style = 'modus-vivendi'
+
 [imaging]
 quality = 80
 resampleFilter = 'Lanczos'

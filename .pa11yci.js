@@ -49,21 +49,55 @@ module.exports = {
       "#g-recaptcha-response",
     ].join(", "),
   },
-  urls: [
-    "http://localhost:8080/",
-    "http://localhost:8080/about/",
-    "http://localhost:8080/about/people/",
-    "http://localhost:8080/about/sponsors/",
-    "http://localhost:8080/blog/",
-    "http://localhost:8080/blog/drupal_infrastructure/",
-    "http://localhost:8080/projects/",
-    "http://localhost:8080/donate/",
-    "http://localhost:8080/form-submitted/",
-    "http://localhost:8080/services/hosting/request/",
-    "http://localhost:8080/services/aarch64/request-hosting/",
-    "http://localhost:8080/services/powerdev/request-hosting/",
-    "http://localhost:8080/services/powerdev/request-ci/",
-    "http://localhost:8080/services/ibm-z/request-ci/",
-    "http://localhost:8080/404.html",
-  ],
+  // The URL list is generated from the built site so new pages are
+  // scanned automatically instead of relying on someone extending a
+  // hand-written list. Alias redirect stubs (Hugo's internal
+  // meta-refresh template, no real content) are always skipped.
+  //
+  // By default, individual blog posts and tag pages are sampled by one
+  // representative each: they are hundreds of instances of one template,
+  // and scanning them all costs ~4 minutes on every CI run. Set
+  // PA11Y_FULL=1 to sweep every rendered page instead — worth doing
+  // before a launch, after editing old posts (their raw HTML predates
+  // the markdownlint alt-text rule), or after touching the blog
+  // template or syntax highlighting. The full sweep passed 172/172 on
+  // 2026-07-15.
+  urls: (() => {
+    const fs = require("fs");
+    const path = require("path");
+    const site = path.join(__dirname, "public");
+    const base = "http://localhost:8080";
+    const full = !!process.env.PA11Y_FULL;
+
+    if (!fs.existsSync(site)) {
+      throw new Error(".pa11yci.js: build the site first (hugo && npx pagefind --site public)");
+    }
+
+    const urls = [];
+    const walk = (dir) => {
+      for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+        if (entry.isDirectory()) {
+          walk(path.join(dir, entry.name));
+        } else if (entry.name === "index.html") {
+          const page = fs.readFileSync(path.join(dir, entry.name), "utf8");
+          // Alias stub: CI builds with --minify, which strips the
+          // attribute quotes, so match both forms.
+          if (/http-equiv=["']?refresh/i.test(page)) {
+            continue;
+          }
+          const url = path.relative(site, dir).replaceAll(path.sep, "/");
+          if (!full && /^(blog|tags)\/.+/.test(url)) {
+            continue;
+          }
+          urls.push(`${base}/${url && url + "/"}`);
+        }
+      }
+    };
+    walk(site);
+
+    if (!full) {
+      urls.push(`${base}/blog/drupal_infrastructure/`, `${base}/tags/student-stories/`);
+    }
+    return urls.concat([`${base}/404.html`]).sort();
+  })(),
 };

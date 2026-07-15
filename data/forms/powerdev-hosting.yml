@@ -125,7 +125,8 @@ fields:
   - name: openstack_access
     label: OpenStack Access
     type: select
-    placeholder: "- None -"
+    required: true
+    placeholder: "- Select -"
     options:
       - Have the OSL create the node(s) for me
       - I'd like to have access to the Openstack GUI/API
