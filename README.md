@@ -120,8 +120,10 @@ server-side Apache rules.
 The site must conform to [WCAG 2.1 Level AA](https://www.w3.org/TR/WCAG21/): the Department of Justice's rule on digital
 accessibility under ADA Title II requires it of Oregon State University, with a compliance date of April 26, 2027 — see
 [OSU's New ADA Rule on Digital Accessibility](https://accessibility.oregonstate.edu/digital-accessibility/ada) page. CI
-runs [pa11y-ci](https://github.com/pa11y/pa11y-ci) (config: `.pa11yci.js`) as a blocking check over a representative
-page set, with **two runners, both fully enabled**:
+runs [pa11y-ci](https://github.com/pa11y/pa11y-ci) (config: `.pa11yci.js`) as a blocking check. The URL list is
+generated from the built site, so new pages are scanned automatically. By default every unique page is scanned;
+individual blog posts and tag pages — hundreds of instances of one template — are sampled by one representative each,
+and alias redirect stubs are skipped. Scans use **two runners, both fully enabled**:
 
 - [axe-core](https://github.com/dequelabs/axe-core) — actively maintained by Deque, analyzes fully rendered pages
   (including CSS custom properties), and is tuned for few false positives.
@@ -152,6 +154,16 @@ hugo && npx pagefind --site public
 python3 -m http.server 8080 --directory public &
 npx pa11y-ci --config .pa11yci.js
 ```
+
+To sweep **every** rendered page — all blog posts and tag pages included — set `PA11Y_FULL=1` (takes a few minutes; same
+settings otherwise):
+
+```bash
+PA11Y_FULL=1 npx pa11y-ci --config .pa11yci.js
+```
+
+Run the full sweep before a launch, after editing old blog posts (their raw HTML predates the markdownlint alt-text
+rule), or after changing the blog template or syntax highlighting.
 
 #### Manual QA checklist
 
