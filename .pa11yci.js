@@ -98,6 +98,9 @@ module.exports = {
     if (!full) {
       urls.push(`${base}/blog/drupal_infrastructure/`, `${base}/tags/student-stories/`);
     }
+    // Sorted so the scan log is deterministic and easy to grep: the walk
+    // emits directory-traversal order, and POSIX leaves readdir ordering
+    // unspecified. Costs ~0.03ms — the scan itself is minutes.
     return urls.concat([`${base}/404.html`]).sort();
   })(),
 };
