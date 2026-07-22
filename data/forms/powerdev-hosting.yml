@@ -79,7 +79,6 @@ fields:
     options:
       - POWER10
       - POWER9
-      - POWER8
   - name: flavor
     label: Flavor
     type: select

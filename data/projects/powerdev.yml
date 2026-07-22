@@ -92,13 +92,13 @@
   description: community-led collection of recipes, build infrastructure and distributions for the conda package manager
   category: foss
 - name: CRIU
-  description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
+  description: Supports project specific porting efforts of POWER ppc64/ppc64le
   category: foss
 - name: Cryptography
   description: >-
     Cryptography is a core Python library providing secure cryptographic recipes and primitives to developers. The
     project’s mission is to make cryptography safer, easier to use correctly, and broadly accessible across platforms.
-    This request is specifically to validate and troubleshoot ppc64le wheel compatibility on POWER8 systems. Access to
+    This request is specifically to validate and troubleshoot ppc64le wheel compatibility on POWER systems. Access to
     POWER architecture systems helps ensure that prebuilt wheels meet manylinux expectations and do not include
     unsupported CPU instructions, improving reliability for users running on IBM POWER platforms.
   category: foss
@@ -203,7 +203,7 @@
   description: Supports optimization of software scaling in FFmpeg running on POWER systems
   category: foss
 - name: Firefox
-  description: Ports Mozilla Firefox to POWER8
+  description: Ports Mozilla Firefox to POWER
   category: foss
 - name: Firefox JIT
   description: Optimize the SpiderMonkey engine for POWER10
@@ -233,7 +233,7 @@
   description: The GNU C Library project provides the core libraries for the GNU system and GNU/Linux systems
   category: foss
 - name: Go Language
-  description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
+  description: Supports project specific porting efforts of POWER ppc64/ppc64le
   category: foss
 - name: grommunio
   description:
@@ -277,7 +277,7 @@
   description: GD is an open source code library for the dynamic creation of images by programmers.
   category: foss
 - name: libjpeg-turbo
-  description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
+  description: Supports project specific porting efforts of POWER ppc64/ppc64le
   category: foss
 - name: liboqs
   description: a collection of open-source implementations of quantum-safe key encapsulation mechanism (KEM)
@@ -291,7 +291,7 @@
     as small convolutions. Enabling POWER JIT-code generation and optimization.
   category: foss
 - name: Linux Kernel (BPF memory model development)
-  description: Developing a BPF memory model, testing with POWER8
+  description: Developing a BPF memory model, testing with POWER
   category: foss
 - name: Linux Kernel (bugfixing on linux-next)
   description: Fixing a bug on powerpc in linux-next
@@ -322,14 +322,14 @@
   category: foss
 - name: LLVM
   description: >-
-    Supports project specific porting efforts of POWER8 ppc64/ppc64le to run buildbot instances; these instances build
+    Supports project specific porting efforts of POWER ppc64/ppc64le to run buildbot instances; these instances build
     LLVM and run the test suites when patches are checked in to ensure they run properly on the POWER architecture
   category: foss
 - name: LLVM BOLT
   description: post-link optimizer developed to speed up large applications
   category: foss
 - name: LTTng
-  description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
+  description: Supports project specific porting efforts of POWER ppc64/ppc64le
   category: foss
 - name: Lynx
   description: Open source chess engine
@@ -380,7 +380,7 @@
 - name: Multiple LLVM/HHVM/*
   description: >-
     Contributes towards FOSS software, optimizations for POWER arch; specifically contributes towards HHVM JIT, LLVM and
-    other FOSS projects on POWER8
+    other FOSS projects on POWER
   category: foss
 - name: .Net
   description: Support IBM efforts to port to PPC64le
@@ -398,7 +398,7 @@
   category: foss
 - name: Node.js
   description: >-
-    Supports project specific porting efforts of POWER8 ppc64/ppc64le; provides stable POWER releases for community
+    Supports project specific porting efforts of POWER ppc64/ppc64le; provides stable POWER releases for community
     builds of Node.js
   category: foss
 - name: NumPy
@@ -414,17 +414,17 @@
 - name: OCM
   description: >-
     Observationally Cooperative Multithreading: provides a 'kinder gentler' form of concurrency, allowing programmers to
-    imagine that a single thread runs on the machine at any one time; uses POWER8 hardware transactional memory to run
+    imagine that a single thread runs on the machine at any one time; uses POWER hardware transactional memory to run
     multiple threads at the same time while appearing to be running only one at a time
   category: foss
 - name: OpenBLAS
-  description: Optimizes BLAS 1/2 double precision for POWER8 VSX
+  description: Optimizes BLAS 1/2 double precision for POWER VSX
   category: foss
 - name: OpenBMC
   description: Open source BMC firmware, which supports PowerPC hosts
   category: foss
 - name: OpenCV
-  description: Implements POWER8 and POWER9 VSX SIMD optimizations for OpenCV
+  description: Implements POWER VSX SIMD optimizations for OpenCV
   category: foss
 - name: OpenJDK and OpenJFX Snaps
   description: >-
@@ -433,7 +433,7 @@
   category: foss
 - name: OpenJDK
   description: >-
-    Supports project specific porting efforts of POWER8 ppc64/ppc64le; provides support for Java 7 and 8 which is being
+    Supports project specific porting efforts of POWER ppc64/ppc64le; provides support for Java 7 and 8 which is being
     consumed by most major distributions
   category: foss
 - name: OpenMandriva
@@ -496,7 +496,7 @@
   category: foss
 - name: Presto
   description: >-
-    Supports efforts of a POWER8 ppc64le port of Presto, a distributed SQL query engine for running interactive analytic
+    Supports efforts of a POWER ppc64le port of Presto, a distributed SQL query engine for running interactive analytic
     queries against big data sources
   category: foss
 - name: Primerclip
@@ -512,7 +512,7 @@
   category: foss
 - name: PyTorch
   description: >-
-    Python framework for tensors and deep neural networks. Uses POWER8 for continuous integration and functional testing
+    Python framework for tensors and deep neural networks. Uses POWER for continuous integration and functional testing
   category: foss
 - name: QEMU
   description: A generic and open source machine emulator and virtualizer
@@ -585,7 +585,7 @@
   description: A packet analyzer for UNIX-like OSes
   category: foss
 - name: Tesseract-OCR
-  description: Offers a POWER8 testing platform for Google's optical character recognition library, Tesseract OCR
+  description: Offers a POWER testing platform for Google's optical character recognition library, Tesseract OCR
   category: foss
 - name: The NetBSD Foundation
   description: To run NetBSD on everything, including toasters.
@@ -594,7 +594,7 @@
   description: Continuous Integration using Travis and Power
   category: foss
 - name: Travis/Rust/Swift
-  description: Provides access to the POWER8 architeture for Travis, Rust, or Swift project developers
+  description: Provides access to the POWER architecture for Travis, Rust, or Swift project developers
   category: foss
 - name: TripleO CI
   description: Continuous Integration and Delivery for RedHat OpenStack Platform
@@ -608,7 +608,7 @@
   description: Efficient modeling of protein folding using POWER for increased processing and scalability
   category: foss
 - name: VideoLan
-  description: Updates the Altivec code in x264 and x265 to VSX and makes sure it works correctly on POWER8le
+  description: Updates the Altivec code in x264 and x265 to VSX and makes sure it works correctly on little-endian POWER
   category: foss
 - name: vLLM
   description: Fast and easy to use large language model inference and serving engine
@@ -657,7 +657,7 @@
 - name: BearSSL
   description: >-
     An SSL/TLS library, with a focus on a clean, secure implementation of protocol, up-to-date with the latest research;
-    POWER8 systems writes specific implementations of AES/GCM and other cryptographic algorithms that leverage the
+    POWER systems writes specific implementations of AES/GCM and other cryptographic algorithms that leverage the
     specific opcodes offered by the CPU, for better performance
   category: foss
   status: former
@@ -678,7 +678,7 @@
 - name: dlib
   description: >-
     A modern C++ toolkit containing machine learning algorithms and tools for creating complex software in C++ to solve
-    real world problems. The projects ran tests and benchmarked PowerPC8 VSX optimizations.
+    real world problems. The projects ran tests and benchmarked PowerPC VSX optimizations.
   category: foss
   status: former
 - name: Drupal Testbots
@@ -718,7 +718,7 @@
   category: foss
   status: former
 - name: Ginga Middleware
-  description: ISDB middleware for interactive DTV. Supports project in porting to POWER8
+  description: ISDB middleware for interactive DTV. Supports project in porting to POWER
   category: foss
   status: former
 - name: GLIBC
@@ -774,7 +774,7 @@
   category: foss
   status: former
 - name: MySQL
-  description: Involved testing on POWER8, provide fixes to platform specific bugs and make more stable on POWER8
+  description: Involved testing on POWER, provide fixes to platform specific bugs and make more stable on POWER
   category: foss
   status: former
 - name: Nettle
@@ -830,8 +830,7 @@
   category: foss
   status: former
 - name: SHA-3
-  description:
-    Ensures support and viability of Secure Hash Algorithm 3 on POWER, including POWER8 specific optimizations
+  description: Ensures support and viability of Secure Hash Algorithm 3 on POWER, including POWER specific optimizations
   category: foss
   status: former
 - name: Squash
@@ -852,12 +851,12 @@
   status: former
 - name: X265 HEVC Encoder
   description: >-
-    Explores POWER8-specific optimizations for x265 including, but not restricted to, assembly optimizations and
+    Explores POWER-specific optimizations for x265 including, but not restricted to, assembly optimizations and
     thread-related optimizations
   category: foss
   status: former
 - name: Zarafa
-  description: Supports project specific porting efforts of POWER8 ppc64/ppc64le
+  description: Supports project specific porting efforts of POWER ppc64/ppc64le
   category: foss
   status: former
 - name: BLCR
@@ -893,7 +892,7 @@
 - name: Technische Hochschule Nürnberg
   description: >-
     Implements native code generation on PowerPC 64-bit little endian for 'The Glorious Glasgow Haskell Compilation
-    System' and as a pre-release for openSUSE and SUSE Linux Enterprise on POWER8 servers
+    System' and as a pre-release for openSUSE and SUSE Linux Enterprise on POWER servers
   category: academic
 - name: University of Alberta
   description: >-
@@ -925,7 +924,7 @@
   status: former
 - name: University of Alberta and Universidade de Campinas
   description: >-
-    The goal is to investigate the use of the speculation support in POWER8 for the speeding up the sequential execution
+    The goal is to investigate the use of the speculation support in POWER for the speeding up the sequential execution
     of programs. Single-threaded speculation has been used in the past, through trace-based compilation. The goal of
     this project is to investigate multi-threaded speculation of alternative paths of execution in a sequential
     execution. This is a joint project between University of Alberta -(UofA) and Universidade de Campinas (Unicamp).
@@ -946,7 +945,7 @@
   category: gpu
 - name: CASHX Pipeline
   description: >-
-    Sequence alignment tools CASHX and pipeline were ported to work on the IBM POWER8 to take full advantage of higher
+    Sequence alignment tools CASHX and pipeline were ported to work on IBM POWER to take full advantage of higher
     thread count machines. CASHX is one of the few non-BWA based high throughput genome alignment tools.
   category: gpu
 - name: CASSA
@@ -956,12 +955,12 @@
   category: gpu
 - name: Cryo-EM
   description: >-
-    Frank Liu and Suvadip Paul are using GPU Acceleration on POWER8 and POWER9 architecture to build, debug, and test
+    Frank Liu and Suvadip Paul are using GPU Acceleration on POWER architecture to build, debug, and test
     software used to examine and model highly detailed microscopic structures such as proteins gathered using Cryo-EM
     technology.
   category: gpu
 - name: Cuttlefish denovo DNA
-  description: Eric Aker at PacBell is using the POWER8 platform to test the denovo assembly of the Cuttlefish genome.
+  description: Eric Aker at PacBell is using the POWER platform to test the denovo assembly of the Cuttlefish genome.
   category: gpu
 - name: Deeplearning4j
   description: >-
@@ -973,7 +972,7 @@
   category: gpu
 - name: DIAMOND Sequence Alignment Tool
   description: >-
-    Benjamin Buchfink - creator of the DIAMOND Sequence alignment tool - helped port this software onto the IBM POWER8
+    Benjamin Buchfink - creator of the DIAMOND Sequence alignment tool - helped port this software onto the IBM POWER
     architecture based on requests from the research community. DIAMOND is a sequence aligner for protein and translated
     DNA searches and it functions as a drop-in replacement for the NCBI Basic Local Alignment Search Tool.
   category: gpu
@@ -984,7 +983,7 @@
   category: gpu
 - name: GeneMark
   description: >-
-    Mark Borodovsky and Alexandre Lomsadze from GeneMark are currently working on porting tools onto the POWER8
+    Mark Borodovsky and Alexandre Lomsadze from GeneMark are currently working on porting tools onto the POWER
     platform. GeneMark and its associated tools are used throughout the genomics field for gene prediction.
   category: gpu
 - name: Gene Prediction Analysis in Salvia hispanica Genome
@@ -1024,7 +1023,7 @@
     industrial use cases
   category: gpu
 - name: PyTorch
-  description: Freddie Mendoza is working on PyTorch on the POWER8 systems.
+  description: Freddie Mendoza is working on PyTorch on the POWER systems.
   category: gpu
 - name: PyTorch
   description:
@@ -1053,11 +1052,11 @@
     Ted Chang is building and testing the latest source on POWER because is not a supported architecture of Tensorflow.
   category: gpu
 - name: Texas A&M
-  description: Jian Tao from Texas A&M is interested in testing the performance of the POWER8 systems.
+  description: Jian Tao from Texas A&M is interested in testing the performance of the POWER systems.
   category: gpu
 - name: The Street-based Environmental Exposure Project
   description: >-
-    The Street-based Environmental Exposure Project is using POWER8 for compiling builds and performance testing. Their
+    The Street-based Environmental Exposure Project is using POWER for compiling builds and performance testing. Their
     project is working to understand links between built environment exposures and human health.
   category: gpu
 - name: UNICAMP
@@ -1067,19 +1066,19 @@
   category: gpu
 - name: UNIVA
   description: >-
-    The UNIVA team is working on a version of UGE that will support POWER8-9 architectures for cross platform
+    The UNIVA team is working on a version of UGE that will support POWER architectures for cross platform
     integration.
   category: gpu
 - name: Virginia Tech
-  description: James McClure is looking at IBM POWER8 and developing tools on the platform.
+  description: James McClure is looking at IBM POWER and developing tools on the platform.
   category: gpu
 - name: VSEARCH
   description: >-
-    Torbjørn Rognes and Tomas Flourithe creators of VSEARCH are using the POWER8 platform to build and provide binaries
+    Torbjørn Rognes and Tomas Flourithe creators of VSEARCH are using the POWER platform to build and provide binaries
     for their tool.
   category: gpu
 - name: Xiaoli Fern Lab OSU
   description: >-
     Xiaoli Fern lab is working on identification of bird sounds using GPU technology. They are currently testing tools
-    on the POWER8 platform with the P100 GPU on the board for increased performance.
+    on the POWER platform with the P100 GPU on the board for increased performance.
   category: gpu

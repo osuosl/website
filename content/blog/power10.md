@@ -38,6 +38,9 @@ advancements and providing robust, reliable resources to our users.
 
 ## Continued Support for POWER8 and POWER9
 
+> **Update (July 2026):** POWER8 has since been [deprecated](/blog/power8-deprecation) and is no longer offered at the
+> OSL.
+
 In addition to the new POWER10 capabilities, we will continue to offer support for POWER8 and POWER9 platforms for the
 foreseeable future. This ensures a comprehensive range of options for our projects, allowing them to choose the most
 suitable architecture for their specific needs. Our goal is to provide a versatile and powerful platform for the
