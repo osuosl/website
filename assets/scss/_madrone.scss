@@ -300,6 +300,35 @@ html:not([data-bs-theme="dark"]) .dark-only {
   }
 }
 
+// Homepage "Latest from the blog": equal-height cards with a smaller excerpt
+// clamped to a few lines so wordy summaries don't dominate the section. The
+// blog listing keeps the full-size summary.
+.home-blog {
+  .blog-card {
+    height: 100%;
+    margin-bottom: 0; // the row gutter provides the spacing
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-text {
+      font-size: 0.875rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      overflow: hidden;
+    }
+
+    .btn {
+      margin-top: auto;
+      align-self: flex-start;
+    }
+  }
+}
+
 .sponsor-row {
   display: flex;
   flex-wrap: wrap;
