@@ -3,7 +3,7 @@
   same file): linked logo plus the entry's blurb.
   */
 -}}
-{{ range site.Data.sponsors }}
+{{ range hugo.Data.sponsors }}
   <section class="sponsor">
     <a href="{{ .url }}">
       {{- partial "responsive-image.html" (dict "src" .logo "alt" (printf "%s logo" .name) "class" "img-sponsors") -}}

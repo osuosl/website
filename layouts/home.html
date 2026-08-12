@@ -40,9 +40,9 @@
       {{ $founded := time.AsTime site.Params.founded }}
       {{ $years := sub now.Year $founded.Year }}
       {{ if lt (now.Format "01-02") ($founded.Format "01-02") }}{{ $years = sub $years 1 }}{{ end }}
-      {{ $currentProjects := sub (len site.Data.projects.hosted) (len (where site.Data.projects.hosted "status" "former")) }}
+      {{ $currentProjects := sub (len hugo.Data.projects.hosted) (len (where hugo.Data.projects.hosted "status" "former")) }}
       <div class="row g-4 text-center">
-        {{ range site.Data.stats }}
+        {{ range hugo.Data.stats }}
           {{ $number := .number }}
           {{ if eq .compute "years" }}
             {{ $number = $years }}
@@ -63,7 +63,7 @@
       <h2>Hosting for open source projects</h2>
       <p>Based on your needs, we offer unmanaged and managed hosting across several environments:</p>
       <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
-        {{ range site.Data.services }}
+        {{ range hugo.Data.services }}
           <div class="col">
             <div class="card service-card">
               <div class="card-body">
@@ -91,12 +91,12 @@
     <div class="container-site">
       <h2>Trusted by open source communities</h2>
       <div class="featured-projects">
-        {{ range site.Data.featured_projects }}
+        {{ range hugo.Data.featured_projects }}
           <a class="featured-project" href="{{ .url }}">{{ .name }}</a>
         {{ end }}
       </div>
       <p class="mt-3 mb-0">
-        {{ $currentProjects := sub (len site.Data.projects.hosted) (len (where site.Data.projects.hosted "status" "former")) }}
+        {{ $currentProjects := sub (len hugo.Data.projects.hosted) (len (where hugo.Data.projects.hosted "status" "former")) }}
         <a href="{{ "projects/" | relURL }}">See all {{ $currentProjects }} hosted projects &rarr;</a>
       </p>
     </div>
@@ -122,7 +122,7 @@
     <div class="container-site">
       <h2>Supported by</h2>
       <div class="sponsor-row">
-        {{ range site.Data.sponsors }}
+        {{ range hugo.Data.sponsors }}
           <a href="{{ .url }}">
             <img src="{{ .logo | relURL }}" alt="{{ .name }}" height="56" />
           </a>
