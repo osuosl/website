@@ -6,7 +6,7 @@
   per-person deep link from the site search.
   */
 -}}
-{{ range site.Data.people }}
+{{ range hugo.Data.people }}
   <section class="person">
     <h2 id="{{ .id }}"><a href="#{{ .id }}">{{ .name }}</a></h2>
     <p class="person-role">{{ .role }}</p>

@@ -9,7 +9,7 @@ are current category= filter on the entries' category key (omit to include all) 
 appended Rows sort by name. The second column renders the entries' services list when present (the hosted list),
 otherwise their description. */ -}}
 {{- $key := .Get "data" -}}
-{{- $data := index site.Data.projects $key -}}
+{{- $data := index hugo.Data.projects $key -}}
 {{- if not $data -}}
   {{- errorf "project_table: no data/projects/%s.yml (page %s)" $key .Position -}}
 {{- end -}}

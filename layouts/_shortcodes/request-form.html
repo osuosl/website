@@ -7,7 +7,7 @@
 The data file carries the per-form pieces (send_to, subject_prefix, contact, fields); shared formsender settings live in
 [params.formsender]. Field markup comes from the form-field partial. */ -}}
 {{- $name := .Get 0 -}}
-{{- $form := index site.Data.forms $name -}}
+{{- $form := index hugo.Data.forms $name -}}
 {{- if not $form -}}
   {{- errorf "request-form: no data/forms/%s.yml (page %s)" $name .Position -}}
 {{- end -}}
