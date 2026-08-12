@@ -16,11 +16,6 @@
     aarch64, armv7 and x86_64 and s390x are now well supported, ppc64le is still needing some work and optimizations. As
     I don't have access to a ppc64le machine, it is very hard for me to diagnose issues.
   category: foss
-- name: Amazon Corretto
-  description: >-
-    Corretto is Amazon's OpenJDK distribution. Our mission is to make Shenandoah the best garbage collector it can be,
-    on every platform.
-  category: foss
 - name: Anaconda
   description: >-
     Installation program used by Fedora, RHEL, and others; uses POWER support for Continuous Integration and development
@@ -652,6 +647,12 @@
   status: former
 - name: Alberta Speculation
   description: Investigate multi-threaded speculation of alternative paths of execution in a sequential execution
+  category: foss
+  status: former
+- name: Amazon Corretto
+  description: >-
+    Corretto is Amazon's OpenJDK distribution. Our mission is to make Shenandoah the best garbage collector it can be,
+    on every platform.
   category: foss
   status: former
 - name: BearSSL
