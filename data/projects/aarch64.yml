@@ -87,6 +87,14 @@
     Engineering, Vulnerability Management and Red Team Testing.
 - name: Minio
   description: Testing minio object storage server on ARM architecture.
+- name: MobileLab
+  description: >-
+    MobileLab is an open-source mobile testing and device orchestration project, originally created as iOSLab for running
+    multiple iOS Simulator environments in parallel and now expanding toward cross-platform iOS and Android support.
+- name: Nix
+  description: >-
+    Nix is a functional programming language and package manager, with an OS built on top of it. Tree-sitter is an
+    incremental parsing tool and parser generator.
 - name: Mumble
   description: Mumble is a free, open source, low latency, high quality voice chat application.
 - name: Nix
