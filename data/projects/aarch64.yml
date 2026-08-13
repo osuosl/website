@@ -95,7 +95,7 @@
   description: >-
     Nix is a functional programming language and package manager, with an OS built on top of it. Tree-sitter is an
     incremental parsing tool and parser generator.
- name: Mumble
+- name: Mumble
   description: Mumble is a free, open source, low latency, high quality voice chat application.
 - name: Nix
   description: >-
