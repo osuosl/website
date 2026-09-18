@@ -1,6 +1,6 @@
 ---
 title: Request Hosting
-recaptcha: true
+captcha: true
 aliases: ["/request-hosting/", "/hostingrequest/"]
 ---
 

@@ -34,19 +34,17 @@ module.exports = {
     // computed-contrast assertion in both color modes.
     levelCapWhenNeedsReview: "warning",
     hideElements: [
-      // Google reCAPTCHA widget internals: a third-party, cross-origin
-      // iframe we cannot modify (it also ships a hidden unlabeled
-      // textarea). Google provides the accessible audio challenge inside
-      // the widget itself. Unlike the cases above, this is not a
-      // "cannot measure" — it is a "cannot fix", so it stays hidden.
-      // NOTE: these exceptions are specific to the v2 checkbox widget.
-      // If the forms move to reCAPTCHA v3 (invisible), remove these,
-      // re-run the scan, and re-add only what still fires — likely just
-      // the floating badge iframe, or nothing if the badge is replaced
-      // with Google's inline attribution text.
-      ".g-recaptcha",
-      "iframe[src*='recaptcha']",
-      "#g-recaptcha-response",
+      // Cloudflare Turnstile widget internals: a third-party, cross-origin
+      // iframe we cannot modify (it also ships a hidden input). Cloudflare
+      // provides its own accessible challenge inside the widget. Unlike the
+      // cases above, this is not a "cannot measure" — it is a "cannot fix",
+      // so it stays hidden.
+      // NOTE: these exceptions are specific to the managed widget. If the
+      // forms move to the invisible mode, remove these, re-run the scan,
+      // and re-add only what still fires.
+      ".cf-turnstile",
+      "iframe[src*='challenges.cloudflare.com']",
+      "input[name='cf-turnstile-response']",
     ].join(", "),
   },
   // The URL list is generated from the built site so new pages are

@@ -1,6 +1,6 @@
 ---
 title: IBM Z CI Request Form
-recaptcha: true
+captcha: true
 aliases: ["/services/ibm-z/request_ci/"]
 ---
 

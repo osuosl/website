@@ -33,7 +33,7 @@ The data file carries the per-form pieces (send_to, subject_prefix, contact, fie
       </em>
     </p>
   {{ end }}
-  <div class="g-recaptcha" data-sitekey="{{ $fs.recaptcha_sitekey }}"></div>
+  <div class="cf-turnstile" data-sitekey="{{ $fs.turnstile_sitekey }}"></div>
   {{/* Formsender envelope. last_name is a spam honeypot and must stay empty.
     The subject key is the field whose value formsender puts in the ticket
     subject; every form uses project_name. The redirect's static value
