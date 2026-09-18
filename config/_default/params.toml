@@ -13,4 +13,6 @@ images = ['images/zachary_homepage.jpg']
 [formsender]
 action = 'https://formsender.osuosl.org:443'
 token = 'F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9F6fgvGY4G'
-recaptcha_sitekey = '6LeOugIAAAAAALZJU8MBrWbtN6NC9sMGCu8Xgb41'
+# Cloudflare Turnstile site key for the osuosl.org widget. Public, and paired
+# with the TURNSTILE_SECRET formsender reads from its data bag.
+turnstile_sitekey = '0x4AAAAAAE8QCqtEUqrUFpNx'

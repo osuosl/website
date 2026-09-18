@@ -1,6 +1,6 @@
 ---
 title: POWER CI Request Form
-recaptcha: true
+captcha: true
 aliases: ["/services/powerdev/request_powerci/"]
 ---
 

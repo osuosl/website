@@ -1,6 +1,6 @@
 ---
 title: AARCH64 OpenStack Request Form
-recaptcha: true
+captcha: true
 aliases: ["/services/aarch64/request_hosting/"]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: OpenPOWER OpenStack Request Form
-recaptcha: true
+captcha: true
 aliases: ["/services/powerdev/request_hosting/"]
 ---
 
