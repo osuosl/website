@@ -21,6 +21,8 @@
   description: >-
     The Armbian mission is to develop, maintain and provide a solid Linux operating system alongside with a SDK for wide
     range of special purpose hardware, commonly refered to as single board computers.
+- name: BengalOS
+  description: Mobile operating system based on Debian for phones.
 - name: Chimera Linux
   description: >-
     Chimera is a general-purpose Linux system based on FreeBSD core userland utilities, the LLVM toolchain, musl libc
@@ -89,8 +91,9 @@
   description: Testing minio object storage server on ARM architecture.
 - name: MobileLab
   description: >-
-    MobileLab is an open-source mobile testing and device orchestration project, originally created as iOSLab for running
-    multiple iOS Simulator environments in parallel and now expanding toward cross-platform iOS and Android support.
+    MobileLab is an open-source mobile testing and device orchestration project, originally created as iOSLab for
+    running multiple iOS Simulator environments in parallel and now expanding toward cross-platform iOS and Android
+    support.
 - name: Mumble
   description: Mumble is a free, open source, low latency, high quality voice chat application.
 - name: Nix

@@ -48,6 +48,9 @@
 - name: BearSSL
   services:
     - powerpc
+- name: BengalOS
+  services:
+    - aarch64
 - name: BioJS
   services:
     - vm
