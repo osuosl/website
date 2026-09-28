@@ -310,6 +310,10 @@
     - mirroring
     - powerpc
     - aarch64
+- name: Gentoo-zh
+  services:
+    - vm
+    - mirror
 - name: Ginga Middleware
   services:
     - powerpc
