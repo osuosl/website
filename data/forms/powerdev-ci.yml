@@ -70,16 +70,10 @@ fields:
     required: true
     description: Some platforms may not be supported on a specific architecture, so please check with us first.
     options:
-      - name: platform_centos
-        label: CentOS
-      - name: platform_fedora
-        label: Fedora
       - name: platform_debian
         label: Debian
       - name: platform_ubuntu
         label: Ubuntu
-      - name: platform_gentoo
-        label: Gentoo
       - name: platform_other
         label: Other (please specify in the "Other information" field above)
   - name: gpu_access
@@ -90,9 +84,7 @@ fields:
       - "No"
       - "Yes"
     description:
-      Thanks to a collaboration with the [Center for Genome Research and Biocomputing
-      (CGRB)](https://cgrb.oregonstate.edu/), our POWER CI system does have access to GPU's via Jenkins. If you require
-      GPU access, please answer "Yes".
+      Our POWER CI system has access to GPUs via Jenkins. If you require GPU access, please answer "Yes".
   - name: ci-github
     label: GitHub Username(s) for POWER CI
     required: true
