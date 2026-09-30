@@ -10,8 +10,8 @@ Open Source Community. These services include:
 
 - Managed/unmanaged hosting – anything from a website, to a virtual machine, to dedicated hardware.
 - FTP mirroring from our national mirror network.
-- Various other services such as email relay, DNS, database servers, backups and monitoring. See our services page for
-  more information: <http://osuosl.org/services/hosting>.
+- Various other services such as email relay, DNS, database servers, object storage, backups and monitoring. See our
+  [services page](/services/hosting/details) for more information.
 
 ## Conditions of Use Policy
 
@@ -29,7 +29,7 @@ OSUOSL reserves the right to disable accounts, disconnect systems and/or discont
 
 Our hosting services are limited to open source projects and related community sites. In general, this refers to
 licenses approved by the Open Source Initiative (OSI), which maintains a list of approved licenses on their website:
-<http://www.opensource.org/.> Projects that release under other “open” licenses which are not OSI-approved will be
+<https://opensource.org/>. Projects that release under other “open” licenses which are not OSI-approved will be
 considered on a case-by-case basis.
 
 We provide hosting for various types of projects. Some are software/code-based projects such as Linux distributions,
@@ -38,7 +38,7 @@ forum/community sites dedicated to open source, etc.
 
 We typically try not to provide hosting for smaller projects which could be hosted at other “free” hosting services such
 as GitHub. We do not have the infrastructure set up to provide hosting to thousands of smaller projects, but would
-prefer to focus our efforts on hosting those projects that have grown too large to fit in at free hosted service but
+prefer to focus our efforts on hosting those projects that have grown too large to fit on free hosting services but
 cannot (yet) afford to pay for hosting at a hosting company.
 
 We decide on hosting requests by looking at many factors. One of the main things we look for in a project/site is that
