@@ -18,8 +18,7 @@ This access is intended only for _free and open source_ projects who qualify and
 IBM. For proprietary sourced projects or products please use the resources in
 [IBM's Linux on Systems documentation](https://www.ibm.com/docs/en/linux-on-systems).
 
-The POWER CI service uses Docker to deploy Jenkins workers. In the future we will add access to use OpenStack to deploy
-Jenkins workers (ppc64le only).
+The POWER CI service uses Docker to deploy Jenkins workers.
 
 {{< formsender-error >}}
 

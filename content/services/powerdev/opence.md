@@ -22,7 +22,7 @@ The build tools: <https://github.com/open-ce/open-ce-builder>
 Questions and general discussions involving OSU's builds can be directed to the Open-CE Slack team:
 <https://open-ce.slack.com/archives/C06DGE5GHND>.
 
-- [Current release](#open-ce-release-1115)
+- [Current release](#open-ce-release-1116)
 - [Alternate and Previous Releases](#alternate-and-previous-releases)
 
 ## Open-CE Release 1.11.6
@@ -95,7 +95,7 @@ Open-CE can be installed and run directly on a bare-metal or VM systems installe
   - Ubuntu 20.04.X
 
 - x86
-  - Red Hat Enterprise Linux for POWER LE 8.1+, 9.1+
+  - Red Hat Enterprise Linux 8.1+, 9.1+
   - Rocky / Alma Linux 8.1+, 9.1+
   - Ubuntu 20.04.X, 22.04.X
 
@@ -787,7 +787,7 @@ This is bug fix release 1 of release 1.6
 
 ### Open-CE Release 1.5.1
 
-_Release date: 01/11/2021_
+_Release date: 01/11/2022_
 
 This is bug fix release 1 of release 1.5
 

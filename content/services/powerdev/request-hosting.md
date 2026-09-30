@@ -17,7 +17,7 @@ specific VM it's for.
 
 This access is intended only for **_free and open source_** projects who qualify and are approved by both the OSUOSL and
 IBM. For proprietary sourced projects or products please use the
-[IBM Linux on Power cloud resources](https://developer.ibm.com/linuxonpower/cloud-resources/)
+resources in [IBM's Linux on Systems documentation](https://www.ibm.com/docs/en/linux-on-systems).
 
 {{< formsender-error >}}
 

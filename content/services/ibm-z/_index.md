@@ -2,12 +2,12 @@
 title: IBM Z Development Hosting
 ---
 
-The Open Source Lab partners with [Marist College](http://www.marist.edu/), who has a long-standing relationship with
-[IBM](https://www.ibm.com/us-en/), to provide access to [IBM Z](https://en.wikipedia.org/wiki/IBM_Z) based servers for
-the open source community. With this partnership, the Open Source Lab is able to offer continuous integration services
-via Jenkins allowing open source projects to build and test on the s390x architecture. More information about running
-Linux on IBM Z can be found at IBM's
-[Linux on IBM Z community](https://www.ibm.com/developerworks/community/groups/community/lozopensource).
+The Open Source Lab partners with [Marist University](https://www.marist.edu/), who has a long-standing relationship
+with [IBM](https://www.ibm.com/us-en/), to provide access to [IBM Z](https://en.wikipedia.org/wiki/IBM_Z) based servers
+for the open source community. With this partnership, the Open Source Lab is able to offer continuous integration
+services via Jenkins allowing open source projects to build and test on the s390x architecture. More information about
+running Linux on IBM Z can be found in IBM's [Linux on Systems
+documentation](https://www.ibm.com/docs/en/linux-on-systems).
 
 ## IBM Z Continuous Integration (IBM Z CI)
 
