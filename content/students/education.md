@@ -7,8 +7,6 @@ The Open Source Lab offers a number of events and educational opportunities to i
 
 [Beaver Barcamp](/students/beaver-barcamp)
 
-[DevOps BootCamp](https://devopsbootcamp.osuosl.org/)
-
-[Google Summer of Code (GSOC)](/students/gsoc/)
+[DevOps BootCamp](https://devopsbootcamp.osuosl.org/) (a past program; its materials are still online)
 
 [OSU Course CS312](/students/cs312/)
