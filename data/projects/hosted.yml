@@ -276,6 +276,7 @@
     - vm
 - name: FreeBSD
   services:
+    - co-location
     - powerpc
 - name: Freedesktop.org
   services:
@@ -313,7 +314,7 @@
 - name: Gentoo-zh
   services:
     - vm
-    - mirror
+    - mirroring
 - name: Ginga Middleware
   services:
     - powerpc
@@ -731,7 +732,7 @@
     - webapp
 - name: OpenWRT
   services:
-    - ci-cd
+    - co-location
 - name: OpenZFS
   services:
     - webapp
@@ -805,6 +806,7 @@
     - mirroring
 - name: postgreSQL
   services:
+    - co-location
     - powerpc
 - name: Power Devops
   services:

@@ -7,8 +7,8 @@ founded = '2003-10-11'
 images = ['images/zachary_homepage.jpg']
 
 # Shared formsender settings for the request forms (data/forms/*.yml +
-# the request-form shortcode). The token and reCAPTCHA site key have
-# always been committed here; formsender validates the token server-side
+# the request-form shortcode). The token and Turnstile site key are
+# committed here; formsender validates the token server-side
 # and the site key is public by design.
 [formsender]
 action = 'https://formsender.osuosl.org:443'
