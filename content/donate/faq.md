@@ -22,7 +22,7 @@ aliases: ["/faq/"]
 
 The Open Source Lab is part of The School of Electrical Engineering and Computer Science at Oregon State University. Our
 staff are all OSU employees, and our student employees are all OSU students. We receive many benefits from being part of
-the University including office space, data center space, infrastructure, and a close tie to students who are interested
+the University including office space, infrastructure, and a close tie to students who are interested
 in working with open source. We receive very little direct funding from the University, which is why we rely on external
 donations for our operations.
 
