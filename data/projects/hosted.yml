@@ -633,6 +633,9 @@
 - name: NumPy
   services:
     - powerpc
+- name: Nura (formerly postmarketOS)
+  services:
+    - vm
 - name: Nvidia-docker
   services:
     - powerpc
@@ -698,6 +701,11 @@
     - vm
     - webapp
     - mirroring
+- name: OpenPOWER Foundation
+  services:
+    - co-location
+    - vm
+    - webapp
 - name: OpenQuake
   services:
     - powerpc
@@ -995,6 +1003,9 @@
 - name: Tucana Linux
   services:
     - mirroring
+- name: U-Boot
+  services:
+    - vm
 - name: Ubuntu
   services:
     - mirroring
