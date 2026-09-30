@@ -3,7 +3,7 @@ title: Hardware Donations
 ---
 
 The OSL has a very limited budget to purchase additional hardware which supports the projects we host. We rely heavily
-on in-kind donations to refresh our hardware. Any hardware you donate to the OSL will be tax deductible based on its'
+on in-kind donations to refresh our hardware. Any hardware you donate to the OSL will be tax deductible based on its
 current value.
 
 If you are interested in donating hardware to the OSL, please keep the following in mind:
@@ -16,14 +16,11 @@ If you are interested in donating hardware to the OSL, please keep the following
 
 ## Current Wishlist
 
-Our hardware needs change over time, but here is a current list of specific needs:
+Our hardware needs change over time. Our current needs are:
 
-- 1U general purpose servers (PowerEdge R240/R640 or similar)
-- 2U storage servers (PowerEdge R740 or similar)
-- 10Gb/40Gb Network Interface Cards
-- 4TB+ enterprise class SAS 3.5" hard drives
-- NVMe or SSD drives (800G+)
-- 40Gb+ edge / core routers (Arista preferred)
-- 1Gb managed ToR switches
+- Storage servers and enterprise-class hard drives to expand our Ceph storage cluster
+- NVMe or SSD drives for faster storage tiers
+- Storage-dense servers for a new FTP mirror cluster to replace our aging mirror hardware
+- General-purpose servers to replace equipment that has reached end of life
 
 Please contact us at <donations@osuosl.org> if you are interested in donating any hardware to the OSL.

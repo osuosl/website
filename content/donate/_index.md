@@ -23,11 +23,12 @@ any questions, please check our [FAQ](/donate/faq) or email <donations@osuosl.or
 
 ## What we do
 
-OSUOSL currently hosts ~1,000 sub-projects. We provide hosting for medium to large high-impact FOSS projects that need a
-neutral hosting provider. We strive to help projects however possible: from simply providing access to a virtual
+OSUOSL currently hosts over 500 sub-projects. We provide hosting for medium to large high-impact FOSS projects that need
+a neutral hosting provider. We strive to help projects however possible: from simply providing access to a virtual
 machine, all the way to fully managing their infrastructure. Some of the high-profile projects for which we currently
-provide hosting include: The Linux Foundation, PostmarketOS, Debian, Fedora, Gentoo, Busybox/Buildroot, phpBB, GCC
-Compile Farm, qemu, Jenkins, ROS. Our popular software mirror hosts over 12T of data with over 100 projects included.
+provide hosting include: The Linux Foundation, Nura (formerly postmarketOS), Debian, Fedora, Gentoo, Busybox/Buildroot,
+phpBB, GCC Compile Farm, qemu, Jenkins, ROS. Our popular software mirror network hosts about 37 TB of data for about 100
+projects.
 
 The Lab employs and mentors undergraduate students to gain hands-on experience managing all of the infrastructure we
 provide to projects. Many of our students graduate and become prolific FOSS contributors, and some have gone on to found
@@ -35,10 +36,10 @@ their own tech companies. These young professionals experience real-world produc
 highly valuable skills that are difficult to acquire at most universities.
 
 In addition, we collaborate with private industry to provide a neutral hosting facility for non-x86 architectures. Our
-largest collaboration is with IBM, for whom we host over 100 projects on an OpenPOWER-based OpenStack cluster. This
-collaboration includes projects such as Docker, Go Language, TensorFlow, LLVM and TravisCI, among others. We collaborate
-with Ampere Computing to provide access to the ARM64 architecture, and with the RISC-V Foundation to provide access to
-the RISC-V architecture.
+largest collaboration is with IBM, for whom we host over 150 projects on an OpenPOWER-based OpenStack cluster. This
+collaboration includes projects such as Docker, Go Language, TensorFlow and LLVM, among others. We collaborate with
+Ampere Computing to provide access to the ARM64 architecture, with Marist University to provide continuous integration
+on the IBM Z (s390x) architecture, and with RISC-V International to provide access to the RISC-V architecture.
 
 Thank you for making a secure donation to the Open Source Lab Fund through the OSU Foundation. Your gift will support
 the continued growth and development of a strong Open Source community.
