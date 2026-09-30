@@ -10,7 +10,7 @@ projects may have hundreds of sub-projects (such as the Apache Software Foundati
 
 | Service Descriptions: |
 | --------------------- | ---------------------------------------------------------------------------------------- |
-| ci-cd                 | CI/CD server hosting hosted using OpenCompute hardware or via OpenStack                  |
+| ci-cd                 | Shared CI/CD runners                                                                     |
 | co-location           | Physical server hosting                                                                  |
 | mailing-list          | Mailman list hosting                                                                     |
 | mirroring             | HTTP/FTP Mirror hosting on ftp.osuosl.org                                                |
