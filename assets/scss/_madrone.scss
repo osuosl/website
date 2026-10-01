@@ -520,6 +520,10 @@ html:not([data-bs-theme="dark"]) .dark-only {
 // controls themselves use Bootstrap's form classes.
 .webform-client-form {
   max-width: 40rem;
+  // Checking a toggle reveals fields below it. With scroll anchoring the
+  // browser keeps the next item in place instead, scrolling the page to
+  // the end of the revealed fields; keep the clicked checkbox still.
+  overflow-anchor: none;
 
   .form-label {
     font-weight: 600;
@@ -531,6 +535,20 @@ html:not([data-bs-theme="dark"]) .dark-only {
     float: none;
     font-size: 1rem;
     margin-bottom: 0.25rem;
+  }
+
+  // A group's legend stands in for a section heading (h4), so it needs
+  // the same block layout as one rather than reboot's floated legend.
+  legend.form-section-legend {
+    float: none;
+  }
+
+  // Follow-up fields revealed by a toggle checkbox, indented under it
+  // so they read as belonging to that choice.
+  .form-toggle-fields {
+    margin: -0.5rem 0 1rem 0.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--bs-border-color);
   }
 
   // Required-field asterisks, 4.5:1 in both modes: #c72127 is 5.7:1 on

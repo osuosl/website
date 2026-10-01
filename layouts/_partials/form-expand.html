@@ -1,0 +1,57 @@
+{{- /*
+  Expands field_set references in a request form's fields, recursively, and
+  returns the new field list. A field with field_set: <key> gets the fields of
+  field_sets.<key> from the form's data, ahead of its own fields, with each
+  name prefixed by "<field name>_". A shown_when inside the set that points at
+  another field of the same set is prefixed the same way, so one set can be
+  reused under several toggles without clashing names. field_set_skip lists
+  set fields (by their unprefixed names) that a toggle leaves out, and
+  field_set_after: true puts the set after the toggle's own fields.
+
+  Takes a dict: fields (the list to expand), sets (the form's field_sets).
+  */
+-}}
+{{- $sets := .sets -}}
+{{- $out := slice -}}
+{{- range .fields -}}
+  {{- $f := . -}}
+  {{- $own := slice -}}
+  {{- with $f.fields -}}
+    {{- $own = partial "form-expand.html" (dict "fields" . "sets" $sets) -}}
+  {{- end -}}
+  {{- with $f.field_set -}}
+    {{- $set := index $sets . -}}
+    {{- if not $set -}}
+      {{- errorf "request form: unknown field_set %q on %q" . $f.name -}}
+    {{- end -}}
+    {{- $prefix := $f.name -}}
+    {{- $names := slice -}}
+    {{- range $set -}}
+      {{- $names = $names | append .name -}}
+    {{- end -}}
+    {{- $skip := $f.field_set_skip | default slice -}}
+    {{- $generated := slice -}}
+    {{- range $set -}}
+      {{- if in $skip .name -}}
+        {{- continue -}}
+      {{- end -}}
+      {{- $g := merge . (dict "name" (printf "%s_%s" $prefix .name)) -}}
+      {{- with .shown_when -}}
+        {{- if in $names .field -}}
+          {{- $g = merge $g (dict "shown_when" (merge . (dict "field" (printf "%s_%s" $prefix .field)))) -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $generated = $generated | append $g -}}
+    {{- end -}}
+    {{- if $f.field_set_after -}}
+      {{- $own = $own | append $generated -}}
+    {{- else -}}
+      {{- $own = $generated | append $own -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if $own -}}
+    {{- $f = merge $f (dict "fields" $own) -}}
+  {{- end -}}
+  {{- $out = $out | append $f -}}
+{{- end -}}
+{{- return $out -}}

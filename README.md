@@ -188,11 +188,13 @@ Content is added inside the `/content` folder, though it varies based on what yo
 The five hosting/CI request forms are data-driven: each page holds only its intro text plus a
 `{{</* request-form <name> */>}}` shortcode, and the fields live in `data/forms/<name>.yml`. To add or change a field,
 edit the YAML — the shortcode and the `form-field` partial render Bootstrap-styled, accessible markup (labels, help
-text, required indicators, checkbox-group validation) automatically. Two rules:
+text, required indicators, checkbox-group validation) automatically. The `form-field` partial's header lists every key,
+including `toggle` fields that reveal follow-up questions and `group` fields that require at least one checked box.
+Each form also sends its field labels, in form order, so formsender heads the ticket's answers with them. Two rules:
 
 - A field's `name` key is the formsender POST parameter. Never rename one without coordinating with the formsender
   ticket templates.
-- Shared formsender settings (action URL, token, reCAPTCHA site key) live under `[params.formsender]` in
+- Shared formsender settings (action URL, token, Turnstile site key) live under `[params.formsender]` in
   `config/_default/params.toml`.
 
 ### Adding a New Blog Post

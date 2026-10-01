@@ -1,0 +1,62 @@
+{{- /*
+  Returns the request-form fields as an ordered list of {name, label}
+  maps, walking into toggles and groups, for the hidden field_labels
+  input. Formsender uses it to head each answer in the ticket with the
+  label the requester saw, in form order.
+
+  Entries can also carry:
+  - section: the toggles and headings the field sits under, outermost
+    first, which formsender prints as section headings
+  - opens_section: true on a toggle, whose section is headed by its own
+    label, so the ticket shows the heading in place of its answer
+  - group: on a checkbox-group option, the group's label, so formsender
+    lists the chosen options under that one question
+
+  Takes a dict: fields; lead (optional), the section for fields that
+  aren't under any toggle or heading; and section (the enclosing
+  section, for the recursion).
+  */
+-}}
+{{- $out := slice -}}
+{{- $outer := .section | default slice -}}
+{{- $section := $outer -}}
+{{- range .fields -}}
+  {{- $f := . -}}
+  {{- $type := $f.type | default "text" -}}
+  {{- $inner := $section -}}
+  {{- if eq $type "heading" -}}
+    {{- /* A heading starts a section for the fields after it */ -}}
+    {{- $section = $outer | append $f.label -}}
+  {{- else if eq $type "checkbox-group" -}}
+    {{- range $f.options -}}
+      {{- $e := dict "name" .name "label" .label "group" $f.label -}}
+      {{- with $section }}{{ $e = merge $e (dict "section" .) }}{{ end -}}
+      {{- $out = $out | append $e -}}
+    {{- end -}}
+  {{- else -}}
+    {{- if eq $type "toggle" -}}
+      {{- $inner = $section | append $f.label -}}
+    {{- end -}}
+    {{- with $f.name -}}
+      {{- $e := dict "name" . "label" $f.label -}}
+      {{- if eq $type "toggle" -}}
+        {{- $e = merge $e (dict "section" $inner "opens_section" true) -}}
+      {{- else if $section -}}
+        {{- $e = merge $e (dict "section" $section) -}}
+      {{- end -}}
+      {{- $out = $out | append $e -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with $f.fields -}}
+    {{- $out = $out | append (partial "form-labels.html" (dict "fields" . "section" $inner)) -}}
+  {{- end -}}
+{{- end -}}
+{{- with .lead -}}
+  {{- $lead := slice . -}}
+  {{- $all := slice -}}
+  {{- range $out -}}
+    {{- $all = $all | append (cond (isset . "section") . (merge . (dict "section" $lead))) -}}
+  {{- end -}}
+  {{- $out = $all -}}
+{{- end -}}
+{{- return $out -}}
