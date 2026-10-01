@@ -2,9 +2,7 @@
 title: Current AArch64 Projects
 ---
 
-Below is a list of currently hosted AArch64 projects
-
-[FOSS Projects](#foss-projects)
+Below is a list of currently hosted AArch64 projects.
 
 ## FOSS Projects {#foss-projects}
 
