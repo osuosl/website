@@ -1,0 +1,25 @@
+{{- /*
+  A row of request buttons under a service page's title, one for each offering
+  in data/services.yml whose url the page sits under, so every page about a
+  service links straight to its request form. Request form pages themselves
+  (captcha: true) get none.
+
+  Takes the page.
+  */
+-}}
+{{- $page := . -}}
+{{- if not $page.Params.captcha -}}
+  {{- $matches := slice -}}
+  {{- range hugo.Data.services -}}
+    {{- if hasPrefix $page.RelPermalink (.url | relURL) -}}
+      {{- $matches = $matches | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with $matches -}}
+    <div class="request-bar">
+      {{- range . }}
+        <a class="btn btn-primary" href="{{ .request_url | relURL }}">{{ .request_label | default "Request" }}</a>
+      {{- end }}
+    </div>
+  {{- end -}}
+{{- end -}}

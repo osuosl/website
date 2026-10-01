@@ -262,6 +262,63 @@ html:not([data-bs-theme="dark"]) .dark-only {
   color: $osu-orange-link-dark;
 }
 
+// Hosting page "What we offer" grid (hosting-offerings shortcode).
+.offering-card {
+  height: 100%;
+
+  .offering-icon {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--bs-link-color);
+  }
+
+  .card-text {
+    margin-bottom: 0;
+  }
+}
+
+// "On this page" list of a page's sections (page-toc partial, toc: true).
+.page-toc {
+  margin-bottom: 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: $border-radius;
+
+  .page-toc-title {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    column-gap: 2rem;
+
+    @include media-breakpoint-up(sm) {
+      columns: 2;
+    }
+
+    @include media-breakpoint-up(lg) {
+      columns: 3;
+    }
+  }
+
+  li {
+    break-inside: avoid;
+    padding: 0.125rem 0;
+  }
+}
+
+// Request buttons under a service page's title (request-bar partial).
+.request-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .service-card {
   height: 100%;
 
