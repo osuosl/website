@@ -179,6 +179,54 @@ hand:
 - **Interactive states**: open search with results on screen, open each nav dropdown, submit a form with an error.
 - **Zoom/reflow**: 400% zoom (320px-wide reflow) with no horizontal scrolling or lost content; 200% text-only zoom.
 
+### Testing the request forms
+
+To see the RT ticket a request form would create, without sending one, run a local formsender in `DRY_RUN` mode with
+Docker Compose and point a local Hugo server at it. This is optional; `hugo server` on its own is unaffected.
+
+```bash
+# Terminal 1: formsender, logging tickets instead of sending them
+scripts/formsender-test.sh
+
+# Terminal 2: the site, with the forms pointed at that formsender
+hugo server --environment formtest
+```
+
+Submit a form at <http://localhost:1313/>, and the ticket (queue, subject, custom fields and body) appears in the
+formsender output. Stop it with `Ctrl+C`, or `docker compose down` if you started it with `-d`.
+
+- `scripts/formsender-test.sh` builds formsender from a local checkout when `FORMSENDER_SRC` (default `../formsender`)
+  holds one, so unreleased formsender changes can be tested. Otherwise it uses the published
+  `ghcr.io/osuosl/formsender:master` image, which needs a formsender release with `DRY_RUN` support.
+- `compose.yaml` never gives formsender an `RT_TOKEN`, so a formsender without `DRY_RUN` support fails to start rather
+  than creating real tickets.
+- The `formtest` environment (`config/formtest/params.toml`) uses Cloudflare's always-pass
+  [Turnstile test keys](https://developers.cloudflare.com/turnstile/troubleshooting/testing/). Headless browsers may not
+  get a token from the widget.
+- Formsender accepts the same answers again (`DUPLICATE_CHECK_TIME=0`), which needs a formsender release that
+  supports the setting.
+- To use another port, set `FORMSENDER_PORT` and change `action` in `config/formtest/params.toml` to match.
+
+To submit every form automatically, start formsender with `scripts/formsender-test.sh -d`, start the formtest server,
+and run:
+
+```bash
+npm run test:forms
+```
+
+The script opens each form in Chrome through [Playwright](https://playwright.dev/), fills every visible field and
+submits it. The answers, in `scripts/form-test-answers.mjs`, describe a made-up project so the tickets read like a real
+request; the script lists any field that has no answer there, which gets a generic one. On the hosting form it makes one
+submission per service, one per choice that reveals more questions, and one with everything chosen; each of the other
+forms gets one submission. A scenario that ends up with the same answers as an earlier one is skipped. Each ticket is
+saved to `tmp/form-tickets/<form>/<scenario>.txt`, and the script exits non-zero if any submission fails to produce one.
+
+- `--only <regex>` runs only the scenarios whose name (such as `hosting/service-mirror`) matches.
+- `--base <url>` points it at a server other than <http://localhost:1313>, and `--out <dir>` saves tickets elsewhere.
+- It uses the installed Google Chrome. Set `FORM_TEST_BROWSER=` to use Playwright's own Chromium instead, after
+  `npx playwright install chromium`.
+- It refuses to submit a form whose action isn't on localhost, so it can't create real tickets.
+
 ## Adding Content
 
 Content is added inside the `/content` folder, though it varies based on what you would like to do.
@@ -190,12 +238,13 @@ The five hosting/CI request forms are data-driven: each page holds only its intr
 edit the YAML — the shortcode and the `form-field` partial render Bootstrap-styled, accessible markup (labels, help
 text, required indicators, checkbox-group validation) automatically. The `form-field` partial's header lists every key,
 including `toggle` fields that reveal follow-up questions and `group` fields that require at least one checked box.
-Each form also sends its field labels, in form order, so formsender heads the ticket's answers with them. Two rules:
+Each form also sends its field labels, in form order, so formsender heads the ticket's answers with them. Three rules:
 
 - A field's `name` key is the formsender POST parameter. Never rename one without coordinating with the formsender
   ticket templates.
 - Shared formsender settings (action URL, token, Turnstile site key) live under `[params.formsender]` in
   `config/_default/params.toml`.
+- Check a form change with [Testing the request forms](#testing-the-request-forms) before shipping it.
 
 ### Adding a New Blog Post
 

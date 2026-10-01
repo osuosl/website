@@ -6,13 +6,15 @@
   "scripts": {
     "serve": "pagefind --site public --serve",
     "format": "prettier . -w",
-    "lint": "markdownlint-cli2 \"./content/**/*.md\""
+    "lint": "markdownlint-cli2 \"./content/**/*.md\"",
+    "test:forms": "node scripts/test-forms.mjs"
   },
   "author": "",
   "license": "Apache-2.0",
   "devDependencies": {
     "markdownlint-cli2": "^0.23.3",
     "pa11y-ci": "^4.1.1",
+    "playwright": "^1.63.0",
     "prettier": "^3.4.2",
     "prettier-plugin-go-template": "^0.0.15"
   },
