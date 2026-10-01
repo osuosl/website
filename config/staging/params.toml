@@ -1,0 +1,5 @@
+# Settings for PR preview builds ("hugo --environment staging" in the
+# Jenkinsfile). Previews share production's formsender, so a submission there
+# would open a real ticket; turn submissions off instead.
+[formsender]
+disabled = true

@@ -243,7 +243,8 @@ Each form also sends its field labels, in form order, so formsender heads the ti
 - A field's `name` key is the formsender POST parameter. Never rename one without coordinating with the formsender
   ticket templates.
 - Shared formsender settings (action URL, token, Turnstile site key) live under `[params.formsender]` in
-  `config/_default/params.toml`.
+  `config/_default/params.toml`. PR previews build with `--environment staging`, whose `config/staging/params.toml`
+  turns submissions off, since previews would otherwise send real tickets.
 - Check a form change with [Testing the request forms](#testing-the-request-forms) before shipping it.
 
 ### Adding a New Blog Post
