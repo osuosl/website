@@ -14,7 +14,9 @@ pipeline {
     stage('Build Hugo Site') {
       steps {
         script {
-          sh 'hugo --minify --cleanDestinationDir' // Build the Hugo site for all branches
+          // PR previews use config/staging, which turns off form submissions
+          def hugoEnv = env.CHANGE_ID ? '--environment staging' : ''
+          sh "hugo --minify --cleanDestinationDir ${hugoEnv}" // Build the Hugo site for all branches
           sh 'pagefind --site public'              // Build pagefind index
         }
       }
