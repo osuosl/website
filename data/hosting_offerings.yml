@@ -1,0 +1,47 @@
+# The services on the Hosting page's "What we offer" grid. Each links to its
+# section of the Hosting Details page (anchor) and uses an icon from
+# layouts/_partials/icons/.
+- name: Virtual machines
+  icon: server
+  anchor: virtualization
+  text: VMs on our OpenStack and Ganeti clusters, managed by us or by you.
+- name: CI/CD resources
+  icon: gears
+  anchor: cicd-hardware-resources
+  text: Shared CI runners and dedicated build servers for projects that outgrow free CI.
+- name: FTP mirroring
+  icon: cloud-arrow-down
+  anchor: ftp-mirroring
+  text: Release files and package repositories served from mirrors in three cities.
+- name: Email
+  icon: envelope
+  anchor: mail-relaying
+  text: Mail relaying for your domain, with spam filtering, DKIM signing and forwards.
+- name: Mailing lists
+  icon: envelopes-bulk
+  anchor: mailing-lists
+  text: Mailman lists on your own domain or on lists.osuosl.org.
+- name: Websites
+  icon: globe
+  anchor: website-hosting
+  text: Static sites and web applications behind our load balancers, with free HTTPS.
+- name: Collaboration tools
+  icon: comments
+  anchor: collaboration-tools
+  text: GitLab, Discourse, Matrix, Mattermost, Nextcloud and HedgeDoc, run for you.
+- name: Databases
+  icon: database
+  anchor: database-hosting
+  text: MySQL and PostgreSQL on our redundant database clusters.
+- name: Object storage
+  icon: box-archive
+  anchor: object-storage
+  text: S3-compatible storage for build artifacts, releases and package repositories.
+- name: DNS
+  icon: sitemap
+  anchor: dns-hosting
+  text: Primary or secondary DNS for your project's domains.
+- name: Co-location
+  icon: warehouse
+  anchor: co-location-hosting
+  text: Space, power and network for your own servers in Oregon's State Data Center.

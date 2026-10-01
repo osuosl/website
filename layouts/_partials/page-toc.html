@@ -1,0 +1,30 @@
+{{- /*
+  "On this page": links to a page's top-level sections (its h2 headings), for
+  pages that set toc: true in their front matter. Built from the page's own
+  headings, so it follows them as they change.
+
+  Takes the page.
+  */
+-}}
+{{- if .Params.toc -}}
+  {{- $sections := slice -}}
+  {{- range .Fragments.Headings -}}
+    {{- if eq .Level 2 -}}
+      {{- $sections = $sections | append . -}}
+    {{- else -}}
+      {{- range .Headings -}}
+        {{- if eq .Level 2 }}{{ $sections = $sections | append . }}{{ end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with $sections }}
+    <nav class="page-toc" aria-label="On this page">
+      <p class="page-toc-title">On this page</p>
+      <ul>
+        {{- range . }}
+          <li><a href="#{{ .ID }}">{{ .Title | plainify }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+  {{- end -}}
+{{- end -}}

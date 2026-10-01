@@ -2,6 +2,8 @@
   <div class="container-site">
     <article class="prose py-4">
       <h1 data-pagefind-meta="title">{{ .Title }}</h1>
+      {{ partial "request-bar.html" . }}
+      {{ partial "page-toc.html" . }}
       {{ .Content }}
     </article>
   </div>

@@ -1,5 +1,6 @@
 ---
 title: "Hosting Details"
+toc: true
 ---
 
 We offer a wide variety of services to our hosted projects so the OSL can take work off your own machines and
