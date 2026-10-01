@@ -1,0 +1,7 @@
+# Override for compose.yaml: build formsender from a local checkout instead of
+# pulling the published image. scripts/formsender-test.sh adds it when
+# FORMSENDER_SRC (default ../formsender) holds a formsender checkout.
+services:
+  formsender:
+    build: ${FORMSENDER_SRC:?set FORMSENDER_SRC to a formsender checkout}
+    image: formsender:local
