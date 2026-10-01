@@ -3,7 +3,7 @@ title: AArch64 Development Hosting
 ---
 
 The OSL partners with [Ampere Computing](https://amperecomputing.com/) to host
-[AArch64](https://en.wikipedia.org/wiki/ARM_architecture#AArch64)-based servers in order to provide an open platform for
+[AArch64](https://en.wikipedia.org/wiki/AArch64)-based servers in order to provide an open platform for
 innovation to the open source community. Current projects embrace open software projects ranging from KVM to OpenStack
 and open collaboration with open source based ISV and distribution partners, such as Red Hat, SUSE and Ubuntu, who
 support the latest AArch64 hardware via production and development (Fedora, CentOS, openSUSE, and Debian) distributions.
