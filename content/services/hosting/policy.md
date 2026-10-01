@@ -27,10 +27,9 @@ OSUOSL reserves the right to disable accounts, disconnect systems and/or discont
 
 ## Potential Hosted Projects
 
-Our hosting services are limited to open source projects and related community sites. In general, this refers to
-licenses approved by the Open Source Initiative (OSI), which maintains a list of approved licenses on their website:
-<https://opensource.org/>. Projects that release under other “open” licenses which are not OSI-approved will be
-considered on a case-by-case basis.
+Our hosting services are limited to open source projects and related community sites. Projects must be released under
+a license approved by the Open Source Initiative (OSI), which maintains a list of approved licenses on its website:
+<https://opensource.org/licenses>.
 
 We provide hosting for various types of projects. Some are software/code-based projects such as Linux distributions,
 software programs, etc., while others are more community/communication-based projects such as IRC servers,
