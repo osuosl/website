@@ -23,7 +23,7 @@
     Use our AArch64 servers to develop and test open source projects on the AArch64 architecture platform.
   details: >-
     The OSL partners with [Ampere Computing](https://amperecomputing.com/) to host
-    [AArch64](https://en.wikipedia.org/wiki/ARM_architecture#AArch64)-based servers, making AArch64 virtual machines
+    [AArch64](https://en.wikipedia.org/wiki/AArch64)-based servers, making AArch64 virtual machines
     available to the open source community through our OpenStack cluster. These systems are intended for functional
     development and testing, not for performance testing.
 
