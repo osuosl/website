@@ -1,5 +1,5 @@
 ---
-title: Formerly Hosted Projects
+title: Former POWER Projects
 toc: true
 ---
 
