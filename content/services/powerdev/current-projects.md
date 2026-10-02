@@ -1,5 +1,5 @@
 ---
-title: Current Powerdev Projects
+title: Current POWER Projects
 toc: true
 ---
 

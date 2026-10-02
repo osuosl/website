@@ -1,5 +1,5 @@
 ---
-title: Formerly Hosted Projects
+title: Former AArch64 Projects
 ---
 
 Below is a list of formerly hosted AArch64 projects.
