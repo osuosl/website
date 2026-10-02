@@ -398,6 +398,22 @@ html:not([data-bs-theme="dark"]) .dark-only {
     max-width: 100%;
     height: auto;
   }
+
+  // Section headings from the page's Markdown (direct children, so card
+  // titles in shortcodes keep their own sizes). In the same font and weight,
+  // Bootstrap's 2rem h2 and 1.75rem h3 are hard to tell apart; shrink the
+  // lower levels and give each h2 room above it so a new section stands out.
+  > * + h2 {
+    margin-top: 2.5rem;
+  }
+
+  > h3 {
+    font-size: 1.375rem;
+  }
+
+  > h4 {
+    font-size: 1.1875rem;
+  }
 }
 
 .page-header {
