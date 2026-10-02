@@ -1,0 +1,15 @@
+{{- /*
+  The hand-picked hosted projects from data/featured_projects.yml as a list of
+  links, with a link to the full projects list. Used on the home page and the
+  Hosting page.
+  */
+-}}
+<ul class="featured-projects">
+  {{ range hugo.Data.featured_projects }}
+    <li><a href="{{ .url }}">{{ .name }}</a></li>
+  {{ end }}
+</ul>
+<p class="mt-3 mb-0">
+  {{ $currentProjects := sub (len hugo.Data.projects.hosted) (len (where hugo.Data.projects.hosted "status" "former")) }}
+  <a href="{{ "projects/" | relURL }}">See all {{ $currentProjects }} hosted projects &rarr;</a>
+</p>

@@ -14,80 +14,93 @@ fields:
     type: email
     required: true
     autocomplete: email
-  - name: project_name
-    label: Project Name
+  - name: requester_role
+    label: Your role in the project
     required: true
-    description: Name of the open source project or education institution this request will be supporting.
+    description: For example, maintainer, core developer or researcher.
+  - name: project_name
+    label: Project name
+    required: true
+    description: The open source project or education institution this request supports.
   - name: project_url
     label: Project URL
     required: true
-    description: Primary website URL for the open source project or education institution.
+    description: The main website for the project or institution.
+  - name: source_code_url
+    label: Source code repository
+    description:
+      Where your project's code is developed, such as a GitHub, GitLab or Codeberg URL. Leave this blank if your project
+      isn't software.
+  - name: software_license
+    label: Software license
+    required: true
+    description:
+      What license is your project released under? We only host projects released under an
+      [OSI-approved license](https://opensource.org/licenses).
   - name: est_size_of_user_community
-    label: Estimated Size of User Community
+    label: Estimated size of user community
     required: true
-    description: How many estimated users do you have in your community?
+    description: Rough numbers of users and of active contributors, such as 5,000 users and 20 contributors.
   - name: description_of_project_mission
-    label: Description of Project Mission
+    label: Description of project mission
     type: textarea
     required: true
-    description:
-      Please describe in detail the mission and purpose of this request in regards to how the POWER architecture will
-      support your project. Also describe the general mission of your project.
+    description: Describe your project's mission and how the POWER architecture will support it.
   - name: expected_usage_model
-    label: Expected Usage Model
+    label: Expected usage model
     type: textarea
     required: true
     description:
-      What types of activity will the machine be used for? (i.e. compile builds, performance testing, architecture
-      troubleshooting, etc).
+      What will you use POWER CI for? For example, building and testing pull requests, nightly builds or performance
+      testing.
   - name: anticipated_duration_of_need
     label: Anticipated duration of need
     required: true
-    description:
-      How long do you expect you will need these resources? Ongoing or indefinitely are also acceptable answers.
+    description: How long do you expect to need these resources? Ongoing or indefinite is fine.
   - name: deployment_timeframe
     label: Deployment timeframe
     type: select
-    value: Within 7 business Days
+    value: Within 7 business days
     options:
-      - Within 7 business Days
-      - Within 3 business Days
-      - value: Within 1 business Days
-        label: Within 1 business Day
+      - Within 7 business days
+      - Within 3 business days
+      - Within 1 business day
     description:
-      Normal turnaround for access is typically 7 business days. If you need it sooner than that, please choose which
-      time frame you need. We will do our best to accommodate your request.
-  - name: other_information
-    label: Other information
-    type: textarea
-    description: Is there anything additional you would like to provide for your request?
+      Access normally takes up to 7 business days. If you need it sooner, choose a shorter time frame and we will do our
+      best to meet it.
   - type: heading
-    label: POWER CI Access Question(s)
+    label: POWER CI details
     id: ci-questions
   - type: checkbox-group
     id: platforms
-    label: OS Platform(s)
+    label: OS platform(s)
     required: true
-    description: Some platforms may not be supported on a specific architecture, so please check with us first.
+    description: Some platforms are not available on every architecture. If you are not sure, ask us.
     options:
       - name: platform_debian
         label: Debian
       - name: platform_ubuntu
         label: Ubuntu
       - name: platform_other
-        label: Other (please specify in the "Other information" field above)
+        label: Other
+  - name: platform_other_details
+    label: Other platforms
+    description: If you chose Other, tell us which platforms you need.
   - name: gpu_access
-    label: GPU Access
+    label: GPU access
     type: select
     value: "No"
     options:
       - "No"
       - "Yes"
-    description:
-      Our POWER CI system has access to GPUs via Jenkins. If you require GPU access, please answer "Yes".
+    description: Our POWER CI system can give Jenkins jobs access to GPUs. Choose "Yes" if your jobs need one.
   - name: ci-github
-    label: GitHub Username(s) for POWER CI
+    label: GitHub username(s) for POWER CI
     required: true
     description:
-      We use GitHub OAuth to authenticate into the POWER CI system. Please provide a comma separated list of GitHub
-      username(s) to gain access.
+      We use GitHub to sign in to the POWER CI system. List the GitHub usernames that need access, separated by commas.
+  - type: heading
+    label: Other details
+  - name: other_information
+    label: Anything else we should know?
+    type: textarea

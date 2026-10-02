@@ -1,5 +1,6 @@
 ---
 title: "Hosting Details"
+toc: true
 ---
 
 We offer a wide variety of services to our hosted projects so the OSL can take work off your own machines and
@@ -152,7 +153,7 @@ Sites can run on our shared web servers or on a dedicated VM, depending on how m
 project needs. We can't support every web application, but we'll do our best to support any widely used platform. If you
 have a website that needs a home, let us know and we'll see how we can help.
 
-## Community Services
+## Collaboration Tools
 
 We also run the collaboration tools that many open source communities depend on. These are managed services, so we
 handle the installation, upgrades, monitoring and backups. We currently host:
@@ -161,9 +162,8 @@ handle the installation, upgrades, monitoring and backups. We currently host:
   [Forgejo](https://forgejo.org/) soon
 - [Discourse](https://www.discourse.org/) forums
 - [Matrix](https://matrix.org/) and [Mattermost](https://mattermost.com/) chat servers
-- [MediaWiki](https://www.mediawiki.org/) wikis
-- [Nextcloud](https://nextcloud.com/) for file sharing, along with [HedgeDoc](https://hedgedoc.org/) and
-  [Overleaf](https://www.overleaf.com/) for collaborative editing
+- [Nextcloud](https://nextcloud.com/) for file sharing, along with [HedgeDoc](https://hedgedoc.org/) for collaborative
+  editing
 
 For example, we run the complete services stack for the [OpenPOWER Foundation](https://openpowerfoundation.org/),
 including its forum, file sharing, collaborative documents and single sign-on. If your community uses a different open
@@ -197,8 +197,9 @@ serves its package repositories from our S3 service. Buckets can also be publish
 
 We provide authoritative DNS for projects on our name servers (`ns1.auth.osuosl.org`, `ns2.auth.osuosl.org` and
 `ns3.auth.osuosl.org`). We can host your project's zones and update records for you as your OSL-hosted services change.
-We don't offer a self-service way to update DNS yet, so changes go through our team. We plan to add DNSSEC support in
-the future.
+We don't offer a self-service way to update DNS yet, so changes to zones we host go through our team. If you'd rather
+manage your zones yourself, we also offer secondary DNS, where our name servers transfer copies of your zones from your
+own primary name server. We plan to add DNSSEC support in the future.
 
 ## Co-Location Hosting
 
@@ -218,10 +219,10 @@ hosting their hardware. Projects we already host are not required to, but we enc
 generally prefer that projects virtualize as much of their infrastructure as possible, and our [OpenStack](#openstack)
 and [Ganeti](#ganeti) clusters are often a better fit.
 
-We require all servers to have sliding rails and cable management arms. Hardware must be purchased from a vendor rather
-than built by hand, to make sure it operates as intended. We also prefer hardware with redundant power supplies, some
-type of out-of-band management (e.g., IPMI, iLO or iDRAC) and a three-year basic hardware warranty. We'd rather not host
-machines larger than 2U, but we can work with you to accommodate larger servers if needed.
+We require all servers to have sliding rails. Hardware must be purchased from a vendor rather than built by hand, to
+make sure it operates as intended. We also prefer hardware with redundant power supplies, some type of out-of-band
+management (e.g., IPMI, iLO or iDRAC) and a three-year basic hardware warranty. We'd rather not host machines larger
+than 2U, but we can work with you to accommodate larger servers if needed.
 
 ## Monitoring
 

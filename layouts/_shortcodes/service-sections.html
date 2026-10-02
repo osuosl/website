@@ -1,0 +1,15 @@
+{{- /*
+  One section per offering in data/services.yml, in the same order as the home
+  page cards: a linked heading, the offering's details (Markdown), and its
+  request and More info buttons.
+*/ -}}
+{{- range hugo.Data.services }}
+  <h2 id="{{ .name | anchorize }}"><a href="{{ .url | relURL }}">{{ .name }}</a></h2>
+  {{ $.Page.RenderString (dict "display" "block") .details }}
+  <div class="request-bar">
+    <a class="btn btn-primary" href="{{ .request_url | relURL }}">{{ .request_label }}</a>
+    <a class="btn btn-outline-secondary" href="{{ .url | relURL }}">
+      More info<span class="visually-hidden"> about {{ .name }}</span>
+    </a>
+  </div>
+{{- end }}

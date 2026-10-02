@@ -262,6 +262,56 @@ html:not([data-bs-theme="dark"]) .dark-only {
   color: $osu-orange-link-dark;
 }
 
+// Hosting page "What we offer" grid (hosting-offerings shortcode).
+.offering-card {
+  height: 100%;
+
+  .offering-icon {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--bs-link-color);
+  }
+
+  .card-text {
+    margin-bottom: 0;
+  }
+}
+
+// "On this page" list of a page's sections (page-toc partial, toc: true).
+.page-toc {
+  width: fit-content;
+  min-width: 16rem;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: $border-radius;
+
+  .page-toc-title {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 0.125rem 0;
+  }
+}
+
+// Request buttons under a service page's title (request-bar partial).
+.request-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .service-card {
   height: 100%;
 
@@ -278,25 +328,20 @@ html:not([data-bs-theme="dark"]) .dark-only {
   }
 }
 
+// Hand-picked hosted projects (featured-projects partial): a plain list in
+// columns, so it doesn't compete with the buttons on the page.
 .featured-projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+  max-width: 30rem;
+  margin-bottom: 0;
+  column-gap: 2rem;
 
-  .featured-project {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--bs-border-color);
-    border-radius: $border-radius;
-    background: var(--bs-body-bg);
-    font-weight: 600;
-    text-decoration: none;
+  @include media-breakpoint-up(sm) {
+    columns: 2;
+  }
 
-    &:hover,
-    &:focus {
-      border-color: var(--bs-link-color);
-      text-decoration: underline;
-    }
+  li {
+    break-inside: avoid;
+    padding: 0.125rem 0;
   }
 }
 
@@ -352,6 +397,22 @@ html:not([data-bs-theme="dark"]) .dark-only {
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  // Section headings from the page's Markdown (direct children, so card
+  // titles in shortcodes keep their own sizes). In the same font and weight,
+  // Bootstrap's 2rem h2 and 1.75rem h3 are hard to tell apart; shrink the
+  // lower levels and give each h2 room above it so a new section stands out.
+  > * + h2 {
+    margin-top: 2.5rem;
+  }
+
+  > h3 {
+    font-size: 1.375rem;
+  }
+
+  > h4 {
+    font-size: 1.1875rem;
   }
 }
 
@@ -520,6 +581,10 @@ html:not([data-bs-theme="dark"]) .dark-only {
 // controls themselves use Bootstrap's form classes.
 .webform-client-form {
   max-width: 40rem;
+  // Checking a toggle reveals fields below it. With scroll anchoring the
+  // browser keeps the next item in place instead, scrolling the page to
+  // the end of the revealed fields; keep the clicked checkbox still.
+  overflow-anchor: none;
 
   .form-label {
     font-weight: 600;
@@ -531,6 +596,20 @@ html:not([data-bs-theme="dark"]) .dark-only {
     float: none;
     font-size: 1rem;
     margin-bottom: 0.25rem;
+  }
+
+  // A group's legend stands in for a section heading (h4), so it needs
+  // the same block layout as one rather than reboot's floated legend.
+  legend.form-section-legend {
+    float: none;
+  }
+
+  // Follow-up fields revealed by a toggle checkbox, indented under it
+  // so they read as belonging to that choice.
+  .form-toggle-fields {
+    margin: -0.5rem 0 1rem 0.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--bs-border-color);
   }
 
   // Required-field asterisks, 4.5:1 in both modes: #c72127 is 5.7:1 on

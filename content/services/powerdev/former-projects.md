@@ -1,12 +1,9 @@
 ---
-title: Formerly Hosted Projects
+title: Former POWER Projects
+toc: true
 ---
 
-Below are a list of projects formerly hosted on the OpenPOWER infrastructure at the OSL.
-
-[Former Foss Projects](#former-foss-projects)
-
-[Former Academic Partners](#former-academic-partners)
+Below is a list of projects formerly hosted on the OpenPOWER infrastructure at the OSL.
 
 ## Former FOSS Projects {#former-foss-projects}
 

@@ -1,0 +1,19 @@
+{{- /*
+  The hosting services from data/hosting_offerings.yml as a grid of cards, each
+  linking to its section of the Hosting Details page.
+*/ -}}
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+  {{- range hugo.Data.hosting_offerings }}
+    <div class="col">
+      <div class="card offering-card">
+        <div class="card-body">
+          <span class="offering-icon">{{ partial "icon.html" (dict "name" .icon) }}</span>
+          <h3 class="card-title h6">
+            <a href="{{ printf "/services/hosting/details/#%s" .anchor | relURL }}">{{ .name }}</a>
+          </h3>
+          <p class="card-text">{{ .text }}</p>
+        </div>
+      </div>
+    </div>
+  {{- end }}
+</div>

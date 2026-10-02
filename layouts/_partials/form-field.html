@@ -3,24 +3,101 @@
 
   Keys: name (the POST parameter — must never change, formsender and the
   ticket templates key on it), label, type (text | email | number |
-  textarea | select | checkbox-group | heading; default text), required,
-  description (markdown), autocomplete, placeholder (selects: an
-  empty-value first option, which required selects must move off),
-  value (inputs: initial value; selects: the pre-selected option),
-  min (number), options, id (checkbox-group/heading DOM id).
+  textarea | select | checkbox-group | toggle | group | heading; default
+  text), required, description (markdown), autocomplete, placeholder
+  (selects: an empty-value first option, which required selects must move
+  off), value (inputs: initial value; selects: the pre-selected option;
+  checkbox-groups: the value each checked box sends, default "requested"),
+  min (number), options, id (checkbox-group/group/heading DOM id), fields
+  (toggle: the fields it reveals; group: the fields it wraps), legend
+  (toggle: accessible name of the revealed group), legend_style (group:
+  "label" for a field-label legend instead of a section heading),
+  field_set (toggle: a key under the form's field_sets whose fields it
+  reveals, see form-expand), shown_when (fields and checkbox-groups;
+  {field, value}: shown, and submitted, only while that field has that
+  value, or one of them when value is a list; a checkbox field counts only
+  while checked), required_message (required group: the error shown when
+  nothing is checked).
   */
 -}}
 {{- $f := . -}}
 {{- $type := $f.type | default "text" -}}
+{{- $shownValues := slice -}}
+{{- with $f.shown_when -}}
+  {{- $shownValues = cond (reflect.IsSlice .value) .value (slice .value) -}}
+{{- end -}}
 {{- if eq $type "heading" -}}
   <h2 class="h4 mt-4">{{ $f.label }}</h2>
+  {{- with $f.description }}
+    <div class="form-text mb-3">{{ . | markdownify }}</div>
+  {{- end }}
 {{- else -}}
   {{- $id := printf "field-%s" (or $f.id $f.name) -}}
   {{- $descId := printf "%s-desc" $id -}}
-  {{- if eq $type "checkbox-group" -}}
+  {{- if eq $type "group" -}}
+    {{/* A titled section wrapping other fields. A required group must
+      have at least one checkbox checked anywhere inside it, which
+      request-form.js enforces the same way as a required checkbox-group.
+    */}}
+    <fieldset
+      class="mb-3"
+      id="{{ $id }}"
+      {{ if $f.required }}data-required-group{{ end }}
+      {{ with $f.required_message }}data-required-message="{{ . }}"{{ end }}
+      {{ if $f.description }}aria-describedby="{{ $descId }}"{{ end }}
+    >
+      <legend class="{{ if eq $f.legend_style "label" }}form-label{{ else }}h4 mt-4{{ end }} form-section-legend">
+        {{- $f.label -}}
+        {{- if $f.required }}
+          <span class="form-required" aria-hidden="true"> *</span>
+          <span class="visually-hidden">(required)</span>
+        {{ end -}}
+      </legend>
+      {{ with $f.description }}
+        <div class="form-text mb-3" id="{{ $descId }}">{{ . | markdownify }}</div>
+      {{ end }}
+      {{ range $f.fields }}
+        {{- partial "form-field.html" . -}}
+      {{ end }}
+    </fieldset>
+  {{- else if eq $type "toggle" -}}
+    {{/* A checkbox that reveals a group of follow-up fields. The group
+      starts hidden and disabled, so its fields are neither shown nor
+      submitted until the box is checked; request-form.js keeps both in
+      step with the checkbox. The form cannot be submitted without
+      JavaScript anyway (the captcha needs it), so a no-JS visitor
+      loses nothing they could have sent.
+    */}}
+    {{- $groupId := printf "%s-fields" $id -}}
+    <div class="form-check mb-3">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="{{ $id }}"
+        name="{{ $f.name }}"
+        value="requested"
+        data-reveals="{{ $groupId }}"
+        aria-controls="{{ $groupId }}"
+        {{ if $f.description }}aria-describedby="{{ $descId }}"{{ end }}
+      />
+      <label class="form-check-label" for="{{ $id }}">{{ $f.label }}</label>
+      {{ with $f.description }}
+        <div class="form-text" id="{{ $descId }}">{{ . | markdownify }}</div>
+      {{ end }}
+    </div>
+    <fieldset class="form-toggle-fields" id="{{ $groupId }}" hidden disabled>
+      <legend class="visually-hidden">{{ $f.legend | default $f.label }}</legend>
+      {{ range $f.fields }}
+        {{- partial "form-field.html" . -}}
+      {{ end }}
+    </fieldset>
+  {{- else if eq $type "checkbox-group" -}}
     <fieldset
       class="mb-3"
       {{ if $f.required }}data-required-group{{ end }}
+      {{ with $f.shown_when -}}
+        data-shown-when="field-{{ .field }}" data-shown-values="{{ $shownValues | jsonify }}"
+      {{- end }}
       {{ if $f.description }}aria-describedby="{{ $descId }}"{{ end }}
     >
       {{/* Unlike a single control, a checkbox group cannot carry the
@@ -37,7 +114,13 @@
       </legend>
       {{ range $f.options }}
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="field-{{ .name }}" name="{{ .name }}" value="requested" />
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="field-{{ .name }}"
+            name="{{ .name }}"
+            value="{{ $f.value | default "requested" }}"
+          />
           <label class="form-check-label" for="field-{{ .name }}">{{ .label }}</label>
         </div>
       {{ end }}
@@ -46,7 +129,12 @@
       {{ end }}
     </fieldset>
   {{- else -}}
-    <div class="mb-3">
+    <div
+      class="mb-3"
+      {{ with $f.shown_when -}}
+        data-shown-when="field-{{ .field }}" data-shown-values="{{ $shownValues | jsonify }}"
+      {{- end }}
+    >
       <label class="form-label" for="{{ $id }}">
         {{- $f.label -}}
         {{- if $f.required }}<span class="form-required" aria-hidden="true"> *</span>{{ end -}}

@@ -1,0 +1,8 @@
+# Settings for "hugo server --environment formtest", which points the request
+# forms at the local DRY_RUN formsender from compose.yaml. Production builds use
+# the default environment and never read this file.
+[formsender]
+action = 'http://localhost:5055/'
+token = 'localtest'
+# Cloudflare's Turnstile test site key, which always passes
+turnstile_sitekey = '1x00000000000000000000AA'

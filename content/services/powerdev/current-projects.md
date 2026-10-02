@@ -1,12 +1,9 @@
 ---
-title: Current Powerdev Projects
+title: Current POWER Projects
+toc: true
 ---
 
-Below are a list of currently hosted OpenPOWER projects and our OpenPOWER academic partners.
-
-[Foss Projects](#foss-projects)
-
-[Academic Partners](#academic-partners)
+Below is a list of currently hosted OpenPOWER projects and our OpenPOWER academic partners.
 
 ## FOSS Projects {#foss-projects}
 

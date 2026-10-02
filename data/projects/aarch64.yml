@@ -1,4 +1,4 @@
-# Projects using the AARCH64 OpenStack environment.
+# Projects using the AArch64 OpenStack environment.
 # Keys: name, description, status (omit for current projects,
 # 'former' for previously hosted ones).
 - name: Abyss OS

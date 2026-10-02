@@ -1,8 +1,83 @@
 # General hosting request form (content/services/hosting/request.md).
 # Field `name` keys are the formsender POST parameters — never change
 # them; the ticket templates on the formsender side key on them.
+#
+# Each service is a toggle whose follow-up fields share its name as a
+# prefix (mirror, mirror_size, ...). Formsender sorts the ticket body by
+# field name, so this keeps each service's answers together. The VM
+# fields are the exception: they keep the names the POWER and AArch64
+# forms use (instance_*, number_of_nodes, ...). Every toggle and
+# checkbox needs its own name: formsender keeps only the first value of
+# a repeated field.
 send_to: HostingRequests
 subject_prefix: New Hosting Request
+# Question sets reused under several toggles; see layouts/_partials/form-expand.html.
+field_sets:
+  collaboration_tool:
+    - name: domain
+      label: Domain
+      required: true
+      description: Where it will live, such as git.example.org or forum.example.org.
+    - name: users
+      label: Number of users
+      required: true
+      description: Roughly how many people will use it, such as 50 regular users.
+    - name: sign_in
+      label: How should people sign in?
+      description: For example, with local accounts, with GitHub or GitLab sign-in, or through your own single sign-on.
+    - name: migration
+      label: Is this a new instance, or are you moving an existing one?
+      type: select
+      required: true
+      placeholder: "- Select -"
+      options:
+        - New instance
+        - Moving an existing instance
+    - name: expected_usage
+      label: Expected usage
+      type: textarea
+      required: true
+      shown_when:
+        field: migration
+        value: New instance
+      description:
+        How much data you expect in the first year and how fast it will grow, and how busy it will be, such as 10 GB
+        in the first year, growing 5 GB a year, with 30 people using it daily.
+    - name: current_host
+      label: Where does it run now?
+      required: true
+      shown_when:
+        field: migration
+        value: Moving an existing instance
+    - name: current_version
+      label: Current version
+      required: true
+      shown_when:
+        field: migration
+        value: Moving an existing instance
+      description: For example, 17.4.
+    - name: data_size
+      label: How much data does it hold?
+      required: true
+      shown_when:
+        field: migration
+        value: Moving an existing instance
+      description: For example, 30 GB of repositories and uploads.
+  database:
+    - name: databases
+      label: Databases and sizes
+      type: textarea
+      required: true
+      description: Each database you need and its expected size, such as one 5 GB database for your wiki.
+    - name: names
+      label: Preferred database and user names
+      description:
+        If you have names you would like, list them here. Otherwise we name them after your project and application,
+        such as myproject-wiki.
+    - name: other
+      label: Other requirements
+      type: textarea
+      description: For example, a specific version, extensions or settings.
 fields:
   - name: name
     label: Name
@@ -13,35 +88,1226 @@ fields:
     type: email
     required: true
     autocomplete: email
+  - name: requester_role
+    label: Your role in the project
+    required: true
+    description: For example, maintainer, core developer or infrastructure lead.
   - name: project_name
-    label: Project Name
+    label: Project name
     required: true
   - name: project_url
     label: Project URL
     required: true
-  - name: software_license
-    label: Software License
+  - name: source_code_url
+    label: Source code repository
+    description:
+      Where your project's code is developed, such as a GitHub, GitLab or Codeberg URL. Leave this blank if your project
+      isn't software.
+  - name: project_description
+    label: Project description
+    type: textarea
     required: true
-    description: What software license does your project primarily use?
+    description: What does your project do, and who uses it?
+  - name: software_license
+    label: Software license
+    required: true
+    description:
+      What license is your project released under? We only host projects released under an
+      [OSI-approved license](https://opensource.org/licenses). See our [Hosting Policy](/services/hosting/policy/) for
+      details.
   - name: est_size_of_user_community
     label: Estimated size of user community
     required: true
-  - name: other_pertinent_information_about_project
-    label: Other pertinent information about your project?
-    type: textarea
-  - name: requested_services_hosting
-    label: The type(s) of server(s) or service(s) you are requesting hosting for, if applicable.
+    description: Rough numbers of users and of active contributors, such as 5,000 users and 20 contributors.
+  - name: fiscal_sponsor
+    label: Organization or fiscal sponsor
+    description:
+      If your project belongs to a foundation or has a fiscal sponsor, such as Software Freedom Conservancy, SPI or the
+      Linux Foundation, tell us which one.
+  - name: current_hosting
+    label: Where is your project hosted today, and why are you looking to move?
     type: textarea
     required: true
-  - name: service_purpose
-    label: The purpose of said server or service (will it be Web, development, etc?).
-    type: textarea
+    description: If your project doesn't have any hosting yet, tell us that.
+  - label: Which services do you need?
+    type: group
+    id: services
     required: true
-  - name: estimated_bandwidth_usage
-    label: Your estimated bandwidth usage.
-    required: true
+    required_message: Please select at least one service.
+    description:
+      Choose each service you need, and we will ask a few questions about it. We manage every service here for you,
+      including updates, monitoring and backups. For virtual machines, a dedicated CI server and co-located hardware,
+      you can choose to manage the system yourself instead, and for a website you can choose who keeps its software
+      updated. Our [Hosting Details](/services/hosting/details/) page describes each service.
+    fields:
+      - name: virtual_machine
+        label: Virtual machines (x86)
+        type: toggle
+        legend: Virtual machine details
+        description: VMs on our [OpenStack or Ganeti clusters](/services/hosting/details/#virtualization).
+        fields:
+          - name: instance_management
+            label: Who should manage the VMs?
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options:
+              - Managed by the OSL
+              - Unmanaged, we will manage it ourselves
+              - Not sure
+            description:
+              We can keep the VMs updated, monitored and backed up with our configuration management, or you can manage
+              them yourselves with one sudo account kept for us. See [Managed vs.
+              Unmanaged](/services/hosting/details/#managed-vs-unmanaged).
+          - name: instance_platform
+            label: Platform
+            type: select
+            value: OpenStack
+            options:
+              - OpenStack
+              - Ganeti
+            description:
+              OpenStack stores VM disks on our Ceph cluster and lets you create and manage your own VMs through its web
+              interface and API. Ganeti stores VM disks on the nodes' local storage, mirrored between two nodes with
+              DRBD. It suits long-running VMs that rarely change, but it has no self-service, so every change to your VM
+              goes through our team.
+          - name: instance_vcpus
+            label: vCPUs
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options: ["1", "2", "4", "8", "12", "16"]
+            description:
+              If you need more CPU, memory or disk than we list here, choose the largest option and explain what you
+              need in the "Anything else we should know?" field at the end of the form.
+          - name: instance_memory
+            label: Memory
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options: [4 GB, 6 GB, 8 GB, 12 GB, 16 GB, 24 GB, 32 GB, 48 GB, 64 GB]
+          - name: instance_disk
+            label: Root disk
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options: [40 GB, 60 GB, 80 GB, 100 GB, 200 GB, 300 GB, 400 GB]
+            description: On OpenStack, root disks use SSD-backed Ceph storage.
+          - name: additional_volume
+            label: Attached storage volume
+            type: select
+            shown_when:
+              field: instance_platform
+              value: OpenStack
+            placeholder: "- None -"
+            options: [100 GB, 250 GB, 500 GB, 1 TB, 2 TB, 3 TB, 4 TB]
+            description:
+              A separate block storage volume attached to the VM as a second disk, in addition to the root disk. Use it
+              for data such as build caches, artifacts or package repositories. Leave this at None if the root disk is
+              enough.
+          - name: additional_volume_type
+            label: Attached storage type
+            type: select
+            shown_when:
+              field: instance_platform
+              value: OpenStack
+            placeholder: "- Select -"
+            options:
+              - HDD
+              - SSD
+            description:
+              If you leave this blank, we will use HDD storage. Choose SSD if your workload needs faster disk, and tell
+              us why in the "Anything else we should know?" field at the end of the form.
+          - name: number_of_nodes
+            label: Number of VMs
+            type: number
+            value: "1"
+            min: "1"
+          - name: distribution
+            label: Operating system
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options:
+              - AlmaLinux
+              - Arch Linux
+              - CentOS Stream
+              - Debian
+              - Fedora
+              - FreeBSD
+              - openSUSE
+              - Rocky Linux
+              - Ubuntu
+              - Other
+            description:
+              We will install the latest stable release unless you ask for a specific version in the "Anything else we
+              should know?" field at the end of the form.
+          - name: openstack_access
+            label: OpenStack access
+            type: select
+            required: true
+            shown_when:
+              field: instance_platform
+              value: OpenStack
+            placeholder: "- Select -"
+            options:
+              - Have the OSL create the VM(s) for me
+              - Give me access to the OpenStack GUI/API
+            description:
+              We can create the VM for you, or we can give you access to the OpenStack GUI and API so you can manage it
+              yourself.
+          - name: ssh_public_key
+            label: SSH public key
+            type: textarea
+            required: true
+            description: Public SSH key to use for initial access to the VM.
+      - name: ci_cd
+        label: CI/CD resources
+        type: toggle
+        legend: CI/CD details
+        description: Build and test capacity for your [CI/CD](/services/hosting/details/#cicd-hardware-resources).
+        fields:
+          - name: ci_cd_resource
+            label: What kind of CI/CD resource do you need?
+            type: select
+            value: Our shared CI runners
+            options:
+              - Our shared CI runners
+              - A dedicated bare metal server
+              - Not sure
+            description:
+              If you need VMs for your CI/CD, choose Virtual machines above instead. A dedicated server is only for
+              projects with a demonstrated need, so please explain yours in the field below.
+          - name: ci_cd_server_management
+            label: Who should manage the server?
+            type: select
+            required: true
+            shown_when:
+              field: ci_cd_resource
+              value: A dedicated bare metal server
+            placeholder: "- Select -"
+            options:
+              - Managed by the OSL
+              - Unmanaged, we will manage it ourselves
+              - Not sure
+            description:
+              We can keep the server updated, monitored and backed up with our configuration management, or you can
+              manage it yourselves with one sudo account kept for us. See [Managed vs.
+              Unmanaged](/services/hosting/details/#managed-vs-unmanaged).
+          - label: Which architectures do you need?
+            type: checkbox-group
+            required: true
+            id: ci-cd-architectures
+            value: "yes"
+            options:
+              - name: ci_cd_arch_x86_64
+                label: x86_64
+              - name: ci_cd_arch_aarch64
+                label: aarch64 (Arm)
+              - name: ci_cd_arch_ppc64le
+                label: ppc64le (POWER)
+              - name: ci_cd_arch_s390x
+                label: s390x (IBM Z)
+            description:
+              We also run Jenkins-based CI programs for POWER and IBM Z, which you can request through our
+              [POWER CI](/services/powerdev/request-ci/) and [IBM Z CI](/services/ibm-z/request-ci/) forms.
+          - label: Which CI/CD systems do you need?
+            type: checkbox-group
+            required: true
+            id: ci-cd-systems
+            value: "yes"
+            description:
+              Our shared runners support GitLab CI today. We plan to add runners for GitHub Actions, Forgejo Actions and
+              Jenkins by the end of 2026, if not sooner.
+            options:
+              - name: ci_cd_system_github_actions
+                label: GitHub Actions
+              - name: ci_cd_system_gitlab_ci
+                label: GitLab CI
+              - name: ci_cd_system_forgejo_actions
+                label: Forgejo Actions
+              - name: ci_cd_system_jenkins
+                label: Jenkins
+              - name: ci_cd_system_unlisted
+                label: Other
+          - name: ci_cd_system_other
+            label: Other CI/CD systems
+            description: If you chose Other, tell us which systems you need.
+          - name: ci_cd_workload
+            label: Describe your CI/CD workload
+            type: textarea
+            required: true
+            description:
+              How often do jobs run, how long do they take, and what limits are you running into with your current
+              setup?
+          - name: ci_cd_requirements
+            label: Special requirements
+            type: textarea
+            description:
+              Jobs on our shared runners run inside Docker containers, and Docker-in-Docker is allowed. Tell us if your
+              jobs need anything beyond that, such as KVM for running virtual machines, specific hardware or a large
+              amount of disk or memory.
+      - name: mirror
+        label: FTP mirroring
+        type: toggle
+        legend: Mirroring details
+        description:
+          Distribute your releases and files through [ftp.osuosl.org](/services/hosting/details/#ftp-mirroring).
+        fields:
+          - label: What kind of content will we mirror?
+            type: checkbox-group
+            id: mirror-content
+            required: true
+            value: "yes"
+            options:
+              - name: mirror_content_releases
+                label: Release files, such as source tarballs or binaries
+              - name: mirror_content_packages
+                label: Package repositories, such as apt, dnf or zypper repositories
+              - name: mirror_content_images
+                label: ISO, disk or virtual machine images
+              - name: mirror_content_other
+                label: Other
+          - name: mirror_content_details
+            label: Other content
+            description: If you chose Other, tell us what the content is.
+          - name: mirror_size
+            label: Current size of the content
+            required: true
+            description: For example, 20 GB.
+          - name: mirror_growth
+            label: Expected growth over the next few years
+            type: textarea
+            required: true
+            description:
+              How much do you expect the content to grow each year over the next three to five years? Tell us about
+              anything that could change this, such as new architectures, more releases kept online or larger release
+              files.
+          - name: mirror_sync_method
+            label: How should content reach us?
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options:
+              - We pull from your server
+              - You push to us and trigger a sync to our mirrors
+              - Other, such as rclone
+            description:
+              We can pull new content from your server on a schedule. Or you can push it to us when it changes and then
+              trigger a sync, which copies it to all of our mirrors.
+          - name: mirror_sync_other
+            label: How would the content reach us?
+            type: textarea
+            required: true
+            shown_when:
+              field: mirror_sync_method
+              value: Other, such as rclone
+            description:
+              Describe the tool and where the content comes from, such as rclone from an S3 bucket, and how often it
+              changes.
+          - name: mirror_source
+            label: Where should we pull from?
+            required: true
+            shown_when:
+              field: mirror_sync_method
+              value: We pull from your server
+            description: An rsync URL or other upstream source for the content.
+          - name: mirror_sync_frequency
+            label: How often should we pull?
+            type: select
+            shown_when:
+              field: mirror_sync_method
+              value: We pull from your server
+            placeholder: "- Select -"
+            options:
+              - Every hour
+              - Every 2 hours
+              - Every 4 hours
+              - Twice a day
+              - Once a day
+              - Once a week
+              - Other
+            description: How often should we check for new content?
+          - name: mirror_sync_frequency_other
+            label: Other pull schedule
+            required: true
+            shown_when:
+              field: mirror_sync_frequency
+              value: Other
+            description:
+              For example, every 15 minutes, right after each nightly build, or a crontab schedule such as
+              `*/15 * * * *`.
+          - name: mirror_push_ssh_key
+            label: SSH public key for pushing
+            type: textarea
+            required: true
+            shown_when:
+              field: mirror_sync_method
+              value: You push to us and trigger a sync to our mirrors
+            description: The public key your release process will use to push content to our mirrors.
+          - name: mirror_bandwidth
+            label: Estimated bandwidth or downloads
+            description: For example, 5 TB a month or 10,000 downloads a day.
+      - name: mail_relay
+        label: Email
+        type: toggle
+        legend: Email details
+        description:
+          Mail for your project's domain(s), handled by our [mail relays](/services/hosting/details/#mail-relaying)
+          with spam and virus filtering. OSL-hosted servers can already send mail through our relays, so you only need
+          to ask for that for servers outside the OSL.
+        fields:
+          - label: What do you need?
+            type: checkbox-group
+            id: mail-relay-list
+            required: true
+            options:
+              - name: mail_relay_inbound
+                label: Receiving mail for your domain(s) and passing it on to your own mail server
+              - name: mail_relay_forwards
+                label: Email forwards that send mail for your domain(s) on to other addresses
+              - name: mail_relay_outbound_external
+                label: Sending outgoing mail through our relays from your own servers that aren't hosted at the OSL
+              - name: mail_relay_mailboxes
+                label: Mailboxes hosted by the OSL that people log in to and read mail from
+          - name: mail_relay_domain
+            label: Domain(s)
+            required: true
+            description: The domain(s) the mail will use, such as example.org.
+          - name: mail_relay_current_setup
+            label: Where does mail for these domain(s) go today?
+            description:
+              Your current mail provider or MX host, such as Google Workspace or mail.example.org. Leave this blank if
+              the domain doesn't receive mail yet.
+          - name: mail_relay_dns_access
+            label: Can you change the DNS records for these domain(s)?
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options:
+              - Yes, we can update our DNS records
+              - The OSL hosts our DNS
+              - No, we can't change our DNS
+            description:
+              We require SPF, DKIM and DMARC records for every domain that uses our mail relays, so you will need to add
+              the DNS records we send you. If the OSL hosts your DNS, we will add them for you.
+          - name: mail_relay_server
+            label: Your mail server
+            required: true
+            shown_when:
+              field: mail_relay_inbound
+              value: requested
+            description:
+              The host name of the server we should pass your mail on to, such as mail.example.org. Include the port if
+              it isn't 25.
+          - name: mail_relay_rejects_unknown
+            label: Does your mail server reject mail for addresses that don't exist?
+            type: select
+            required: true
+            shown_when:
+              field: mail_relay_inbound
+              value: requested
+            placeholder: "- Select -"
+            options:
+              - "Yes"
+              - "No"
+              - Not sure
+            description:
+              If it does, our relays can check each recipient with your server before accepting a message, so mail for
+              made-up addresses is turned away instead of queued.
+          - name: mail_relay_forwards_list
+            label: Forwards
+            type: textarea
+            required: true
+            shown_when:
+              field: mail_relay_forwards
+              value: requested
+            description:
+              List each address and where it should go, one per line, such as `info@example.org -> someone@example.com`.
+          - name: mail_relay_external_servers
+            label: Your servers outside the OSL
+            type: textarea
+            required: true
+            shown_when:
+              field: mail_relay_outbound_external
+              value: requested
+            description:
+              List each server's IP addresses or address ranges and what mail it sends, such as notifications from a
+              website hosted elsewhere.
+          - name: mail_relay_mailbox_details
+            label: Mailbox details
+            type: textarea
+            required: true
+            shown_when:
+              field: mail_relay_mailboxes
+              value: requested
+            description:
+              We only host mailboxes in some cases. Tell us how many you need and why forwards to existing addresses
+              won't work for you.
+      - name: mailing_lists
+        label: Mailing lists
+        type: toggle
+        legend: Mailing list details
+        description:
+          Hosted [Mailman mailing lists](/services/hosting/details/#mailing-lists) on your own domain(s) or on
+          lists.osuosl.org.
+        fields:
+          - label: What do you need?
+            type: checkbox-group
+            id: mailing-lists-list
+            required: true
+            options:
+              - name: mailing_lists_new
+                label: New mailing lists
+              - name: mailing_lists_migration
+                label: Moving existing mailing lists to the OSL
+          - name: mailing_lists_count
+            label: Number of lists
+            type: number
+            required: true
+            min: "1"
+          - name: mailing_lists_subscribers
+            label: Number of subscribers
+            required: true
+            description:
+              A rough total across all of your lists, such as 500. If one list is much larger than the others, tell us
+              its size too.
+          - name: mailing_lists_domain_choice
+            label: Which domain should your lists use?
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options:
+              - lists.osuosl.org is fine
+              - Our own domain(s)
+          - name: mailing_lists_email_domain
+            label: Email domain(s) for list addresses
+            required: true
+            shown_when:
+              field: mailing_lists_domain_choice
+              value: Our own domain(s)
+            description: The part after the @ in your list addresses, such as example.org for announce@example.org.
+          - name: mailing_lists_web_host
+            label: Web interface host name
+            required: true
+            shown_when:
+              field: mailing_lists_domain_choice
+              value: Our own domain(s)
+            description:
+              Where people will visit to subscribe, manage their settings and read the archives, such as
+              lists.example.org. This can be different from the email domain(s).
+          - name: mailing_lists_dns_access
+            label: Can you change the DNS records for these domain(s)?
+            type: select
+            required: true
+            shown_when:
+              field: mailing_lists_domain_choice
+              value: Our own domain(s)
+            placeholder: "- Select -"
+            options:
+              - Yes, we can update our DNS records
+              - The OSL hosts our DNS
+              - No, we can't change our DNS
+            description:
+              We require SPF, DKIM and DMARC records for every domain that uses our mail relays, so you will need to add
+              the DNS records we send you. If the OSL hosts your DNS, we will add them for you.
+          - name: mailing_lists_current_host
+            label: Where are your lists hosted now?
+            required: true
+            shown_when:
+              field: mailing_lists_migration
+              value: requested
+          - name: mailing_lists_current_software
+            label: Current mailing list software and version
+            required: true
+            shown_when:
+              field: mailing_lists_migration
+              value: requested
+            description: For example, Mailman 2.1.39, Mailman 3.3, Sympa or Google Groups.
+          - name: mailing_lists_archives
+            label: Should we copy your list archives?
+            type: select
+            required: true
+            shown_when:
+              field: mailing_lists_migration
+              value: requested
+            placeholder: "- Select -"
+            options:
+              - Yes, copy all of the archives
+              - Only for some lists
+              - No, start with empty archives
+          - name: mailing_lists_archive_lists
+            label: Which lists' archives should we copy?
+            required: true
+            shown_when:
+              field: mailing_lists_archives
+              value: Only for some lists
+          - name: mailing_lists_archive_size
+            label: Approximate size of the archives
+            required: true
+            shown_when:
+              field: mailing_lists_archives
+              value:
+                - Yes, copy all of the archives
+                - Only for some lists
+            description:
+              Roughly how much disk space they use and how many years they cover, such as 2 GB covering 15 years.
+      - name: website
+        label: Website hosting
+        type: toggle
+        legend: Website details
+        description:
+          Static sites and web applications, with
+          [HTTPS and load balancing](/services/hosting/details/#website-hosting).
+        fields:
+          - name: website_type
+            label: Type of site
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options:
+              - Static site
+              - PHP application
+              - Container application (Python, Ruby, Node.js and others)
+              - Other
+            description:
+              We run Python, Ruby, Node.js and similar applications in Docker containers. If your site needs a MySQL or
+              PostgreSQL database, choose Database hosting below as well; we host databases on our shared database
+              clusters rather than on the web server.
+          - name: website_type_other
+            label: What does your site run on?
+            required: true
+            shown_when:
+              field: website_type
+              value: Other
+          - name: website_php_app
+            label: Which PHP application?
+            required: true
+            shown_when:
+              field: website_type
+              value: PHP application
+            description:
+              For example, WordPress, Drupal or MediaWiki. For anything else, include the PHP version it needs.
+          - name: website_container_deploy
+            label: How should we deploy it?
+            type: select
+            required: true
+            shown_when:
+              field: website_type
+              value: Container application (Python, Ruby, Node.js and others)
+            placeholder: "- Select -"
+            options:
+              - From a container image you publish to a registry
+              - From a Docker Compose file in your git repository
+              - By building the Dockerfile in your git repository
+              - We build and maintain the image for an existing open source application
+          - name: website_container_image
+            label: Container image and tag
+            required: true
+            shown_when:
+              field: website_container_deploy
+              value: From a container image you publish to a registry
+            description:
+              Where we pull the image from and which tag to run, such as `ghcr.io/example/app:main`. Tell us if the
+              registry needs credentials.
+          - name: website_container_repo
+            label: Git repository and branch
+            required: true
+            shown_when:
+              field: website_container_deploy
+              value:
+                - From a Docker Compose file in your git repository
+                - By building the Dockerfile in your git repository
+            description:
+              The repository URL and the branch to deploy, and the path to the Compose file or Dockerfile if it isn't
+              at the top level. Tell us if the repository is private.
+          - name: website_container_app
+            label: Which application?
+            required: true
+            shown_when:
+              field: website_container_deploy
+              value: We build and maintain the image for an existing open source application
+            description:
+              The application and version, and any plugins or themes it needs, such as Redmine 6 with the plugins you
+              use. We build the image and keep it updated for you.
+          - name: website_container_notes
+            label: Anything we won't find in your repository
+            type: textarea
+            shown_when:
+              field: website_type
+              value: Container application (Python, Ruby, Node.js and others)
+            description:
+              For example, API keys or other credentials you'll need to give us, data that must be kept between
+              deploys, or services your app relies on that aren't in your Compose file. Don't include secret values
+              here.
+          - name: website_updates
+            label: Who should keep the site's software updated?
+            type: select
+            required: true
+            shown_when:
+              field: website_type
+              value:
+                - PHP application
+                - Container application (Python, Ruby, Node.js and others)
+                - Other
+            placeholder: "- Select -"
+            options:
+              - The OSL
+              - We will update it ourselves
+              - Not sure
+            description:
+              For example, WordPress core and plugin updates, or redeploying your application when its image changes.
+              We keep the web servers themselves updated either way.
+          - name: website_disk
+            label: Disk space needed
+            required: true
+            description:
+              Space for the site's code, uploads and other files, such as 5 GB. Don't include the database, which you
+              can size under Database hosting.
+          - name: website_domains
+            label: Domain name(s)
+            required: true
+            description:
+              For example, www.example.org. We serve sites through our HAProxy load balancers, which handle HTTPS for
+              you. If your site uses WebSockets, takes large uploads, has long-running requests or needs visitors' real
+              IP addresses, tell us in the "Anything else we should know?" field at the end of the form.
+          - name: website_ssh_access
+            label: Do you need SSH access to the web server?
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options:
+              - "Yes"
+              - "No"
+            description:
+              Sites on our shared web servers can have a local account for your project, so your team can log in to
+              deploy and update the site, or to reach your application's console and logs.
+          - name: website_ssh_key
+            label: SSH public key
+            type: textarea
+            required: true
+            shown_when:
+              field: website_ssh_access
+              value: "Yes"
+            description:
+              The public key for your project's account. Add one key per line if more than one person needs access.
+          - name: website_bandwidth
+            label: Estimated traffic
+            required: true
+            description: For example, 1,000 visitors a day or 500 GB a month.
+      - name: collaboration_tools
+        label: Collaboration tools
+        type: toggle
+        legend: Collaboration tool details
+        description:
+          Code forges, forums, chat, file sharing and collaborative editing that we
+          [install, upgrade and back up for you](/services/hosting/details/#collaboration-tools).
+        fields:
+          - label: Which tools?
+            type: group
+            id: collaboration-tool-list
+            legend_style: label
+            required: true
+            required_message: Please choose at least one tool.
+            description:
+              Choose each tool you need, and we will ask a few questions about it. We manage all of these tools for
+              you, including upgrades, monitoring and backups.
+            fields:
+              - name: collaboration_tools_gitlab
+                label: GitLab
+                type: toggle
+                legend: GitLab details
+                field_set: collaboration_tool
+                fields:
+                  - name: collaboration_tools_gitlab_storage
+                    label: GitLab storage
+                    required: true
+                    description:
+                      Expected space for repositories, Git LFS and the container registry, such as 50 GB.
+                  - label: Which GitLab features do you need?
+                    type: checkbox-group
+                    id: gitlab-features
+                    value: "yes"
+                    description: For CI runners, choose CI/CD resources above as well.
+                    options:
+                      - name: collaboration_tools_gitlab_registry
+                        label: Container registry
+                      - name: collaboration_tools_gitlab_pages
+                        label: GitLab Pages for static sites
+                      - name: collaboration_tools_gitlab_incoming_email
+                        label: Incoming email, for replying to issues by email and Service Desk
+                      - name: collaboration_tools_gitlab_object_storage
+                        label: Object storage for CI artifacts, uploads, LFS objects and packages
+                      - name: collaboration_tools_gitlab_anubis
+                        label: Protection from AI crawlers and scrapers (Anubis)
+                  - name: collaboration_tools_gitlab_pages_domain
+                    label: Pages domain
+                    required: true
+                    shown_when:
+                      field: collaboration_tools_gitlab_pages
+                      value: "yes"
+                    description:
+                      The domain to serve your Pages sites from, such as pages.example.org. It can't be under your
+                      GitLab domain, so if GitLab is at gitlab.example.org, pages.gitlab.example.org won't work.
+              - name: collaboration_tools_discourse
+                label: Discourse
+                type: toggle
+                legend: Discourse details
+                field_set: collaboration_tool
+              - name: collaboration_tools_matrix
+                label: Matrix
+                type: toggle
+                legend: Matrix details
+                field_set: collaboration_tool
+                field_set_skip: [sign_in]
+                fields:
+                  - name: collaboration_tools_matrix_server_name
+                    label: Server name
+                    required: true
+                    description:
+                      The name in your user IDs, such as example.org for @alice:example.org. It can differ from the
+                      domain the server runs on.
+                  - name: collaboration_tools_matrix_delegation
+                    label: Can you serve delegation files on the server name's website?
+                    type: select
+                    required: true
+                    placeholder: "- Select -"
+                    options:
+                      - "Yes"
+                      - "No"
+                      - Not sure
+                    description:
+                      When the server runs on its own host, such as matrix.example.org, the website at your server name
+                      needs to serve two small .well-known files that point to it.
+                  - name: collaboration_tools_matrix_registration
+                    label: How should people get accounts?
+                    type: select
+                    required: true
+                    placeholder: "- Select -"
+                    options:
+                      - Open registration
+                      - Registration with a token you hand out
+                      - Only accounts your admins create
+                      - Sign-in through an existing system, such as LDAP or single sign-on
+                  - name: collaboration_tools_matrix_registration_system
+                    label: Which system?
+                    required: true
+                    shown_when:
+                      field: collaboration_tools_matrix_registration
+                      value: "Sign-in through an existing system, such as LDAP or single sign-on"
+                    description: For example, your LDAP server or an OpenID Connect provider.
+                  - name: collaboration_tools_matrix_federation
+                    label: Should your server talk to other Matrix servers?
+                    type: select
+                    required: true
+                    placeholder: "- Select -"
+                    options:
+                      - Yes, federate with other Matrix servers
+                      - No, keep it private to this server
+                  - name: collaboration_tools_matrix_element
+                    label: Do you want an Element web client?
+                    type: select
+                    required: true
+                    placeholder: "- Select -"
+                    options:
+                      - "Yes"
+                      - "No"
+                    description: A web version of the Element chat app, set up to sign in to your server.
+                  - name: collaboration_tools_matrix_element_domain
+                    label: Element domain
+                    required: true
+                    shown_when:
+                      field: collaboration_tools_matrix_element
+                      value: "Yes"
+                    description: For example, chat.example.org.
+                  - label: Which add-ons do you need?
+                    type: checkbox-group
+                    id: matrix-addons
+                    value: "yes"
+                    options:
+                      - name: collaboration_tools_matrix_irc_bridge
+                        label: A bridge to IRC channels
+                      - name: collaboration_tools_matrix_webhooks
+                        label: Webhook notifications in rooms (Hookshot)
+                      - name: collaboration_tools_matrix_moderation
+                        label: A moderation bot (Mjolnir)
+                      - name: collaboration_tools_matrix_admin_ui
+                        label: A web interface for managing users and rooms (Synapse Admin)
+                  - name: collaboration_tools_matrix_irc_networks
+                    label: Which IRC networks?
+                    required: true
+                    shown_when:
+                      field: collaboration_tools_matrix_irc_bridge
+                      value: "yes"
+                    description: For example, Libera.Chat or OFTC.
+                  - name: collaboration_tools_matrix_webhook_sources
+                    label: Which webhook sources?
+                    required: true
+                    shown_when:
+                      field: collaboration_tools_matrix_webhooks
+                      value: "yes"
+                    description: For example, GitHub, GitLab or generic webhooks.
+              - name: collaboration_tools_mattermost
+                label: Mattermost
+                type: toggle
+                legend: Mattermost details
+                field_set: collaboration_tool
+                fields:
+                  - name: collaboration_tools_mattermost_license
+                    label: Do you have a Mattermost Enterprise license?
+                    type: select
+                    required: true
+                    placeholder: "- Select -"
+                    options:
+                      - No, the open source edition is fine
+                      - Yes, we have an Enterprise license
+                    description:
+                      We run the open source edition of Mattermost by default. If your project has an Enterprise
+                      license, we can use it instead.
+              - name: collaboration_tools_nextcloud
+                label: Nextcloud
+                type: toggle
+                legend: Nextcloud details
+                field_set: collaboration_tool
+                fields:
+                  - name: collaboration_tools_nextcloud_storage
+                    label: Nextcloud storage
+                    required: true
+                    description: Expected space for shared files, such as 200 GB.
+                  - label: Which Nextcloud apps do you need?
+                    type: checkbox-group
+                    id: nextcloud-apps
+                    value: "yes"
+                    options:
+                      - name: collaboration_tools_nextcloud_app_calendar
+                        label: Calendar
+                      - name: collaboration_tools_nextcloud_app_deck
+                        label: Deck
+                      - name: collaboration_tools_nextcloud_app_forms
+                        label: Forms
+                      - name: collaboration_tools_nextcloud_app_groupfolders
+                        label: Group folders
+                      - name: collaboration_tools_nextcloud_app_notes
+                        label: Notes
+                      - name: collaboration_tools_nextcloud_app_polls
+                        label: Polls
+                      - name: collaboration_tools_nextcloud_app_libresign
+                        label: LibreSign
+                  - name: collaboration_tools_nextcloud_other_apps
+                    label: Other apps
+                    description: Any other apps from the Nextcloud app store that you need.
+                  - name: collaboration_tools_nextcloud_max_file_size
+                    label: Largest file people will upload
+                    description:
+                      Uploads are limited to 1 GB per file by default. Tell us if you need more, such as 4 GB.
+                  - name: collaboration_tools_nextcloud_mail_domain
+                    label: Notification email domain
+                    required: true
+                    description: Nextcloud sends notifications from noreply@ this domain, such as example.org.
+                  - name: collaboration_tools_nextcloud_office
+                    label: Do you need to edit documents in the browser?
+                    type: select
+                    required: true
+                    placeholder: "- Select -"
+                    options:
+                      - "No"
+                      - "Yes"
+                    description:
+                      We don't run an office editing service such as Collabora or OnlyOffice today. If you need one, we
+                      will talk through it with you.
+              - name: collaboration_tools_hedgedoc
+                label: HedgeDoc
+                type: toggle
+                legend: HedgeDoc details
+                field_set: collaboration_tool
+                fields:
+                  - name: collaboration_tools_hedgedoc_guest_access
+                    label: Can people who aren't signed in read and create notes?
+                    type: select
+                    required: true
+                    placeholder: "- Select -"
+                    options:
+                      - "Yes"
+                      - "No"
+                  - name: collaboration_tools_hedgedoc_email_registration
+                    label: Can people create their own accounts with an email address?
+                    type: select
+                    required: true
+                    placeholder: "- Select -"
+                    options:
+                      - "Yes"
+                      - No, only through the sign-in methods above
+                  - name: collaboration_tools_hedgedoc_default_permission
+                    label: Who can edit new notes by default?
+                    type: select
+                    placeholder: "- No preference -"
+                    options:
+                      - Anyone can edit
+                      - Signed-in people can edit, and anyone can read
+                      - Signed-in people can edit and read
+                      - Only the owner can edit, and anyone can read
+                      - Only the owner can edit, and signed-in people can read
+                      - Only the owner can read and edit
+                    description: Note owners can still change this for each note.
+                  - name: collaboration_tools_hedgedoc_landing_page
+                    label: Do you want your own landing page?
+                    type: select
+                    placeholder: "- Select -"
+                    options:
+                      - No, the default is fine
+                      - Yes, we will send our own in Markdown
+                    description: HedgeDoc shows a welcome page to visitors who aren't signed in.
+              - name: collaboration_tools_unlisted
+                label: Other
+                type: toggle
+                legend: Other details
+                field_set: collaboration_tool
+                field_set_after: true
+                fields:
+                  - name: collaboration_tools_other
+                    label: Which tools?
+                    type: textarea
+                    required: true
+                    description:
+                      Each open source tool you need us to host, with a link to its project page. Tools we don't
+                      already run take longer to set up, since we first need to add them to our configuration
+                      management. If a tool needs MySQL or PostgreSQL, choose Database hosting below as well.
+                  - name: collaboration_tools_unlisted_storage
+                    label: Expected storage
+                    description: Roughly how much space the tools will need for their data, such as 20 GB.
+      - name: database
+        label: Database hosting
+        type: toggle
+        legend: Database details
+        description:
+          MySQL or PostgreSQL on our [database clusters](/services/hosting/details/#database-hosting). Please use these
+          rather than running a database on a VM, since our clusters perform better and are redundant.
+        fields:
+          - label: Which databases do you need?
+            type: group
+            id: database-engine-list
+            legend_style: label
+            required: true
+            required_message: Please choose at least one database.
+            fields:
+              - name: database_mysql
+                label: MySQL
+                type: toggle
+                legend: MySQL details
+                field_set: database
+              - name: database_postgresql
+                label: PostgreSQL
+                type: toggle
+                legend: PostgreSQL details
+                field_set: database
+      - name: object_storage
+        label: Object storage (S3)
+        type: toggle
+        legend: Object storage details
+        description: S3-compatible [object storage](/services/hosting/details/#object-storage) at s3.osuosl.org.
+        fields:
+          - name: object_storage_size
+            label: Estimated size
+            required: true
+            description:
+              How much you will store at first and how fast it will grow, such as 500 GB, growing 100 GB a year.
+          - name: object_storage_use
+            label: What will you store?
+            required: true
+            description: For example, build artifacts, release files or a package repository.
+          - name: object_storage_buckets
+            label: Preferred bucket names
+            description:
+              If you have names you would like, list them here, one per bucket. Otherwise we name them after your
+              project and what each bucket holds, such as myproject-releases.
+          - name: object_storage_access
+            label: Should the content be publicly readable?
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options:
+              - Yes, anyone can download it
+              - No, only our project needs access
+              - Some buckets public, some private
+          - name: object_storage_public_buckets
+            label: Which buckets should be public?
+            required: true
+            shown_when:
+              field: object_storage_access
+              value: Some buckets public, some private
+          - name: object_storage_domain
+            label: Which domain should it use?
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options:
+              - s3.osuosl.org is fine
+              - Our own domain(s)
+          - name: object_storage_custom_domain
+            label: Your domain name(s)
+            required: true
+            shown_when:
+              field: object_storage_domain
+              value: Our own domain(s)
+            description:
+              The host name(s) to use, such as downloads.example.org. You will need to add DNS records that point them
+              to us.
+          - name: object_storage_other
+            label: Other S3 requirements
+            type: textarea
+            description:
+              For example, versioning, retention or lifecycle rules, CORS, or publishing a bucket as a static website
+              through s3-website.osuosl.org.
+      - name: dns
+        label: DNS hosting
+        type: toggle
+        legend: DNS details
+        description: Authoritative [DNS](/services/hosting/details/#dns-hosting) for your project's domain(s).
+        fields:
+          - name: dns_type
+            label: Primary or secondary DNS?
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options:
+              - Primary, where the OSL hosts and updates your zones
+              - Secondary, where the OSL copies your zones from your own name server
+            description:
+              With primary DNS, record changes go through our team. With secondary DNS, you keep managing your zones on
+              your own server and our name servers pull copies of them.
+          - name: dns_domains
+            label: Domain(s)
+            required: true
+            description: The zones you need us to host.
+          - name: dns_current_provider
+            label: Where are these zones hosted today?
+            required: true
+            shown_when:
+              field: dns_type
+              value: Primary, where the OSL hosts and updates your zones
+            description:
+              Your current DNS provider, such as your domain registrar or Cloudflare. We will ask you for a copy of the
+              current records before we switch.
+          - name: dns_primary_server
+            label: Your primary name server
+            required: true
+            shown_when:
+              field: dns_type
+              value: Secondary, where the OSL copies your zones from your own name server
+            description:
+              The host name or IP address we should transfer your zones from. We will send you the IP addresses of the
+              server that transfers them, so you can allow it.
+          - name: dns_registrar_access
+            label: Can you update the name servers at your domain registrar?
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options:
+              - "Yes"
+              - "No"
+              - Not sure
+            description:
+              Your domain's name servers at the registrar need to point at ours, which are ns1.auth.osuosl.org,
+              ns2.auth.osuosl.org and ns3.auth.osuosl.org.
+      - name: colocation
+        label: Co-location
+        type: toggle
+        legend: Co-location details
+        description:
+          Hosting for your own hardware in our data center. New co-located projects must help cover the cost of hosting
+          their hardware. Please read the [hardware requirements](/services/hosting/details/#co-location-hosting) first.
+        fields:
+          - name: colocation_management
+            label: Who should manage the operating system on your servers?
+            type: select
+            required: true
+            placeholder: "- Select -"
+            options:
+              - Managed by the OSL
+              - Unmanaged, we will manage it ourselves
+              - Not sure
+            description:
+              We can keep the operating system updated, monitored and backed up with our configuration management, or
+              you can manage it yourselves with one sudo account kept for us. See [Managed vs.
+              Unmanaged](/services/hosting/details/#managed-vs-unmanaged).
+          - name: colocation_servers
+            label: Number of servers
+            required: true
+            type: number
+            min: "1"
+          - name: colocation_rack_units
+            label: Total rack units (U)
+            required: true
+            type: number
+            min: "1"
+            description: The combined height of all of your servers. For example, one 1U and one 2U server is 3.
+          - label: Does every server have the following?
+            type: checkbox-group
+            id: colocation-features
+            value: "yes"
+            options:
+              - name: colocation_dual_power
+                label: Dual (redundant) power supplies
+              - name: colocation_rails
+                label: Sliding rails
+              - name: colocation_bmc
+                label: A BMC for out-of-band management, such as IPMI, iLO or iDRAC
+          - label: Network connections
+            type: checkbox-group
+            required: true
+            id: colocation-network
+            value: "yes"
+            options:
+              - name: colocation_network_1g_copper
+                label: 1G copper (RJ45)
+              - name: colocation_network_10g_copper
+                label: 10G copper (RJ45)
+              - name: colocation_network_10g_sfp
+                label: 10G SFP+
+              - name: colocation_network_40g_qsfp
+                label: 40G QSFP+
+              - name: colocation_network_100g_qsfp
+                label: 100G QSFP28
+            description: Choose each type of port you need.
+          - name: colocation_network_ports
+            label: Number of network ports to connect
+            required: true
+            type: number
+            min: "1"
+            description:
+              The total across all of your servers, including BMC ports. Give the breakdown for each server in the
+              Hardware field below.
+          - name: colocation_ipv4
+            label: How many public IPv4 addresses do you need?
+            type: number
+            required: true
+            min: "0"
+            description: The total across all of your servers.
+          - name: colocation_lag
+            label: Do you need link aggregation (LAG/LACP)?
+            required: true
+            type: select
+            placeholder: "- Select -"
+            options:
+              - "Yes"
+              - "No"
+              - Not sure
+          - name: colocation_hardware
+            label: Hardware
+            required: true
+            type: textarea
+            description:
+              Make and model of each server, its expected power draw in watts, and how many network ports of each type
+              it needs. If a server is missing anything listed above, tell us which one and what it lacks.
+  - type: heading
+    label: Other details
   - name: possible_contributions_to_cover_costs
     label: Contributions that you may be able to make to cover costs.
-    required: true
     description:
       We realize that most projects are not in a position to help cover the costs, but any contribution certainly helps!
+  - name: deadline
+    label: Do you have a hard deadline?
+    description: If you need this hosting by a specific date, tell us the date and why. Leave this blank if you don't.
+  - name: other_pertinent_information_about_project
+    label: Anything else we should know?
+    type: textarea

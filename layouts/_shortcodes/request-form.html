@@ -5,22 +5,26 @@
 >}}
 
 The data file carries the per-form pieces (send_to, subject_prefix, contact, fields); shared formsender settings live in
-[params.formsender]. Field markup comes from the form-field partial. */ -}}
+[params.formsender]. Field markup comes from the form-field partial. With formsender.disabled set, as on PR previews,
+the form renders without a way to submit it and points to the live form instead. */ -}}
 {{- $name := .Get 0 -}}
 {{- $form := index hugo.Data.forms $name -}}
 {{- if not $form -}}
   {{- errorf "request-form: no data/forms/%s.yml (page %s)" $name .Position -}}
 {{- end -}}
+{{- /* Expand field_set references so each toggle gets its own copy of a
+  shared question set; the form and its field_labels both use the result. */ -}}
+{{- $fields := partial "form-expand.html" (dict "fields" $form.fields "sets" ($form.field_sets | default dict)) -}}
 {{- $fs := site.Params.formsender -}}
 <form
   class="webform-client-form"
-  action="{{ $fs.action }}"
+  {{ if not $fs.disabled }}action="{{ $fs.action }}"{{ end }}
   method="post"
   enctype="multipart/form-data"
   accept-charset="UTF-8"
 >
   <p class="form-text">Fields marked with * are required.</p>
-  {{ range $form.fields }}
+  {{ range $fields }}
     {{- partial "form-field.html" . -}}
   {{ end }}
   {{ with $form.contact }}
@@ -33,7 +37,9 @@ The data file carries the per-form pieces (send_to, subject_prefix, contact, fie
       </em>
     </p>
   {{ end }}
-  <div class="cf-turnstile" data-sitekey="{{ $fs.turnstile_sitekey }}"></div>
+  {{ if not $fs.disabled }}
+    <div class="cf-turnstile" data-sitekey="{{ $fs.turnstile_sitekey }}"></div>
+  {{ end }}
   {{/* Formsender envelope. last_name is a spam honeypot and must stay empty.
     The subject key is the field whose value formsender puts in the ticket
     subject; every form uses project_name. The redirect's static value
@@ -41,7 +47,9 @@ The data file carries the per-form pieces (send_to, subject_prefix, contact, fie
     origin so staging and local submissions come back to the same site.
   */}}
   <input type="hidden" name="last_name" value="" />
-  <input type="hidden" name="token" value="{{ $fs.token }}" />
+  {{ if not $fs.disabled }}
+    <input type="hidden" name="token" value="{{ $fs.token }}" />
+  {{ end }}
   <input
     type="hidden"
     name="redirect"
@@ -51,9 +59,21 @@ The data file carries the per-form pieces (send_to, subject_prefix, contact, fie
   <input type="hidden" name="mail_subject_prefix" value="{{ $form.subject_prefix }}" />
   <input type="hidden" name="mail_subject_key" value="project_name" />
   <input type="hidden" name="send_to" value="{{ $form.send_to }}" />
-  <div class="form-actions">
-    <button type="submit" name="op" value="Submit" class="btn btn-primary">Submit</button>
-  </div>
+  {{/* Each field's label, in form order, so formsender can head the
+    ticket's answers with what the requester saw instead of a title-cased
+    field name. Built from the form data; nothing to maintain by hand.
+  */}}
+  <input type="hidden" name="field_labels" value="{{ partial "form-labels.html" (dict "fields" $fields "lead" "Project") | jsonify }}" />
+  {{ if $fs.disabled }}
+    <div class="alert alert-info">
+      Submissions are turned off on preview sites. To make a request, use
+      <a href="{{ .Page.Permalink }}">this form on osuosl.org</a>.
+    </div>
+  {{ else }}
+    <div class="form-actions">
+      <button type="submit" name="op" value="Submit" class="btn btn-primary">Submit</button>
+    </div>
+  {{ end }}
 </form>
 {{- $js := resources.Get "js/request-form.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>

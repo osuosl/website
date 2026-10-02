@@ -15,95 +15,125 @@ fields:
     type: email
     required: true
     autocomplete: email
-  - name: project_name
-    label: Project Name
+  - name: requester_role
+    label: Your role in the project
     required: true
-    description: Name of the open source project or education institution this request will be supporting.
+    description: For example, maintainer, core developer or researcher.
+  - name: project_name
+    label: Project name
+    required: true
+    description: The open source project or education institution this request supports.
   - name: project_url
     label: Project URL
     required: true
-    description: Primary website URL for the open source project or education institution.
+    description: The main website for the project or institution.
+  - name: source_code_url
+    label: Source code repository
+    description:
+      Where your project's code is developed, such as a GitHub, GitLab or Codeberg URL. Leave this blank if your project
+      isn't software.
+  - name: software_license
+    label: Software license
+    required: true
+    description:
+      What license is your project released under? We only host projects released under an
+      [OSI-approved license](https://opensource.org/licenses).
   - name: est_size_of_user_community
-    label: Estimated Size of User Community
+    label: Estimated size of user community
     required: true
-    description: How many estimated users do you have in your community?
+    description: Rough numbers of users and of active contributors, such as 5,000 users and 20 contributors.
   - name: description_of_project_mission
-    label: Description of Project Mission
+    label: Description of project mission
     type: textarea
     required: true
-    description:
-      Please describe in detail the mission and purpose of this request in regards to how the POWER architecture will
-      support your project. Also describe the general mission of your project.
+    description: Describe your project's mission and how the POWER architecture will support it.
   - name: expected_usage_model
-    label: Expected Usage Model
+    label: Expected usage model
     type: textarea
     required: true
     description:
-      What types of activity will the machine be used for? (i.e. compile builds, performance testing, architecture
-      troubleshooting, etc).
+      What will you use the VMs for? For example, compiling builds, performance testing or troubleshooting
+      architecture-specific issues.
   - name: anticipated_duration_of_need
     label: Anticipated duration of need
     required: true
-    description:
-      How long do you expect you will need these resources? Ongoing or indefinitely are also acceptable answers.
+    description: How long do you expect to need these resources? Ongoing or indefinite is fine.
   - name: ibm_advocate
-    label: IBM Advocate
+    label: IBM advocate
     required: true
     description:
-      If you do not have an IBM Advocate, one will need to be assigned prior to activating access. OSUOSL and IBM will
-      work with the requesting project to find an appropriate advocate.
+      If you don't have an IBM advocate, we need to assign one before we can give you access. The OSL and IBM will work
+      with you to find one.
   - name: deployment_timeframe
     label: Deployment timeframe
     type: select
-    value: Within 7 business Days
+    value: Within 7 business days
     options:
-      - Within 7 business Days
-      - Within 3 business Days
-      - value: Within 1 business Days
-        label: Within 1 business Day
+      - Within 7 business days
+      - Within 3 business days
+      - Within 1 business day
     description:
-      Normal turnaround for access is typically 7 business days. If you need it sooner than that, please choose which
-      time frame you need. We will do our best to accommodate your request.
-  - name: other_information
-    label: Other information
-    type: textarea
-    description: Is there anything additional you would like to provide for your request?
+      Access normally takes up to 7 business days. If you need it sooner, choose a shorter time frame and we will do our
+      best to meet it.
   - type: heading
-    label: OpenStack Access Question(s)
+    label: VM details
     id: openstack-questions
   - name: power_architecture
-    label: POWER Architecture
+    label: POWER architecture
     type: select
     required: true
     value: POWER10
     options:
       - POWER10
       - POWER9
-  - name: flavor
-    label: Flavor
+  - name: instance_vcpus
+    label: vCPUs
     type: select
     required: true
     placeholder: "- Select -"
+    options: ["1", "2", "4", "8", "16", "24", "32"]
+    description:
+      Each vCPU is one hardware thread on the host. If you need more CPU, memory or disk than we list here, choose the
+      largest option and explain what you need in the "Anything else we should know?" field at the end of the form.
+  - name: instance_memory
+    label: Memory
+    type: select
+    required: true
+    placeholder: "- Select -"
+    options: [4 GB, 6 GB, 8 GB, 12 GB, 16 GB, 24 GB, 32 GB, 48 GB, 64 GB, 96 GB, 128 GB]
+  - name: instance_disk
+    label: Root disk
+    type: select
+    required: true
+    placeholder: "- Select -"
+    options: [40 GB, 60 GB, 80 GB, 100 GB, 200 GB, 300 GB, 400 GB, 500 GB]
+    description:
+      POWER10 root disks use local NVMe storage. POWER9 VMs can use either local NVMe or SSD-backed Ceph storage, so
+      tell us if you have a preference in the "Anything else we should know?" field at the end of the form.
+  - name: additional_volume
+    label: Attached storage volume
+    type: select
+    placeholder: "- None -"
+    options: [100 GB, 250 GB, 500 GB, 1 TB, 2 TB, 3 TB, 4 TB]
+    description:
+      A separate block storage volume attached to the VM as a second disk, in addition to the root disk. Use it for
+      data such as build caches, artifacts or package repositories. Leave this at None if the root disk is enough.
+  - name: additional_volume_type
+    label: Attached storage type
+    type: select
+    placeholder: "- Select -"
     options:
-      - value: tiny
-        label: 1 CPU, 512M RAM, 4G Disk
-      - value: small
-        label: 1 CPU, 1G RAM, 15G Disk
-      - value: medium
-        label: 2 CPU, 4G RAM, 30G Disk
-      - value: large
-        label: 4 CPU, 8G RAM, 60G Disk
-      - value: xlarge
-        label: 8 CPU, 16G RAM, 80G Disk
-      - value: xxlarge
-        label: 16 CPU, 32G RAM, 320G Disk
+      - HDD
+      - SSD
+    description:
+      If you leave this blank, we will use HDD storage. Choose SSD if your workload needs faster disk, and tell us why
+      in the "Anything else we should know?" field at the end of the form.
   - name: number_of_nodes
-    label: Number of nodes
+    label: Number of VMs
     type: number
     required: true
     value: "1"
     min: "1"
-    description: Estimated number of nodes (machines) you'd like to have.
   - name: distribution
     label: Distribution
     type: select
@@ -114,26 +144,31 @@ fields:
       - CentOS Stream
       - Debian
       - Fedora
-      - OpenSUSE
+      - openSUSE
       - Rocky Linux
       - Ubuntu
       - Other
     description:
-      Which Linux distribution would you like to use for your machine? This would likely be the latest stable version
-      available for ppc64le. If you want a specific version, please note that in the Other information field above.
+      We will install the latest stable release available for ppc64le unless you ask for a specific version in the
+      "Anything else we should know?" field at the end of the form.
   - name: openstack_access
-    label: OpenStack Access
+    label: OpenStack access
     type: select
     required: true
     placeholder: "- Select -"
     options:
-      - Have the OSL create the node(s) for me
-      - I'd like to have access to the Openstack GUI/API
+      - Have the OSL create the VM(s) for me
+      - Give me access to the OpenStack GUI/API
     description:
-      We use OpenStack to manage the POWER ppc64/ppc64le nodes. We can either create the node for you or we can grant
-      you access to the OpenStack GUI and API and let you manage it yourself. What do you prefer?
+      We can create the VM for you, or we can give you access to the OpenStack GUI and API so you can manage it
+      yourself.
   - name: ssh_public_key
-    label: SSH Public Key
+    label: SSH public key
     type: textarea
     required: true
-    description: Public SSH key to be used for initial access to the system.
+    description: Public SSH key to use for initial access to the VM.
+  - type: heading
+    label: Other details
+  - name: other_information
+    label: Anything else we should know?
+    type: textarea
