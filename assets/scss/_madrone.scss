@@ -280,6 +280,9 @@ html:not([data-bs-theme="dark"]) .dark-only {
 
 // "On this page" list of a page's sections (page-toc partial, toc: true).
 .page-toc {
+  width: fit-content;
+  min-width: 16rem;
+  max-width: 100%;
   margin-bottom: 2rem;
   padding: 1rem 1.25rem;
   border: 1px solid var(--bs-border-color);
@@ -294,19 +297,9 @@ html:not([data-bs-theme="dark"]) .dark-only {
     margin: 0;
     padding: 0;
     list-style: none;
-    column-gap: 2rem;
-
-    @include media-breakpoint-up(sm) {
-      columns: 2;
-    }
-
-    @include media-breakpoint-up(lg) {
-      columns: 3;
-    }
   }
 
   li {
-    break-inside: avoid;
     padding: 0.125rem 0;
   }
 }
