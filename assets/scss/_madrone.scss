@@ -119,6 +119,60 @@ html:not([data-bs-theme="dark"]) .dark-only {
   color: $osu-orange-link-dark;
 }
 
+// ---------------------------------------------------------- status notices
+// Strip under the header for open incidents and maintenance on
+// status.osuosl.org, filled by site.js. Bootstrap's subtle tone variables
+// adapt to dark mode; text and links use the tone's emphasis color, which
+// passes AA on its own subtle background.
+.status-notice {
+  background: var(--notice-bg);
+  border-bottom: 1px solid var(--notice-border);
+  color: var(--bs-body-color);
+  font-size: 0.925rem;
+
+  .status-notice-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25rem 0.75rem;
+    padding-block: 0.6rem;
+  }
+
+  .svg-icon {
+    color: var(--notice-emphasis);
+  }
+
+  .status-notice-label {
+    color: var(--notice-emphasis);
+  }
+
+  .status-notice-title {
+    font-weight: 600;
+    min-width: 0;
+  }
+
+  // Body color rather than secondary: grey fails AA on the danger and
+  // info backgrounds in light mode.
+  .status-notice-meta {
+    font-size: 0.875rem;
+  }
+
+  .status-notice-link {
+    margin-left: auto;
+    color: var(--notice-emphasis);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+}
+
+@each $tone in warning, danger, info {
+  .status-notice-#{$tone} {
+    --notice-bg: var(--bs-#{$tone}-bg-subtle);
+    --notice-border: var(--bs-#{$tone}-border-subtle);
+    --notice-emphasis: var(--bs-#{$tone}-text-emphasis);
+  }
+}
+
 // -------------------------------------------------------------------- nav
 .site-nav {
   background: var(--bs-tertiary-bg);

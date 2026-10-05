@@ -1,0 +1,21 @@
+{{- /*
+  Notice strip for open incidents and maintenance on status.osuosl.org.
+  Renders empty and hidden; site.js fills it from the status.io public API
+  and shows it only when there is something to report. The icon templates
+  are cloned into each notice.
+  */
+-}}
+{{- with site.Params.status -}}
+  <div
+    class="status-notices"
+    id="status-notices"
+    data-page-id="{{ .page_id }}"
+    data-status-url="{{ .url }}"
+    role="status"
+    hidden
+  >
+    <template data-icon="incident">{{ partial "icon.html" (dict "name" "triangle-exclamation") }}</template>
+    <template data-icon="maintenance">{{ partial "icon.html" (dict "name" "wrench") }}</template>
+    <template data-icon="upcoming">{{ partial "icon.html" (dict "name" "calendar") }}</template>
+  </div>
+{{- end -}}
