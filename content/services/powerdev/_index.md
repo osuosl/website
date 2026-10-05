@@ -27,7 +27,7 @@ can increase given resource availability and justification.
 To request access to an OpenStack POWER instance, use our
 [OpenPOWER OpenStack request form](/services/powerdev/request-hosting).
 
-### POWER Continuous Integration (POWER CI)
+### POWER Continuous Integration (POWER CI) {#power-ci}
 
 Hosted via the OpenStack cluster is an OSL managed Jenkins service which is hosted at <https://powerci.osuosl.org>. This
 service is intended to allow projects easier access to the POWER architecture via Jenkins.

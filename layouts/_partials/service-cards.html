@@ -9,18 +9,20 @@
 {{- $heading := .heading | default "h3" -}}
 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
   {{ range hugo.Data.services }}
+    {{- $info := .url | relURL -}}
+    {{ with .anchor }}{{ $info = printf "%s#%s" $info . }}{{ end -}}
     <div class="col">
       <div class="card service-card">
         <div class="card-body">
           {{ printf "<%s class=\"card-title h5\">" $heading | safeHTML }}
-          <a class="text-decoration-none" href="{{ .url | relURL }}">{{ .name }}</a>
+          <a class="text-decoration-none" href="{{ $info }}">{{ .name }}</a>
           {{ printf "</%s>" $heading | safeHTML }}
           <p class="card-text">{{ .description }}</p>
           <div class="card-actions">
             <a class="btn btn-primary btn-sm" href="{{ .request_url | relURL }}">
               Request<span class="visually-hidden"> {{ .name }}</span>
             </a>
-            <a class="btn btn-outline-secondary btn-sm" href="{{ .url | relURL }}">
+            <a class="btn btn-outline-secondary btn-sm" href="{{ $info }}">
               More info<span class="visually-hidden"> about {{ .name }}</span>
             </a>
           </div>

@@ -1,6 +1,8 @@
 # Hosting offerings. The home page shows each as a card (description); the
 # services page gives each a section (details, in Markdown). Every page under
-# an offering's url gets a request_label button for its request_url.
+# an offering's url gets a request_label button for its request_url. An
+# optional anchor points the offering's More info link at that section of its
+# url's page, for offerings that share a page.
 - name: General Hosting
   url: /services/hosting/
   request_url: /services/hosting/request/
@@ -41,6 +43,7 @@
 
 - name: POWER CI
   url: /services/powerdev/
+  anchor: power-ci
   request_url: /services/powerdev/request-ci/
   request_label: Request POWER CI access
   description: >-
