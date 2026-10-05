@@ -227,6 +227,27 @@ saved to `tmp/form-tickets/<form>/<scenario>.txt`, and the script exits non-zero
   `npx playwright install chromium`.
 - It refuses to submit a form whose action isn't on localhost, so it can't create real tickets.
 
+### Previewing the status strip
+
+Every page shows open incidents and maintenance from [status.osuosl.org](https://status.osuosl.org/) in a strip under
+the navigation, and the strip is hidden when nothing is open. To see it with sample data, add `?status-demo` to any page
+URL on `hugo server` or a PR preview, for example <http://localhost:1313/?status-demo>.
+
+| URL parameter              | Shows                                                                    |
+| -------------------------- | ------------------------------------------------------------------------ |
+| `?status-demo`             | An outage, an incident, maintenance in progress and upcoming maintenance |
+| `?status-demo=incident`    | A partial service disruption                                             |
+| `?status-demo=outage`      | A service disruption                                                     |
+| `?status-demo=maintenance` | Maintenance in progress                                                  |
+| `?status-demo=upcoming`    | Maintenance in three days (one 20 days out stays hidden)                 |
+| `?status-demo=baddates`    | Notices with missing dates, which still show without their times         |
+| `?status-demo=clear`       | Nothing open, so the strip stays hidden                                  |
+| `?status-demo=off`         | The live status page again                                               |
+
+The sample stays on every page you visit in that tab until you use `?status-demo=off` or close the tab. Its times are
+relative to when you load it. The sample data is in `assets/js/status-demo.js`, which only non-production builds
+include, so the parameter does nothing on osuosl.org.
+
 ## Adding Content
 
 Content is added inside the `/content` folder, though it varies based on what you would like to do.
