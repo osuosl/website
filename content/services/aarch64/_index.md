@@ -12,8 +12,8 @@ Members of the community can use these [Ampere Computing eMAG](https://en.wikipe
 [Ampere Computing Mt. Collins](https://amperecomputing.com/systems/altra/2u-mt-collins-2s-sas-3.5) AArch64 servers to
 develop and test open source projects on the AArch64 architecture platform and in an AArch64 environment.
 
-- List of [Current Projects & Academic Partners](/services/aarch64/current-projects)
-- List of [Former Projects & Academic Partners](/services/aarch64/former-projects)
+- List of [Current Projects](/services/aarch64/current-projects)
+- List of [Former Projects](/services/aarch64/former-projects)
 
 ## OpenStack
 
