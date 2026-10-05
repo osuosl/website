@@ -16,3 +16,9 @@ token = 'F0Ne39VckLbyzIrhHL2sYVL545kmgqx4rghGY3LulJTlut4oxLFIxky5xE32aHnrxHWHIP9
 # Cloudflare Turnstile site key for the osuosl.org widget. Public, and paired
 # with the TURNSTILE_SECRET formsender reads from its data bag.
 turnstile_sitekey = '0x4AAAAAAE8QCqtEUqrUFpNx'
+
+# status.osuosl.org (status.io). The site-wide notice strip reads open
+# incidents and maintenance from the public status API in the browser.
+[status]
+url = 'https://status.osuosl.org/'
+page_id = '526712bf10cd4e587b000014'
