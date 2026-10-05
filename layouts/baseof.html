@@ -5,8 +5,8 @@
     <a class="skip-link" href="#main">Skip to main content</a>
     <div class="layout-container">
       {{- partial "header.html" . -}}
-      {{- partial "status-notices.html" . -}}
       {{- partial "nav.html" . -}}
+      {{- partial "status-notices.html" . -}}
       <main id="main" data-pagefind-body>
         {{- block "main" . }}{{- end }}
       </main>
