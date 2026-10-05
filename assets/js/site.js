@@ -71,7 +71,7 @@
   });
 })();
 
-// Status notices. Fills the strip under the header with open incidents,
+// Status notices. Fills the strip under the navigation with open incidents,
 // maintenance in progress and maintenance starting within a week, read
 // from the status.io public API. Stays hidden when there is nothing to
 // report or the API can't be reached.
@@ -111,16 +111,42 @@
     timeZoneName: "short",
   });
 
+  // Intl throws on an invalid date, which would hide every notice, and
+  // new Date(null) is the 1970 epoch, so both come back as null.
+  function toDate(value) {
+    var date = new Date(value);
+    return value && !isNaN(date) ? date : null;
+  }
+
   function formatTime(date) {
+    if (!date) {
+      return "";
+    }
     var sameDay = date.toDateString() === new Date().toDateString();
     return (sameDay ? timeFormat : dayTimeFormat).format(date);
   }
 
   function formatRange(start, end) {
+    if (!start || !end) {
+      return formatTime(start);
+    }
     if (dayTimeFormat.formatRange) {
       return dayTimeFormat.formatRange(start, end);
     }
     return dayTimeFormat.format(start) + " – " + dayTimeFormat.format(end);
+  }
+
+  // Joins the parts of a notice's meta text that are present.
+  function meta(parts) {
+    return parts
+      .filter(function (part) {
+        return part;
+      })
+      .join(" · ");
+  }
+
+  function postUrl(kind, id) {
+    return new URL("pages/" + kind + "/" + pageId + "/" + id, statusUrl).href;
   }
 
   function latestMessage(item) {
@@ -138,18 +164,15 @@
     (result.incidents || []).forEach(function (incident) {
       var message = latestMessage(incident);
       var level = severity[message.status] || { label: "Incident", tone: "warning" };
-      var meta = "since " + formatTime(new Date(incident.datetime_open));
-      if (states[message.state]) {
-        meta = states[message.state] + " · " + meta;
-      }
+      var opened = formatTime(toDate(incident.datetime_open));
       list.push({
         icon: "incident",
         tone: level.tone,
         rank: message.status || 0,
         label: level.label,
         title: incident.name,
-        meta: meta,
-        href: statusUrl + "pages/incident/" + pageId + "/" + incident._id,
+        meta: meta([states[message.state], opened && "since " + opened]),
+        href: postUrl("incident", incident._id),
       });
     });
     list.sort(function (a, b) {
@@ -158,20 +181,29 @@
 
     var maintenance = result.maintenance || {};
     (maintenance.active || []).forEach(function (item) {
-      var end = new Date(item.datetime_planned_end);
+      var start = toDate(item.datetime_planned_start);
+      var end = toDate(item.datetime_planned_end);
+      var when = "";
+      if (end && end > now) {
+        when = "until " + formatTime(end);
+      } else if (start) {
+        when = "since " + formatTime(start);
+      }
       list.push({
         icon: "maintenance",
         tone: "info",
         label: "Maintenance in progress",
         title: item.name,
-        meta: end > now ? "until " + formatTime(end) : "since " + formatTime(new Date(item.datetime_planned_start)),
-        href: statusUrl + "pages/maintenance/" + pageId + "/" + item._id,
+        meta: when,
+        href: postUrl("maintenance", item._id),
       });
     });
 
+    // Without a start date there's no telling whether it falls in the window.
     (maintenance.upcoming || [])
       .filter(function (item) {
-        return new Date(item.datetime_planned_start) - now <= upcomingWindow;
+        var start = toDate(item.datetime_planned_start);
+        return start && start - now <= upcomingWindow;
       })
       .sort(function (a, b) {
         return new Date(a.datetime_planned_start) - new Date(b.datetime_planned_start);
@@ -182,8 +214,8 @@
           tone: "info",
           label: "Scheduled maintenance",
           title: item.name,
-          meta: formatRange(new Date(item.datetime_planned_start), new Date(item.datetime_planned_end)),
-          href: statusUrl + "pages/maintenance/" + pageId + "/" + item._id,
+          meta: formatRange(toDate(item.datetime_planned_start), toDate(item.datetime_planned_end)),
+          href: postUrl("maintenance", item._id),
         });
       });
 
@@ -215,11 +247,15 @@
       }
       inner.appendChild(el("strong", "status-notice-label", notice.label + ":"));
       inner.appendChild(el("span", "status-notice-title", notice.title));
-      inner.appendChild(el("span", "status-notice-meta", notice.meta));
+      if (notice.meta) {
+        inner.appendChild(el("span", "status-notice-meta", notice.meta));
+      }
       var link = el("a", "status-notice-link", "Details");
       link.href = notice.href;
       link.appendChild(el("span", "visually-hidden", " on " + notice.title));
-      link.appendChild(document.createTextNode(" →"));
+      var arrow = el("span", null, " →");
+      arrow.setAttribute("aria-hidden", "true");
+      link.appendChild(arrow);
       inner.appendChild(link);
       row.appendChild(inner);
       strip.appendChild(row);

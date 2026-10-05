@@ -120,7 +120,7 @@ html:not([data-bs-theme="dark"]) .dark-only {
 }
 
 // ---------------------------------------------------------- status notices
-// Strip under the header for open incidents and maintenance on
+// Strip under the navigation for open incidents and maintenance on
 // status.osuosl.org, filled by site.js. Bootstrap's subtle tone variables
 // adapt to dark mode; text and links use the tone's emphasis color, which
 // passes AA on its own subtle background.
