@@ -4,11 +4,13 @@
   request and More info buttons.
 */ -}}
 {{- range hugo.Data.services }}
-  <h2 id="{{ .name | anchorize }}"><a href="{{ .url | relURL }}">{{ .name }}</a></h2>
+  {{- $info := .url | relURL -}}
+  {{ with .anchor }}{{ $info = printf "%s#%s" $info . }}{{ end -}}
+  <h2 id="{{ .name | anchorize }}"><a href="{{ $info }}">{{ .name }}</a></h2>
   {{ $.Page.RenderString (dict "display" "block") .details }}
   <div class="request-bar">
     <a class="btn btn-primary" href="{{ .request_url | relURL }}">{{ .request_label }}</a>
-    <a class="btn btn-outline-secondary" href="{{ .url | relURL }}">
+    <a class="btn btn-outline-secondary" href="{{ $info }}">
       More info<span class="visually-hidden"> about {{ .name }}</span>
     </a>
   </div>
