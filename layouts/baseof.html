@@ -15,6 +15,11 @@
     {{ partial "search.html" . }}
     {{ $bootstrap := resources.Get "js/vendor/bootstrap.bundle.min.js" | fingerprint }}
     <script src="{{ $bootstrap.RelPermalink }}" integrity="{{ $bootstrap.Data.Integrity }}" defer></script>
+    {{/* Sample status notices for hugo server and PR previews only */}}
+    {{ if not hugo.IsProduction }}
+      {{ $demo := resources.Get "js/status-demo.js" | fingerprint }}
+      <script src="{{ $demo.RelPermalink }}" integrity="{{ $demo.Data.Integrity }}" defer></script>
+    {{ end }}
     {{ $site := resources.Get "js/site.js" | minify | fingerprint }}
     <script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}" defer></script>
   </body>
