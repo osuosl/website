@@ -240,13 +240,13 @@ URL on `hugo server` or a PR preview, for example <http://localhost:1313/?status
 | `?status-demo=outage`      | A service disruption                                                     |
 | `?status-demo=maintenance` | Maintenance in progress                                                  |
 | `?status-demo=upcoming`    | Maintenance in three days (one 20 days out stays hidden)                 |
-| `?status-demo=baddates`    | Notices with missing dates, which still show without their times         |
+| `?status-demo=baddates`    | Notices with missing or inconsistent dates                               |
 | `?status-demo=clear`       | Nothing open, so the strip stays hidden                                  |
 | `?status-demo=off`         | The live status page again                                               |
 
-The sample stays on every page you visit in that tab until you use `?status-demo=off` or close the tab. Its times are
-relative to when you load it. The sample data is in `assets/js/status-demo.js`, which only non-production builds
-include, so the parameter does nothing on osuosl.org.
+The sample stays on every page you visit in that tab for a day, or until you use `?status-demo=off` or close the tab.
+Its times are relative to when you load it. The sample data is in `assets/js/status-demo.js`, which only
+non-production builds include, so the parameter does nothing on osuosl.org.
 
 ## Adding Content
 

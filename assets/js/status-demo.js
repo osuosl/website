@@ -5,11 +5,12 @@
 //
 //   ?status-demo               every kind of notice at once
 //   ?status-demo=incident      one notice; also outage, maintenance, upcoming,
-//                              baddates (missing dates) and clear (nothing)
+//                              baddates (missing or inconsistent dates) and
+//                              clear (nothing)
 //   ?status-demo=off           back to the live status page
 //
 // It seeds the cache that site.js reads, so the sample stays on every page of
-// the tab until ?status-demo=off or the tab closes.
+// the tab for a day, until ?status-demo=off or until the tab closes.
 (function () {
   var scenario = new URLSearchParams(location.search).get("status-demo");
   if (scenario === null) {
@@ -68,7 +69,19 @@
     maintenance: [[], [maintenance], []],
     upcoming: [[], [], [upcoming, later]],
     baddates: [
-      [incident, { _id: "nodate", name: "Incident with no start time", messages: [{ status: 300, state: 300 }] }],
+      [
+        incident,
+        { _id: "nodate", name: "Incident with no start time", messages: [{ status: 300, state: 300 }] },
+        {
+          _id: "badupdate",
+          name: "Incident with a bad update time (should say Monitoring)",
+          datetime_open: at(-1),
+          messages: [
+            { status: 500, state: 100, datetime: "not a date" },
+            { status: 300, state: 300, datetime: at(-0.1) },
+          ],
+        },
+      ],
       [
         {
           _id: "nulldates",
@@ -77,7 +90,21 @@
           datetime_planned_end: null,
         },
       ],
-      [{ _id: "nostart", name: "Maintenance with no start (should not show)", datetime_planned_end: at(5) }],
+      [
+        { _id: "nostart", name: "Maintenance with no start (should not show)", datetime_planned_end: at(5) },
+        {
+          _id: "ended",
+          name: "Maintenance that already ended (should not show)",
+          datetime_planned_start: at(-48),
+          datetime_planned_end: at(-46),
+        },
+        {
+          _id: "reversed",
+          name: "Maintenance ending before it starts (start time only)",
+          datetime_planned_start: at(30),
+          datetime_planned_end: at(28),
+        },
+      ],
     ],
     clear: [[], [], [later]],
   };

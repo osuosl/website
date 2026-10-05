@@ -126,11 +126,15 @@
     return (sameDay ? timeFormat : dayTimeFormat).format(date);
   }
 
+  // An end before the start would print nonsense (or throw in older
+  // browsers), so it shows the start alone. formatRange gives both ends one
+  // zone label, which misstates a window across a daylight saving change,
+  // so those get each end formatted on its own.
   function formatRange(start, end) {
-    if (!start || !end) {
+    if (!start || !end || end < start) {
       return formatTime(start);
     }
-    if (dayTimeFormat.formatRange) {
+    if (dayTimeFormat.formatRange && start.getTimezoneOffset() === end.getTimezoneOffset()) {
       return dayTimeFormat.formatRange(start, end);
     }
     return dayTimeFormat.format(start) + " – " + dayTimeFormat.format(end);
@@ -151,8 +155,9 @@
 
   function latestMessage(item) {
     var messages = (item.messages || []).slice();
+    // An invalid date sorts as oldest rather than breaking the sort.
     messages.sort(function (a, b) {
-      return new Date(b.datetime) - new Date(a.datetime);
+      return (toDate(b.datetime) || 0) - (toDate(a.datetime) || 0);
     });
     return messages[0] || {};
   }
@@ -200,10 +205,13 @@
     });
 
     // Without a start date there's no telling whether it falls in the window.
+    // A window that has already ended can stay "upcoming" when nobody marks
+    // it started, so those are left out too.
     (maintenance.upcoming || [])
       .filter(function (item) {
         var start = toDate(item.datetime_planned_start);
-        return start && start - now <= upcomingWindow;
+        var end = toDate(item.datetime_planned_end) || start;
+        return start && start - now <= upcomingWindow && end > now;
       })
       .sort(function (a, b) {
         return new Date(a.datetime_planned_start) - new Date(b.datetime_planned_start);
