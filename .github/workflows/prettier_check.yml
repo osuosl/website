@@ -6,6 +6,11 @@ on:
   push:
     branches: [main]
 
+# This check only reads the repo, so the token stays read-only and the
+# checkout doesn't keep it.
+permissions:
+  contents: read
+
 jobs:
   prettier:
     name: Prettier Check
@@ -13,6 +18,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Run Prettier
         id: prettier-run
