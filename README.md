@@ -342,8 +342,9 @@ npm run icons -- add regular/envelope
 {{ partial "icon.html" (dict "name" "magnifying-glass" "label" "Search") }}
 ```
 
-Pass `label` only when the icon stands alone without visible text. A name that isn't in `assets/icons/` fails the Hugo
-build and says which `add` command to run.
+Pass `label` only when the icon stands alone without visible text. In page content, use the `icon` shortcode instead,
+such as `{{< icon "hand-holding-dollar" >}}`. A name that isn't in `assets/icons/` fails the Hugo build and says which
+`add` command to run.
 
 The copies have to match the pinned package:
 
