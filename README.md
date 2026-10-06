@@ -16,8 +16,8 @@ and install the Hugo binary or package. You can check if it is installed from th
 hugo version
 ```
 
-This project uses npm for the functionality of Prettier and Markdownlint. You can check that npm is installed from the
-command line by running:
+This project uses npm for Prettier, Markdownlint and managing the Font Awesome icons. You can check that npm is
+installed from the command line by running:
 
 ```bash
 npm -v
@@ -323,6 +323,41 @@ Content here will be placed on the tag page. You may also include images here.
 ```
 
 If you do not do this, the tag will be displayed as not having a name.
+
+### Icons
+
+The site's icons are [Font Awesome Free](https://fontawesome.com/search?ic=free) SVGs, copied unchanged from the
+`@fortawesome/fontawesome-free` npm package into `assets/icons/<style>/<name>.svg`. The package version is pinned in
+`package.json`. The site builds from the copies, so the deploy needs no npm, and the site footer credits Font Awesome.
+
+To use an icon, find it on fontawesome.com and note its name and style (solid, regular or brands). Copy it in, then
+render it with the `icon.html` partial, adding the style before the name unless it is solid:
+
+```bash
+npm run icons -- add regular/envelope
+```
+
+```go-html-template
+{{ partial "icon.html" (dict "name" "regular/envelope") }}
+{{ partial "icon.html" (dict "name" "magnifying-glass" "label" "Search") }}
+```
+
+Pass `label` only when the icon stands alone without visible text. A name that isn't in `assets/icons/` fails the Hugo
+build and says which `add` command to run.
+
+The copies have to match the pinned package:
+
+- `npm run icons -- check` fails if any file differs from the package or isn't a plain one-path Font Awesome SVG. The
+  GitHub Actions build runs it.
+- The Hugo build fails if an icon a page uses is from another version than the one `package.json` pins, or isn't a plain
+  one-path SVG, so an upgrade that skipped `sync` can't be deployed.
+
+To upgrade Font Awesome, install the new version, copy the icons again and look over the pages that use them:
+
+```bash
+npm install --save-dev --save-exact @fortawesome/fontawesome-free@<version>
+npm run icons -- sync
+```
 
 ## License
 
