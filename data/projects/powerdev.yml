@@ -86,6 +86,9 @@
 - name: conda-forge
   description: community-led collection of recipes, build infrastructure and distributions for the conda package manager
   category: foss
+- name: CPython
+  description: CPython is the reference implementation of the Python programming language.
+  category: foss
 - name: CRIU
   description: Supports project specific porting efforts of POWER ppc64/ppc64le
   category: foss
