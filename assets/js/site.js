@@ -206,11 +206,15 @@
 
     // Without a start date there's no telling whether it falls in the window.
     // A window that has already ended can stay "upcoming" when nobody marks
-    // it started, so those are left out too.
+    // it started, so those are left out too. An end before the start is a
+    // typo, so the start stands in for it, as in formatRange.
     (maintenance.upcoming || [])
       .filter(function (item) {
         var start = toDate(item.datetime_planned_start);
-        var end = toDate(item.datetime_planned_end) || start;
+        var end = toDate(item.datetime_planned_end);
+        if (!end || end < start) {
+          end = start;
+        }
         return start && start - now <= upcomingWindow && end > now;
       })
       .sort(function (a, b) {
