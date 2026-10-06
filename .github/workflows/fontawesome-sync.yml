@@ -1,0 +1,124 @@
+# Dependabot bumps Font Awesome in package.json and the lockfile but not the
+# icon copies in assets/icons, and the Hugo build refuses icons from another
+# version than the one package.json pins. On a Dependabot PR that changes the
+# pin, copy the icons from the new release and push them to the PR branch, so
+# the required Jenkins check builds them and merging deploys them
+# (README: "Icons").
+#
+# The job holds a write token, so it never runs npm or any code from a
+# package. It downloads the release tarball named in package-lock.json, checks
+# it against the lockfile's sha512 integrity, extracts only the site's icon
+# files, and accepts them only as plain one-path SVGs from the pinned version.
+# It commits nothing but assets/icons.
+name: Sync Font Awesome icons
+
+on:
+  pull_request:
+    paths:
+      - package.json
+
+permissions: {}
+
+concurrency:
+  group: fontawesome-sync-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    name: Sync Font Awesome icons
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    # Dependabot's runs get a read-only token unless the job asks for more.
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          ref: ${{ github.head_ref }}
+          persist-credentials: false
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 20
+
+      - name: Compare the pinned version with the icons
+        id: versions
+        run: |
+          pinned=$(node -p 'require("./package.json").devDependencies["@fortawesome/fontawesome-free"]')
+          icons=$(grep -ohE 'Font Awesome Free [0-9]+\.[0-9]+\.[0-9]+ ' assets/icons/*/*.svg | sort -u)
+          if [ "$icons" = "Font Awesome Free $pinned " ]; then
+            echo "The icons already match Font Awesome Free $pinned."
+            echo "sync=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "sync=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Download the release and check it against the lockfile
+        if: steps.versions.outputs.sync == 'true'
+        run: |
+          pinned=$(node -p 'require("./package.json").devDependencies["@fortawesome/fontawesome-free"]')
+          entry='node_modules/@fortawesome/fontawesome-free'
+          url=$(node -p "require('./package-lock.json').packages['$entry'].resolved")
+          integrity=$(node -p "require('./package-lock.json').packages['$entry'].integrity")
+          expected="https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-${pinned}.tgz"
+          if [ "$url" != "$expected" ]; then
+            echo "package-lock.json resolves Font Awesome to $url, not $expected"
+            exit 1
+          fi
+          curl -fsSL --proto '=https' -o "$RUNNER_TEMP/fontawesome.tgz" "$url"
+          actual="sha512-$(openssl dgst -sha512 -binary "$RUNNER_TEMP/fontawesome.tgz" | base64 -w0)"
+          if [ "$actual" != "$integrity" ]; then
+            echo "The downloaded tarball doesn't match package-lock.json's integrity"
+            exit 1
+          fi
+          members=()
+          for file in assets/icons/*/*.svg; do
+            members+=("package/svgs/${file#assets/icons/}")
+          done
+          listing=$(tar -tzf "$RUNNER_TEMP/fontawesome.tgz")
+          missing=()
+          for member in "${members[@]}"; do
+            grep -qxF "$member" <<< "$listing" || missing+=("${member#package/svgs/}")
+          done
+          if [ "${#missing[@]}" -gt 0 ]; then
+            echo "Font Awesome Free $pinned no longer has: ${missing[*]}"
+            echo "Replace those icons by hand on this PR (README: \"Icons\")."
+            exit 1
+          fi
+          mkdir "$RUNNER_TEMP/fontawesome"
+          tar -xzf "$RUNNER_TEMP/fontawesome.tgz" -C "$RUNNER_TEMP/fontawesome" \
+            --no-same-owner --no-same-permissions -- "${members[@]}"
+
+      - name: Check the icons and apply them
+        if: steps.versions.outputs.sync == 'true'
+        run: node scripts/fontawesome-icons.mjs apply "$RUNNER_TEMP/fontawesome/package/svgs"
+
+      # [dependabot skip] lets Dependabot keep rebasing the PR; a rebase drops
+      # this commit and the next run adds it again. The lease makes the push
+      # fail if the branch moved or was deleted while the job ran.
+      - name: Push the icons to the PR
+        if: steps.versions.outputs.sync == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          if [ -z "$(git status --porcelain -- assets/icons)" ]; then
+            echo "The icons already match the release."
+            exit 0
+          fi
+          unexpected=$(git status --porcelain | grep -vE '^ M assets/icons/(solid|regular|brands)/[a-z0-9-]+\.svg$' || true)
+          if [ -n "$unexpected" ]; then
+            echo "Refusing to commit changes outside the icons:"
+            echo "$unexpected"
+            exit 1
+          fi
+          pinned=$(node -p 'require("./package.json").devDependencies["@fortawesome/fontawesome-free"]')
+          base=$(git rev-parse HEAD)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Sync the Font Awesome icons with ${pinned}" \
+            -m "[dependabot skip]" \
+            -m "Signed-off-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>" \
+            -- assets/icons
+          git push --force-with-lease="refs/heads/${HEAD_REF}:${base}" \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/${HEAD_REF}"

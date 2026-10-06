@@ -353,7 +353,26 @@ The copies have to match the pinned package:
 - The Hugo build fails if an icon a page uses is from another version than the one `package.json` pins, or isn't a plain
   one-path SVG, so an upgrade that skipped `sync` can't be deployed.
 
-To upgrade Font Awesome, install the new version, copy the icons again and look over the pages that use them:
+Dependabot checks weekly and opens a PR when Font Awesome has a new minor or patch release. It waits three days after a
+release by default, so a PR can take up to about ten days to appear. On that PR, the "Sync Font Awesome icons" workflow
+downloads the new release, checks it against `package-lock.json`, and pushes only the site's icons to the PR branch,
+without running npm, so the Jenkins preview shows them and merging deploys them. GitHub holds the Actions checks for
+that pushed commit until someone approves them on the PR. The build and lint checks only get read access, and the sync
+workflow runs again but finds nothing left to do. Look over the icons in the preview before merging.
+
+If the sync fails because the new release dropped or renamed one of the site's icons, the job names the icons. Fix it by
+hand on the PR branch: pick a replacement with `npm run icons -- add`, update the templates that use the old name,
+delete the old file from `assets/icons/`, and run `npm run icons -- sync`. If it fails because an icon "isn't a plain
+one-path Font Awesome SVG" or "isn't from Font Awesome Free" the pinned version, the release changed its file format.
+Don't merge the PR; upgrade by hand once `scripts/fontawesome-icons.mjs` and `layouts/_partials/icon.html` check the new
+format.
+
+`.github/dependabot.yml` gives version updates to Font Awesome only, and security updates still cover every package.
+When you add a dependency to `package.json`, add it to the ignore list in that file as well; the GitHub Actions build
+checks this with `scripts/check-dependabot.mjs`.
+
+Major releases of Font Awesome redraw the icons, so upgrade those by hand. Install the new version, copy the icons again
+and look over the pages that use them:
 
 ```bash
 npm install --save-dev --save-exact @fortawesome/fontawesome-free@<version>
