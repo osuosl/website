@@ -203,8 +203,8 @@ formsender output. Stop it with `Ctrl+C`, or `docker compose down` if you starte
 - The `formtest` environment (`config/formtest/params.toml`) uses Cloudflare's always-pass
   [Turnstile test keys](https://developers.cloudflare.com/turnstile/troubleshooting/testing/). Headless browsers may not
   get a token from the widget.
-- Formsender accepts the same answers again (`DUPLICATE_CHECK_TIME=0`), which needs a formsender release that
-  supports the setting.
+- Formsender accepts the same answers again (`DUPLICATE_CHECK_TIME=0`), which needs a formsender release that supports
+  the setting.
 - To use another port, set `FORMSENDER_PORT` and change `action` in `config/formtest/params.toml` to match.
 
 To submit every form automatically, start formsender with `scripts/formsender-test.sh -d`, start the formtest server,
@@ -233,26 +233,26 @@ Every page shows open incidents and maintenance from [status.osuosl.org](https:/
 the navigation, and the strip is hidden when nothing is open. To see it with sample data, add `?status-demo` to any page
 URL on `hugo server` or a PR preview, for example <http://localhost:1313/?status-demo>.
 
-| URL parameter              | Shows                                                                              |
-| -------------------------- | ---------------------------------------------------------------------------------- |
-| `?status-demo`             | An outage, an incident and maintenance in progress, one of each color              |
-| `?status-demo=incident`    | A partial service disruption                                                       |
-| `?status-demo=outage`      | A service disruption                                                               |
-| `?status-demo=maintenance` | Maintenance in progress                                                            |
-| `?status-demo=upcoming`    | Maintenance in three days (one 20 days out stays hidden)                           |
-| `?status-demo=busy`        | Six notices, of which the strip shows two and a row counting the other four        |
-| `?status-demo=baddates`    | Incidents and maintenance with missing or inconsistent dates                       |
-| `?status-demo=badwindows`  | Scheduled maintenance with missing, ended or backwards times                       |
-| `?status-demo=clear`       | Nothing open, so the strip stays hidden                                            |
-| `?status-demo=off`         | The live status page again                                                         |
+| URL parameter              | Shows                                                                       |
+| -------------------------- | --------------------------------------------------------------------------- |
+| `?status-demo`             | An outage, an incident and maintenance in progress, one of each color       |
+| `?status-demo=incident`    | A partial service disruption                                                |
+| `?status-demo=outage`      | A service disruption                                                        |
+| `?status-demo=maintenance` | Maintenance in progress                                                     |
+| `?status-demo=upcoming`    | Maintenance in three days (one 20 days out stays hidden)                    |
+| `?status-demo=busy`        | Six notices, of which the strip shows two and a row counting the other four |
+| `?status-demo=baddates`    | Incidents and maintenance with missing or inconsistent dates                |
+| `?status-demo=badwindows`  | Scheduled maintenance with missing, ended or backwards times                |
+| `?status-demo=clear`       | Nothing open, so the strip stays hidden                                     |
+| `?status-demo=off`         | The live status page again                                                  |
 
-The strip shows at most three rows. With more notices than that, it shows the two most important, in the order
-incidents (worst first), maintenance in progress, then scheduled maintenance, and the third row counts the rest and
-links to the status page.
+The strip shows at most three rows. With more notices than that, it shows the two most important, in the order incidents
+(worst first), maintenance in progress, then scheduled maintenance, and the third row counts the rest and links to the
+status page.
 
 The sample stays on every page you visit in that tab for a day, or until you use `?status-demo=off` or close the tab.
-Its times are relative to when you load it. The sample data is in `assets/js/status-demo.js`, which only
-non-production builds include, so the parameter does nothing on osuosl.org.
+Its times are relative to when you load it. The sample data is in `assets/js/status-demo.js`, which only non-production
+builds include, so the parameter does nothing on osuosl.org.
 
 ## Adding Content
 
@@ -264,8 +264,8 @@ The five hosting/CI request forms are data-driven: each page holds only its intr
 `{{</* request-form <name> */>}}` shortcode, and the fields live in `data/forms/<name>.yml`. To add or change a field,
 edit the YAML — the shortcode and the `form-field` partial render Bootstrap-styled, accessible markup (labels, help
 text, required indicators, checkbox-group validation) automatically. The `form-field` partial's header lists every key,
-including `toggle` fields that reveal follow-up questions and `group` fields that require at least one checked box.
-Each form also sends its field labels, in form order, so formsender heads the ticket's answers with them. Three rules:
+including `toggle` fields that reveal follow-up questions and `group` fields that require at least one checked box. Each
+form also sends its field labels, in form order, so formsender heads the ticket's answers with them. Three rules:
 
 - A field's `name` key is the formsender POST parameter. Never rename one without coordinating with the formsender
   ticket templates.
