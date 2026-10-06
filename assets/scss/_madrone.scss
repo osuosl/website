@@ -12,9 +12,13 @@
   padding-inline: clamp(1rem, 3vw, 3rem);
 }
 
+// An inline SVG clips its drawing at its own box, here 1em square, and some
+// Font Awesome 7 icons draw past that box. Let them show, as Font Awesome's
+// own CSS does.
 .svg-icon {
   vertical-align: -0.125em;
   flex-shrink: 0;
+  overflow: visible;
 }
 
 // Adaptive replacement for Bootstrap's static outline-secondary colors,

@@ -1,6 +1,6 @@
 # The services on the Hosting page's "What we offer" grid. Each links to its
-# section of the Hosting Details page (anchor) and uses an icon from
-# layouts/_partials/icons/.
+# section of the Hosting Details page (anchor) and uses a Font Awesome icon
+# from assets/icons/, named as for layouts/_partials/icon.html.
 - name: Virtual machines
   icon: server
   anchor: virtualization
@@ -14,7 +14,7 @@
   anchor: ftp-mirroring
   text: Release files and package repositories served from mirrors in three cities.
 - name: Email
-  icon: envelope
+  icon: regular/envelope
   anchor: mail-relaying
   text: Mail relaying for your domain, with spam filtering, DKIM signing and forwards.
 - name: Mailing lists

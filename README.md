@@ -16,8 +16,8 @@ and install the Hugo binary or package. You can check if it is installed from th
 hugo version
 ```
 
-This project uses npm for the functionality of Prettier and Markdownlint. You can check that npm is installed from the
-command line by running:
+This project uses npm for Prettier, Markdownlint and managing the Font Awesome icons. You can check that npm is
+installed from the command line by running:
 
 ```bash
 npm -v
@@ -203,8 +203,8 @@ formsender output. Stop it with `Ctrl+C`, or `docker compose down` if you starte
 - The `formtest` environment (`config/formtest/params.toml`) uses Cloudflare's always-pass
   [Turnstile test keys](https://developers.cloudflare.com/turnstile/troubleshooting/testing/). Headless browsers may not
   get a token from the widget.
-- Formsender accepts the same answers again (`DUPLICATE_CHECK_TIME=0`), which needs a formsender release that
-  supports the setting.
+- Formsender accepts the same answers again (`DUPLICATE_CHECK_TIME=0`), which needs a formsender release that supports
+  the setting.
 - To use another port, set `FORMSENDER_PORT` and change `action` in `config/formtest/params.toml` to match.
 
 To submit every form automatically, start formsender with `scripts/formsender-test.sh -d`, start the formtest server,
@@ -233,26 +233,26 @@ Every page shows open incidents and maintenance from [status.osuosl.org](https:/
 the navigation, and the strip is hidden when nothing is open. To see it with sample data, add `?status-demo` to any page
 URL on `hugo server` or a PR preview, for example <http://localhost:1313/?status-demo>.
 
-| URL parameter              | Shows                                                                              |
-| -------------------------- | ---------------------------------------------------------------------------------- |
-| `?status-demo`             | An outage, an incident and maintenance in progress, one of each color              |
-| `?status-demo=incident`    | A partial service disruption                                                       |
-| `?status-demo=outage`      | A service disruption                                                               |
-| `?status-demo=maintenance` | Maintenance in progress                                                            |
-| `?status-demo=upcoming`    | Maintenance in three days (one 20 days out stays hidden)                           |
-| `?status-demo=busy`        | Six notices, of which the strip shows two and a row counting the other four        |
-| `?status-demo=baddates`    | Incidents and maintenance with missing or inconsistent dates                       |
-| `?status-demo=badwindows`  | Scheduled maintenance with missing, ended or backwards times                       |
-| `?status-demo=clear`       | Nothing open, so the strip stays hidden                                            |
-| `?status-demo=off`         | The live status page again                                                         |
+| URL parameter              | Shows                                                                       |
+| -------------------------- | --------------------------------------------------------------------------- |
+| `?status-demo`             | An outage, an incident and maintenance in progress, one of each color       |
+| `?status-demo=incident`    | A partial service disruption                                                |
+| `?status-demo=outage`      | A service disruption                                                        |
+| `?status-demo=maintenance` | Maintenance in progress                                                     |
+| `?status-demo=upcoming`    | Maintenance in three days (one 20 days out stays hidden)                    |
+| `?status-demo=busy`        | Six notices, of which the strip shows two and a row counting the other four |
+| `?status-demo=baddates`    | Incidents and maintenance with missing or inconsistent dates                |
+| `?status-demo=badwindows`  | Scheduled maintenance with missing, ended or backwards times                |
+| `?status-demo=clear`       | Nothing open, so the strip stays hidden                                     |
+| `?status-demo=off`         | The live status page again                                                  |
 
-The strip shows at most three rows. With more notices than that, it shows the two most important, in the order
-incidents (worst first), maintenance in progress, then scheduled maintenance, and the third row counts the rest and
-links to the status page.
+The strip shows at most three rows. With more notices than that, it shows the two most important, in the order incidents
+(worst first), maintenance in progress, then scheduled maintenance, and the third row counts the rest and links to the
+status page.
 
 The sample stays on every page you visit in that tab for a day, or until you use `?status-demo=off` or close the tab.
-Its times are relative to when you load it. The sample data is in `assets/js/status-demo.js`, which only
-non-production builds include, so the parameter does nothing on osuosl.org.
+Its times are relative to when you load it. The sample data is in `assets/js/status-demo.js`, which only non-production
+builds include, so the parameter does nothing on osuosl.org.
 
 ## Adding Content
 
@@ -264,8 +264,8 @@ The five hosting/CI request forms are data-driven: each page holds only its intr
 `{{</* request-form <name> */>}}` shortcode, and the fields live in `data/forms/<name>.yml`. To add or change a field,
 edit the YAML — the shortcode and the `form-field` partial render Bootstrap-styled, accessible markup (labels, help
 text, required indicators, checkbox-group validation) automatically. The `form-field` partial's header lists every key,
-including `toggle` fields that reveal follow-up questions and `group` fields that require at least one checked box.
-Each form also sends its field labels, in form order, so formsender heads the ticket's answers with them. Three rules:
+including `toggle` fields that reveal follow-up questions and `group` fields that require at least one checked box. Each
+form also sends its field labels, in form order, so formsender heads the ticket's answers with them. Three rules:
 
 - A field's `name` key is the formsender POST parameter. Never rename one without coordinating with the formsender
   ticket templates.
@@ -323,6 +323,61 @@ Content here will be placed on the tag page. You may also include images here.
 ```
 
 If you do not do this, the tag will be displayed as not having a name.
+
+### Icons
+
+The site's icons are [Font Awesome Free](https://fontawesome.com/search?ic=free) SVGs, copied unchanged from the
+`@fortawesome/fontawesome-free` npm package into `assets/icons/<style>/<name>.svg`. The package version is pinned in
+`package.json`. The site builds from the copies, so the deploy needs no npm, and the site footer credits Font Awesome.
+
+To use an icon, find it on fontawesome.com and note its name and style (solid, regular or brands). Copy it in, then
+render it with the `icon.html` partial, adding the style before the name unless it is solid:
+
+```bash
+npm run icons -- add regular/envelope
+```
+
+```go-html-template
+{{ partial "icon.html" (dict "name" "regular/envelope") }}
+{{ partial "icon.html" (dict "name" "magnifying-glass" "label" "Search") }}
+```
+
+Pass `label` only when the icon stands alone without visible text. In page content, use the `icon` shortcode instead,
+such as `{{< icon "hand-holding-dollar" >}}`. A name that isn't in `assets/icons/` fails the Hugo build and says which
+`add` command to run.
+
+The copies have to match the pinned package:
+
+- `npm run icons -- check` fails if any file differs from the package or isn't a plain one-path Font Awesome SVG. The
+  GitHub Actions build runs it.
+- The Hugo build fails if an icon a page uses is from another version than the one `package.json` pins, or isn't a plain
+  one-path SVG, so an upgrade that skipped `sync` can't be deployed.
+
+Dependabot checks weekly and opens a PR when Font Awesome has a new minor or patch release. It waits three days after a
+release by default, so a PR can take up to about ten days to appear. On that PR, the "Sync Font Awesome icons" workflow
+downloads the new release, checks it against `package-lock.json`, and pushes only the site's icons to the PR branch,
+without running npm, so the Jenkins preview shows them and merging deploys them. GitHub holds the Actions checks for
+that pushed commit until someone approves them on the PR. The build and lint checks only get read access, and the sync
+workflow runs again but finds nothing left to do. Look over the icons in the preview before merging.
+
+If the sync fails because the new release dropped or renamed one of the site's icons, the job names the icons. Fix it by
+hand on the PR branch: pick a replacement with `npm run icons -- add`, update the templates that use the old name,
+delete the old file from `assets/icons/`, and run `npm run icons -- sync`. If it fails because an icon "isn't a plain
+one-path Font Awesome SVG" or "isn't from Font Awesome Free" the pinned version, the release changed its file format.
+Don't merge the PR; upgrade by hand once `scripts/fontawesome-icons.mjs` and `layouts/_partials/icon.html` check the new
+format.
+
+`.github/dependabot.yml` gives version updates to Font Awesome only, and security updates still cover every package.
+When you add a dependency to `package.json`, add it to the ignore list in that file as well; the GitHub Actions build
+checks this with `scripts/check-dependabot.mjs`.
+
+Major releases of Font Awesome redraw the icons, so upgrade those by hand. Install the new version, copy the icons again
+and look over the pages that use them:
+
+```bash
+npm install --save-dev --save-exact @fortawesome/fontawesome-free@<version>
+npm run icons -- sync
+```
 
 ## License
 
