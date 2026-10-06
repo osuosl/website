@@ -87,6 +87,7 @@
   var cacheKey = "status-notices";
   var cacheTtl = 60 * 1000;
   var upcomingWindow = 7 * 24 * 60 * 60 * 1000;
+  var maxRows = 3;
 
   // status.io status codes on incident updates; 100 and 200 aren't incidents.
   var severity = {
@@ -127,12 +128,16 @@
   }
 
   // An end before the start would print nonsense (or throw in older
-  // browsers), so it shows the start alone. formatRange gives both ends one
-  // zone label, which misstates a window across a daylight saving change,
-  // so those get each end formatted on its own.
+  // browsers), so it shows the start alone, with its date like any other
+  // window. formatRange gives both ends one zone label, which misstates a
+  // window across a daylight saving change, so those get each end
+  // formatted on its own.
   function formatRange(start, end) {
-    if (!start || !end || end < start) {
-      return formatTime(start);
+    if (!start) {
+      return "";
+    }
+    if (!end || end < start) {
+      return dayTimeFormat.format(start);
     }
     if (dayTimeFormat.formatRange && start.getTimezoneOffset() === end.getTimezoneOffset()) {
       return dayTimeFormat.formatRange(start, end);
@@ -245,33 +250,62 @@
     return node;
   }
 
+  function row(notice, link, linkLabel) {
+    var node = el("div", "status-notice status-notice-" + notice.tone);
+    var inner = el("div", "container-site status-notice-inner");
+    var icon = strip.querySelector('template[data-icon="' + notice.icon + '"]');
+    if (icon) {
+      inner.appendChild(icon.content.cloneNode(true));
+    }
+    inner.appendChild(el("strong", "status-notice-label", notice.title ? notice.label + ":" : notice.label));
+    if (notice.title) {
+      inner.appendChild(el("span", "status-notice-title", notice.title));
+    }
+    if (notice.meta) {
+      inner.appendChild(el("span", "status-notice-meta", notice.meta));
+    }
+    var anchor = el("a", "status-notice-link", link);
+    anchor.href = notice.href;
+    anchor.appendChild(el("span", "visually-hidden", " " + linkLabel));
+    var arrow = el("span", null, " →");
+    arrow.setAttribute("aria-hidden", "true");
+    anchor.appendChild(arrow);
+    inner.appendChild(anchor);
+    node.appendChild(inner);
+    return node;
+  }
+
+  // At most maxRows rows. Past that, the last row counts the rest and links
+  // to the status page. The list is in priority order, so incidents are the
+  // last to be folded away, and the count row takes the tone and icon of
+  // the most important notice it stands for.
   function render(result) {
     var list = notices(result);
+    var shown = list.length > maxRows ? list.slice(0, maxRows - 1) : list;
+    var rest = list.slice(shown.length);
     strip.querySelectorAll(".status-notice").forEach(function (node) {
       node.remove();
     });
-    list.forEach(function (notice) {
-      var row = el("div", "status-notice status-notice-" + notice.tone);
-      var inner = el("div", "container-site status-notice-inner");
-      var icon = strip.querySelector('template[data-icon="' + notice.icon + '"]');
-      if (icon) {
-        inner.appendChild(icon.content.cloneNode(true));
-      }
-      inner.appendChild(el("strong", "status-notice-label", notice.label + ":"));
-      inner.appendChild(el("span", "status-notice-title", notice.title));
-      if (notice.meta) {
-        inner.appendChild(el("span", "status-notice-meta", notice.meta));
-      }
-      var link = el("a", "status-notice-link", "Details");
-      link.href = notice.href;
-      link.appendChild(el("span", "visually-hidden", " on " + notice.title));
-      var arrow = el("span", null, " →");
-      arrow.setAttribute("aria-hidden", "true");
-      link.appendChild(arrow);
-      inner.appendChild(link);
-      row.appendChild(inner);
-      strip.appendChild(row);
+    shown.forEach(function (notice) {
+      strip.appendChild(row(notice, "Details", notice.title ? "on " + notice.title : ""));
     });
+    if (rest.length) {
+      var allUpcoming = rest.every(function (notice) {
+        return notice.icon === "upcoming";
+      });
+      strip.appendChild(
+        row(
+          {
+            icon: rest[0].icon,
+            tone: rest[0].tone,
+            label: rest.length + (allUpcoming ? " more scheduled maintenance windows" : " more notices"),
+            href: statusUrl,
+          },
+          "See all",
+          "on " + new URL(statusUrl).host,
+        ),
+      );
+    }
     strip.hidden = list.length === 0;
   }
 

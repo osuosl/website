@@ -3,10 +3,16 @@
 // (hugo server and the PR previews); see "Previewing the status strip" in the
 // README.
 //
-//   ?status-demo               every kind of notice at once
-//   ?status-demo=incident      one notice; also outage, maintenance, upcoming,
-//                              baddates (missing or inconsistent dates) and
-//                              clear (nothing)
+//   ?status-demo               an outage, an incident and maintenance in
+//                              progress, one of each color
+//   ?status-demo=incident      one notice; also outage, maintenance and
+//                              upcoming
+//   ?status-demo=busy          more notices than the strip shows, so the last
+//                              row counts the rest
+//   ?status-demo=baddates      incidents and maintenance with missing or
+//                              inconsistent dates; badwindows does the same
+//                              for scheduled maintenance
+//   ?status-demo=clear         nothing open, so the strip stays hidden
 //   ?status-demo=off           back to the live status page
 //
 // It seeds the cache that site.js reads, so the sample stays on every page of
@@ -62,15 +68,30 @@
     datetime_planned_end: at(24 * 20 + 4),
   };
 
+  // Extra scheduled windows for the busy scenario.
+  function scheduled(id, name, hours) {
+    return { _id: id, name: name, datetime_planned_start: at(hours), datetime_planned_end: at(hours + 4) };
+  }
+
   var scenarios = {
-    "": [[outage, incident], [maintenance], [upcoming, later]],
+    "": [[outage, incident], [maintenance], [later]],
     incident: [[incident], [], []],
     outage: [[outage], [], []],
     maintenance: [[], [maintenance], []],
     upcoming: [[], [], [upcoming, later]],
+    busy: [
+      [incident],
+      [maintenance],
+      [
+        upcoming,
+        scheduled("busy1", "Datacenter moves, rack 1", 24),
+        scheduled("busy2", "Datacenter moves, rack 2", 48),
+        scheduled("busy3", "Datacenter moves, rack 3", 96),
+        later,
+      ],
+    ],
     baddates: [
       [
-        incident,
         { _id: "nodate", name: "Incident with no start time", messages: [{ status: 300, state: 300 }] },
         {
           _id: "badupdate",
@@ -90,6 +111,11 @@
           datetime_planned_end: null,
         },
       ],
+      [],
+    ],
+    badwindows: [
+      [],
+      [],
       [
         { _id: "nostart", name: "Maintenance with no start (should not show)", datetime_planned_end: at(5) },
         {
@@ -107,8 +133,8 @@
         {
           _id: "reversedpast",
           name: "Maintenance with its end typed a day early (start time only)",
-          datetime_planned_start: at(30),
-          datetime_planned_end: at(-20),
+          datetime_planned_start: at(10),
+          datetime_planned_end: at(-12),
         },
       ],
     ],

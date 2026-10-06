@@ -233,16 +233,22 @@ Every page shows open incidents and maintenance from [status.osuosl.org](https:/
 the navigation, and the strip is hidden when nothing is open. To see it with sample data, add `?status-demo` to any page
 URL on `hugo server` or a PR preview, for example <http://localhost:1313/?status-demo>.
 
-| URL parameter              | Shows                                                                    |
-| -------------------------- | ------------------------------------------------------------------------ |
-| `?status-demo`             | An outage, an incident, maintenance in progress and upcoming maintenance |
-| `?status-demo=incident`    | A partial service disruption                                             |
-| `?status-demo=outage`      | A service disruption                                                     |
-| `?status-demo=maintenance` | Maintenance in progress                                                  |
-| `?status-demo=upcoming`    | Maintenance in three days (one 20 days out stays hidden)                 |
-| `?status-demo=baddates`    | Notices with missing or inconsistent dates                               |
-| `?status-demo=clear`       | Nothing open, so the strip stays hidden                                  |
-| `?status-demo=off`         | The live status page again                                               |
+| URL parameter              | Shows                                                                              |
+| -------------------------- | ---------------------------------------------------------------------------------- |
+| `?status-demo`             | An outage, an incident and maintenance in progress, one of each color              |
+| `?status-demo=incident`    | A partial service disruption                                                       |
+| `?status-demo=outage`      | A service disruption                                                               |
+| `?status-demo=maintenance` | Maintenance in progress                                                            |
+| `?status-demo=upcoming`    | Maintenance in three days (one 20 days out stays hidden)                           |
+| `?status-demo=busy`        | Six notices, of which the strip shows two and a row counting the other four        |
+| `?status-demo=baddates`    | Incidents and maintenance with missing or inconsistent dates                       |
+| `?status-demo=badwindows`  | Scheduled maintenance with missing, ended or backwards times                       |
+| `?status-demo=clear`       | Nothing open, so the strip stays hidden                                            |
+| `?status-demo=off`         | The live status page again                                                         |
+
+The strip shows at most three rows. With more notices than that, it shows the two most important, in the order
+incidents (worst first), maintenance in progress, then scheduled maintenance, and the third row counts the rest and
+links to the status page.
 
 The sample stays on every page you visit in that tab for a day, or until you use `?status-demo=off` or close the tab.
 Its times are relative to when you load it. The sample data is in `assets/js/status-demo.js`, which only
