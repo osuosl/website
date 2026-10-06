@@ -104,6 +104,12 @@
           datetime_planned_start: at(30),
           datetime_planned_end: at(28),
         },
+        {
+          _id: "reversedpast",
+          name: "Maintenance with its end typed a day early (start time only)",
+          datetime_planned_start: at(30),
+          datetime_planned_end: at(-20),
+        },
       ],
     ],
     clear: [[], [], [later]],
