@@ -13,7 +13,7 @@
   "author": "",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "6.7.2",
+    "@fortawesome/fontawesome-free": "7.3.1",
     "markdownlint-cli2": "^0.23.3",
     "pa11y-ci": "^4.1.1",
     "playwright": "^1.63.0",
