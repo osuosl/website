@@ -31,6 +31,9 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      - name: Check the Font Awesome icons match the package
+        run: npm run icons -- check
+
       - name: Build site
         run: hugo --minify --cleanDestinationDir --printPathWarnings
 
