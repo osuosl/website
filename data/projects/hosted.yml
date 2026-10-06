@@ -121,6 +121,10 @@
 - name: Cppcheck
   services:
     - vm
+- name: CPython
+  services:
+    - aarch64
+    - powerpc
 - name: CRAN
   services:
     - mirroring
