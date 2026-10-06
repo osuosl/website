@@ -30,6 +30,8 @@
     improve the portability and quality of software across the Linux stack.
 - name: Cinc Project
   description: aarch64 builds for various Cinc Project packages (Cinc Client primarily).
+- name: CPython
+  description: CPython is the reference implementation of the Python programming language.
 - name: Eclipse Adoptium
   description: Provide a freely redistributable, open-source distribution of OpenJDK.
 - name: Eclipse OpenJ9 & Eclipse OMR
