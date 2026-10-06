@@ -3,6 +3,8 @@
   Usage: {{ partial "icon.html" (dict "name" "search" "label" "Search")
 }}
 Pass "label" only when the icon stands alone; icons next to visible text should omit it (they render aria-hidden). Icon
-artwork: Font Awesome Free 6.x, CC BY 4.0 (https://fontawesome.com/license/free) */ -}}
+artwork: Font Awesome Free 6.x, CC BY 4.0 (https://fontawesome.com/license/free). The vendored files drop Font Awesome's
+attribution comments, and Hugo would strip them from the built pages anyway, so the site footer (footer.html) carries
+the public credit. */ -}}
 {{- with .label }}<span class="visually-hidden">{{ . }}</span>{{ end -}}
 {{- partial (printf "icons/%s.html" .name) . -}}
