@@ -41,6 +41,9 @@ jobs:
       - name: Check the Font Awesome icons match the package
         run: npm run icons -- check
 
+      - name: Check dependabot.yml covers every direct dependency
+        run: node scripts/check-dependabot.mjs
+
       - name: Build site
         run: hugo --minify --cleanDestinationDir --printPathWarnings
 

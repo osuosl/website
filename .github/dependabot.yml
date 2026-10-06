@@ -1,0 +1,36 @@
+# Weekly version updates for Font Awesome's minor and patch releases, so new
+# icons reach the site; the Sync Font Awesome icons workflow copies them into
+# assets/icons on the PR (README: "Icons"). Font Awesome majors redraw the
+# icons, so they are upgraded by hand.
+#
+# Every other direct dependency is ignored for version updates by rules that
+# use update-types only. GitHub documents update-types as affecting version
+# updates, not security updates, and Dependabot leaves update-types out when
+# it opens security updates, so those still cover every package. An allow
+# list, a name-only ignore rule or ignored versions would also limit security
+# updates; scripts/check-dependabot.mjs rejects all three in CI. When you add a
+# direct dependency to package.json, add it here too, or it gets weekly version
+# update PRs.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    ignore:
+      - dependency-name: "@fortawesome/fontawesome-free"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: markdownlint-cli2
+        update-types: ["version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch"]
+      - dependency-name: pa11y-ci
+        update-types: ["version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch"]
+      - dependency-name: pagefind
+        update-types: ["version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch"]
+      - dependency-name: playwright
+        update-types: ["version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch"]
+      - dependency-name: prettier
+        update-types: ["version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch"]
+      - dependency-name: prettier-plugin-go-template
+        update-types: ["version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch"]
+      - dependency-name: yaml
+        update-types: ["version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch"]
