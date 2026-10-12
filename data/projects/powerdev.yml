@@ -268,6 +268,11 @@
     A project dedicated to making deployments of machine learning (ML) workflows on Kubernetes simple, portable and
     scalable
   category: foss
+- name: KubeVirt
+  description: >-
+    A Kubernetes add-on for running and managing virtual machines alongside containers. OSL hosts a KVM-capable system
+    for its upstream ppc64le CI.
+  category: foss
 - name: LDC
   description: Supports project specific porting efforts for the the LLVM-based D compiler
   category: foss
