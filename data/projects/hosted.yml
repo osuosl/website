@@ -438,6 +438,9 @@
   services:
     - ci-cd
     - powerpc
+- name: KubeVirt
+  services:
+    - powerpc
 - name: LDC
   services:
     - powerpc
