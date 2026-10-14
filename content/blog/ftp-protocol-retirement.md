@@ -1,13 +1,12 @@
 ---
-title: "Turning Off FTP Access to ftp.osuosl.org"
-date: 2026-10-13
+title: "Turning Off FTP Protocol Access to Our Mirrors"
+date: 2026-10-14
 authors: ["Lance Albertson"]
 ---
 
-Our mirrors aren't going anywhere, and neither is the `ftp.osuosl.org` name. What is changing is one way of reaching
-them: on **Tuesday, December 15, 2026 at 9:00 AM PST (17:00 UTC)**, we will turn off the FTP protocol (`ftp://`) on
-`ftp.osuosl.org` and the rest of our mirror hostnames. Every file stays available over HTTP and HTTPS at the same paths,
-and most of it over rsync too.
+On **Tuesday, December 15, 2026 at 9:00 AM PST (17:00 UTC)**, we will turn off the FTP protocol (`ftp://`) on
+`ftp.osuosl.org` and the rest of our mirror hostnames. Only FTP is affected: our mirrors, the `ftp.osuosl.org` name and
+every file stay, available over HTTP and HTTPS at the same paths, and most of it over rsync too.
 
 ## What you need to do
 
@@ -42,13 +41,6 @@ We're not the first to make this change. kernel.org
 Browsers followed in 2021, when [Chrome 88](https://developer.chrome.com/blog/chrome-88-deps-rems) and
 [Firefox 90](https://blog.mozilla.org/security/2021/07/20/stopping-ftp-support-in-firefox-90/) removed FTP support
 entirely.
-
-## What isn't changing
-
-- Our mirrors, and every hostname they answer to
-- The path to every file
-- HTTP and HTTPS at `ftp.osuosl.org`
-- rsync at `rsync://rsync.osuosl.org/`
 
 Subscribe at [status.osuosl.org](https://status.osuosl.org/) for reminders as the date gets closer. If you have
 questions, or think this will cause problems for your project, please email
