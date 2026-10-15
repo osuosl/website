@@ -1,0 +1,15 @@
+{{- /*
+  Returns the Font Awesome Free version package.json pins. icon.html checks
+  every icon file against it, so a version bump that skipped
+  "npm run icons -- sync" fails the build instead of deploying old icons.
+  Call it through partialCached; package.json is read once per build.
+  */
+-}}
+{{- $package := os.ReadFile "package.json" | transform.Unmarshal -}}
+{{- $version := index $package "devDependencies" "@fortawesome/fontawesome-free" -}}
+{{- if not $version -}}
+  {{- errorf "package.json doesn't list @fortawesome/fontawesome-free in devDependencies" -}}
+{{- else if not (findRE `^\d+\.\d+\.\d+$` $version) -}}
+  {{- errorf "package.json must pin an exact @fortawesome/fontawesome-free version, not %q" $version -}}
+{{- end -}}
+{{- return $version -}}
