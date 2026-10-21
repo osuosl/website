@@ -1021,6 +1021,7 @@
 - name: U-Boot
   services:
     - vm
+    - mirroring
 - name: Ubuntu
   services:
     - mirroring
