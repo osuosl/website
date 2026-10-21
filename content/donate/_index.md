@@ -15,8 +15,10 @@ donation. Once there, be sure to type “**Open Source Lab Fund**” in the “*
 donation reaches us._
 
 {{< raw >}}
-<a class="link-button" style="font-size: 1.5rem" href="https://give.fororegonstate.org/PL1Uv3Fkug"><i class="fa-solid
-fa-hand-holding-dollar"></i> Make a gift</a> {{< /raw >}}
+
+<p><a class="btn btn-primary btn-lg" href="https://give.fororegonstate.org/PL1Uv3Fkug">{{< icon "hand-holding-dollar" >}}
+Make a gift</a></p>
+{{< /raw >}}
 
 If you prefer to give by phone, please call the Oregon State University Foundation at **(800) 354-7281**. If you have
 any questions, please check our [FAQ](/donate/faq) or email <donations@osuosl.org>
