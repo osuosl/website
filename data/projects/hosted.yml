@@ -293,6 +293,9 @@
 - name: Funtoo Linux
   services:
     - mirroring
+- name: gbdev
+  services:
+    - vm
 - name: GCC/Clang
   services:
     - powerpc
@@ -654,6 +657,9 @@
 - name: OCM
   services:
     - powerpc
+- name: Ogre3D
+  services:
+    - vm
 - name: OFTC
   services:
     - vm
