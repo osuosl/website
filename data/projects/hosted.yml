@@ -296,6 +296,9 @@
 - name: gbdev
   services:
     - vm
+- name: gbadev
+  services:
+    - vm
 - name: GCC/Clang
   services:
     - powerpc
