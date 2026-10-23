@@ -1020,8 +1020,9 @@
     - mirroring
 - name: U-Boot
   services:
-    - vm
+    - ci-cd
     - mirroring
+    - vm
 - name: Ubuntu
   services:
     - mirroring
