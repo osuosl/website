@@ -42,6 +42,8 @@
 - name: Artizyou
   services:
     - vm
+- name: Bareos
+    - powerpc
 - name: Bazel
   services:
     - powerpc
