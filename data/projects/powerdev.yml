@@ -49,8 +49,7 @@
   category: foss
 - name: Bareos
   description: >-
-    Bareos is a free enterprise backup software. We strive to ship a backup-agent for anything you might have in
-    your company.
+    Bareos is a free enterprise backup suite. The project uses POWER to build, test and package Bareos for Linux on POWER.
   category: foss
 - name: Bazel
   description: Build and test software of any size, quickly and reliably.
