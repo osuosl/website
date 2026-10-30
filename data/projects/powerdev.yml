@@ -47,6 +47,10 @@
 - name: Apache Spark / Arrow
   description: Apache Arrow is an in-memory columnar to exchange data among AI frameworks such as Apache Spark
   category: foss
+- name: Bareos
+  description: >-
+    Bareos is a free enterprise backup suite. The project uses POWER to build, test and package Bareos for Linux on POWER.
+  category: foss
 - name: Bazel
   description: Build and test software of any size, quickly and reliably.
   category: foss
