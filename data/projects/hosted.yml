@@ -43,6 +43,7 @@
   services:
     - vm
 - name: Bareos
+  services:
     - powerpc
 - name: Bazel
   services:
