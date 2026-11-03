@@ -8,12 +8,19 @@ on:
   push:
     branches: [main]
 
+# These checks only read the repo, and npm ci runs packages' install scripts,
+# so the token stays read-only and the checkout doesn't keep it.
+permissions:
+  contents: read
+
 jobs:
   build:
     name: Build, link check, accessibility scan
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       # The deploy node (web2) tracks the latest Hugo release, so CI builds
       # with latest extended to surface new-Hugo breakage before deploys do.
@@ -30,6 +37,12 @@ jobs:
 
       - name: Install npm dependencies
         run: npm ci
+
+      - name: Check the Font Awesome icons match the package
+        run: npm run icons -- check
+
+      - name: Check dependabot.yml covers every direct dependency
+        run: node scripts/check-dependabot.mjs
 
       - name: Build site
         run: hugo --minify --cleanDestinationDir --printPathWarnings

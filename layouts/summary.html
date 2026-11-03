@@ -4,12 +4,12 @@
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h2>
     <div class="post-meta">
-      <span>{{ partial "icon.html" (dict "name" "user") }} {{ delimit .Params.authors ", " " and " }}</span>
+      <span>{{ partial "icon.html" (dict "name" "regular/user") }} {{ delimit .Params.authors ", " " and " }}</span>
       <span>
-        {{ partial "icon.html" (dict "name" "calendar") }}
+        {{ partial "icon.html" (dict "name" "regular/calendar-days") }}
         <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Mon, Jan 02 2006" }}</time>
       </span>
-      <span>{{ partial "icon.html" (dict "name" "clock") }} {{ .ReadingTime }} minute read</span>
+      <span>{{ partial "icon.html" (dict "name" "regular/clock") }} {{ .ReadingTime }} minute read</span>
     </div>
     {{ with .GetTerms "tags" }}
       <ul class="tag-list mb-2">

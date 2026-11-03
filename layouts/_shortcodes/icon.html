@@ -1,0 +1,14 @@
+{{- /*
+  A Font Awesome icon in page content, named as for the icon.html partial,
+  e.g. icon "hand-holding-dollar" or icon "regular/envelope" inside shortcode
+  delimiters. It renders aria-hidden, so keep visible text next to it.
+  */
+-}}
+{{- with .Get 0 -}}
+  {{- partial "icon.html" (dict "name" .) -}}
+{{- else -}}
+  {{- /* Inside another shortcode, such as raw, its position is the useful one. */ -}}
+  {{- $position := .Position -}}
+  {{- with .Parent }}{{ $position = .Position }}{{ end -}}
+  {{- errorf "the icon shortcode needs an icon name, such as icon \"hand-holding-dollar\": %s" $position -}}
+{{- end -}}

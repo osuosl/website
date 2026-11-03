@@ -1,10 +1,36 @@
 {{- /*
-  Renders an inline SVG icon from layouts/_partials/icons/.
-  Usage: {{ partial "icon.html" (dict "name" "search" "label" "Search")
-}}
-Pass "label" only when the icon stands alone; icons next to visible text should omit it (they render aria-hidden). Icon
-artwork: Font Awesome Free 6.x, CC BY 4.0 (https://fontawesome.com/license/free). The vendored files drop Font Awesome's
-attribution comments, and Hugo would strip them from the built pages anyway, so the site footer (footer.html) carries
-the public credit. */ -}}
-{{- with .label }}<span class="visually-hidden">{{ . }}</span>{{ end -}}
-{{- partial (printf "icons/%s.html" .name) . -}}
+  Renders a Font Awesome Free icon inline from assets/icons/.
+  Usage: partial "icon.html" (dict "name" "magnifying-glass" "label" "Search")
+
+  "name" is the icon's name on fontawesome.com, prefixed with its style when it
+  isn't solid: "magnifying-glass", "regular/calendar-days", "brands/github".
+  Add an icon with "npm run icons -- add regular/envelope"; the files are
+  unmodified copies of the pinned npm package (README: "Icons"). Pass "label"
+  only when the icon stands alone; icons next to visible text should omit it
+  (they render aria-hidden).
+
+  Icon artwork: Font Awesome Free, CC BY 4.0 (https://fontawesome.com/license/free).
+  The minified pages drop the attribution comment each file carries, so the
+  site footer (footer.html) carries the public credit.
+  */
+-}}
+{{- $path := .name -}}
+{{- if not (strings.Contains $path "/") }}{{ $path = printf "solid/%s" $path }}{{ end -}}
+{{- with resources.Get (printf "icons/%s.svg" $path) -}}
+  {{- $pinned := partialCached "fontawesome-version.html" "" -}}
+  {{- $version := "unknown" -}}
+  {{- with findRESubmatch `Font Awesome Free (\d+\.\d+\.\d+) ` .Content 1 }}{{ $version = index . 0 1 }}{{ end -}}
+  {{- /* fontawesome-version.html has already failed the build if the pin is missing or not exact. */ -}}
+  {{- if and $pinned (findRE `^\d+\.\d+\.\d+$` $pinned) (ne $version $pinned) -}}
+    {{- errorf "assets/icons/%s.svg is from Font Awesome %s but package.json pins %s; run npm ci, then npm run icons -- sync" $path $version $pinned -}}
+  {{- end -}}
+  {{- /* Only inline a plain Font Awesome file: one svg, the comment, one path. */ -}}
+  {{- $shape := `^<svg xmlns="http://www\.w3\.org/2000/svg" viewBox="\d+ \d+ \d+ \d+"><!--![^<>]*--><path (?:fill="currentColor" )?d="[0-9A-Za-z .,-]+"/></svg>\s*$` -}}
+  {{- if not (findRE $shape .Content 1) -}}
+    {{- errorf "assets/icons/%s.svg isn't a plain one-path Font Awesome SVG; run npm run icons -- check" $path -}}
+  {{- end -}}
+  {{- with $.label }}<span class="visually-hidden">{{ . }}</span>{{ end -}}
+  {{- replace .Content "<svg " `<svg fill="currentColor" class="svg-icon" width="1em" height="1em" aria-hidden="true" focusable="false" ` 1 | safeHTML -}}
+{{- else -}}
+  {{- errorf "icon %q isn't in assets/icons; add it with npm run icons -- add %s" .name $path -}}
+{{- end -}}
