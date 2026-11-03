@@ -45,6 +45,9 @@
 
 .img-sponsors {
   width: 200px;
+  max-height: 110px;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .img-right-faq {
