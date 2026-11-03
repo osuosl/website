@@ -75,3 +75,12 @@
     centers, enabling the OSL to maintain critical mirroring servers in geographically diverse locations like New
     York, NY, and Chicago, IL. This distributed infrastructure allows faster, more reliable downloads for users
     accessing mirrored project files.
+- name: JMP.chat
+  url: https://jmp.chat/
+  logo: /images/jmp-logo.svg
+  blurb: |
+    **JMP.chat** provides phone numbers for calls, text and picture messages that work from your phone, computer and
+    tablet at the same time. It uses the Jabber (XMPP) network, so many existing open source apps can be used with it.
+
+    JMP.chat supports the OSL through financial contributions, which help us provide reliable infrastructure and
+    services to the open source community.
