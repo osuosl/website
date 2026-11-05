@@ -64,6 +64,13 @@ that need faster disks.
 Some compute nodes in the x86_64 and ppc64le clusters use local NVMe storage instead of Ceph for workloads that need
 even faster disk I/O. We plan to add an NVMe node to the aarch64 cluster soon.
 
+A disk stays on the kind of storage it was created on. Resizing an instance between a Ceph flavor and a local-storage
+flavor doesn't copy its disk: the instance boots with a fresh disk built from its original image, and only our team can
+recover the old one. On x86_64, the local-storage flavors have `local` in their name (such as `m2.local.8c8m100d`). On
+ppc64le, every POWER10 flavor and the POWER9 `p9.nvme` flavors use local storage. Resizing between flavors of the same
+storage type works as usual. If you need to move an instance between the two, email support@osuosl.org and we'll move
+it for you.
+
 ### Ganeti
 
 We have used Ganeti since 2009, and it remains a stable choice for long-running VMs that rarely change. Our four-node
