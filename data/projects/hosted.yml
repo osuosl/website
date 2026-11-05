@@ -530,6 +530,8 @@
 - name: LuneOS
   services:
     - mailing-list
+    - aarch64
+    - ci-cd
 - name: Lynx
   services:
     - powerpc

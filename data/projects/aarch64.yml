@@ -89,6 +89,10 @@
     Auditing. Kali Linux provides several hundred common tools and industry specific modifications, targeted towards
     various information security tasks, such as Penetration Testing, Security Research, Computer Forensics, Reverse
     Engineering, Vulnerability Management and Red Team Testing.
+- name: LuneOS
+  description: >-
+    LuneOS is the community continuation of webOS, the mobile OS from Palm and later HP kept alive and modernised as
+    a fully open source mobile operating system.
 - name: Minio
   description: Testing minio object storage server on ARM architecture.
 - name: MobileLab
