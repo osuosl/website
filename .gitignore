@@ -5,3 +5,5 @@ node_modules
 *.swp
 # htmltest cache
 tmp/
+# Hugo resource cache (processed images, compiled Sass); rebuilt on each build
+resources/_gen/
