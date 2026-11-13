@@ -899,6 +899,9 @@
   services:
     - powerpc
     - aarch64
+- name: RouterKit
+  services:
+    - aarch64
 - name: RPM Fusion
   services:
     - powerpc
