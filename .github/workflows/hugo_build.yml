@@ -15,13 +15,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # The deploy node (web2) tracks the latest Hugo release, so CI builds
-      # with latest extended to surface new-Hugo breakage before deploys do.
-      - name: Install Hugo (latest extended)
+      # The deploy node (web2) tracks the latest Hugo and Dart Sass releases,
+      # so CI builds with the latest of both to surface breakage before
+      # deploys do. Hugo 0.170 dropped LibSass and the extended build, and
+      # compiles assets/scss only through an external Dart Sass binary.
+      - name: Install Hugo (latest)
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: latest
-          extended: true
+
+      - name: Install Dart Sass (latest)
+        run: sudo snap install dart-sass
 
       - uses: actions/setup-node@v4
         with:
