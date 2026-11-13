@@ -34,7 +34,8 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin href="{{ "fonts/Stratum2WebMedium.woff2" | relURL }}" />
 
   {{/* Styles */}}
-  {{ $styles := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
+  {{/* Dart Sass on every Hugo version; LibSass is gone from Hugo 0.170 on */}}
+  {{ $styles := resources.Get "scss/main.scss" | toCSS (dict "transpiler" "dartsass") | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
 
   {{ if and .Params.captcha (not site.Params.formsender.disabled) }}
