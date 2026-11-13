@@ -78,6 +78,8 @@
   description: A community driven effort to bring Mercurial SCM support to GitLab.
 - name: Heyoka
   description: C++ library for ODE integration via Taylor's method and LLVM.
+- name: IPFire
+  description: Versatile state-of-the-art firewall distribution.
 - name: Jitesoft
   description: >-
     Jitesoft strive to provide up-to-date, optimized and secure docker/oci images for multiple architectures, free of
