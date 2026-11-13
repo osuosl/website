@@ -16,6 +16,14 @@ and install the Hugo binary or package. You can check if it is installed from th
 hugo version
 ```
 
+Hugo compiles the site's stylesheets with [Dart Sass](https://gohugo.io/functions/css/sass/#dart-sass), which is a
+separate install (for example `sudo snap install dart-sass`, or the standalone release from GitHub on your `PATH`).
+Check that Hugo can find it with:
+
+```bash
+hugo env | grep dart-sass
+```
+
 This project uses npm for the functionality of Prettier and Markdownlint. You can check that npm is installed from the
 command line by running:
 
