@@ -559,7 +559,8 @@
   description: >-
     sing-lwip is a BSD-3-Clause project providing Go bindings and a native C integration layer for the HEV lwIP
     userspace TCP/IP stack. Its development focuses on portable packet processing, correctness, and efficient checksum
-    and buffer-handling routines.
+    and buffer-handling routines. POWER access allows them to establish native ppc64le validation and fused
+    copy/checksum kernels.
   category: foss
 - name: sire
   description: >-
