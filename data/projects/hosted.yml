@@ -936,6 +936,9 @@
 - name: SIMD Info/AI
   services:
     - powerpc
+- name: sing-lwip
+  services:
+    - powerpc
 - name: sire
   services:
     - powerpc
