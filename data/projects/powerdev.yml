@@ -555,6 +555,12 @@
 - name: SciPy
   description: Fundamental algorithms for scientific computing in Python.
   category: foss
+- name: sing-lwip
+  description: >-
+    sing-lwip is a BSD-3-Clause project providing Go bindings and a native C integration layer for the HEV lwIP
+    userspace TCP/IP stack. Its development focuses on portable packet processing, correctness, and efficient checksum
+    and buffer-handling routines.
+  category: foss
 - name: sire
   description: >-
     Sire is a molecular modelling framework that provides extensive functionality to manipulate representations of
