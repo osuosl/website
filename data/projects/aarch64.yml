@@ -139,6 +139,10 @@
   description: >-
     Rocky Linux is an open-source enterprise operating system designed to be 100% bug-for-bug compatible with Red Hat
     Enterprise Linux. It is under intensive development by the community.
+- name: RouterKit
+  description: >-
+    RouterKit develops Linux networking software for building software-defined open source routers and firewalls, and
+    maintains RKOS, an image-based Alpine Linux derivative for routers.
 - name: sourceware
   description: >-
     sourceware provides hosting for the GNU Toolchain, gcc, binutils, gdb, glibc, but also various other related
