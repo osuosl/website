@@ -1066,6 +1066,9 @@
 - name: WebDAV
   services:
     - vm
+- name: WTransport
+  services:
+    - vm
 - name: X2go
   services:
     - powerpc
