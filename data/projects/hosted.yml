@@ -64,6 +64,9 @@
 - name: BlueMika
   services:
     - powerpc
+- name: bpftime
+  services:
+    - aarch64
 - name: Briar
   services:
     - ci-cd
