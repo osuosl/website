@@ -23,6 +23,10 @@
     range of special purpose hardware, commonly refered to as single board computers.
 - name: BengalOS
   description: Mobile operating system based on Debian for phones.
+- name: bpftime
+  description: >-
+    A high-performance userspace eBPF runtime and extension framework for production extension, observability and
+    GPU-aware instrumentation.
 - name: Chimera Linux
   description: >-
     Chimera is a general-purpose Linux system based on FreeBSD core userland utilities, the LLVM toolchain, musl libc
